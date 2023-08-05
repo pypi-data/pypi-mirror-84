@@ -1,0 +1,8 @@
+requests
+PyJWT
+
+[dev]
+responses
+pytest
+coverage
+pip-tools

@@ -1,0 +1,9 @@
+setup.py
+sfjwt/__init__.py
+sfjwt/sfjwt.py
+sfjwt.egg-info/PKG-INFO
+sfjwt.egg-info/SOURCES.txt
+sfjwt.egg-info/dependency_links.txt
+sfjwt.egg-info/requires.txt
+sfjwt.egg-info/top_level.txt
+sfjwt.egg-info/zip-safe
