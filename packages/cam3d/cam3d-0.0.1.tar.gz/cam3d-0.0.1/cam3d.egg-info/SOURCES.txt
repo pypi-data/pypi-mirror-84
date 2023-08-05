@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+cam/__init__.py
+cam/cam.py
+cam/fig.py
+cam/kernal.py
+cam3d.egg-info/PKG-INFO
+cam3d.egg-info/SOURCES.txt
+cam3d.egg-info/dependency_links.txt
+cam3d.egg-info/requires.txt
+cam3d.egg-info/top_level.txt

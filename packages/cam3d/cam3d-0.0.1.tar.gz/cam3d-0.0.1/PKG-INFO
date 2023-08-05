@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: cam3d
+Version: 0.0.1
+Summary: cam3d
+Home-page: https://github.com/boliqq07/cam3d
+Author: wangchangxin
+Author-email: 986798607@qq.com
+Maintainer: wangchangxin
+License: UNKNOWN
+Description: 
+        
+        cam3d
+        ----------------------
+        Welcome to cam3d.
+        
+        
+        
+        
+        
+        
+        
+Keywords: cam3d
+Platform: Windows
+Platform: Unix
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
