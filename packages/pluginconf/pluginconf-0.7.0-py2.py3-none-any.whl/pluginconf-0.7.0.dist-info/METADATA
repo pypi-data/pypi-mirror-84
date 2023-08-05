@@ -1,0 +1,178 @@
+Metadata-Version: 2.1
+Name: pluginconf
+Version: 0.7.0
+Summary: Plugin configuration
+Home-page: https://fossil.include-once.org/pluginspec/
+Author: mario
+License: PD
+Project-URL: Source, https://fossil.include-once.org/pluginspec/
+Keywords: configuration
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: Public Domain
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.7
+Description-Content-Type: text/x-rst
+
+Provides plugin basename lookup and meta data extraction functionality.
+It’s meant for in-application feature and option management. The
+`descriptor format <https://fossil.include-once.org/pluginspec/index>`__
+(*self-contained* in each script) is basically:
+
+::
+
+   # encoding: UTF-8
+   # api: python
+   # type: handler
+   # category: io
+   # title: Plugin configuration
+   # description: Read meta data, pyz/package contents, module locating
+   # version: 0.5
+   # priority: core
+   # docs: http://fossil.include-once.org/streamtuner2/wiki/plugin+meta+data
+   # config: { name: xyz, value: 1, type: bool, description: "Sets..." }
+   #
+   # Documentation goes here...
+
+The ``key: value`` format is language-agnostic. It’s basically YAML in
+the topmost script comment. For Python only # hash comments are used.
+Defaults to rather common field names, encourages a documentation block,
+and an obvious `config: { .. }
+scheme <https://fossil.include-once.org/pluginspec/wiki/config>`__ for
+options and defaults.
+
+What it’s not:
+
+   -  This is not another config reader/parser/storage class.
+   -  Doesn’t impose a specific plugin API.
+   -  Neither concerns itself with module/package loading. (How boring.)
+
+What for then?
+
+   -  Separates code from meta data.
+   -  Avoids keeping seldomly used descriptors in variables.
+   -  Does away with cluttering external ini/json files with each module
+      script.
+   -  Prevents hodgepodge and premature module loading just to inspect
+      meta data.
+   -  Simplifies both internal use and meta info accessibility to
+      external tools.
+   -  (pluginconf is less about a concrete implementation/code, but
+      pushing a universal meta data format.)
+
+API
+===
+
+Configuration is currently just done by injecting:
+
+::
+
+   plugin_base = ["myapp.plugins", "etc.extensions"]
+   module_base = "pluginconf"
+
+Which declares module and plugin basenames. (Works for literal setups
+and within PYZ applications.)
+
+plugin_meta( module= \| fn= \| src= \| frame= )
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Returns a meta data dictionary for the given module name, file, source
+code, or caller frame.:
+
+::
+
+   {
+     "title": "Compound★",
+     "description": "...",
+     "version": "0.1",
+     "type": "channel",
+     "category": "virtual",
+     ...
+   }
+
+And that’s already what it does.
+
+Everything else is implementation-specific feature creep.
+
+module_list()
+^^^^^^^^^^^^^
+
+Returns basenames of available/installed plugins.
+
+add_plugin_defaults()
+^^^^^^^^^^^^^^^^^^^^^
+
+Populates your config_options{} and plugin_states{} list. Can be a
+classic dict, or one of the hundreds of config parser/managers.
+
+get_data( fn= )
+^^^^^^^^^^^^^^^
+
+Is mostly an alias for pkgutil.get_data(). Abstracts usage within PYZ
+packages a little.
+
+argparse_map()
+^^^^^^^^^^^^^^
+
+Provides a simpler way to specify ugly argparse definitions. And allows
+to amass options from plugins. Status
+
+GUI
+===
+
+| The plugin enabling/disabling and option dialog in
+  `streamtuner2-2.1.7-dev.pyz <http://sourceforge.net/projects/streamtuner2/files/streamtuner2-2.1.7-dev.pyz/download>`__
+  looks like this:
+| |image0|
+
+The ``pluginconf.gui.window()`` implementation uses PySimpleGUI and is
+somewhat less pretty or featureful. It doesn’t even attempt to group by
+categories, and just lists a single pane of settings.
+
+Its main function basically combines plugin lookup and dictionary
+population after it’s finished:
+
+::
+
+    import pluginconf.gui
+    config = {
+        "debug": 0, "verbose": 1, "temp_dir": "/tmp"
+    }
+    plugin_states = {
+        "core": 1, "printing_ui": 0
+    }
+    pluginconf.gui.window(config, plugin_states, files=["./library/*.py"])
+
+Where ``config`` and ``plugin_states`` get updated after invocation. If
+the GUI is to be used solely for options management, the
+``plugin_states={}`` param might be emtpy. (The GUI will still display
+checkboxes for plugin files, even if they go unused).
+
+-  Supports only basic option types (bool, str, int, select), no
+   table/dict.
+-  Type casting is somewhat crude.
+-  It’s still up to the application how/where to store the config{}
+   dict.
+-  ``pluginconf.gui.plugins`` temporarily holds pre-parsed plugin meta
+   infos after each invocation.
+
+--------------
+
+It’s currently just an excerpt from streamtuner2.
+
+-  Lacks the configuration GUI integration.
+-  Or the plugin repo JSON loader.
+-  Definitely needs customization prior use.
+-  See some format documentation
+
+The description fields can double as packaging source (setup.py).
+There’s also a `# pack:
+specifier <https://fossil.include-once.org/pluginspec/wiki/References>`__
+for fpm (deb/rpm/arch/exe/pyzw/pip generation).
+
+.. |image0| image:: http://fossil.include-once.org/streamtuner2/raw/st2-plugins.png?name=946c0e32c868a22facd7498250451723a50ab00a
+
+
+
