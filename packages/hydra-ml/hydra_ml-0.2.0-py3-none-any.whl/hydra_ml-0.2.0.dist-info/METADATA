@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: hydra-ml
+Version: 0.2.0
+Summary: A cloud-agnostic ML Platform
+Home-page: https://github.com/georgianpartners/hydra
+Author: Hydra Development Team
+Author-email: faisal.anees@georgian.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: future-fstrings (==1.2.0)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: pytest (==6.1.1)
+Requires-Dist: pytest-mock (==3.3.1)
+Requires-Dist: GitPython (==3.1.9)
+Requires-Dist: gcloud
+Requires-Dist: docker (==4.3.1)
+Requires-Dist: pyyaml
+
+# hydra
+A cloud-agnostic Machine Learning Platform that will enable Data Scientists to run multiple experiments, perform hyper parameter optimization, evaluate results and serve models (batch/realtime) while still maintaining a uniform development UX across cloud environments 
+
+## Installation Guide
+
+hydra is not hosted on a python package server yet. So for now we install it by cloning the repo
+
+```
+git clone git@github.com:georgianpartners/hydra.git
+
+cd hydra
+pip3 install -e .
+```
+
+Check the current hydra version using
+```
+hydra --version
+```
+
+
