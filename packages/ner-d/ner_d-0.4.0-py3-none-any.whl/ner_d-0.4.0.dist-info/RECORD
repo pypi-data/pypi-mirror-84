@@ -1,0 +1,10 @@
+nerd/__init__.py,sha256=Ufx2k8sQDyLPuxKjPU9RABTHamuDqj0FDSwfJVE1_3s,505
+nerd/__main__.py,sha256=Mf9dr9PnTuY30QVWl6jxaHHjb47v4_gx-yXC4HPQ8zw,1073
+nerd/ner.py,sha256=gGTmMVjOXWfkjskL9OAn9V1WmSJAdNXRyLrwx3BqQoc,2586
+ner_d-0.4.0.dist-info/COPYING,sha256=cw5z6YKRjbeKKJ6qxVw0r0kAMZI662V7cdHfnYdJcSk,1064
+ner_d-0.4.0.dist-info/LICENSE,sha256=cw5z6YKRjbeKKJ6qxVw0r0kAMZI662V7cdHfnYdJcSk,1064
+ner_d-0.4.0.dist-info/METADATA,sha256=NIBOUjJ3BXwqfMMu51NnEUfiAft-I1kJFPmbDLXLKa4,3758
+ner_d-0.4.0.dist-info/NOTICE,sha256=0WFMrzhtkhpQEjDsaJBnQNX3hScTIJNegXGrxRYvl0M,84
+ner_d-0.4.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+ner_d-0.4.0.dist-info/top_level.txt,sha256=GATdg9ceZq60gW3f3A67JFLOTF86Ye6z_aU7gDu9xXc,5
+ner_d-0.4.0.dist-info/RECORD,,
