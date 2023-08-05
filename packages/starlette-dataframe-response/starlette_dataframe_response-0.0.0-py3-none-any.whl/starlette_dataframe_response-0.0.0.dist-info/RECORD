@@ -1,0 +1,8 @@
+starlette_dataframe_response/__init__.py,sha256=F4ydEcQVNGtt-yujqGAjPd0ASaP1b1eQQllKLHT9oEU,2834
+starlette_dataframe_response/__main__.py,sha256=aLiqXImMrPrfAIvHyqOktSKfIjVBc4gZYvUFrWCe5go,99
+starlette_dataframe_response/dataset.py,sha256=88_22CD7Jk4EVdU7wWRT0BAK-CUbdsLuurK3w7rF7qE,1408
+starlette_dataframe_response/distribute.py,sha256=dBPgNDDxJgxvZde_Htd2NjkLHyjSTPoKtf0g958OVBc,4409
+starlette_dataframe_response-0.0.0.dist-info/METADATA,sha256=J0MwZia3bxdSqicuqPOOc_hpmt_SJWf3Eu8Hp8SWq9g,3174
+starlette_dataframe_response-0.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+starlette_dataframe_response-0.0.0.dist-info/top_level.txt,sha256=DMerORocGEFFknfR7J7OJ7CftCfbXBtcl317jKOnbDk,29
+starlette_dataframe_response-0.0.0.dist-info/RECORD,,
