@@ -1,0 +1,8 @@
+pandas_dedupe/__init__.py,sha256=d1gH7INVBiTja4TIjzdxmQZoOL56DWQBhxHeNmLQvss,118
+pandas_dedupe/dedupe_dataframe.py,sha256=BdOICgyWtLPLXzQkOAhI6xwcZ0Fk8bWlmHJjfOdz3Ko,8905
+pandas_dedupe/link_dataframes.py,sha256=SD775wVxZi9nex9Pi-oyPyRADsAQzKP4BOLonk7JUyw,4567
+pandas_dedupe/utility_functions.py,sha256=M-fquPdaCNcIeXpGCf3zx7lwnXaXTZgvO4b32ab9lrE,2121
+pandas_dedupe-1.4.0.dist-info/METADATA,sha256=G1xQrHzzRAO3eZYP60VZc2IBMfYDH0grGFROAnLev94,5698
+pandas_dedupe-1.4.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pandas_dedupe-1.4.0.dist-info/top_level.txt,sha256=tQZ9Nw4m94mX7n_Jk35vsPJEsxoMgoJ4cwtz-_BHInk,14
+pandas_dedupe-1.4.0.dist-info/RECORD,,
