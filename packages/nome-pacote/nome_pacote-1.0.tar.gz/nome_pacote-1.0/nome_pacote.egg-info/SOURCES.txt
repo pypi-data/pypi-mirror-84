@@ -1,0 +1,9 @@
+README.md
+setup.py
+nome_pacote.egg-info/PKG-INFO
+nome_pacote.egg-info/SOURCES.txt
+nome_pacote.egg-info/dependency_links.txt
+nome_pacote.egg-info/top_level.txt
+processamento_imagem/__init__.py
+processamento_imagem/camera.py
+processamento_imagem/video.py
