@@ -1,0 +1,6 @@
+README.md
+setup.py
+mpscreen_isl.kuba.egg-info/PKG-INFO
+mpscreen_isl.kuba.egg-info/SOURCES.txt
+mpscreen_isl.kuba.egg-info/dependency_links.txt
+mpscreen_isl.kuba.egg-info/top_level.txt
