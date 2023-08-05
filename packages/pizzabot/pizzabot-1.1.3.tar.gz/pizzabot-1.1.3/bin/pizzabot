@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+
+import sys
+import argparse
+
+from pizzabot.engine import PizzabotEngine
+
+
+help_str = 'Give it a grid and coordinates for example: pizzabot "5x5 (1, 3) (4,4)"'
+parser = argparse.ArgumentParser(description=help_str)
+parser.add_argument('input_string', type=str,help=help_str)
+args = parser.parse_args()
+
+pe = PizzabotEngine()
+output_string = pe.process_string(args.input_string)
+if output_string == None:
+    print("ERROR: Bad input string: '"+args.input_string+"'\n"+help_str)
+else:
+    print(output_string)
