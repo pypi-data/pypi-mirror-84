@@ -1,0 +1,5 @@
+aiohttp
+aiosqlite
+crccheck
+pycryptodome
+voluptuous
