@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: django-envfile
+Version: 0.1.2
+Summary: handle the environment variables as from a file in a simpler way.
+Home-page: https://github.com/josuedjh3/django-environment
+Author: Josuedjh Cayola
+Author-email: josuedjh456@gmail.com
+License: GNU General Public License v3.0
+Description: # django-environment
+        handle the environment variables as from a file in a simpler way. 
+        
+Keywords: django environment
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
