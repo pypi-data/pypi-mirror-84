@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: welford
+Version: 0.1
+Summary: Python(numpy) implementation of welford's algorithm.
+Home-page: https://github.com/a-mitani/welford
+Author: Akira Mitani
+Author-email: amitani.public@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: statistic,online,welford
+Platform: UNKNOWN
