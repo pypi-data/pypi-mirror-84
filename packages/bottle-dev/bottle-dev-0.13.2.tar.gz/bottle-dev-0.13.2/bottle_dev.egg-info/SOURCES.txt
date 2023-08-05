@@ -1,0 +1,6 @@
+bottle.py
+setup.py
+bottle_dev.egg-info/PKG-INFO
+bottle_dev.egg-info/SOURCES.txt
+bottle_dev.egg-info/dependency_links.txt
+bottle_dev.egg-info/top_level.txt
