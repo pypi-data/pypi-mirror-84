@@ -1,0 +1,15 @@
+tgficbot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tgficbot/db.py,sha256=f0dL64VLMjYIlYTgFxM9i-AgSeof_S64oDuNOK4hAkQ,8701
+tgficbot/i18n.py,sha256=LlO3q_6Xo2tGIM2Afrj8-LsMomJ-aN2Qq9dmqsfZEz4,1258
+tgficbot/main.py,sha256=S-Yct_dhZW3bMfrJddjCYxrvcYzwDCRToZWPHEAZZoI,11295
+tgficbot/push_message.py,sha256=QEUU6ggqDAFSxvomfywxRPwHK8gawPleWWn83vgeLlI,1380
+tgficbot/states.py,sha256=3bgYJqpRy6Wat48KGyn4-cxFVkeg0JVSMfzsu75tO1c,598
+tgficbot/locales/en/LC_MESSAGES/main.mo,sha256=km1AljvvzFDxR-7qi_fjDHItk32vjQW9Vowc5atnG6A,3656
+tgficbot/locales/zh-hans/LC_MESSAGES/main.mo,sha256=EDUFXQK4ZiL-yyLOTTHCdY6lq8ptHvWs0wMPaURBaQY,3411
+tgficbot/locales/zh-hant/LC_MESSAGES/main.mo,sha256=KQJ7m849DeYlCe-ncmMiQXrC40ofeh1lM05uxhXXmOA,3410
+telegram_find_in_channel_bot-0.3.0.dist-info/LICENSE,sha256=UcYM9v8Sh1IrmXGyOHSZuXzkcy7i6pqpg4R3WEyemFM,1518
+telegram_find_in_channel_bot-0.3.0.dist-info/METADATA,sha256=fyfEUd90N0oKzLsJgYNfCTyo1ZNPGZFYPOqw0Yz4Lkc,2684
+telegram_find_in_channel_bot-0.3.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+telegram_find_in_channel_bot-0.3.0.dist-info/entry_points.txt,sha256=oF0KMRmmLzXMNtHGDTWFPmsGeqFrD-61OSTYlJkmG-Y,69
+telegram_find_in_channel_bot-0.3.0.dist-info/top_level.txt,sha256=hn_6hPS9Hii5Z9ml6ZSpxOiyh6Bw9WsBDUb5kZUPsFg,9
+telegram_find_in_channel_bot-0.3.0.dist-info/RECORD,,
