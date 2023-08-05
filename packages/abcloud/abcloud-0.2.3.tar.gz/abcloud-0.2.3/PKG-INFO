@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: abcloud
+Version: 0.2.3
+Summary: abcloud
+Home-page: https://www.github.com/briney/abcloud
+Author: Bryan Briney
+Author-email: briney@scripps.edu
+License: UNKNOWN
+Download-URL: https://www.github.com/briney/abcloud
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
