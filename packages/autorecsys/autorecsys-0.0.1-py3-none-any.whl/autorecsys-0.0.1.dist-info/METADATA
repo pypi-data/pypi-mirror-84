@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: autorecsys
+Version: 0.0.1
+Summary: AutoRec: An Automated Recommender System
+Home-page: https://github.com/datamllab/AutoRec.git
+Author: DATA Lab@Texas A&M University
+Author-email: thwang1231@tamu.edu
+License: UNKNOWN
+Keywords: automated machine learning,recommender systems,neural architecture search
+Platform: UNKNOWN
+Requires-Dist: numpy (==1.17.3)
+Requires-Dist: pandas (==0.25.2)
+Requires-Dist: pytest (==5.2.2)
+Requires-Dist: PyYAML (==5.1.2)
+Requires-Dist: scikit-learn (==0.21.3)
+Requires-Dist: scipy (==1.4.1)
+Requires-Dist: tabulate (==0.8.5)
+Requires-Dist: tensorboard (==2.2.0)
+Requires-Dist: tensorflow (==2.2.0)
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: terminaltables (==3.1.0)
+Requires-Dist: tqdm (==4.36.1)
+Requires-Dist: colorama (==0.4.3)
+
+UNKNOWN
+
+
