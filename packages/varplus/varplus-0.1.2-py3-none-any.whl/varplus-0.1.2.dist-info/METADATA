@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: varplus
+Version: 0.1.2
+Summary: Varplus is a better way to use variables in python
+Home-page: https://github.com/hillasen/varplus
+Author: Kim_myeong_jun
+Author-email: admin@hillasen.com
+License: UNKNOWN
+Download-URL: https://github.com/hillasen/varplus/archive/master.zip
+Keywords: variable varplus
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+
+UNKNOWN
+
+
