@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: predixy
+Version: 1.1.0
+Summary: A command line program to predict NICS-XY scan results based on an additivity scheme.
+Home-page: https://gitlab.com/porannegroup/predixy
+Author: Poranne group
+Author-email: renana.poranne@org.chem.ethz.ch
+License: GNU GPLv3
+Keywords: chemistry aromaticity PAH aroma
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.19.2)
+Requires-Dist: scipy (>=1.5.2)
+Requires-Dist: pandas (>=1.1.2)
+Requires-Dist: tabulate (>=0.8.7)
+Requires-Dist: matplotlib (>=3.3.2)
+Requires-Dist: networkx (>=2.5)
+
+# Predi-XY
+
+*version 1.1.0*
+
+A command line program to predict NICS-XY scan results based on an additivity scheme.
+
+Requires Python 3.7 or newer. To check which version of Python is active:
+```
+python --version
+```
+
+## Installation
+
+### Recommended installation method:
+
+Predixy is available on PyPI, so simply install it using `pip`:
+```
+pip install predixy
+```
+
+### Manual installation:
+
+Navigate to the top level folder of the downloaded/cloned repository. Then you can either run the `setup.py` script or manually install requirements using `pip`.
+
+Installation using `setup.py`:
+```
+python setup.py install
+```
+
+Install dependencies using `pip`:
+```
+pip install -r requirements.txt
+```
+
+## Running the program
+
+If you installed the program from PyPI or using the `setup.py`, you will have predixy in your PATH and can run it from anywhere. Just run:
+```
+predixy INFILE
+```
+
+If you only installed the dependencies, you can need to navigate to the top level folder containing `predixy.py` and run:
+
+```
+python predixy.py INFILE
+```
+
+The INFILE should be a `.xyz` or Gaussian `.in` file containing the xyz coordinates in Angstrom of the molecule you would like to analyze.
+
+## Help
+
+To get the help and list all options, run (depending on your installation method):
+
+```
+predixy --help
+```
+
+or:
+
+```
+python predixy.py --help
+```
+
+## Editing the configuration file
+
+Edit the `config.ini` file using your favorite editor. Lines starting with `#` and `;` are comments. Do not delete lines as this will cause errors.
+The location of the config file can be retrieved from the program by using the help.
+
+
