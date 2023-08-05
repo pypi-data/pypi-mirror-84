@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: matrix_path
+Version: 1.1.0
+Summary: Navigating and Visualizing paths in a 2D Matrix.
+Home-page: https://github.com/rushmash91/matrix_path
+Author: Arush Sharma
+Author-email: arushsharma91@gmail.com
+License: MIT
+Description: # matrix_path
+        
+        
+        ## Description
+        ## Installation 
+        ## How to use?
+        ## License
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
