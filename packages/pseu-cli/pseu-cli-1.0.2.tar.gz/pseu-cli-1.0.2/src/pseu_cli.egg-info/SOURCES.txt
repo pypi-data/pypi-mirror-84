@@ -1,0 +1,8 @@
+README.md
+setup.py
+scripts/pseu
+src/pseu_cli.egg-info/PKG-INFO
+src/pseu_cli.egg-info/SOURCES.txt
+src/pseu_cli.egg-info/dependency_links.txt
+src/pseu_cli.egg-info/top_level.txt
+src/pseucli/__init__.py
