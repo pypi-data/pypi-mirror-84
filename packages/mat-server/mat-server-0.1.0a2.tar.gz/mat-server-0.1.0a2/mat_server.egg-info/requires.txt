@@ -1,0 +1,7 @@
+dependency-injector==3.44.0
+click==7.1.2
+Flask==1.1.2
+waitress==1.4.4
+requests==2.24.0
+PyYAML==5.3.1
+lark-parser[regex]
