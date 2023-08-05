@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: metashape
+Version: 0.0.3
+Summary: -
+Home-page: https://github.com/podhmo/metashape
+Author: podhmo
+Author-email: ababjam61+github@gmail.com
+License: UNKNOWN
+Description: # metashape ![Python package](https://github.com/podhmo/metashape/workflows/Python%20package/badge.svg) [![PyPi version](https://img.shields.io/pypi/v/metashape.svg)](https://pypi.python.org/pypi/metashape) [![](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/download/releases/3.7.0/) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://black.readthedocs.io/en/stable/)
+        
+        :construction: this project is under construction :construction:
+        
+        ## installing
+        
+        ```console
+        $ pip install metashape[cli]
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >3.7
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+Provides-Extra: dev
+Provides-Extra: input
+Provides-Extra: output
+Provides-Extra: cli
