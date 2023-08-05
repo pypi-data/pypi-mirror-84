@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: yabu
+Version: 0.1
+Summary: yet another backup utility
+Home-page: https://github.com/RobertoBochet/yabu
+Author: Roberto Bochet
+Author-email: robertobochet@gmail.com
+License: gpl-3.0
+Description: # YABU
+        
+        **yet another backup utility**
+        
+        ### Install
+        
+        To install YABU you can use the `setup.py` script.
+        
+        ```shell script
+        git clone https://github.com/RobertoBochet/yabu.git
+        cd yabu
+        python3 setup.py install --user 
+        ```
+Keywords: backup,rsync
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
