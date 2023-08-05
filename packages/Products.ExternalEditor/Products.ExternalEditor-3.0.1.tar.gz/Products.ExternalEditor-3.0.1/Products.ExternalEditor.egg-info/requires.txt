@@ -1,0 +1,3 @@
+setuptools
+Zope>=4.3
+six
