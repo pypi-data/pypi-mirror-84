@@ -1,0 +1,3 @@
+[console_scripts]
+wizcon = wizcon.wizcon:main_async
+
