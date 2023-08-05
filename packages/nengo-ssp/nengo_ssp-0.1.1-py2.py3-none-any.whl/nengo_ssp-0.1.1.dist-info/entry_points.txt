@@ -1,0 +1,3 @@
+[console_scripts]
+nengo_ssp = nengo_ssp.cli:main
+

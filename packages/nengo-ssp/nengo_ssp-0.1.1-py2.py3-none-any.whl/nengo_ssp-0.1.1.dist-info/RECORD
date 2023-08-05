@@ -1,0 +1,15 @@
+nengo_ssp/__init__.py,sha256=hBZ3GRxXohe1iWsadzuM_QKX-6W4-tZjRljSy9IpUQI,538
+nengo_ssp/dists.py,sha256=zzzeu6NL3NrWlVBpMslcgjpwJCMqo1BPm5OXOlSuQJE,762
+nengo_ssp/hrr_algebra.py,sha256=THmw1KtWpKodARG0Ci4Od53uzsLPobG8p8NgjD6Qk78,569
+nengo_ssp/networks.py,sha256=XT2nWa5bZzx73t8BZ2KkX9S9KWzO31QDeqr3ADwqk8I,5032
+nengo_ssp/plotting.py,sha256=TD32cZuA2NnEulEHvw1uuOYw5wT57nD7QSz6d-BvLaE,5031
+nengo_ssp/spatial_semantic_pointer.py,sha256=DmIzC37A6mjiJTWj0qsJIuoXQsrzkxduEHRJoYON-4E,13859
+nengo_ssp/utils.py,sha256=gPwkJ2cr09aY9ThCrq1_p4u8o9JzqU1BMvJ3l9JwFYo,2987
+nengo_ssp/vector_generation.py,sha256=8RQe1UxiuAhJOZooiTtUfonS_ZGbNsVsbB5Y_7kJG5g,7364
+nengo_ssp-0.1.1.dist-info/AUTHORS.rst,sha256=UdsJTLBh1bCb5iJ55pro2AKNe-ni1DdeZPve-yGPhao,177
+nengo_ssp-0.1.1.dist-info/LICENSE,sha256=Yv2hex5T4CyXIts0fcrFI14sj0e13kU3rFt102A3sxw,1085
+nengo_ssp-0.1.1.dist-info/METADATA,sha256=ZwOA1D45yZ9Pt3jUYZSMr4PBzENHlexvpuU4bizygaY,1930
+nengo_ssp-0.1.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+nengo_ssp-0.1.1.dist-info/entry_points.txt,sha256=b-3Q5ubYt36m5UubtesEGlVJ3K5NkV9myojh8a5acNM,50
+nengo_ssp-0.1.1.dist-info/top_level.txt,sha256=Wd4k-MLwVwDUoBNz5WxEgrjZfec2IXzHQciCb8QWus0,10
+nengo_ssp-0.1.1.dist-info/RECORD,,
