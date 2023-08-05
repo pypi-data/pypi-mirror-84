@@ -1,0 +1,12 @@
+julia/ThreadSafeDicts.jl,sha256=hJNVfMwFTQv3wDSoq6tvTDjsdjQBUC3W1XUuYIxKMHY,2152
+julia/dataset.jl,sha256=6Z92RYHiNYo2llDyA0ai1StgDDo-AMs9jNIHw2NRyV8,213370
+julia/operators.jl,sha256=FCiNHRHiE-lS3odBRidee8mpA1izhkQTbeQxKmps96Q,2055
+julia/runfile.jl,sha256=QRnL7H9Y9ktRSgPt1Ghb1qmqOTRLVjR9Zsvf7LOTx8w,250
+julia/sr.jl,sha256=GLuMPtWQF2fpiTCkxvhPORYIiRDgaGwlCF-qqhwH9hU,40172
+pysr/__init__.py,sha256=MzsL9lmFuUaucSkaUsFnY7VZ94fn8WL1ydqv5fbEeMg,71
+pysr/sr.py,sha256=Jdnr4Pc0ZOjEE4k4AWAGqjkybnOF3GXXsKo5j8CbJwI,22885
+pysr-0.3.29.dist-info/LICENSE,sha256=VkI5c6YZGF9Jj4u8ItxwJubUCtICpJu4ch7AnDVfJ6A,11343
+pysr-0.3.29.dist-info/METADATA,sha256=m4n99TiEf6BnqqxzQmhenYkk1KoH-I7JpEP0nxPeDOI,3951
+pysr-0.3.29.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pysr-0.3.29.dist-info/top_level.txt,sha256=CPwbZpeiyqySY1MooFO7qo98l-ABLkA-TrXued1z8Ew,5
+pysr-0.3.29.dist-info/RECORD,,
