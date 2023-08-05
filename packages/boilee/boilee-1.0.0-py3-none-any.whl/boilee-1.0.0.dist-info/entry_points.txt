@@ -1,0 +1,3 @@
+[console_scripts]
+boilee = boilee.scripts.boilee:cli
+
