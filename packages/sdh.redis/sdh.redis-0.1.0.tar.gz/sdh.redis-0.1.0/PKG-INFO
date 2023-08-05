@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: sdh.redis
+Version: 0.1.0
+Summary: Django redis wrapper
+Home-page: https://bitbucket.org/sdh-llc/sdh-redis/
+Author: Software Development Hub LLC
+Author-email: dev-tools@sdh.com.ua
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6

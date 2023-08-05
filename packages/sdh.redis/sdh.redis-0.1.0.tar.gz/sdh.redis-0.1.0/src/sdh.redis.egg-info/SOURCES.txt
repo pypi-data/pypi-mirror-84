@@ -1,0 +1,15 @@
+CHANGELOG.rst
+MANIFEST.in
+README.rst
+setup.py
+src/sdh/__init__.py
+src/sdh.redis.egg-info/PKG-INFO
+src/sdh.redis.egg-info/SOURCES.txt
+src/sdh.redis.egg-info/dependency_links.txt
+src/sdh.redis.egg-info/eager_resources.txt
+src/sdh.redis.egg-info/namespace_packages.txt
+src/sdh.redis.egg-info/not-zip-safe
+src/sdh.redis.egg-info/top_level.txt
+src/sdh/redis/__init__.py
+src/sdh/redis/connection.py
+src/sdh/redis/pool.py
