@@ -1,0 +1,15 @@
+irrep/__aux.py,sha256=4sJg7w93pbVbDcPO8IouRiORdo0v8E-pvOPKu28td48,2087
+irrep/__gvectors.py,sha256=ylsd9bZBzIkvGfzYghIR7Bz2YtUenK8YwWzAPp-aYF4,6862
+irrep/__init__.py,sha256=ub8Iubv-8Zm5WBJzINUA1zKNwFzTjS9WyuEYBjTOiBY,65
+irrep/__readfiles.py,sha256=obqtOpiCsxHzqAXhweAfhVHt_jiPGJ36uvOeGVXA90g,5334
+irrep/_version.py,sha256=P7mCdvqC7vuKWloxGoOmpklJS5uZZzZVR4HBV_ZDUTk,20
+irrep/bandstructure.py,sha256=m57EedsFhp_xJyoeYyIbJgIuMX18nfs6AqHJFb93oBA,24388
+irrep/cli.py,sha256=FJeqoqb--cq2HCUL43DOL7czf1xtXFjC4zOic437AaM,11471
+irrep/kpoint.py,sha256=eXejDAbtpugJCGlcOQIfRHxDYYBKthwqUfD0QcfoYB8,25487
+irrep/spacegroup.py,sha256=Si1UJqXFnrdPcjsFqHd1lr_ZiqRTMmPTgq2EFKJHvB4,15064
+irrep-1.5.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+irrep-1.5.0.dist-info/METADATA,sha256=zRVqnRQxwbrhPtEbO-4rdV4A5dya4EBb4vUAxb3nGj8,4445
+irrep-1.5.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+irrep-1.5.0.dist-info/entry_points.txt,sha256=Eg3GP5uizfM-1hCyLBsYytwNYLFB_i3h2KNKB6QpDVg,59
+irrep-1.5.0.dist-info/top_level.txt,sha256=HHFiNAel8r0UG4xpJrJniuN_TOuxuETo5hpBOI7btuY,6
+irrep-1.5.0.dist-info/RECORD,,
