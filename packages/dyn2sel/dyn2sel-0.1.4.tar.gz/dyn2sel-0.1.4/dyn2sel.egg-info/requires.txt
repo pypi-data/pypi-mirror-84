@@ -1,0 +1,6 @@
+numpy
+scikit-learn
+scikit-multiflow
+scipy
+deslib
+imblearn
