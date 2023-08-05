@@ -1,0 +1,7 @@
+README.md
+setup.py
+waveprocess.egg-info/PKG-INFO
+waveprocess.egg-info/SOURCES.txt
+waveprocess.egg-info/dependency_links.txt
+waveprocess.egg-info/requires.txt
+waveprocess.egg-info/top_level.txt
