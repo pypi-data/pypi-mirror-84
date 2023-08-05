@@ -1,0 +1,6 @@
+setup.py
+KeimBot.egg-info/PKG-INFO
+KeimBot.egg-info/SOURCES.txt
+KeimBot.egg-info/dependency_links.txt
+KeimBot.egg-info/requires.txt
+KeimBot.egg-info/top_level.txt

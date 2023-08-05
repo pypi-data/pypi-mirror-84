@@ -1,0 +1,10 @@
+pyperclip
+pyautogui
+win32gui
+win32con
+win32gui
+win32api
+cv2
+numpy
+baidu-aip
+PIL
