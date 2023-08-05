@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: dmapi
+Version: 0.0.1
+Summary: A Python client for Dados de Mercado
+Home-page: https://github.com/dadosdemercado/dmapi-python
+Author: Dados de Mercado
+Author-email: api@dadosdemercado.com
+License: UNKNOWN
+Description: # Dados de Mercado
+        
+        This is a Python Client for
+        [Dados de Mercado](https://www.dadosdemercado.com/)'s API.
+        
+        ## Instalation
+        
+        ```
+        pip3 install dmapi
+        ```
+        
+        ## Usage
+        
+        You will need a token to access the API endpoints. Go to the
+        [documentation page](https://www.dadosdemercado.com/api) (in portuguese)
+        to generate one.
+        
+        ### Usage example
+        
+        ```python
+        from dmapi import DMAPI
+        
+        dm = DMAPI(token='c8cad35b0376c8f6bcb46614f80d9443')  # Set your token here
+        
+        print(dm.companies())
+        ```
+        
+        ### Available calls
+        
+        Please refer to the [documentation](https://www.dadosdemercado.com/api)
+        for more details on the parameters available on each call.
+        
+        - `dm.companies()`
+        - `dm.company(company_slug)`
+        - `dm.financials(company_slug, [type, offset, limit])`
+        - `dm.ratios(company_slug, [type, offset, limit, market])`
+        - `dm.tickers()`
+        - `dm.ticker(ticker, [from_date, to_date])`
+        - `dm.price_indexes([from_date, to_date])`
+        - `dm.selic()`
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

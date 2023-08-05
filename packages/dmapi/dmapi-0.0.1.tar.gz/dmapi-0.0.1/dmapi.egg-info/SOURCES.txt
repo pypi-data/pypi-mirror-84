@@ -1,0 +1,8 @@
+README.md
+setup.py
+dmapi/__init__.py
+dmapi/dmapi.py
+dmapi.egg-info/PKG-INFO
+dmapi.egg-info/SOURCES.txt
+dmapi.egg-info/dependency_links.txt
+dmapi.egg-info/top_level.txt
