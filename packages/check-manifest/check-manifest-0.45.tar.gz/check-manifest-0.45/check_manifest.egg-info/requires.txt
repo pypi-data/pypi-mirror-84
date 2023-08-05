@@ -1,0 +1,6 @@
+build>=0.1
+setuptools
+toml
+
+[test]
+mock>=3.0.0
