@@ -1,0 +1,8 @@
+README.md
+setup.py
+pybitcoinrpc/__init__.py
+pybitcoinrpc/sync.py
+pybitcoinrpc.egg-info/PKG-INFO
+pybitcoinrpc.egg-info/SOURCES.txt
+pybitcoinrpc.egg-info/dependency_links.txt
+pybitcoinrpc.egg-info/top_level.txt
