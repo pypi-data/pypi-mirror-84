@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: TerminalColorLog
+Version: 1.0.0b5
+Summary: Print Have Color 's Log For Terminal 
+Home-page: https://chenjj100419.github.io/WebBlogHtml
+Author: chenjj100419
+Author-email: 2026159790@qq.com
+License: General Public License v3
+Platform: any
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+
+#Python Library:
+## TerminalColorLog
+
+####How to install? - Use pip install TerminalColorLog To install This is Library
+
+## Test: Info: [19:18:22] [INFO]INFO Error: [19:18:22] [ERROR]ERROR Warn: [19:18:22] [WARN]Warn (markdown Look Color To Error)
+
