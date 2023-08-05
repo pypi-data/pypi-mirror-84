@@ -1,0 +1,8 @@
+README.md
+setup.py
+matrix/__init__.py
+matrix/__main__.py
+matrix_path.egg-info/PKG-INFO
+matrix_path.egg-info/SOURCES.txt
+matrix_path.egg-info/dependency_links.txt
+matrix_path.egg-info/top_level.txt
