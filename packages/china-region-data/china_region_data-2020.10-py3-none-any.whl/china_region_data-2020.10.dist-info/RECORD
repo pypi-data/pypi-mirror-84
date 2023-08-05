@@ -1,0 +1,9 @@
+china_region_data/__init__.py,sha256=q8owXVSD7XNDIhOJt_gIcjB52b1WO3muTXgc0SgdOVY,850
+china_region_data/data.json,sha256=Uta9ZcOYVZyLgSYkBpG0odBK8D-xkws8Yh6aLM3UgLY,160254
+china_region_data/datastructures.py,sha256=OZnZwDIrccQVaG4mKymrBp0d_3ZU3uv7OFaHAFFFjRI,4301
+china_region_data/exceptions.py,sha256=2FXjQ6Z_OvG25JEISosA4vkn2mmTezpkQ_IR8nmVgYg,307
+china_region_data/utils.py,sha256=fGGkiB7nLyZbkZ0RLyIhJfbK2r6qrcTz2qbUpRNDwgQ,841
+china_region_data-2020.10.dist-info/LICENSE,sha256=ZDNhnKsRdP7HdiASdmNHGdsgtc8J6_Hv0-pty1YfhQU,1087
+china_region_data-2020.10.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+china_region_data-2020.10.dist-info/METADATA,sha256=IJLdOC3cfXxlkFtIXnUQu4Q529KNOLNizCm9BIuBQXI,1983
+china_region_data-2020.10.dist-info/RECORD,,
