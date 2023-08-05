@@ -1,0 +1,12 @@
+tweepy_parrot/__init__.py,sha256=Tx4qXckqyEX1ixGvqwx8cpPpj__n1VmF3KE0AeTqLVQ,150
+tweepy_parrot/bot.py,sha256=xcz837bl2KPgvJDzGf37Ua5A_EqaY3tUyTX59SDucoo,3181
+tweepy_parrot/data.py,sha256=9-tVHWclmmUIEfJAkPTE-dZR6787Jb56Zz2_yr_ROKI,1039
+tweepy_parrot/listener.py,sha256=IfCbYoOa9fTw571nwYz7zppfJLxvne18jZkj4eDv5gE,1800
+tweepy_parrot/models.py,sha256=dhQdYmKZ_EDmbTVtFFaVCRmwMlthwZhVEQDpu-XRE8U,252
+tweepy_parrot/parrots.py,sha256=kmP2XDAHu1CyXKuLMYIDjcjeDD7ZUpY4JKYzPyoAWaM,2681
+tweepy_parrot/settings.py,sha256=mwESqYHZ1O_-D5mhNsqByR3NcN-cTFCRdobK7au2VFY,276
+tweepy_parrot-0.0.1.dist-info/LICENSE.md,sha256=3EGk4QIBiST0q-8sqPtDuHJkTEIzdd54cBJ82BeRKd8,1070
+tweepy_parrot-0.0.1.dist-info/METADATA,sha256=om-zI1xpF0x4oU1N2yemEJm2tiqy3E9vYjtzhD2iG2I,2022
+tweepy_parrot-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+tweepy_parrot-0.0.1.dist-info/top_level.txt,sha256=MmKqvq_TTYrdrQ3YgG873vHPYxbQtrkwiRWKS5Vyqz8,14
+tweepy_parrot-0.0.1.dist-info/RECORD,,
