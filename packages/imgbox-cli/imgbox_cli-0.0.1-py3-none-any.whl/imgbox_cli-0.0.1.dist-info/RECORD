@@ -1,0 +1,10 @@
+imgbox/__init__.py,sha256=s1W55ez0eoY0Rhv59Jvnklo5YXqu8PCcp_DMx3gZl9Q,241
+imgbox/_input.py,sha256=gkrDFk8Q0UbiIlQ8h1z8OXQzDkYQAj-KRVZBBrCiVWg,1898
+imgbox/_main.py,sha256=sSt4WMLTGARAbpgacq5mhnwStPOIZtiE5iiC0ZA_l6Q,1435
+imgbox/_output.py,sha256=RCEzFqNRatSIGGi072FnM2D6w44RUn3qwdSVLC_VTMI,2315
+imgbox_cli-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+imgbox_cli-0.0.1.dist-info/METADATA,sha256=DK7MQe9vyCfnzUWK4BtKw_h-lndl9U7U0LYA4l222Lc,1364
+imgbox_cli-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+imgbox_cli-0.0.1.dist-info/entry_points.txt,sha256=mmEBdlK6tlMcqWPG7KyfHEiBMHj_Yk_0O3dDLfvs808,46
+imgbox_cli-0.0.1.dist-info/top_level.txt,sha256=opdRHoqZFdCL4xlqxCVBxKXt1QvpOnv88BhHL7Ve6Go,7
+imgbox_cli-0.0.1.dist-info/RECORD,,
