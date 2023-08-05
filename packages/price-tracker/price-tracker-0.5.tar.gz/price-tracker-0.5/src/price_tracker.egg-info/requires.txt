@@ -1,0 +1,8 @@
+requests
+beautifulsoup4
+urllib3
+random_user_agent
+
+[testing]
+pytest
+pytest-cov
