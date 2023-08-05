@@ -1,0 +1,163 @@
+Metadata-Version: 2.1
+Name: pydebuggerupgrade
+Version: 3.4.6.46
+Summary: CLI and library utility for upgrading firmware on Microchip PKOB nano (nEDBG) debugger
+Home-page: http://www.microchip.com
+Author: Microchip Technology
+Author-email: support@microchip.com
+License: Microchip Technology Inc. Proprietary License
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown
+Requires-Dist: pyusb
+Requires-Dist: IntelHex
+Requires-Dist: requests
+Requires-Dist: packaging
+Requires-Dist: pyedbglib (>=2.3)
+Requires-Dist: PyYAML
+Requires-Dist: appdirs
+Provides-Extra: dev
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: parametrized ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: parametrized ; extra == 'test'
+
+# pydebuggerupgrade
+pydebuggerupgrade is a combined Command Line Interface and library utility for upgrading firmware on Microchip debuggers with DFU based bootloaders.
+
+These tools are currently supported:
+* PKOB nano (nEDBG): Embedded debugger found on kits
+
+## Usage
+pydebuggerupgrade can be used as a command-line interface or a library
+
+### Command-line usage
+for help, use:
+```
+pydebuggerupgrade --help
+```
+
+#### Upgrade using local firmware artifact
+pydebuggerupgrade supports firmware artifact zip files and hex files
+
+Example: Upgrade PKOB nano (nEDBG) with zip
+```
+pydebuggerupgrade -t nedbg nedbg_fw-1.13.458.zip
+```
+
+Example: Upgrade PKOB nano (nEDBG) with hex
+```
+pydebuggerupgrade -t nedbg nedbg.hex
+```
+
+#### Upgrade using pack server
+pydebuggerupgrade is capable of fetching firmware artifacts from the Microchip pack server (https://packs.download.microchip.com)
+
+Example: Upgrade PKOB nano (nEDBG) with firmware from the latest released pack
+```
+pydebuggerupgrade -t nedbg latest
+```
+
+Example: Upgrade PKOB nano (nEDBG) with firmware from a specific pack version
+Note: This version indicates the pack version and not the firmware version inside it
+```
+pydebuggerupgrade -t nedbg 1.0.33
+```
+
+#### Report firmware versions
+The -r/--report option makes pydebuggerupgrade only report firmware versions and not do any upgrade.  Both the version of the currently loaded firmware and the version of the upgrade candidate is reported
+
+Example: Report versions using latest release from pack server
+```
+pydebuggerupgrade -t nedbg -r latest
+```
+
+### Command-line switches
+Many of these switches are optional, and many parameters are automatically set when using a Curiosity Nano kit.
+* -t TOOL to select which tool to use.  Optional if only one is connected.
+* -s SERIALNUMBER to select which tool instance to use.  Optional if only one is connected.  Substring matching on end of USB serial number is supported.
+* -v for verbose output
+* -vv for verbose debug output
+* -tm TIMEOUT to configure the timeout in seconds when attempting to connect to tool
+* -a to upgrade all tools matching tool type and USB serial number
+* -ab to upgrade all tools matching the tool type that are already in boot mode before doing the upgrade of the tool with the specified USB serial number
+* -r to report (i.e. no upgrade) version of upgrade candidate and version of currently loaded firmware
+* -f to force upgrade or downgrade (no version checking)
+* -V to print pydebuggerupgrade version number and exit
+* -m to use Microchip internal artifact server
+
+### Library
+pydebuggerupgrade can be used as a library using its "backend API".  For example:
+
+```
+# Print the pydebuggerupgrade version
+from pydebuggerupgrade.version import VERSION as pydebuggerupgrade_version
+print("pydebuggerupgrade version {}".format(pydebuggerupgrade_version))
+
+# Print the backend API version
+print("pydebuggerupgrade backend API version: {}".format(backend.get_api_version()))
+
+# Instantiate backend
+from pydebuggerupgrade.backend import Backend
+backend = Backend()
+
+# Choose from one of these:
+
+# Upgrade to latest published pack
+backend.upgrade_from_source(source="latest")
+
+# Upgrade with a specific zip
+backend.upgrade_from_source(source="nedbg_fw.zip", tool_name="nedbg")
+
+# Upgrade with a specific hex file
+backend.upgrade_from_source(source="nedbg.hex")
+
+```
+
+### Linux systems
+Create udev rules for the debuggers in DFU mode:
+```
+Example udev rules file
+Store in /etc/udev/rules.d
+
+# PKOB nano (nEDBG) in DFU mode - bootloader of debugger on Curiosity Nano
+SUBSYSTEM=="usb", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="2fc0", MODE="0666"
+```
+
+Note that the DFU mode udev rules comes in addition to the udev rules for the normal application mode (when the debuggers are not in boot mode).  These rules are detailed in the pyedbglib package.
+
+## Dependencies
+pydebuggerupgrade depends on pyedbglib for its transport protocol.  pyedbglib requires a USB transport library like libusb.  See pyedbglib package for more information.
+
+pydebuggerupgrade depend on pyusb for the USB communication with the DFU bootloader of the debugger.
+
+## Versioning
+pydebuggerupgrade version can be determined using the CLI:
+```
+pydebuggerupgrade -V
+```
+or using the library:
+```
+from pydebuggerupgrade.version import VERSION as pydebuggerupgrade_version
+print("pydebuggerupgrade version {}".format(pydebuggerupgrade_version))
+```
+In addition, the CLI-backend API is versioned for convenience:
+```
+from pydebuggerupgrade.backend import Backend
+backend = Backend()
+print("pydebuggerupgrade backend API version: {}".format(backend.get_api_version()))
+```
+
+
