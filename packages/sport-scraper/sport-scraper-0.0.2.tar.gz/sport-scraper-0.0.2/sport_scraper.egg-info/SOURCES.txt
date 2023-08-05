@@ -1,0 +1,7 @@
+README.md
+setup.py
+sport_scraper/__init__.py
+sport_scraper.egg-info/PKG-INFO
+sport_scraper.egg-info/SOURCES.txt
+sport_scraper.egg-info/dependency_links.txt
+sport_scraper.egg-info/top_level.txt
