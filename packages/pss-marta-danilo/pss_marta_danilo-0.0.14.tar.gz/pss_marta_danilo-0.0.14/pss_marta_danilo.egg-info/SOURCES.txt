@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pss-marta-danilo/main.py
+pss-marta-danilo/media.py
+pss-marta-danilo/popola_db.py
+pss-marta-danilo/scambia.py
+pss-marta-danilo/test_integration.py
+pss-marta-danilo/test_unit.py
+pss_marta_danilo.egg-info/PKG-INFO
+pss_marta_danilo.egg-info/SOURCES.txt
+pss_marta_danilo.egg-info/dependency_links.txt
+pss_marta_danilo.egg-info/top_level.txt
