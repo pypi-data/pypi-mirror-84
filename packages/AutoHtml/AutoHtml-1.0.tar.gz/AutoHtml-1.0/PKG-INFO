@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: AutoHtml
+Version: 1.0
+Summary: Create Html using Object Oriented Programming technique
+Home-page: https://github.com/nvaldeziii/AutoHtml
+Author: Noli Valdez III
+Author-email: nolivaldeziii@gmail.com
+License: gpl-3.0
+Download-URL: https://github.com/nvaldeziii/AutoHtml/archive/1.0.tar.gz
+Description: UNKNOWN
+Keywords: html,oop
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
