@@ -1,0 +1,7 @@
+lightgbm>=3.0.0
+xgboost
+fastai
+fastcore
+sklearn
+bayesian-optimization
+pathlib
