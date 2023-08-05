@@ -1,0 +1,16 @@
+wack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wack/app.py,sha256=pdsbi79OAiSMcE_gqUD-DsQXOKHkCahw9NvVEx7N_8U,2518
+wack/cli.py,sha256=fm-3nGcLablOvyEFilBx93QTaOaBDjTtWknCX83gDFU,4078
+wack/templates/.gitignore.jinja2,sha256=IaS7vkcvl73D79VJRmYdRuXsWIuYh6jWLh8Kz1aAhWw,71
+wack/templates/.pre-commit-config.yaml.jinja2,sha256=fpJJXW6SA1be2WfwH0HlrGvDkmGs9tm1WYyLC7WLemU,736
+wack/templates/.travis.yml.jinja2,sha256=TydbTWGvcHjQm8owFFlaRx8skQSVTLvUWQHCjsjfyXM,223
+wack/templates/LICENSE.jinja2,sha256=IhMlSwqrVSfkHsMbMMrrNEldv7f4xRUIbFVBrL1FmnI,1118
+wack/templates/setup.py.jinja2,sha256=LICkeZ-nLJMm1Uk9oMFHutfFGuZQZKlHi31YlaEDgkQ,1117
+wack/templates/upload.sh.jinja2,sha256=LaGvSkmUqoOoYjOoIYFZ4X7uQukOT9pUs8E4Di--MPw,203
+wack/templates/wack.py.jinja2,sha256=6jhZ1v4HV7bvcYTJcXMSA65p62f_V-Iu4Dy2dk0fwds,103
+Wack-0.2.0.dist-info/LICENSE.md,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+Wack-0.2.0.dist-info/METADATA,sha256=PSDKgdwIa0b-72O-zbMvF13V886RghEtgYHRrwxiDH0,2163
+Wack-0.2.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+Wack-0.2.0.dist-info/entry_points.txt,sha256=FawnERThhWcuQJEAFfUab2LzIxhHQ06wUctlWH2aVY0,57
+Wack-0.2.0.dist-info/top_level.txt,sha256=E16Iw7ewny3llLeMrzecZ4rn-redHs37AqI6DUMPTuw,5
+Wack-0.2.0.dist-info/RECORD,,
