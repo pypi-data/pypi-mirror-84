@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: img_en
+Version: 0.1
+Summary: It takes img and int zoom level and output zoomed image.
+Home-page: https://www.youtube.com/channel/UC_7_s7TPjHp2WgCJAbyKLOg
+Author: Sarthak Karki
+Author-email: srthk7338@gmail.com
+License: MIT
+Description: # image-enlarge
+        It takes img and int zoom level and output zoomed image.
+        
+        ##Installation
+        ```pip install img_en```
+        
+        ## How to use it?
+        
+        ## Example
+          ```
+           import img_en
+           #importing module
+        
+           img = img_en.load("image.jpg")
+           #loading image
+        
+           zoom = 2 
+           #declaring int value for level of zoom
+        
+           zoomimg = img_en.enlarge(img,zoom) 
+           #zooming image
+        
+           img_en.save("zoomimage.jpg",zoomimg)
+           #saving zoom image 
+        
+           img_en.show("title",zoomimg)
+           #displaying image
+        
+           img_en.wait(0)
+           #0 for stop
+           #1 for don't stop
+        
+Keywords: zoom
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
