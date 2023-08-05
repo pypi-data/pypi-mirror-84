@@ -1,0 +1,3 @@
+nengo
+nengo_spa==1.0.1
+numpy==1.18.5
