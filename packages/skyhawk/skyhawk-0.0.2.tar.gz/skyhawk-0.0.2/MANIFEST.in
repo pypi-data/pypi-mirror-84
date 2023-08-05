@@ -1,0 +1,9 @@
+include README.md
+include LICENSE
+include ChangeLog
+include requirements.txt
+include skyhawk/services Attendance.csv *
+include skyhawk/services/cascades .xml *
+exclude .gitignore
+exclude install.sh
+
