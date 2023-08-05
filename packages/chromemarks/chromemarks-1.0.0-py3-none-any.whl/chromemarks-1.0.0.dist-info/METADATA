@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: chromemarks
+Version: 1.0.0
+Summary: A Python library for accessing the local Google Chrome Bookmarks store.
+Home-page: https://github.com/JosXa/chrome-bookmarks
+Keywords: chrome,bookmarks,pydantic,python
+Author: JosXa
+Author-email: joscha.goetzer@gmail.com
+Requires-Python: >=3.7,<4.0.0
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Dist: pydantic (>=1.7.1,<2.0.0)
+Project-URL: Repository, https://github.com/JosXa/chrome-bookmarks
+Description-Content-Type: text/markdown
+
+
