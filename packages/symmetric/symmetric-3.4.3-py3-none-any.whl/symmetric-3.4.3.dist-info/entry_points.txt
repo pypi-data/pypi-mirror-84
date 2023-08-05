@@ -1,0 +1,3 @@
+[console_scripts]
+symmetric=symmetric.cli.core:dispatcher
+
