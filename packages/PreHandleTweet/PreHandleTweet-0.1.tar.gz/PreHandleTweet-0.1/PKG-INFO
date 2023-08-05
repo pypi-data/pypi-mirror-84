@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: PreHandleTweet
+Version: 0.1
+Summary: This Helps in handling and cleaning the tweet without hassles.
+Home-page: https://github.com/chattyy/PreHandleTweet
+Author: Eshan Chatty
+Author-email: eshunew@gmail.com
+License: MIT
+Download-URL: https://github.com/chattyy/PreHandleTweet/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: Tweet,PreProcess,NLTK
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
