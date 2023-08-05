@@ -1,0 +1,3 @@
+[console_scripts]
+flask_s3_viewer = flask_s3_viewer.cli:handle
+
