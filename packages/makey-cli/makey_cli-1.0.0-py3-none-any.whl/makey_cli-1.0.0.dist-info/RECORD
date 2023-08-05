@@ -1,0 +1,10 @@
+makeycli/__init__.py,sha256=iN2gVa6HIBIgcUIwDKbPWZqgsOkSZFaY42EoHGr24cU,36
+makeycli/makey.py,sha256=9N2joNfo31ZXAc5rs4JYP00vuPSn_LIZylFcXw5uF_E,1005
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_makey.py,sha256=wJyZK8Fxy6ImU6rVTHQj1eHVooIXdYtw9WbkpabkOzM,1254
+makey_cli-1.0.0.dist-info/LICENSE,sha256=w5_9ES9YApGwGDH4mlNpclce8iyL8eHzB_aI7MFWeyE,1071
+makey_cli-1.0.0.dist-info/METADATA,sha256=p-nSxofSH4Xxj5qVxbSWe1ecfmHmX-3AhyVxvNBNidQ,1965
+makey_cli-1.0.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+makey_cli-1.0.0.dist-info/entry_points.txt,sha256=HDZAVNQvvksjceyAo6FBrHVZNbeOp5ZRA0SJJGrAd9w,64
+makey_cli-1.0.0.dist-info/top_level.txt,sha256=-9P7IoX05YxXGCYeBYpDjNuO0ZPi1oJYED9s6tp1tok,15
+makey_cli-1.0.0.dist-info/RECORD,,
