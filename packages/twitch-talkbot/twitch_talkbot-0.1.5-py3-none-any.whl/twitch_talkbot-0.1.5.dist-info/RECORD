@@ -1,0 +1,12 @@
+twitch_talkbot/__init__.py,sha256=T3CunGpdNqcQ0xNf4-d9UqPANXPwVCtMiCxjDrrSP0w,143
+twitch_talkbot/__main__.py,sha256=TZdTBXf-CgmdmhKV9ivHNh4ZzG94osNy2je6FnhigO8,726
+twitch_talkbot/command_processor.py,sha256=B1zOstJMx15UfcVGil6BsVDZlYIuV2PU9CYVEpYOemA,6624
+twitch_talkbot/config.py,sha256=BcaiS9PkN0Z9WrNQyV8okJGPLiKpS_fmwIBbfaOavnk,2211
+twitch_talkbot/talkbot.py,sha256=da1ezJ7xm9FE0h307BssP9yGj67r7cJagiMbVuJgnUU,2780
+twitch_talkbot/text_to_speech.py,sha256=lYKFKewzXsFeYFP1nLwTWf7J50R_BLmBlOg8FvOaw7E,1343
+twitch_talkbot/tts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+twitch_talkbot/tts/pyttsx3_tts.py,sha256=xo8KHC7RNAgePMPYXCPlqTuyZ3bPL1OvhvQmyJBTmyo,1136
+twitch_talkbot-0.1.5.dist-info/METADATA,sha256=hajo_2KU4a7s-VkHokBOGamX0i0WrMcb2BzMgClA7NM,2786
+twitch_talkbot-0.1.5.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+twitch_talkbot-0.1.5.dist-info/top_level.txt,sha256=JLtsOUmOITyPZNuFfJmyR7TOYnYKCcop7YXnStFJLa0,15
+twitch_talkbot-0.1.5.dist-info/RECORD,,
