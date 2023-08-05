@@ -1,0 +1,10 @@
+README.md
+setup.py
+sentianalyse/DESCRIPTION.rst
+sentianalyse/__init__.py
+sentianalyse/core.py
+sentianalyse.egg-info/PKG-INFO
+sentianalyse.egg-info/SOURCES.txt
+sentianalyse.egg-info/dependency_links.txt
+sentianalyse.egg-info/requires.txt
+sentianalyse.egg-info/top_level.txt
