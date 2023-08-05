@@ -1,0 +1,12 @@
+PyMuPDF
+bleach
+bs4
+ebooklib
+html5lib
+lxml
+markdown
+numpy
+opencv-python
+praw
+pykakasi
+pyopenssl
