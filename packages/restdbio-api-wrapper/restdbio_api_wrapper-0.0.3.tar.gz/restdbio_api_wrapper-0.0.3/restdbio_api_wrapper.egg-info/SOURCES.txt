@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+restdbio_api_wrapper/Connection.py
+restdbio_api_wrapper/__init__.py
+restdbio_api_wrapper.egg-info/PKG-INFO
+restdbio_api_wrapper.egg-info/SOURCES.txt
+restdbio_api_wrapper.egg-info/dependency_links.txt
+restdbio_api_wrapper.egg-info/requires.txt
+restdbio_api_wrapper.egg-info/top_level.txt
