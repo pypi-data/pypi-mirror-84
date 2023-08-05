@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pyinsight-messager-pubsub
+Version: 0.0.1
+Summary: Insight Messager Module Pubsub
+Home-page: https://github.com/X-I-A/pyinsight-messager-pubsub
+Author: Soral
+Author-email: soral@x-i-a.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: pyinsight
+Requires-Dist: google-auth
+Requires-Dist: google-cloud-pubsub
+
+# Insight Module Pubsub Messager
+This is a Messager Plug-in of Insight Module
+
+
