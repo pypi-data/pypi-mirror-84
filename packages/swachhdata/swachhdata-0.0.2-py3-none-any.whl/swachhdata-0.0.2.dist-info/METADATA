@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: swachhdata
+Version: 0.0.2
+Summary: Package that cleans your data
+Home-page: https://github.com/kritikseth
+Author: Kritik Seth
+Author-email: sethkritik@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4
+Requires-Dist: contractions
+Requires-Dist: pycontractions
+Requires-Dist: regex
+Requires-Dist: emoji
+Requires-Dist: html2text
+Requires-Dist: html5lib
+Requires-Dist: httplib2
+Requires-Dist: lxml
+Requires-Dist: nltk
+Requires-Dist: num2words
+Requires-Dist: pycrypto
+Requires-Dist: textblob
+Requires-Dist: Unidecode
+Requires-Dist: unicode
+Requires-Dist: textsearch
+
+# SwachhData
+
+## Authors-
+* Kritik Seth
+
+
