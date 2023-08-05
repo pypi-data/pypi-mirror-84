@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: flme
+Version: 0.0.1
+Summary: flme: Wrapper of limetr for FHS.
+Home-page: https://github.com/ihmeuw-msca/lme-for-forecast
+Author: Jize Zhang
+Author-email: jizez@uw.edu
+License: BSD 2-Clause License
+Description: LimeTr Wrapper for Forecast Team
+        ================================
+        
+        .. image:: https://travis-ci.com/ihmeuw-msca/lme-for-forecast.svg?branch=master
+            :target: https://travis-ci.com/ihmeuw-msca/lme-for-forecast
+Platform: UNKNOWN
+Provides-Extra: docs
+Provides-Extra: test
+Provides-Extra: dev
