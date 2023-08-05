@@ -1,0 +1,9 @@
+README.md
+setup.py
+nate/__init__.py
+nate/py.typed
+nate/tags.py
+nate.egg-info/PKG-INFO
+nate.egg-info/SOURCES.txt
+nate.egg-info/dependency_links.txt
+nate.egg-info/top_level.txt
