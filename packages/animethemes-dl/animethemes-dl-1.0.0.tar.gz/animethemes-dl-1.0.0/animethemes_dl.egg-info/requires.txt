@@ -1,0 +1,4 @@
+pySmartDl
+eyed3
+requests
+colorama
