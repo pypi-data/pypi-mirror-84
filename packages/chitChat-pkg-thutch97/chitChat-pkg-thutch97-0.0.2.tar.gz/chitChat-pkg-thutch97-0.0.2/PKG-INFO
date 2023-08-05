@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: chitChat-pkg-thutch97
+Version: 0.0.2
+Summary: A python chat server package.
+Home-page: UNKNOWN
+Author: Tom Hutchinson
+Author-email: thomas.3.hutchinson@bt.com
+License: UNKNOWN
+Description: # chitChat Package
+        
+        A Python Chat Server Package.
+        
+        To run the server from the command line:
+        `python chitChat_package.server.py`
+        
+        To run a client from the command line:
+        `python chitChat_package.client.py`
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
