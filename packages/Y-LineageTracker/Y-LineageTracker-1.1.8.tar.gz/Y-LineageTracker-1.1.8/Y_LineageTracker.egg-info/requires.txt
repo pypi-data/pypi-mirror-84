@@ -1,0 +1,10 @@
+pandas
+numpy
+sklearn
+matplotlib
+ete3
+networkx
+BioPython
+pysam
+adjustText
+pygraphviz
