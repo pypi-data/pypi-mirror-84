@@ -1,0 +1,1 @@
+from .pubeasy import MakeFigure
