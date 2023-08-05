@@ -1,0 +1,60 @@
+Debug info:
+* handle data streams of hard links
+** determine what to do with hard links, since they have their own identifier
+
+* add support for resource fork data stream
+* add support for extended attribute (named fork) data stream
+
+* on file_entry_initialize lookup com.apple.decmpfs specifically instead of all attributes?
+
+* ensure traditional HFS input errors for now
+
+* add support for name in catalog B-tree key compare
+
+* what about a directory with extended attributes?
+** what if that attribute is named com.apple.decmpfs ?
+
+* file entry API: add extents functions
+
+* catalog btree file, include name in branch key check
+
+* add support to print information about special files (those without a catalog record)
+
+* can the metadata B-tree files require additional extents?
+* split HFS and HFS+ documentation?
+
+Format support:
+* implement traditional HFS support
+* implement support for file information
+* implement support for extended file information
+* implement support for folder information
+* implement support for extended folder information
+
+20160605
+* see `git log' for more recent change log
+* worked on format support
+
+20160604
+* worked on format support
+
+20160603
+* worked on format support
+
+20160228
+* worked on format support
+
+20160227
+* worked on format support
+
+20160226
+* worked on format support
+
+20160220
+* worked on format support
+
+20160217
+* 2016 update
+
+20090212
+* Initial version
+
