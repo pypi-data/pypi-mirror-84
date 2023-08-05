@@ -1,0 +1,7 @@
+README.md
+setup.py
+lazydep/__init__.py
+lazydep.egg-info/PKG-INFO
+lazydep.egg-info/SOURCES.txt
+lazydep.egg-info/dependency_links.txt
+lazydep.egg-info/top_level.txt
