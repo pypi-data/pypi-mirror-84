@@ -1,0 +1,49 @@
+{% extends "base.html"%}
+
+{% block pagebody %}
+<div class="row login-page" style="flex-direction: row">
+    <div class="col m3"></div>
+    <div class="col s12 m6 center-align login-container">
+        <div class="card">
+            <div class="card-image">
+                <img src="{{ url_for('static', filename='img/cinema.jpg') }}">
+            </div>
+            <div class="card-content">
+                <div class="content">
+                    <span class="card-title">Registra un nuovo account</span>
+                    {% with messages = get_flashed_messages(category_filter=["user-error"]) %}
+                        {% if messages[0] %}
+                            <p class="red-text">{{messages[0]}}</p>
+                        {% endif %}
+                    {% endwith %}
+                    <form action="/registration" method="POST">
+                        <div class="input-field">
+                            <input id="email" name="email" type="text" class="validate" value="{{regForm.email|default('')}}">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="firstName" name="firstName" type="text" class="validate" value="{{regForm.firstName|default('')}}">
+                            <label for="firstName">Nome</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="lastName" name="lastName" type="text" class="validate" value="{{regForm.lastName|default('')}}">
+                            <label for="lastName">Cognome</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="password" name="password" type="password" class="validate" value="{{regForm.password|default('')}}">
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="card-action center-align">
+                            <button class="btn waves-effect waves-light" type="submit">Registrati</button>
+                        </div>
+                        <div class="card-action center-align">
+                            <a href="/login">Possiedi già un account? Accedi!</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col m3"></div>
+</div>
+{% endblock %}
