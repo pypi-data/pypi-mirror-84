@@ -1,0 +1,8 @@
+cssselect2/__init__.py,sha256=tYBtsoXCVVuMYMZZ3tZIGt34ocJFmpA2qvgu_AioI08,3860
+cssselect2/compiler.py,sha256=s3QWX3xMFHQ7kZFOGfIMooSa7LtguUX5kCCL70xTxxc,14076
+cssselect2/parser.py,sha256=RhzwMYF7iIFiWrFWrw4VsLvNwlTY_u4SpatxdQ3VG8M,13204
+cssselect2/tree.py,sha256=arI5KdIPoLRxzGSzHK2FnONm7ug7mpiXQqQBQScC4bo,12307
+cssselect2-0.4.0.dist-info/LICENSE,sha256=b9lyKaHRsPaotB4Qn0E0JtvAh0seA3RtZswzKCYBwsI,1548
+cssselect2-0.4.0.dist-info/WHEEL,sha256=CqyTrkghQBNsEzLD3HbCSEIJ_fY58-XpoU29dUzwHSk,81
+cssselect2-0.4.0.dist-info/METADATA,sha256=jxCX2_krMlL6BcK8iYFTBwKueziz0hqh8aUTPHtqFT4,1699
+cssselect2-0.4.0.dist-info/RECORD,,
