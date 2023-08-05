@@ -1,0 +1,3 @@
+[console_scripts]
+apipt = apipt.app:main
+
