@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: discord-autorooms
+Version: 4.1.0
+Summary: Zero Config Autoroom Discord Bot
+Home-page: https://github.com/mikeshardmind/autorooms
+Author: Michael Hall
+Author-email: michael@michaelhall.tech
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: AsyncIO
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Communications :: Chat
+Classifier: Natural Language :: English
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Requires-Dist: discord.py (<2,>=1.5.1)
+Provides-Extra: uvloop
+Requires-Dist: uvloop ; extra == 'uvloop'
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+
+**WARNING**
+Do not use this bot if you have any channels beginning with the '♻' character and care about those channels, the bot uses this character to denote temporary channels.
+
+# (Quick) How to
+
+```
+python3.8 -m pip install git+git://github.com/mikeshardmind/autorooms.git@latest
+AUTOROOMTOKEN='your discord bot token here' discord-autorooms
+```
+
+
