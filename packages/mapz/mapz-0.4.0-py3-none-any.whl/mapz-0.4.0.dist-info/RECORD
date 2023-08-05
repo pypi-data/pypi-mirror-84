@@ -1,0 +1,11 @@
+mapz/__init__.py,sha256=m3wfGSbS2k6qW4_yuvdjrg4pOO7HnCfaIvfsxlSxt5w,132
+mapz/base.py,sha256=PtK5Bc9KFDIdV87VRWkvSnYHQaQwgdYaJcBCMCM-vZ0,97
+mapz/mapz.py,sha256=UdUP6kTSMIpJ704FLPd8Y5_BHlhyVJwK_tJMfUerqvI,405
+mapz/methods.py,sha256=Mzqys9Ef4F1L-Bo3YVIPWhoNdF6bQkY2QjqRYZwxRW8,9062
+mapz/modificators.py,sha256=H2N8SYKtRjaWqQ5rw37OXAxBB52sRg-8Pm3N7AWwPnQ,1041
+mapz/table.py,sha256=KSjBr-k1QT1lxBEf3uTZR1cWdRaVhkmf4jWGu1fwhOs,1137
+mapz/tests/debug.py,sha256=WLcBDOmXvlUN6U-YGe0174ZpgE1QKMoyt7pAT5akBVs,341
+mapz/tests/test_get.py,sha256=RXPgv4OFE6q72qgwAtmm5-3EhkWjmzCKBrft7c1-YuQ,1502
+mapz-0.4.0.dist-info/WHEEL,sha256=1Wv1-j00YAJKW7-71pMbcybYgVOmSGd4AVtGoeL4spQ,86
+mapz-0.4.0.dist-info/METADATA,sha256=R70ka6hV5NlUyJyywTzqXJIYkvnylXURQ2dMqUIdt44,371
+mapz-0.4.0.dist-info/RECORD,,
