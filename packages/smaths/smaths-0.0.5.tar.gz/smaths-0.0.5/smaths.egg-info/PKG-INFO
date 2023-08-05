@@ -1,0 +1,40 @@
+Metadata-Version: 1.1
+Name: smaths
+Version: 0.0.5
+Summary: Smaths stands for SquareMATH. Algorithm written exclusively in Python and used to simplify square roots
+Home-page: https://github.com/ThatScode24/Math/blob/main/smath.py
+Author: Mihai Focsa
+Author-email: saftuberraschung@gmail.com
+License: MIT
+Description: # Square Root Simplification algorithm
+        
+        
+        
+        Smaths stands for SquareMATH. Algorithm written exclusively in Python and used to simplify square roots
+        
+        
+        
+        # How To Use
+        
+        
+        Firstly, import the spl function from the file (from smath import spl). Then, call the spl() function and parse in a string argument; for example if you want the square root of 125, you would parse in "!125"; note this is using the ! instead of the âˆš (that char is not on the keyboard). If you want the simplification of 5âˆš125, you would parse "5!125".
+        
+        
+        Also note the function returns a string value.
+        
+        
+        Change Log
+        
+        ==========
+        
+        0.0.5 (10/31/2020)
+        ------------------
+        
+        -Repaired the âˆšroot returning root instead of âˆšroot if simplification is not possible
+Keywords: simplificator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
