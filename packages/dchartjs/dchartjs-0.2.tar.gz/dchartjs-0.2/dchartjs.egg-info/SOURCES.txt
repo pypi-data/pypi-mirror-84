@@ -1,0 +1,8 @@
+README.md
+setup.py
+dchartjs/__init__.py
+dchartjs/basic_chart.py
+dchartjs.egg-info/PKG-INFO
+dchartjs.egg-info/SOURCES.txt
+dchartjs.egg-info/dependency_links.txt
+dchartjs.egg-info/top_level.txt
