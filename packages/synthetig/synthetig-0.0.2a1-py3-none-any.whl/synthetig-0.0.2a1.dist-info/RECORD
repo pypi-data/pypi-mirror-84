@@ -1,0 +1,16 @@
+synthetig/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+synthetig/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+synthetig/data/demo_data.py,sha256=RdYLOE3S7xAGr29onCAHXhIIF1c5qzYQM9iXlK9u_-8,237
+synthetig/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+synthetig/models/CTGAN/__init__.py,sha256=i2YQkyhqEHQIxS8DYuRKeoH9WO-pCwwukpCRalqikys,75
+synthetig/models/CTGAN/conditional.py,sha256=olgGdpbhADA9ROCFRhqgrR4BOFelGxfL7Fz1c3Y224U,3626
+synthetig/models/CTGAN/data.py,sha256=yTgoszzcCxU2xVNDAlAg2x0CubNKLhMvMXyUNZNXTBo,1210
+synthetig/models/CTGAN/model.py,sha256=DSXxLal6zDxGo9MkPCgjtqQAYXEzpnifN6sj6L9ur5A,9598
+synthetig/models/CTGAN/models.py,sha256=5bSBfXvQUSCysyaz8t1KbPS_9Oje_3_GHYS7WnOEs7E,2270
+synthetig/models/CTGAN/sampler.py,sha256=C5P2r-synQeTKl3u1m3AXBDeMgs3TJtgcvbLyCA4MDk,1212
+synthetig/models/CTGAN/transformer.py,sha256=FHRlCwrzBv2VOyZaupxz9HD7DeSDnqtHkL8igzJtWhI,8227
+synthetig-0.0.2a1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+synthetig-0.0.2a1.dist-info/METADATA,sha256=zWed8Q-IJj-dlsrErVDvwa3nXuDAelXQME2VoWEW1j8,4210
+synthetig-0.0.2a1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+synthetig-0.0.2a1.dist-info/top_level.txt,sha256=1p1Z0Bq4VU8X1Vdh3y3qnM14NmeOF0GZtqaBijjqUZk,10
+synthetig-0.0.2a1.dist-info/RECORD,,
