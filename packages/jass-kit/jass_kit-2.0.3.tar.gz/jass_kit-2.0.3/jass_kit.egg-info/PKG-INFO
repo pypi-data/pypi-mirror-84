@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: jass-kit
+Version: 2.0.3
+Summary: Package for the game of jass
+Home-page: UNKNOWN
+Author: ABIZ HSLU
+Author-email: thomas.koller@hslu.ch
+License: UNKNOWN
+Description: # jass-kit-py
+        
+        Base components to program agents for the game of jass (https://en.wikipedia.org/wiki/Jass)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
