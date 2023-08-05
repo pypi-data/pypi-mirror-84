@@ -1,0 +1,5 @@
+{% if fa_icon %}
+<div class='{{ div_class }}'{% if div_id %} id='{{ div_id }}'{% endif %}><a {% if link_class %}class='btn {{ link_class }}'{% endif %} {% if id %} id='{{ id }}'{% endif %} href='#' onclick="{{ onclick }}"><i class="{{ fa_class }} {{ fa_icon }}" aria-hidden="{{ aria_hidden }}"></i>&nbsp;{{ caption }}</a></div>
+{% else %}
+<div class='{{ div_class }}'{% if div_id %} id='{{ div_id }}'{% endif %}><a {% if link_class %}class='btn {{ link_class }}'{% endif %} {% if id %} id='{{ id }}'{% endif %} href='#' onclick="{{ onclick }}">{{ caption }}</a></div>
+{% endif %}

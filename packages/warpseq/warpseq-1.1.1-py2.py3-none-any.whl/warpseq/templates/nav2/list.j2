@@ -1,0 +1,15 @@
+<div class="nav2_contents">
+
+<input type="hidden" id="current_category" name="current_category" value="{{ category }}"/>
+
+<table>
+{% for item in items %}
+<tr>
+<td class="nav2_item" id="nav2_item_{{item.obj_id}}"><span class="{{category}}s_{{ item.obj_id}}_indicator"><i class="fas fa-bolt"></i></span>&nbsp;<a href="#" onclick="load_{{ category }}_item('{{ item.obj_id }}')">{{ item.name }}</a></td>
+</tr>
+{% endfor %}
+{% if category != 'device' %}
+<tr><td class="nav2_item" id="nav2_item_new"><a href="#" onclick="new_{{ category }}_item()"><i class="fas fa-plus" aria-type="hidden"></i>&nbsp;New</a></td></tr>
+{% endif %}
+</table>
+</div>
