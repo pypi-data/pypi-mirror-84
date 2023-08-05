@@ -1,0 +1,2 @@
+Flask
+SQLAlchemyFlask-Loginpython-dotenvpsycopg2-binarywerkzeug
