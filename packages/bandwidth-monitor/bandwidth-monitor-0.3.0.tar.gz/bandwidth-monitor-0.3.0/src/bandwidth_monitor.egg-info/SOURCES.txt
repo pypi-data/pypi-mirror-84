@@ -1,0 +1,12 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+src/bandwidth_monitor/__init__.py
+src/bandwidth_monitor/__main__.py
+src/bandwidth_monitor.egg-info/PKG-INFO
+src/bandwidth_monitor.egg-info/SOURCES.txt
+src/bandwidth_monitor.egg-info/dependency_links.txt
+src/bandwidth_monitor.egg-info/requires.txt
+src/bandwidth_monitor.egg-info/top_level.txt
+src/bandwidth_monitor.egg-info/zip-safe

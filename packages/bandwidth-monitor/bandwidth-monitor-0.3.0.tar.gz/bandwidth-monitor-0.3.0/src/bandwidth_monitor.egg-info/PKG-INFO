@@ -1,0 +1,47 @@
+Metadata-Version: 1.2
+Name: bandwidth-monitor
+Version: 0.3.0
+Summary: A wrapper for speedtest.net to get time-series data on local bandwidth availability.
+Home-page: https://github.com/mburszley/bandwidth-monitor
+Author: Maximilian Burszley
+Author-email: mburszley@gmail.com
+License: MIT
+Description: bandwidth-monitor
+        =================
+        A wrapper for |speedtest|_ to get time-series data on local bandwidth
+        availability.
+        
+        As a default, the scheduler will run hourly at the top of the hour and store
+        output in a local ``sqlite3`` database named ``bandwidth.db``.
+        
+        Inspired by |@jsphWllng|_'s article `"Monitor your internet with python"
+        <https://pythonprogramming.org/monitor-your-internet-with-python/>`_.
+        
+        Usage
+        =====
+        
+        .. code-block:: bash
+        
+        	$ pip install --user git+https://github.com/mburszley/bandwidth-monitor.git@main#egg=bandwidth-monitor
+        	$ python -m bandwidth_monitor
+        
+        ..
+        	a terrible hack: https://docutils.sourceforge.io/FAQ.html#is-nested-inline-markup-possible
+        
+        .. |speedtest| replace:: ``speedtest.net``
+        .. _speedtest: https://www.speedtest.net/
+        
+        .. |@jsphWllng| replace:: ``@jsphWllng``
+        .. _@jsphWllng: https://pythonprogramming.org/jsphwllng/
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: System :: Networking :: Monitoring
+Classifier: Typing :: Typed
+Requires-Python: >=3.6.0
