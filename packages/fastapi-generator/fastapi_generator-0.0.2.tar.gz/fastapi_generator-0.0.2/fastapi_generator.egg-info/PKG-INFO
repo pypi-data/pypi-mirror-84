@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: fastapi-generator
+Version: 0.0.2
+Summary: Used to quickly generate fastapi project.
+Home-page: https://github.com/StevenLianaL/fastapi_generator
+Author: Steven Wang
+Author-email: wangzhou8284@outlook.com
+License: UNKNOWN
+Description: # Document
+        ## Description
+        - This project is used to quickly generate fastapi project.
+        ## Requirements
+        - python 3.8
+        ## Version
+        - 0.0.2 
+            - create main app files 
+        - 0.0.1
+            - only create app/main.py
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
