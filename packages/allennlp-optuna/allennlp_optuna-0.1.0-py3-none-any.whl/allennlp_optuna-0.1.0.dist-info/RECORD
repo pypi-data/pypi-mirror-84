@@ -1,0 +1,6 @@
+allennlp_optuna/__init__.py,sha256=jlIfvw_5DfD61VtAeeEMMvQobIGq8NgiqDouIhcl-kc,63
+allennlp_optuna/commands/__init__.py,sha256=iS1Ta0e_caIs4GGUQbrRxKoT0mFWckribf84B4umGd8,61
+allennlp_optuna/commands/allenopt.py,sha256=7iLdzh_FkMBwn-bmAdqvxMX-JkqhxENG2C-2vACvYrc,9588
+allennlp_optuna-0.1.0.dist-info/WHEEL,sha256=Q99itqWYDhV793oHzqzi24q7L7Kdiz6cb55YDfTXphE,84
+allennlp_optuna-0.1.0.dist-info/METADATA,sha256=fY-peUJEiQHwzcFf0VcEU6Gfs-0EPr7115IhUqeJH08,368
+allennlp_optuna-0.1.0.dist-info/RECORD,,
