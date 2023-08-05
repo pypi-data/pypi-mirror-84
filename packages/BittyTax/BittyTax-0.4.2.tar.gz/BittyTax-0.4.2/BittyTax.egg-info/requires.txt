@@ -1,0 +1,9 @@
+python-dateutil
+requests
+pyyaml
+xlrd
+xlsxwriter
+jinja2
+xhtml2pdf
+colorama
+tqdm
