@@ -1,0 +1,9 @@
+README.md
+setup.py
+tugopdf/__init__.py
+tugopdf/pdf2image.py
+tugopdf/pdf2text.py
+tugopdf.egg-info/PKG-INFO
+tugopdf.egg-info/SOURCES.txt
+tugopdf.egg-info/dependency_links.txt
+tugopdf.egg-info/top_level.txt
