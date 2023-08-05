@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyinsight_depositor_firestore/__init__.py
+pyinsight_depositor_firestore/firestore_depositor.py
+pyinsight_depositor_firestore.egg-info/PKG-INFO
+pyinsight_depositor_firestore.egg-info/SOURCES.txt
+pyinsight_depositor_firestore.egg-info/dependency_links.txt
+pyinsight_depositor_firestore.egg-info/requires.txt
+pyinsight_depositor_firestore.egg-info/top_level.txt
