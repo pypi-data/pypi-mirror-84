@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Kelivery
+Version: 0.0.1
+Summary: Make your own custom installer with Kelivery.
+Home-page: https://github.com/porplax/Kelivery-Module
+Author: Zayne
+Author-email: saynemarsh9@gmail.com
+License: UNKNOWN
+Description: # Introduction
+        Delivery is a software module that allows creation of Custom Installers
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
