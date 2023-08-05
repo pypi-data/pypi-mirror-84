@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+kmersfasta/__init__.py
+kmersfasta/utils.py
+kmersfasta.egg-info/PKG-INFO
+kmersfasta.egg-info/SOURCES.txt
+kmersfasta.egg-info/dependency_links.txt
+kmersfasta.egg-info/requires.txt
+kmersfasta.egg-info/top_level.txt
