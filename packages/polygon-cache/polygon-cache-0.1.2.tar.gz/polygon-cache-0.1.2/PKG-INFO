@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: polygon-cache
+Version: 0.1.2
+Summary: A package that caches polygon API calls and seamlessly calls the API multiple times to get all requested data.
+License: MIT
+Author: raymond-devries
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: polygon-api-client (>=0.1.6,<0.2.0)
+Requires-Dist: pytz (>=2020.1,<2021.0)
+Requires-Dist: requests-cache (>=0.5.2,<0.6.0)
+Description-Content-Type: text/markdown
+
+# Polygon Cache
+
+![Tests](https://github.com/raymond-devries/polygon-cache/workflows/Tests/badge.svg)
+
+This a very specific package that is wrapper over the polygon python sdk to allow for caching of historical data calls. This package will also automatically calculate and combine multiple calls to get all requested historical data. 
+
