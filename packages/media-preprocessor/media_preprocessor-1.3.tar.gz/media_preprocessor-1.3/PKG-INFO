@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: media_preprocessor
+Version: 1.3
+Summary: tool for preprocessing media
+Home-page: https://github.com/harshh-mahajan/media_preprocessor
+Author: Harsh Mahajan, Akash Patil, Pranit Shriyan, Jayesh Singh, Shankh Suri, Tazeem Khan
+Author-email: harsh.mahajan28@nmims.edu.in
+License: MIT
+Download-URL: https://github.com/harshh-mahajan/media_preprocessor/archive/1.3.tar.gz
+Description: UNKNOWN
+Keywords: image,preprocessing,reshape,resize,background
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
