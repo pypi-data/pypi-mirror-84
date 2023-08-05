@@ -1,0 +1,8 @@
+voluptuous
+click
+pyaml
+colorama
+
+[test]
+flake8
+tox
