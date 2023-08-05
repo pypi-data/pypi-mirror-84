@@ -1,0 +1,3 @@
+[sphinx.html_themes]
+sphinx_funtoo_theme = sphinx_funtoo_theme
+
