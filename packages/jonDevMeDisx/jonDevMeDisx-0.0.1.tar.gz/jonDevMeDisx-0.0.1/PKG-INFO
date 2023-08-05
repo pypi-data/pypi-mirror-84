@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: jonDevMeDisx
+Version: 0.0.1
+Summary: A very basic calculator
+Home-page: UNKNOWN
+Author: Jeff wisdom
+Author-email: jeffwisdom@hotmal.com
+License: MIT
+Description: 
+        
+        
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

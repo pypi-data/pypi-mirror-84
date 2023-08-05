@@ -1,0 +1,9 @@
+MANIFEST.in
+__init__.py
+changelog.txt
+license.txt
+setup.py
+jonDevMeDisx.egg-info/PKG-INFO
+jonDevMeDisx.egg-info/SOURCES.txt
+jonDevMeDisx.egg-info/dependency_links.txt
+jonDevMeDisx.egg-info/top_level.txt
