@@ -1,0 +1,26 @@
+# zanon
+
+A module to anonymize data streams with zero-delay.
+
+When instantiating the *zanonymity* object the constructor receives a $\Delta t$ in seconds and a value for $z$.
+
+The *anonymize()* method accepts a string in the form of a triple $(t,u,a)$ - meaning that at time $t$ a user $u$ exposes an attribute $a$ - and a file object. 
+
+If the triple exposes an attribute that has not been exposed by other $z$ - 1 users in the past $deltat$ the triple is simply ignored. Otherwise, the triple is printed on the file object.
+
+## example of usage
+```
+from zanonymity import zanon
+
+file = "trace_products.txt"
+deltat = 3600 #in seconds
+z = 20
+
+z = zanon.zanon(deltat,z)
+f = open('simulation_output.txt', 'w+')
+
+for line in open(file, 'r'):
+	z.anonymize(line,f)
+
+f.close()
+```
