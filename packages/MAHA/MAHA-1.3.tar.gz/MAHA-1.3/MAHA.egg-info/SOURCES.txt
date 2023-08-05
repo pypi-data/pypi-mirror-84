@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+MAHA/MAHA.py
+MAHA/__init__.py
+MAHA.egg-info/PKG-INFO
+MAHA.egg-info/SOURCES.txt
+MAHA.egg-info/dependency_links.txt
+MAHA.egg-info/requires.txt
+MAHA.egg-info/top_level.txt
