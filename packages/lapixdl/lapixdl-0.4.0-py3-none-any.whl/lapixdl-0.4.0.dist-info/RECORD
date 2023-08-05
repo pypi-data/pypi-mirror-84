@@ -1,0 +1,17 @@
+lapixdl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lapixdl/evaluation/__init__.py,sha256=tAsWz5sqf0nhcVZzSEJHm5nAPV-gIT1bp5R5CgnwF4c,142
+lapixdl/evaluation/evaluate.py,sha256=Yw6US4KFc6ha3dSRaVj1Mx8uTkJ6U6dXsgmr-TKJy_4,3332
+lapixdl/evaluation/model.py,sha256=YvRar2M5trvSXzqaHs-Sfxn5WbeVEsQImBJO_CHFqfA,13722
+lapixdl/evaluation/plot.py,sha256=L2_JgWWStk0_AYQvCAf9wZFL4Ppo12eYU4Y61yFMxVU,693
+tests/evaluation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/evaluation/evaluate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/evaluation/evaluate/test_evaluate_classification.py,sha256=UVKy4BH91buq5pih8-3T70EZBHicVRmasKKzELkA13M,719
+tests/evaluation/evaluate/test_evaluate_segmentation.py,sha256=Y1zXDrYjMQ7hjOPdFuqxLrIV3v6vkjuB19YuUhQ5GUs,2794
+tests/evaluation/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/evaluation/model/test_BinaryClassificationMetrics.py,sha256=ovytmp2_9Lx0undkJNhZEzLqXVkAaLzGJr6jtbzVPYo,1118
+tests/evaluation/model/test_ClassificationMetrics.py,sha256=iD7FuMFl94Ow2bhkefZr4ywRU6aUrtFSJm_fW1_44XU,2845
+lapixdl-0.4.0.dist-info/LICENCE,sha256=El4qS7mEDuC1cbQPatwRgHQTaZVvK5qABm5LEdnkBbM,1048
+lapixdl-0.4.0.dist-info/METADATA,sha256=psNL7_k1xQQ8BMvabfjLnF-Fu7YiEH7jPz0iDMcchmo,2257
+lapixdl-0.4.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+lapixdl-0.4.0.dist-info/top_level.txt,sha256=5fY3Cwz1N-CHEKdop6JAKpHgCq3Q-JqAIdbFAlNdgtM,14
+lapixdl-0.4.0.dist-info/RECORD,,
