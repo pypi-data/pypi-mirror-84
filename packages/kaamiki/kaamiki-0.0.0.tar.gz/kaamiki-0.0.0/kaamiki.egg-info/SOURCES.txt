@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+kaamiki/__init__.py
+kaamiki.egg-info/PKG-INFO
+kaamiki.egg-info/SOURCES.txt
+kaamiki.egg-info/dependency_links.txt
+kaamiki.egg-info/not-zip-safe
+kaamiki.egg-info/requires.txt
+kaamiki.egg-info/top_level.txt
