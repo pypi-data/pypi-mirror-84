@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+after_class/__init__.py
+after_class/metricians.py
+after_class/reporters.py
+after_class.egg-info/PKG-INFO
+after_class.egg-info/SOURCES.txt
+after_class.egg-info/dependency_links.txt
+after_class.egg-info/requires.txt
+after_class.egg-info/top_level.txt
+after_class/report_templates/basic_report.html
+after_class/report_templates/worst_samples_report.html
