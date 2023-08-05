@@ -1,0 +1,11 @@
+gridsource/__init__.py,sha256=xwaKE2XsmXYiCJcHt18RN09kz8qqAnQV-PC_QfgiqKY,644
+gridsource/cli.py,sha256=QEQl4NFnLkpUWJF-zcQagnE0CMTfwBKjapHdAcYWu-w,4153
+gridsource/io.py,sha256=2Iabpg8aOISm9NAERdfCH1jDrt7ZM3oaVH-SRauyMQ0,11795
+gridsource/validation.py,sha256=-L0beskdm259vRG4K-mPRv6QJAe5stCioes8wyVyL7c,9493
+gridsource-0.15.0.dist-info/AUTHORS.rst,sha256=X5AqA4Ffeti2yFkfSZ-9ZSdGP4uNb0VhNWkGy7AwdxY,153
+gridsource-0.15.0.dist-info/LICENSE,sha256=YNc5tLb846XekZZQAgP33R7feYsHwnLU4aIzfXZFGE8,1074
+gridsource-0.15.0.dist-info/METADATA,sha256=8irbppwAtdwUsy_CWG_oUn8Dk1KPKz_Dq2ioyBu80Fg,966
+gridsource-0.15.0.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+gridsource-0.15.0.dist-info/entry_points.txt,sha256=DH0nMMsrrxhggsGuglQqxuWJclRdJQbyHMWCT5w8J5g,49
+gridsource-0.15.0.dist-info/top_level.txt,sha256=_XkOsq14ZC2btaPJS86A-a7iADIkZxfUvqMpO9wP_Ig,11
+gridsource-0.15.0.dist-info/RECORD,,
