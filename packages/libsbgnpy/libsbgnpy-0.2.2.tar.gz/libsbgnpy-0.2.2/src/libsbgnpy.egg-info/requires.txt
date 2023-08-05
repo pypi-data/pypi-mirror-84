@@ -1,0 +1,10 @@
+lxml
+requests
+
+[development]
+black
+bump2version
+isort
+tox
+pytest>=6.1
+pytest-cov>=2.8.1
