@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: convrsn
+Version: 0.0.3
+Summary: A conversion package
+Home-page: UNKNOWN
+Author: Stanley Ndagi
+Author-email: ndagis@gmail.com
+License: MIT
+Description: A package that makes it easy to convert values between several units of measurement
+Keywords: conversion
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
