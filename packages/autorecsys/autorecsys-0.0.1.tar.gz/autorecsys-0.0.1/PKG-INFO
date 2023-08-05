@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: autorecsys
+Version: 0.0.1
+Summary: AutoRec: An Automated Recommender System
+Home-page: https://github.com/datamllab/AutoRec.git
+Author: DATA Lab@Texas A&M University
+Author-email: thwang1231@tamu.edu
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: automated machine learning,recommender systems,neural architecture search
+Platform: UNKNOWN
