@@ -1,0 +1,13 @@
+pymsis/msis2.0.parm,sha256=z2Enlq8E9HP8mxRFRgwwqkl83JyZHTUHGQiTV3wSRgI,536576
+pymsis/msis2f.cpython-38-x86_64-linux-gnu.so,sha256=7wPcnwe-b7IfF6R8Dsldd-trAyXJo_v7KSjnP2OCcaI,365400
+pymsis/__init__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+pymsis/msis00f.cpython-38-x86_64-linux-gnu.so,sha256=fPlRwBmoUpUyPYwjDSAAwdZqpMruCrU6LE1gf4HKzJ8,584312
+pymsis/msis.py,sha256=6vpXbhLdfrQ_WScZTw896rJo9_6zqs17Xpjdjy9xd50,7953
+pymsis.libs/libgfortran-2e0d59d6.so.5.0.0,sha256=oj0CJ-MJIF4LU9y6QOWX4-PPjsDurhRs-ZZlDFGtuHA,2260064
+pymsis.libs/libquadmath-2d0c479f.so.0.0.0,sha256=nw_dV1mLMDFbFsMwYHIwErTgu6dsMaBajxJfe8TohIA,263992
+pymsis.libs/libz-eb09ad1d.so.1.2.3,sha256=Occ38Rdxpnqlv4lgkj2inrjERnLkx0ig9Kb0Ce5GMQ4,92080
+pymsis-0.2.0.dist-info/RECORD,,
+pymsis-0.2.0.dist-info/METADATA,sha256=O5ItOdh4PXhPiSvxCNFx0eN7vjX1GccCYJf118BzJmw,3200
+pymsis-0.2.0.dist-info/top_level.txt,sha256=TiYeKYHnA9nfW3aAzoqJpgM341ljEG0AymtrZvFSGeQ,7
+pymsis-0.2.0.dist-info/WHEEL,sha256=3Rn77v1cOIQWUJHbJxwJJ4HycjuBQ6DIO-hbFDX-kLU,111
+pymsis-0.2.0.dist-info/LICENSE,sha256=_3eysSRx2Avy9qabEr7DlkxzKEXptSXe2pT_Q9AyYgM,1095
