@@ -1,0 +1,15 @@
+jupyter_js_tools/__init__.py,sha256=UqcwCx3IhrbBRKYv4IBkQiyupuMHBhitmEW26Ilrcrs,85
+jupyter_js_tools/carbon.py,sha256=6one9zt-kxKzyG43IaqaQNu5JvsVKHXCophkZUPIc-w,526
+jupyter_js_tools/tic_tac_toe.py,sha256=9pz4YgloGQK43WNMStBirKHq4oiwu8CgDwAH36UR-BU,843
+jupyter_js_tools/__pycache__/__init__.cpython-38.pyc,sha256=mthH14PsMFojjdtop9DGl0XVKuCQvFGUT--MyBHjmWc,285
+jupyter_js_tools/__pycache__/carbon.cpython-38.pyc,sha256=syjjlYu-6TMDlD6XTt_l7gh3ZvBpo9_moUKrHKTwi1E,846
+jupyter_js_tools/__pycache__/tic_tac_toe.cpython-38.pyc,sha256=DbIcRTQF4E712-MXyCfPbpQUi5LLKE3CcI4to35V2nM,1139
+jupyter_js_tools/carbon/index.html,sha256=vNyC-9Ba3AFEPE4mU0llKTVBLMbQJwMq0EEV56N-p9U,131
+jupyter_js_tools/carbon/index.js,sha256=7AWmYpGZYFIItXcHrG4FipVvZHyEtdEtq5fjnhLO33I,248
+jupyter_js_tools/carbon/require.js,sha256=vbeSSEYTNVfqC_Siia0EQnGPsCrtKYufyaSCFfPVsgg,91
+jupyter_js_tools/tic_tac_toe/index.html,sha256=B2QftWyYaFMwu48CZ9Rc079_nhpIQjFztAshFKhz--A,364
+jupyter_js_tools/tic_tac_toe/index.js,sha256=TnivFFm-2dAYBwXuOjojIy8DpVClL0kSPxS03Bsz2sU,6268
+jupyter_js_tools-0.2.0.dist-info/METADATA,sha256=09oMHrETKYmb3wsDfEaTBAdhOcJsVQNyC86OG5HVpWk,1581
+jupyter_js_tools-0.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+jupyter_js_tools-0.2.0.dist-info/top_level.txt,sha256=Srkd4e_ln_gAVD0U6WfuICRAM_2dIks4haGD2ZjELN8,17
+jupyter_js_tools-0.2.0.dist-info/RECORD,,
