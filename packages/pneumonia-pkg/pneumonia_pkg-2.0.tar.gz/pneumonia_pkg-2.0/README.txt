@@ -1,0 +1,1 @@
+This is a project on detecting pneumonia from a lung X-ray}
