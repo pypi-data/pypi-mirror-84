@@ -1,0 +1,14 @@
+gwdama/__init__.py,sha256=J8BeFgys81Xgj5P8WAayzMAlXwxxu8-x8ilZyVtwza4,144
+gwdama/io/__init__.py,sha256=Ljaq22FIYF5XR6sVUBNEm4zFYXSfRaHttL89Xzb5Vwo,131
+gwdama/io/customLogger.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gwdama/io/ffl_paths.py,sha256=kIdMkUo88rWGGh_auBIwUBiSDH3nWSzucFQ89SDIdKw,961
+gwdama/io/gwLogger.py,sha256=sBw4SSDXtSY1AxYxyIIAhgyV7w98GC79FjA5Gt88zd0,3038
+gwdama/io/gwdatamanager.py,sha256=JfzEiMJYkqMaxevog0cVoDF3CR4Dtdjc0YYNg1VVN2E,49148
+gwdama/plot/__init__.py,sha256=wtBgJWFIdd3VtGeuOFiDXCoNt6GVGIeHSjJWYt16by0,69
+gwdama/plot/functions.py,sha256=LVZ7KvW4JLK157gPCb6tQi-mmdyUHZf2Qs6gpIkb724,813
+gwdama/preprocessing/__init__.py,sha256=2JTDsSXw-LgrS0gECPxZntaFHwC_EtHWE_YBSbrWoaM,119
+gwdama/preprocessing/functions.py,sha256=R-E-FSmCg7XyVb0ydX-79ostjISKX53rY7zSyYlj3yw,6548
+gwdama-0.4.1.dist-info/METADATA,sha256=32fBSwxXRzirr1hT7PdDgNr3qr8-P1SI4lsUstZwg8Q,8899
+gwdama-0.4.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+gwdama-0.4.1.dist-info/top_level.txt,sha256=iUDl3pJeg7eT5--DU3t65IbIXvY6wW2LK3uMLgOKcdo,7
+gwdama-0.4.1.dist-info/RECORD,,
