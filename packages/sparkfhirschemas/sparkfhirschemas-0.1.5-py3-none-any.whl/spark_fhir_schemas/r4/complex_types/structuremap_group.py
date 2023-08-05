@@ -1,0 +1,47 @@
+from pyspark.sql.types import ArrayType, StringType, StructField, StructType
+
+
+# noinspection PyPep8Naming
+class StructureMap_Group:
+    @staticmethod
+    def get_schema(recursion_depth: int = 0) -> StructType:
+        # from https://hl7.org/FHIR/patient.html
+        from spark_fhir_schemas.r4.complex_types.extension import Extension
+        from spark_fhir_schemas.r4.complex_types.id import id
+        from spark_fhir_schemas.r4.complex_types.structuremap_input import StructureMap_Input
+        from spark_fhir_schemas.r4.complex_types.structuremap_rule import StructureMap_Rule
+        if recursion_depth > 3:
+            return StructType([])
+        schema = StructType(
+            [
+                StructField("id", StringType(), True),
+                StructField(
+                    "extension",
+                    ArrayType(Extension.get_schema(recursion_depth + 1)), True
+                ),
+                StructField(
+                    "modifierExtension",
+                    ArrayType(Extension.get_schema(recursion_depth + 1)), True
+                ),
+                StructField("name", id.get_schema(recursion_depth + 1), True),
+                StructField(
+                    "extends", id.get_schema(recursion_depth + 1), True
+                ),
+                StructField("typeMode", StringType(), True),
+                StructField("documentation", StringType(), True),
+                StructField(
+                    "input",
+                    ArrayType(
+                        StructureMap_Input.get_schema(recursion_depth + 1)
+                    ), True
+                ),
+                StructField(
+                    "rule",
+                    ArrayType(
+                        StructureMap_Rule.get_schema(recursion_depth + 1)
+                    ), True
+                ),
+            ]
+        )
+
+        return schema
