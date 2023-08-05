@@ -1,0 +1,8 @@
+geocortex/reporting/client/__init__.py,sha256=Q7ynD2PZGHlr18RHNVy6IP47pF4HJ9OWwTztOrPXP2I,55
+geocortex/reporting/client/portal_utils.py,sha256=QiyAcSsQNlplDxzRw1_UbuZvqGIXc4sEZ1b-OgR8MLw,783
+geocortex/reporting/client/reporting_service.py,sha256=kMy20-HiOdW27rlWPxENIo7DppR6bKanYQ2YH_iz4i0,5813
+geocortex_reporting_client-1.0.0.dist-info/LICENSE,sha256=g3R6Gw5PgKKqwF1MQYMX9IXm-Hs2klfFQbGa2TjlFzg,1066
+geocortex_reporting_client-1.0.0.dist-info/METADATA,sha256=cW8Yh_cdYmy2-ovLVDLpfjjImpSRPZhLxbYUzzOd3o0,4826
+geocortex_reporting_client-1.0.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+geocortex_reporting_client-1.0.0.dist-info/top_level.txt,sha256=Txbo9dFmu1BcRsA5bdKm8nYMDOZG89XAbUSqcNsj2Xw,10
+geocortex_reporting_client-1.0.0.dist-info/RECORD,,
