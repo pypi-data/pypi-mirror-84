@@ -1,0 +1,8 @@
+README.md
+setup.py
+proto-pipe/__init__.py
+proto-pipe/dummy.py
+proto_pipe.egg-info/PKG-INFO
+proto_pipe.egg-info/SOURCES.txt
+proto_pipe.egg-info/dependency_links.txt
+proto_pipe.egg-info/top_level.txt
