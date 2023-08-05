@@ -1,0 +1,9 @@
+certbot_dns_constellix/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+certbot_dns_constellix/dns_constellix.py,sha256=gRXCG5yWuGuZTTv1X_N0T5tCuAsQscntoHu1-Sb7jTE,10263
+certbot_dns_constellix/dns_constellix_test.py,sha256=mlYYpGsAMDW8KFi3mzayzseE5_1FlNYVq1SFv0_4F8E,5928
+certbot_dns_constellix-0.2.1.dist-info/LICENSE.txt,sha256=WAfYTCmiEji4aOLJhDQ-1AoDGVtgzZEnqWO7157aYCk,11367
+certbot_dns_constellix-0.2.1.dist-info/METADATA,sha256=XfnxCtoDF371YnG1uAJdJ5EsIq-Dh0uSdpnZq7At6_E,5455
+certbot_dns_constellix-0.2.1.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+certbot_dns_constellix-0.2.1.dist-info/entry_points.txt,sha256=vog3toycnZ_Px8YLe8VAflYPd-XqSuL5nnLUkzR4V2k,88
+certbot_dns_constellix-0.2.1.dist-info/top_level.txt,sha256=syEvsXISiSf2L4zxl3Q1UQCbE3pp5wgQxCP8XkJq5hA,23
+certbot_dns_constellix-0.2.1.dist-info/RECORD,,
