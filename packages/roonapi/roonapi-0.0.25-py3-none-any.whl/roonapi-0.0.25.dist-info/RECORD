@@ -1,0 +1,11 @@
+roonapi/.soodmsg,sha256=Aajp-7s_NZcBO7-pFGIoC-RPHiSfDiMdOmusl-iilJ8,104
+roonapi/__init__.py,sha256=noZ6uptNSl_tp6lDU09r-t1hOYaOG66HYU2kEap6a3Q,74
+roonapi/constants.py,sha256=67okwVI57audRlJrDUyUjWVDjRUryubzz82GBnbxw1o,947
+roonapi/discovery.py,sha256=KwlsD0S3b4FN3PLMjdkgmh_lISHpLg9eXbN6nffKwiE,3429
+roonapi/roonapi.py,sha256=qb4j_gxpr8J6MSBu9wq3916d9PCYgk_fnykWh0sdShk,31745
+roonapi/roonapisocket.py,sha256=a43Rj6iQDd2lXjthI3JIh7kI1Bh7j5d-up3FRU2W-eI,8246
+roonapi/soodmessage.py,sha256=3ERz2MnkEPkHWTIS-8gvU_ljMUHIpSgEK4D3Ub0y78I,3958
+roonapi-0.0.25.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+roonapi-0.0.25.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+roonapi-0.0.25.dist-info/METADATA,sha256=wpCtNnpSVHsAN4V0pjM1HHLCWzWVMGantRulOVEaFHE,1745
+roonapi-0.0.25.dist-info/RECORD,,
