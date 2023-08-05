@@ -1,0 +1,3 @@
+python-slimta[spf]>=4.1.0
+passlib
+PyYAML
