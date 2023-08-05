@@ -1,0 +1,9 @@
+isr_debian/__init__.py,sha256=CGvOh3_BRXve63HUjbIDph6hTUnFI3IygCVwnqITZLA,70
+isr_debian/control_files.py,sha256=KmUZJQvsJzgYYHokJU6Mw_oGv7xo7cdEZh0cN4tqsOA,1498
+isr_debian/io.py,sha256=F8Xy9vPtVqeNTt6TUTD4Ci6zsutTRRfCUkAQ_UnK-AU,6039
+isr_debian-0.1.data/scripts/isr_make_debian,sha256=HIz0Gz0C1Dab3ziCYdUkXMjS3Dv8qNpIs0gKfTfcXuc,4135
+isr_debian-0.1.dist-info/METADATA,sha256=uKf6riAKoHtc-eSOQtgM7gqnXDAyjiocvZdtA-Q6LAE,379
+isr_debian-0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+isr_debian-0.1.dist-info/top_level.txt,sha256=Hc9a7Ws6AHzii4t4M0mCKzcRxssLJ5tJyAn9FnC-hdg,11
+isr_debian-0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+isr_debian-0.1.dist-info/RECORD,,
