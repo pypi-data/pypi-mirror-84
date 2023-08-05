@@ -1,0 +1,10 @@
+[tool.poetry]
+name = "Automagica2"
+version = "0.0.1"
+description = "Reserved"
+authors = ["Ossi Rajuvaara"]
+packages = [{ include = "automagica" }]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
