@@ -1,0 +1,3 @@
+[console_scripts]
+dfslo = dfslo.get_data:main
+
