@@ -1,0 +1,9 @@
+README.rst
+setup.cfg
+setup.py
+loo.py.egg-info/PKG-INFO
+loo.py.egg-info/SOURCES.txt
+loo.py.egg-info/dependency_links.txt
+loo.py.egg-info/requires.txt
+loo.py.egg-info/top_level.txt
+loo_py/__init__.py

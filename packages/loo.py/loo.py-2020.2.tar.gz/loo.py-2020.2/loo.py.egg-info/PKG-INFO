@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: loo.py
+Version: 2020.2
+Summary: A code generator for array-based code on CPUs and GPUs
+Home-page: https://pypi.org/project/loopy
+Author: Andreas Kloeckner
+Author-email: inform@tiker.net
+License: MIT
+Description: Loopy: Transformation-Based Generation of High-Performance CPU/GPU Code
+        =======================================================================
+        
+        ``loo.py`` used to be the name on the package index for `Loopy
+        <https://github.com/inducer/loopy>`__, however as of release
+        2020.2, the package has moved to just `loopy <https://pypi.org/project/loopy/>`__,
+        a name that matches its module name.
+        
+        See also <https://github.com/pypa/pypi-support/issues/15>.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
