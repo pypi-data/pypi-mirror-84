@@ -1,0 +1,8 @@
+README.md
+setup.py
+quad_filter/__init__.py
+quad_filter/filter_2d.py
+quad_filter.egg-info/PKG-INFO
+quad_filter.egg-info/SOURCES.txt
+quad_filter.egg-info/dependency_links.txt
+quad_filter.egg-info/top_level.txt
