@@ -1,0 +1,15 @@
+cfg4py/__init__.py,sha256=YgHdbFPeHe_pijMRZEeKlF6EKT1nJ5y5kLZ6TG-kg4E,591
+cfg4py/command_line.py,sha256=9IRAIsdDN2YnJ0Aenx5EKeJIESkMYWcIRlBC7fI7QMU,7815
+cfg4py/config.py,sha256=gdLCDO_txBNhGdTbLK7eat8ZZBgQIuzZncW-qGlpeuc,691
+cfg4py/core.py,sha256=yXewAebgT4qT76oqe-ayBb7KzISvBmH1KRQ1D43ZtTo,11293
+cfg4py/resources/defaults.yaml,sha256=C9ZzWfbmSS85sUC94mp3gqjW6wbgo-NxmMgnQfCHmLI,629
+cfg4py/resources/production.yaml,sha256=-6GAmJ4CfzHLfPqiM5gSCfcPufGIawCSk3chrKldwqk,117
+cfg4py/resources/template.yaml,sha256=YS7BFe0MQ5UYqTwagNvNMRXo29pb5n6H3b5pekMBVro,5112
+cfg4py/resources/test.yaml,sha256=gB6rGIWaVGFzq9SqLrYffUOOuK6piglVJqhW5jksMe4,159
+cfg4py-0.7.0.dist-info/AUTHORS.rst,sha256=NVo1_lQhxyMdeX4nEl1m2mDHvAYq3iqEHdMydohNYyA,155
+cfg4py-0.7.0.dist-info/LICENSE,sha256=R9tQAd9ZQSALgJVgX19MziDahAzLeIA7n4xigB3qt0c,1518
+cfg4py-0.7.0.dist-info/METADATA,sha256=s5_pTBRNs_B8hgQU0sr17md3RZ2QCKn3uTJHSaODxtM,7107
+cfg4py-0.7.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+cfg4py-0.7.0.dist-info/entry_points.txt,sha256=MiVQKVIMQxUJk5Ex8LW-phs2RJl9pMB7DQwFFkXtDUM,53
+cfg4py-0.7.0.dist-info/top_level.txt,sha256=SPCmUD0i69Hfo9f5ox3eC_TBd2v1hY2oE27X6gZFTeY,7
+cfg4py-0.7.0.dist-info/RECORD,,
