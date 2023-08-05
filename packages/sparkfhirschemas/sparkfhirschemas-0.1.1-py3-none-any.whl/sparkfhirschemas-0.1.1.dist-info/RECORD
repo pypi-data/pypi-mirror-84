@@ -1,0 +1,8 @@
+spark_fhir_schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spark_fhir_schemas/r4/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spark_fhir_schemas/r4/generate_schema.py,sha256=D34EUlv6ZU49RvelFeaVAbyF0EhXWGtfNP2kZX87pRc,4656
+sparkfhirschemas-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sparkfhirschemas-0.1.1.dist-info/METADATA,sha256=72IH0Smdiz1_6AeTLJzw2K-xXMQLaGRDdyJtwi4dfro,564
+sparkfhirschemas-0.1.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+sparkfhirschemas-0.1.1.dist-info/top_level.txt,sha256=irllfTIXmoNHezID3FLBSb1CJjxBVRkp6-cRF_U0xls,19
+sparkfhirschemas-0.1.1.dist-info/RECORD,,
