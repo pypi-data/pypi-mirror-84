@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: MiniClassifier
+Version: 0.1
+Summary: A Classifier Deep Learning library for Binary/Categorical Text Classification with Keras
+Home-page: https://github.com/abhilash1910/MiniClassifier
+Author: ABHILASH MAJUMDER
+Author-email: debabhi1396@gmail.com
+License: MIT
+Download-URL: https://github.com/abhilash1910/MiniClassifier/archive/v_01.tar.gz
+Description: This library contains a deep learning architecture comprised of Bidirectional LSTMs, Dense and Convolution Neural Networks for Text Classification(Keras).There are parameters for using Pre-trained embeddings like Glove, Fast text etc.For using pretrianed embeddings,a relative path to the embedding file should be provided.The entire workflow is provided in Test Scripts,for Binary and Categorical Classification.Only changes are required in the relative paths of the dataset, embeddings(if any) and the hyperparameters.
+Keywords: Text Classification,Embeddings,Deep Learning Networks,Bidirectional Lstms,Convolution Networks,Pretrained Embeddings,Keras,Tensorflow
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
