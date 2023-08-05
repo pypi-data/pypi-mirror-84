@@ -1,0 +1,6 @@
+numpy
+pandas
+ray
+ray[debug]
+Tensorflow
+TensorBoard
