@@ -1,0 +1,5 @@
+sql/__init__.py,sha256=cDkJak8YPH42b9VmVgRuyGTKwp-9dDEJXimu7NZU-KY,30444
+pgsql_table-0.4.7.dist-info/METADATA,sha256=WXfZ0F2kEK-E1otdIboFj7DiZYR86t7j09JmeNLoS9E,6579
+pgsql_table-0.4.7.dist-info/WHEEL,sha256=6T3TYZE4YFi2HTS1BeZHNXAi8N52OZT4O-dJ6-ome_4,116
+pgsql_table-0.4.7.dist-info/top_level.txt,sha256=hwJHmWfbRP5a_XNfqgHwi2zrjAAzAJk24QZoTocslow,4
+pgsql_table-0.4.7.dist-info/RECORD,,
