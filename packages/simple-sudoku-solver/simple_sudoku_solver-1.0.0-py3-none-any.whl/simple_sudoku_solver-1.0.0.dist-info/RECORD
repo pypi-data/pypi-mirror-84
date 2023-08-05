@@ -1,0 +1,8 @@
+sudoku/__init__.py,sha256=Aj77VL1d5Mdku7sgCgKQmPuYavPpAHuZuJcy6bygQZE,21
+sudoku/solver.py,sha256=jTmPTe5dW_0F0aKN1JaAbY5U1iLkxUaEoLuMGklFkfg,1320
+sudoku/strategies.py,sha256=U4OPQhmKRTpZ5MZVpaA_ZdTAJh3vMZi1oagWbwwq-Y0,1519
+sudoku/sudoku.py,sha256=bo0NEUda_OCJlTEW3-rpBfTNWVE6oX9-ZwhH1mzD_GQ,1380
+simple_sudoku_solver-1.0.0.dist-info/METADATA,sha256=vHgjek1SVhpIxT77pvpaPeOdxhK58KNcqglbrv8Onrs,444
+simple_sudoku_solver-1.0.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+simple_sudoku_solver-1.0.0.dist-info/top_level.txt,sha256=oesxezkn8Y-hC-ccYuDx18c6qk9Uem2x-ttoOEVggOQ,7
+simple_sudoku_solver-1.0.0.dist-info/RECORD,,
