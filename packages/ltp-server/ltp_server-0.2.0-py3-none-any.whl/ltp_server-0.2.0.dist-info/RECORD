@@ -1,0 +1,10 @@
+ltp_server/__init__.py,sha256=LC3_S94_JrRBjSOu7HgcYxlrYHV_DuLPthNvB7OA44Y,113
+ltp_server/client.py,sha256=H9DjoWjIiPCKUW4yIKC_2eT_fbLs-u8Zb5PMkmKh9BM,3918
+ltp_server/config.yml,sha256=SUzHMafMoi2DmEmG35CaCmr6kwtRxODN3lDX9vBaQMw,226
+ltp_server/server.py,sha256=lefpbpS6X29x2gipZFpJdvYTqWLW8GTGE5SFK6YYOPU,5853
+ltp_server-0.2.0.dist-info/LICENSE,sha256=NVTRbDwG_A0kYcmdXn9HkOnsGt-e2pgjVzjMC9aiKIo,1087
+ltp_server-0.2.0.dist-info/METADATA,sha256=I_GXapOa0cFe_oL9p25CuDYARo_DZ3KqcLFe75YkP8Q,14793
+ltp_server-0.2.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+ltp_server-0.2.0.dist-info/entry_points.txt,sha256=_U_NdbgRkjOam3iA7U0adoLOTFpck70SFhKHFUQ2tf4,54
+ltp_server-0.2.0.dist-info/top_level.txt,sha256=xs3cwtRKMYSvziBxw5tPnx0FKtc4Y_D3RWe9q3Srkfg,11
+ltp_server-0.2.0.dist-info/RECORD,,
