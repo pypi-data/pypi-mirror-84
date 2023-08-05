@@ -1,0 +1,7 @@
+Change Log
+==========
+
+0.0.1 (October 30 2020)
+-----------------------
+- First Release
+- Scheduler works with multi resource multi job with arbitrary start and end locations

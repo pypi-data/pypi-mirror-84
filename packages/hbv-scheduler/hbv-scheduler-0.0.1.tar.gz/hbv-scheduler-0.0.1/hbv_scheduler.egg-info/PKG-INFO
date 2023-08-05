@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: hbv-scheduler
+Version: 0.0.1
+Summary: Doctor patient home based visit routing and scheduling algorithm
+Home-page: https://github.com/mprashanth54/home-visit-algorithm
+Author: Prashanth Mogali
+Author-email: m.prashanth54@gmail.com
+License: MIT
+Description: ## Home Based Visit Scheduler
+        
+        Change Log
+        ==========
+        
+        0.0.1 (October 30 2020)
+        -----------------------
+        - First Release
+        - Scheduler works with multi resource multi job with arbitrary start and end locations
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
