@@ -1,0 +1,79 @@
+{% extends "flexbox.html"%}
+
+{% block flexcontent %}
+    <div style="display: flex; width: 100%">
+        <div class="card" style="flex:1; margin: 0px 8px 0px 8px;">
+            <div class="card-content">
+                {% if n_tickets and (n_tickets > 0) %}
+                    <span class="card-title">{{n_tickets}}</span>
+                {% else %}
+                    <div class="card-title"> Non ci sono ancora biglietti </div>
+                {% endif %}
+                <span class="card-subtitle">Numero di biglietti venduti</span>
+            </div>
+        </div>
+        <div class="card" style="flex:1; margin: 0px 8px 0px 8px;">
+            <div class="card-content">
+                {% if n_users and (n_users > 0) %}
+                    <span class="card-title">{{n_users}}</span>
+                {% else %}
+                    <div class="card-title"> Non ci sono ancora clienti </div>
+                {% endif %}
+                <span class="card-subtitle">Numero di clienti iscritti</span>
+            </div>
+        </div>
+        <div class="card" style="flex:1; margin: 0px 8px 0px 8px;">
+            <div class="card-content">
+                {% if profit  and (profit > 0) %}
+                    <span class="card-title" style="display: flex; align-items: center"><i class="material-icons">euro_symbol</i>&nbsp;<div>{{profit}}</div></span>
+                {% else %}
+                    <div class="card-title"> Non abbiamo ancora venduto nessun biglietto </div>
+                {% endif %}
+                <span class="card-subtitle">Totale guadagni</span>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; width: 100%">
+        <div class="card" style="flex:1; margin: 0px 8px 0px 8px;">
+            <div class="card-content">
+                <div class="card-title">5 Migliori Clienti</div>
+                {% if best_clients and ((best_clients|length) > 0) %}
+                <ul class="collection">
+                    {% for client in best_clients %}
+                        {% if client %}
+                        <li style="display: flex;" class="collection-item">
+                            <div style="flex:1;">{{client[0]}}</div>
+                            <div style="display:flex;">
+                                <div style="display: flex; align-items:center;"><i class="material-icons">euro_symbol</i>&nbsp;{{client[1]}}</div>
+                                <div style="display: flex; align-items:center; margin-left: 8px;"><i class="material-icons">local_movies</i>&nbsp;{{client[2]}}</div>
+                            </div>
+                        </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                {% else %}
+                    <div> Non ci sono ancora utenti </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="card" style="flex:1; margin: 0px 8px 0px 8px;">
+            <div class="card-content">
+                <div class="card-title">5 Film più popolari</div>
+                {% if popular_films and ((popular_films|length) > 0) %}
+                <ul class="collection">
+                    {% for film in popular_films %}
+                        {% if film %}
+                        <li style="display: flex;" class="collection-item">
+                            <div style="flex:1;">{{film[0]}}</div>
+                            <div style="display: flex; align-items:center"><i class="material-icons">local_movies</i>&nbsp;{{film[1]}}</div>
+                        </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                {% else %}
+                    <div> Non ci sono ancora utenti </div>
+                {% endif %}
+            </div>
+        </div>
+    <div>
+{% endblock %}

@@ -1,0 +1,132 @@
+{% extends "flexbox.html"%}
+
+{% block flexcontent %}
+    {% if filmForm %}
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                        {% if filmForm is boolean %}
+                        <span class="card-title">Aggiungi Film</span>
+                        {% else %}
+                        <span class="card-title">Modifica {{filmForm.name}}</span>
+                        {% endif %}
+                        <form action="/films" method="POST">
+                            <input name="id" type="hidden" value="{{filmForm.id|default(None)}}">
+                            <div class="input-field">
+                                {% if filmForm is boolean %}
+                                <input name="name" type="text" value="">
+                                {% else %}
+                                <input name="name" type="text" value="{{filmForm.name}}">
+                                {% endif %}
+                                <label for="name">Titolo</label>
+                            </div>
+                            <div class="input-field">
+                                <select id="genre" name="genre">
+                                    {% if filmForm is boolean %}
+                                    <option value="" disabled selected hidden></option>
+                                    {% else %}
+                                    <option value="" disabled hidden>Genere</option>
+                                    {% endif %}
+                                    {% for genre in genres %}
+                                        {% if filmForm is boolean or filmForm.genre.name != genre%}
+                                        <option value="{{'%s'%genre}}">{{genre}}</option>
+                                        {% else %}
+                                        <option value="{{'%s'%genre}}" selected>{{genre}}</option>
+                                        {% endif %}                           
+                                    {% endfor %}
+                                </select>
+                                <label>Genere</label>
+                            </div>
+                            <div class="input-field">
+                                {% if filmForm is boolean %}
+                                <input name="year" type="number" value="">
+                                {% else %}
+                                <input name="year" type="text" value="{{filmForm.year}}">
+                                {% endif %}
+                                <label for="year">Anno</label>
+                            </div>
+                            <div class="card-action center-align">
+                                {% if filmForm is boolean %}
+                                <button class="btn waves-effect waves-light" type="submit">Aggiungi</button>
+                                {% else %}
+                                <button class="btn waves-effect waves-light" type="submit">Modifica</button>
+                                {% endif %}
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="row">
+        <div class="col">
+            <div class="card-panel">
+                <form action="/films" method="GET" style="display: flex; align-items: center;">
+                    <div class="input-field">
+                        <select name="genre" id="genre">
+                            <option value="" disabled selected>Genere</option>
+                            {% for genre in genres %}
+                                <option value="{{'%s'%genre}}">{{genre}}</option>
+                            {% endfor %}
+                        </select>
+                        <label>Genere</label>
+                    </div>
+                    <div class="input-field" style="margin-left: 8px;">
+                        <input name="title" type="text">
+                        <label for="title">Titolo</label>
+                    </div>
+                    <button class="btn waves-effect waves-light" type="submit" style="margin-left: 8px;">Filtra</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-image">
+                {% if role == 'MANAGER' %}
+                    <a class="btn-floating halfway-fab waves-effect waves-light red" href="/films?idFilm=None"><i class="material-icons">add</i></a>
+                {% endif %}
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Films</span>
+                    <span class="card-subtitle">Clicca un film per vedere le proiezione e sul + per aggiungere un film</span>
+                    {% if films and ((films|length) > 0) %}
+                    <ul class="collection">
+                        {% for film in films %}
+                        
+                            <!-- FIXME when the new end point is really defined -->
+                            <li style="display: flex;" class="collection-item">
+                                <div style="flex: 1;"> 
+                                    <a class="teal-text" href="{{'/shows/%s'%(film[0]|string)|urlencode}}" style="text-decoration: none;"> 
+                                        <h5 style="margin-top: 0;">{{film[1]}}</h5>
+                                        <h6>{{film[2].value}}</h6>
+                                        <h7>{{film[3]}}</h7>
+                                    </a>
+                                </div>
+                                <div>
+                                <a href="/films?idFilm={{film.id}}" class="secondary-content"><i class="material-icons" style="color:teal">edit</i></a>
+                                {% if film.isDeletable %}
+                                    <form method="POST" id="delete-{{film.id}}" action="/delete-film">
+                                        <a href="#" onclick="document.getElementById('delete-{{film.id}}').submit(); return false;" class="secondary-content"><i class="material-icons" style="color:red">delete</i></a>
+                                        <input name="id" type="hidden" value="{{film.id}}" />
+                                    </form>
+                                {% endif %}
+                                </div>
+                                
+                            </li>
+                        
+                        {% endfor %}
+                    </ul>
+                    {% else %}
+                        <div> Non ci sono ancora film </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+{% endblock %}
