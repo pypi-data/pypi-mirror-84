@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: pyeem
+Version: 0.2.0
+Summary: Python library for the preprocessing, correction, deconvolution and analysis of Excitation Emission Matrices (EEMs).
+Home-page: https://github.com/drewmee/PyEEM
+Author: Drew Meyers
+Author-email: drewm@mit.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (<1.19.0,>=1.18.5)
+Requires-Dist: pandas (>=1.0.5)
+Requires-Dist: xlrd (>=1.0.0)
+Requires-Dist: h5py (>=2.10.0)
+Requires-Dist: tables (>=3.6.1)
+Requires-Dist: matplotlib (>=3.3.0)
+Requires-Dist: celluloid (>=0.2.0)
+Requires-Dist: docutils (<0.16,>=0.10)
+Requires-Dist: urllib3 (>=1.25.9)
+Requires-Dist: boto3 (>=1.14.33)
+Requires-Dist: tqdm (>=4.48.0)
+Requires-Dist: scipy (==1.4.1)
+Requires-Dist: tensorflow (>=2.2.0)
+Provides-Extra: develop
+Requires-Dist: twine (>=3.2.0) ; extra == 'develop'
+Requires-Dist: pre-commit (>=2.8.2) ; extra == 'develop'
+Provides-Extra: docs
+Requires-Dist: sphinx (>=3.2.0) ; extra == 'docs'
+Requires-Dist: sphinx-automodapi (>=0.12) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (>=0.5.0) ; extra == 'docs'
+Requires-Dist: msmb-theme (>=1.2.0) ; extra == 'docs'
+Requires-Dist: nbsphinx (>=0.7.1) ; extra == 'docs'
+Requires-Dist: sphinx-copybutton (>=0.3.0) ; extra == 'docs'
+Requires-Dist: black (>=20.8b1) ; extra == 'docs'
+Requires-Dist: isort (>=5.4.2) ; extra == 'docs'
+Requires-Dist: rstcheck (>=3.3.1) ; extra == 'docs'
+Provides-Extra: jupyter
+Requires-Dist: ipython (>=7.16.1) ; extra == 'jupyter'
+Requires-Dist: jupyter (>=1.0.0) ; extra == 'jupyter'
+Requires-Dist: jupyterlab (>=2.2.2) ; extra == 'jupyter'
+Provides-Extra: tests
+Requires-Dist: pytest (>=6.0.1) ; extra == 'tests'
+Requires-Dist: tox (>=3.16.1) ; extra == 'tests'
+
+# PyEEM
+
+![Test](https://github.com/drewmee/PyEEM/workflows/Test/badge.svg)
+[![Read the Docs](https://readthedocs.org/projects/pyeem/badge/?version=latest)](https://pyeem.readthedocs.io/)
+[![PyPi version](https://img.shields.io/pypi/v/pyeem.svg 'pypi version')](https://pypi.org/project/pyeem/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyeem.svg)](https://pypi.org/project/pyeem/)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/drewmee/PyEEM/master?filepath=docs%2Fsource%2Ftutorials%2Fnotebooks)
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/drewmee/PyEEM/blob/master/LICENSE)
+[![Code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+<!--- Badge for codecov -->
+
+Python library for the preprocessing, analysis, and visualization of Excitation Emission Matrices (EEMs).
+
+## Installation
+
+Install via pip:
+
+    $ pip install pyeem [--upgrade]
+
+## Documentation
+
+  Full documentation can be found [here](https://pyeem.readthedocs.io/).
+
+## Dependencies for Local Development
+
+If you wish to build the local documentation or run unit tests, there are a few additional dependencies. Those can be installed by:
+
+pip install -e ".[docs, tests]"
+
+## License
+
+This library is licensed under the MIT license. The full text of the license can be found in this repository at LICENSE.txt.
+
