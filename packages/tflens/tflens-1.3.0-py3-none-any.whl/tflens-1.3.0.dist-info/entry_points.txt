@@ -1,0 +1,3 @@
+[console_scripts]
+tflens = tflens.__main__:main
+
