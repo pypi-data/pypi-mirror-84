@@ -1,0 +1,9 @@
+astropy
+bs4
+cdflib>=0.3.19
+netcdf4
+numba
+numpy
+requests
+requests-ftp
+spiceypy
