@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: awsstepfuncs
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://suzil.dev/
+Author: Susannah Klaneček
+Author-email: suzil@protonmail.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8.0
+Requires-Dist: GraphvizAnim (==1.1.0)
+Requires-Dist: jsonpath-rw (==1.4.0)
+Requires-Dist: pause (==0.2)
+Requires-Dist: python-dateutil (==2.8.1)
+
+UNKNOWN
+
+
