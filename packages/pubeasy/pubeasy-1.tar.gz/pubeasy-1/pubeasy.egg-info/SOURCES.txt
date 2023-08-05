@@ -1,0 +1,9 @@
+README.md
+setup.py
+pubeasy/__init__.py
+pubeasy/pubeasy.py
+pubeasy.egg-info/PKG-INFO
+pubeasy.egg-info/SOURCES.txt
+pubeasy.egg-info/dependency_links.txt
+pubeasy.egg-info/not-zip-safe
+pubeasy.egg-info/top_level.txt
