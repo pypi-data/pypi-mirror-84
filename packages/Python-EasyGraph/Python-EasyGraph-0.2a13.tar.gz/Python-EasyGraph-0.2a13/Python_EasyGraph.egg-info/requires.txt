@@ -1,0 +1,9 @@
+numpy
+tqdm
+tensorflow>=2.0.0
+joblib
+six
+gensim
+progressbar33
+scikit-learn
+scipy
