@@ -1,0 +1,14 @@
+README.txt
+setup.py
+src/BuiltinAll_corpus.py
+src/Classify_word.py
+src/Get_Synonyms.py
+src/Import_corpus.py
+src/Organize_Names.py
+src/SpellCorrect.py
+src/Standard_corpus.py
+src/__init__.py
+wuzzyNaming.egg-info/PKG-INFO
+wuzzyNaming.egg-info/SOURCES.txt
+wuzzyNaming.egg-info/dependency_links.txt
+wuzzyNaming.egg-info/top_level.txt
