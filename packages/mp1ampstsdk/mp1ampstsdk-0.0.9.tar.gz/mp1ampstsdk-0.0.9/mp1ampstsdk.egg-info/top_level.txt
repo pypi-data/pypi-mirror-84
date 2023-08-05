@@ -1,0 +1,2 @@
+libsdbsdk
+mp1ampstsdk
