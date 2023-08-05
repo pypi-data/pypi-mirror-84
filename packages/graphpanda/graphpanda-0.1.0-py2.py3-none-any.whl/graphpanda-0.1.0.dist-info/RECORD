@@ -1,0 +1,9 @@
+graphpanda/__init__.py,sha256=YOHW18-SY-zoBZQQ7Dz3Xh8P3UNdHePtBNdpS1mO2uA,95
+graphpanda/graphpanda.py,sha256=wy8ulvh4FV68sJZbaMmSGmMWHmSBy4Mpyqn4ay_IHpI,4305
+graphpanda/to_cypher.py,sha256=m5hZSXrM6X3stFnWueClu18caA3C3Cslymf_4aKWSbA,2387
+graphpanda-0.1.0.dist-info/AUTHORS.rst,sha256=DLHb-jqwIABYc0AwAG-xz5vqo32ODRuqIh-4sCTJolQ,135
+graphpanda-0.1.0.dist-info/LICENSE,sha256=1y13q9U8ZVRXWrCl_XjYJpGtqKhTWRokkja5mm27hzw,1071
+graphpanda-0.1.0.dist-info/METADATA,sha256=gLUZERpW4bJU2Lzj3wLk2anbDD8KCBkITRsUDcrfpyE,2852
+graphpanda-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+graphpanda-0.1.0.dist-info/top_level.txt,sha256=t36Uxjt8NTc92FpFieftySP9Pf6SrexzSV_mh1Zksms,11
+graphpanda-0.1.0.dist-info/RECORD,,
