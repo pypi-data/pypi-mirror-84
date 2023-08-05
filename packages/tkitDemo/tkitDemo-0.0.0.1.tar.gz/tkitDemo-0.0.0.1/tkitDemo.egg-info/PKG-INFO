@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tkitDemo
+Version: 0.0.0.1
+Summary: Terry toolkit tkitDemo
+Home-page: http://www.terrychan.org/python_libs_demo/
+Author: Terry Chan
+Author-email: napoler2008@gmail.com
+License: UNKNOWN
+Description: # 一个创建库的demo
+        便于快速创建自己的第三方库
+        
+        文档查看
+        https://www.terrychan.org/python_libs_demo/
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
