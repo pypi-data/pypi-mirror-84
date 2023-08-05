@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+starlette_dataframe_response/__init__.py
+starlette_dataframe_response/__main__.py
+starlette_dataframe_response/dataset.py
+starlette_dataframe_response/distribute.py
+starlette_dataframe_response.egg-info/PKG-INFO
+starlette_dataframe_response.egg-info/SOURCES.txt
+starlette_dataframe_response.egg-info/dependency_links.txt
+starlette_dataframe_response.egg-info/not-zip-safe
+starlette_dataframe_response.egg-info/requires.txt
+starlette_dataframe_response.egg-info/top_level.txt

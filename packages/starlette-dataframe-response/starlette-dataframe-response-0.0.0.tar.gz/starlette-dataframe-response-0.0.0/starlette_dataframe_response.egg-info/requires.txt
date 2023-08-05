@@ -1,0 +1,17 @@
+starlette
+pandas
+typing_extensions
+
+[dev]
+black
+flake8
+mypy
+
+[fullset]
+tabulate
+vega_datasets
+uvicorn
+
+[testing]
+pytest
+tabulate
