@@ -1,0 +1,156 @@
+Metadata-Version: 2.1
+Name: AutoChatbot
+Version: 0.1.1
+Summary: Package that makes chatbots automatically
+Home-page: https://github.com/kritikseth
+Author: Kritik Seth
+Author-email: sethkritik@gmail.com
+License: UNKNOWN
+Project-URL: Documentation, https://kritikseth.github.io/autochatbot_docs
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tensorflow
+Requires-Dist: keras
+Requires-Dist: gensim
+Requires-Dist: re
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: pandas
+Requires-Dist: contractions
+Requires-Dist: pycontractions
+Requires-Dist: unicodedata
+
+# AutoChatBot
+
+## Authors-
+* Kritik Seth
+
+### For documentation- either scroll down or [click here](https://kritikseth.github.io/autochatbot_docs)
+
+## clean
+
+### def make_train_dataset(lines, conv_lines):
+
+```
+takes input of lines and conversations, returns a list of questions and answers
+
+:type lines: string
+:param lines: path were text file of lines is present
+
+:type conv_lines: string
+:param conv_lines: path were text file of conversations is present
+```
+
+### def clean_train_dataset(text):
+
+```
+takes input list of questiond or answers, returns clean list of strings
+
+:type text: text
+:param text: list of strings
+```
+
+### def make_count_dict(q, a):
+
+```
+makes a dictionary of words
+
+:type q: list
+:param q: list of questions
+
+:type a: list
+:param a: list of answers
+```
+
+### def count_rare_words(cd, mincount):
+
+```
+counts the number of rare words
+
+:type cd: dictionary
+:param cd: count dictionary {word:key}
+
+:type mincount: int
+:param mincount: minimum length of a question
+```
+
+### def make_word_dict(cd, mincount, tokens={'':0, '':1, '':2, '':3}):
+
+```
+makes dictionary, returns mapping of word to key and key to word
+
+:type cd: dictionary
+:param cd: count dictionary {word:key}
+
+:type mincount: int
+:param mincount: min frequency of word such that it makes it into the word_dict
+
+:type tokens: dictionary
+:param tokens: default - {'<PAD>':0, '<SOS>':1, '<EOS>':2, '<UNK>':3}
+```
+
+### def add_word_tags(q, a, wd):
+
+```
+takes input of {word:key} and adds tags to those words
+
+:type q: list
+:param q: list of questions
+
+:type a: list
+:param a: list of answers
+
+:type wd: dict
+:param wd: mapping of word to key
+```
+
+### def make_line_id(q, a, wd):
+
+```
+takes input list of questions or answers and word_dict and returns text converted to id
+
+:type q: list
+:param q: list of questions
+
+:type a: list
+:param a: list of answers
+
+:type wd: dict
+:param wd: mapping of word to key
+```
+
+### def sort_line_pad(q, a, max_line_length):
+
+```
+sorts questions and answers based on their length, returns sorted list of question or answer
+
+:type q: list
+:param q: list of questions
+
+:type a: list
+:param a: list of answers
+
+:type max_line_length: int
+:param max_line_length: maximum length of question or answer
+```
+
+## chat
+
+### def make_test_chatbot(dir_path, files_list, ntest):
+```
+takes input of direcotory of file, list, and number of test cases
+
+:type lines: string
+:param lines: path were text file of lines is present
+
+:type conv_lines: string
+:param conv_lines: path were text file of lines is present
+
+:type conv_lines: string
+:param conv_lines: base path were text file of lines is present
+```
+
