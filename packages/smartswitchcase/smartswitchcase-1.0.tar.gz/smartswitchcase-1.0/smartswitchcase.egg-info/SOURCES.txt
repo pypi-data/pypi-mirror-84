@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+smartswitchcase/__init__.py
+smartswitchcase/smartswitchcase.py
+smartswitchcase.egg-info/PKG-INFO
+smartswitchcase.egg-info/SOURCES.txt
+smartswitchcase.egg-info/dependency_links.txt
+smartswitchcase.egg-info/top_level.txt
