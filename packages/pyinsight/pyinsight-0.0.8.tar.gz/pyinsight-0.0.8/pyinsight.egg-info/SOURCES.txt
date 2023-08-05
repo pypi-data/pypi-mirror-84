@@ -1,0 +1,16 @@
+README.md
+setup.py
+pyinsight/__init__.py
+pyinsight/action.py
+pyinsight/cleaner.py
+pyinsight/dispatcher.py
+pyinsight/loader.py
+pyinsight/merger.py
+pyinsight/packager.py
+pyinsight/receiver.py
+pyinsight/transfer.py
+pyinsight/worker.py
+pyinsight.egg-info/PKG-INFO
+pyinsight.egg-info/SOURCES.txt
+pyinsight.egg-info/dependency_links.txt
+pyinsight.egg-info/top_level.txt
