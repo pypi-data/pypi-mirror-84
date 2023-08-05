@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: matrix-path
+Version: 1.1.1
+Summary: Navigating and Visualizing paths in a 2D Matrix.
+Home-page: https://github.com/rushmash91/matrix_path
+Author: Arush Sharma
+Author-email: arushsharma91@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+# matrix_path
+
+
+## Description
+Use the matrix class to create matrix objects and navigate the 2D matrix. Move with the ``` right ```, ``` left ```, ``` up ```, and ``` down ``` functions.
+The '1's represent the path.
+
+## Installation 
+```pip install matrix_path```
+
+## How to use?
+```
+from matrix import Matrix
+
+start_point = [0, 0]
+end_point = [0, 4]
+walls = [[0, 1], [1, 2]]
+maze = Matrix(5, start_point, end_point, walls)
+maze.print_matrix()
+```
+
+## License
+© 2020 Arush Sharma
+
+This repository is licensed under the MIT license. See LICENSE for details.
+
