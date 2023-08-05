@@ -1,0 +1,8 @@
+README.md
+setup.py
+insta_profile/__init__.py
+instaprofile.egg-info/PKG-INFO
+instaprofile.egg-info/SOURCES.txt
+instaprofile.egg-info/dependency_links.txt
+instaprofile.egg-info/requires.txt
+instaprofile.egg-info/top_level.txt
