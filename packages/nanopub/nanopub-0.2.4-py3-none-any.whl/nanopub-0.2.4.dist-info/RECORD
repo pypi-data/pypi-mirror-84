@@ -1,0 +1,13 @@
+nanopub/__init__.py,sha256=dcxuAgTChOv_ySoA942aCkQoWDAkkdT2Fpo1T_L8Uv4,78
+nanopub/_version.py,sha256=SBl2EPFW-ltPvQ7vbVWItyAsz3aKYIpjO7vcfr84GkU,22
+nanopub/definitions.py,sha256=du9QCqXeQ8qz4imUpP8ExlGqQjYiIHu1yOK26SRJgIs,204
+nanopub/java_wrapper.py,sha256=8Oz3XFerEew8VpknLpKuEOut-rKI8LMefYDjFaZE0ok,2748
+nanopub/namespaces.py,sha256=awscGVrZc94WlP3uHdY-zw5LQQ214wDSAGi8I-zk4IM,292
+nanopub/nanopub.py,sha256=W9odL4Anmg7RPEAUzxG5MCuycYTm_yVxZj-McMg4vAk,16058
+nanopub/np,sha256=3KkzPIT_cZO1EibuEqr_zrUjc81x1UhgXX-Rum83cSs,1651
+nanopub-0.2.4.data/scripts/make_nanopub_keys,sha256=4FcVFh28F-wfYu_oURfavi7NkNRAEOPbVInRxqgV33o,210
+nanopub-0.2.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nanopub-0.2.4.dist-info/METADATA,sha256=_6SBWC3wH_pyeGFkl4Hjt3icwIfK6hsU9vRskcCHR1U,4370
+nanopub-0.2.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+nanopub-0.2.4.dist-info/top_level.txt,sha256=VTVakeDEpIn2iT1-3p_Tie9Z9eENzG8Q25KpBtkKR4A,8
+nanopub-0.2.4.dist-info/RECORD,,
