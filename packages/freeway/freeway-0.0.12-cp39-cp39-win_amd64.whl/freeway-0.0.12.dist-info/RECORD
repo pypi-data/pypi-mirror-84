@@ -1,0 +1,12 @@
+freeway/__init__.py,sha256=HIO_N6Iz-0GJekY6Z7FqlLM7l_wfm-DWwWovEI-F20E,251
+freeway/errors.cp39-win_amd64.pyd,sha256=BnO1VJ-RZaUvQrKn-A6yy4zq1Mhl29hGmMCmsA8Vdfg,22528
+freeway/errors.py,sha256=VhgoxPt6D5n5LcrI6H-O36A5uMIY_0qKmZQGMlSI3fE,287
+freeway/freeway.cp39-win_amd64.pyd,sha256=n6RJAjGDY-2OwUdnvFcdY2Bn3ERA8QzAjl2kkyWNUm0,174592
+freeway/freeway.py,sha256=xkwKTFcwzjnk2D3AL7nleS2lAjzmMe5YB7NN156YWjg,10570
+freeway/versioner.cp39-win_amd64.pyd,sha256=CoaKZrT0-cOc0TlgGvCEe7sR29pAWCr6kiePqQ4Badg,120832
+freeway/versioner.py,sha256=T57wRS4xJjPPrrcflJD3p1jXyQpMHIdUJwRJQh8xaNo,6359
+freeway-0.0.12.dist-info/LICENSE,sha256=NF86bmp_v84qdacUEgl5IfjDnXDZwXVzYtjNEV8pX5Y,1079
+freeway-0.0.12.dist-info/METADATA,sha256=rPEUox4LOcmM11HxX7eiTxev8U0bO0GvcBxhQ53C3cQ,3315
+freeway-0.0.12.dist-info/WHEEL,sha256=2Kg4PzfJLrLEnxRV1e1jZf0TVEjxVcXZXjp8WtjE4tI,105
+freeway-0.0.12.dist-info/top_level.txt,sha256=eErbEHs3C85uNbrt3puKR6w8nz8fb5IFd9cwINwdQNI,8
+freeway-0.0.12.dist-info/RECORD,,
