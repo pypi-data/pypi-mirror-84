@@ -1,0 +1,6 @@
+argcomplete
+boto3
+pyexcel
+PyYAML
+requests
+tabulate
