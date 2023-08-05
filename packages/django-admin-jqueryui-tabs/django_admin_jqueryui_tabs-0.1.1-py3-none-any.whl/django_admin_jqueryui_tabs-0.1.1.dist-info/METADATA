@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: django-admin-jqueryui-tabs
+Version: 0.1.1
+Summary: A plug-in that modifies django admin form fieldset style to jqueryui tabs
+Home-page: https://github.com/AngelLiang/django-admin-jqueryui-tabs
+Author: AngelLiang
+Author-email: yannanxiu@126.com
+License: MIT
+
+# django admin jqueryui tabs
+
+
