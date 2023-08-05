@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: dbhelpy
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/adavila0703/data-helpy
+Author: Angel Davila
+Author-email: adavila0703@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+> Datahelpy is a Python library with sqlite methods designed for quick db interaction
+
+# Install
+```python
+pip install datahelpy
+```
+# Database Connection
+```python
+from datahelpy import helpy
+
+helpy.database = 'database.db'
+```
+
+
