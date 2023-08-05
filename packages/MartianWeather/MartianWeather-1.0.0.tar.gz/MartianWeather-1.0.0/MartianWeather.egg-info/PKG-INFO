@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: MartianWeather
+Version: 1.0.0
+Summary: A python wrapper for the Insight: Mars Weather Service API
+Home-page: https://gitlab.com/wilmlar/martianweather
+Author: William Larsson
+License: UNKNOWN
+Project-URL: Source, https://gitlab.com/wilmlar/martianweather
+Project-URL: Wiki, https://gitlab.com/wilmlar/martianweather/-/wikis/home
+Project-URL: Bug Reports, https://gitlab.com/wilmlar/martianweather/-/issues
+Description: # MartianWeather
+        
+        MartianWeather is a python package that makes it easy to connect to the [Insight: Mars Weather Service API](https://mars.nasa.gov/insight/weather/). The package provides functions for accessing measurements of temperature, pressure and wind taken by the Insight lander on the surface of mars at Elysium Planitia.
+        
+        ### Installation
+        
+        MartianWeather can be installed with the python package manager
+        
+        ``` 
+        pip3 install MartianWeather 
+        ```
+        
+        ### Usage
+        
+        For documentation on how to use MartianWeather please visit the [wiki](https://gitlab.com/wilmlar/martianweather/-/wikis/home) where you can find some simple [example scripts](https://gitlab.com/wilmlar/martianweather/-/wikis/Examples) and a full [reference](https://gitlab.com/wilmlar/martianweather/-/wikis/Reference) page.
+Keywords: insight,mars,weather,api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
