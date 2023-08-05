@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: sample-package
+Version: 0.1.1
+Summary: 
+Author: Mario
+Author-email: mariohdpz@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
