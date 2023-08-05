@@ -1,0 +1,5 @@
+requests<3,>=2.22
+python-dateutil<3,>=2.8
+aiohttp<4,>=3.6
+unidecode<2,>=1
+async_lru<2,>=1.0.2
