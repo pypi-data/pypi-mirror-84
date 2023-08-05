@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: i-pymongo
+Version: 0.1.0
+Summary: 
+
+ipymongo (innovata pymongo)
+
+HTTPError: 403 Forbidden from https://upload.pypi.org/legacy/
+The user 'innovata' isn't allowed to upload to project 'IPyMongo'. See https://pypi.org/help/#project-name for more information.
+
+Home-page: https://github.com/innovata/ipymongo
+Author: innovata Sambong
+Author-email: iinnovata@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

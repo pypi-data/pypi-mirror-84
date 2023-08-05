@@ -1,0 +1,12 @@
+ipymongo/__init__.py,sha256=1bsU1De1ryPJyH572oMLHDo9FOCQ_V6BGjOPc5w5FOA,897
+ipymongo/bak.py,sha256=x4rg4-pNsFA0yg-t83Ic_ehtyUyeO9kPvIsAj5YoZGk,959
+ipymongo/client.py,sha256=aiOaUQaHJCUt6J_VSieviAdA5cirS5XrJ9ps0b5wBi4,1840
+ipymongo/collection.py,sha256=rr0O__XCqSEXWgjgcpNbp5anYoVXrKywDpn9DGXdkgc,7276
+ipymongo/database.py,sha256=r2PtZ6XC2_SkONuatpi9lOivosk3RK7v0m-kTPg3Nw8,1603
+ipymongo/model.py,sha256=bVGslv9YNNrgDC2053Zt9d5XKDq41UNywZp_S4AO508,2987
+utest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+i_pymongo-0.1.0.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+i_pymongo-0.1.0.dist-info/METADATA,sha256=p2tqMj48ohmh4a0-i8ay7siBrMQxo_kv-bimDMk3yb8,634
+i_pymongo-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+i_pymongo-0.1.0.dist-info/top_level.txt,sha256=C64jegGKu2IoH6um9IG_E1scGQvE63QawKt0e3PLgZs,15
+i_pymongo-0.1.0.dist-info/RECORD,,
