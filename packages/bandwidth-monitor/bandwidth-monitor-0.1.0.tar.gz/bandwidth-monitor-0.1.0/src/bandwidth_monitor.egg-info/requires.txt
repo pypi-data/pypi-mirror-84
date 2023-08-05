@@ -1,0 +1,2 @@
+schedule~=0.6.0
+speedtest-cli~=2.1.0
