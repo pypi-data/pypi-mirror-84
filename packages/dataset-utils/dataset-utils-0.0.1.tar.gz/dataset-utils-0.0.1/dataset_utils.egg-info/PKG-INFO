@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dataset-utils
+Version: 0.0.1
+Summary: A few helper utilities to the dataset pip package
+Home-page: https://github.com/kapily/dataset-utils
+Author: Kapil Yedidi
+Author-email: kapily.code@gmail.com
+License: UNKNOWN
+Description: # dataset-utils
+        utilities for the python module dataset
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
