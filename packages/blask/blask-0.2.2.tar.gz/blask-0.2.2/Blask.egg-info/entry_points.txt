@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        blaskcli=blask.blaskcli:blaskcli
+    
