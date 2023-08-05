@@ -1,0 +1,46 @@
+#!/usr/bin/env python3
+
+# ------------------------------------------------------------------
+# Warp Sequencer
+# (C) 2020 Michael DeHaan <michael@michaeldehaan.net>
+# Apache2 Licensed
+# ------------------------------------------------------------------
+
+# CLI/test client for warp backend
+
+# examples:
+#
+# warp_cli --command list_devices
+# warp_cli --command play_scene --name scene01
+# warp_cli --command show_instrument --name modular1
+# warp_cli --command stop
+
+import argparse
+import requests
+import time
+from warpseq.server.packet import CommandPacket
+
+if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser(description='Warp CLI client')
+
+    parser.add_argument('--port', dest='port', type=int, default=8000, help='')
+    parser.add_argument('--address', dest='address', type=str, default='127.0.0.1', help='')
+    parser.add_argument('command', type=str)
+    parser.add_argument('--name', dest='name', type=str)
+    parser.add_argument('--id', dest='id', type=str)
+    parser.add_argument('--data', dest='data', type=str)
+
+    options = parser.parse_args()
+
+    pkt = CommandPacket(cmd=options.command, name=options.name, id=options.id, data=options.data)
+    data = pkt.to_dict()
+
+    x1 = time.perf_counter()
+    url = "http://%s:%s/svc" % (options.address, options.port)
+    req = requests.post(url, json=data)
+    x2 = time.perf_counter()
+
+    print(req.json())
+    print(x2-x1)
+

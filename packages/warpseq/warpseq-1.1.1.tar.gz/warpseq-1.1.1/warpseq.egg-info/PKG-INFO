@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: warpseq
+Version: 1.1.1
+Summary: MIDI sequencer
+Home-page: https://warpseq.com
+Author: Michael DeHaan
+Author-email: michael@michaeldehaan.net
+License: Apache License
+Project-URL: Documentation, https://warpseq.com/
+Project-URL: Source, https://bitbucket.org/laserllama/warpseq/src/master/
+Project-URL: Tracker, https://bitbucket.org/laserllama/warpseq/issues?status=new&status=open
+Description: text-based MIDI sequencer
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6
+Description-Content-Type: text/plain

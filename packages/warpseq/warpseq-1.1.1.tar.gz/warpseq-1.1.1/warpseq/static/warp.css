@@ -1,0 +1,339 @@
+html {background-color: white}
+
+.container {
+  margin: auto;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: white;
+}
+
+.flex-grid {
+  color: black;
+  display: flex;
+  margin: auto; /* -1rem -1rem; */
+  height: 100%;
+  width: 100%;
+}
+
+/**********************************************************************************************************************/
+/* MAIN LAYOUT                                                                                                        */
+/**********************************************************************************************************************/
+
+.col {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.sidebar {
+  flex: flex-grow;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 100%;
+  overflow: auto;
+}
+
+.workspace {
+  flex: 3;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.corner_nav {
+   float: right;
+}
+
+.nav1 {
+  flex: 1;
+  width: auto;
+  height: auto;
+  flex: flex-shrink;
+  padding: 10px;
+  border-right: 1px double #dddddd;
+  min-width: 200px;
+}
+
+.nav2 {
+  flex: 8;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  padding: 10px;
+  border-right: 1px double #dddddd;
+  min-width: 200px;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.nav2_title {
+  color: black;
+  border-bottom: 2px black;
+}
+
+.properties-container {
+   display:flex;
+   flex-direction:row;
+}
+
+.side-html-container {
+  color: black;
+  display: flex;
+  padding-left: 60px;
+  padding-top: 45px;
+}
+
+.smart-form-container {
+  display: flex;
+}
+
+/**********************************************************************************************************************/
+/* FONTAWESOME                                                                                                        */
+/**********************************************************************************************************************/
+
+.fa { display:inline; }
+
+/**********************************************************************************************************************/
+/* WORKSPACE FORMS                                                                                                    */
+/**********************************************************************************************************************/
+
+.warpform {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.warpform td {
+   padding: 5px;
+}
+
+.warpform label {
+   color: black;
+}
+
+.warpform_buttons td {
+   padding: 10px;
+   padding-bottom: 20px;
+}
+
+.workspace_title {
+  padding: 10px;
+  padding-top: 0px;
+  padding-bottom: 60px;
+  color: black;
+  background-color: white;
+}
+
+.flash {
+   padding: 10px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 50px;
+   color: black;
+}
+
+.flash_error {
+   background-color: red;
+   outline: white 1px;
+}
+
+.flash_happy {
+   background-color: white;
+   outline: blue 1px;
+}
+
+
+/**********************************************************************************************************************/
+/* SWITCHER PANEL                                                                                                     */
+/**********************************************************************************************************************/
+
+.switcher_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.switcher_table {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+td, th {
+padding: 10px;
+}
+
+
+
+
+/**********************************************************************************************************************/
+/* NAV2 PANEL                                                                                                         */
+/**********************************************************************************************************************/
+
+.nav2_contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.switcher_item {
+}
+
+.switcher_item_active {
+  font-weight: bold;
+}
+
+.switcher_item_inactive {
+}
+
+/*****/
+
+.nav2_item_active {
+  font-weight: bold;
+}
+
+.nav2_item_inactive {
+}
+
+/**********************************************************************************************************************/
+/* GLOBAL CONTROLS                                                                                                    */
+/**********************************************************************************************************************/
+
+.global_controls {
+   padding: 10px;
+   padding-bottom: 40px;
+}
+
+.global_control {
+}
+
+/**********************************************************************************************************************/
+/* GENERAL                                                                                                            */
+/**********************************************************************************************************************/
+
+body {
+    /* color: white; */
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    color: black;
+    text-decoration: none;
+}
+
+.btn {
+  color: black;
+  font-size: 12px;
+}
+
+.btn:hover {
+}
+
+.btn_danger {
+  color: red;
+}
+
+.btn_danger:hover {
+}
+
+.warp_option {
+    color:black
+}
+
+/**********************************************************************************************************************/
+/* THE GRID                                                                                                           */
+/**********************************************************************************************************************/
+
+.grid {
+   /* this doesn't seem to work */
+   padding-left:20px;
+   padding-top:40px;
+   color: black;
+}
+
+.grid td {
+   padding: 5px;
+}
+
+.grid_header {
+   padding: 10px;
+
+}
+
+.grid_footer {
+   padding: 10px;
+}
+
+/* INPUT */
+
+input, textarea, select {
+  padding: 4px 8px;
+  outline: 1px;
+  color: black;
+}
+
+select:focus {
+ /* outline: none; */
+}
+
+input[type="text"]:disabled {
+  background: #cccccc;
+}
+
+select option { color: black; }
+
+.ag-row .ag-cell {
+  display: flex;
+  justify-content: left;
+  vertical-align-items: center;
+}
+
+/**********************************************************************************************************************/
+/* RANGES                                                                                                             */
+/**********************************************************************************************************************/
+
+.range_number {
+    padding-left:10px;
+    color: black;
+}
+
+
+/**********************************************************************************************************************/
+/* INDICATOR LIGHTS & PLAY BUTTONS                                                                                    */
+/**********************************************************************************************************************/
+
+/*
+.lights_inactive {
+}
+*/
+
+.lights_active {
+   color: blue !important;
+}
+
+.green_on_hover:hover {
+  color: #00FF00 !important;
+}
+
+.red_on_hover:hover {
+  color: red !important;
+}
+
+.blue_on_hover:hover {
+  color: blue !important;
+}
+
+.button_tab {
+   padding: 5px;
+   border-top-left-radius: 5px;
+   border-top: 1px solid black;
+   border-left: 1px solid black;
+}
+
+.button_tab_active {
+   background-color: #aaaacc !important;
+}
+
+/**********************************************************************************************************************/
+
+.spacer {
+   padding: 10px;
+}

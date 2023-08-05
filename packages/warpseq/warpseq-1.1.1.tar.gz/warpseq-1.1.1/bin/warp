@@ -1,0 +1,41 @@
+#!/usr/bin/env python3
+
+# ------------------------------------------------------------------
+# Warp Sequencer
+# (C) 2020 Michael DeHaan <michael@michaeldehaan.net>
+# Apache2 Licensed
+# ------------------------------------------------------------------
+
+# server process for Warp UI and backend service
+
+from warpseq.server.web_server import run_server
+from warpseq.server.engine import run_engine
+
+import multiprocessing
+import argparse
+import sys
+
+def proc_run_engine(init_state):
+    run_engine(init_state=init_state)
+
+if __name__ == "__main__":
+
+    multiprocessing.freeze_support()
+    init_state = multiprocessing.Value('i', 0)
+
+
+    parser = argparse.ArgumentParser(description='Warp Server')
+
+    parser.add_argument('--port', dest='port', type=int, default=8000, help='')
+    parser.add_argument('--address', dest='address', type=str, default='127.0.0.1', help='')
+
+    options = parser.parse_args()
+
+    engine = multiprocessing.Process(target=proc_run_engine, args=(init_state,), daemon=True)
+    engine.start()
+
+    try:
+        run_server(host=options.address, port=options.port, init_state=init_state)
+    except:
+        engine.join()
+        sys.exit(1)
