@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+miutil/__init__.py
+miutil.egg-info/PKG-INFO
+miutil.egg-info/SOURCES.txt
+miutil.egg-info/dependency_links.txt
+miutil.egg-info/requires.txt
+miutil.egg-info/top_level.txt
+miutil/fdio/__init__.py
+miutil/imio/__init__.py
+miutil/imio/nii.py
