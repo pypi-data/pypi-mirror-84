@@ -1,0 +1,15 @@
+aiohttp_pydantic/__init__.py,sha256=MbIBW434y5BDVdrIjAwtRxLFyTVo21GPOxqgHPWLv_I,97
+aiohttp_pydantic/injectors.py,sha256=kgSPulPTp4n9bXnQuI6xVCK_GynIIBC9kqjHD8XMOJ4,3712
+aiohttp_pydantic/view.py,sha256=ZddXagVteFAVmfPZ2I06TrnLT670-YES80hUl-_1cDg,3224
+aiohttp_pydantic/oas/__init__.py,sha256=jpCmAfqYccbDpwntwHto2iLoVbjFSQxiWhOA5CFkyRE,820
+aiohttp_pydantic/oas/index.j2,sha256=xsQTbvdXrdJkvH4Hj8XL3faiDWADU7t3eq3DBrk4r6Q,1883
+aiohttp_pydantic/oas/struct.py,sha256=VLub9gt6s41pH_e331QRgoHxTB5mXsvzuxXcPv8KzrA,6745
+aiohttp_pydantic/oas/typing.py,sha256=9dLtaAz4gefiOmhVR9h-nEUkZz3aqVLOW07Er-wwSyc,1202
+aiohttp_pydantic/oas/view.py,sha256=Gg37uWjp_pivoCsjUT4-9FYHl9gxk65q5F3lotrP_RU,5120
+tests/test_oas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_oas/test_view.py,sha256=DZPe7CFmHLCeQMcY3XQnkE2VUpPVqydjZSjJJ6oMKiU,5861
+aiohttp_pydantic-1.3.0.dist-info/LICENSE,sha256=n7KxVZHGC5OISzqDX7cQ4RbWdXxg1FkFEnMKpnosff8,1072
+aiohttp_pydantic-1.3.0.dist-info/METADATA,sha256=uEoNY-1YL8-zJb2IBArUjlN_xnyU364B2tlqL3Q5wNY,7533
+aiohttp_pydantic-1.3.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+aiohttp_pydantic-1.3.0.dist-info/top_level.txt,sha256=9bKDsPsEpsidQpdZLm2UZs0Su-bLoaVE_TfJZDl8Jds,23
+aiohttp_pydantic-1.3.0.dist-info/RECORD,,
