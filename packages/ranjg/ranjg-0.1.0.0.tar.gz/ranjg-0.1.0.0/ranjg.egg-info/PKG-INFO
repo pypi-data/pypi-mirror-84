@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: ranjg
+Version: 0.1.0.0
+Summary: Generate json text randomly
+Home-page: https://github.com/unaguna/random-json-generator
+Author: k-izumi
+Author-email: k.izumi.ysk@gmail.com
+Maintainer: k-izumi
+Maintainer-email: k.izumi.ysk@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities
