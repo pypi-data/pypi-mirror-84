@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: github-avatar-dl
+Version: 1.1
+Summary: A python module that will allow users to download GitHub avatar images
+Home-page: https://github.com/mehtaarn000/github-avatar-dl
+Author: Arnav Mehta
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# A python module that will allow users to download GitHub avatar images
+
+## Installation:
+`pip install github-avatar-dl`
+
+## Required Arguments:
+Two arguments are required to download the image: `user` and `filename`
+
+`user` is the username of the GitHub account.
+
+`filename` is the file that you want to download the image to.
+
+## Usage
+
+`import github_avatar_dl as gh`
+
+`gh.download_avatar('mehtaarn000', 'image.jpg')`
+
+A new image file should appear with the Avatar of the GitHub user.
+
+
