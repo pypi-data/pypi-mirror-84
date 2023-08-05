@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+cassandra_sigv4/__init__.py
+cassandra_sigv4/auth.py
+cassandra_sigv4.egg-info/PKG-INFO
+cassandra_sigv4.egg-info/SOURCES.txt
+cassandra_sigv4.egg-info/dependency_links.txt
+cassandra_sigv4.egg-info/requires.txt
+cassandra_sigv4.egg-info/top_level.txt
