@@ -1,0 +1,8 @@
+tests/__init__.py,sha256=Yxq0s8szmZEBIkqQ7LNIQgtFtYvuGp6QEF6W-3eaLxc,12
+tests/test_api.py,sha256=oCqn8fjDQiE1LI3rwMQUT8PCRgCqcJOnMT9BBpnqD_8,232
+tests/test_integration.py,sha256=wakrXmfUFkmndzdTbPc2VKqOkFDos2kIAqZ1f66FRMA,229
+tests/test_unit.py,sha256=O5p0vcso6B3w7N6azzWGK-FF1a6viuWxLy_-wIm_4UA,619
+Flask_of_Cinema-0.9.3.dist-info/METADATA,sha256=AjlmadYRDCBSUAK2CMDj3_9AXsISO15pBUJAwlSKlrs,345
+Flask_of_Cinema-0.9.3.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+Flask_of_Cinema-0.9.3.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+Flask_of_Cinema-0.9.3.dist-info/RECORD,,
