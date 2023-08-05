@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: textgraph
+Version: 2.0.0
+Summary: Library for creating text based graphs
+Home-page: https://github.com/markeganfuller/pytextgraph
+Author: Mark Egan-Fuller
+Author-email: markeganfuller@googlemail.com
+License: GPLv3+
+Description: # TextGraph
+        
+        [![Build Status](https://travis-ci.org/markeganfuller/pytextgraph.svg?branch=master)](https://travis-ci.org/markeganfuller/pytextgraph)
+        [![codecov](https://codecov.io/gh/markeganfuller/pytextgraph/branch/master/graph/badge.svg)](https://codecov.io/gh/markeganfuller/pytextgraph)
+        
+        Python library for generating simple text graphs.
+        
+        Based on code by [Rory McCann](https://github.com/rory)
+        
+        ![asciicast](asciicast.gif)
+        
+        ## Install
+        
+        ```bash
+        pip install textgraph
+        ```
+        
+        ## Usage
+        
+        ```python
+        import textgraph
+        
+        data = [12, 5, 2, 7]
+        
+        print(textgraph.spark(data))
+        ```
+        
+        See more examples in `examples.py`
+        
+Keywords: text graph textgraph asciigraph
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

@@ -1,0 +1,10 @@
+README.md
+setup.py
+textgraph/__init__.py
+textgraph/horizontal.py
+textgraph/spark.py
+textgraph/vertical.py
+textgraph.egg-info/PKG-INFO
+textgraph.egg-info/SOURCES.txt
+textgraph.egg-info/dependency_links.txt
+textgraph.egg-info/top_level.txt
