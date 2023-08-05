@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: instaprofile
+Version: 1.0.5
+Summary: Get the Instagram users profile informations.
+Home-page: https://github.com/francis-taylor/instaprofile
+Author: Francis Taylor
+Author-email: Francistrapp2000@gmail.com
+License: MIT
+Description: README.md
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
