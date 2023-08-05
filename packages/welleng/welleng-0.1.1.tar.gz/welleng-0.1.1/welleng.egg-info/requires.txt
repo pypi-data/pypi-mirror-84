@@ -1,0 +1,6 @@
+pandas
+numpy
+scipy
+trimesh
+math
+openpyxl
