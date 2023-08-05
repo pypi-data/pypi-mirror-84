@@ -1,0 +1,11 @@
+Click
+PyYAML
+sentry-sdk
+validators
+analytics-python
+boto3
+immutables
+portalocker
+policy-sentry
+sym-cli
+pkce
