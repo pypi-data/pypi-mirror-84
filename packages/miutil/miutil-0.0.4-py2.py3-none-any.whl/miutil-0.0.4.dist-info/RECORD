@@ -1,0 +1,9 @@
+miutil/__init__.py,sha256=znJHO6YRth6drvPymYKhI7J9X-QYDU5RRukuFY6gYOk,28
+miutil/fdio/__init__.py,sha256=n3t1EpVs58oQsGN08UIxBRou9yw8xh0oFxanyo720G8,468
+miutil/imio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+miutil/imio/nii.py,sha256=9UIAfoL9EsV9gjtcV1F9s8C1NRQ0O3sHA8ccW4DfC5k,11238
+miutil-0.0.4.dist-info/LICENCE.md,sha256=gxq_ZuT-4b6-cjp--rSrTZl-0isuumL14nvwPzY3_Gk,547
+miutil-0.0.4.dist-info/METADATA,sha256=DdMd5XeSoeBTfXiVJJb8NcjV0ZVQgCqHcAwxKRcdOM0,2302
+miutil-0.0.4.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+miutil-0.0.4.dist-info/top_level.txt,sha256=vhbciHMRpaV6ilbD9E6QK19yGQt9gGnxBSG3Lk1DQkU,7
+miutil-0.0.4.dist-info/RECORD,,
