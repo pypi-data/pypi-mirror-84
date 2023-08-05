@@ -1,0 +1,16 @@
+pytorch_pip_shim/__init__.py,sha256=yjq7eIceCj1QB6ClkpmLlzBcuf_FyDmHKB8zbt4WxE8,152
+pytorch_pip_shim/__main__.py,sha256=MSmt_5Xg84uHqzTN38JwgseJK8rsJn_11A8WD99VtEo,61
+pytorch_pip_shim/_version.py,sha256=r_SIMIHc9z6UHqWx7MGMnu3yUCK1modp6qPB256ioD4,116
+pytorch_pip_shim/computation_backend.py,sha256=d9d4DrfB09owysfAmKULWM_oAz4ezXvLbNKwc8iO6fM,2586
+pytorch_pip_shim/patch.py,sha256=QF9ugFDaAuDvn5ch3p8Q9xuRL7COh2AqEXIaGeVXsMI,5256
+pytorch_pip_shim/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytorch_pip_shim/shim.py,sha256=ekH3znwRMaQZfq_XLQOLLSAqKU8DRaOy5fSqqZuAukQ,1672
+pytorch_pip_shim/utils.py,sha256=BYy4EfwJSg_ljhl0GdMkAa_LnP8VRO5anneAnH3nvRo,5043
+pytorch_pip_shim/cli/__init__.py,sha256=laQrQNIYgHHObb4e7ApGone-teKuZX5nAg5jpJGPbOY,2347
+pytorch_pip_shim/cli/commands.py,sha256=RAQdQKIemctvOQk7b-sz7UP8Whzc6bQimlZ-TBY_Qa0,1855
+pytorch_pip_shim-0.1.0.dist-info/LICENSE,sha256=7MAdcvbeqjQrpO18Ga_Kv7ZTx4NktKTofRsxmLxH0sw,1520
+pytorch_pip_shim-0.1.0.dist-info/METADATA,sha256=vqqTBuSBcv8tYqN-_H-gTrCOZoOpRZRl6r3AUjXXMuw,8205
+pytorch_pip_shim-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pytorch_pip_shim-0.1.0.dist-info/entry_points.txt,sha256=Cn-8mSHIdbfkOPH59hftt4sfOEsCoGMK4340mQpTles,64
+pytorch_pip_shim-0.1.0.dist-info/top_level.txt,sha256=8wm42NbM1b-DxmNw9q6PToBzePgIAJQx__GyFJF4Hc8,17
+pytorch_pip_shim-0.1.0.dist-info/RECORD,,
