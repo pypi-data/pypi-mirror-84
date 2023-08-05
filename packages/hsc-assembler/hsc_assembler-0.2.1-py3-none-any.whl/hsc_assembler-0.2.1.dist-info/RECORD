@@ -1,0 +1,10 @@
+hsc_assembler/__init__.py,sha256=dks9gykZG_QGSe4aujw4kfjAOs1GtVcBVuQfV7yzuYI,96
+hsc_assembler/__main__.py,sha256=L-I4BCAo1KRIWmf5IrzHkDq4XW9xeXVgU_ShcAZLGXA,96
+hsc_assembler/asm_parser.py,sha256=Mp5C32MXEmxF4FM0FNSI2icfVATeG52jQNgw1gzbneE,7061
+hsc_assembler/main.py,sha256=AtXefB2JYcTJzCtb9CqbsOB5qfDDFPHueTMd0_T1AhI,1453
+hsc_assembler/scanner.py,sha256=w1x2DlEjlRvxMZpnpFX0OVrih8YR7dNPb3BgI2yXivQ,6526
+hsc_assembler/token_enums.py,sha256=FFg29YVKbMWMLyDQ3TdtCsrVfV_yyOsg3R5YGOISo18,715
+hsc_assembler-0.2.1.dist-info/entry_points.txt,sha256=yIJHykiEKXjIdjLaT0VhAf9eYSOeIiAUvA1lUWLO1M8,56
+hsc_assembler-0.2.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+hsc_assembler-0.2.1.dist-info/METADATA,sha256=EZ9lEuVBLCXXQOB6W-F-jBNx0RZ2fWW3U-VYuRLLHao,1310
+hsc_assembler-0.2.1.dist-info/RECORD,,
