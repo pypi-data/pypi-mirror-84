@@ -1,0 +1,7 @@
+gitpython
+
+[dev]
+coverage
+nose
+setuptools
+wheel
