@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: django-mapbox-baselayer
+Version: 0.0.7
+Summary: Django model to store and serve mapbox base layer config
+Home-page: https://github.com/makinacorpus/django-mapbox-baselayer.git
+Author: Makina Corpus
+Author-email: geobi@makina-corpus.com
+License: UNKNOWN
+Description: [![codecov](https://codecov.io/gh/makinacorpus/django-mapbox-baselayer/branch/master/graph/badge.svg)](https://codecov.io/gh/makinacorpus/django-mapbox-baselayer)
+        [![Build Status](https://travis-ci.org/makinacorpus/django-mapbox-baselayer.svg?branch=master)](https://travis-ci.org/makinacorpus/django-mapbox-baselayer)
+        
+        
+        Django model and view to store, generate and serve configuration for MapBox GL JS map base layer
+        
+        
+        # Getting started
+        ### Installation
+        Install it in your project like any dependency
+        ```bash
+        pip install django-mapbox-baselayer
+        ```
+        
+        ### Usage
+        Declare django-mapbox-baselayer in the `INSTALLED_APPS`
+        ```python
+        # settings.py
+        
+        INSTALLED_APPS  = [
+            # ... other django apps
+            "mapbox_baselayer",
+        ]
+        ```
+        
+        For Mapbox base layers, you do not need to describe the tiles with the `BaseLayerTile` object, but an url is mandatory.
+        
+        For Raster base layers, is it necessary to create a `BaseLayerTile` for each url (`a.tiles.xxx`, `b.tiles.xxx`, etc ...)
+        
+        Tile size should be 256 for raster and 512 for vector.
+        
+        ### Commands
+        
+        #### OSM base layer
+        
+        ```bash
+        ./manage.py install_osm_baselayer
+        ```
+        
+        #### OpenTopoMap base layer
+        
+        ```bash
+        ./manage.py install_opentopomap_baselayer
+        ```
+        
+        
+        =========
+        CHANGELOG
+        =========
+        
+        0.0.7         (2020-10-30)
+        --------------------------
+        
+        * Admin is now registered by default. Delete enabling code in your project.
+        * Set default mapbox glyphs to avoid map style problems on raster based layer
+        * Add commands to create OSM and OpenTopoMap base layers
+        
+        0.0.6         (2020-09-09)
+        --------------------------
+        
+        * Support django 3.1
+        
+        0.0.5         (2020-06-03)
+        --------------------------
+        
+        * Fix translations
+        
+        
+        0.0.4         (2019-12-04)
+        --------------------------
+        
+        * Allow using map_box_url to store vector external json
+        
+        
+        0.0.3         (2019-12-03)
+        --------------------------
+        
+        * add tile Size option for raster layers
+        * add attribution option for all layers
+        * Add real_url property to model MapBaseLayer, to get real url for mapbox styles
+        * fix MapBaseLayer deletion
+        * Enable fr translation
+        
+        
+        0.0.2         (2019-11-29)
+        --------------------------
+        
+        * Increase tile url max size
+        
+        
+        0.0.1         (2019-11-25)
+        --------------------------
+        
+        * First release
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Description-Content-Type: text/markdown
+Provides-Extra: dev
