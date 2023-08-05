@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: img2epub
+Version: 0.3.0
+Summary: Generate EPUB book from image file set.
+Home-page: UNKNOWN
+Author: takatoh
+Author-email: takatoh.m@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: jinja2
+Requires-Dist: click
+
+UNKNOWN
+
+
