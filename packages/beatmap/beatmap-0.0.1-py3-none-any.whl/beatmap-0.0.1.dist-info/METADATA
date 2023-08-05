@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: beatmap
+Version: 0.0.1
+Summary: A tool for determining the valid P/P0 range in BET isotherms
+Home-page: http://pmeal.org
+Author: Jeff Gostick
+Author-email: jgostick@uwaterloo.ca
+License: UNKNOWN
+Project-URL: Documentation, https://beatmap.readthedocs.io/en/master/
+Project-URL: Source, https://github.com/PMEAL/beatmap/
+Project-URL: Tracker, https://github.com/PMEAL/beatmap/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: sphinx
+Requires-Dist: prettytable
+
+UNKNOWN
+
+
