@@ -1,0 +1,7 @@
+setup.py
+convrsn/__init__.py
+convrsn/temperature.py
+convrsn.egg-info/PKG-INFO
+convrsn.egg-info/SOURCES.txt
+convrsn.egg-info/dependency_links.txt
+convrsn.egg-info/top_level.txt
