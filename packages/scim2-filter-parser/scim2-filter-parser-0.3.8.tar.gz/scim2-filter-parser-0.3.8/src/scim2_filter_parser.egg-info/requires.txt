@@ -1,0 +1,4 @@
+sly==0.4
+
+[django-query]
+django
