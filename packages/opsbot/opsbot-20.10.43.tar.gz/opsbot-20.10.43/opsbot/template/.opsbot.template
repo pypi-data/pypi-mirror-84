@@ -1,0 +1,28 @@
+[setting]
+target_os=ubuntu
+target_os_version=18.04
+admin=diepnh@magik.vn
+auto_backup=1
+
+[env]
+common
+lamp
+https
+#mongodb
+#node
+#scrapy
+#composer
+#angular
+
+[user]
+firstusr --mysql --database-prefix=frst_
+secondusr --mysql --mongodb --database-prefix=scnd_
+
+[site]
+example.com firstusr --public-directory=public \
+    --source-git=git@gitlab.com:magiklab/edu/english.magik.vn-api.git \
+    --database-git=git@gitlab.com:magiklab/edu/english.magik.vn-database.git
+
+example2.com secondusr --include-domain=example.gov.vn,example.edu.vn
+example3.com firstusr --node-express --port=3030
+
