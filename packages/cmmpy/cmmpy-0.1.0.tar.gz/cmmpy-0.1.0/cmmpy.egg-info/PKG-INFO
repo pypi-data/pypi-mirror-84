@@ -1,0 +1,145 @@
+Metadata-Version: 2.1
+Name: cmmpy
+Version: 0.1.0
+Summary: Implementation of the Comparison Model Method
+Home-page: https://bitbucket.org/alecomunian/cmmpy
+Author: Alessandro Comunian
+Author-email: alessandro.comunian@unimi.it
+License: UNKNOWN
+Project-URL: Documentation, https://cmmpy.readthedocs.io/en/latest/index.html
+Project-URL: Source, https://bitbucket.org/alecomunian/cmmpy
+Description: README	
+        ======
+        
+        This is the README file for a collection of Python scripts that implement
+        the Comparison Model Method (CMM, [1]_, [2]_, [3]_ and [4]_).
+        
+        For more details about the tests and the methodology, please see the
+        manuscript "Improving the robustness of the Comparison Model Method
+        for the identification of hydraulic transmissivities" by A.Comunian
+        and M.Giudici (submitted to `Computers & Geosciences`).
+        
+        |
+        
+        Purpose
+        =====================
+        
+        This is a python implementation of the Comparison Model Method (CMM),
+        a direct method to solve inverse problems in hydrogeology, and in
+        particular to compute the hydraulic conductivity *T* of a confined
+        aquifer given an initial tentative value of *T* and one or more
+        interpolated hydraulic head fields *h*.  This implementation of the
+        CMM heavily relies on the USGS engines of the `Modflow
+        <https://www.usgs.gov/mission-areas/water-resources/science/modflow-and-related-programs>`_
+        family (and `Modflow6
+        <https://www.usgs.gov/software/modflow-6-usgs-modular-hydrologic-model>`_
+        in particular) to solve the forward problem, facilitated by the use of
+        the Python module `flopy
+        <https://www.usgs.gov/software/flopy-python-package-creating-running-and-post-processing-modflow-based-models>`_. Nevertheless,
+        it can be adapted to make use of other engines for the solution of the
+        forward problem.
+        
+        |
+        
+        Installation
+        =====================
+        
+        |
+        
+        Requirements
+        --------------------
+        
+        In addition to the common Python modules ``numpy``, ``scipy`` and
+        ``matplotlib``, this codes requires a recent version of ``flopy``.
+        
+        .. note::
+        
+           You should adapt the name of the ``Modflow6`` executable name
+           defined in the JSON configuration file (variable ``exe_name``) provided for the
+           corresponding test case. For a general example, have a look at the
+           file ``cmmpy/test/template/test.json``.
+        
+        |
+        
+        Download and install
+        -----------------------------
+        
+        A the moment the package is **not** available from the Python Package
+        Index repository, therefore to install it you
+        need to:
+        
+        1) Download or clone the repository from the link
+           `https://bitbucket.org/alecomunian/cmmpy
+           <https://bitbucket.org/alecomunian/cmmpy>`_,
+           and unpack it if needed.
+        2) Move into the project directory (``cd cmmpy``) and from the command line run::
+        
+             pip install -e .
+        
+        3) To check if the installation worked, open a Python terminal and try::
+        
+               import cmmpy
+           
+           If there are no errors, then the installation will probably work.
+        
+        |
+        
+        Run the tests
+        ---------------------------
+        
+        1) Move into the folder ``ŧest``.
+        2) Then, from the shell, use the script ``run_cmm.py`` to run the
+           corresponding test by providing the name of the JSON parameter file
+           as unique input argument, like for example::
+        
+             ./run_cmm.py template/test.json
+        
+        3) This should create (in the folder defined by the ``wdir`` variable in the JSON parameter file)
+           all the output of the selected test.
+        
+        If you want to run multiple test, have a look at the script ``run_all.py``.
+           
+        |
+        
+        Contacts
+        ----------------------
+        
+        This code was developed by the `HydroGeophysics
+        Lab. <https://sites.unimi.it/labidrogeofisica/>`_ of the University of
+        Milan.  Please do not hesitate to contact us should you require more
+        information or interested in contributing.
+        
+        |
+        
+        
+        References
+        -------------------
+        
+        .. [1] Scarascia, S. and Ponzini, G., "An approximate solution of the
+               inverse problem in hydraulics" in L'Energia Elettrica (1972),
+               pp 518–531, Volume 49
+        
+        .. [2] Ponzini, G. and Crosta, G., "The comparison model method: A new
+               arithmetic approach to the discrete inverse problem of
+               groundwater hydrology", Transport in Porous Media, DOI:
+               `10.1007/BF00233178 <http://dx.doi.org/10.1007/BF00233178>`_
+        
+        .. [3] Ponzini, G. and Crosta, G. and Giudici, M. "Identification of
+               thermal conductivities by temperature gradient profiles;
+               one-dimensional steady flow", Geophysics, DOI:
+               `10.1190/1.1442691 <http://dx.doi.org/10.1190/1.1442691>`_
+        
+        .. [4] Ponzini, G. and Lozej, A., "Identification of aquifer
+               transmissivities: The comparison model method", Water Resources
+               Research, DOI: `10.1029/WR018i003p00597 <10.1029/WR018i003p00597>`_
+        
+Keywords: hydrogelogy,modelling,inverse problem,direct inverse problem,modflow,flopy
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst

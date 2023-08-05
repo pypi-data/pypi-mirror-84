@@ -1,0 +1,9 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+cmmpy.egg-info/PKG-INFO
+cmmpy.egg-info/SOURCES.txt
+cmmpy.egg-info/dependency_links.txt
+cmmpy.egg-info/requires.txt
+cmmpy.egg-info/top_level.txt
