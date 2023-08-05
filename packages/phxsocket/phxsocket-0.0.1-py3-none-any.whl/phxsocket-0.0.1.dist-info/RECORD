@@ -1,0 +1,9 @@
+phxsocket/__init__.py,sha256=ZPgBCtGPRHRDrrbhy2EnZbRIh3a4O1WcxAfoF_oGpxg,129
+phxsocket/channel.py,sha256=R0BFVvBBktiemAaf2_7-cBURWRDpT7vy5x1sFDOIb1M,1725
+phxsocket/client.py,sha256=iXXd85qmmdcrWuW2A4NCr8f1GnmpIO9Wkq31TG3t9oM,3318
+phxsocket/message.py,sha256=_LLEExfneRieVowjXxYWlLGAOXGs9FrleOhRqGd4-go,248
+phxsocket-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+phxsocket-0.0.1.dist-info/METADATA,sha256=Qt7Ww9bjmPhcmEkCaPVW9U5Npab99BU3mzxBzF-O_So,1821
+phxsocket-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+phxsocket-0.0.1.dist-info/top_level.txt,sha256=R8WwIaWXxcKDW2DAlUXQ910JJUx8kKO2YhLlPHvg4dk,10
+phxsocket-0.0.1.dist-info/RECORD,,
