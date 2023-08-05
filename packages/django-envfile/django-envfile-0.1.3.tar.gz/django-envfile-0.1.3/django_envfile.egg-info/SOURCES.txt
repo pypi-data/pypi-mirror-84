@@ -1,0 +1,8 @@
+README.rst
+setup.py
+django_envfile.egg-info/PKG-INFO
+django_envfile.egg-info/SOURCES.txt
+django_envfile.egg-info/dependency_links.txt
+django_envfile.egg-info/top_level.txt
+envfile/__init__.py
+envfile/loadenv.py
