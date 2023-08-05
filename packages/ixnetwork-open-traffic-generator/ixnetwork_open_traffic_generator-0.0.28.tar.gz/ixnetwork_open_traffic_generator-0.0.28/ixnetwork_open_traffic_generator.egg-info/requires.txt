@@ -1,0 +1,6 @@
+pyaml
+pandas
+dpkt
+jsonpath-ng
+abstract-open-traffic-generator==0.0.15
+ixnetwork-restpy>=1.0.52
