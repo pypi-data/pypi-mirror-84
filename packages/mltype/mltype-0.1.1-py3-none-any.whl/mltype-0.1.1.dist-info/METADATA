@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: mltype
+Version: 0.1.1
+Summary: Command line tool for improving typing skills
+Home-page: https://github.com/jankrepl/mltype
+Author: Jan Krepl
+Author-email: kjan.official@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: click
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: pytorch-lightning (>=1.0.0)
+Requires-Dist: tqdm
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pydocstyle ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-coverage ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Provides-Extra: mlflow
+Requires-Dist: mlflow (<=1.10.0) ; extra == 'mlflow'
+
+Command line tool for improving typing skills
+
+
