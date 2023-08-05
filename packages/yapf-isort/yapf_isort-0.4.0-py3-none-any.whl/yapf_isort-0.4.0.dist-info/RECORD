@@ -1,0 +1,10 @@
+yapf_isort/__init__.py,sha256=h9CifI-pRqHePoIndfd9w7AdtMxewH4mJ5gHchcYnng,3554
+yapf_isort/__main__.py,sha256=SS07teYMkdADQmmKLX-TUoVhfLVa-wJb04R-u3POzBs,1471
+yapf_isort/generics.py,sha256=QiqG5C9lmZENcCc4JWGRpUxicAuh6go7vMlhaibi-LI,3972
+yapf_isort/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yapf_isort-0.4.0.dist-info/LICENSE,sha256=du7kw-oC9MPkmdCnmoeXt-OjMdFc7Dgiu3W9SVXWves,10898
+yapf_isort-0.4.0.dist-info/METADATA,sha256=r3x2jeC_P88wkMVx3fNf7DjE81SV-GswYCg4OJS8hjk,5011
+yapf_isort-0.4.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+yapf_isort-0.4.0.dist-info/entry_points.txt,sha256=Ip1rgFG3aVDKOeLZWys9tpnkUNsNAKfdee2GQv3LAzI,57
+yapf_isort-0.4.0.dist-info/top_level.txt,sha256=DS7ZdxHXl-daE_xTO4HJLfciLp-Rqmq0NpkICeV3WTQ,11
+yapf_isort-0.4.0.dist-info/RECORD,,
