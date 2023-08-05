@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: toys
+Version: 0.2.0
+Summary: Quickly read multiple excels containing multiple sheets in the same folder
+Home-page: https://github.com/pypa/sampleproject
+Author: Adam
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Example Package
+
+Tools for read Excel quickly
+
