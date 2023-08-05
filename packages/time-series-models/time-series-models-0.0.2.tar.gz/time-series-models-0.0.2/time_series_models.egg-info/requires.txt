@@ -1,0 +1,11 @@
+torch
+
+[dev]
+bumpversion
+twine
+wheel
+autopep8
+
+[test]
+pytest
+pytest-cov
