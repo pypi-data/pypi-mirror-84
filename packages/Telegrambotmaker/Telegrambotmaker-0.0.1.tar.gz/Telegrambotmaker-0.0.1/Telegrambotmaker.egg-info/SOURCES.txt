@@ -1,0 +1,8 @@
+setup.py
+Telegrambotmaker.egg-info/PKG-INFO
+Telegrambotmaker.egg-info/SOURCES.txt
+Telegrambotmaker.egg-info/dependency_links.txt
+Telegrambotmaker.egg-info/top_level.txt
+telegramapi/__init__.py
+telegramapi/telegram.py
+test/test.py
