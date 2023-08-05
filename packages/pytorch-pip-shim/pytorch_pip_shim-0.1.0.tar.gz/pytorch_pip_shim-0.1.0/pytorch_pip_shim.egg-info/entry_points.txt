@@ -1,0 +1,3 @@
+[console_scripts]
+pytorch-pip-shim = pytorch_pip_shim.cli:main
+
