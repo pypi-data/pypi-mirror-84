@@ -1,0 +1,5 @@
+virtualenv>=16.6.0
+six>=1.14.0
+twine
+tox-wheel
+tox-gh-actions
