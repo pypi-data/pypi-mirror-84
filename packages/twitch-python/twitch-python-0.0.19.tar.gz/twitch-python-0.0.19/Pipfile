@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "*"
+rx = ">=3.0.0"
+
+[dev-packages]
+pipenv = "*"
+twine = "*"
+pytest-cov = "*"
+pytest = "*"
+responses = "*"
+wheel = "*"
+tox = "*"
+
+[requires]
+python_version = "3.8"
