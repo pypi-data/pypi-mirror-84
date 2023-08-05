@@ -1,0 +1,9 @@
+README.md
+setup.py
+pro_imagem_video.egg-info/PKG-INFO
+pro_imagem_video.egg-info/SOURCES.txt
+pro_imagem_video.egg-info/dependency_links.txt
+pro_imagem_video.egg-info/top_level.txt
+processamento/__init__.py
+processamento/camera.py
+processamento/video.py
