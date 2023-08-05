@@ -1,0 +1,16 @@
+motioncorr/__init__.py,sha256=oQ6wgZ_X0v5ebNfKq--v_mg2hY36IzzGWbXhc5Yzvcs,2859
+motioncorr/bibtex.py,sha256=rJfn5AEBvk3A8xciAeESeKrvtYqIdY_2MlGpTpDbmms,1588
+motioncorr/constants.py,sha256=Uaeosv6c0fxnmd66v-IE3HUNTon4MexMeVnE4iXhEXk,1432
+motioncorr/convert.py,sha256=UQH6cq2qg8WOpGu5VPb2g7S2pMLsHT1qKj1YG8pv_vk,2136
+motioncorr/protocols.conf,sha256=7_uUmxmUCNzMqwKpSQdlnr3vo6_tcfzEnPZHFGK3wbI,5329
+motioncorr/viewers.py,sha256=HiPDPKjMHgTTohjJbt_dsD4jdxo-XTtA4NrtnKvNKIs,7526
+motioncorr/protocols/__init__.py,sha256=UIgmsOGQKQ_3Wcu1gcDIHmYamYX7HmW_pOuQ0JQQSQI,1179
+motioncorr/protocols/protocol_motioncorr.py,sha256=fIzJD5StAc3fYQlEstPWoj6wmtSvbA41G85ZYkzhuK4,27949
+motioncorr/tests/__init__.py,sha256=pI1spQt3XHZ6eFjWnrrog4EbgfUxgAZ5RfF23UXNOD8,66
+motioncorr/tests/test_protocols_motioncor2.py,sha256=2bmWc8qkimuwSWgnmtggov6YaJbXJ-B-JNA11U-j154,6063
+scipion_em_motioncorr-3.0.11.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+scipion_em_motioncorr-3.0.11.dist-info/METADATA,sha256=a6ITzBMOGJvsnGqbMxmpOKFNAdm2Yc-7QE1EDWaucYA,3320
+scipion_em_motioncorr-3.0.11.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+scipion_em_motioncorr-3.0.11.dist-info/entry_points.txt,sha256=85Ts06asIjjRuX0yjt1RltmGg9hI9pojN9AacqvSu9Q,45
+scipion_em_motioncorr-3.0.11.dist-info/top_level.txt,sha256=8-kkZymt4aOvhtJAk_SvbMKL-g_mOzGyQUenPD3afpI,11
+scipion_em_motioncorr-3.0.11.dist-info/RECORD,,
