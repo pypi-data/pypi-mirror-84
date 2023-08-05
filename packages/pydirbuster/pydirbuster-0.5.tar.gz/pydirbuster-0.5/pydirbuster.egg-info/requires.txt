@@ -1,0 +1,12 @@
+certifi
+cffi
+chardet
+cryptography
+idna
+ntlm-auth
+pycparser
+requests
+requests-ntlm
+six
+tqdm
+urllib3
