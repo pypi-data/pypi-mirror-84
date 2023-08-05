@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+selfauth/__init__.py
+selfauth/apps.py
+selfauth/auth.py
+selfauth/models.py
+selfauth/signals.py
+selfauth/urls.py
+selfauth/views.py
+selfauth.egg-info/PKG-INFO
+selfauth.egg-info/SOURCES.txt
+selfauth.egg-info/dependency_links.txt
+selfauth.egg-info/not-zip-safe
+selfauth.egg-info/requires.txt
+selfauth.egg-info/top_level.txt
