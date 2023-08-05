@@ -1,0 +1,14 @@
+*.egg-info/
+*.py[cod]
+*.nfs*
+.cache/
+.eggs/
+.pytest_cache/
+.tox/
+^MANIFEST$
+^docs/\.build/
+__pycache__
+build/
+dist/
+junit*.xml
+~$

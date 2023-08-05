@@ -1,0 +1,3 @@
+[console_scripts]
+pybofh = bofh.cli:main
+

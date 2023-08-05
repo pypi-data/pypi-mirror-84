@@ -1,0 +1,2 @@
+setuptools  # pkg_resources
+six
