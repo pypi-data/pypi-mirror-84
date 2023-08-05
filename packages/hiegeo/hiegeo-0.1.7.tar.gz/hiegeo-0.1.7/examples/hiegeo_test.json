@@ -1,0 +1,19 @@
+{
+    "colors": {
+        "topo": "#000000",
+        "S0": "#d7191c",
+        "S1": "#fdae61",
+        "S2": "#ffffbf",
+        "S3": "#abd9e9",
+        "S4": "#2c7bb6"
+    },
+    "data_file": "./data/data.csv",
+    "grid": {
+        "dx": 2.0,
+        "dz": 0.25,
+        "x_max": 9574.0,
+        "x_min": 892.0,
+        "z_max": 144.0,
+        "z_min": 33.0
+    }
+}

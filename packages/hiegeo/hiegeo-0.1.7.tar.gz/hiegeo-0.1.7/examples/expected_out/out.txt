@@ -1,0 +1,121 @@
+
+    **************************************************
+    * hiegeo:                                        *
+    *     Constraining geological architectures with *
+    *     - stratigraphic hierarchy and              *
+    *     - chronological relations                  *
+    * version: 2019.07.29                            *
+    **************************************************
+
+    Reading input file: "./data/data.csv"
+
+    Data set info:
+        x in [892.2109, 9586.0027]
+        z in [33.983245000000004, 143.00000500000004]
+        availabe hierarchies: [3, 2, 1]
+        availabe chronologies: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+        total nb.of points: 800
+        Defined SBs: ['topo', 'S0-1', 'S2', 'S4', 'S0', 'S1', 'S3', 'S1-1', 'S1-1-1', 'S4-1', 'S3-1-1', 'S3-1']
+
+    Discretization grid info:
+        x in [892.0, 9574.0]
+        z in [33.0, 144.0]
+        grid size: (4342x445)
+
+    Check if data are contained in the discretization grid...
+
+        WARNING: some input data are outside the discretization grid.
+            (if you are aware of this you can ignore this warning.)
+
+
+    *********************************
+    * Handling SBs related stuff... *
+    *********************************
+
+    => Creating SBs objects... 
+
+    SB "S0" intersects with:
+        - S1, point(6405.0243,55.000005)
+
+    SB "S1" intersects with:
+        - S2, point(3797.4044,89.44561999999998)
+        - S1-1, point(9575.507,33.983245000000004)
+        - S0, point(6405.0243,55.000005)
+
+    SB "S2" intersects with:
+        - S1-1, point(4347.2116,88.84362)
+        - S1, point(3797.4044,89.44561999999998)
+        - S0-1, point(3143.7824,96.47561999999999)
+
+    SB "S3" intersects with:
+        - S4, point(3797.4044,119.94561999999999)
+        - S3-1, point(7840.2983,88.24000500000001)
+
+    SB "S4" intersects with:
+        - S3, point(3797.4044,119.94561999999999)
+        - S3-1-1, point(7054.1081,106.00000500000002)
+
+    SB "topo" intersects with:
+        - S4-1, point(6385.0547,123.00000500000002)
+
+    SB "S0-1" intersects with:
+        - S2, point(3143.7824,96.47561999999999)
+
+    SB "S1-1" intersects with:
+        - S1, point(9575.507,33.983245000000004)
+        - S2, point(4347.2116,88.84362)
+
+    SB "S3-1" intersects with:
+        - S3, point(7840.2983,88.24000500000001)
+              added 6 points to the left
+
+    SB "S4-1" intersects with:
+        - topo, point(6385.0547,123.00000500000002)
+    SB "S1-1-1": no intersections
+
+    SB "S3-1-1" intersects with:
+        - S4, point(7054.1081,106.00000500000002)
+
+
+    => Plotting SBs... 
+    - Plotted figure "SBs_Hierarchy3-2-1_simple.png"
+    - Plotted figure "SBs_Hierarchy3-2-1.png"
+    - Plotted figure "SBs_Hierarchy3-2.png"
+    - Plotted figure "SBs_Hierarchy3.png"
+
+    *********************************
+    * Handling SUs related stuff... *
+    *********************************
+
+    Creating SU with bottom S0
+    Creating SU with bottom S1
+    Creating SU with bottom S2
+    Creating SU with bottom S3
+    Creating SU with bottom S4
+    - Plotted figure "SUs_Hierarchy3.png"
+    Creating SU with bottom S0-1
+    Creating SU with bottom S1-1
+    Creating SU with bottom S3-1
+    Creating SU with bottom S4-1
+    - Plotted figure "SUs_Hierarchy3-2.png"
+    Creating SU with bottom S1-1-1
+    Creating SU with bottom S3-1-1
+    - Plotted figure "SUs_Hierarchy3-2-1.png"
+
+    *******************************
+    * Hierarchical representation *
+    *******************************
+
+        topo
+        S4
+        └── S4-1
+        S3
+        └── S3-1
+            └── S3-1-1
+        S2
+        S1
+        └── S1-1
+            └── S1-1-1
+        S0
+        └── S0-1
+
