@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: logdir
+Version: 0.1.0
+Summary: A utility for managing logging directories.
+Home-page: http://github.com/btjanaka/logdir
+Author: Bryon Tjanaka
+Author-email: bryon@btjanaka.net
+License: MIT
+Keywords: log logging utilities
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+# logdir
+
+A utility for managing logging directories.
+
+<!-- vim-markdown-toc GFM -->
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [Examples](#examples)
+
+<!-- vim-markdown-toc -->
+
+## Installation
+
+To install from PyPI, run:
+
+```bash
+pip install logdir
+```
+
+To install from source,
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+## Examples
+
+
