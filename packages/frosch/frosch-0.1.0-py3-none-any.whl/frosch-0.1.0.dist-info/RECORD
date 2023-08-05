@@ -1,0 +1,9 @@
+frosch/__init__.py,sha256=F2muSDZwXH0M6FDcW28IplHGGbQsVKcDxVAUjdBfz0k,23
+frosch/analyzer.py,sha256=hlXr9yyuZzP4xYOfBWaeziNwF9VgVvFiX23linmv76Y,244
+frosch/frog.py,sha256=-YjRz0t4sAcOG1ntX7vxGETxNQuFs4QD4nO4BXMbh8o,2055
+frosch/parser.py,sha256=ZjJa-Q9rbZak6gxx2otdxBUAtR4XLXKyO_XjpbU7dA0,3530
+frosch-0.1.0.dist-info/entry_points.txt,sha256=NSdTF4Yal9Xg46Y6fwM8e2d1kquujq3LqnEFejuKjUA,43
+frosch-0.1.0.dist-info/LICENSE,sha256=jrbFDE-jYXNUayJ7pJPReeyOIjoVOBNQDR_yXcv3zyw,1053
+frosch-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+frosch-0.1.0.dist-info/METADATA,sha256=id9zHGneS9Z9qhM8FviIFQSfmBALiXvQtcTw_RspPh4,486
+frosch-0.1.0.dist-info/RECORD,,
