@@ -1,0 +1,56 @@
+python-elastic-logstash
+====================================================
+Logstash dynamically ingests, transforms, and ships your data regardless of format or complexity. Derive structure from unstructured data with grok, decipher geo coordinates from IP addresses, anonymize or exclude sensitive fields, and ease overall processing.
+
+Installation
+=================
+
+Using pip::
+
+  pip install python-elastic-logstash
+
+Usage
+=================
+
+For example::
+
+  import logging
+  import sys
+  from python_elastic_logstash import ElasticHandler, ElasticFormatter
+
+  logger = logging.getLogger('python-elastic-logstash')
+  logger.setLevel(logging.DEBUG)
+
+  elasticsearch_endpoint = 'http://localhost:9200' # No trailing slash
+
+  elastic_handler = ElasticHandler(elasticsearch_endpoint)
+  elastic_handler.setFormatter(ElasticFormatter(logger.name))
+
+  stream_handler = logging.StreamHandler()
+  stream_handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+
+  logger.addHandler(elastic_handler)
+  logger.addHandler(stream_handler)
+
+  # Extra is optional.
+  extra = {
+      'elastic_fields': {
+          'version': 'python version: ' + repr(sys.version_info)
+      }
+  }
+
+  logger.debug("Python elastic logstash configured", extra=extra)
+
+Kibana Create Index
+===============================
+
+.. image:: index.png
+  :width: 600
+  :align: center
+
+Kibana Discover
+===============================
+
+.. image:: discover.png
+  :width: 600
+  :align: center
