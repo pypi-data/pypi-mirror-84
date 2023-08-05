@@ -1,0 +1,16 @@
+accelerated_numpy/ledger.cpp,sha256=5CVwoyc_J4pruibCpTvONqrUBkC78DRPLc2gJ51N5d4,6846
+accelerated_numpy/stubs.h,sha256=b-_aHfA_iiQOFmR-VXeZaFBfeTSNru8VnokViSnGN-o,10939
+accelerated_numpy/__init__.py,sha256=bAXQjVpkPqsI-z8w64DYlkKGadN5Ff__a1qwDtCgCSU,3722
+accelerated_numpy/recycler.cpp,sha256=5_UEWnePJQT4koNd1gTGHxngxJ97CY8ErAcAZ3U2eE4,137
+accelerated_numpy/common.h,sha256=BfycTMU-saW0iXUsuPSZlSQERNji9uCNRxENbnl6dKc,1412
+accelerated_numpy/ACCELERATED_NUMPY.h,sha256=vXqXOGTF2wKCgKAmoz8WJTRPxx61UWk9pGfAHU-Daos,1995
+accelerated_numpy/_accelerated_numpy.abi3.so,sha256=LHi2ZXHfSbA5rWymVljdp5OhD1b5dRdoEKNDQacLU18,3306352
+accelerated_numpy/_accelerated_numpy.cpp,sha256=HjtWAkPhIzN3lJV_a6twlVMTPpO3XlCvm4aWQ8o9GsE,47230
+accelerated_numpy/module_init.cpp,sha256=lCpz5yYT8tngVUuretFi7TuGPlMsclv5ZESyI28wG0A,4395
+accelerated_numpy/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+accelerated_numpy-0.1.0.dist-info/AUTHORS.rst,sha256=QTKqpQc-M0uE_8v04COyBDAjUznhHZLCs5a7iHK-CpI,62
+accelerated_numpy-0.1.0.dist-info/RECORD,,
+accelerated_numpy-0.1.0.dist-info/METADATA,sha256=mFT2A7c1gkMVCoKJXYbNYYLoVx_yZ2hkDm2084GJu80,2692
+accelerated_numpy-0.1.0.dist-info/top_level.txt,sha256=eSYWViUrQei6E43Bpvbg2jMUoOV-WE3Vkkfo46Yd0GU,18
+accelerated_numpy-0.1.0.dist-info/WHEEL,sha256=Qs6QNtdSkcAOpbp1HsiWMXMmEoke2l_SfE6ZKek5Jmk,112
+accelerated_numpy-0.1.0.dist-info/LICENSE,sha256=AKbcdJC3Hl_rqNSe_Jb2HuLqyRAZ4nmKy5QrrdOylu0,1099
