@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+edgedriver_autoinstaller/__init__.py
+edgedriver_autoinstaller/utils.py
+edgedriver_autoinstaller.egg-info/PKG-INFO
+edgedriver_autoinstaller.egg-info/SOURCES.txt
+edgedriver_autoinstaller.egg-info/dependency_links.txt
+edgedriver_autoinstaller.egg-info/entry_points.txt
+edgedriver_autoinstaller.egg-info/requires.txt
+edgedriver_autoinstaller.egg-info/top_level.txt
