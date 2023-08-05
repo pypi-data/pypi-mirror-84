@@ -1,0 +1,16 @@
+beautifulsoup4
+contractions
+pycontractions
+regex
+emoji
+html2text
+html5lib
+httplib2
+lxml
+nltk
+num2words
+pycrypto
+textblob
+Unidecode
+unicode
+textsearch
