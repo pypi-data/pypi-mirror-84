@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/accelerate/__init__.py
+src/accelerate.egg-info/PKG-INFO
+src/accelerate.egg-info/SOURCES.txt
+src/accelerate.egg-info/dependency_links.txt
+src/accelerate.egg-info/top_level.txt
