@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Vlue
+Version: 0.1.1
+Summary: Programming language
+Home-page: https://github.com/jhlee838/blue-lang
+Author: jhlee838
+Author-email: jhlee@xzx.kr
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+# Blue - A programming language for web development.
+
+
+
