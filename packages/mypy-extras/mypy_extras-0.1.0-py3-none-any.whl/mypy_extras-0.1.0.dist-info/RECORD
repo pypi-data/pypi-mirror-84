@@ -1,0 +1,15 @@
+mypy_extras/__init__.py,sha256=trQjjleXiQed2w1nDOCJJlfLbQgGJuaS3zLNQs5n17c,108
+mypy_extras/attr_of.py,sha256=DOw2n_XlllVvA0iXV7Pc2GDxwn4nUo3vJMPZkaBKitQ,1675
+mypy_extras/plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_extras/plugin/entrypoint.py,sha256=alEUmrjFS7aKyOMJFSSBAPJbk7NXFjRo4S0NMyQiF_o,1520
+mypy_extras/plugin/features/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_extras/plugin/features/attr_of.py,sha256=tnktebWPKIFqQiCkruAlJ7H6-hO0fUs5NSqH0ckjpDw,2208
+mypy_extras/plugin/features/ensure_attr.py,sha256=_oms7fhFLZaCvf31B6eZWll7mHfeSO3RNOsnUV7bY40,1342
+mypy_extras/plugin/typeops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_extras/plugin/typeops/definitions.py,sha256=risXzN-GYPxWeUZJi8wl0SqBsR9-6nyBXLwa-duy8ZA,935
+mypy_extras/plugin/typeops/fallbacks.py,sha256=3Xe6IBaVER_FzkKARPsl4sZHN_xt44Y00-kYbj6nQpw,652
+mypy_extras/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_extras-0.1.0.dist-info/LICENSE,sha256=KRKiHeuGjThgsAEzPTYT67iLwNTBY-Epn6g_OuA9Z-0,1103
+mypy_extras-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+mypy_extras-0.1.0.dist-info/METADATA,sha256=RThmrgR_MR8OSf8MK3JlPoOKXotArDnlvill77Bv6n4,3772
+mypy_extras-0.1.0.dist-info/RECORD,,
