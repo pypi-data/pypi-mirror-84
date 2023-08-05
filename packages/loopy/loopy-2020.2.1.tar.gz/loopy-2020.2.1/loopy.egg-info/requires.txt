@@ -1,0 +1,15 @@
+Mako
+cgen>=2016.1
+codepy>=2017.1
+colorama
+genpy>=2016.1.2
+islpy>=2019.1
+pymbolic>=2019.2
+pytools>=2020.4
+
+[fortran]
+f2py>=0.3.1
+ply>=3.6
+
+[pyopencl]
+pyopencl>=2020.2
