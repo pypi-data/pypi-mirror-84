@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+requirements-travis.txt
+setup.cfg
+setup.py
+storable/__init__.py
+storable/core.py
+storable/output.py
+storable/version.txt
+storable.egg-info/PKG-INFO
+storable.egg-info/SOURCES.txt
+storable.egg-info/dependency_links.txt
+storable.egg-info/requires.txt
+storable.egg-info/top_level.txt
