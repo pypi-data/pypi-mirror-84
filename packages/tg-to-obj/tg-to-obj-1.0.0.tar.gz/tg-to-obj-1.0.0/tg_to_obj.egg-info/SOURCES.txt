@@ -1,0 +1,9 @@
+README.md
+setup.py
+tg_to_obj/__init__.py
+tg_to_obj/helper.py
+tg_to_obj.egg-info/PKG-INFO
+tg_to_obj.egg-info/SOURCES.txt
+tg_to_obj.egg-info/dependency_links.txt
+tg_to_obj.egg-info/requires.txt
+tg_to_obj.egg-info/top_level.txt

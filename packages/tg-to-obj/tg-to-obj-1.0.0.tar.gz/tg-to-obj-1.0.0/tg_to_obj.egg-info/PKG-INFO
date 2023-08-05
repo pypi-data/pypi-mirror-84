@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tg-to-obj
+Version: 1.0.0
+Summary: Make a telegram api dict update to obj.
+Home-page: https://github.com/francis-taylor/TgToObj
+Author: Francis Taylor
+Author-email: Francistrapp2000@gmail.com
+License: MIT
+Description: README.md
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
