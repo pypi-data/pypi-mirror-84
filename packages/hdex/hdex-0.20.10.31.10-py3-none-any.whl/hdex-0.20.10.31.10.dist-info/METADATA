@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: hdex
+Version: 0.20.10.31.10
+Summary: It will genarate dictionary for your keywords
+Home-page: UNKNOWN
+Author: harsh pratap bhardwaj
+Author-email: harshpratap652@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+## Installation
+'''pip install hdex'''
+
+## How to use it?
+It will generate words using keywords
+Patterns 1987keyword keyword07 113@keyword keyword@67233 1987Keyword KEYWORD@67233
+hdex.crunch(lowerlimit, upperlimit, ["keyword", "another keyword"], "special char", "file name")
+to generate file
+use any number at the place of "file name" for returning string
+
+ '''hdex.crunch(4, 5, ["xyz", "abc", "ijkl"], "@", "dictionary.txt")'''
+It will generate a file distionary
+
+ '''str = hdex.crunch(4, 5, ["xyz", "abc"], "@", 1)'''
+It will return values without generating any file
+
+lower limit must be greater than 0
+upper limit required
+string must have at least one value ["name"]
+only one special character required
+
+## License
+Â© Harsh Pratap Bhardwaj
+This repository is licensed under the MIT license.
+See LICENSE for details.
+
+## Contact
+Mail: harshpratap@outlook.in
+
