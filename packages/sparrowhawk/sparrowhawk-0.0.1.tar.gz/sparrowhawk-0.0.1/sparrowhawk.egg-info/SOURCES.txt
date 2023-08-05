@@ -1,0 +1,7 @@
+README.md
+setup.py
+sparrowhawk/__init__.py
+sparrowhawk.egg-info/PKG-INFO
+sparrowhawk.egg-info/SOURCES.txt
+sparrowhawk.egg-info/dependency_links.txt
+sparrowhawk.egg-info/top_level.txt
