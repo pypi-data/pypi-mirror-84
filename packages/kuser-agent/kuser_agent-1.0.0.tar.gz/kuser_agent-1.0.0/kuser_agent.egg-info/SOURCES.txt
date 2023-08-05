@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+kuser_agent/__init__.py
+kuser_agent/__version__.py
+kuser_agent.egg-info/PKG-INFO
+kuser_agent.egg-info/SOURCES.txt
+kuser_agent.egg-info/dependency_links.txt
+kuser_agent.egg-info/top_level.txt
