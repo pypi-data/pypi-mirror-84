@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: haralyzer-3
+Version: 1.8.0
+Summary: A Python 3 for of haralyzer which is a framework for getting useful stuff out of HAR files
+Home-page: https://github.com/Cyb3r-Jak3/haralyzer_3
+Author: Cyb3r Jak3
+Author-email: jake@jwhite.network
+License: MIT
+Download-URL: https://github.com/mrname/haralyzer/tarball/1.8.0
+Project-URL: Changelog, https://github.com/Cyb3r-Jak3/haralyzer_3/blob/master/HISTORY.rst
+Project-URL: Docs, https://haralyzer-3.readthedocs.io/en/latest/
+Keywords: har
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: cached-property
+Requires-Dist: python-dateutil
+Requires-Dist: six (>=1.13.0)
+
+===========
+Haralyzer_3
+===========
+
+.. image:: https://github.com/Cyb3r-Jak3/haralyzer_3/workflows/Python%20Checking/badge.svg?branch=master
+    :target: https://github.com/Cyb3r-Jak3/haralyzer_3/actions?query=branch%3Amaster+workflow%3A%22Python+Checking%22
+    :alt: Build status
+
+.. image:: https://coveralls.io/repos/github/Cyb3r-Jak3/haralyzer_3/badge.svg?branch=master
+    :target: https://coveralls.io/github/Cyb3r-Jak3/haralyzer_3?branch=master
+    :alt: Coverage status
+
+.. image:: https://readthedocs.org/projects/haralyzer-3/badge/?version=latest
+    :target: https://haralyzer-3.readthedocs.io/en/latest
+    :alt: Documentation Status
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/psf/black
+    :alt: Python Black Code Style
+
+A Python 3 Framework For Using HAR Files To Analyze Web Pages.
+
+This is a fork of https://github.com/mrname/haralyzer but only supports Python 3
+
+To learn more about how to this this project, check out the documentation `here <https://haralyzer-3.readthedocs.io/>`_
+
