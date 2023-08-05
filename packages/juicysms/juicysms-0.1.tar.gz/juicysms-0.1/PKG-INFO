@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: juicysms
+Version: 0.1
+Summary: A python wrapper for juicysms.com api
+Home-page: https://github.com/exploitdev/juicysms_python
+Author: Jackson Green
+Author-email: jackson@inventive.dev
+License: MIT
+Download-URL: https://github.com/exploitdev/juicysms_python
+Description: UNKNOWN
+Keywords: juicysms,API,SDK
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
