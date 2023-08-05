@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: scoped-concerns
+Version: 0.1.1
+Summary: Simple service-class-like objects for logic encapsulation
+Home-page: https://github.com/threefunkymonkeys/scoped-concerns-py
+Author: Three Funky Monkeys
+Author-email: kandalf@threefunkymonkeys.com
+License: MIT
+Description: README
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
