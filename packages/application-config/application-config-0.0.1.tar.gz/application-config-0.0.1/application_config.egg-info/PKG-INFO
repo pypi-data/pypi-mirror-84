@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: application-config
+Version: 0.0.1
+Summary: Simple decorator for injecting a configuration into classes
+Home-page: https://github.com/bholten/py-application-config
+Author: Brennan Holten
+Author-email: brennan.holten@objectpartners.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6

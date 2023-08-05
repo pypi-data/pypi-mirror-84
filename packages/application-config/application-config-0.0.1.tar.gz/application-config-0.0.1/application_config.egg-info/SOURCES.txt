@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.cfg
+setup.py
+application_config.egg-info/PKG-INFO
+application_config.egg-info/SOURCES.txt
+application_config.egg-info/dependency_links.txt
+application_config.egg-info/requires.txt
+application_config.egg-info/top_level.txt
+configuration/__init__.py
+configuration/injectors.py
+configuration/utils.py
+tests/__init__.py
+tests/unit/__init__.py
+tests/unit/tests_injectors_json.py
+tests/unit/tests_injectors_yaml.py
+tests/unit/tests_utils.py
