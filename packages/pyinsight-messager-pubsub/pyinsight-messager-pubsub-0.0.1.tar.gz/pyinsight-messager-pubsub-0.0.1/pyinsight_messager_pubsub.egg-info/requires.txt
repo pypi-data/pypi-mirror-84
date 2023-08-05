@@ -1,0 +1,3 @@
+pyinsight
+google-auth
+google-cloud-pubsub
