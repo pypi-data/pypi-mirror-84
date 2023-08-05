@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: financeager-flask
+Version: 0.1.0.0
+Summary: Plugin to use flask as backend for financeager
+Home-page: https://github.com/pylipp/financeager-flask
+Author: Philipp Metzner
+Author-email: beth.aleph@yahoo.de
+License: GPLv3
+Keywords: commandline finances
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Database
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Requires-Dist: financeager (>=0.24.0.0)
+Provides-Extra: develop
+Requires-Dist: twine (>=1.11.0) ; extra == 'develop'
+Requires-Dist: setuptools (>=38.6.0) ; extra == 'develop'
+Requires-Dist: wheel (>=0.31.0) ; extra == 'develop'
+Requires-Dist: coverage (>=4.4.2) ; extra == 'develop'
+Requires-Dist: pre-commit (==1.14.4) ; extra == 'develop'
+Requires-Dist: gitlint (==0.12.0) ; extra == 'develop'
+
+# financeager-flask
+
+## Installation
+
+    pip install financeager-flask
+
+## Development
+
+### Set up
+
+    python3 -m venv .venv
+    source .venv/bin/activate
+    make install
+
+### Testing
+
+    python -m unittest discover
+
+## Releasing
+
+1. Tag the latest commit on master by incrementing the current version accordingly (scheme `v0.major.minor.patch`).
+1. Run `make release`.
+
+
