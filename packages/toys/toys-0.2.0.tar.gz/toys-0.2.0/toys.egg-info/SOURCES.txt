@@ -1,0 +1,8 @@
+README.md
+setup.py
+toys/__init__.py
+toys/excel.py
+toys.egg-info/PKG-INFO
+toys.egg-info/SOURCES.txt
+toys.egg-info/dependency_links.txt
+toys.egg-info/top_level.txt
