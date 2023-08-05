@@ -1,0 +1,17 @@
+README.md
+setup.py
+src/dfs_lineup_optimizer.egg-info/PKG-INFO
+src/dfs_lineup_optimizer.egg-info/SOURCES.txt
+src/dfs_lineup_optimizer.egg-info/dependency_links.txt
+src/dfs_lineup_optimizer.egg-info/entry_points.txt
+src/dfs_lineup_optimizer.egg-info/requires.txt
+src/dfs_lineup_optimizer.egg-info/top_level.txt
+src/dfslo/__init__.py
+src/dfslo/main.py
+src/dfslo/get_data/__init__.py
+src/dfslo/get_data/main.py
+src/dfslo/lineup/__init__.py
+src/dfslo/lineup/generate_lineup.py
+src/dfslo/lineup/generate_lineup_test.py
+src/dfslo/projections/__init__.py
+src/dfslo/projections/get_projections.py
