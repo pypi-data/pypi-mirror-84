@@ -1,0 +1,10 @@
+mfn_sdk/__init__.py,sha256=uMHTe6fHkUGUM8LmLw77f2fZ1LAnlVEOs2G_dipzFI8,704
+mfn_sdk/deprecated.py,sha256=GFgRj3ZcrsY6mHYS27R1C62hzzu2IFXC_bPwv6xyKQk,1147
+mfn_sdk/function.py,sha256=LBJ4Jse7fkxESQA53GCE8TIMIM-Akw7hCfHwfu5w_OI,7761
+mfn_sdk/mfnclient.py,sha256=k6Hl720qaldLdj_8MT0s1dwA66gb3DK9fzpjHogFv2o,23502
+mfn_sdk/workflow.py,sha256=hZRMZku5KLcKZ40ycJWLldUT-BmClVxXU7S8u9ll4BQ,14814
+mfn_sdk-0.8.7.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mfn_sdk-0.8.7.dist-info/METADATA,sha256=FDD5ad5QkavdRvUY_8CoLzMibJKBr8VlBXFRDz7ZoGg,6344
+mfn_sdk-0.8.7.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+mfn_sdk-0.8.7.dist-info/top_level.txt,sha256=MbMahnC6y9RjRP7IvUI94WpsqP7r_4wpQ8ks1vxZs2g,8
+mfn_sdk-0.8.7.dist-info/RECORD,,
