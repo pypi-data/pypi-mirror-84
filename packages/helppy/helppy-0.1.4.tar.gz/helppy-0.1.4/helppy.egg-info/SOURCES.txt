@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+helppy/KB.p
+helppy/__init__.py
+helppy/helppy.py
+helppy.egg-info/PKG-INFO
+helppy.egg-info/SOURCES.txt
+helppy.egg-info/dependency_links.txt
+helppy.egg-info/top_level.txt
