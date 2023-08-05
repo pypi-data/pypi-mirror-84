@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: Wuzzy-Naming
+Version: 0.1
+Summary: Achieving semantic consistency of name-identity
+Home-page: UNKNOWN
+Author: Blair Huang
+Author-email: Blair1217@outlook.com
+License: MIT
+Description: Read Me
+Keywords: Natural Language Processing
+Platform: UNKNOWN
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
