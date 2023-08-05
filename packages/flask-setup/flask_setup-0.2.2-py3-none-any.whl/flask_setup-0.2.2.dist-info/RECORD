@@ -1,0 +1,14 @@
+builder/__init__.py,sha256=HbKYZZvBdhxVGSRVgsJqx8cVXWX3xV7XN9ikKqXDLaE,12385
+builder/file_strings.py,sha256=_tlYV1Ap09LGM1mAojcitW1rIryWtSb1nOPsOY0s0Ro,11843
+flask_setup-0.2.2.data/scripts/flask_setup,sha256=Urc1dqp-9KpSBz8eH3cqQuD8b1bv6PYBmgYKBJND6ck,262
+flask_setup-0.2.2.data/scripts/flask_setup.py,sha256=Urc1dqp-9KpSBz8eH3cqQuD8b1bv6PYBmgYKBJND6ck,262
+fs/__init__.py,sha256=BBQvsrL64mW6dRidegPr3S42_zhDh5xRhH_YzPZByEY,1774
+fs/app_builder.py,sha256=Q6Q_1G9FEv4_wGqwbLu5fMFCHDf9zupcr6FjBpShx-U,5583
+fs/config.py,sha256=TLK3aYfF8enlfEJYUVknZU-Td5_VoitfKglUqC7h4Ws,1190
+fs/file_strings.py,sha256=O2zKMAAq4ZFWldDpFaf2Htm5mJbyy-wRxBDAlvMeEDs,10759
+fs/generators.py,sha256=-R88vbkZ5eAy8hp7JUEM6sGTlD1CVvrdvJrPLSUk2hM,5097
+fs/methods.py,sha256=zQjyztnJQXg8wvWY1R-8dSbxbp15FEz9C9IwpBzivRQ,2634
+flask_setup-0.2.2.dist-info/METADATA,sha256=ye37zdN7ENqtSlqKLZwE-xd8E8oYSDMJ0XoRDNE3oXs,1884
+flask_setup-0.2.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+flask_setup-0.2.2.dist-info/top_level.txt,sha256=387pB38TPn9aMO3b518yxXxgB0uN0XWa1WNbSnES7r8,3
+flask_setup-0.2.2.dist-info/RECORD,,
