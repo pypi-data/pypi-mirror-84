@@ -1,0 +1,105 @@
+from fastapi import FastAPI, HTTPException, UploadFile, File
+from fastapi.responses import PlainTextResponse
+
+from imghst.app.configuration.configuration import Configuration
+from loguru import logger
+import aiofiles
+from datetime import datetime
+import filetype
+import typing
+
+from .request_models import HealthCheckRequest, NewImageRequestResponse
+
+app = FastAPI()
+app.configuration_object = Configuration()
+
+
+@app.get("/health", response_model=HealthCheckRequest)
+async def health_check() -> HealthCheckRequest:
+    return HealthCheckRequest(systemStatus=True)
+
+
+@app.post("/uploadImage/{apiKey}")
+async def upload_image_to_file_path(
+    apiKey, returnTextOnly: str = "no", image_upload: UploadFile = File(...)
+):
+
+    if apiKey != app.configuration_object.api_request_key:
+        raise HTTPException(status_code=400, detail="Invalid API Key.")
+
+    current_configuration_image_path = app.configuration_object.image_hosting_folder
+
+    if not current_configuration_image_path.exists():
+        raise HTTPException(
+            status_code=500,
+            detail="Improper configuration was set. The current configuration image hosting folder does not exist.",
+        )
+
+    _supported_file_types = [
+        "image/jpeg",
+        "image/jpx",
+        "image/png",
+        "image/gif",
+        "image/webp",
+        "image/x-canon-cr2",
+        "image/tiff",
+        "image/bmp",
+        "image/vnd.ms-photo",
+        "image/vnd.adobe.photoshop",
+        "image/x-icon",
+        "image/heic",
+    ]
+
+    if image_upload.content_type not in _supported_file_types:
+        await image_upload.file.close()
+        raise HTTPException(status_code=400, detail="Unsupported file type uploaded.")
+
+    # check if valid.
+    try:
+        detect_file_type = filetype.guess(await image_upload.read())
+        if detect_file_type is None:
+            raise HTTPException(
+                status_code=400, detail="Unknown file type was uploaded."
+            )
+
+        if detect_file_type.mime != image_upload.content_type:
+            raise HTTPException(
+                status_code=500,
+                detail="Mismatch content type header and mime value of object.",
+            )
+    except Exception:
+        logger.exception("Unknown error occurred for detecting file type.")
+        raise HTTPException(
+            status_code=500, detail="System error on detecting file type."
+        )
+
+    generate_a_unique_id = app.configuration_object.image_unique_file_name()
+
+    async with aiofiles.open(
+        str(
+            current_configuration_image_path
+            / f"{generate_a_unique_id}.{detect_file_type.extension}"
+        ),
+        "wb",
+    ) as opened_file:
+        await image_upload.seek(0)
+        await opened_file.write(await image_upload.read())
+        image_upload.file.close()
+
+    generate_a_sharable_link = (
+        str(app.configuration_object.current_domain_url)
+        + f"{generate_a_unique_id}.{detect_file_type.extension}"
+    )
+
+    if returnTextOnly == "yes":
+        return PlainTextResponse(generate_a_sharable_link)
+
+    return NewImageRequestResponse(
+        api_status=True,
+        date_processed=datetime.now().isoformat(),
+        file_direct_path_name=str(
+            current_configuration_image_path
+            / f"{generate_a_unique_id}.{detect_file_type.extension}"
+        ),
+        shareable_link=generate_a_sharable_link,
+    )
