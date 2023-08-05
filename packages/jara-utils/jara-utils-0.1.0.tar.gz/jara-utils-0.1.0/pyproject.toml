@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "jara-utils"
+version = "0.1.0"
+description = "A package with basic stuff."
+authors = ["Serban Senciuc <senciuc.serban@gmail.com>"]
+readme = "README_pypi.rst"
+repository = "https://github.com/senciucserban/jara"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytz = "^2020.1"
+pytest = {version = "^6.1.2", optional = true}
+Faker = {version = "^4.14.0", optional = true}
+pytest-sugar = {version = "^0.9.4", optional = true}
+flake8 = {version = "^3.8.4", optional = true}
+pytest-cov = {version = "^2.10.1", optional = true}
+mypy = {version = "^0.790", optional = true}
+flake8-quotes = {version = "^3.2.0", optional = true}
+pytest-asyncio = {version = "^0.14.0", optional = true}
+
+[tool.poetry.dev-dependencies]
+
+
+[tool.poetry.extras]
+test = ["pytest", "faker", "pytest_sugar", "flake8", "pytest_cov", "mypy", "flake8-quotes", "pytest-asyncio"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
