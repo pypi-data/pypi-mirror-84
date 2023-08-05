@@ -1,0 +1,7 @@
+README.rst
+setup.py
+aiojobs-stubs/__init__.pyi
+aiojobs_stubs.egg-info/PKG-INFO
+aiojobs_stubs.egg-info/SOURCES.txt
+aiojobs_stubs.egg-info/dependency_links.txt
+aiojobs_stubs.egg-info/top_level.txt
