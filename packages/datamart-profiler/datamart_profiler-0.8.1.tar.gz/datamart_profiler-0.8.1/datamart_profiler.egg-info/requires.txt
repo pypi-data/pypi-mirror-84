@@ -1,0 +1,8 @@
+datamart-geo==0.2
+numpy
+pandas
+prometheus_client
+python-dateutil
+regex
+requests
+scikit-learn<0.24,>=0.22
