@@ -1,0 +1,11 @@
+pyautoeios/__init__.py,sha256=5nZBP6FMuG4pK3ZG3SjvVmCEh8tCpHaCM1K_sq6PSQM,1177
+pyautoeios/_pyautogui_remoteinput_patch.py,sha256=6S2bp_X-Y414Nnq2wrMJcQs5EevWfEWY2Gs2WpqS5w8,6326
+pyautoeios/_pyscreeze_cv2_patch.py,sha256=umGa7r5vdrOm6KRELumjb7wWu9YmuvA0gJLc5C6lAoQ,8439
+pyautoeios/_pyscreeze_remoteinput_patch.py,sha256=cPHwvvHDWPAUWl_AZkZJuZRx9insYJ_EcyT4PPjkRY4,2877
+pyautoeios/eios.py,sha256=qIVllelTeArsrsTmpaykvY2qEeMgRFngGoJgxdsNGyA,25240
+pyautoeios/hexcodes.py,sha256=ng2YidNQ3-hDjVbtluaP7nKLjp0apjgsaX4bw3uJI0g,7990
+pyautoeios-0.0.2.dist-info/LICENSE,sha256=-TUwS4Lrupx4HTir5DbNdiS1B8RJOns6oSh3DHYNIMI,1546
+pyautoeios-0.0.2.dist-info/METADATA,sha256=JWGkfDNPlIBZ1fCBkMyqbDNK9yL6Vos6TEGgxPnyL-c,3246
+pyautoeios-0.0.2.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pyautoeios-0.0.2.dist-info/top_level.txt,sha256=K6ialrmr-aQuRK0CM2EK1T-U_6dDEv4NjclKND7TlA4,11
+pyautoeios-0.0.2.dist-info/RECORD,,
