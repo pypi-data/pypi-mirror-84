@@ -1,0 +1,8 @@
+station-client/__init__.py,sha256=0z5o_XZQFq8LqNYvwRTL-JnttdwfGP0kW8-WbZJDZeo,178
+station-client/sensors/__init__.py,sha256=0z5o_XZQFq8LqNYvwRTL-JnttdwfGP0kW8-WbZJDZeo,178
+station-client/sensors/sht31d.py,sha256=0z5o_XZQFq8LqNYvwRTL-JnttdwfGP0kW8-WbZJDZeo,178
+rcm_station_client-0.0.1.dist-info/LICENSE,sha256=GcURs_YxvFjt39Cym6mT3KFWMSl8spKnKondiwjR58M,1076
+rcm_station_client-0.0.1.dist-info/METADATA,sha256=M2K6Eas4l02qmLZnEIY5wWOZ9DN74E2DPzO-SJIwArA,597
+rcm_station_client-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+rcm_station_client-0.0.1.dist-info/top_level.txt,sha256=n_1ULjNgA_TH40k_Zn2RVQ6GZEV3w3LVj6a60ViQgDA,15
+rcm_station_client-0.0.1.dist-info/RECORD,,
