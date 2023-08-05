@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: zjw
+Version: 0.0.4
+Summary: a package for extend
+Home-page: https://github.com/pypa/sampleproject
+Author: zjw
+Author-email: 2415528035@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+#zjw
+
+这个模块很寒颤，只是一个pip测试！
+
