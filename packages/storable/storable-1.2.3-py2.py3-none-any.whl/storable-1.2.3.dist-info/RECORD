@@ -1,0 +1,9 @@
+storable/__init__.py,sha256=z_lHIWOtgXdsAXw1V4nVVTdj3_jCQEBCWuk1yqXk8HY,1219
+storable/core.py,sha256=6vneA020CkksXMExmVkJEapNgbt3c52nfbpPx31Rmvk,13358
+storable/output.py,sha256=y0v1Hw0OC9arHPV5YE0pUQQi1YG9s8dlLme77Fj2xmE,7145
+storable/version.txt,sha256=2C80rpqkG8Sgy1KaGsCJj-0J1rR5-xzETLZsNPFe6E0,6
+storable-1.2.3.dist-info/LICENSE.txt,sha256=ktLNROEKv6U4Qz_6Hp0qmVgdbPBty9L_fiwgEPOeEeY,1008
+storable-1.2.3.dist-info/METADATA,sha256=6YWwQrkF35YoItuwSD2S4Y4zcQC0n-Mqo8KfLfOddHs,2442
+storable-1.2.3.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+storable-1.2.3.dist-info/top_level.txt,sha256=vpOdg10yjUvGr-H59TD3XrxSAc0ntaJ79wCEQa6V6zU,9
+storable-1.2.3.dist-info/RECORD,,
