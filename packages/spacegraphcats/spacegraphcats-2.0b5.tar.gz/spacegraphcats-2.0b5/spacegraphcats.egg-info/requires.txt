@@ -1,0 +1,9 @@
+Cython
+screed
+pytest
+numpy
+snakemake
+sortedcontainers
+sourmash
+khmer
+bbhash>=0.5
