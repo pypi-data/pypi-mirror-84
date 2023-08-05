@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "sxhkhm"
+version = "0.1.3"
+description = "HotKey helper for sxhkd"
+authors = ["Johan Radivoj <johan+sxhkhm@radivoj.se>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
