@@ -1,0 +1,1 @@
+from logreporter.formatter.discordreportformatter import DiscordReportFormatter
