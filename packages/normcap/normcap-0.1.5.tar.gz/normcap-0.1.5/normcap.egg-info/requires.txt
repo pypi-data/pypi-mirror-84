@@ -1,0 +1,5 @@
+mss>=6.0.0
+Pillow>=8.0.1
+pyperclip>=1.8.1
+tesserocr>=2.4.0
+pyscreenshot>=2.2
