@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: powerline-owmweather
+Version: 0.1.0
+Summary: A Powerline segment for fetching and showing the weather in the current location
+Home-page: https://github.com/DeepSpace2/powerline-owmweather
+Author: DeepSpace2
+Author-email: deepspace2@gmail.com
+License: MIT
+Keywords: powerline weather segment terminal cli
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Terminals
+
+UNKNOWN
+
+
