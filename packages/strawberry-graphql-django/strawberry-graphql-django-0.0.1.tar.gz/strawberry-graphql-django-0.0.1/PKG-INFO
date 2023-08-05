@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: strawberry-graphql-django
+Version: 0.0.1
+Summary: 
+Author: Lauri Hintsala
+Author-email: lauri.hintsala@verkkopaja.fi
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=3.1.2,<4.0.0)
+Requires-Dist: strawberry-graphql (>=0.39.1,<0.40.0)
