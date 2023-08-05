@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: MahaPala
+Version: 2020.11.1
+Summary: Detection of fruits disease by using Machine learning
+Home-page: https://github.com/AbhimanyuHK/MahaPala
+Author: Abhimanyu HK
+Author-email: manyu1994@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: certifi (==2020.6.20)
+Requires-Dist: cycler (==0.10.0)
+Requires-Dist: kiwisolver (==1.2.0)
+Requires-Dist: matplotlib (==3.3.2)
+Requires-Dist: numpy (==1.19.2)
+Requires-Dist: opencv-python (==4.4.0.44)
+Requires-Dist: Pillow (==8.0.0)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: six (==1.15.0)
+
+# MahaPala
+Detection of fruits disease by using Machine learning
+
+## ಕರ್ನಾಟಕ ರಾಜೋತ್ಸವದ ಶುಭಾಶಯಗಳು
+
+## Release Note
+
+### 2020.11.01.dev
+* Initial setup and environments
+* Added a templete matching algorithm 
+
+
