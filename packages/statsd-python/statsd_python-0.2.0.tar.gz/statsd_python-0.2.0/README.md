@@ -1,0 +1,133 @@
+Python Statsd Client
+====================
+
+> :construction: WIP :construction:
+
+This is an implementation of a [Statsd](https://github.com/statsd/statsd) client for Python.
+
+- [Motivation](#motivation)
+- [Documentation](#documentation)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Sampling](#sampling)
+    - [Tag support](#tag-support)
+    - [Transports](#transports)
+- [Development](#development)
+
+Motivation
+----------
+
+I was looking for a generic Statsd client with tags support to interact with various statsd servers for an application that I distribute but don't operate, so there could be high variability in the statsd implementations used (I know one uses Telegraf and InfluxDB and one datadog and they both have different tag formats).
+
+- [`pystatsd`](https://statsd.readthedocs.io/en/v3.3/index.html) exists and works, but it [intentionally does not support tags](https://statsd.readthedocs.io/en/v3.3/tags.html).
+- The docs point to [an alternative](https://pypi.org/project/statsd-tags/) supporting tags, but at the time of writing the repository leads to a 404 for me.
+- There a are a few more available on PyPi that likely work, but most of the ones I've checked haven't been updated in a while, are not documented and don't support tags.
+- [`datadogpy`](https://datadogpy.readthedocs.io/en/latest/) could be a solid solution, but I'd rather avoind pulling the full Datadog client library in projects where I don't use datadog. It also exposes some non standard metric types, and while I can always not use them I'd prefer a generic solution (ignoring tags which, while not standardized, are supported by most statsd servers).
+
+Documentation
+-------------
+
+### Installation
+
+```bash
+pip install statsd-python
+```
+
+### Usage
+
+```python
+from statsd import StatsdClient
+
+# Create a UDP based client with default connection parameters.
+client = StatsdClient()
+
+client.increment('my-counter')  # Increment my-counter by one
+client.gauge('my-gauge', 42, sample_rate=.5)  # Set a gauge value, sampling only half of the events
+```
+
+`StatsdClient` supports all metric types [defined by Statsd](https://github.com/statsd/statsd):
+
+- Counters track the total number of occurences of a given event.
+
+    ```python
+    client.increment('my-counter')
+    client.decrement('my-counter', 3)
+    ```
+
+- Gauges track a value over time.
+
+    ```python
+    # Set the value
+    client.gauge('my-gauge', 42)
+    # Deltas are supported as well
+    client.gauge('my-gauge', 3, is_update=True)
+    client.gauge('my-gauge', -1, is_update=True)
+    ```
+
+    **Warning:** Some Statsd servers implementations (such as [Datadog's](https://github.com/DataDog/dd-agent/issues/573)) do not support gauge deltas.
+
+- Timings are used track durations in milliseconds.
+
+    ```python
+    # Measure a duration of 1.234 seconds
+    client.timing('my-duration', 1234)
+    ```
+
+    The library also includes helpers for measuring code execution time using [perf_counter](https://docs.python.org/3/library/time.html#time.perf_counter).
+
+    ```python
+    @timed('my-duration')
+    def do_something():
+        pass
+
+    with timer('my-duration'):
+        do_some_other_thing()
+    ```
+
+- Sets count unique occurences per key
+
+    ```python
+    # Record one occurence of `my-set` for the key 1234.
+    client.set('my-set', 1234)
+    ```
+
+#### Sampling
+
+All metric accept a `sample_rate` parameter. This should be a float between 0 and 1 that the client will use to sample metrics. By default all metrics are sent with a sample rate of 1 (no sampling).
+
+The client will include this information in metric packets so the server can handle this accordingly.
+
+```python
+# Only send the metric half the time.
+client.gauge('my-gauge', 42, sample_rate=0.5)
+# Only send the metric 75% of the time.
+client.gauge('my-gauge', 42, sample_rate=0.25)
+# Only send the metric 25% of the time.
+client.gauge('my-gauge', 42, sample_rate=0.75)
+```
+
+#### Tag support
+
+Tags are supported. All metrics will accept a dictionnary for tags.
+
+Different server implementations will accept different ways to include tags in the metric packets so this library exposes a mechanism to configure this beheaviour through the `statsd.format` module.
+
+By default the [Dogstatsd](https://docs.datadoghq.com/developers/dogstatsd/datagram_shell/) format is used.
+
+```python
+from statsd import StatsdClient
+from statsd.formats import TelegrafSerializer
+
+client = StatsdClient(serializer=TelegrafSerializer())
+```
+
+#### Transports
+
+For now a single transport is currently supported through `StatsdClient` / `UDPStatsdClient`.
+
+Development
+-----------
+
+- All development dependencies are defined in [requirements-dev.txt](./requirements-dev.txt).
+- All tests and linting steps are defined in [tox.ini](./tox.ini), you can run the all the checks with `tox`.
+- Code is expected to be formatted with `black` and `isort`, you can run the formatters with `tox -e fmt`.
