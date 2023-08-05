@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: kostalpiko
+Version: 0.1
+Summary: A package for working with a Piko Inverter from Kostal
+Home-page: https://github.com/rcasula/kostalpiko
+Author: Roberto Casula
+Author-email: roberto@casula.dev
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: lxml
+
+UNKNOWN
+
+

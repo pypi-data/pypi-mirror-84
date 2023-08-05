@@ -1,0 +1,9 @@
+kostalpiko/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kostalpiko/kostalpiko.py,sha256=aUBkuCUuskk7yrQP5hqt1yPK_mjR0MLJW_o7exkIXd8,11164
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_kostalpiko.py,sha256=q-WLV1Z-NYVJ9rIUuau-FYeZL56dK4If55X8eFRwpss,2870
+kostalpiko-0.1.dist-info/LICENSE.txt,sha256=WRz-3-Ter7WZ90K69JsbUjYge29h-TSu5cluOEQ_bAw,1079
+kostalpiko-0.1.dist-info/METADATA,sha256=G4VGM32NgFroFwNW1C8eyEfffwf4h0yywmemBgSyO3s,283
+kostalpiko-0.1.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+kostalpiko-0.1.dist-info/top_level.txt,sha256=Pfkm2NXfexcsEDSeYsv32nnxZv9wa11Ys8UZ6Pnob28,17
+kostalpiko-0.1.dist-info/RECORD,,
