@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: exeteracovid
+Version: 0.1.0.dev1
+Summary: Analytics for the Covid Symptom Study, based on ExeTera
+Home-page: https://github.com/kcl-bmeis/ExeTeraCovid
+Author: Ben Murray
+Author-email: benjamin.murray@kcl.ac.uk
+License: http://www.apache.org/licenses/LICENSE-2.0
+Platform: UNKNOWN
+Requires-Dist: exetera
+
+UNKNOWN
+
+
