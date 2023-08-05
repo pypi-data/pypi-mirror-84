@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: countertype
+Version: 0.0.1
+Summary: countertype
+Home-page: UNKNOWN
+Author: Bogdan Mustiata
+Author-email: bogdan.mustiata@gmail.com
+License: BSD
+Description: A small collection to index objects fast using tags.
+        
+        Installation
+        ============
+        
+        .. code:: sh
+        
+            pip install countertype
+        
+Platform: UNKNOWN
