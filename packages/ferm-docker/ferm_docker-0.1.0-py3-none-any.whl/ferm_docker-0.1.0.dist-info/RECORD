@@ -1,0 +1,7 @@
+ferm_docker/__init__.py,sha256=GF73K4lDxaUxUDG2qHEIguYSOkWIRLykxk5PmLnMLAc,2524
+ferm_docker/templates/ferm.j2,sha256=oz2Y6hvsSDdbnnnpE8dPxY6uhV0GmtOzPS6olwLhtjA,2093
+ferm_docker-0.1.0.dist-info/entry_points.txt,sha256=tlYuwB4Q4wVxUh1pSsqyoKeWJYhM326GHXjD8D0l8Ys,48
+ferm_docker-0.1.0.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+ferm_docker-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+ferm_docker-0.1.0.dist-info/METADATA,sha256=cxqIHqCRdnsDMfV4z2vTBDzPHL1Yp0jKx9sU5-71DCI,621
+ferm_docker-0.1.0.dist-info/RECORD,,
