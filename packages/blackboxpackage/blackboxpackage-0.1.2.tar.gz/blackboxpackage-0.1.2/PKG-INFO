@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: blackboxpackage
+Version: 0.1.2
+Summary: Pacote de tratamento de dados
+Home-page: https://bitbucket.org/ainstec/black-box-package
+Author: Ravi Jose Fiori
+Author-email: ravi.fiori@concil.com.br
+License: MIT
+Description: Test
+Platform: UNKNOWN
