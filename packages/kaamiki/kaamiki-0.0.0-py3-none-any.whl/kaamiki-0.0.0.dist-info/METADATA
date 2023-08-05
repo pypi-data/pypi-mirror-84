@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: kaamiki
+Version: 0.0.0
+Summary: Kaamiki is a simple machine learning framework for obvious tasks.
+Home-page: https://github.com/kaamiki/kaamiki
+Author: Kaamiki Development Team
+Author-email: xames3.kaamiki@gmail.com
+Maintainer-email: xames3.kaamiki@gmail.com
+License: Apache Software License 2.0
+Keywords: kaamiki python
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Security
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6.9
+Description-Content-Type: text/markdown
+Requires-Dist: psutil
+
+<!-- 
+Copyright (c) 2020 Kaamiki Development Team. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+Author(s):
+    xames3 <44119552+xames3@users.noreply.github.com>
+-->
+
+<!-- markdownlint-disable MD033 MD041 -->
+![Kaamiki](https://github.com/kaamiki/kaamiki/blob/assets/elements/img/kaamiki-banner.png?raw=true "Kaamiki")
+
+## License
+
+Copyright (c) 2020 Kaamiki Development Team. All rights reserved.<br>
+Licensed under the [Apache](https://github.com/kaamiki/kaamiki/blob/master/LICENSE) License 2.0
+
+
