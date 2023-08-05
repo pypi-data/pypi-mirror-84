@@ -1,0 +1,16 @@
+Django<3
+
+[docs]
+sphinx
+sphinx_rtd_theme
+
+[tests]
+pytest
+pytest-cache
+pytest-cov
+pytest-flakes
+pytest-pycodestyle
+pytest-isort
+pytest-django
+coverage
+tox
