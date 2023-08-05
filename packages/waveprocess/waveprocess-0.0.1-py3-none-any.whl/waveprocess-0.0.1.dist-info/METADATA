@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: waveprocess
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/ailabnjtech/wavepro/tree/master
+Author: zhang_1998
+Author-email: 727261446@qq.com
+License: MIT Licence
+Platform: any
+Requires-Dist: torch
+Requires-Dist: numpy
+
+UNKNOWN
+
+
