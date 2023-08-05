@@ -1,0 +1,7 @@
+README.md
+setup.py
+hdex/__init__.py
+hdex.egg-info/PKG-INFO
+hdex.egg-info/SOURCES.txt
+hdex.egg-info/dependency_links.txt
+hdex.egg-info/top_level.txt
