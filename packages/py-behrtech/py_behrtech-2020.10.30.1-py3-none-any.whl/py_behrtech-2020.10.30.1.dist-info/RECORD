@@ -1,0 +1,9 @@
+py_behrtech/JSON_Parser.py,sha256=3g3T2_mKLUyLTlsZC2vvOgrdoI4r1JSA5G-yMrwCn3E,4447
+py_behrtech/Parser.py,sha256=d6DS_wDbfbeDWfSwmvDwa9jgVIMVlpWoI-riB1sEGEQ,13736
+py_behrtech/__init__.py,sha256=CqMKLSGvYvaibIsD1S-IWw0CDM-6YztWuoUzGefUmb0,128
+py_behrtech/api_calls.py,sha256=RC1zcJrP4X1lLsdcpci4Z4zl-qUYUYApYATUcigHm6g,10448
+py_behrtech/setup.py,sha256=Ra83bLHonoCpxG9I8txFqcz2k66UCj0zxQPH7LBW3rs,815
+py_behrtech-2020.10.30.1.dist-info/METADATA,sha256=HuLx5i_P-rhCVZSXczxmQN_A5m1uGsqMuR4J2hyPAJQ,655
+py_behrtech-2020.10.30.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+py_behrtech-2020.10.30.1.dist-info/top_level.txt,sha256=4e6Zx5OSRh1CakYx9aGC6wO9COyI6eeB4Ti3yNymjn0,12
+py_behrtech-2020.10.30.1.dist-info/RECORD,,
