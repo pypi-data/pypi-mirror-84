@@ -1,0 +1,8 @@
+README.md
+setup.py
+moreloops/__init__.py
+moreloops.egg-info/PKG-INFO
+moreloops.egg-info/SOURCES.txt
+moreloops.egg-info/dependency_links.txt
+moreloops.egg-info/requires.txt
+moreloops.egg-info/top_level.txt

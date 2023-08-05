@@ -1,0 +1,2 @@
+decorate_all_methods
+docifyPLUS
