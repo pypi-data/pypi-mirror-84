@@ -1,0 +1,9 @@
+README.md
+setup.py
+simple_python_couch_db/__init__.py
+simple_python_couch_db/couch.py
+simple_python_couch_db.egg-info/PKG-INFO
+simple_python_couch_db.egg-info/SOURCES.txt
+simple_python_couch_db.egg-info/dependency_links.txt
+simple_python_couch_db.egg-info/requires.txt
+simple_python_couch_db.egg-info/top_level.txt

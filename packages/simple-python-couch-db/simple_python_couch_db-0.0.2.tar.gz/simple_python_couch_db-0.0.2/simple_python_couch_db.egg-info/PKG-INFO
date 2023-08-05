@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: simple-python-couch-db
+Version: 0.0.2
+Summary: Simple adapter to use CouchDB with Python.
+Home-page: https://github.com/bjoerndot
+Author: Oliver Schwamb
+Author-email: mail@oliverschwamb.de
+License: UNKNOWN
+Description: # Simple Python CouchDB
+        This is a simple adapter to use CouchDB with Python using the requests module.
+        
+        ## Required dependencies
+        - json
+        - requests
+        - re
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Database :: Front-Ends
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
