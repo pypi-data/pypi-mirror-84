@@ -1,0 +1,5 @@
+setup.py
+defunctools.egg-info/PKG-INFO
+defunctools.egg-info/SOURCES.txt
+defunctools.egg-info/dependency_links.txt
+defunctools.egg-info/top_level.txt
