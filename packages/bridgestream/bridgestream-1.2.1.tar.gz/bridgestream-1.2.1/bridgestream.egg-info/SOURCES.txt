@@ -1,0 +1,10 @@
+README.md
+setup.py
+bridgestream/__init__.py
+bridgestream/bridgestream.py
+bridgestream.egg-info/PKG-INFO
+bridgestream.egg-info/SOURCES.txt
+bridgestream.egg-info/dependency_links.txt
+bridgestream.egg-info/top_level.txt
+bridgestream/tests/__init__.py
+bridgestream/tests/test_bridgestream.py
