@@ -1,0 +1,128 @@
+Metadata-Version: 2.1
+Name: synthetig
+Version: 0.0.1a1
+Summary: Synthetig: An open-source synthetic data generation platform.
+Home-page: https://github.com/synthetig/synthetig
+Author: Jonathan Hind and Nick Lee-McMaster
+Author-email: info@synthetig.ai
+License: UNKNOWN
+Description: <!-- PROJECT LOGO -->
+        <br />
+        <p align="center">
+        
+          <a href="https://github.com/synthetig/synthetig">
+            <img src="logo.png" alt="Logo" width="80" height="80">
+          </a>
+        
+          <h3 align="center">Synthetig</h3>
+          <p align="center">   
+                Synthetig is a Python package for creating synthetic data that can be trusted.
+            <br />
+            <a href="https://github.com/synthetig/synthetig/docs"><strong>Explore the docs »</strong></a>
+            <br />
+            <br />
+            <a href="https://github.com/synthetig/synthetig/issues">Report Bug</a>
+            ·
+            <a href="https://github.com/synthetig/synthetig/issues">Request Feature</a>
+          </p>
+        
+        [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/synthetig/synthetig/master)
+        [![codecov](https://codecov.io/gh/synthetig/synthetig/branch/main/graph/badge.svg?token=LYTPZ5TJ0S)](https://codecov.io/gh/synthetig/synthetig)
+        [![Slack](https://img.shields.io/badge/Slack-Join%20now!-000b18?logo=slack)](https://join.slack.com/t/synthetig-community/shared_invite/zt-i61qylly-aCNn19RnTCqy1aDnG6lAJA)
+        
+        
+        ## Table of Contents
+        
+        [About the Project](#About-the-Project)
+        
+        [Installing](#Installing)
+        
+        [Getting Started](#Getting-Started)
+        
+        [How to Get Involved](#How-to-Get-Involved)
+        
+        [Contact Us](#Contact-Us)
+        
+        [Citation](#Citation)
+        
+        
+        ## About the Project
+        
+        Synthetig is a project to make an open source synthetic data generation platform. 
+        It is a comprehensive platform that will make the process of generating synthetic data simple, which the user can trust.
+        
+        ## Installing
+        
+        The easiest way to install Synthetig is by pip install:
+        
+        ```
+        $ pip install synthetig
+        ```
+        
+        ## Getting Started
+        
+        Generating your first synthetic data set:
+        
+        ```
+        $ python
+        ```
+        
+        ```
+        >>> from synthetig import Model 
+        >>> from synthetig.example import load_data
+        >>> ctgan = Model.CTGAN()
+        >>> real_data = load_data()
+        >>> ctgam.fit(real_data)
+        >>> synthetic_data  = ctgan.smaple(number_of_samples=2000)
+        
+        ```
+        ## How to Get Involved  
+        
+        We would love for you to get involved in anyway you can, at Synthetig we are an open house so anyone is welcome.
+        We give a brief introduction below on how to give involved.
+        The [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md) outlines the conduct that we expect from everyone one in the community.
+        
+        
+        ### 1. Say "Hello"
+        The first thing to do is to say "hello" to the community by joining our [Slack](https://join.slack.com/t/synthetig-community/shared_invite/zt-i61qylly-aCNn19RnTCqy1aDnG6lAJA)
+        and introduce yourself to the community.
+        
+        ### 2. Read our Contributing Guide 
+        
+        Have a read of our [contributing guide](/CONTRIBUTING.md). 
+        
+        
+        ### 2. Get Involved 
+        If you are a bit lost on what to do, have a look at the [list of issues](https://github.com/synthetig/synthetig/issues)
+        and look for "good first issues". If nothing stands out, just jump on our Slack and send one of the team members a message. 
+        
+        
+        ## Contact Us
+        
+        [Twitter](https://twitter.com/synthetig)
+        
+        [Website](https://www.synthetig.ai)
+        
+        [Slack](https://join.slack.com/t/synthetig-community/shared_invite/zt-i61qylly-aCNn19RnTCqy1aDnG6lAJA)
+        
+        
+        ## Models Used
+        1. **[CTGAN](https://github.com/sdv-dev/CTGAN/)** (from Data to AI Lab at MIT) released with the paper [Modeling Tabular data using Conditional GAN](https://arxiv.org/abs/1909.11942), by Lei Xu, Maria Skoularidou, Alfredo Cuesta-Infante, Kalyan Veeramachaneni.
+        
+        ## Citation 
+        
+        Our paper is coming soon, but in the mean time you can cite our Synthetig library:
+        ```bibtex
+        @misc{hind_lee-mcmaster,
+          title={Synthetig-Synthetic data Generation},
+          author={Hind, Jonathan and Lee-McMaster, Nick},
+          journal={Synthetig},
+          url={http://www.synthetig.ai/}
+        }
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
