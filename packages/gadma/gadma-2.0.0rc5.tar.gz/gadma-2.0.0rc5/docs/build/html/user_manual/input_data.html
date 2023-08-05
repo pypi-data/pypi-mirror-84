@@ -1,0 +1,362 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Input data &mdash; GADMA 2.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Specifying an engine" href="set_engine.html" />
+    <link rel="prev" title="User manual" href="user_manual.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> GADMA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hands_on.html">Hands on</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="user_manual.html">User manual</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Input data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#unlinked-snp-s-aic-and-claic">Unlinked SNP’s, AIC and CLAIC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-formats">Data formats</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#vcf-data-format">VCF data format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#frequency-spectrum-file-format">Frequency spectrum file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#snp-data-format">SNP data format</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="set_engine.html">Specifying an engine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_model.html">Specifying a model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inference.html">Inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="run_parallel.html">Repeats and parallel computing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="output.html">Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotting.html">Plotting model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theta.html">Theta0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="settings.html">Usefull settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extra_params_file.html">Extra parameter file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="units.html">Units of parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="confidence_intervals.html">Confidence intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="example_params_file.html">Example parameters file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_help.html">Getting help</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/gadma.html">API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GADMA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="user_manual.html">User manual</a> &raquo;</li>
+        
+      <li>Input data</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/user_manual/input_data.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="input-data">
+<h1>Input data<a class="headerlink" href="#input-data" title="Permalink to this headline">¶</a></h1>
+<p>GADMA supports several types of input data, which are familiar to anyone who has used <code class="docutils literal notranslate"><span class="pre">dadi</span></code> or <code class="docutils literal notranslate"><span class="pre">moments</span></code> in the past:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Frequency spectrum file format (.fs or .sfs),</p></li>
+<li><p>SNP data format (.txt).</p></li>
+</ul>
+</div></blockquote>
+<p>Input file can be specified to GADMA in two ways:</p>
+<ol class="arabic">
+<li><p>Through command-line option <code class="docutils literal notranslate"><span class="pre">-i/--input</span></code>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> gadma -i fs_file.fs -o out_dir
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> gadma --input snp_file.txt -o out_dir
+</pre></div>
+</div>
+</li>
+<li><p>Use a parameter <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">file</span></code> in the parameter file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># param_file</span>
+
+<span class="c1"># Input file path</span>
+<span class="n">Input</span> <span class="n">file</span> <span class="p">:</span> <span class="n">fs_file</span><span class="o">.</span><span class="n">fs</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>Extra information about input AFS can also be put in the parameter file. For example, AFS can be projected to a smaller size with <code class="docutils literal notranslate"><span class="pre">Projections</span></code> option, populations can be named or their order can be changed with <code class="docutils literal notranslate"><span class="pre">Population</span> <span class="pre">labels</span></code> option. Option <code class="docutils literal notranslate"><span class="pre">Outgroup</span></code> tells neither data has outgroup or not, if <code class="docutils literal notranslate"><span class="pre">Outgroup</span></code> is <code class="docutils literal notranslate"><span class="pre">False</span></code> then spectrum will be folded. If parameter file does not contain some options, they are automatically pulled out from the input file. Also length of sequence could be set by <code class="docutils literal notranslate"><span class="pre">Sequence</span> <span class="pre">length</span></code> option, it could be used along with <code class="docutils literal notranslate"><span class="pre">Mutation</span> <span class="pre">rate</span></code> instead <code class="docutils literal notranslate"><span class="pre">Theta0</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># param_file</span>
+
+<span class="c1"># Input file path</span>
+<span class="n">Input</span> <span class="n">file</span> <span class="p">:</span> <span class="n">fs_file</span><span class="o">.</span><span class="n">fs</span>
+
+<span class="c1"># (New) size of the AFS</span>
+<span class="n">Projections</span> <span class="p">:</span> <span class="mi">20</span><span class="p">,</span><span class="mi">20</span>
+
+<span class="c1"># Labels of populations</span>
+<span class="n">Population</span> <span class="n">labels</span> <span class="p">:</span> <span class="n">CEU</span><span class="p">,</span> <span class="n">YRI</span>
+
+<span class="c1"># Has data outgroup</span>
+<span class="n">Outgroup</span><span class="p">:</span> <span class="kc">True</span>
+
+<span class="c1"># Length of sequence used to build AFS</span>
+<span class="n">Sequence</span> <span class="n">length</span><span class="p">:</span> <span class="mf">4.04e6</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+<p>GADMA can be launched with a parameter file in the following way:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> gadma -p params_file -o out_dir
+</pre></div>
+</div>
+<div class="section" id="unlinked-snp-s-aic-and-claic">
+<h2>Unlinked SNP’s, AIC and CLAIC<a class="headerlink" href="#unlinked-snp-s-aic-and-claic" title="Permalink to this headline">¶</a></h2>
+<p>By default, SNP’s that were used to build AFS are considered to be linked. In this case it is possible to compare demographic models with different number of parameters by Composite Likelihood Akaike Information Criterion (CLAIC). This procedure can be necessary as a model with a large number of parameters will be better able to find parameter values corresponding to the observed data than a model with a smaller number of parameters, but at the same time it will correspond less to reality, for example, due to data errors. It is called overfitting and we do not want it to happen.</p>
+<p>Actually, CLAIC is modification of usual Akaike Information Criterion (AIC), but AIC can be used only for AFS built from unlinked SNP’s. The smaller the AIC or CLAIC score is, the better the model fits the observed data.</p>
+<p>It is possible to inform GADMA about linkage of SNP’s and unlock the usage of AIC:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># param_file</span>
+
+<span class="c1"># Inform if SNP&#39;s are not linked</span>
+<span class="n">Linked</span> <span class="n">SNP</span><span class="s1">&#39;s : False</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+<p>If SNP’s are linked and CLAIC should be evaluated (by default it is not), then the bootstrapped data should be set. In order to receive reliable correct bootstrapped data, the bootstrap should be performed on the original SNP data over the unlinked regions of genome. For example, in case of exome data one could make it over genes. Then when bootstrap is done, it is required to set the directory with it in the parameters file for CLAIC evaluation:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># param_file</span>
+
+<span class="c1"># Inform if SNP&#39;s are not linked</span>
+<span class="n">Linked</span> <span class="n">SNP</span><span class="s1">&#39;s : True</span>
+
+<span class="c1"># Tell where bootstrapped data is located</span>
+<span class="n">Directory</span> <span class="k">with</span> <span class="n">bootstrap</span><span class="p">:</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">dadi</span><span class="o">/</span><span class="n">examples</span><span class="o">/</span><span class="n">YRI_CEU</span><span class="o">/</span><span class="n">bootstraps</span><span class="o">/</span>
+
+<span class="o">...</span>
+</pre></div>
+</div>
+<p>This kind of bootstrap is called block-bootstrap and it is very important if one want to do some model selections for data with linked SNPs. <strong>Please, be careful if it is your case</strong>.</p>
+</div>
+<div class="section" id="data-formats">
+<h2>Data formats<a class="headerlink" href="#data-formats" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="vcf-data-format">
+<h3>VCF data format<a class="headerlink" href="#vcf-data-format" title="Permalink to this headline">¶</a></h3>
+<p>To convert a VCF (.vcf) file into a SFS (.sfs) file use <a class="reference external" href="https://github.com/isaacovercast/easySFS">easySFS</a>.</p>
+</div>
+<div class="section" id="frequency-spectrum-file-format">
+<h3>Frequency spectrum file format<a class="headerlink" href="#frequency-spectrum-file-format" title="Permalink to this headline">¶</a></h3>
+<p>Each file begins with any number of comment lines beginning with <code class="docutils literal notranslate"><span class="pre">#</span></code>.
+The first non-comment line contains <code class="docutils literal notranslate"><span class="pre">P</span></code> integers giving the dimensions of the FS array, where <code class="docutils literal notranslate"><span class="pre">P</span></code> is the number of populations represented.
+For a FS representing data from <code class="docutils literal notranslate"><span class="pre">4x4x2</span></code> samples, this would be <code class="docutils literal notranslate"><span class="pre">5x5x3</span></code>.
+(Each dimension is one larger than the number of samples, because the number of observations can range, for example, from 0 to 4 if there are 4 samples, for a total of 5 possibilities.)
+On the same line, the string <code class="docutils literal notranslate"><span class="pre">folded</span></code> or <code class="docutils literal notranslate"><span class="pre">unfolded</span></code> denoting whether or not the stored FS is folded.</p>
+<p>The actual data is stored in a single line listing all the FS elements separated by spaces, in the order <code class="docutils literal notranslate"><span class="pre">fs[0,0,0]</span> <span class="pre">fs[0,0,1]</span> <span class="pre">fs[0,0,2]</span> <span class="pre">...</span> <span class="pre">fs[0,1,0]</span> <span class="pre">fs[0,1,1]...</span></code>.
+This is followed by a single line giving the elements of the mask in the same order as the data, with <code class="docutils literal notranslate"><span class="pre">1</span></code> indicating masked and <code class="docutils literal notranslate"><span class="pre">0</span></code> indicating unmasked.</p>
+</div>
+<div class="section" id="snp-data-format">
+<h3>SNP data format<a class="headerlink" href="#snp-data-format" title="Permalink to this headline">¶</a></h3>
+<p>Example of SNP file format:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Human</span> <span class="n">Chimp</span> <span class="n">Allele1</span> <span class="n">YRI</span>  <span class="n">CEU</span>  <span class="n">Allele2</span> <span class="n">YRI</span> <span class="n">CEU</span> <span class="n">Gene</span>  <span class="n">Position</span>
+<span class="n">ACG</span>   <span class="n">ATG</span>   <span class="n">C</span>       <span class="mi">29</span>   <span class="mi">24</span>   <span class="n">T</span>       <span class="mi">1</span>   <span class="mi">0</span>   <span class="n">abcb1</span> <span class="mi">289</span>
+<span class="n">CCT</span>   <span class="n">CCT</span>   <span class="n">C</span>       <span class="mi">29</span>   <span class="mi">23</span>   <span class="n">G</span>       <span class="mi">3</span>   <span class="mi">2</span>   <span class="n">abcb1</span> <span class="mi">345</span>
+</pre></div>
+</div>
+<p>The data file begins with any number of comment lines that being with <code class="docutils literal notranslate"><span class="pre">#</span></code>.
+The first parsed line is a column header line.
+Whitespace is used to separate entries within the table, so no spaces are allowed within any entry.
+Individual rows make be commented out using <code class="docutils literal notranslate"><span class="pre">#</span></code>.</p>
+<p>The first column contains the in-group reference sequence at that SNP, including the flanking bases.
+If the flanking bases are unknown, they can be denoted by <code class="docutils literal notranslate"><span class="pre">-</span></code>.
+The header label is arbitrary.</p>
+<p>The second column contains the aligned outgroup reference sequence at that SNP, including the flanking bases.
+Unknown entries can be denoted by <code class="docutils literal notranslate"><span class="pre">-</span></code>.
+The header label is arbitrary.</p>
+<p>The third column gives the first segregating allele.
+The column header must be exactly <code class="docutils literal notranslate"><span class="pre">Allele1</span></code>.</p>
+<p>Then follows an arbitrary number of columns, one for each population, each giving the number of times <code class="docutils literal notranslate"><span class="pre">Allele1</span></code> was observed in that population.
+The header for each column should be the population identifier.</p>
+<p>The next column gives the second segregating allele.
+The column header must be exactly <code class="docutils literal notranslate"><span class="pre">Allele2</span></code>.</p>
+<p>Then follows one column for each population, each giving the number of times Allele2 was observed in that population.
+The header for each column should be the population identifier, and the columns should be in the same order as for the Allele1 entries.</p>
+<p>Then follows an arbitrary number of columns which will be concatenated with <code class="docutils literal notranslate"><span class="pre">_</span></code> to assign a label for each SNP.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Allele1</span></code> and <code class="docutils literal notranslate"><span class="pre">Allele2</span></code> headers must be exactly those values because the number of columns between those two is used to infer the number of populations in the file.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="set_engine.html" class="btn btn-neutral float-right" title="Specifying an engine" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="user_manual.html" class="btn btn-neutral float-left" title="User manual" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Ekaterina Noskova
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

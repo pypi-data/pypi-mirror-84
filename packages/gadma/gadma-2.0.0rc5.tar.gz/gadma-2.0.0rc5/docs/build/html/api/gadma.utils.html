@@ -1,0 +1,1063 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Utils and variables (utils package) &mdash; GADMA 2.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Run local search on bootstrap" href="gadma.run_ls_on_boot_data.html" />
+    <link rel="prev" title="Core of runs (core package)" href="gadma.core.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> GADMA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/hands_on.html">Hands on</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/user_manual.html">User manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/example_params_file.html">Example parameters file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_help.html">Getting help</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gadma.html">API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="gadma.Inference.html">Inference module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.data.html">Data (data package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.models.html">Models (models package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.engines.html">Engines (engines package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.code_generator.html">Code generation (code_generator package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.optimizers.html">Optimizers (optimizers package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.cli.html">Command line interface (cli package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.core.html">Core of runs (core package)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Utils and variables (utils package)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-gadma.utils.variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-gadma.utils.variable_pool">Variable Pool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-gadma.utils.distributions">Distributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-gadma.utils.utils">Utils</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.run_ls_on_boot_data.html">Run local search on bootstrap</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GADMA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="gadma.html">API</a> &raquo;</li>
+        
+      <li>Utils and variables (utils package)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/gadma.utils.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="utils-and-variables-utils-package">
+<h1>Utils and variables (utils package)<a class="headerlink" href="#utils-and-variables-utils-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-gadma.utils.variables">
+<span id="variables"></span><h2>Variables<a class="headerlink" href="#module-gadma.utils.variables" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="gadma.utils.variables.ContinuousVariable">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.utils.variables.</code><code class="sig-name descname">ContinuousVariable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">domain</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rand_gen</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.ContinuousVariable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.utils.variables.Variable" title="gadma.utils.variables.Variable"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.variables.Variable</span></code></a></p>
+<p>Class of the continuous variable.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>domain</strong> – domain of the variable, if <cite>None</cite> then
+<a class="reference internal" href="#gadma.utils.variables.ContinuousVariable.default_domain" title="gadma.utils.variables.ContinuousVariable.default_domain"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_domain</span></code></a> will be taken.</p></li>
+<li><p><strong>rand_gen</strong> – random generator for the variable, if <cite>None</cite> then
+<a class="reference internal" href="#gadma.utils.variables.ContinuousVariable.default_rand_gen" title="gadma.utils.variables.ContinuousVariable.default_rand_gen"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_rand_gen</span></code></a> will be taken.</p></li>
+</ul>
+</dd>
+</dl>
+<ul class="simple">
+<li><p><a class="reference internal" href="#gadma.utils.variables.ContinuousVariable.default_domain" title="gadma.utils.variables.ContinuousVariable.default_domain"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_domain</span></code></a> = array([-inf, inf])</p></li>
+<li><p><a class="reference internal" href="#gadma.utils.variables.ContinuousVariable.default_rand_gen" title="gadma.utils.variables.ContinuousVariable.default_rand_gen"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_rand_gen</span></code></a> = uniform distribution over domain.</p></li>
+</ul>
+<dl class="py method">
+<dt id="gadma.utils.variables.ContinuousVariable.correct_value">
+<code class="sig-name descname">correct_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.ContinuousVariable.correct_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check that value is correct for this variable.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.utils.variables.ContinuousVariable.default_domain">
+<code class="sig-name descname">default_domain</code><em class="property"> = array([-inf,  inf])</em><a class="headerlink" href="#gadma.utils.variables.ContinuousVariable.default_domain" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.ContinuousVariable.default_rand_gen">
+<code class="sig-name descname">default_rand_gen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.ContinuousVariable.default_rand_gen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uniform generator. Runs <code class="docutils literal notranslate"><span class="pre">numpy.random.uniform</span></code> on <code class="docutils literal notranslate"><span class="pre">domain</span></code>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.ContinuousVariable.get_bounds">
+<code class="sig-name descname">get_bounds</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.ContinuousVariable.get_bounds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the domain of the variable.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.ContinuousVariable.get_possible_values">
+<code class="sig-name descname">get_possible_values</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.ContinuousVariable.get_possible_values" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><strong>AttributeError</strong> – it is impossible to get possible values        for continuous variable.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.utils.variables.DiscreteVariable">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.utils.variables.</code><code class="sig-name descname">DiscreteVariable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">domain</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rand_gen</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.DiscreteVariable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.utils.variables.Variable" title="gadma.utils.variables.Variable"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.variables.Variable</span></code></a></p>
+<p>Class of the discrete variable.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>domain</strong> – domain of the variable, if <cite>None</cite> then
+<a class="reference internal" href="#gadma.utils.variables.DiscreteVariable.default_domain" title="gadma.utils.variables.DiscreteVariable.default_domain"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_domain</span></code></a> will be taken.</p></li>
+<li><p><strong>rand_gen</strong> – random generator for the variable, if <cite>None</cite> then
+<a class="reference internal" href="#gadma.utils.variables.DiscreteVariable.default_rand_gen" title="gadma.utils.variables.DiscreteVariable.default_rand_gen"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_rand_gen</span></code></a> will be taken.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="gadma.utils.variables.DiscreteVariable.correct_value">
+<code class="sig-name descname">correct_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.DiscreteVariable.correct_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check that value is correct for this variable.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.utils.variables.DiscreteVariable.default_domain">
+<code class="sig-name descname">default_domain</code><em class="property"> = array([], dtype=float64)</em><a class="headerlink" href="#gadma.utils.variables.DiscreteVariable.default_domain" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.DiscreteVariable.default_rand_gen">
+<code class="sig-name descname">default_rand_gen</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">size</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">replace</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">p</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.DiscreteVariable.default_rand_gen" title="Permalink to this definition">¶</a></dt>
+<dd><p>See documentation of <code class="docutils literal notranslate"><span class="pre">numpy.random.choice</span></code> for more information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.DiscreteVariable.domain">
+<em class="property">property </em><code class="sig-name descname">domain</code><a class="headerlink" href="#gadma.utils.variables.DiscreteVariable.domain" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.DiscreteVariable.get_bounds">
+<code class="sig-name descname">get_bounds</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.DiscreteVariable.get_bounds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns bounds - minimum and maximum over domain of the variable.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.DiscreteVariable.get_possible_values">
+<code class="sig-name descname">get_possible_values</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.DiscreteVariable.get_possible_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns domain of the variable.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.utils.variables.Dynamic">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.utils.variables.</code><code class="sig-name descname">Dynamic</code><a class="headerlink" href="#gadma.utils.variables.Dynamic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Abstract class for Dynamic value.
+New class should be instance of this class, should have <a class="reference internal" href="#gadma.utils.variables.Dynamic.format_str" title="gadma.utils.variables.Dynamic.format_str"><code class="xref py py-attr docutils literal notranslate"><span class="pre">format_str</span></code></a>
+attribute and implement <code class="xref py py-func docutils literal notranslate"><span class="pre">_inner_func()</span></code> (staticmethod),
+<code class="xref py py-func docutils literal notranslate"><span class="pre">__str__()</span></code> and <a class="reference internal" href="#gadma.utils.variables.Dynamic.func_str" title="gadma.utils.variables.Dynamic.func_str"><code class="xref py py-func docutils literal notranslate"><span class="pre">func_str()</span></code></a> methods.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#gadma.utils.variables.Dynamic.format_str" title="gadma.utils.variables.Dynamic.format_str"><strong>Dynamic.format_str</strong></a> – format string for string representation of the
+dynamic.</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="gadma.utils.variables.Dynamic.format_str">
+<code class="sig-name descname">format_str</code><em class="property"> = ''</em><a class="headerlink" href="#gadma.utils.variables.Dynamic.format_str" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.Dynamic.func_str">
+<em class="property">classmethod </em><code class="sig-name descname">func_str</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">y1</span></em>, <em class="sig-param"><span class="n">y2</span></em>, <em class="sig-param"><span class="n">x_diff</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.Dynamic.func_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns string representation of the dynamic via formating
+<a class="reference internal" href="#gadma.utils.variables.Dynamic.format_str" title="gadma.utils.variables.Dynamic.format_str"><code class="xref py py-attr docutils literal notranslate"><span class="pre">format_str</span></code></a> with argumets.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.utils.variables.DynamicVariable">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.utils.variables.</code><code class="sig-name descname">DynamicVariable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">domain</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rand_gen</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.DynamicVariable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.utils.variables.DiscreteVariable" title="gadma.utils.variables.DiscreteVariable"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.variables.DiscreteVariable</span></code></a></p>
+<p>Variable for keepeing selection parameter of the demographic model.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#gadma.utils.variables.DynamicVariable.default_domain" title="gadma.utils.variables.DynamicVariable.default_domain"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_domain</span></code></a> = array([        <a class="reference internal" href="#gadma.utils.variables.Exp" title="gadma.utils.variables.Exp"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.variables.Exp</span></code></a>,        <a class="reference internal" href="#gadma.utils.variables.Lin" title="gadma.utils.variables.Lin"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.variables.Lin</span></code></a>,        <a class="reference internal" href="#gadma.utils.variables.Sud" title="gadma.utils.variables.Sud"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.variables.Sud</span></code></a>])</p></li>
+<li><p><a class="reference internal" href="#gadma.utils.variables.DynamicVariable.default_rand_gen" title="gadma.utils.variables.DynamicVariable.default_rand_gen"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_rand_gen</span></code></a> = random choice over domain.</p></li>
+</ul>
+<dl class="py attribute">
+<dt id="gadma.utils.variables.DynamicVariable.default_domain">
+<code class="sig-name descname">default_domain</code><em class="property"> = array(['Sud', 'Lin', 'Exp'], dtype='&lt;U3')</em><a class="headerlink" href="#gadma.utils.variables.DynamicVariable.default_domain" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.DynamicVariable.default_rand_gen">
+<code class="sig-name descname">default_rand_gen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.DynamicVariable.default_rand_gen" title="Permalink to this definition">¶</a></dt>
+<dd><p>See documentation of <code class="docutils literal notranslate"><span class="pre">numpy.random.choice</span></code> for more information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.DynamicVariable.get_bounds">
+<code class="sig-name descname">get_bounds</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.DynamicVariable.get_bounds" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><strong>AttributeError</strong> – Dynamic variable has incomparative values.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.DynamicVariable.get_func_from_value">
+<em class="property">static </em><code class="sig-name descname">get_func_from_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.DynamicVariable.get_func_from_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <code class="xref py py-func docutils literal notranslate"><span class="pre">gadma.utils.variables.Dynamic._inner_func()</span></code> function
+from the value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> (<a class="reference internal" href="#gadma.utils.variables.Dynamic" title="gadma.utils.variables.Dynamic"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.variables.Dynamic</span></code></a>) – value of the variable.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.DynamicVariable.translate_units">
+<em class="property">static </em><code class="sig-name descname">translate_units</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">Nanc</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.DynamicVariable.translate_units" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.utils.variables.Exp">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.utils.variables.</code><code class="sig-name descname">Exp</code><a class="headerlink" href="#gadma.utils.variables.Exp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.utils.variables.Dynamic" title="gadma.utils.variables.Dynamic"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.variables.Dynamic</span></code></a></p>
+<p>Exponential dynamic.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#gadma.utils.variables.Exp.format_str" title="gadma.utils.variables.Exp.format_str"><code class="xref py py-attr docutils literal notranslate"><span class="pre">format_str</span></code></a> = “lambda t: {0} * ({1} / {0}) ** (t / {2})”</p></li>
+</ul>
+<dl class="py attribute">
+<dt id="gadma.utils.variables.Exp.format_str">
+<code class="sig-name descname">format_str</code><em class="property"> = 'lambda t: {0} * ({1} / {0}) ** (t / {2})'</em><a class="headerlink" href="#gadma.utils.variables.Exp.format_str" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.utils.variables.FractionVariable">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.utils.variables.</code><code class="sig-name descname">FractionVariable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">domain</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rand_gen</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.FractionVariable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.utils.variables.ContinuousVariable" title="gadma.utils.variables.ContinuousVariable"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.variables.ContinuousVariable</span></code></a></p>
+<p>Variable for keepeing fraction parameter of the demographic model.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#gadma.utils.variables.FractionVariable.default_domain" title="gadma.utils.variables.FractionVariable.default_domain"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_domain</span></code></a> = array([0, 1])</p></li>
+<li><p><a class="reference internal" href="#gadma.utils.variables.FractionVariable.default_rand_gen" title="gadma.utils.variables.FractionVariable.default_rand_gen"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_rand_gen</span></code></a> = random uniform distribution over domain.</p></li>
+</ul>
+<dl class="py attribute">
+<dt id="gadma.utils.variables.FractionVariable.default_domain">
+<code class="sig-name descname">default_domain</code><em class="property"> = array([0.001, 0.999])</em><a class="headerlink" href="#gadma.utils.variables.FractionVariable.default_domain" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.FractionVariable.default_rand_gen">
+<code class="sig-name descname">default_rand_gen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.FractionVariable.default_rand_gen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uniform generator. Runs <code class="docutils literal notranslate"><span class="pre">numpy.random.uniform</span></code> on <code class="docutils literal notranslate"><span class="pre">domain</span></code>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.FractionVariable.translate_units">
+<em class="property">static </em><code class="sig-name descname">translate_units</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">Nanc</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.FractionVariable.translate_units" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.utils.variables.Lin">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.utils.variables.</code><code class="sig-name descname">Lin</code><a class="headerlink" href="#gadma.utils.variables.Lin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.utils.variables.Dynamic" title="gadma.utils.variables.Dynamic"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.variables.Dynamic</span></code></a></p>
+<p>Linear dynamic.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#gadma.utils.variables.Lin.format_str" title="gadma.utils.variables.Lin.format_str"><code class="xref py py-attr docutils literal notranslate"><span class="pre">format_str</span></code></a> = “lambda t: {0} + ({1} - {0}) * (t / {2})”</p></li>
+</ul>
+<dl class="py attribute">
+<dt id="gadma.utils.variables.Lin.format_str">
+<code class="sig-name descname">format_str</code><em class="property"> = 'lambda t: {0} + ({1} - {0}) * (t / {2})'</em><a class="headerlink" href="#gadma.utils.variables.Lin.format_str" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.utils.variables.MigrationVariable">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.utils.variables.</code><code class="sig-name descname">MigrationVariable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">domain</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rand_gen</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.MigrationVariable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.utils.variables.ContinuousVariable" title="gadma.utils.variables.ContinuousVariable"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.variables.ContinuousVariable</span></code></a></p>
+<p>Variable for keepeing migration parameter of the demographic model.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#gadma.utils.variables.MigrationVariable.default_domain" title="gadma.utils.variables.MigrationVariable.default_domain"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_domain</span></code></a> = array([0, 10])</p></li>
+<li><p><a class="reference internal" href="#gadma.utils.variables.MigrationVariable.default_rand_gen" title="gadma.utils.variables.MigrationVariable.default_rand_gen"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_rand_gen</span></code></a> = truncated log normal distribution over      domain with mean equal to 1.</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Note</dt>
+<dd class="field-odd"><p>Values are assumed to be in genetic units.</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="gadma.utils.variables.MigrationVariable.default_domain">
+<code class="sig-name descname">default_domain</code><em class="property"> = array([ 0, 10])</em><a class="headerlink" href="#gadma.utils.variables.MigrationVariable.default_domain" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.MigrationVariable.default_rand_gen">
+<code class="sig-name descname">default_rand_gen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.MigrationVariable.default_rand_gen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates random value of the migration. With probability of 0.5 generates
+zero, otherwise runs
+<a class="reference internal" href="#gadma.utils.distributions.trunc_normal_sigma_generator" title="gadma.utils.distributions.trunc_normal_sigma_generator"><code class="xref py py-func docutils literal notranslate"><span class="pre">gadma.utils.distributions.trunc_normal_sigma_generator()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.MigrationVariable.translate_units">
+<em class="property">static </em><code class="sig-name descname">translate_units</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">Nanc</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.MigrationVariable.translate_units" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.utils.variables.PopulationSizeVariable">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.utils.variables.</code><code class="sig-name descname">PopulationSizeVariable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">domain</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rand_gen</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.PopulationSizeVariable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.utils.variables.ContinuousVariable" title="gadma.utils.variables.ContinuousVariable"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.variables.ContinuousVariable</span></code></a></p>
+<p>Variable for keepeing size of population in demographic model.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#gadma.utils.variables.PopulationSizeVariable.default_domain" title="gadma.utils.variables.PopulationSizeVariable.default_domain"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_domain</span></code></a> = array([1e-2, 100])</p></li>
+<li><p><a class="reference internal" href="#gadma.utils.variables.PopulationSizeVariable.default_rand_gen" title="gadma.utils.variables.PopulationSizeVariable.default_rand_gen"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_rand_gen</span></code></a> = truncated log normal distribution over        domain with mean equal to 1.</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Note</dt>
+<dd class="field-odd"><p>Values are assumed to be in genetic units.</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="gadma.utils.variables.PopulationSizeVariable.default_domain">
+<code class="sig-name descname">default_domain</code><em class="property"> = array([1.e-02, 1.e+02])</em><a class="headerlink" href="#gadma.utils.variables.PopulationSizeVariable.default_domain" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.PopulationSizeVariable.default_rand_gen">
+<code class="sig-name descname">default_rand_gen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.PopulationSizeVariable.default_rand_gen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generator for <code class="xref py py-func docutils literal notranslate"><span class="pre">trunc_lognormal_3_sigma_rule()</span></code></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.PopulationSizeVariable.translate_units">
+<em class="property">static </em><code class="sig-name descname">translate_units</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">Nanc</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.PopulationSizeVariable.translate_units" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.utils.variables.SelectionVariable">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.utils.variables.</code><code class="sig-name descname">SelectionVariable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">domain</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rand_gen</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.SelectionVariable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.utils.variables.ContinuousVariable" title="gadma.utils.variables.ContinuousVariable"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.variables.ContinuousVariable</span></code></a></p>
+<p>Variable for keepeing selection parameter of the demographic model.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#gadma.utils.variables.SelectionVariable.default_domain" title="gadma.utils.variables.SelectionVariable.default_domain"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_domain</span></code></a> = array([0, 10])</p></li>
+<li><p><a class="reference internal" href="#gadma.utils.variables.SelectionVariable.default_rand_gen" title="gadma.utils.variables.SelectionVariable.default_rand_gen"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_rand_gen</span></code></a> = truncated log normal distribution over        domain with mean equal to 1.</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Note</dt>
+<dd class="field-odd"><p>Values are assumed to be in genetic units.</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="gadma.utils.variables.SelectionVariable.default_domain">
+<code class="sig-name descname">default_domain</code><em class="property"> = array([1.e-15, 1.e+01])</em><a class="headerlink" href="#gadma.utils.variables.SelectionVariable.default_domain" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.SelectionVariable.default_rand_gen">
+<code class="sig-name descname">default_rand_gen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.SelectionVariable.default_rand_gen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generator for <code class="xref py py-func docutils literal notranslate"><span class="pre">trunc_normal_3_sigma_rule()</span></code></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.SelectionVariable.translate_units">
+<em class="property">static </em><code class="sig-name descname">translate_units</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">Nanc</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.SelectionVariable.translate_units" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.utils.variables.Sud">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.utils.variables.</code><code class="sig-name descname">Sud</code><a class="headerlink" href="#gadma.utils.variables.Sud" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.utils.variables.Dynamic" title="gadma.utils.variables.Dynamic"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.variables.Dynamic</span></code></a></p>
+<p>Sudden (constant) dynamic.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#gadma.utils.variables.Sud.format_str" title="gadma.utils.variables.Sud.format_str"><code class="xref py py-attr docutils literal notranslate"><span class="pre">format_str</span></code></a> = “{1}”</p></li>
+</ul>
+<dl class="py attribute">
+<dt id="gadma.utils.variables.Sud.format_str">
+<code class="sig-name descname">format_str</code><em class="property"> = '{1}'</em><a class="headerlink" href="#gadma.utils.variables.Sud.format_str" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.utils.variables.TimeVariable">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.utils.variables.</code><code class="sig-name descname">TimeVariable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">domain</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rand_gen</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.TimeVariable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.utils.variables.ContinuousVariable" title="gadma.utils.variables.ContinuousVariable"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.variables.ContinuousVariable</span></code></a></p>
+<p>Variable for keepeing time parameter of the demographic model.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#gadma.utils.variables.TimeVariable.default_domain" title="gadma.utils.variables.TimeVariable.default_domain"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_domain</span></code></a> = array([0, 5])</p></li>
+<li><p><a class="reference internal" href="#gadma.utils.variables.TimeVariable.default_rand_gen" title="gadma.utils.variables.TimeVariable.default_rand_gen"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_rand_gen</span></code></a> = truncated log normal distribution over        domain with mean equal to 1.</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Note</dt>
+<dd class="field-odd"><p>Values are assumed to be in genetic units.</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="gadma.utils.variables.TimeVariable.default_domain">
+<code class="sig-name descname">default_domain</code><em class="property"> = array([1.e-15, 5.e+00])</em><a class="headerlink" href="#gadma.utils.variables.TimeVariable.default_domain" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.TimeVariable.default_rand_gen">
+<code class="sig-name descname">default_rand_gen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.TimeVariable.default_rand_gen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generator for <code class="xref py py-func docutils literal notranslate"><span class="pre">trunc_normal_3_sigma_rule()</span></code></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.TimeVariable.translate_units">
+<em class="property">static </em><code class="sig-name descname">translate_units</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">Nanc</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.TimeVariable.translate_units" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.utils.variables.Variable">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.utils.variables.</code><code class="sig-name descname">Variable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">var_type</span></em>, <em class="sig-param"><span class="n">domain</span></em>, <em class="sig-param"><span class="n">rand_gen</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.Variable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Abstract class for keeping parameters of events in demographic model.
+Any new class for variable must be an instance of this class.</p>
+<p>New class should have <code class="xref py py-attr docutils literal notranslate"><span class="pre">default_domain</span></code>, <code class="xref py py-attr docutils literal notranslate"><span class="pre">default_rand_gen</span></code>
+class attributes and <a class="reference internal" href="#gadma.utils.variables.Variable.get_bounds" title="gadma.utils.variables.Variable.get_bounds"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_bounds()</span></code></a>, <a class="reference internal" href="#gadma.utils.variables.Variable.get_possible_values" title="gadma.utils.variables.Variable.get_possible_values"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_possible_values()</span></code></a>
+methods implemented.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Variable.default_domain</strong> – default domain of the variable.</p></li>
+<li><p><strong>Variable.default_rand_gen</strong> – default random generator of the variable.
+Is used in <a class="reference internal" href="#gadma.utils.variables.Variable.resample" title="gadma.utils.variables.Variable.resample"><code class="xref py py-func docutils literal notranslate"><span class="pre">resample()</span></code></a> method.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – unique name of the variable.</p></li>
+<li><p><strong>var_type</strong> (<em>str</em>) – type of the variable (usually ‘continuous’
+or ‘discrete’).</p></li>
+<li><p><strong>domain</strong> – domain of the variable.</p></li>
+<li><p><strong>rand_gen</strong> – random generator of the variable, should be a function
+that takes domain as argument and returns sampled value.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="gadma.utils.variables.Variable.correct_value">
+<code class="sig-name descname">correct_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.Variable.correct_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check that value is correct for this variable.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.Variable.get_bounds">
+<code class="sig-name descname">get_bounds</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.Variable.get_bounds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns bounds of the variable domain.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.Variable.get_possible_values">
+<code class="sig-name descname">get_possible_values</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.Variable.get_possible_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns list of all possible values of the variable.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variables.Variable.resample">
+<code class="sig-name descname">resample</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variables.Variable.resample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns sampled value of the variable by calling <cite>rand_gen</cite> on
+the <cite>domain</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>*args</strong> – arguments to pass in <cite>rand_gen</cite>.</p></li>
+<li><p><strong>**kwargs</strong> – kwargs to pass in <cite>rand_gen</cite>.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-gadma.utils.variable_pool">
+<span id="variable-pool"></span><h2>Variable Pool<a class="headerlink" href="#module-gadma.utils.variable_pool" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="gadma.utils.variable_pool.VariablePool">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.utils.variable_pool.</code><code class="sig-name descname">VariablePool</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lst</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variable_pool.VariablePool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<p>Class for list of variables. All variables should have different names.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>lst</strong> – list of the variables.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="gadma.utils.variable_pool.VariablePool.append">
+<code class="sig-name descname">append</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">item</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variable_pool.VariablePool.append" title="Permalink to this definition">¶</a></dt>
+<dd><p>Append new <code class="docutils literal notranslate"><span class="pre">item</span></code> to pool.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variable_pool.VariablePool.check_type">
+<code class="sig-name descname">check_type</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">item</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variable_pool.VariablePool.check_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raises ValueError if <code class="docutils literal notranslate"><span class="pre">item</span></code> is not Variable.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variable_pool.VariablePool.extend">
+<code class="sig-name descname">extend</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">items</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variable_pool.VariablePool.extend" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extend pool with other list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.variable_pool.VariablePool.fix_pickling">
+<code class="sig-name descname">fix_pickling</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.variable_pool.VariablePool.fix_pickling" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-gadma.utils.distributions">
+<span id="distributions"></span><h2>Distributions<a class="headerlink" href="#module-gadma.utils.distributions" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="gadma.utils.distributions.custom_generator">
+<code class="sig-prename descclassname">gadma.utils.distributions.</code><code class="sig-name descname">custom_generator</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variables</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.distributions.custom_generator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Custom generator for demographic model variables.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.distributions.trunc_lognormal">
+<code class="sig-prename descclassname">gadma.utils.distributions.</code><code class="sig-name descname">trunc_lognormal</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mean</span></em>, <em class="sig-param"><span class="n">sigma</span></em>, <em class="sig-param"><span class="n">lower</span></em>, <em class="sig-param"><span class="n">upper</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.distributions.trunc_lognormal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Truncated log-normal distribution.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.distributions.trunc_lognormal_3_sigma_rule">
+<code class="sig-prename descclassname">gadma.utils.distributions.</code><code class="sig-name descname">trunc_lognormal_3_sigma_rule</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mean</span></em>, <em class="sig-param"><span class="n">lower</span></em>, <em class="sig-param"><span class="n">upper</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.distributions.trunc_lognormal_3_sigma_rule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Truncated log-normal distribution with sigma according by
+three sigma rule.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.distributions.trunc_lognormal_sigma_generator">
+<code class="sig-prename descclassname">gadma.utils.distributions.</code><code class="sig-name descname">trunc_lognormal_sigma_generator</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">domain</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.distributions.trunc_lognormal_sigma_generator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generator for <a class="reference internal" href="#gadma.utils.distributions.trunc_lognormal_3_sigma_rule" title="gadma.utils.distributions.trunc_lognormal_3_sigma_rule"><code class="xref py py-func docutils literal notranslate"><span class="pre">trunc_lognormal_3_sigma_rule()</span></code></a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.distributions.trunc_normal">
+<code class="sig-prename descclassname">gadma.utils.distributions.</code><code class="sig-name descname">trunc_normal</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mean</span></em>, <em class="sig-param"><span class="n">sigma</span></em>, <em class="sig-param"><span class="n">lower</span></em>, <em class="sig-param"><span class="n">upper</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.distributions.trunc_normal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Truncated normal distribution.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.distributions.trunc_normal_3_sigma_rule">
+<code class="sig-prename descclassname">gadma.utils.distributions.</code><code class="sig-name descname">trunc_normal_3_sigma_rule</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mean</span></em>, <em class="sig-param"><span class="n">lower</span></em>, <em class="sig-param"><span class="n">upper</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.distributions.trunc_normal_3_sigma_rule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Truncated normal distribution with sigma according by
+three sigma rule.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.distributions.trunc_normal_sigma_generator">
+<code class="sig-prename descclassname">gadma.utils.distributions.</code><code class="sig-name descname">trunc_normal_sigma_generator</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">domain</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.distributions.trunc_normal_sigma_generator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generator for <a class="reference internal" href="#gadma.utils.distributions.trunc_normal_3_sigma_rule" title="gadma.utils.distributions.trunc_normal_3_sigma_rule"><code class="xref py py-func docutils literal notranslate"><span class="pre">trunc_normal_3_sigma_rule()</span></code></a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.distributions.uniform_generator">
+<code class="sig-prename descclassname">gadma.utils.distributions.</code><code class="sig-name descname">uniform_generator</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">domain</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.distributions.uniform_generator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uniform generator. Runs <code class="docutils literal notranslate"><span class="pre">numpy.random.uniform</span></code> on <code class="docutils literal notranslate"><span class="pre">domain</span></code>.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-gadma.utils.utils">
+<span id="utils"></span><h2>Utils<a class="headerlink" href="#module-gadma.utils.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="gadma.utils.utils.CacheInfo">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">CacheInfo</code><a class="headerlink" href="#gadma.utils.utils.CacheInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for keeping cache info like one from <code class="docutils literal notranslate"><span class="pre">functools.lru_cache</span></code>
+cache_info.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.utils.utils.StdAndFileLogger">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">StdAndFileLogger</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log_filename</span></em>, <em class="sig-param"><span class="n">silent</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.StdAndFileLogger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Logger for printing output both in file and stdout.</p>
+<dl class="py method">
+<dt id="gadma.utils.utils.StdAndFileLogger.flush">
+<code class="sig-name descname">flush</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.StdAndFileLogger.flush" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.utils.utils.StdAndFileLogger.write">
+<code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.StdAndFileLogger.write" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.utils.utils.WeightedMetaArray">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">WeightedMetaArray</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">array</span></em>, <em class="sig-param"><span class="n">dtype</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">order</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.WeightedMetaArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></p>
+<p>Array with metadata.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>array</strong> – array to keep.</p></li>
+<li><p><strong>dtype</strong> – dtype of elements of the array.</p></li>
+<li><p><strong>order</strong> – see <code class="docutils literal notranslate"><span class="pre">numpy.ndarray</span></code> for more information.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.abspath">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">abspath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.abspath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt id="gadma.utils.utils.bcolors">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">bcolors</code><a class="headerlink" href="#gadma.utils.utils.bcolors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="gadma.utils.utils.bcolors.BOLD">
+<code class="sig-name descname">BOLD</code><em class="property"> = '\x1b[1m'</em><a class="headerlink" href="#gadma.utils.utils.bcolors.BOLD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.utils.utils.bcolors.ENDC">
+<code class="sig-name descname">ENDC</code><em class="property"> = '\x1b[0m'</em><a class="headerlink" href="#gadma.utils.utils.bcolors.ENDC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.utils.utils.bcolors.FAIL">
+<code class="sig-name descname">FAIL</code><em class="property"> = '\x1b[91m'</em><a class="headerlink" href="#gadma.utils.utils.bcolors.FAIL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.utils.utils.bcolors.HEADER">
+<code class="sig-name descname">HEADER</code><em class="property"> = '\x1b[95m'</em><a class="headerlink" href="#gadma.utils.utils.bcolors.HEADER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.utils.utils.bcolors.OKBLUE">
+<code class="sig-name descname">OKBLUE</code><em class="property"> = '\x1b[94m'</em><a class="headerlink" href="#gadma.utils.utils.bcolors.OKBLUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.utils.utils.bcolors.OKGREEN">
+<code class="sig-name descname">OKGREEN</code><em class="property"> = '\x1b[92m'</em><a class="headerlink" href="#gadma.utils.utils.bcolors.OKGREEN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.utils.utils.bcolors.UNDERLINE">
+<code class="sig-name descname">UNDERLINE</code><em class="property"> = '\x1b[4m'</em><a class="headerlink" href="#gadma.utils.utils.bcolors.UNDERLINE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.utils.utils.bcolors.WARNING">
+<code class="sig-name descname">WARNING</code><em class="property"> = '\x1b[93m'</em><a class="headerlink" href="#gadma.utils.utils.bcolors.WARNING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.cache_func">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">cache_func</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.cache_func" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cashes function with one argument.
+:param f: function such that f(x).
+:returns: function that is cashed.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.check_dir_existence">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">check_dir_existence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path_to_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.check_dir_existence" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.check_file_existence">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">check_file_existence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path_to_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.check_file_existence" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.choose_by_weight">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">choose_by_weight</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X</span></em>, <em class="sig-param"><span class="n">weights</span></em>, <em class="sig-param"><span class="n">nsample</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.choose_by_weight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Choose <code class="docutils literal notranslate"><span class="pre">nsample</span></code> samples from <code class="docutils literal notranslate"><span class="pre">X</span></code> according to <code class="docutils literal notranslate"><span class="pre">weights</span></code>.
+The greater weight is the greater the probability to choose sample is.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Note</dt>
+<dd class="field-odd"><p>if weights is None then choice will be uniform</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.ensure_dir_existence">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">ensure_dir_existence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path_to_dir</span></em>, <em class="sig-param"><span class="n">check_emptiness</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.ensure_dir_existence" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.ensure_file_existence">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">ensure_file_existence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path_to_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.ensure_file_existence" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.eval_wrapper">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">eval_wrapper</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em>, <em class="sig-param"><span class="n">eval_file</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.eval_wrapper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns good function for optimization. Each evaluation of function will
+be written in file. If needed function will be cached.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> – function. Is called as f(x, <a href="#id1"><span class="problematic" id="id2">*</span></a>args).</p></li>
+<li><p><strong>args</strong> – tuple of arguments.</p></li>
+<li><p><strong>eval_file</strong> – file to write evaluations.</p></li>
+<li><p><strong>cache</strong> – if True then function will be cached.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.exponent_transform">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">exponent_transform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.exponent_transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transforms <code class="docutils literal notranslate"><span class="pre">x</span></code> by applying <code class="docutils literal notranslate"><span class="pre">numpy.exp</span></code> on it.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.fix_args">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">fix_args</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.fix_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fixes argumets of function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> – Function such that f(x, <a href="#id3"><span class="problematic" id="id4">*</span></a>args)</p></li>
+<li><p><strong>args</strong> – Tuple of function arguments.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>function that will take only x as argument.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.float_repr">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">float_repr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">precision</span><span class="o">=</span><span class="default_value">5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.float_repr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.get_aic_score">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">get_aic_score</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_params</span></em>, <em class="sig-param"><span class="n">log_likelihood</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.get_aic_score" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns AIC score.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n_params</strong> – Number of parameters of model.</p></li>
+<li><p><strong>log_likelihood</strong> – Value of log likelihood.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.get_claic_score">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">get_claic_score</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">engine</span></em>, <em class="sig-param"><span class="n">x0</span></em>, <em class="sig-param"><span class="n">boots</span></em>, <em class="sig-param"><span class="n">args</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="n">log_likelihood</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">return_eps</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.get_claic_score" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate CLAIC score for the model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>engine</strong> – Engine with model and data.</p></li>
+<li><p><strong>x0</strong> – Parameters of the model.</p></li>
+<li><p><strong>boots</strong> – Bootstrap data.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Params args</dt>
+<dd class="field-even"><p>Arguments for engine’s <code class="docutils literal notranslate"><span class="pre">evaluate</span></code> function.</p>
+</dd>
+<dt class="field-odd">Params log_likelihood</dt>
+<dd class="field-odd"><p>Value of log-likelihood for <code class="docutils literal notranslate"><span class="pre">x0</span></code>.</p>
+</dd>
+<dt class="field-even">Params return_eps</dt>
+<dd class="field-even"><p>If True then tuple (CLAIC, eps) is returned.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.ident_transform">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">ident_transform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.ident_transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Identical transform. Just returns <code class="docutils literal notranslate"><span class="pre">x</span></code>.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.list_with_weights_after_pickle">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">list_with_weights_after_pickle</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.list_with_weights_after_pickle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transforms back pickles version of <code class="docutils literal notranslate"><span class="pre">X</span></code>.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.list_with_weights_for_pickle">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">list_with_weights_for_pickle</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.list_with_weights_for_pickle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transforms elements of <code class="docutils literal notranslate"><span class="pre">X</span></code> to pickle it.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.logarithm_transform">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">logarithm_transform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.logarithm_transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transforms <code class="docutils literal notranslate"><span class="pre">x</span></code> by applying <code class="docutils literal notranslate"><span class="pre">numpy.log</span></code> on it.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.lru_cache">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">lru_cache</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">func</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.lru_cache" title="Permalink to this definition">¶</a></dt>
+<dd><p>Our lru cache. We want to get cache itself while functools.lru_cache
+could not do it.
+Please, be carefull as it could be some attributes named the same way
+and it will be ruined. We use it for our decorator <a class="reference internal" href="#gadma.utils.utils.cache_func" title="gadma.utils.utils.cache_func"><code class="xref py py-func docutils literal notranslate"><span class="pre">cache_func()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.nan_fval_to_inf">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">nan_fval_to_inf</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.nan_fval_to_inf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrappes function to return infinity instead nan.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.sort_by_other_list">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">sort_by_other_list</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">reverse</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">key</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.sort_by_other_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sort <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> according to values in <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.update_by_one_fifth_rule">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">update_by_one_fifth_rule</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">const</span></em>, <em class="sig-param"><span class="n">was_improved</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.update_by_one_fifth_rule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates <code class="docutils literal notranslate"><span class="pre">value</span></code> according to ‘one-fifth’ rule and <code class="docutils literal notranslate"><span class="pre">const</span></code>. Used in
+genetic algorithm.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>value</strong> – Value to change.</p></li>
+<li><p><strong>const</strong> – Const for rule.</p></li>
+<li><p><strong>was_improved</strong> – Bool if fitness was improved or not.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.variables_values_repr">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">variables_values_repr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">values</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.variables_values_repr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="gadma.utils.utils.warning_format">
+<code class="sig-prename descclassname">gadma.utils.utils.</code><code class="sig-name descname">warning_format</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span></em>, <em class="sig-param"><span class="n">category</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">lineno</span></em>, <em class="sig-param"><span class="n">file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">line</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.utils.utils.warning_format" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="gadma.run_ls_on_boot_data.html" class="btn btn-neutral float-right" title="Run local search on bootstrap" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="gadma.core.html" class="btn btn-neutral float-left" title="Core of runs (core package)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Ekaterina Noskova
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

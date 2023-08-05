@@ -1,0 +1,844 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Models (models package) &mdash; GADMA 2.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Engines (engines package)" href="gadma.engines.html" />
+    <link rel="prev" title="Data (data package)" href="gadma.data.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> GADMA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/hands_on.html">Hands on</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/user_manual.html">User manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/example_params_file.html">Example parameters file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_help.html">Getting help</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gadma.html">API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="gadma.Inference.html">Inference module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.data.html">Data (data package)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Models (models package)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-gadma.models.model">Base class Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#combinations-of-variables">Combinations of variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#base-class-variablescombination">Base class VariablesCombination</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#base-class-binaryoperation">Base class BinaryOperation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-gadma.models.variables_combinations">Classes of different binary operations</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-gadma.models.event">Events</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#demographic-models">Demographic models</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#module-gadma.models.demographic_model">Base class DemographicModel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-0">Class EpochDemographicModel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-gadma.models.structure_demographic_model">Class StructureDemographicModel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-gadma.models.custom_demographic_model">Class CustomDemographicModel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.engines.html">Engines (engines package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.code_generator.html">Code generation (code_generator package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.optimizers.html">Optimizers (optimizers package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.cli.html">Command line interface (cli package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.core.html">Core of runs (core package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.utils.html">Utils and variables (utils package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.run_ls_on_boot_data.html">Run local search on bootstrap</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GADMA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="gadma.html">API</a> &raquo;</li>
+        
+      <li>Models (models package)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/gadma.models.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="models-models-package">
+<h1>Models (models package)<a class="headerlink" href="#models-models-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-gadma.models.model">
+<span id="base-class-model"></span><h2>Base class Model<a class="headerlink" href="#module-gadma.models.model" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="gadma.models.model.Model">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.models.model.</code><code class="sig-name descname">Model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raise_excep</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.model.Model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Abstract class of model. Contains variables of class <code class="xref py py-class docutils literal notranslate"><span class="pre">Variable</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>raise_excep</strong> (<em>bool</em>) – if <cite>True</cite> then raises exception when something except
+<code class="xref py py-class docutils literal notranslate"><span class="pre">Variable</span></code> is added as variable.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="gadma.models.model.Model.add_variable">
+<code class="sig-name descname">add_variable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variable</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.model.Model.add_variable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds one variable to the model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>variable</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Variable</span></code>) – variable to add.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.model.Model.add_variables">
+<code class="sig-name descname">add_variables</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variables</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.model.Model.add_variables" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds several variables to the model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>variables</strong> (<em>list</em>) – variables to add.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.model.Model.fix_variable">
+<code class="sig-name descname">fix_variable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variable</span></em>, <em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.model.Model.fix_variable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.model.Model.get_variable">
+<code class="sig-name descname">get_variable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.model.Model.get_variable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finds the variable of the model by its name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – name of the model’s variable.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – if there is no variable with that name.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.model.Model.string_repr">
+<code class="sig-name descname">string_repr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.model.Model.string_repr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns string representation of variables and values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>values</strong> – Values of the variables in model.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.model.Model.unfix_if_fixed">
+<code class="sig-name descname">unfix_if_fixed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variable</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.model.Model.unfix_if_fixed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.model.Model.unfix_variable">
+<code class="sig-name descname">unfix_variable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variable</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.model.Model.unfix_variable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.model.Model.var2value">
+<code class="sig-name descname">var2value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.model.Model.var2value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns dictionary {variable: value}.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>values</strong> – List or dict {var_name: value} of values.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.model.Model.variables">
+<em class="property">property </em><code class="sig-name descname">variables</code><a class="headerlink" href="#gadma.models.model.Model.variables" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="combinations-of-variables">
+<h2>Combinations of variables<a class="headerlink" href="#combinations-of-variables" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-class-variablescombination">
+<h3>Base class VariablesCombination<a class="headerlink" href="#base-class-variablescombination" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt id="gadma.models.variables_combinations.VariablesCombination">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.models.variables_combinations.</code><code class="sig-name descname">VariablesCombination</code><a class="headerlink" href="#gadma.models.variables_combinations.VariablesCombination" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.models.model.Model" title="gadma.models.model.Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.models.model.Model</span></code></a></p>
+<p>Base class for combination of variables.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="base-class-binaryoperation">
+<h3>Base class BinaryOperation<a class="headerlink" href="#base-class-binaryoperation" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt id="gadma.models.variables_combinations.BinaryOperation">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.models.variables_combinations.</code><code class="sig-name descname">BinaryOperation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg1</span></em>, <em class="sig-param"><span class="n">arg2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.variables_combinations.BinaryOperation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.models.variables_combinations.VariablesCombination" title="gadma.models.variables_combinations.VariablesCombination"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.models.variables_combinations.VariablesCombination</span></code></a></p>
+<p>Combination of two variables.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>arg1</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.Variable</span></code> or value.) – First argument.</p></li>
+<li><p><strong>arg2</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.Variable</span></code> or value.) – Second argument.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>AssertError</strong> – if both arguments are not variables.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="gadma.models.variables_combinations.BinaryOperation.get_value">
+<code class="sig-name descname">get_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.variables_combinations.BinaryOperation.get_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns value of the combination from variables values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>values</strong> (<em>list of dict</em>) – Values of the variables.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.variables_combinations.BinaryOperation.name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#gadma.models.variables_combinations.BinaryOperation.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates name from variables names like:
+<cite>self.arg1.name operation self.arg1.name</cite></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.variables_combinations.BinaryOperation.operation">
+<code class="sig-name descname">operation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">val1</span></em>, <em class="sig-param"><span class="n">val2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.variables_combinations.BinaryOperation.operation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the result of binary operation from two values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.variables_combinations.BinaryOperation.operation_str">
+<code class="sig-name descname">operation_str</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.variables_combinations.BinaryOperation.operation_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns string representation of binary operation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.variables_combinations.BinaryOperation.string_repr">
+<code class="sig-name descname">string_repr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.variables_combinations.BinaryOperation.string_repr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns string representation of combination with defined values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>values</strong> (<em>list of dict</em>) – Values of the variables.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-gadma.models.variables_combinations">
+<span id="classes-of-different-binary-operations"></span><h3>Classes of different binary operations<a class="headerlink" href="#module-gadma.models.variables_combinations" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt id="gadma.models.variables_combinations.Addition">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.models.variables_combinations.</code><code class="sig-name descname">Addition</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg1</span></em>, <em class="sig-param"><span class="n">arg2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.variables_combinations.Addition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.models.variables_combinations.BinaryOperation" title="gadma.models.variables_combinations.BinaryOperation"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.models.variables_combinations.BinaryOperation</span></code></a></p>
+<p>The sum of two variables.</p>
+<dl class="py method">
+<dt id="gadma.models.variables_combinations.Addition.operation">
+<code class="sig-name descname">operation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">val1</span></em>, <em class="sig-param"><span class="n">val2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.variables_combinations.Addition.operation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the result of binary operation from two values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.variables_combinations.Addition.operation_str">
+<code class="sig-name descname">operation_str</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.variables_combinations.Addition.operation_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns string representation of binary operation.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.models.variables_combinations.Division">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.models.variables_combinations.</code><code class="sig-name descname">Division</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg1</span></em>, <em class="sig-param"><span class="n">arg2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.variables_combinations.Division" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.models.variables_combinations.BinaryOperation" title="gadma.models.variables_combinations.BinaryOperation"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.models.variables_combinations.BinaryOperation</span></code></a></p>
+<p>The division of one variable by another.</p>
+<dl class="py method">
+<dt id="gadma.models.variables_combinations.Division.operation">
+<code class="sig-name descname">operation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">val1</span></em>, <em class="sig-param"><span class="n">val2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.variables_combinations.Division.operation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the result of binary operation from two values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.variables_combinations.Division.operation_str">
+<code class="sig-name descname">operation_str</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.variables_combinations.Division.operation_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns string representation of binary operation.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.models.variables_combinations.Multiplication">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.models.variables_combinations.</code><code class="sig-name descname">Multiplication</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg1</span></em>, <em class="sig-param"><span class="n">arg2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.variables_combinations.Multiplication" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.models.variables_combinations.BinaryOperation" title="gadma.models.variables_combinations.BinaryOperation"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.models.variables_combinations.BinaryOperation</span></code></a></p>
+<p>The multiplication of two variables.</p>
+<dl class="py method">
+<dt id="gadma.models.variables_combinations.Multiplication.operation">
+<code class="sig-name descname">operation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">val1</span></em>, <em class="sig-param"><span class="n">val2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.variables_combinations.Multiplication.operation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the result of binary operation from two values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.variables_combinations.Multiplication.operation_str">
+<code class="sig-name descname">operation_str</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.variables_combinations.Multiplication.operation_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns string representation of binary operation.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.models.variables_combinations.Subtraction">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.models.variables_combinations.</code><code class="sig-name descname">Subtraction</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arg1</span></em>, <em class="sig-param"><span class="n">arg2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.variables_combinations.Subtraction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.models.variables_combinations.BinaryOperation" title="gadma.models.variables_combinations.BinaryOperation"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.models.variables_combinations.BinaryOperation</span></code></a></p>
+<p>The subtraction of two variables.</p>
+<dl class="py method">
+<dt id="gadma.models.variables_combinations.Subtraction.operation">
+<code class="sig-name descname">operation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">val1</span></em>, <em class="sig-param"><span class="n">val2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.variables_combinations.Subtraction.operation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the result of binary operation from two values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.variables_combinations.Subtraction.operation_str">
+<code class="sig-name descname">operation_str</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.variables_combinations.Subtraction.operation_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns string representation of binary operation.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-gadma.models.event">
+<span id="events"></span><h2>Events<a class="headerlink" href="#module-gadma.models.event" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="gadma.models.event.Epoch">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.models.event.</code><code class="sig-name descname">Epoch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">time_arg</span></em>, <em class="sig-param"><span class="n">init_size_args</span></em>, <em class="sig-param"><span class="n">size_args</span></em>, <em class="sig-param"><span class="n">mig_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">dyn_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sel_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">dom_args</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.event.Epoch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.models.event.Event" title="gadma.models.event.Event"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.models.event.Event</span></code></a></p>
+<p>Epoch for demographic model. All arguments could be both values and some
+variables. Additionally values could be combinations of the variables
+(see <code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.models.VariablesCombinations</span></code>).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>time_arg</strong> (float or <code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.TimeVariable</span></code>) – Time of the epoch.</p></li>
+<li><p><strong>init_size_args</strong> (list of values and/or
+<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.PopulationSizeVariable</span></code>) – Sizes of populations at the beginning of the epoch.</p></li>
+<li><p><strong>size_args</strong> (list of values and/or
+<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.PopulationSizeVariable</span></code>) – Sizes of populations at the end of the epoch.</p></li>
+<li><p><strong>mig_args</strong> (2d list of values and/or <code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.MigrationVariable</span></code>) – Migration rates between populations.</p></li>
+<li><p><strong>dyn_args</strong> (list of values and/or  <code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.DynamicVariable</span></code>) – Dynamics of population size changes during the epoch.</p></li>
+<li><p><strong>sel_args</strong> (list of values and/or <code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.SelectionVariable</span></code>) – Selection rates for each population during the epoch.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="gadma.models.event.Epoch.as_custom_string">
+<code class="sig-name descname">as_custom_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.event.Epoch.as_custom_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns string representation of the event.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.event.Epoch.get_vars_not_in_init_args">
+<code class="sig-name descname">get_vars_not_in_init_args</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.event.Epoch.get_vars_not_in_init_args" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.models.event.Event">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.models.event.</code><code class="sig-name descname">Event</code><a class="headerlink" href="#gadma.models.event.Event" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.models.model.Model" title="gadma.models.model.Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.models.model.Model</span></code></a></p>
+<p>Base class for some event.</p>
+<dl class="py method">
+<dt id="gadma.models.event.Event.as_custom_string">
+<code class="sig-name descname">as_custom_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.event.Event.as_custom_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns string representation of the event.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.models.event.Split">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.models.event.</code><code class="sig-name descname">Split</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pop_to_div</span></em>, <em class="sig-param"><span class="n">size_args</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.event.Split" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.models.event.Event" title="gadma.models.event.Event"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.models.event.Event</span></code></a></p>
+<p>Class for split demographic event.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pop_to_div</strong> – Population index that splits.</p></li>
+<li><p><strong>size_args</strong> – Sizes of populations after split.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="gadma.models.event.Split.as_custom_string">
+<code class="sig-name descname">as_custom_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.event.Split.as_custom_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns string representation of the event.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="demographic-models">
+<h2>Demographic models<a class="headerlink" href="#demographic-models" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-gadma.models.demographic_model">
+<span id="base-class-demographicmodel"></span><h3>Base class DemographicModel<a class="headerlink" href="#module-gadma.models.demographic_model" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt id="gadma.models.demographic_model.DemographicModel">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.models.demographic_model.</code><code class="sig-name descname">DemographicModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">gen_time</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">theta0</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">mu</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">linear_constrain</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.demographic_model.DemographicModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.models.model.Model" title="gadma.models.model.Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.models.model.Model</span></code></a></p>
+<p>Base class for demographic model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>gen_time</strong> (<em>float</em>) – Time of one generation.</p></li>
+<li><p><strong>theta0</strong> (<em>float</em>) – Mutation flux (4 * mu * L, where L - length of sequence).</p></li>
+<li><p><strong>mu</strong> (<em>float</em>) – Mutation rate per base per generation.</p></li>
+<li><p><strong>linear_constrain</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.LinearConstrain</span></code>) – linear constrain on parameters.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="gadma.models.demographic_model.DemographicModel.as_custom_string">
+<code class="sig-name descname">as_custom_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.demographic_model.DemographicModel.as_custom_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns string representation of the demographic model with
+parameters as a list with variables and their values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>values</strong> – Values of the demographic model.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.demographic_model.DemographicModel.get_number_of_parameters">
+<code class="sig-name descname">get_number_of_parameters</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.demographic_model.DemographicModel.get_number_of_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns number of parameters of the model.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.demographic_model.DemographicModel.translate_units">
+<code class="sig-name descname">translate_units</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em>, <em class="sig-param"><span class="n">Nanc</span></em>, <em class="sig-param"><span class="n">Tg</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.demographic_model.DemographicModel.translate_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>Translates values from genetic units to physical.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>values</strong> – Values of parameters.</p></li>
+<li><p><strong>Nanc</strong> – Size of ancestral population.</p></li>
+<li><p><strong>Tg</strong> – Time per generation.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-0">
+<span id="class-epochdemographicmodel"></span><h3>Class EpochDemographicModel<a class="headerlink" href="#module-0" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt id="gadma.models.demographic_model.EpochDemographicModel">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.models.demographic_model.</code><code class="sig-name descname">EpochDemographicModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">gen_time</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">theta0</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">mu</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">linear_constrain</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.demographic_model.EpochDemographicModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.models.demographic_model.DemographicModel" title="gadma.models.demographic_model.DemographicModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.models.demographic_model.DemographicModel</span></code></a></p>
+<p>Class for demographic model of epoch type.
+This type is common for <code class="xref py py-mod docutils literal notranslate"><span class="pre">dadi</span></code> and <code class="xref py py-mod docutils literal notranslate"><span class="pre">moments</span></code>.</p>
+<p>See <code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.models.DemographicModel</span></code> for constructor docs.</p>
+<dl class="py method">
+<dt id="gadma.models.demographic_model.EpochDemographicModel.add_epoch">
+<code class="sig-name descname">add_epoch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">time_arg</span></em>, <em class="sig-param"><span class="n">size_args</span></em>, <em class="sig-param"><span class="n">mig_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">dyn_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sel_args</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">dom_args</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.demographic_model.EpochDemographicModel.add_epoch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds new epoch to the demographic model events.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>time_arg</strong> – time of the epoch.</p></li>
+<li><p><strong>size_args</strong> – population sizes at the end of the epoch.</p></li>
+<li><p><strong>mig_args</strong> – migrations between populations during the epoch.</p></li>
+<li><p><strong>dyn_args</strong> – dynamics of the populations during the epoch.</p></li>
+<li><p><strong>sel_args</strong> – selection coefficients of the populations during
+the epoch.</p></li>
+<li><p><strong>dom_args</strong> – dominance coefficients.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Note</dt>
+<dd class="field-even"><p>all arguments could contain variables of <code class="xref py py-class docutils literal notranslate"><span class="pre">Variable</span></code>               class as well as different constants/values including               <code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.models.BinaryOperation</span></code> instances.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.demographic_model.EpochDemographicModel.add_split">
+<code class="sig-name descname">add_split</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pop_to_div</span></em>, <em class="sig-param"><span class="n">size_args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.demographic_model.EpochDemographicModel.add_split" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds new split to the demographic model events.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pop_to_div</strong> – population to divide.</p></li>
+<li><p><strong>size_args</strong> – population sizes of two subpopulations after the
+split.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.demographic_model.EpochDemographicModel.as_custom_string">
+<code class="sig-name descname">as_custom_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.demographic_model.EpochDemographicModel.as_custom_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns string representation of the demographic model with
+parameters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>values</strong> – Values of the demographic model.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.demographic_model.EpochDemographicModel.fix_dynamics">
+<code class="sig-name descname">fix_dynamics</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.demographic_model.EpochDemographicModel.fix_dynamics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes all dynamics in events fixed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>values</strong> (<em>list</em><em> or </em><em>dict</em>) – Values of parameters to take for fixation.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.demographic_model.EpochDemographicModel.fix_variable">
+<code class="sig-name descname">fix_variable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variable</span></em>, <em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.demographic_model.EpochDemographicModel.fix_variable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fixes variable in the model to the value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>variable</strong> – Variable to fix.</p></li>
+<li><p><strong>value</strong> – Value of the variable to fix.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.demographic_model.EpochDemographicModel.get_involved_for_split_time_vars">
+<code class="sig-name descname">get_involved_for_split_time_vars</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_split</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.demographic_model.EpochDemographicModel.get_involved_for_split_time_vars" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns list of ints and bias. If value &gt; 0 then this variable is
+involved in sum of times for split.</p>
+<p>It will return A, b: Ax + b = time of <cite>n_split</cite> split.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.demographic_model.EpochDemographicModel.get_number_of_parameters">
+<code class="sig-name descname">get_number_of_parameters</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.demographic_model.EpochDemographicModel.get_number_of_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns number of parameters of the model. Be careful as this number
+could be different to the number of variables. According to the
+population size dynamics in <cite>values</cite> some variables could have no
+influence on the model and in this case they are not counted.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>values</strong> (<em>list</em><em> or </em><em>dict</em>) – Values of the parameters. Dynamics makes the most
+sense.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.demographic_model.EpochDemographicModel.number_of_populations">
+<code class="sig-name descname">number_of_populations</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.demographic_model.EpochDemographicModel.number_of_populations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns number of populations in the model.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.demographic_model.EpochDemographicModel.unfix_dynamics">
+<code class="sig-name descname">unfix_dynamics</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.demographic_model.EpochDemographicModel.unfix_dynamics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes all dynamics in events unfixed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.demographic_model.EpochDemographicModel.unfix_variable">
+<code class="sig-name descname">unfix_variable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variable</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.demographic_model.EpochDemographicModel.unfix_variable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unfixes the variable of the model.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-gadma.models.structure_demographic_model">
+<span id="class-structuredemographicmodel"></span><h3>Class StructureDemographicModel<a class="headerlink" href="#module-gadma.models.structure_demographic_model" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt id="gadma.models.structure_demographic_model.StructureDemographicModel">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.models.structure_demographic_model.</code><code class="sig-name descname">StructureDemographicModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">initial_structure</span></em>, <em class="sig-param"><span class="n">final_structure</span></em>, <em class="sig-param"><span class="n">have_migs</span></em>, <em class="sig-param"><span class="n">have_sels</span></em>, <em class="sig-param"><span class="n">have_dyns</span></em>, <em class="sig-param"><span class="n">sym_migs</span></em>, <em class="sig-param"><span class="n">frac_split</span></em>, <em class="sig-param"><span class="n">gen_time</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">theta0</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">mu</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.structure_demographic_model.StructureDemographicModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.models.demographic_model.EpochDemographicModel" title="gadma.models.demographic_model.EpochDemographicModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.models.demographic_model.EpochDemographicModel</span></code></a></p>
+<p>Special class for demographic model created by structure.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>initial_structure</strong> (<em>list of ints</em>) – List of ints with number of intervals
+in initial structure.</p></li>
+<li><p><strong>final_structure</strong> (<em>list of ints</em>) – List of ints with number of intervals
+in final structure.</p></li>
+<li><p><strong>have_migs</strong> (<em>bool</em>) – If True then model will have migrations.</p></li>
+<li><p><strong>have_sels</strong> (<em>bool</em>) – If True then model will have selection coefficients.</p></li>
+<li><p><strong>have_dyns</strong> (<em>bool</em>) – If True then model will create dynamics of size
+change different to Sudden change.</p></li>
+<li><p><strong>sym_migs</strong> (<em>bool</em>) – If True then migrations will be symetric.</p></li>
+<li><p><strong>frac_split</strong> (<em>bool</em>) – If True then populations split in some proportion. If
+False then newly formed population has size as
+an independent variable.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="gadma.models.structure_demographic_model.StructureDemographicModel.from_structure">
+<code class="sig-name descname">from_structure</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">structure</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.structure_demographic_model.StructureDemographicModel.from_structure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates new model from given structure.
+It is base constructor of the model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>structure</strong> (<em>list of ints</em>) – Structure of the model.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.structure_demographic_model.StructureDemographicModel.get_structure">
+<code class="sig-name descname">get_structure</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.structure_demographic_model.StructureDemographicModel.get_structure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns current structure of the model.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.structure_demographic_model.StructureDemographicModel.increase_structure">
+<code class="sig-name descname">increase_structure</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_structure</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">X</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.structure_demographic_model.StructureDemographicModel.increase_structure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Increase structure of the model. Raises ValueError if structure is
+equal or greater than <cite>final_structure</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>new_structure</strong> – New structure for the model. Should be greater
+by 1 in one element. E.g. structure is (1,2),
+then new structure could be either (2,2) or
+(1,3). If None random available element is
+chosen to increase.</p></li>
+<li><p><strong>X</strong> – list of values to transform as values of new model.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Note</dt>
+<dd class="field-even"><p>Function is specific for               <code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.models.StructureDemographicModel</span></code>.               It probably will not work for any other class.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.models.structure_demographic_model.StructureDemographicModel.transform_values_from_other_model">
+<code class="sig-name descname">transform_values_from_other_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.structure_demographic_model.StructureDemographicModel.transform_values_from_other_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-gadma.models.custom_demographic_model">
+<span id="class-customdemographicmodel"></span><h3>Class CustomDemographicModel<a class="headerlink" href="#module-gadma.models.custom_demographic_model" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt id="gadma.models.custom_demographic_model.CustomDemographicModel">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.models.custom_demographic_model.</code><code class="sig-name descname">CustomDemographicModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em>, <em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">gen_time</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">theta0</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">mu</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.models.custom_demographic_model.CustomDemographicModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.models.demographic_model.DemographicModel" title="gadma.models.demographic_model.DemographicModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.models.demographic_model.DemographicModel</span></code></a></p>
+<p>Demographic model that was defined by the user in some file. Engines
+should be able to deal with such kind of models.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>function</strong> – function that creates the demographic model or
+something like that.</p></li>
+<li><p><strong>variables</strong> – Variables of the function. I.e. model parameters.</p></li>
+<li><p><strong>gen_time</strong> – Time of one generation.</p></li>
+<li><p><strong>theta0</strong> – Mutation flux. See <code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.models.DemographicModel</span></code>
+for more information.</p></li>
+<li><p><strong>mu</strong> – Mutation rate. See <code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.models.DemographicModel</span></code>
+for more information.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="gadma.engines.html" class="btn btn-neutral float-right" title="Engines (engines package)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="gadma.data.html" class="btn btn-neutral float-left" title="Data (data package)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Ekaterina Noskova
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

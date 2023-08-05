@@ -1,0 +1,743 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Core of runs (core package) &mdash; GADMA 2.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Utils and variables (utils package)" href="gadma.utils.html" />
+    <link rel="prev" title="Command line interface (cli package)" href="gadma.cli.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> GADMA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/hands_on.html">Hands on</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/user_manual.html">User manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/example_params_file.html">Example parameters file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_help.html">Getting help</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gadma.html">API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="gadma.Inference.html">Inference module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.data.html">Data (data package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.models.html">Models (models package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.engines.html">Engines (engines package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.code_generator.html">Code generation (code_generator package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.optimizers.html">Optimizers (optimizers package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.cli.html">Command line interface (cli package)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Core of runs (core package)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#corerun">CoreRun</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-gadma.core.shared_dict">SharedDict</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-gadma.core.core">Core</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-gadma.core.draw_and_generate_code">Functions for drawing and code generation in main function of core</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.utils.html">Utils and variables (utils package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.run_ls_on_boot_data.html">Run local search on bootstrap</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GADMA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="gadma.html">API</a> &raquo;</li>
+        
+      <li>Core of runs (core package)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/gadma.core.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="core-of-runs-core-package">
+<h1>Core of runs (core package)<a class="headerlink" href="#core-of-runs-core-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="corerun">
+<h2>CoreRun<a class="headerlink" href="#corerun" title="Permalink to this headline">¶</a></h2>
+<p>Class is responsible for run of one optimization of GADMA.</p>
+<span class="target" id="module-gadma.core.core_run"></span><dl class="py class">
+<dt id="gadma.core.core_run.CoreRun">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.core.core_run.</code><code class="sig-name descname">CoreRun</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">index</span></em>, <em class="sig-param"><span class="n">shared_dict</span></em>, <em class="sig-param"><span class="n">settings</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.core_run.CoreRun" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class of main run in GADMA.
+Has a <a class="reference internal" href="#gadma.core.core_run.CoreRun.run" title="gadma.core.core_run.CoreRun.run"><code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code></a> method to start launch.
+Runs creates new directory named by its <cite>index</cite> in the output directory
+then all log, code and pictures will be saved there. AIC and CLAIC is
+calculated here.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>int</em>) – Index of the run. Like id.</p></li>
+<li><p><strong>shared_dict</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.cor.shared_dict.SharedDictForCoreRun</span></code>) – Dictionary to save results in callbacks. Will be saved
+with key equal to <cite>index</cite>. Is used for
+multiprocessing cooperation.</p></li>
+<li><p><strong>settings</strong> (<a class="reference internal" href="gadma.cli.html#gadma.cli.settings_storage.SettingsStorage" title="gadma.cli.settings_storage.SettingsStorage"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.cli.settings_storage.SettingsStorage</span></code></a>) – Settings of the run. Information to form output directory
+and so on will be taken from settings.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="gadma.core.core_run.CoreRun.EVAL_FILENAME">
+<code class="sig-name descname">EVAL_FILENAME</code><em class="property"> = 'eval_file'</em><a class="headerlink" href="#gadma.core.core_run.CoreRun.EVAL_FILENAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.core.core_run.CoreRun.REPORT_FILENAME">
+<code class="sig-name descname">REPORT_FILENAME</code><em class="property"> = 'GADMA_GA.log'</em><a class="headerlink" href="#gadma.core.core_run.CoreRun.REPORT_FILENAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.core.core_run.CoreRun.SAVE_FILENAME">
+<code class="sig-name descname">SAVE_FILENAME</code><em class="property"> = 'save_file'</em><a class="headerlink" href="#gadma.core.core_run.CoreRun.SAVE_FILENAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.core_run.CoreRun.base_callback">
+<code class="sig-name descname">base_callback</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.core_run.CoreRun.base_callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base callback:</p>
+<ol class="arabic simple">
+<li><p>Updates values of best solution in <code class="xref py py-attr docutils literal notranslate"><span class="pre">shared_dict</span></code>.</p></li>
+<li><p>If new best values are received then draws and generates code to        the <cite>output_dir</cite> of this run.</p></li>
+</ol>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – Vector of values for model parameters.</p></li>
+<li><p><strong>y</strong> – Value of log-likelihood for this values.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.core_run.CoreRun.callback">
+<code class="sig-name descname">callback</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.core_run.CoreRun.callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main callback for optimizers to get. It is combination of three
+callbacks:</p>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#gadma.core.core_run.CoreRun.base_callback" title="gadma.core.core_run.CoreRun.base_callback"><code class="xref py py-meth docutils literal notranslate"><span class="pre">base_callback()</span></code></a></p></li>
+<li><p><a class="reference internal" href="#gadma.core.core_run.CoreRun.draw_iter_callback" title="gadma.core.core_run.CoreRun.draw_iter_callback"><code class="xref py py-meth docutils literal notranslate"><span class="pre">draw_iter_callback()</span></code></a></p></li>
+<li><p><a class="reference internal" href="#gadma.core.core_run.CoreRun.code_iter_callback" title="gadma.core.core_run.CoreRun.code_iter_callback"><code class="xref py py-meth docutils literal notranslate"><span class="pre">code_iter_callback()</span></code></a></p></li>
+</ol>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – Vector of values for model parameters.</p></li>
+<li><p><strong>y</strong> – Value of log-likelihood for this values.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.core_run.CoreRun.code_iter_callback">
+<code class="sig-name descname">code_iter_callback</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.core_run.CoreRun.code_iter_callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates code of best model on current iteration to the code
+directory. Code directory is located in the output directory of this
+run. Generation happens every
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">self.settings.print_models_code_every_n_iteration</span></code> iteration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – Vector of values for model parameters.</p></li>
+<li><p><strong>y</strong> – Value of log-likelihood for this values.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.core_run.CoreRun.data">
+<em class="property">property </em><code class="sig-name descname">data</code><a class="headerlink" href="#gadma.core.core_run.CoreRun.data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns current data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.core_run.CoreRun.draw_iter_callback">
+<code class="sig-name descname">draw_iter_callback</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.core_run.CoreRun.draw_iter_callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws best model on current iteration in the pictures directory.
+Pictures directory is located in the output directory of this run.
+Drawing happens every
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">self.settings.draw_models_every_n_iteration</span></code> iteration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – Vector of values for model parameters.</p></li>
+<li><p><strong>y</strong> – Value of log-likelihood for this values.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.core_run.CoreRun.draw_model_in_output_dir">
+<code class="sig-name descname">draw_model_in_output_dir</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">best_by</span><span class="o">=</span><span class="default_value">'log-likelihood'</span></em>, <em class="sig-param"><span class="n">final</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.core_run.CoreRun.draw_model_in_output_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws picture of demographic model with <cite>x</cite> as parameters to the
+output directory of run.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – Vector of values for model parameters.</p></li>
+<li><p><strong>y</strong> – Value of log-likelihood for this values.</p></li>
+<li><p><strong>best_by</strong> – By what function (log-likelihood, AIC, CLAIC) this
+colution is best.</p></li>
+<li><p><strong>final</strong> – If True then solution is final and it will be saved by
+<cite>final</cite> name.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.core_run.CoreRun.get_run_options">
+<code class="sig-name descname">get_run_options</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.core_run.CoreRun.get_run_options" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns iterator of run options, each element has four options:</p>
+<ol class="arabic simple">
+<li><p>File to restore optimization from. If None then no resume.</p></li>
+<li><p>Structure of the demographic model for the run.</p></li>
+<li><p>Bool <cite>points_only</cite> - if True then resumed run uses old points as        initial points only and optimization is run from the beginning.</p></li>
+<li><p>Function of x transformation - for case when restored vectors        should be transformed somehow before they will be used in the        optimization.</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.core_run.CoreRun.get_save_file">
+<code class="sig-name descname">get_save_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.core_run.CoreRun.get_save_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns filename to save optimization run. If demographic model does
+not have structure then returns <cite>self.save_file</cite> else adds suffix about
+structure at the end of <cite>self.save_file</cite>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.core_run.CoreRun.intermediate_callback">
+<code class="sig-name descname">intermediate_callback</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.core_run.CoreRun.intermediate_callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Almost final callback that is called after each global + local
+optimization.</p>
+<p>Saves AIC and CLAIC values in the <code class="xref py py-attr docutils literal notranslate"><span class="pre">shared_dict</span></code> if needed.
+If new best by AIC or CLAIC vector then code and picture are generated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – Vector of values for model parameters.</p></li>
+<li><p><strong>y</strong> – Value of log-likelihood for this values.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.core_run.CoreRun.model">
+<em class="property">property </em><code class="sig-name descname">model</code><a class="headerlink" href="#gadma.core.core_run.CoreRun.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns current demographic model.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.core_run.CoreRun.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">initial_kwargs</span><span class="o">=</span><span class="default_value">{}</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.core_run.CoreRun.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main method of the class to run optimization. Runs
+<a class="reference internal" href="#gadma.core.core_run.CoreRun.run_without_increase" title="gadma.core.core_run.CoreRun.run_without_increase"><code class="xref py py-meth docutils literal notranslate"><span class="pre">run_without_increase()</span></code></a> or <a class="reference internal" href="#gadma.core.core_run.CoreRun.run_with_increase" title="gadma.core.core_run.CoreRun.run_with_increase"><code class="xref py py-meth docutils literal notranslate"><span class="pre">run_with_increase()</span></code></a> according to
+<cite>settings</cite>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.core_run.CoreRun.run_with_increase">
+<code class="sig-name descname">run_with_increase</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">initial_kwargs</span><span class="o">=</span><span class="default_value">{}</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.core_run.CoreRun.run_with_increase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run launch with increase of the demographic model structure.
+Structure of the model will be increased up to final structure. Then
+the final solution will be returned.
+Runs <a class="reference internal" href="#gadma.core.core_run.CoreRun.run_without_increase" title="gadma.core.core_run.CoreRun.run_without_increase"><code class="xref py py-meth docutils literal notranslate"><span class="pre">run_without_increase()</span></code></a> and <code class="docutils literal notranslate"><span class="pre">increase_structure()</span></code> in the
+loop.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>initial_kwargs</strong> – Initial kwargs for optimization.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.core_run.CoreRun.run_without_increase">
+<code class="sig-name descname">run_without_increase</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">initial_kwargs</span><span class="o">=</span><span class="default_value">{}</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.core_run.CoreRun.run_without_increase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run one launch without any increase of demographic model structure.
+Runs one global+local optimization for the current model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>initial_kwargs</strong> – Initial kwargs for optimization.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-gadma.core.shared_dict">
+<span id="shareddict"></span><h2>SharedDict<a class="headerlink" href="#module-gadma.core.shared_dict" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="gadma.core.shared_dict.SharedDict">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.core.shared_dict.</code><code class="sig-name descname">SharedDict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">multiprocessing</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.shared_dict.SharedDict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Wrapper class on <code class="docutils literal notranslate"><span class="pre">multiprocessing.Manager.dict</span></code> that could be used for
+multiprocessing applications. Is used as shared memory of processes that
+are run in parallel for GADMA.</p>
+<p>All models in this dict can be divided in several processes and in several
+groups. When new model is added it has its own process and group. When
+dict should return some models it sort them by some value that is defined
+by <cite>key</cite> function and could be specific for each group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>multiprocessing</strong> – If False than usual dict will be used inside.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="gadma.core.shared_dict.SharedDict.add_model_for_process">
+<code class="sig-name descname">add_model_for_process</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">process</span></em>, <em class="sig-param"><span class="n">group</span></em>, <em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">key</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.shared_dict.SharedDict.add_model_for_process" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds additional model for process. After this method dict will have
+list of models saved under (process, group).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>process</strong> – Name of process.</p></li>
+<li><p><strong>group</strong> – Name of model group.</p></li>
+<li><p><strong>model</strong> – Model.</p></li>
+<li><p><strong>key</strong> – <cite>key</cite> function, if None then <a class="reference internal" href="#gadma.core.shared_dict.SharedDict.default_key" title="gadma.core.shared_dict.SharedDict.default_key"><code class="xref py py-meth docutils literal notranslate"><span class="pre">default_key()</span></code></a> is used.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.shared_dict.SharedDict.default_key">
+<code class="sig-name descname">default_key</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">group</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.shared_dict.SharedDict.default_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns function for <cite>key</cite> in sort. Sorted elements will be compared by
+the value of <cite>default_key(element)</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>group</strong> – Name of group of models.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.shared_dict.SharedDict.get_available_groups">
+<code class="sig-name descname">get_available_groups</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.shared_dict.SharedDict.get_available_groups" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all available groups across processes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.shared_dict.SharedDict.get_best_model_for_process_in_group">
+<code class="sig-name descname">get_best_model_for_process_in_group</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">process</span></em>, <em class="sig-param"><span class="n">group</span></em>, <em class="sig-param"><span class="n">key</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.shared_dict.SharedDict.get_best_model_for_process_in_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns best model for process, group.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.shared_dict.SharedDict.get_best_model_in_group">
+<code class="sig-name descname">get_best_model_in_group</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">group</span></em>, <em class="sig-param"><span class="n">key</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.shared_dict.SharedDict.get_best_model_in_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns best model for group.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.shared_dict.SharedDict.get_models_for_process_in_group">
+<code class="sig-name descname">get_models_for_process_in_group</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">process</span></em>, <em class="sig-param"><span class="n">group</span></em>, <em class="sig-param"><span class="n">key</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.shared_dict.SharedDict.get_models_for_process_in_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns models for (process, group).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.shared_dict.SharedDict.get_models_in_group">
+<code class="sig-name descname">get_models_in_group</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">group</span></em>, <em class="sig-param"><span class="n">key</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.shared_dict.SharedDict.get_models_in_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns dict of sorted pairs (process, model) for group
+(across all processes).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.shared_dict.SharedDict.get_value">
+<em class="property">static </em><code class="sig-name descname">get_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">key</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.shared_dict.SharedDict.get_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns value of <cite>key</cite> from model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> – Model.</p></li>
+<li><p><strong>key</strong> – Key function.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.shared_dict.SharedDict.update_best_model_for_process">
+<code class="sig-name descname">update_best_model_for_process</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">process</span></em>, <em class="sig-param"><span class="n">group</span></em>, <em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">key</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.shared_dict.SharedDict.update_best_model_for_process" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates best model for process. Models are compared by the value of
+<cite>key</cite> function. So if new model has greater value of <cite>key</cite> function
+then it is saved in the dictionary as best for this process in this
+group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>process</strong> – Name of process.</p></li>
+<li><p><strong>group</strong> – Name of model group.</p></li>
+<li><p><strong>model</strong> – Model.</p></li>
+<li><p><strong>key</strong> – <cite>key</cite> function, if None then <a class="reference internal" href="#gadma.core.shared_dict.SharedDict.default_key" title="gadma.core.shared_dict.SharedDict.default_key"><code class="xref py py-meth docutils literal notranslate"><span class="pre">default_key()</span></code></a> is used.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.core.shared_dict.SharedDictForCoreRun">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.core.shared_dict.</code><code class="sig-name descname">SharedDictForCoreRun</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">multiprocessing</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.shared_dict.SharedDictForCoreRun" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.core.shared_dict.SharedDict" title="gadma.core.shared_dict.SharedDict"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.core.shared_dict.SharedDict</span></code></a></p>
+<p>Class for shared dict in <a class="reference internal" href="#gadma.core.core_run.CoreRun" title="gadma.core.core_run.CoreRun"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.core.core_run.CoreRun</span></code></a>.</p>
+<p>Process is name of the process or index of CoreRun. Group is name of
+fitness function: log-likelihood, AIC, CLAIC. Model is tuple of
+demographic model, engine and fitness for this engine.</p>
+<dl class="py method">
+<dt id="gadma.core.shared_dict.SharedDictForCoreRun.add_model_for_process">
+<code class="sig-name descname">add_model_for_process</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">process</span></em>, <em class="sig-param"><span class="n">group</span></em>, <em class="sig-param"><span class="n">engine</span></em>, <em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.shared_dict.SharedDictForCoreRun.add_model_for_process" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds additional model for process. After this method dict will have
+list of models saved under (process, group).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>process</strong> – Name of process.</p></li>
+<li><p><strong>group</strong> – Name of model group.</p></li>
+<li><p><strong>model</strong> – Model.</p></li>
+<li><p><strong>key</strong> – <cite>key</cite> function, if None then <a class="reference internal" href="#gadma.core.shared_dict.SharedDictForCoreRun.default_key" title="gadma.core.shared_dict.SharedDictForCoreRun.default_key"><code class="xref py py-meth docutils literal notranslate"><span class="pre">default_key()</span></code></a> is used.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.shared_dict.SharedDictForCoreRun.construct_model">
+<code class="sig-name descname">construct_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">group</span></em>, <em class="sig-param"><span class="n">engine</span></em>, <em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.shared_dict.SharedDictForCoreRun.construct_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constructs model for group, engine and x, y. Model is a tuple of
+(engine, x, fitness), where engine contain demographic model and
+fitness is dict with available fitnesses (logLL, AIC, CLAIC).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>group</strong> – Name of fitness (log-likelihood, AIC, CLAIC)</p></li>
+<li><p><strong>engine</strong> – Engine with dem. model and data.</p></li>
+<li><p><strong>x</strong> – Values of dem. model parameters.</p></li>
+<li><p><strong>y</strong> – Value of fitness defined by <cite>group</cite>.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.shared_dict.SharedDictForCoreRun.default_key">
+<code class="sig-name descname">default_key</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">group</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.shared_dict.SharedDictForCoreRun.default_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>For not <cite>log-likelihood</cite> groups sort should be reversed so <cite>key</cite>
+function multiplies fitness by -1. Also fitness could be dict of
+several values of several groups (group of <cite>log-likelihood</cite> but
+fitness has also value of AIC or CLAIC). So this function extracts
+correct fitness.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>group</strong> – Name of fitness function (log-likelihood, AIC, CLAIC).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.shared_dict.SharedDictForCoreRun.get_models_in_group">
+<code class="sig-name descname">get_models_in_group</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">group</span></em>, <em class="sig-param"><span class="n">key</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">align_y_dict</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.shared_dict.SharedDictForCoreRun.get_models_in_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns models for specified group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>group</strong> – Name of fitness (log-likelihood, AIC, CLAIC).</p></li>
+<li><p><strong>key</strong> – <cite>Key</cite> function.</p></li>
+<li><p><strong>align_y_dict</strong> – If True then all fitnesses are dict with keys
+across all available groups and None’s if value
+for some group is not available.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.core.shared_dict.SharedDictForCoreRun.update_best_model_for_process">
+<code class="sig-name descname">update_best_model_for_process</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">process</span></em>, <em class="sig-param"><span class="n">group</span></em>, <em class="sig-param"><span class="n">engine</span></em>, <em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.shared_dict.SharedDictForCoreRun.update_best_model_for_process" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates best model for process. Models are compared by the value of
+<cite>key</cite> function. So if new model has greater value of <cite>key</cite> function
+then it is saved in the dictionary as best for this process in this
+group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>process</strong> – Name of process.</p></li>
+<li><p><strong>group</strong> – Name of model group.</p></li>
+<li><p><strong>model</strong> – Model.</p></li>
+<li><p><strong>key</strong> – <cite>key</cite> function, if None then <a class="reference internal" href="#gadma.core.shared_dict.SharedDictForCoreRun.default_key" title="gadma.core.shared_dict.SharedDictForCoreRun.default_key"><code class="xref py py-meth docutils literal notranslate"><span class="pre">default_key()</span></code></a> is used.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-gadma.core.core">
+<span id="core"></span><h2>Core<a class="headerlink" href="#module-gadma.core.core" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="gadma.core.core.job">
+<code class="sig-prename descclassname">gadma.core.core.</code><code class="sig-name descname">job</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">index</span></em>, <em class="sig-param"><span class="n">shared_dict</span></em>, <em class="sig-param"><span class="n">settings</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.core.job" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function of one parallel run of GADMA. Creates
+<a class="reference internal" href="#gadma.core.core_run.CoreRun" title="gadma.core.core_run.CoreRun"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.core.core_run.CoreRun</span></code></a> object and call its <code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code>
+method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>int</em>) – Index of the run.</p></li>
+<li><p><strong>shared_dict</strong> (<a class="reference internal" href="#gadma.core.shared_dict.SharedDictForCoreRun" title="gadma.core.shared_dict.SharedDictForCoreRun"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.core.shared_dict.SharedDictForCoreRun</span></code></a>) – Shared dict between all runs.</p></li>
+<li><p><strong>settings</strong> (<a class="reference internal" href="gadma.cli.html#gadma.cli.settings_storage.SettingsStorage" title="gadma.cli.settings_storage.SettingsStorage"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.cli.settings_storage.SettingsStorage</span></code></a>) – Settings of the run.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.core.core.main">
+<code class="sig-prename descclassname">gadma.core.core.</code><code class="sig-name descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.core.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main function that is called from command line. Creates parallel runs of
+GADMA and holds base pool of processes. Prints progress periodically for
+each run, saves plots and pictures of best model and generates code.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-gadma.core.draw_and_generate_code">
+<span id="functions-for-drawing-and-code-generation-in-main-function-of-core"></span><h2>Functions for drawing and code generation in main function of core<a class="headerlink" href="#module-gadma.core.draw_and_generate_code" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="gadma.core.draw_and_generate_code.draw_plots_to_file">
+<code class="sig-prename descclassname">gadma.core.draw_and_generate_code.</code><code class="sig-name descname">draw_plots_to_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">engine</span></em>, <em class="sig-param"><span class="n">settings</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">fig_title</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.draw_and_generate_code.draw_plots_to_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws plots of data (SFS) and model from <code class="docutils literal notranslate"><span class="pre">engine</span></code> with parameters
+<code class="docutils literal notranslate"><span class="pre">x</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>list</em><em> or </em><em>dict</em>) – Values of the parameters in model.</p></li>
+<li><p><strong>engine</strong> (<a class="reference internal" href="gadma.engines.html#gadma.engines.engine.Engine" title="gadma.engines.engine.Engine"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.engines.engine.Engine</span></code></a>) – Engine with specified model and data.</p></li>
+<li><p><strong>filename</strong> (<em>str</em>) – File name to save picture.</p></li>
+<li><p><strong>fig_title</strong> (<em>str</em>) – Title of the schematic model plot.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Note</dt>
+<dd class="field-even"><p>print warnings if schematic model plot was not drawn.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.core.draw_and_generate_code.generate_code_to_file">
+<code class="sig-prename descclassname">gadma.core.draw_and_generate_code.</code><code class="sig-name descname">generate_code_to_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">engine</span></em>, <em class="sig-param"><span class="n">settings</span></em>, <em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.draw_and_generate_code.generate_code_to_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates code of demographic model to file. Settings are required to get
+<code class="docutils literal notranslate"><span class="pre">engine</span></code> arguments in <code class="xref py py-func docutils literal notranslate"><span class="pre">evaluation()</span></code> function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>list</em><em> or </em><em>dict</em>) – Values of the parameters in model.</p></li>
+<li><p><strong>engine</strong> (<a class="reference internal" href="gadma.engines.html#gadma.engines.engine.Engine" title="gadma.engines.engine.Engine"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.engines.engine.Engine</span></code></a>) – Engine with specified model and data.</p></li>
+<li><p><strong>settings</strong> (<a class="reference internal" href="gadma.cli.html#gadma.cli.settings_storage.SettingsStorage" title="gadma.cli.settings_storage.SettingsStorage"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.cli.settings_storage.SettingsStorage</span></code></a>) – Settings of the run.</p></li>
+<li><p><strong>filename</strong> (<em>str</em>) – File name to save picture.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.core.draw_and_generate_code.print_runs_summary">
+<code class="sig-prename descclassname">gadma.core.draw_and_generate_code.</code><code class="sig-name descname">print_runs_summary</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start_time</span></em>, <em class="sig-param"><span class="n">shared_dict</span></em>, <em class="sig-param"><span class="n">settings</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.core.draw_and_generate_code.print_runs_summary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints best demographic model by logLL among all processes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start_time</strong> (<em>float</em>) – Time when equation was started.</p></li>
+<li><p><strong>shared_dict</strong> (<a class="reference internal" href="#gadma.core.shared_dict.SharedDict" title="gadma.core.shared_dict.SharedDict"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.core.shared_dict.SharedDict</span></code></a>) – Dictionary to share information between processes.</p></li>
+<li><p><strong>settings</strong> (<a class="reference internal" href="gadma.cli.html#gadma.cli.settings_storage.SettingsStorage" title="gadma.cli.settings_storage.SettingsStorage"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.cli.settings_storage.SettingsStorage</span></code></a>) – Settings of run.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="gadma.utils.html" class="btn btn-neutral float-right" title="Utils and variables (utils package)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="gadma.cli.html" class="btn btn-neutral float-left" title="Command line interface (cli package)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Ekaterina Noskova
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

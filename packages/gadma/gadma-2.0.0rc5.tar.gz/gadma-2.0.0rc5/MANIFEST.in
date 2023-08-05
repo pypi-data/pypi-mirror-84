@@ -1,0 +1,9 @@
+include MANIFEST.in
+include LICENSE.txt
+include README.md
+recursive-include gadma *.pyf *.pyx params_template extra_params_template
+recursive-include docs *
+recursive-include examples *
+recursive-include tests *
+recursive-include fs_examples *
+global-exclude *.msout *.swp *.pyc seedms *.png *.bpkl *.npz *.so *.pyd

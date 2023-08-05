@@ -1,0 +1,465 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Output &mdash; GADMA 2.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Plotting model" href="plotting.html" />
+    <link rel="prev" title="Repeats and parallel computing" href="run_parallel.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> GADMA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hands_on.html">Hands on</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="user_manual.html">User manual</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="input_data.html">Input data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_engine.html">Specifying an engine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_model.html">Specifying a model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inference.html">Inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="run_parallel.html">Repeats and parallel computing</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Output</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#stdout-and-log-file">Stdout and log file</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#model-representation">Model representation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#output-directory-content">Output directory content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#generated-code-of-models">Generated code of models</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="plotting.html">Plotting model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theta.html">Theta0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="settings.html">Usefull settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extra_params_file.html">Extra parameter file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="units.html">Units of parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="confidence_intervals.html">Confidence intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="example_params_file.html">Example parameters file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_help.html">Getting help</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/gadma.html">API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GADMA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="user_manual.html">User manual</a> &raquo;</li>
+        
+      <li>Output</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/user_manual/output.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="output">
+<h1>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Output has changed a little in GADMA version 2.</p>
+</div>
+<p>GADMA puts all files to the directory that user set through <code class="docutils literal notranslate"><span class="pre">-o/--output</span></code> command-line option:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> gadma -o output_dir -i input_fs.fs
+</pre></div>
+</div>
+<p>or through <code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">directory</span></code> option in the parameter file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># param_file</span>
+<span class="o">...</span>
+<span class="n">Output</span> <span class="n">directory</span> <span class="p">:</span> <span class="n">output_dir</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+<div class="section" id="stdout-and-log-file">
+<h2>Stdout and log file<a class="headerlink" href="#stdout-and-log-file" title="Permalink to this headline">¶</a></h2>
+<p>GADMA prints its progress about every minute in stdout and in <code class="docutils literal notranslate"><span class="pre">output_dir/GADMA.log</span></code> file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">hhh</span><span class="p">:</span><span class="n">mm</span><span class="p">:</span><span class="n">ss</span><span class="p">]</span>
+<span class="n">All</span> <span class="n">best</span> <span class="n">logLL</span> <span class="n">models</span><span class="p">:</span>
+<span class="n">GA</span> <span class="n">number</span>       <span class="n">logLL</span>            <span class="n">AIC</span>             <span class="n">Model</span>
+
+<span class="n">All</span> <span class="n">best</span> <span class="n">AIC</span> <span class="n">models</span><span class="p">:</span>
+<span class="n">GA</span> <span class="n">number</span>       <span class="n">logLL</span>            <span class="n">AIC</span>             <span class="n">Model</span>
+
+<span class="o">--</span><span class="n">Best</span> <span class="n">model</span> <span class="n">by</span> <span class="n">log</span> <span class="n">likelihood</span><span class="o">--</span>
+<span class="n">Log</span> <span class="n">likelihood</span><span class="p">:</span>             <span class="n">Best</span> <span class="n">logLL</span>
+<span class="k">with</span> <span class="n">AIC</span> <span class="n">score</span><span class="p">:</span>         <span class="n">AIC_score</span>
+<span class="n">Model</span><span class="p">:</span>      <span class="n">representation</span> <span class="n">of</span> <span class="n">best</span> <span class="n">logLL</span> <span class="n">model</span>
+
+<span class="o">--</span><span class="n">Best</span> <span class="n">model</span> <span class="n">by</span> <span class="n">AIC</span> <span class="n">score</span><span class="o">--</span>
+<span class="n">Log</span> <span class="n">likelihood</span><span class="p">:</span>             <span class="n">logLL</span>
+<span class="k">with</span> <span class="n">AIC</span> <span class="n">score</span><span class="p">:</span>         <span class="n">Best</span> <span class="n">AIC</span> <span class="n">score</span>
+<span class="n">Model</span><span class="p">:</span>  <span class="n">representation</span> <span class="n">of</span> <span class="n">best</span> <span class="n">AIC</span> <span class="n">model</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>One can set <code class="docutils literal notranslate"><span class="pre">Silence</span></code> option in the parameter file to <code class="docutils literal notranslate"><span class="pre">True</span></code> to disable output in stdout, file py{output_dir/GADMA.log} will still have it.</p>
+</div>
+<div class="section" id="model-representation">
+<h3>Model representation<a class="headerlink" href="#model-representation" title="Permalink to this headline">¶</a></h3>
+<p>Every model is printed as a line of parameters, each parameter followed by its name in brackets.</p>
+<dl class="simple">
+<dt>Consider designations:</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">T</span></code> - time,</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">s</span></code> - percent of split,</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nu</span></code> - size of population number py{i},</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">d</span></code> - dynamic of changing of the size of population number py{i},</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">m</span></code> - mutation rate from population py{i} to population py{j}.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Dynamic of population size change has string representations:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">'Sud'</span></code> - sudden change of size for population number py{i};</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'Lin'</span></code> - linear change of size for population number py{i};</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'Exp'</span></code> - exponential change of size for population number py{i}.</p></li>
+</ul>
+</div></blockquote>
+<p>Model is printed as sequence of time intervals and splits that are represented in the following way:</p>
+<blockquote>
+<div><ul>
+<li><p>First period (<code class="docutils literal notranslate"><span class="pre">NAnc</span></code> — size of ancestry population):</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">Nanc</span> <span class="o">=</span> <span class="n">VALUE</span><span class="p">]</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Split:</p>
+<blockquote>
+<div><ul>
+<li><p>If split divide population <code class="docutils literal notranslate"><span class="pre">X</span></code>  of size <code class="docutils literal notranslate"><span class="pre">NU</span></code> into two new populations by fraction <code class="docutils literal notranslate"><span class="pre">s1</span></code>:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span> <span class="n">X</span> <span class="n">pop</span> <span class="n">split</span>   <span class="n">VALUE</span> <span class="p">(</span><span class="n">s1</span><span class="p">)</span> <span class="p">[</span><span class="n">VALUE_1</span><span class="p">(</span><span class="n">s1</span><span class="o">*</span><span class="n">NU</span><span class="p">),</span> <span class="n">VALUE_2</span><span class="p">((</span><span class="mi">1</span><span class="o">-</span><span class="n">s1</span><span class="p">)</span><span class="o">*</span><span class="n">NU</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>If split divide population <code class="docutils literal notranslate"><span class="pre">X</span></code>  of size <code class="docutils literal notranslate"><span class="pre">NU</span></code> into two new populations without any fraction parameter (Setting <code class="docutils literal notranslate"><span class="pre">Split</span> <span class="pre">fractions</span></code> is <code class="docutils literal notranslate"><span class="pre">False</span></code>):</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span> <span class="n">X</span> <span class="n">pop</span> <span class="n">split</span> <span class="p">[</span><span class="n">VALUE_1</span><span class="p">(</span><span class="n">NU_1</span><span class="p">),</span> <span class="n">VALUE_2</span><span class="p">(</span><span class="n">NU_2</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Usual time period:</p>
+<blockquote>
+<div><ul>
+<li><p>If there is one population:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span> <span class="n">T_VALUE</span> <span class="p">(</span><span class="n">t</span><span class="p">),</span> <span class="p">[</span> <span class="n">NU_VALUE</span> <span class="p">(</span><span class="n">nu</span><span class="p">)</span> <span class="p">],</span> <span class="p">[</span><span class="n">D_VALUE</span> <span class="p">(</span><span class="n">dyn</span><span class="p">)]</span> <span class="p">]</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>If there are two populations:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span> <span class="n">T_VALUE</span> <span class="p">(</span><span class="n">t</span><span class="p">),</span> <span class="p">[</span> <span class="n">NU1_VALUE</span> <span class="p">(</span><span class="n">nu1</span><span class="p">),</span> <span class="n">NU2_VALUE</span> <span class="p">(</span><span class="n">nu2</span><span class="p">)],</span> <span class="p">[[</span><span class="kc">None</span><span class="p">,</span> <span class="n">M12_VALUE</span><span class="p">(</span><span class="n">m12</span><span class="p">)],</span> <span class="p">[</span><span class="n">M21_VALUE</span> <span class="p">(</span><span class="n">m21</span><span class="p">),</span> <span class="kc">None</span><span class="p">]],</span> <span class="p">[</span><span class="n">D1_VALUE</span> <span class="p">(</span><span class="n">dyn1</span><span class="p">),</span> <span class="n">D2_VALUE</span> <span class="p">(</span><span class="n">dyn2</span><span class="p">)]]}</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>And similar if there are three populations.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>At the end <code class="docutils literal notranslate"><span class="pre">theta</span></code> could be printed if length of sequence and mutation rate are known.</p></li>
+</ul>
+</div></blockquote>
+<p>Also at the end of the string that corresponds to the model there is an information about model’s ancestry in the genetic algorithm:</p>
+<ul class="simple">
+<li><p>‘c’ - for model, that is child of crossover,</p></li>
+<li><p>‘r’ - if it was formed random way,</p></li>
+<li><p>‘m’ - if it was mutated,</p></li>
+<li><p>‘f’ - final model of genetic algorithm.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>‘m’ is added as many times as model is mutated.</p>
+</div>
+<p><strong>Example of the demographic model for two populations</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">Nanc</span> <span class="o">=</span>  <span class="mi">7214</span><span class="p">]</span> <span class="p">[</span> <span class="p">[</span> <span class="mi">7211</span><span class="p">(</span><span class="n">t1</span><span class="p">),</span> <span class="p">[</span><span class="mi">17004</span><span class="p">(</span><span class="n">nu11</span><span class="p">)],</span> <span class="p">[</span><span class="n">Lin</span><span class="p">(</span><span class="n">dyn11</span><span class="p">)]</span> <span class="p">],</span> <span class="p">[</span> <span class="mi">1</span> <span class="n">pop</span> <span class="n">split</span>   <span class="mf">99.85</span><span class="o">%</span> <span class="p">(</span><span class="n">s1</span><span class="p">)</span> <span class="p">[</span><span class="mf">16978.164</span><span class="p">(</span><span class="n">s1</span><span class="o">*</span><span class="n">nu11</span><span class="p">),</span> <span class="mf">25.836</span><span class="p">((</span><span class="mi">1</span><span class="o">-</span><span class="n">s1</span><span class="p">)</span><span class="o">*</span><span class="n">nu11</span><span class="p">)]</span> <span class="p">],</span>        <span class="p">[</span> <span class="mi">1365</span><span class="p">(</span><span class="n">t2</span><span class="p">),</span> <span class="p">[</span><span class="mi">12570</span><span class="p">(</span><span class="n">nu21</span><span class="p">),</span> <span class="mi">8922</span><span class="p">(</span><span class="n">nu22</span><span class="p">)],</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">6.45e-05</span><span class="p">(</span><span class="n">m2_12</span><span class="p">)],</span> <span class="p">[</span><span class="mf">5.98e-05</span><span class="p">(</span><span class="n">m2_21</span><span class="p">),</span> <span class="mi">0</span><span class="p">]],</span> <span class="p">[</span><span class="n">Sud</span><span class="p">(</span><span class="n">dyn21</span><span class="p">),</span> <span class="n">Lin</span><span class="p">(</span><span class="n">dyn22</span><span class="p">)]</span> <span class="p">]</span> <span class="p">]</span>       <span class="p">(</span><span class="n">theta</span> <span class="o">=</span>  <span class="mf">2739.60</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="output-directory-content">
+<h2>Output directory content<a class="headerlink" href="#output-directory-content" title="Permalink to this headline">¶</a></h2>
+<p>For every repeat of Genetic algorithm GADMA creates a new folder in output directory with corresponding number.</p>
+<p>In every folder there is <code class="docutils literal notranslate"><span class="pre">GADMA_GA.log</span></code>, where every iteration of algorithm is saved, folders <code class="docutils literal notranslate"><span class="pre">pictures</span></code> and <code class="docutils literal notranslate"><span class="pre">code</span></code>. <code class="docutils literal notranslate"><span class="pre">eval_file</span></code> and <code class="docutils literal notranslate"><span class="pre">save_file</span></code> have information about evaluations and optimization.</p>
+<p>When genetic algorithm finishes GADMA saves picture and python code of received model in the corresponding folder.</p>
+<p>When all GA’s are executed, the codes are saved in the root directory.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="o">&lt;</span><span class="n">output_dir</span><span class="o">&gt;</span>
+            <span class="o">-</span> <span class="mi">1</span>
+                    <span class="n">GADMA_GA</span><span class="o">.</span><span class="n">log</span>
+                    <span class="o">-</span> <span class="n">pictures</span>
+                    <span class="o">-</span> <span class="n">code</span>
+                            <span class="o">-</span> <span class="n">dadi</span>
+                            <span class="o">-</span> <span class="n">moments</span>
+                    <span class="n">final_best_logLL_model_dadi_code</span><span class="o">.</span><span class="n">py</span>
+                    <span class="n">final_best_logLL_model_moments_code</span><span class="o">.</span><span class="n">py</span>
+                    <span class="n">final_best_logLL_model</span><span class="o">.</span><span class="n">png</span>
+                    <span class="n">eval_file</span>
+                    <span class="n">save_file</span>
+            <span class="o">-</span> <span class="mi">2</span>
+                    <span class="n">GADMA_GA</span><span class="o">.</span><span class="n">log</span>
+                    <span class="o">-</span> <span class="n">pictures</span>
+                    <span class="o">-</span> <span class="n">code</span>
+                            <span class="o">-</span> <span class="n">dadi</span>
+                            <span class="o">-</span> <span class="n">moments</span>
+                    <span class="n">final_best_logLL_model_dadi_code</span><span class="o">.</span><span class="n">py</span>
+                    <span class="n">final_best_logLL_model_moments_code</span><span class="o">.</span><span class="n">py</span>
+                    <span class="n">final_best_logLL_model</span><span class="o">.</span><span class="n">png</span>
+                    <span class="n">eval_file</span>
+                    <span class="n">save_file</span>
+            <span class="n">params</span>
+            <span class="n">extra_params</span>
+            <span class="n">GADMA</span><span class="o">.</span><span class="n">log</span>
+            <span class="n">best_logLL_model</span><span class="o">.</span><span class="n">png</span>
+            <span class="n">best_logLL_model_dadi_code</span><span class="o">.</span><span class="n">py</span>
+            <span class="n">best_logLL_model_moments_code</span><span class="o">.</span><span class="n">py</span>
+            <span class="n">best_aic_model</span><span class="o">.</span><span class="n">png</span>
+            <span class="n">best_aic_model_dadi_code</span><span class="o">.</span><span class="n">py</span>
+            <span class="n">best_aic_model_moments_code</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="generated-code-of-models">
+<h2>Generated code of models<a class="headerlink" href="#generated-code-of-models" title="Permalink to this headline">¶</a></h2>
+<p>By default, GADMA generates python code only for final models both for <code class="docutils literal notranslate"><span class="pre">dadi</span></code> and <code class="docutils literal notranslate"><span class="pre">moments</span></code>. However, it can do it every <code class="docutils literal notranslate"><span class="pre">N</span></code> iteration of genetic algorithm. In this case option <code class="docutils literal notranslate"><span class="pre">Print</span> <span class="pre">models</span> <span class="pre">code</span> <span class="pre">every</span> <span class="pre">N</span> <span class="pre">iteration</span></code> should be set in the parameter file. GADMA saves files with code to the <code class="docutils literal notranslate"><span class="pre">output_dir/&lt;GA_number&gt;/python_code</span></code> directory. Both <code class="docutils literal notranslate"><span class="pre">dadi</span></code> and <code class="docutils literal notranslate"><span class="pre">moments</span></code> code are generated and saved in different folders there.</p>
+<p>Each code contains function of the model, which takes values of the parameters as input, and strings that load observed AFS, simulates expected AFS from the model’s function and calculates log likelihood between two AFS’. The result log likelihood is printed to stdout. For the <code class="docutils literal notranslate"><span class="pre">moments</span></code> code picture is also drawn.</p>
+<p>All code can be run in the following way:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python file_with_code.py
+</pre></div>
+</div>
+<p><strong>Example of generated code</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">moments</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">model_func</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">ns</span><span class="p">):</span>
+            <span class="n">t1</span><span class="p">,</span> <span class="n">nu11</span><span class="p">,</span> <span class="n">s1</span><span class="p">,</span> <span class="n">t2</span><span class="p">,</span> <span class="n">nu21</span><span class="p">,</span> <span class="n">nu22</span><span class="p">,</span> <span class="n">m2_12</span><span class="p">,</span> <span class="n">m2_21</span> <span class="o">=</span> <span class="n">params</span>
+            <span class="n">sts</span> <span class="o">=</span> <span class="n">moments</span><span class="o">.</span><span class="n">LinearSystem_1D</span><span class="o">.</span><span class="n">steady_state_1D</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">ns</span><span class="p">))</span>
+            <span class="n">fs</span> <span class="o">=</span> <span class="n">moments</span><span class="o">.</span><span class="n">Spectrum</span><span class="p">(</span><span class="n">sts</span><span class="p">)</span>
+            <span class="n">nu1_func</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="mf">1.0</span> <span class="o">+</span> <span class="p">(</span><span class="n">nu11</span> <span class="o">-</span> <span class="mf">1.0</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">t</span> <span class="o">/</span> <span class="n">t1</span><span class="p">)</span>
+            <span class="n">fs</span><span class="o">.</span><span class="n">integrate</span><span class="p">(</span><span class="n">tf</span><span class="o">=</span><span class="n">t1</span><span class="p">,</span> <span class="n">Npop</span><span class="o">=</span><span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="p">[</span><span class="n">nu1_func</span><span class="p">(</span><span class="n">t</span><span class="p">)],</span> <span class="n">dt_fac</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+            <span class="n">fs</span> <span class="o">=</span> <span class="n">moments</span><span class="o">.</span><span class="n">Manips</span><span class="o">.</span><span class="n">split_1D_to_2D</span><span class="p">(</span><span class="n">fs</span><span class="p">,</span> <span class="n">ns</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ns</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">nu2_func</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="p">((</span><span class="mi">1</span> <span class="o">-</span> <span class="n">s1</span><span class="p">)</span> <span class="o">*</span> <span class="n">nu11</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">nu22</span> <span class="o">-</span> <span class="p">((</span><span class="mi">1</span> <span class="o">-</span> <span class="n">s1</span><span class="p">)</span> <span class="o">*</span> <span class="n">nu11</span><span class="p">))</span> <span class="o">*</span> <span class="p">(</span><span class="n">t</span> <span class="o">/</span> <span class="n">t2</span><span class="p">)</span>
+            <span class="n">migs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="n">m2_12</span><span class="p">],</span> <span class="p">[</span><span class="n">m2_21</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
+            <span class="n">fs</span><span class="o">.</span><span class="n">integrate</span><span class="p">(</span><span class="n">tf</span><span class="o">=</span><span class="n">t2</span><span class="p">,</span> <span class="n">Npop</span><span class="o">=</span><span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="p">[</span><span class="n">nu21</span><span class="p">,</span> <span class="n">nu2_func</span><span class="p">(</span><span class="n">t</span><span class="p">)],</span> <span class="n">m</span><span class="o">=</span><span class="n">migs</span><span class="p">,</span> <span class="n">dt_fac</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">fs</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">moments</span><span class="o">.</span><span class="n">Spectrum</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="s1">&#39;YRI_CEU.fs&#39;</span><span class="p">)</span>
+<span class="n">ns</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">sample_sizes</span>
+
+<span class="n">p0</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.4998572004354712</span><span class="p">,</span> <span class="mf">2.357114661127308</span><span class="p">,</span> <span class="mf">0.9984806062829666</span><span class="p">,</span>
+      <span class="mf">0.09461000843655785</span><span class="p">,</span> <span class="mf">1.7425719794077874</span><span class="p">,</span> <span class="mf">1.2368394548443258</span><span class="p">,</span>
+      <span class="mf">0.9299543753642668</span><span class="p">,</span> <span class="mf">0.8621179886837054</span><span class="p">]</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">model_func</span><span class="p">(</span><span class="n">p0</span><span class="p">,</span> <span class="n">ns</span><span class="p">)</span>
+<span class="n">ll_model</span> <span class="o">=</span> <span class="n">moments</span><span class="o">.</span><span class="n">Inference</span><span class="o">.</span><span class="n">ll_multinom</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Model log likelihood (LL(model, data)): </span><span class="si">{0}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ll_model</span><span class="p">))</span>
+
+<span class="n">theta</span> <span class="o">=</span> <span class="n">moments</span><span class="o">.</span><span class="n">Inference</span><span class="o">.</span><span class="n">optimal_sfs_scaling</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Optimal value of theta: </span><span class="si">{0}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">theta</span><span class="p">))</span>
+<span class="n">theta0</span> <span class="o">=</span> <span class="mf">0.37976</span>
+<span class="n">Nanc</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">theta</span> <span class="o">/</span> <span class="n">theta0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Size of ancestral population: </span><span class="si">{0}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Nanc</span><span class="p">))</span>
+
+<span class="n">plot_ns</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">ns</span><span class="p">]</span>  <span class="c1"># small sizes for fast drawing</span>
+<span class="n">gen_mod</span> <span class="o">=</span> <span class="n">moments</span><span class="o">.</span><span class="n">ModelPlot</span><span class="o">.</span><span class="n">generate_model</span><span class="p">(</span><span class="n">model_func</span><span class="p">,</span>
+                                           <span class="n">p0</span><span class="p">,</span> <span class="n">plot_ns</span><span class="p">)</span>
+<span class="n">moments</span><span class="o">.</span><span class="n">ModelPlot</span><span class="o">.</span><span class="n">plot_model</span><span class="p">(</span><span class="n">gen_mod</span><span class="p">,</span>
+                             <span class="n">save_file</span><span class="o">=</span><span class="s1">&#39;model_from_GADMA.png&#39;</span><span class="p">,</span>
+                             <span class="n">fig_title</span><span class="o">=</span><span class="s1">&#39;Demographic model from GADMA&#39;</span><span class="p">,</span>
+                             <span class="n">draw_scale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                             <span class="n">pop_labels</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;YRI&#39;</span><span class="p">,</span> <span class="s1">&#39;CEU&#39;</span><span class="p">],</span>
+                             <span class="n">nref</span><span class="o">=</span><span class="n">Nanc</span><span class="p">,</span>
+                             <span class="n">gen_time</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                             <span class="n">gen_time_units</span><span class="o">=</span><span class="s1">&#39;generations&#39;</span><span class="p">,</span>
+                             <span class="n">reverse_timeline</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="plotting.html" class="btn btn-neutral float-right" title="Plotting model" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="run_parallel.html" class="btn btn-neutral float-left" title="Repeats and parallel computing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Ekaterina Noskova
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

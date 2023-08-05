@@ -1,0 +1,1611 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Optimizers (optimizers package) &mdash; GADMA 2.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Command line interface (cli package)" href="gadma.cli.html" />
+    <link rel="prev" title="Code generation (code_generator package)" href="gadma.code_generator.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> GADMA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/hands_on.html">Hands on</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/user_manual.html">User manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/example_params_file.html">Example parameters file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_help.html">Getting help</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gadma.html">API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="gadma.Inference.html">Inference module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.data.html">Data (data package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.models.html">Models (models package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.engines.html">Engines (engines package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.code_generator.html">Code generation (code_generator package)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Optimizers (optimizers package)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#base-classes">Base Classes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#global-optimizers">Global optimizers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#registered-global-optimizers">Registered global optimizers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-gadma.optimizers.genetic_algorithm">Genetic algorithm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-gadma.optimizers.bayesian_optimization">Bayesian optimization</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#local-optimizers">Local optimizers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#registered-local-optimizers">Registered local optimizers</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#combinations-of-optimizers">Combinations of optimizers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-gadma.optimizers.optimizer_result">Optimizer result</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-gadma.optimizers.linear_constrain">Linear constrain</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.cli.html">Command line interface (cli package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.core.html">Core of runs (core package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.utils.html">Utils and variables (utils package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.run_ls_on_boot_data.html">Run local search on bootstrap</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GADMA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="gadma.html">API</a> &raquo;</li>
+        
+      <li>Optimizers (optimizers package)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/gadma.optimizers.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="optimizers-optimizers-package">
+<h1>Optimizers (optimizers package)<a class="headerlink" href="#optimizers-optimizers-package" title="Permalink to this headline">¶</a></h1>
+<p>To perform demographic inference optimization should be launched. There are different optimizers in GADMA: local search and global search algorithms.</p>
+<div class="section" id="base-classes">
+<h2>Base Classes<a class="headerlink" href="#base-classes" title="Permalink to this headline">¶</a></h2>
+<p>Module <a class="reference internal" href="#module-gadma.optimizers.optimizer" title="gadma.optimizers.optimizer"><code class="xref py py-mod docutils literal notranslate"><span class="pre">gadma.optimizers.optimizer</span></code></a> contains several base classes of optmizers.</p>
+<span class="target" id="module-gadma.optimizers.optimizer"></span><dl class="py class">
+<dt id="gadma.optimizers.optimizer.ConstrainedOptimizer">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.optimizers.optimizer.</code><code class="sig-name descname">ConstrainedOptimizer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log_transform</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">maximize</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.optimizer.ConstrainedOptimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.optimizers.optimizer.ContinuousOptimizer" title="gadma.optimizers.optimizer.ContinuousOptimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.optimizer.ContinuousOptimizer</span></code></a></p>
+<p>Base class for constrained optimization, i.e. when values of variables
+have some bounds.</p>
+<dl class="py method">
+<dt id="gadma.optimizers.optimizer.ConstrainedOptimizer.check_variables">
+<code class="sig-name descname">check_variables</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variables</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.optimizer.ConstrainedOptimizer.check_variables" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if all variables have constrained domain.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.optimizers.optimizer.ContinuousOptimizer">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.optimizers.optimizer.</code><code class="sig-name descname">ContinuousOptimizer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log_transform</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">maximize</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.optimizer.ContinuousOptimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.optimizers.optimizer.Optimizer" title="gadma.optimizers.optimizer.Optimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.optimizer.Optimizer</span></code></a></p>
+<p>Base class for optimization of continuous variables.</p>
+<dl class="py method">
+<dt id="gadma.optimizers.optimizer.ContinuousOptimizer.check_variables">
+<code class="sig-name descname">check_variables</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variables</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.optimizer.ContinuousOptimizer.check_variables" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if all variables are instances of
+<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.ContinousVariable</span></code> class.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.optimizers.optimizer.Optimizer">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.optimizers.optimizer.</code><code class="sig-name descname">Optimizer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log_transform</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">maximize</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.optimizer.Optimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base class for optimizer. The most important methods:
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">gadma.optimizers.Optimizer.evaluate()</span></code> and
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">gadma.optimizers.Optimizer.optimize()</span></code>.</p>
+<p>To create new class for optimizer one should at least implement
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">gadma.optimizers.Optimizer.valid_restore_file()</span></code> and
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">gadma.optimizers.Optimizer.optimize()</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>log_transform</strong> (<em>bool</em>) – If True then all parameters are optimized in log
+scale.</p></li>
+<li><p><strong>maximize</strong> (<em>bool</em>) – If True then maximization of target function is
+performed.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="gadma.optimizers.optimizer.Optimizer.check_variables">
+<code class="sig-name descname">check_variables</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variables</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.optimizer.Optimizer.check_variables" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks that all <cite>variables</cite> are instances of
+<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.Variable</span></code> class.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.optimizer.Optimizer.evaluate">
+<code class="sig-name descname">evaluate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em>, <em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">args</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="n">linear_constrain</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.optimizer.Optimizer.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluates function <cite>f</cite> on values <cite>x</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> – Target function.</p></li>
+<li><p><strong>x</strong> – Value of parameters of <cite>f</cite>.</p></li>
+<li><p><strong>args</strong> – Other arguments of f. <cite>f(x, args)</cite>.</p></li>
+<li><p><strong>linear_constrain</strong> – Linear constrain on <cite>x</cite>.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.optimizer.Optimizer.load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">save_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.optimizer.Optimizer.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads information that was saved by <a class="reference internal" href="#gadma.optimizers.optimizer.Optimizer.save" title="gadma.optimizers.optimizer.Optimizer.save"><code class="xref py py-meth docutils literal notranslate"><span class="pre">save()</span></code></a> method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>save_file</strong> – File to restore information from.</p>
+</dd>
+<dt class="field-even">Note</dt>
+<dd class="field-even"><p>In base class method just loads from <cite>save_file</cite> with pickle.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.optimizer.Optimizer.log_transform">
+<em class="property">property </em><code class="sig-name descname">log_transform</code><a class="headerlink" href="#gadma.optimizers.optimizer.Optimizer.log_transform" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.optimizer.Optimizer.optimize">
+<code class="sig-name descname">optimize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">args</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="n">options</span><span class="o">=</span><span class="default_value">{}</span></em>, <em class="sig-param"><span class="n">linear_constrain</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">maxiter</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">maxeval</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">callback</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">report_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">eval_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">save_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">restore_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">restore_points_only</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">restore_x_transform</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.optimizer.Optimizer.optimize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run optimization for target function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> (<em>func</em>) – Target function to optimize.</p></li>
+<li><p><strong>variables</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.VariablePool</span></code>) – List of variables which values are optimized.</p></li>
+<li><p><strong>args</strong> (<em>tuple</em>) – Additional arguments of target function.</p></li>
+<li><p><strong>options</strong> (<em>dict</em>) – Additional options kwargs for optimization.</p></li>
+<li><p><strong>linear_constrain</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.LinearConstrain</span></code>) – Linear constrain on optimized variables. It is
+optional argument. Could be missed in
+unconstrained optimizers.</p></li>
+<li><p><strong>maxiter</strong> (<em>int</em>) – Maximum number of iterations to run. If None then run
+until converge.</p></li>
+<li><p><strong>maxeval</strong> (<em>int</em>) – Maximum number of evaluations to run. If None then run
+until converge.</p></li>
+<li><p><strong>verbose</strong> (<em>int</em>) – Verbosity of the output. If 0 then no reports.</p></li>
+<li><p><strong>callback</strong> (<em>function</em>) – Callback to run after each iteration of optimization.
+Should be called as <cite>callback(x, y)</cite></p></li>
+<li><p><strong>report_file</strong> (<em>str</em>) – File to save report. Check option <cite>verbose</cite>.</p></li>
+<li><p><strong>eval_file</strong> (<em>str</em>) – File to save all evaluations of the function <cite>f</cite>.</p></li>
+<li><p><strong>save_file</strong> (<em>str</em>) – File to save information during optimization for its
+reconstruction.</p></li>
+<li><p><strong>restore_file</strong> (<em>str</em>) – File to restore previous run.</p></li>
+<li><p><strong>restore_points_only</strong> (<em>bool</em>) – Restore point/points from previous run and
+run optimization from them once more. If
+False then previous run will be resumed.</p></li>
+<li><p><strong>restore_x_transform</strong> (<em>function</em>) – Restore points but transform them before
+usage in this run.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.optimizer.Optimizer.prepare_callback">
+<code class="sig-name descname">prepare_callback</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">callback</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.optimizer.Optimizer.prepare_callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wraps callback function for usage inside optimizer. It transforms x
+according to <cite>log_transform</cite> and multiply y to -1 if <cite>maximize</cite> is
+True.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>callback</strong> – function of callback that has the following notation:
+<cite>callback(x, y)</cite>, where x is value of parameters and
+y is the value of target function on <cite>x</cite>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.optimizer.Optimizer.prepare_f_for_opt">
+<code class="sig-name descname">prepare_f_for_opt</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em>, <em class="sig-param"><span class="n">args</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="n">cache</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.optimizer.Optimizer.prepare_f_for_opt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prepares <cite>f</cite> for usage in optimizer. It should be transformed
+according to <cite>log_transform</cite> and <cite>maximize</cite>. Arguments are fixed and
+it could be cached or not.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> – Target function to work with.</p></li>
+<li><p><strong>args</strong> (<em>tuple</em>) – Arguments of the function. <cite>f(x, args)</cite>.</p></li>
+<li><p><strong>cache</strong> (<em>bool.</em>) – If True then function is cached.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.optimizer.Optimizer.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">info</span></em>, <em class="sig-param"><span class="n">save_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.optimizer.Optimizer.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save some information into file. Is supposed to save info during
+optimization in order to restore it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>info</strong> – Information to dump.</p></li>
+<li><p><strong>save_file</strong> – File to save information.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Note</dt>
+<dd class="field-even"><p>if save_file is None then nothing will be done. In base class               method just dumps <cite>info</cite> to <cite>save_file</cite> with <cite>pickle</cite>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.optimizer.Optimizer.sign">
+<em class="property">property </em><code class="sig-name descname">sign</code><a class="headerlink" href="#gadma.optimizers.optimizer.Optimizer.sign" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns -1 if maximization and 1 if minimization of target function.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.optimizer.Optimizer.valid_restore_file">
+<code class="sig-name descname">valid_restore_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">save_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.optimizer.Optimizer.valid_restore_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks that <cite>save_file</cite> contains valid information and it could be
+restored from it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>save_file</strong> – File to check.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.optimizer.Optimizer.wrap_for_report">
+<code class="sig-name descname">wrap_for_report</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em>, <em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">verbose</span></em>, <em class="sig-param"><span class="n">report_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.optimizer.Optimizer.wrap_for_report" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wraps function <cite>f</cite> for automatically report output. When function is
+called report is saved to <cite>report_file</cite> every <cite>verbose</cite> call.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> – Function to wrap.</p></li>
+<li><p><strong>variables</strong> – Variables of function <cite>f</cite>.</p></li>
+<li><p><strong>verbose</strong> – Verbosity level.</p></li>
+<li><p><strong>report_file</strong> – Filename to save report.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.optimizer.Optimizer.write_report">
+<code class="sig-name descname">write_report</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_iter</span></em>, <em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">report_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.optimizer.Optimizer.write_report" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes report of optimizer to file or stdout.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n_iter</strong> – Number of iteration of optimization.</p></li>
+<li><p><strong>variables</strong> – list of variables which values are optimized.</p></li>
+<li><p><strong>x</strong> – Values of variables.</p></li>
+<li><p><strong>y</strong> – Value of target function on <cite>x</cite>.</p></li>
+<li><p><strong>report_file</strong> – filename to write report. If None then report is
+printed to stdout.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.optimizers.optimizer.UnconstrainedOptimizer">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.optimizers.optimizer.</code><code class="sig-name descname">UnconstrainedOptimizer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log_transform</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">maximize</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.optimizer.UnconstrainedOptimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.optimizers.optimizer.ContinuousOptimizer" title="gadma.optimizers.optimizer.ContinuousOptimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.optimizer.ContinuousOptimizer</span></code></a></p>
+<p>Base class for unconstrained optimization, i.e. when values of variables
+have no bounds.</p>
+<dl class="py method">
+<dt id="gadma.optimizers.optimizer.UnconstrainedOptimizer.check_variables">
+<code class="sig-name descname">check_variables</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variables</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.optimizer.UnconstrainedOptimizer.check_variables" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if all variables have domain of [-inf, inf].</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="global-optimizers">
+<h2>Global optimizers<a class="headerlink" href="#global-optimizers" title="Permalink to this headline">¶</a></h2>
+<p>Module <a class="reference internal" href="#module-gadma.optimizers.global_optimizer" title="gadma.optimizers.global_optimizer"><code class="xref py py-mod docutils literal notranslate"><span class="pre">gadma.optimizers.global_optimizer</span></code></a> contains base class for global optimizers.</p>
+<p>Additional global optimizer could be implemented by creating new subclass of class <code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.GlobalOptimizer</span></code> and register it with function <code class="xref py py-func docutils literal notranslate"><span class="pre">gadma.optimizers.register_global_optimizer()</span></code>.</p>
+<div class="section" id="registered-global-optimizers">
+<h3>Registered global optimizers<a class="headerlink" href="#registered-global-optimizers" title="Permalink to this headline">¶</a></h3>
+<p>The following optimizers are registered:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 30%" />
+<col style="width: 46%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>ID</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Instance of</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>“Genetic_algorithm”</p></td>
+<td><p>Genetic algorithm optimization</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.GeneticAlgorithm</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>“Bayesian_optimization”</p></td>
+<td><p>Bayesian optimization</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.BayesianOptimization</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<span class="target" id="module-gadma.optimizers.global_optimizer"></span><dl class="py class">
+<dt id="gadma.optimizers.global_optimizer.GlobalOptimizer">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.optimizers.global_optimizer.</code><code class="sig-name descname">GlobalOptimizer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log_transform</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">maximize</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.global_optimizer.GlobalOptimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.optimizers.optimizer.Optimizer" title="gadma.optimizers.optimizer.Optimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.optimizer.Optimizer</span></code></a></p>
+<p>Base class for global optimization.
+See <code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.Optimizer</span></code> for more information.</p>
+<dl class="py method">
+<dt id="gadma.optimizers.global_optimizer.GlobalOptimizer.initial_design">
+<code class="sig-name descname">initial_design</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em>, <em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">num_init</span></em>, <em class="sig-param"><span class="n">X_init</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">Y_init</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">random_type</span><span class="o">=</span><span class="default_value">'resample'</span></em>, <em class="sig-param"><span class="n">custom_rand_gen</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.global_optimizer.GlobalOptimizer.initial_design" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs initial design for optimization.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> – function to use for evaluations. Note that it should be
+without arguments. Use <code class="xref py py-meth docutils literal notranslate"><span class="pre">self.fix_f_and_args()</span></code> to
+get such function from another one with arguments.</p></li>
+<li><p><strong>variables</strong> – variables of function. They are used for random
+generation of their values.</p></li>
+<li><p><strong>num_init</strong> – number of initial solutions.</p></li>
+<li><p><strong>X_init</strong> – list of some initial solutions.</p></li>
+<li><p><strong>Y_init</strong> – list of function values on the initial solutions.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>pair of lists X and Y. Initial points and value of fitness                  function on them.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.global_optimizer.GlobalOptimizer.optimize">
+<code class="sig-name descname">optimize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em>, <em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">num_init</span></em>, <em class="sig-param"><span class="n">X_init</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">Y_init</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">args</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="n">options</span><span class="o">=</span><span class="default_value">{}</span></em>, <em class="sig-param"><span class="n">linear_constrain</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">maxiter</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.global_optimizer.GlobalOptimizer.optimize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs optimization.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> (<em>func</em>) – Target function to optimize.</p></li>
+<li><p><strong>variables</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.VariablePool</span></code>) – Variables of <cite>f</cite> which values should be optimized.</p></li>
+<li><p><strong>num_init</strong> (<em>int</em>) – Number of points in initial design.</p></li>
+<li><p><strong>X_init</strong> (<em>list</em>) – List of initial points.</p></li>
+<li><p><strong>Y_init</strong> (<em>list</em>) – Values of target function on initial points.</p></li>
+<li><p><strong>args</strong> (<em>tuple</em>) – Additional arguments of target function.</p></li>
+<li><p><strong>options</strong> (<em>dict</em>) – Additional options kwargs for optimization.</p></li>
+<li><p><strong>linear_constrain</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.LinearConstrain</span></code>) – Linear constrain on optimized variables.</p></li>
+<li><p><strong>maxiter</strong> (<em>int</em>) – Maximum number of iterations to run.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.global_optimizer.GlobalOptimizer.randomize">
+<code class="sig-name descname">randomize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">random_type</span><span class="o">=</span><span class="default_value">'resample'</span></em>, <em class="sig-param"><span class="n">custom_rand_gen</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.global_optimizer.GlobalOptimizer.randomize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate random solution. The type of generation could be set
+to one of three operators:</p>
+<ul class="simple">
+<li><p>‘uniform’ - uniform over domain.</p></li>
+<li><p>‘resample’ - call <code class="xref py py-meth docutils literal notranslate"><span class="pre">resample()</span></code> method for all variables.</p></li>
+<li><p>‘custom’ - sample values of parameters from <cite>custom_rand_gen</cite>.</p></li>
+</ul>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.optimizers.global_optimizer.all_global_optimizers">
+<code class="sig-prename descclassname">gadma.optimizers.global_optimizer.</code><code class="sig-name descname">all_global_optimizers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.global_optimizer.all_global_optimizers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns an iterator over all registered global optimizers.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.optimizers.global_optimizer.get_global_optimizer">
+<code class="sig-prename descclassname">gadma.optimizers.global_optimizer.</code><code class="sig-name descname">get_global_optimizer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.global_optimizer.get_global_optimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the global optimizer with the specified id.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.optimizers.global_optimizer.register_global_optimizer">
+<code class="sig-prename descclassname">gadma.optimizers.global_optimizer.</code><code class="sig-name descname">register_global_optimizer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">optimizer</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.global_optimizer.register_global_optimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Registers the specified global optimizer.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-gadma.optimizers.genetic_algorithm">
+<span id="genetic-algorithm"></span><h3>Genetic algorithm<a class="headerlink" href="#module-gadma.optimizers.genetic_algorithm" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt id="gadma.optimizers.genetic_algorithm.GeneticAlgorithm">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.optimizers.genetic_algorithm.</code><code class="sig-name descname">GeneticAlgorithm</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">gen_size</span><span class="o">=</span><span class="default_value">10</span></em>, <em class="sig-param"><span class="n">n_elitism</span><span class="o">=</span><span class="default_value">2</span></em>, <em class="sig-param"><span class="n">p_mutation</span><span class="o">=</span><span class="default_value">0.3</span></em>, <em class="sig-param"><span class="n">p_crossover</span><span class="o">=</span><span class="default_value">0.3</span></em>, <em class="sig-param"><span class="n">p_random</span><span class="o">=</span><span class="default_value">0.2</span></em>, <em class="sig-param"><span class="n">mut_strength</span><span class="o">=</span><span class="default_value">0.2</span></em>, <em class="sig-param"><span class="n">const_mut_strength</span><span class="o">=</span><span class="default_value">1.1</span></em>, <em class="sig-param"><span class="n">mut_rate</span><span class="o">=</span><span class="default_value">0.2</span></em>, <em class="sig-param"><span class="n">const_mut_rate</span><span class="o">=</span><span class="default_value">1.2</span></em>, <em class="sig-param"><span class="n">mut_attempts</span><span class="o">=</span><span class="default_value">2</span></em>, <em class="sig-param"><span class="n">eps</span><span class="o">=</span><span class="default_value">0.01</span></em>, <em class="sig-param"><span class="n">n_stuck_gen</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">selection_type</span><span class="o">=</span><span class="default_value">'roulette_wheel'</span></em>, <em class="sig-param"><span class="n">selection_random</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">mutation_type</span><span class="o">=</span><span class="default_value">'gaussian'</span></em>, <em class="sig-param"><span class="n">one_fifth_rule</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">crossover_type</span><span class="o">=</span><span class="default_value">'uniform'</span></em>, <em class="sig-param"><span class="n">crossover_k</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">random_type</span><span class="o">=</span><span class="default_value">'resample'</span></em>, <em class="sig-param"><span class="n">custom_rand_gen</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">log_transform</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">maximize</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.genetic_algorithm.GeneticAlgorithm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.optimizers.global_optimizer.GlobalOptimizer" title="gadma.optimizers.global_optimizer.GlobalOptimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.global_optimizer.GlobalOptimizer</span></code></a>, <a class="reference internal" href="#gadma.optimizers.optimizer.ConstrainedOptimizer" title="gadma.optimizers.optimizer.ConstrainedOptimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.optimizer.ConstrainedOptimizer</span></code></a></p>
+<p>Class for Genetic Algorithm.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>gen_size</strong> (<em>int</em>) – Size of generation of genetic algorithm. That is number
+of individuals/solutions on each step of GA.</p></li>
+<li><p><strong>n_elitism</strong> (<em>int</em>) – Number of best models from previous generation in GA
+that will be taken to new iteration.</p></li>
+<li><p><strong>p_mutation</strong> (<em>float</em>) – probability of mutation in one generation of GA.</p></li>
+<li><p><strong>p_crossover</strong> (<em>float</em>) – probability of crossover in one generation of GA.</p></li>
+<li><p><strong>p_random</strong> (<em>float</em>) – Probability of random generated individual in one
+generation of GA.</p></li>
+<li><p><strong>mut_rate</strong> (<em>float</em>) – Initial mean mutation rate.</p></li>
+<li><p><strong>mut_strength</strong> (<em>float</em>) – initial mutation “strength” - mean fraction of
+model parameters that will be mutated.</p></li>
+<li><p><strong>const_mut_rate</strong> (<em>float</em>) – constant to change mutation rate according to
+one-fifth algorithm. Check GADMA paper for more
+information.</p></li>
+<li><p><strong>eps</strong> (<em>float</em>) – const for model’s log likelihood compare.
+Model is better if its log likelihood is greater than
+log likelihood of another model by epsilon.</p></li>
+<li><p><strong>n_stuck_gen</strong> (<em>int</em>) – Number of iterations for GA stopping: GA stops when
+it can’t improve model during n_stuck_gen generations.</p></li>
+<li><p><strong>selection_type</strong> (<em>bool</em>) – Type of selection operator in GA. Could be:
+* ‘roulette_wheel’
+* ‘rank’
+See help(GeneticAlgorithm.selection) for more
+information.</p></li>
+<li><p><strong>selection_random</strong> – If True then number of mutants and crossover’s
+offsprings in new generation will be binomial
+random variable.</p></li>
+<li><p><strong>mutation_type</strong> (<em>str</em>) – Type of mutation operator in GA. Could be:
+* ‘uniform’
+* ‘resample’
+* ‘gaussian’
+See help(GeneticAlgorithm.mutation) for more
+information.</p></li>
+<li><p><strong>one_fifth_rule</strong> (<em>bool</em>) – If True then one fifth rule is used in mutation.</p></li>
+<li><p><strong>crossover_type</strong> (<em>str</em>) – Type of crossover operator in GA. Could be:
+* ‘k-point’
+* ‘uniform’
+See help(GeneticAlgorithm.crossover) for more
+information.</p></li>
+<li><p><strong>crossover_k</strong> (<em>int</em>) – k for ‘k-point’ crossover type.</p></li>
+<li><p><strong>random_type</strong> (<em>str</em>) – Type of random generation of new offsprings. Could be:
+* ‘uniform’
+* ‘resample’
+* ‘custom’
+See help(GlobalOptimizer.randomize) for more
+information.</p></li>
+<li><p><strong>custom_rand_gen</strong> (<em>func</em>) – Random generator for ‘custom’ random_type.
+Provide generator from variables:
+custom_rand_gen(variables) = values</p></li>
+<li><p><strong>log_transform</strong> (<em>bool</em>) – If True then logarithm will be used incide for
+parameters.</p></li>
+<li><p><strong>maximize</strong> (<em>bool</em>) – If True then optimization will maximize function.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="gadma.optimizers.genetic_algorithm.GeneticAlgorithm.check_x">
+<code class="sig-name descname">check_x</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">raises</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.genetic_algorithm.GeneticAlgorithm.check_x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.genetic_algorithm.GeneticAlgorithm.crossover">
+<code class="sig-name descname">crossover</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent1</span></em>, <em class="sig-param"><span class="n">parent2</span></em>, <em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">crossover_type</span><span class="o">=</span><span class="default_value">'uniform'</span></em>, <em class="sig-param"><span class="n">k</span><span class="o">=</span><span class="default_value">2</span></em>, <em class="sig-param"><span class="n">one_child</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.genetic_algorithm.GeneticAlgorithm.crossover" title="Permalink to this definition">¶</a></dt>
+<dd><p>Crossover operator in genetic algorithm. Could be of two types:</p>
+<ul class="simple">
+<li><p>‘k-point’ - k points will be chosen among the vector and each part        between those points will be taken from parent1 or parent2 (swapping)        . By default k=2.</p></li>
+<li><p>‘uniform’ - each parameter will be taken from either parent with        equal probability.</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>parent1</strong> – array of first parent.</p></li>
+<li><p><strong>parent2</strong> – array of second parent.</p></li>
+<li><p><strong>crossover_type</strong> (<em>str</em>) – type of crossover operator. Could be ‘k-point’
+or ‘uniform’.</p></li>
+<li><p><strong>k</strong> (<em>int</em>) – value of k for ‘k_point’ crossover.</p></li>
+<li><p><strong>one_child</strong> (<em>bool</em>) – if True then one child will be generated and
+returned.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.optimizers.genetic_algorithm.GeneticAlgorithm.id">
+<code class="sig-name descname">id</code><em class="property"> = 'Genetic_algorithm'</em><a class="headerlink" href="#gadma.optimizers.genetic_algorithm.GeneticAlgorithm.id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.genetic_algorithm.GeneticAlgorithm.is_stopped">
+<code class="sig-name descname">is_stopped</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_gen</span></em>, <em class="sig-param"><span class="n">n_eval</span></em>, <em class="sig-param"><span class="n">impr_gen</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">maxiter</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">maxeval</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">ret_status</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.genetic_algorithm.GeneticAlgorithm.is_stopped" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns if genetic algorithm must stop.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n_gen</strong> – current number of generations.</p></li>
+<li><p><strong>n_eval</strong> – current number of function evaluations.</p></li>
+<li><p><strong>impr_gen</strong> – number of last generation that improved value of
+fitness function.</p></li>
+<li><p><strong>maxiter</strong> – maximum number of generations.</p></li>
+<li><p><strong>maxeval</strong> – maximum number of evaluation.</p></li>
+<li><p><strong>ret_status</strong> – If True then return status and message.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.genetic_algorithm.GeneticAlgorithm.load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">save_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.genetic_algorithm.GeneticAlgorithm.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load some values of genetic algorithm from file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.genetic_algorithm.GeneticAlgorithm.mutation">
+<code class="sig-name descname">mutation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">mutation_type</span><span class="o">=</span><span class="default_value">'gaussian'</span></em>, <em class="sig-param"><span class="n">one_fifth_rule</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">attemts</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.genetic_algorithm.GeneticAlgorithm.mutation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mutation operator in genetic algorithm of values <cite>x</cite> of variables
+<cite>variables</cite>. The number of parameters to
+mutate will be sampled from binomial distribution with mean equal to
+mutation strength. The type of change of chosen parameters could be
+set to one of three operators:</p>
+<ul class="simple">
+<li><p>‘uniform’ - new values will be sampled uniformly between bounds.</p></li>
+<li><p>‘resample’ - new values will be sampled from the random        distribution of the variables.</p></li>
+<li><p>‘gaussian’ - will adds a unit Gaussian distributed random value.        The mean of the Gaussian distribution will be taken from the mutation        rate.</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – values to mutate.</p></li>
+<li><p><strong>variables</strong> – variables.</p></li>
+<li><p><strong>mutation_type</strong> (<em>str</em>) – type of mutation operator. Could be ‘gaussian’,
+‘uniform’ and ‘resample’.</p></li>
+<li><p><strong>fval</strong> – max number of function evaluations.</p></li>
+<li><p><strong>one_fifth_rule</strong> – If True then one fifth rule will be used. For
+‘gaussian’ option only.</p></li>
+<li><p><strong>weights</strong> – weights for parameters in x, the greater weight is
+the greater probability to change it is.</p></li>
+<li><p><strong>attemts</strong> (<em>int</em>) – number of mutation attemts.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a mutated offspring. If <cite>attempts</cite> &gt; 1 then a list of                  mutated offsprings. All offsprings have information about                  the number of changes of each parameter in <cite>weights</cite>                  attribute.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.genetic_algorithm.GeneticAlgorithm.mutation_by_ind">
+<code class="sig-name descname">mutation_by_ind</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">index</span></em>, <em class="sig-param"><span class="n">mutation_type</span><span class="o">=</span><span class="default_value">'gaussian'</span></em>, <em class="sig-param"><span class="n">one_fifth_rule</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.genetic_algorithm.GeneticAlgorithm.mutation_by_ind" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mutation of <cite>x</cite> in index <cite>index</cite>. For more information see
+<a class="reference internal" href="#gadma.optimizers.genetic_algorithm.GeneticAlgorithm.mutation" title="gadma.optimizers.genetic_algorithm.GeneticAlgorithm.mutation"><code class="xref py py-meth docutils literal notranslate"><span class="pre">mutation()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.genetic_algorithm.GeneticAlgorithm.optimize">
+<code class="sig-name descname">optimize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em>, <em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">args</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="n">num_init</span><span class="o">=</span><span class="default_value">50</span></em>, <em class="sig-param"><span class="n">X_init</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">Y_init</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">linear_constrain</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">maxiter</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">maxeval</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">callback</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">report_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">eval_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">save_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">restore_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">restore_points_only</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">restore_x_transform</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.genetic_algorithm.GeneticAlgorithm.optimize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return best values of <cite>variables</cite> that minimizes/maximizes
+the function <cite>f</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> – function to minimize/maximize. The usage must be the
+following: f(x, <a href="#id1"><span class="problematic" id="id2">*</span></a>args), where x is list of values.</p></li>
+<li><p><strong>variables</strong> – list of variables (instances of
+<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.Variable</span></code> class) of the function.</p></li>
+<li><p><strong>X_init</strong> – list of initial values.</p></li>
+<li><p><strong>Y_init</strong> – value of function <cite>f</cite> on initial values from <cite>X_init</cite>.</p></li>
+<li><p><strong>args</strong> – arguments of function <cite>f</cite>.</p></li>
+<li><p><strong>maxiter</strong> – maximum number of genetic algorithm’s generations.</p></li>
+<li><p><strong>maxeval</strong> – maximum number of function evaluations.</p></li>
+<li><p><strong>callback</strong> – callback to call after each generation.
+It will be called as callback(x, y), where x, y -
+best_solution of generation and its fitness.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.genetic_algorithm.GeneticAlgorithm.randomize">
+<code class="sig-name descname">randomize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">random_type</span><span class="o">=</span><span class="default_value">'resample'</span></em>, <em class="sig-param"><span class="n">custom_rand_gen</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.genetic_algorithm.GeneticAlgorithm.randomize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate random solution. The type of generation could be set
+to one of three operators:</p>
+<ul class="simple">
+<li><p>‘uniform’ - uniform over domain.</p></li>
+<li><p>‘resample’ - call <code class="xref py py-meth docutils literal notranslate"><span class="pre">resample()</span></code> method for all variables.</p></li>
+<li><p>‘custom’ - sample values of parameters from <cite>custom_rand_gen</cite>.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.genetic_algorithm.GeneticAlgorithm.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_gen</span></em>, <em class="sig-param"><span class="n">n_eval</span></em>, <em class="sig-param"><span class="n">n_impr_gen</span></em>, <em class="sig-param"><span class="n">X_gen</span></em>, <em class="sig-param"><span class="n">Y_gen</span></em>, <em class="sig-param"><span class="n">X_total</span></em>, <em class="sig-param"><span class="n">Y_total</span></em>, <em class="sig-param"><span class="n">save_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.genetic_algorithm.GeneticAlgorithm.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save some values of genetic algorithm to file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.genetic_algorithm.GeneticAlgorithm.selection">
+<code class="sig-name descname">selection</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em>, <em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">X_gen</span></em>, <em class="sig-param"><span class="n">Y_gen</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">selection_type</span><span class="o">=</span><span class="default_value">'roulette_wheel'</span></em>, <em class="sig-param"><span class="n">selection_random</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.genetic_algorithm.GeneticAlgorithm.selection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform selection in genetic algorithm.
+Selection could be of different types:</p>
+<ul class="simple">
+<li><p>Roulette Wheel - the better fitness function is the higher chance
+to be selected for mutation and crossover for the individual is.</p></li>
+<li><p>Rank - almost the same as Roulette Wheel but with rank insted
+fitness function. This means weight=1 for the best individual,
+weight=2 for the second best and so on.</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X_gen</strong> – previous generation of individuals.</p></li>
+<li><p><strong>Y_gen</strong> – fitnesses of the previous generation. If <cite>None</cite> then
+will be evaluated.</p></li>
+<li><p><strong>selection_type</strong> – type of selection. Could be ‘roulette_wheel’ or
+‘rank’.</p></li>
+<li><p><strong>selection_random</strong> – if True then number of mutants and crossover’s
+offsprings in new generation will be binomial
+random variable.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>new generation and its fitnesses.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.genetic_algorithm.GeneticAlgorithm.valid_restore_file">
+<code class="sig-name descname">valid_restore_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">save_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.genetic_algorithm.GeneticAlgorithm.valid_restore_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks that <cite>save_file</cite> contains valid information and it could be
+restored from it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>save_file</strong> – File to check.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.genetic_algorithm.GeneticAlgorithm.write_report">
+<code class="sig-name descname">write_report</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_gen</span></em>, <em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">X_gen</span></em>, <em class="sig-param"><span class="n">Y_gen</span></em>, <em class="sig-param"><span class="n">x_best</span></em>, <em class="sig-param"><span class="n">y_best</span></em>, <em class="sig-param"><span class="n">mean_time</span></em>, <em class="sig-param"><span class="n">report_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.genetic_algorithm.GeneticAlgorithm.write_report" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write report about one generation in report file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Note</dt>
+<dd class="field-odd"><p>All values are reported as is, i.e. <cite>X_gen</cite>, <cite>x_best</cite> should be               already translated from log scale if optimization did so;               <cite>Y_gen</cite> and <cite>y_best</cite> must be already multiplied by -1 if we               have maximization instead of minimization.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-gadma.optimizers.bayesian_optimization">
+<span id="bayesian-optimization"></span><h3>Bayesian optimization<a class="headerlink" href="#module-gadma.optimizers.bayesian_optimization" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt id="gadma.optimizers.bayesian_optimization.BayesianOptimizer">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.optimizers.bayesian_optimization.</code><code class="sig-name descname">BayesianOptimizer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">kernel</span><span class="o">=</span><span class="default_value">'Matern52'</span></em>, <em class="sig-param"><span class="n">ARD</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">acquisition_type</span><span class="o">=</span><span class="default_value">'MPI'</span></em>, <em class="sig-param"><span class="n">log_transform</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">maximize</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.bayesian_optimization.BayesianOptimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.optimizers.global_optimizer.GlobalOptimizer" title="gadma.optimizers.global_optimizer.GlobalOptimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.global_optimizer.GlobalOptimizer</span></code></a>, <a class="reference internal" href="#gadma.optimizers.optimizer.ConstrainedOptimizer" title="gadma.optimizers.optimizer.ConstrainedOptimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.optimizer.ConstrainedOptimizer</span></code></a></p>
+<p>Class for Bayesian optimization</p>
+<dl class="py method">
+<dt id="gadma.optimizers.bayesian_optimization.BayesianOptimizer.get_domain">
+<code class="sig-name descname">get_domain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variables</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.bayesian_optimization.BayesianOptimizer.get_domain" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.bayesian_optimization.BayesianOptimizer.get_kernel">
+<code class="sig-name descname">get_kernel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ndim</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.bayesian_optimization.BayesianOptimizer.get_kernel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.bayesian_optimization.BayesianOptimizer.gpyopt_inv_transform">
+<code class="sig-name descname">gpyopt_inv_transform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.bayesian_optimization.BayesianOptimizer.gpyopt_inv_transform" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.bayesian_optimization.BayesianOptimizer.gpyopt_transform">
+<code class="sig-name descname">gpyopt_transform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.bayesian_optimization.BayesianOptimizer.gpyopt_transform" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.optimizers.bayesian_optimization.BayesianOptimizer.id">
+<code class="sig-name descname">id</code><em class="property"> = 'Bayesian_optimization'</em><a class="headerlink" href="#gadma.optimizers.bayesian_optimization.BayesianOptimizer.id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.bayesian_optimization.BayesianOptimizer.optimize">
+<code class="sig-name descname">optimize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em>, <em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">args</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="n">num_init</span><span class="o">=</span><span class="default_value">10</span></em>, <em class="sig-param"><span class="n">X_init</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">Y_init</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">linear_constrain</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">maxiter</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">maxeval</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">callback</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">report_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">eval_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">save_file</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.bayesian_optimization.BayesianOptimizer.optimize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return best values of <cite>variables</cite> that minimizes/maximizes
+the function <cite>f</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> – function to minimize/maximize. The usage must be the
+following: f(x, <a href="#id3"><span class="problematic" id="id4">*</span></a>args), where x is list of values.</p></li>
+<li><p><strong>variables</strong> – list of variables (instances of
+<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.Variable</span></code> class) of the function.</p></li>
+<li><p><strong>X_init</strong> – list of initial values.</p></li>
+<li><p><strong>Y_init</strong> – value of function <cite>f</cite> on initial values from <cite>X_init</cite>.</p></li>
+<li><p><strong>args</strong> – arguments of function <cite>f</cite>.</p></li>
+<li><p><strong>maxiter</strong> – maximum number of genetic algorithm’s generations.</p></li>
+<li><p><strong>maxeval</strong> – maximum number of function evaluations.</p></li>
+<li><p><strong>callback</strong> – callback to call after each generation.
+It will be called as callback(x, y), where x, y -
+best_solution of generation and its fitness.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.bayesian_optimization.BayesianOptimizer.write_report">
+<code class="sig-name descname">write_report</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bo_obj</span></em>, <em class="sig-param"><span class="n">report_file</span></em>, <em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.bayesian_optimization.BayesianOptimizer.write_report" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes report about each iteration in file or stdout.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bo_obj</strong> (<em>GPyOpt.methods.BayesianOptimization</em>) – Object of Bayesian Optimization.</p></li>
+<li><p><strong>report_file</strong> – file to write report to. If None then to stdout.</p></li>
+<li><p><strong>x</strong> – Current solution</p></li>
+<li><p><strong>y</strong> – Current value of fitness function</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="local-optimizers">
+<h2>Local optimizers<a class="headerlink" href="#local-optimizers" title="Permalink to this headline">¶</a></h2>
+<p>Module <a class="reference internal" href="#module-gadma.optimizers.local_optimizer" title="gadma.optimizers.local_optimizer"><code class="xref py py-mod docutils literal notranslate"><span class="pre">gadma.optimizers.local_optimizer</span></code></a> contains classes for local serach optimizers.</p>
+<p>Additional local optimizer could be implemented by creating new subclass of class <a class="reference internal" href="#gadma.optimizers.local_optimizer.LocalOptimizer" title="gadma.optimizers.local_optimizer.LocalOptimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.local_optimizer.LocalOptimizer</span></code></a> and register it with function <a class="reference internal" href="#gadma.optimizers.local_optimizer.register_local_optimizer" title="gadma.optimizers.local_optimizer.register_local_optimizer"><code class="xref py py-func docutils literal notranslate"><span class="pre">gadma.optimizers.local_optimizer.register_local_optimizer()</span></code></a>.</p>
+<div class="section" id="registered-local-optimizers">
+<h3>Registered local optimizers<a class="headerlink" href="#registered-local-optimizers" title="Permalink to this headline">¶</a></h3>
+<p>The following optimizers are registered:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 31%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>ID</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Instance of</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>None or “None”</p></td>
+<td><p>None optimization is run</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.NoneOptimizer</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>“L-BFGS-B”</p></td>
+<td><p>L-BFGS-B from scipy</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.ScipyConstrOptimizer</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>“L-BFGS-B_log”</p></td>
+<td><p>L-BFGS-B from scipy with log
+transform of values</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.ScipyConstrOptimizer</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>“BFGS”</p></td>
+<td><p>Constrained BFGS from scipy</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.ManuallyConstrOptimizer</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>“BFGS_log”</p></td>
+<td><p>Constrained BFGS from scipy
+with log transform of values</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.ManuallyConstrOptimizer</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>“Powell”</p></td>
+<td><p>Constrained Powell’s method
+from scipy</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.ManuallyConstrOptimizer</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>“Powell_log”</p></td>
+<td><p>Constrained Powell’s method
+from scipy
+with log transform of values</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.ManuallyConstrOptimizer</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>“Nelder-Mead”</p></td>
+<td><p>Constrained Nelder-Mead
+method from scipy</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.ManuallyConstrOptimizer</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>“Nelder-Mead_log”</p></td>
+<td><p>Constrained Nelder-Mead
+method from scipy
+with log transform of values</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.ManuallyConstrOptimizer</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<span class="target" id="module-gadma.optimizers.local_optimizer"></span><dl class="py class">
+<dt id="gadma.optimizers.local_optimizer.LocalOptimizer">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.optimizers.local_optimizer.</code><code class="sig-name descname">LocalOptimizer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log_transform</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">maximize</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.LocalOptimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.optimizers.optimizer.Optimizer" title="gadma.optimizers.optimizer.Optimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.optimizer.Optimizer</span></code></a></p>
+<p>Base class for local optimization.
+See <code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.Optimizer</span></code> for more information.</p>
+<dl class="py method">
+<dt id="gadma.optimizers.local_optimizer.LocalOptimizer.optimize">
+<code class="sig-name descname">optimize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em>, <em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">x0</span></em>, <em class="sig-param"><span class="n">args</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="n">options</span><span class="o">=</span><span class="default_value">{}</span></em>, <em class="sig-param"><span class="n">maxiter</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">maxeval</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">callback</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">report_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">eval_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">save_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">restore_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">restore_points_only</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">restore_x_transform</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.LocalOptimizer.optimize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run optimization of local search algorithm.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> (<em>func</em>) – Target function to optimize.</p></li>
+<li><p><strong>variables</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.VariablePool</span></code>) – Variables of <cite>f</cite> which values should be optimized.</p></li>
+<li><p><strong>x0</strong> (<em>list</em>) – Initial point to start optimization.</p></li>
+<li><p><strong>args</strong> (<em>tuple</em>) – Additional arguments of target function.</p></li>
+<li><p><strong>options</strong> (<em>dict</em>) – Additional options kwargs for optimization.</p></li>
+<li><p><strong>maxiter</strong> (<em>int</em>) – Maximum number of iterations to run.</p></li>
+<li><p><strong>maxeval</strong> (<em>int</em>) – Maximum number of evaluations to run. If None then run
+until converge.</p></li>
+<li><p><strong>verbose</strong> (<em>int</em>) – Verbosity of the output. If 0 then no reports.</p></li>
+<li><p><strong>callback</strong> (<em>function</em>) – Callback to run after each iteration of optimization.
+Should be called as <cite>callback(x, y)</cite></p></li>
+<li><p><strong>report_file</strong> (<em>str</em>) – File to save report. Check option <cite>verbose</cite>.</p></li>
+<li><p><strong>eval_file</strong> (<em>str</em>) – File to save all evaluations of the function <cite>f</cite>.</p></li>
+<li><p><strong>save_file</strong> (<em>str</em>) – File to save information during optimization for its
+reconstruction.</p></li>
+<li><p><strong>restore_file</strong> (<em>str</em>) – File to restore previous run.</p></li>
+<li><p><strong>restore_points_only</strong> (<em>bool</em>) – Restore point/points from previous run and
+run optimization from them once more. If
+False then previous run will be resumed.</p></li>
+<li><p><strong>restore_x_transform</strong> (<em>function</em>) – Restore points but transform them before
+usage in this run.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.optimizers.local_optimizer.ManuallyConstrOptimizer">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.optimizers.local_optimizer.</code><code class="sig-name descname">ManuallyConstrOptimizer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">optimizer</span></em>, <em class="sig-param"><span class="n">log_transform</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.ManuallyConstrOptimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.optimizers.local_optimizer.LocalOptimizer" title="gadma.optimizers.local_optimizer.LocalOptimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.local_optimizer.LocalOptimizer</span></code></a>, <a class="reference internal" href="#gadma.optimizers.optimizer.ConstrainedOptimizer" title="gadma.optimizers.optimizer.ConstrainedOptimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.optimizer.ConstrainedOptimizer</span></code></a></p>
+<p>Class for Constrained optimization that uses unconstrained optimization.
+The value of target function is considered to be inf outside bounds.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>optimizer</strong> (class:<cite>gadma.optimizers.UnconstrainedOptimizer</cite>) – Unconstrained optimizer to use.</p></li>
+<li><p><strong>log_transform</strong> – If True then log scale is used for optimization.
+Be careful there could be <cite>log_transform</cite> already
+in <cite>optimizer</cite>.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="gadma.optimizers.local_optimizer.ManuallyConstrOptimizer.evaluate_inner">
+<code class="sig-name descname">evaluate_inner</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em>, <em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">bounds</span></em>, <em class="sig-param"><span class="n">args</span><span class="o">=</span><span class="default_value">()</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.ManuallyConstrOptimizer.evaluate_inner" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.local_optimizer.ManuallyConstrOptimizer.id">
+<em class="property">property </em><code class="sig-name descname">id</code><a class="headerlink" href="#gadma.optimizers.local_optimizer.ManuallyConstrOptimizer.id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.local_optimizer.ManuallyConstrOptimizer.maximize">
+<em class="property">property </em><code class="sig-name descname">maximize</code><a class="headerlink" href="#gadma.optimizers.local_optimizer.ManuallyConstrOptimizer.maximize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.local_optimizer.ManuallyConstrOptimizer.optimize">
+<code class="sig-name descname">optimize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em>, <em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">x0</span></em>, <em class="sig-param"><span class="n">args</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="n">options</span><span class="o">=</span><span class="default_value">{}</span></em>, <em class="sig-param"><span class="n">linear_constrain</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">maxiter</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">maxeval</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">callback</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">eval_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">report_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">save_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">restore_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">restore_points_only</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">restore_x_transform</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.ManuallyConstrOptimizer.optimize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run optimization of local search algorithm.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> (<em>func</em>) – Target function to optimize.</p></li>
+<li><p><strong>variables</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.VariablePool</span></code>) – Variables of <cite>f</cite> which values should be optimized.</p></li>
+<li><p><strong>x0</strong> (<em>list</em>) – Initial point to start optimization.</p></li>
+<li><p><strong>args</strong> (<em>tuple</em>) – Additional arguments of target function.</p></li>
+<li><p><strong>options</strong> (<em>dict</em>) – Additional options kwargs for optimization.</p></li>
+<li><p><strong>maxiter</strong> (<em>int</em>) – Maximum number of iterations to run.</p></li>
+<li><p><strong>maxeval</strong> (<em>int</em>) – Maximum number of evaluations to run. If None then run
+until converge.</p></li>
+<li><p><strong>verbose</strong> (<em>int</em>) – Verbosity of the output. If 0 then no reports.</p></li>
+<li><p><strong>callback</strong> (<em>function</em>) – Callback to run after each iteration of optimization.
+Should be called as <cite>callback(x, y)</cite></p></li>
+<li><p><strong>report_file</strong> (<em>str</em>) – File to save report. Check option <cite>verbose</cite>.</p></li>
+<li><p><strong>eval_file</strong> (<em>str</em>) – File to save all evaluations of the function <cite>f</cite>.</p></li>
+<li><p><strong>save_file</strong> (<em>str</em>) – File to save information during optimization for its
+reconstruction.</p></li>
+<li><p><strong>restore_file</strong> (<em>str</em>) – File to restore previous run.</p></li>
+<li><p><strong>restore_points_only</strong> (<em>bool</em>) – Restore point/points from previous run and
+run optimization from them once more. If
+False then previous run will be resumed.</p></li>
+<li><p><strong>restore_x_transform</strong> (<em>function</em>) – Restore points but transform them before
+usage in this run.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.local_optimizer.ManuallyConstrOptimizer.prepare_callback">
+<code class="sig-name descname">prepare_callback</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">callback</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.ManuallyConstrOptimizer.prepare_callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wraps callback function for usage inside optimizer. It transforms x
+according to <cite>log_transform</cite> and multiply y to -1 if <cite>maximize</cite> is
+True.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>callback</strong> – function of callback that has the following notation:
+<cite>callback(x, y)</cite>, where x is value of parameters and
+y is the value of target function on <cite>x</cite>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.local_optimizer.ManuallyConstrOptimizer.valid_restore_file">
+<code class="sig-name descname">valid_restore_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">save_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.ManuallyConstrOptimizer.valid_restore_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks that <cite>save_file</cite> contains valid information and it could be
+restored from it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>save_file</strong> – File to check.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.optimizers.local_optimizer.NoneOptimizer">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.optimizers.local_optimizer.</code><code class="sig-name descname">NoneOptimizer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log_transform</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">maximize</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.NoneOptimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.optimizers.local_optimizer.LocalOptimizer" title="gadma.optimizers.local_optimizer.LocalOptimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.local_optimizer.LocalOptimizer</span></code></a></p>
+<p>Class that inherits <code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.LocalOptimizer</span></code> but do not
+run any optimization.</p>
+<dl class="py method">
+<dt id="gadma.optimizers.local_optimizer.NoneOptimizer.optimize">
+<code class="sig-name descname">optimize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em>, <em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">x0</span></em>, <em class="sig-param"><span class="n">args</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="n">options</span><span class="o">=</span><span class="default_value">{}</span></em>, <em class="sig-param"><span class="n">linear_constrain</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">maxiter</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">maxeval</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">callback</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">eval_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">report_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">save_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">restore_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">restore_points_only</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">restore_x_transform</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.NoneOptimizer.optimize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run optimization of local search algorithm.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> (<em>func</em>) – Target function to optimize.</p></li>
+<li><p><strong>variables</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.VariablePool</span></code>) – Variables of <cite>f</cite> which values should be optimized.</p></li>
+<li><p><strong>x0</strong> (<em>list</em>) – Initial point to start optimization.</p></li>
+<li><p><strong>args</strong> (<em>tuple</em>) – Additional arguments of target function.</p></li>
+<li><p><strong>options</strong> (<em>dict</em>) – Additional options kwargs for optimization.</p></li>
+<li><p><strong>maxiter</strong> (<em>int</em>) – Maximum number of iterations to run.</p></li>
+<li><p><strong>maxeval</strong> (<em>int</em>) – Maximum number of evaluations to run. If None then run
+until converge.</p></li>
+<li><p><strong>verbose</strong> (<em>int</em>) – Verbosity of the output. If 0 then no reports.</p></li>
+<li><p><strong>callback</strong> (<em>function</em>) – Callback to run after each iteration of optimization.
+Should be called as <cite>callback(x, y)</cite></p></li>
+<li><p><strong>report_file</strong> (<em>str</em>) – File to save report. Check option <cite>verbose</cite>.</p></li>
+<li><p><strong>eval_file</strong> (<em>str</em>) – File to save all evaluations of the function <cite>f</cite>.</p></li>
+<li><p><strong>save_file</strong> (<em>str</em>) – File to save information during optimization for its
+reconstruction.</p></li>
+<li><p><strong>restore_file</strong> (<em>str</em>) – File to restore previous run.</p></li>
+<li><p><strong>restore_points_only</strong> (<em>bool</em>) – Restore point/points from previous run and
+run optimization from them once more. If
+False then previous run will be resumed.</p></li>
+<li><p><strong>restore_x_transform</strong> (<em>function</em>) – Restore points but transform them before
+usage in this run.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.local_optimizer.NoneOptimizer.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x0</span></em>, <em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">save_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.NoneOptimizer.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save some information into file. Is supposed to save info during
+optimization in order to restore it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>info</strong> – Information to dump.</p></li>
+<li><p><strong>save_file</strong> – File to save information.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Note</dt>
+<dd class="field-even"><p>if save_file is None then nothing will be done. In base class               method just dumps <cite>info</cite> to <cite>save_file</cite> with <cite>pickle</cite>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.local_optimizer.NoneOptimizer.valid_restore_file">
+<code class="sig-name descname">valid_restore_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">save_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.NoneOptimizer.valid_restore_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks that <cite>save_file</cite> contains valid information and it could be
+restored from it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>save_file</strong> – File to check.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.optimizers.local_optimizer.ScipyConstrOptimizer">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.optimizers.local_optimizer.</code><code class="sig-name descname">ScipyConstrOptimizer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">method</span></em>, <em class="sig-param"><span class="n">log_transform</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">maximize</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.ScipyConstrOptimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.optimizers.local_optimizer.ScipyOptimizer" title="gadma.optimizers.local_optimizer.ScipyOptimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.local_optimizer.ScipyOptimizer</span></code></a>, <a class="reference internal" href="#gadma.optimizers.optimizer.ConstrainedOptimizer" title="gadma.optimizers.optimizer.ConstrainedOptimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.optimizer.ConstrainedOptimizer</span></code></a></p>
+<dl class="py method">
+<dt id="gadma.optimizers.local_optimizer.ScipyConstrOptimizer.get_addit_scipy_kwargs">
+<code class="sig-name descname">get_addit_scipy_kwargs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variables</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.ScipyConstrOptimizer.get_addit_scipy_kwargs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.optimizers.local_optimizer.ScipyConstrOptimizer.maxeval_kwarg">
+<code class="sig-name descname">maxeval_kwarg</code><em class="property"> = {'L-BFGS-B': 'maxfun'}</em><a class="headerlink" href="#gadma.optimizers.local_optimizer.ScipyConstrOptimizer.maxeval_kwarg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.optimizers.local_optimizer.ScipyConstrOptimizer.opt_type">
+<code class="sig-name descname">opt_type</code><em class="property"> = 'constrained'</em><a class="headerlink" href="#gadma.optimizers.local_optimizer.ScipyConstrOptimizer.opt_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.optimizers.local_optimizer.ScipyConstrOptimizer.scipy_methods">
+<code class="sig-name descname">scipy_methods</code><em class="property"> = ['L-BFGS-B', 'TNC', 'SLSQP']</em><a class="headerlink" href="#gadma.optimizers.local_optimizer.ScipyConstrOptimizer.scipy_methods" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.optimizers.local_optimizer.ScipyOptimizer">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.optimizers.local_optimizer.</code><code class="sig-name descname">ScipyOptimizer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">method</span></em>, <em class="sig-param"><span class="n">log_transform</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">maximize</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.ScipyOptimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.optimizers.local_optimizer.LocalOptimizer" title="gadma.optimizers.local_optimizer.LocalOptimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.local_optimizer.LocalOptimizer</span></code></a></p>
+<p>Class of Scipy local search algorithms.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><a class="reference internal" href="#gadma.optimizers.local_optimizer.ScipyOptimizer.scipy_methods" title="gadma.optimizers.local_optimizer.ScipyOptimizer.scipy_methods"><strong>ScipyOptimizer.scipy_methods</strong></a> – List of methods names that are
+available.</p></li>
+<li><p><a class="reference internal" href="#gadma.optimizers.local_optimizer.ScipyOptimizer.maxeval_kwarg" title="gadma.optimizers.local_optimizer.ScipyOptimizer.maxeval_kwarg"><strong>ScipyOptimizer.maxeval_kwarg</strong></a> – List of methods names that support
+<cite>maxeval</cite> argument.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>method</strong> (<em>str</em>) – name of method from <code class="xref py py-func docutils literal notranslate"><span class="pre">scipy.optimize.minimize()</span></code>.</p></li>
+<li><p><strong>log_transform</strong> (<em>bool</em>) – If True then values rae optimized in log scale.</p></li>
+<li><p><strong>maximize</strong> (<em>bool</em>) – If True then maximize target function.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="gadma.optimizers.local_optimizer.ScipyOptimizer.get_addit_scipy_kwargs">
+<code class="sig-name descname">get_addit_scipy_kwargs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variables</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.ScipyOptimizer.get_addit_scipy_kwargs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.optimizers.local_optimizer.ScipyOptimizer.maxeval_kwarg">
+<code class="sig-name descname">maxeval_kwarg</code><em class="property"> = {}</em><a class="headerlink" href="#gadma.optimizers.local_optimizer.ScipyOptimizer.maxeval_kwarg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.optimizers.local_optimizer.ScipyOptimizer.opt_type">
+<code class="sig-name descname">opt_type</code><em class="property"> = ''</em><a class="headerlink" href="#gadma.optimizers.local_optimizer.ScipyOptimizer.opt_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.local_optimizer.ScipyOptimizer.optimize">
+<code class="sig-name descname">optimize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em>, <em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">x0</span></em>, <em class="sig-param"><span class="n">args</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="n">options</span><span class="o">=</span><span class="default_value">{}</span></em>, <em class="sig-param"><span class="n">linear_constrain</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">maxiter</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">maxeval</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">callback</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">eval_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">report_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">save_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">restore_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">restore_points_only</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">restore_x_transform</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.ScipyOptimizer.optimize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run Scipy optimization.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> (<em>func</em>) – Target function to optimize.</p></li>
+<li><p><strong>variables</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.utils.VariablePool</span></code>) – Variables of <cite>f</cite> which values should be optimized.</p></li>
+<li><p><strong>x0</strong> (<em>list</em>) – Initial point to start optimization.</p></li>
+<li><p><strong>args</strong> (<em>tuple</em>) – Additional arguments of target function.</p></li>
+<li><p><strong>options</strong> (<em>dict</em>) – Additional options kwargs for scipy optimization.</p></li>
+<li><p><strong>maxiter</strong> (<em>int</em>) – Maximum number of iterations to run.</p></li>
+<li><p><strong>maxeval</strong> (<em>int</em>) – Maximum number of evaluations to run. If None then run
+until converge.</p></li>
+<li><p><strong>verbose</strong> (<em>int</em>) – Verbosity of the output. If 0 then no reports.</p></li>
+<li><p><strong>callback</strong> (<em>function</em>) – Callback to run after each iteration of optimization.
+Should be called as <cite>callback(x, y)</cite></p></li>
+<li><p><strong>report_file</strong> (<em>str</em>) – File to save report. Check option <cite>verbose</cite>.</p></li>
+<li><p><strong>eval_file</strong> (<em>str</em>) – File to save all evaluations of the function <cite>f</cite>.</p></li>
+<li><p><strong>save_file</strong> (<em>str</em>) – File to save information during optimization for its
+reconstruction.</p></li>
+<li><p><strong>restore_file</strong> (<em>str</em>) – File to restore previous run.</p></li>
+<li><p><strong>restore_points_only</strong> (<em>bool</em>) – Restore point/points from previous run and
+run optimization from them once more. If
+False then previous run will be resumed.</p></li>
+<li><p><strong>restore_x_transform</strong> (<em>function</em>) – Restore points but transform them before
+usage in this run.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.local_optimizer.ScipyOptimizer.prepare_callback">
+<code class="sig-name descname">prepare_callback</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em>, <em class="sig-param"><span class="n">callback</span></em>, <em class="sig-param"><span class="n">save_file</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.ScipyOptimizer.prepare_callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wraps callback function for usage inside optimizer. It transforms x
+according to <cite>log_transform</cite> and multiply y to -1 if <cite>maximize</cite> is
+True.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>callback</strong> – function of callback that has the following notation:
+<cite>callback(x, y)</cite>, where x is value of parameters and
+y is the value of target function on <cite>x</cite>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.local_optimizer.ScipyOptimizer.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_best</span></em>, <em class="sig-param"><span class="n">y_best</span></em>, <em class="sig-param"><span class="n">n_iter</span></em>, <em class="sig-param"><span class="n">n_eval</span></em>, <em class="sig-param"><span class="n">is_finished</span></em>, <em class="sig-param"><span class="n">save_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.ScipyOptimizer.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save current achievement in optimization. Dumps <cite>x_best</cite>, <cite>y_best</cite> and
+<cite>is_finished</cite> to <cite>save_file</cite> using <code class="xref py py-mod docutils literal notranslate"><span class="pre">pickle</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x_best</strong> – Values of best configuration.</p></li>
+<li><p><strong>y_best</strong> – Value of target function on <cite>x_best</cite>.</p></li>
+<li><p><strong>is_finished</strong> – If True then optimization was finished.</p></li>
+<li><p><strong>save_file</strong> – Filename to save data.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.optimizers.local_optimizer.ScipyOptimizer.scipy_methods">
+<code class="sig-name descname">scipy_methods</code><em class="property"> = []</em><a class="headerlink" href="#gadma.optimizers.local_optimizer.ScipyOptimizer.scipy_methods" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.local_optimizer.ScipyOptimizer.valid_restore_file">
+<code class="sig-name descname">valid_restore_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">save_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.ScipyOptimizer.valid_restore_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks that <cite>save_file</cite> contains valid information and it could be
+restored from it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>save_file</strong> – File to check.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="gadma.optimizers.local_optimizer.ScipyUnconstrOptimizer">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.optimizers.local_optimizer.</code><code class="sig-name descname">ScipyUnconstrOptimizer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">method</span></em>, <em class="sig-param"><span class="n">log_transform</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">maximize</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.ScipyUnconstrOptimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.optimizers.local_optimizer.ScipyOptimizer" title="gadma.optimizers.local_optimizer.ScipyOptimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.local_optimizer.ScipyOptimizer</span></code></a>, <a class="reference internal" href="#gadma.optimizers.optimizer.UnconstrainedOptimizer" title="gadma.optimizers.optimizer.UnconstrainedOptimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.optimizer.UnconstrainedOptimizer</span></code></a></p>
+<p>Base class for Scipy unconstrained optimizations.</p>
+<dl class="py method">
+<dt id="gadma.optimizers.local_optimizer.ScipyUnconstrOptimizer.get_addit_scipy_kwargs">
+<code class="sig-name descname">get_addit_scipy_kwargs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variables</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.ScipyUnconstrOptimizer.get_addit_scipy_kwargs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.optimizers.local_optimizer.ScipyUnconstrOptimizer.maxeval_kwarg">
+<code class="sig-name descname">maxeval_kwarg</code><em class="property"> = {'COBYLA': 'maxiter', 'Nelder-Mead': 'maxfun', 'Powell': 'maxfev'}</em><a class="headerlink" href="#gadma.optimizers.local_optimizer.ScipyUnconstrOptimizer.maxeval_kwarg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.optimizers.local_optimizer.ScipyUnconstrOptimizer.opt_type">
+<code class="sig-name descname">opt_type</code><em class="property"> = 'unconstrained'</em><a class="headerlink" href="#gadma.optimizers.local_optimizer.ScipyUnconstrOptimizer.opt_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.optimizers.local_optimizer.ScipyUnconstrOptimizer.scipy_methods">
+<code class="sig-name descname">scipy_methods</code><em class="property"> = ['Nelder-Mead', 'Powell', 'CG', 'BFGS', 'Newton-CG', 'COBYLA', 'trust-constr', 'dogleg', 'trust-ncg', 'trust-exact', 'trust-krylov']</em><a class="headerlink" href="#gadma.optimizers.local_optimizer.ScipyUnconstrOptimizer.scipy_methods" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.optimizers.local_optimizer.all_local_optimizers">
+<code class="sig-prename descclassname">gadma.optimizers.local_optimizer.</code><code class="sig-name descname">all_local_optimizers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.all_local_optimizers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns an iterator over all registered local optimizers.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.optimizers.local_optimizer.get_local_optimizer">
+<code class="sig-prename descclassname">gadma.optimizers.local_optimizer.</code><code class="sig-name descname">get_local_optimizer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.get_local_optimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the local optimizer with the specified id.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id</strong> – ID of local optimizer.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.optimizers.local_optimizer.register_local_optimizer">
+<code class="sig-prename descclassname">gadma.optimizers.local_optimizer.</code><code class="sig-name descname">register_local_optimizer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">optimizer</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.local_optimizer.register_local_optimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Registers the specified local optimizer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> – ID of local optimizer to register.</p></li>
+<li><p><strong>optimizer</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.LocalOptimizer</span></code>) – Optimizer to register.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="combinations-of-optimizers">
+<h2>Combinations of optimizers<a class="headerlink" href="#combinations-of-optimizers" title="Permalink to this headline">¶</a></h2>
+<p>Module <a class="reference internal" href="#module-gadma.optimizers.combinations" title="gadma.optimizers.combinations"><code class="xref py py-mod docutils literal notranslate"><span class="pre">gadma.optimizers.combinations</span></code></a> contains classes of optimizers that are combinations of other optimizers.</p>
+<span class="target" id="module-gadma.optimizers.combinations"></span><dl class="py class">
+<dt id="gadma.optimizers.combinations.GlobalOptimizerAndLocalOptimizer">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.optimizers.combinations.</code><code class="sig-name descname">GlobalOptimizerAndLocalOptimizer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">global_optimizer</span></em>, <em class="sig-param"><span class="n">local_optimizer</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.combinations.GlobalOptimizerAndLocalOptimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.optimizers.global_optimizer.GlobalOptimizer" title="gadma.optimizers.global_optimizer.GlobalOptimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.global_optimizer.GlobalOptimizer</span></code></a>, <a class="reference internal" href="#gadma.optimizers.optimizer.ConstrainedOptimizer" title="gadma.optimizers.optimizer.ConstrainedOptimizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.optimizer.ConstrainedOptimizer</span></code></a></p>
+<p>Class for run of global optimizer followed by local optimizer. It is
+classified as global optimizer with constrains. Function <a class="reference internal" href="#gadma.optimizers.combinations.GlobalOptimizerAndLocalOptimizer.optimize" title="gadma.optimizers.combinations.GlobalOptimizerAndLocalOptimizer.optimize"><code class="xref py py-meth docutils literal notranslate"><span class="pre">optimize()</span></code></a>
+got function and variables, runs global optimizer then filter discrete
+variables out and optimize the rest with local optimizer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>global_optimizer</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.GlobalOptimizer</span></code>) – Global optimizer to use inside.</p></li>
+<li><p><strong>local_optimizer</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.LocalOptimizer</span></code>) – Local optimizer to use inside.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="gadma.optimizers.combinations.GlobalOptimizerAndLocalOptimizer.optimize">
+<code class="sig-name descname">optimize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em>, <em class="sig-param"><span class="n">variables</span></em>, <em class="sig-param"><span class="n">args</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="n">global_num_init</span><span class="o">=</span><span class="default_value">50</span></em>, <em class="sig-param"><span class="n">X_init</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">Y_init</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">local_options</span><span class="o">=</span><span class="default_value">{}</span></em>, <em class="sig-param"><span class="n">linear_constrain</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">global_maxiter</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">local_maxiter</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">global_maxeval</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">local_maxeval</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">callback</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">eval_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">report_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">save_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">restore_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">restore_points_only</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">global_x_transform</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">local_x_transform</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.combinations.GlobalOptimizerAndLocalOptimizer.optimize" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> (<em>func</em>) – Objective function.</p></li>
+<li><p><strong>variables</strong> (list of class:<cite>gadma.utils.VariablesPool</cite>) – List of objective function variables.</p></li>
+<li><p><strong>args</strong> (<em>tuple</em>) – Arguments of <cite>f</cite>.</p></li>
+<li><p><strong>global_num_init</strong> (<em>int</em>) – Number of initial points for global optimizer.</p></li>
+<li><p><strong>X_init</strong> (<em>list</em>) – List of initial vectors.</p></li>
+<li><p><strong>Y_init</strong> (<em>list</em>) – List of values of target function on points of <cite>X_init</cite>.</p></li>
+<li><p><strong>local_options</strong> (<em>dict</em>) – Options for local optimizer.</p></li>
+<li><p><strong>linear_constrain</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.optimizers.LinearConstrain</span></code>) – Linear constrain on variables.</p></li>
+<li><p><strong>global_maxiter</strong> (<em>int</em>) – Maximum number of global optimizer iterations
+to run.</p></li>
+<li><p><strong>global_maxeval</strong> (<em>int</em>) – Maximum number of function evaluation during
+global optimization.</p></li>
+<li><p><strong>local_maxiter</strong> (<em>int</em>) – Maximum number of local optimizer iterations
+to run.</p></li>
+<li><p><strong>local_maxeval</strong> (<em>int</em>) – Maximum number of function evaluation during
+local optimization.</p></li>
+<li><p><strong>verbose</strong> (<em>int</em>) – Varbosity of reports. If 0 then no output.</p></li>
+<li><p><strong>callback</strong> (<em>func</em>) – callback to run after each iteration of both
+optimizers.</p></li>
+<li><p><strong>eval_file</strong> (<em>str</em>) – File to save of objective function evaluations.</p></li>
+<li><p><strong>report_file</strong> (<em>str</em>) – File to save report each <cite>verbose</cite> iteration. If
+None and <cite>verbose</cite> &gt; 0 then report will be printed
+to stdout.</p></li>
+<li><p><strong>save_file</strong> (<em>str</em>) – File to save information during the run.</p></li>
+<li><p><strong>restore_file</strong> (<em>str</em>) – File to restore previous run that was saved by
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">save()</span></code> method.</p></li>
+<li><p><strong>restore_points_only</strong> (<em>bool</em>) – Restore run last results and run again from
+it.</p></li>
+<li><p><strong>global_x_transform</strong> (<em>func</em>) – Transformation of vectors after restore
+before run of global optimizer.</p></li>
+<li><p><strong>local_x_transform</strong> (<em>bool</em>) – Transformation of vectors after restore
+before run of local optimizer.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-gadma.optimizers.optimizer_result">
+<span id="optimizer-result"></span><h2>Optimizer result<a class="headerlink" href="#module-gadma.optimizers.optimizer_result" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="gadma.optimizers.optimizer_result.OptimizerResult">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.optimizers.optimizer_result.</code><code class="sig-name descname">OptimizerResult</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">success</span><span class="p">:</span> <span class="n">bool</span></em>, <em class="sig-param"><span class="n">status</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">message</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">X</span></em>, <em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">n_eval</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">n_iter</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">X_out</span><span class="o">=</span><span class="default_value">[]</span></em>, <em class="sig-param"><span class="n">Y_out</span><span class="o">=</span><span class="default_value">[]</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.optimizer_result.OptimizerResult" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for keeping optimizers result.
+It is based on SciPy.optimize.OptimizeResult but have more information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – The solution of the optimization. The best value during run.</p></li>
+<li><p><strong>y</strong> – The value of objective function on x.</p></li>
+<li><p><strong>success</strong> (<em>bool</em>) – Whether or not the optimizer exited successfully.</p></li>
+<li><p><strong>status</strong> (<em>int</em>) – Termination status of the optimizer. Its value depends on
+the underlying solver. Refer to message for details.</p></li>
+<li><p><strong>message</strong> (<em>str</em>) – Description of the cause of the termination.</p></li>
+<li><p><strong>X</strong> – All solutions that were used in run.</p></li>
+<li><p><strong>Y</strong> – Values of objective function on X.</p></li>
+<li><p><strong>n_eval</strong> (<em>int</em>) – Number of evaluations of the objective functions performed
+by the optimizer.</p></li>
+<li><p><strong>n_iter</strong> (<em>int</em>) – Number of iterations performed by the optimizer.</p></li>
+<li><p><strong>X_out</strong> – Solutions that optimizer decides to show as important at
+the end.
+For example, it could be solutions of the last iteration.
+The most usefull usage is to restart optimizer or run new
+optimizer with passing it via X_init.</p></li>
+<li><p><strong>Y_out</strong> – Values of objective function on X_out.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="gadma.optimizers.optimizer_result.OptimizerResult.from_GPyOpt_OptimizerResult">
+<em class="property">static </em><code class="sig-name descname">from_GPyOpt_OptimizerResult</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">gpyopt_obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.optimizer_result.OptimizerResult.from_GPyOpt_OptimizerResult" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create OptimizerResult from instance of bayesian optimization.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>gpyopt_obj</strong> (<em>GPyOpt.methods.BayesianOptimization</em>) – Object of GPyOpt optimizer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.optimizer_result.OptimizerResult.from_SciPy_OptimizeResult">
+<em class="property">static </em><code class="sig-name descname">from_SciPy_OptimizeResult</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">scipy_result</span><span class="p">:</span> <span class="n">scipy.optimize.optimize.OptimizeResult</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.optimizer_result.OptimizerResult.from_SciPy_OptimizeResult" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create OptimizerResult from instance of SciPy.optimize.OptimizeResult.
+Please, note that some attributes will be empty.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-gadma.optimizers.linear_constrain">
+<span id="linear-constrain"></span><h2>Linear constrain<a class="headerlink" href="#module-gadma.optimizers.linear_constrain" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="gadma.optimizers.linear_constrain.LinearConstrain">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.optimizers.linear_constrain.</code><code class="sig-name descname">LinearConstrain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">A</span></em>, <em class="sig-param"><span class="n">lb</span></em>, <em class="sig-param"><span class="n">ub</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.linear_constrain.LinearConstrain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class containing linear constrain. <cite>lb &lt;= A*x &lt;= ub</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>A</strong> – Matrix.</p></li>
+<li><p><strong>lb</strong> – Lower bound.</p></li>
+<li><p><strong>ub</strong> – Upper bound.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="gadma.optimizers.linear_constrain.LinearConstrain.A">
+<em class="property">property </em><code class="sig-name descname">A</code><a class="headerlink" href="#gadma.optimizers.linear_constrain.LinearConstrain.A" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.linear_constrain.LinearConstrain.fits">
+<code class="sig-name descname">fits</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.linear_constrain.LinearConstrain.fits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks that <cite>x</cite> is good for constrain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> – Vector to check that <cite>lb &lt;= A*x &lt;=ub</cite>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.linear_constrain.LinearConstrain.lb">
+<em class="property">property </em><code class="sig-name descname">lb</code><a class="headerlink" href="#gadma.optimizers.linear_constrain.LinearConstrain.lb" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.linear_constrain.LinearConstrain.try_to_transform">
+<code class="sig-name descname">try_to_transform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.linear_constrain.LinearConstrain.try_to_transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Try to transform x to fit the constrain.
+Current implementation go through each pair of bounds and if <cite>x</cite>
+multiplied by the corresponding column of <cite>A</cite> does not fit bounds then
+values of <cite>x</cite> that take part in this constrain are changed so that
+they fit the bounds.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> – Vector to change.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>transformed x and bool if transformation was successful.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.optimizers.linear_constrain.LinearConstrain.ub">
+<em class="property">property </em><code class="sig-name descname">ub</code><a class="headerlink" href="#gadma.optimizers.linear_constrain.LinearConstrain.ub" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.optimizers.linear_constrain.my_dot">
+<code class="sig-prename descclassname">gadma.optimizers.linear_constrain.</code><code class="sig-name descname">my_dot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">A_i</span></em>, <em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.optimizers.linear_constrain.my_dot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Implemented easy version of multiplication of two vectors (row and column).</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="gadma.cli.html" class="btn btn-neutral float-right" title="Command line interface (cli package)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="gadma.code_generator.html" class="btn btn-neutral float-left" title="Code generation (code_generator package)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Ekaterina Noskova
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

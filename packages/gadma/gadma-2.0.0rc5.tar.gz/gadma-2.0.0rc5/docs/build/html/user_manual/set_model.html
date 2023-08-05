@@ -1,0 +1,398 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Specifying a model &mdash; GADMA 2.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Inference" href="inference.html" />
+    <link rel="prev" title="Specifying an engine" href="set_engine.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> GADMA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hands_on.html">Hands on</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="user_manual.html">User manual</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="input_data.html">Input data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_engine.html">Specifying an engine</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Specifying a model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dynamics-of-population-size-change">Dynamics of population size change</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#specifying-the-structure-of-the-model">Specifying the structure of the model</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#initial-structure">Initial structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#final-structure">Final structure</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#specifying-a-model-in-details">Specifying a model in details</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="inference.html">Inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="run_parallel.html">Repeats and parallel computing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="output.html">Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotting.html">Plotting model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theta.html">Theta0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="settings.html">Usefull settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extra_params_file.html">Extra parameter file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="units.html">Units of parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="confidence_intervals.html">Confidence intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="example_params_file.html">Example parameters file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_help.html">Getting help</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/gadma.html">API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GADMA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="user_manual.html">User manual</a> &raquo;</li>
+        
+      <li>Specifying a model</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/user_manual/set_model.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="specifying-a-model">
+<h1>Specifying a model<a class="headerlink" href="#specifying-a-model" title="Permalink to this headline">¶</a></h1>
+<p>GADMA could infer two base types of demographic model from command-line:</p>
+<ol class="arabic simple">
+<li><p>Demographic model with structure. Options <code class="docutils literal notranslate"><span class="pre">Initial</span> <span class="pre">structure</span></code> and/or <code class="docutils literal notranslate"><span class="pre">Final</span> <span class="pre">structure</span></code> are set and all available parameters are inferred. It is more flexible option as dynamics of population size change could be inferred.</p></li>
+<li><p>Custom demographic model as usual in <code class="docutils literal notranslate"><span class="pre">dadi</span></code> and <code class="docutils literal notranslate"><span class="pre">moments</span></code>. Options <code class="docutils literal notranslate"><span class="pre">Custom</span> <span class="pre">filename</span></code> (+ <code class="docutils literal notranslate"><span class="pre">Lower</span> <span class="pre">bound</span></code>, <code class="docutils literal notranslate"><span class="pre">Upper</span> <span class="pre">bound</span></code>, <code class="docutils literal notranslate"><span class="pre">Parameters</span> <span class="pre">identifiers</span></code>) should be set for this case. Using such model will give one more control on parameters but is less flexible.</p></li>
+</ol>
+<div class="section" id="dynamics-of-population-size-change">
+<h2>Dynamics of population size change<a class="headerlink" href="#dynamics-of-population-size-change" title="Permalink to this headline">¶</a></h2>
+<p><em>Three main demographic dynamics of population size change:</em></p>
+<a class="reference internal image-reference" href="../_images/sudden.png"><img alt="../_images/sudden.png" src="../_images/sudden.png" style="width: 30%;" /></a>
+<a class="reference internal image-reference" href="../_images/linear.png"><img alt="../_images/linear.png" src="../_images/linear.png" style="width: 30%;" /></a>
+<a class="reference internal image-reference" href="../_images/exponential.png"><img alt="../_images/exponential.png" src="../_images/exponential.png" style="width: 30%;" /></a>
+<p>In GADMA the size of population can be changed due to one of three dynamics: sudden change, linear change and exponential change of the effective population size.</p>
+<p>In order to infer a demographic model with sudden changes of populations sizes only, option <code class="docutils literal notranslate"><span class="pre">Only</span> <span class="pre">sudden</span></code> in the parameters file should be set to <code class="docutils literal notranslate"><span class="pre">True</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># param_file</span>
+<span class="o">...</span>
+<span class="n">Only</span> <span class="n">sudden</span> <span class="p">:</span> <span class="kc">True</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+<p>By default, this option is set to <code class="docutils literal notranslate"><span class="pre">False</span></code> and dynamics are found like other parameters of the demographic model.</p>
+</div>
+<div class="section" id="specifying-the-structure-of-the-model">
+<h2>Specifying the structure of the model<a class="headerlink" href="#specifying-the-structure-of-the-model" title="Permalink to this headline">¶</a></h2>
+<p>GADMA infers a demographic model from an AFS with nothing required from the user, except simple information, that determines how much the detailed model is required - <strong>the structure of the model</strong>.</p>
+<p>Assume a division of one population into two new subpopulations and a fixed temporal order of the populations: from the most anciently to the most recently formed population.</p>
+<p>We can divide time of our model into split events and time intervals, during which a certain dynamics of change of effective size is maintained for each population and migration rates are constant. The number of split events is one less than the number of populations under consideration. Now we can define the concept of the structure of the demographic model:</p>
+<dl class="simple">
+<dt><strong>Structure of the demographic model is</strong>:</dt><dd><ul class="simple">
+<li><p>the number of time intervals in case of one population;</p></li>
+<li><p>the number of time intervals as those that occur before and after a single split, in the case of  two populations;</p></li>
+<li><p>the number of time intervals prior to the first split, those between the first and second split, and the ones after the second split, in the case of three populations.</p></li>
+</ul>
+</dd>
+</dl>
+<p><em>Example of representation of demographic model. Time is on the axis of abscissa and population size is on the axis of ordinates. The structure of that model is (2,1,1). The colours reflect different demographic dynamics:</em></p>
+<a class="reference internal image-reference" href="../_images/colored_model.png"><img alt="../_images/colored_model.png" src="../_images/colored_model.png" style="width: 100%;" /></a>
+<p>For example, we can divide into time of the model on the figure above to four time intervals: <code class="docutils literal notranslate"><span class="pre">T1</span></code>, <code class="docutils literal notranslate"><span class="pre">T2</span></code>, <code class="docutils literal notranslate"><span class="pre">T3</span></code> and <code class="docutils literal notranslate"><span class="pre">T4</span></code>, and two populations’ splits: <code class="docutils literal notranslate"><span class="pre">S1</span></code> and <code class="docutils literal notranslate"><span class="pre">S2</span></code>. The structure of this model is <code class="docutils literal notranslate"><span class="pre">2,1,1</span></code>, because two intervals (<code class="docutils literal notranslate"><span class="pre">T1</span></code> as <code class="docutils literal notranslate"><span class="pre">T2</span></code>) before first split <code class="docutils literal notranslate"><span class="pre">S1</span></code>, one interval (<code class="docutils literal notranslate"><span class="pre">T3</span></code>) between first and second splits and one interval (<code class="docutils literal notranslate"><span class="pre">T4</span></code>) after second split <code class="docutils literal notranslate"><span class="pre">S2</span></code>.</p>
+<div class="section" id="initial-structure">
+<h3>Initial structure<a class="headerlink" href="#initial-structure" title="Permalink to this headline">¶</a></h3>
+<p>To specify the structure of the inferred model one should set <code class="docutils literal notranslate"><span class="pre">Initial</span> <span class="pre">structure</span></code> in the parameter file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># param_file</span>
+<span class="o">...</span>
+<span class="n">Initial</span> <span class="n">structure</span> <span class="p">:</span> <span class="mi">2</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># param_file</span>
+<span class="o">...</span>
+<span class="n">Initial</span> <span class="n">structure</span> <span class="p">:</span> <span class="mi">2</span><span class="p">,</span><span class="mi">1</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+<p>or</p>
+<p>..code-block:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># param_file</span>
+<span class="o">...</span>
+<span class="n">Initial</span> <span class="n">structure</span> <span class="p">:</span> <span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+<p>By default the simplest structure is used (1 or 1,1 or 1,1,1).</p>
+</div>
+<div class="section" id="final-structure">
+<h3>Final structure<a class="headerlink" href="#final-structure" title="Permalink to this headline">¶</a></h3>
+<p>It is also possible to start with a simpler structure in order to get to a more complex one. To do so one should specify option <code class="docutils literal notranslate"><span class="pre">Final</span> <span class="pre">structure</span></code> in the parameter file. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># param_file</span>
+<span class="n">Input</span> <span class="n">file</span> <span class="p">:</span> <span class="n">some_2d_fs</span><span class="o">.</span><span class="n">fs</span>
+
+<span class="n">Initial</span> <span class="n">structure</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span><span class="mi">1</span>
+<span class="n">Final</span>   <span class="n">structure</span> <span class="p">:</span> <span class="mi">2</span><span class="p">,</span><span class="mi">1</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+<p>Within this parameter file GADMA will find parameters for demographic model with <code class="docutils literal notranslate"><span class="pre">1,1</span></code> structure, then increase structure  <code class="docutils literal notranslate"><span class="pre">2,1</span></code> and find parameters for the model with this structure. Parameters identify within a more simple structure (in this case it is <code class="docutils literal notranslate"><span class="pre">1,1</span></code>) are used further to define the parameters of a more complex structure <code class="docutils literal notranslate"><span class="pre">(2,1)</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Structure increases random, so if one specifies initial structure to <code class="docutils literal notranslate"><span class="pre">1,1</span></code> and final to <code class="docutils literal notranslate"><span class="pre">2,2</span></code>, it is not guaranteed to final optimal parameters for demographic models with structures between <code class="docutils literal notranslate"><span class="pre">1,1</span></code> and <code class="docutils literal notranslate"><span class="pre">2,2</span></code>, i.e. intermediate state can be either <code class="docutils literal notranslate"><span class="pre">1,2</span></code> or <code class="docutils literal notranslate"><span class="pre">2,1</span></code>.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Use scheme with a more complex structure, as it produce more stable solutions.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Choose recommended values for model’s structure. Final structure should differ by one element from initial structure, for example, <code class="docutils literal notranslate"><span class="pre">1,1</span></code> and <code class="docutils literal notranslate"><span class="pre">2,1</span></code>; <code class="docutils literal notranslate"><span class="pre">1,2,1</span></code> and <code class="docutils literal notranslate"><span class="pre">2,2,1</span></code>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="specifying-a-model-in-details">
+<h2>Specifying a model in details<a class="headerlink" href="#specifying-a-model-in-details" title="Permalink to this headline">¶</a></h2>
+<p>It is also possible to use Genetic algorithm from GADMA to a proposed model that is defined as Python function using <code class="docutils literal notranslate"><span class="pre">dadi</span></code> or <code class="docutils literal notranslate"><span class="pre">moments</span></code>. It is the way that <code class="docutils literal notranslate"><span class="pre">dadi</span></code> and <code class="docutils literal notranslate"><span class="pre">moments</span></code> work with demographic models inference. To understand how to specify a model like that one can read manuals to the packages.</p>
+<p>For example, consider simple bottleneck model for one population: at time <code class="docutils literal notranslate"><span class="pre">TF</span> <span class="pre">+</span> <span class="pre">TB</span></code> in the past, an equilibrium population goes through a bottleneck of depth <code class="docutils literal notranslate"><span class="pre">nuB</span></code>, recovering to relative size <code class="docutils literal notranslate"><span class="pre">nuF</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">bottleneck</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">ns</span><span class="p">,</span> <span class="n">pts</span><span class="p">):</span>
+    <span class="n">nuB</span><span class="p">,</span> <span class="n">nuF</span><span class="p">,</span> <span class="n">TB</span><span class="p">,</span> <span class="n">TF</span> <span class="o">=</span> <span class="n">params</span>
+    <span class="n">xx</span> <span class="o">=</span> <span class="n">dadi</span><span class="o">.</span><span class="n">Numerics</span><span class="o">.</span><span class="n">default_grid</span><span class="p">(</span><span class="n">pts</span><span class="p">)</span>
+
+    <span class="n">phi</span> <span class="o">=</span> <span class="n">dadi</span><span class="o">.</span><span class="n">PhiManip</span><span class="o">.</span><span class="n">phi_1D</span><span class="p">(</span><span class="n">xx</span><span class="p">)</span>
+    <span class="n">phi</span> <span class="o">=</span> <span class="n">dadi</span><span class="o">.</span><span class="n">Integration</span><span class="o">.</span><span class="n">one_pop</span><span class="p">(</span><span class="n">phi</span><span class="p">,</span> <span class="n">xx</span><span class="p">,</span> <span class="n">TB</span><span class="p">,</span> <span class="n">nuB</span><span class="p">)</span>
+    <span class="n">phi</span> <span class="o">=</span> <span class="n">Integration</span><span class="o">.</span><span class="n">one_pop</span><span class="p">(</span><span class="n">phi</span><span class="p">,</span> <span class="n">xx</span><span class="p">,</span> <span class="n">TF</span><span class="p">,</span> <span class="n">nuF</span><span class="p">)</span>
+
+    <span class="n">fs</span> <span class="o">=</span> <span class="n">dadi</span><span class="o">.</span><span class="n">Spectrum</span><span class="o">.</span><span class="n">from_phi</span><span class="p">(</span><span class="n">phi</span><span class="p">,</span> <span class="n">ns</span><span class="p">,</span> <span class="p">(</span><span class="n">xx</span><span class="p">,))</span>
+    <span class="k">return</span> <span class="n">fs</span>
+</pre></div>
+</div>
+<p>To run optimization from GADMA one needs to run optimization function just like in <code class="docutils literal notranslate"><span class="pre">dadi</span></code> and <code class="docutils literal notranslate"><span class="pre">moments</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import GADMA&#39;s optimization function:</span>
+<span class="kn">import</span> <span class="nn">gadma</span>
+
+<span class="c1"># Specify input data and its parameters:</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">dadi</span><span class="o">.</span><span class="n">Spectrum</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="s2">&quot;fs_filename.fs&quot;</span><span class="p">)</span>
+<span class="n">ns</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">sample_sizes</span> <span class="c1"># size of AFS</span>
+<span class="n">pts</span> <span class="o">=</span> <span class="p">[</span><span class="mi">40</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">60</span><span class="p">]</span> <span class="c1"># grid size for dadi</span>
+
+<span class="c1"># Wrap our bottleneck function:</span>
+<span class="n">func_ex</span> <span class="o">=</span> <span class="n">dadi</span><span class="o">.</span><span class="n">Numerics</span><span class="o">.</span><span class="n">make_extrap_log_func</span><span class="p">(</span><span class="n">bottleneck</span><span class="p">)</span>
+
+<span class="c1"># Specify upper and lower bounds for parameters:</span>
+<span class="n">upper_bound</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">lower_bound</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1e-2</span><span class="p">,</span> <span class="mf">1e-2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+
+<span class="c1"># Run optimizations:</span>
+<span class="c1"># Beginning GADMA optimization</span>
+<span class="n">popt</span> <span class="o">=</span> <span class="n">gadma</span><span class="o">.</span><span class="n">Inference</span><span class="o">.</span><span class="n">optimize_ga</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">func_ex</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">&#39;dadi&#39;</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="n">pts_l</span><span class="p">,</span>
+                                   <span class="n">p_ids</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;nuB&#39;</span><span class="p">,</span> <span class="s1">&#39;nuF&#39;</span><span class="p">,</span> <span class="s1">&#39;TB&#39;</span><span class="p">,</span> <span class="s1">&#39;TF&#39;</span><span class="p">],</span>
+                                   <span class="n">lower_bound</span><span class="o">=</span><span class="n">lower_bound</span><span class="p">,</span>
+                                   <span class="n">upper_bound</span><span class="o">=</span><span class="n">upper_bound</span><span class="p">)</span>
+<span class="c1"># Beginning local optimization from dadi</span>
+<span class="n">popt</span> <span class="o">=</span> <span class="n">dadi</span><span class="o">.</span><span class="n">Inference</span><span class="o">.</span><span class="n">optimize_log</span><span class="p">(</span><span class="n">popt</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">func_ex</span><span class="p">,</span> <span class="n">pts_l</span><span class="p">,</span>
+                                   <span class="n">lower_bound</span><span class="o">=</span><span class="n">lower_bound</span><span class="p">,</span>
+                                   <span class="n">upper_bound</span><span class="o">=</span><span class="n">upper_bound</span><span class="p">,</span>
+                                   <span class="n">verbose</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">p0</span><span class="p">),</span> <span class="n">maxiter</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Found parameters: </span><span class="si">{0}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">popt</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As GADMA optimization is a global search algorithm, no initial parameters <code class="docutils literal notranslate"><span class="pre">p0</span></code> are set in <code class="docutils literal notranslate"><span class="pre">gadma.Inference.optimize_ga</span></code> function. However, it is possible to specify <code class="docutils literal notranslate"><span class="pre">X_init</span></code> with <code class="docutils literal notranslate"><span class="pre">p0</span></code> as one of known starting points:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initial parameters can be set too:</span>
+<span class="n">p0</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">]</span>
+
+<span class="c1"># Beginning GADMA optimization</span>
+<span class="n">popt</span> <span class="o">=</span> <span class="n">gadma</span><span class="o">.</span><span class="n">Inference</span><span class="o">.</span><span class="n">optimize_ga</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">func_ex</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">&#39;dadi&#39;</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="n">pts_l</span><span class="p">,</span> <span class="n">X_init</span><span class="o">=</span><span class="p">[</span><span class="n">p0</span><span class="p">],</span>
+                                   <span class="n">p_ids</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;nuB&#39;</span><span class="p">,</span> <span class="s1">&#39;nuF&#39;</span><span class="p">,</span> <span class="s1">&#39;TB&#39;</span><span class="p">,</span> <span class="s1">&#39;TF&#39;</span><span class="p">],</span>
+                                   <span class="n">lower_bound</span><span class="o">=</span><span class="n">lower_bound</span><span class="p">,</span>
+                                   <span class="n">upper_bound</span><span class="o">=</span><span class="n">upper_bound</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Function <code class="docutils literal notranslate"><span class="pre">gadma.Inference.optimize_ga</span></code> changed in GADMA version 2. For full documentation see API (<a class="reference internal" href="../api/gadma.Inference.html#gadma-inference"><span class="std std-ref">Inference module</span></a>).</p>
+</div>
+<p>If one wants to find other parameters for <code class="docutils literal notranslate"><span class="pre">gadma.Inference.optimize_ga</span></code> function:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">gadma</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">help</span><span class="p">(</span><span class="n">gadma</span><span class="o">.</span><span class="n">Inference</span><span class="o">.</span><span class="n">optimize_ga</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="inference.html" class="btn btn-neutral float-right" title="Inference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="set_engine.html" class="btn btn-neutral float-left" title="Specifying an engine" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Ekaterina Noskova
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

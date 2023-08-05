@@ -1,0 +1,408 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Command line interface (cli package) &mdash; GADMA 2.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Core of runs (core package)" href="gadma.core.html" />
+    <link rel="prev" title="Optimizers (optimizers package)" href="gadma.optimizers.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> GADMA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/hands_on.html">Hands on</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/user_manual.html">User manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/example_params_file.html">Example parameters file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_help.html">Getting help</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gadma.html">API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="gadma.Inference.html">Inference module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.data.html">Data (data package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.models.html">Models (models package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.engines.html">Engines (engines package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.code_generator.html">Code generation (code_generator package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.optimizers.html">Optimizers (optimizers package)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Command line interface (cli package)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-gadma.cli.arg_parser">Argument parsing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-gadma.cli.settings_storage">SettingsStorage</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.core.html">Core of runs (core package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.utils.html">Utils and variables (utils package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.run_ls_on_boot_data.html">Run local search on bootstrap</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GADMA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="gadma.html">API</a> &raquo;</li>
+        
+      <li>Command line interface (cli package)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/gadma.cli.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="command-line-interface-cli-package">
+<h1>Command line interface (cli package)<a class="headerlink" href="#command-line-interface-cli-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-gadma.cli.arg_parser">
+<span id="argument-parsing"></span><h2>Argument parsing<a class="headerlink" href="#module-gadma.cli.arg_parser" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="gadma.cli.arg_parser.ArgParser">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.cli.arg_parser.</code><code class="sig-name descname">ArgParser</code><span class="sig-paren">(</span><em class="sig-param">prog=None</em>, <em class="sig-param">usage=None</em>, <em class="sig-param">description=None</em>, <em class="sig-param">epilog=None</em>, <em class="sig-param">parents=[]</em>, <em class="sig-param">formatter_class=&lt;class 'argparse.HelpFormatter'&gt;</em>, <em class="sig-param">prefix_chars='-'</em>, <em class="sig-param">fromfile_prefix_chars=None</em>, <em class="sig-param">argument_default=None</em>, <em class="sig-param">conflict_handler='error'</em>, <em class="sig-param">add_help=True</em>, <em class="sig-param">allow_abbrev=True</em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.cli.arg_parser.ArgParser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.ArgumentParser</span></code></p>
+<p>Overrided class for argument parser.</p>
+<dl class="py method">
+<dt id="gadma.cli.arg_parser.ArgParser.format_help">
+<code class="sig-name descname">format_help</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.cli.arg_parser.ArgParser.format_help" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns usage by calling <a class="reference internal" href="#gadma.cli.arg_parser.usage" title="gadma.cli.arg_parser.usage"><code class="xref py py-func docutils literal notranslate"><span class="pre">usage()</span></code></a>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.cli.arg_parser.get_settings">
+<code class="sig-prename descclassname">gadma.cli.arg_parser.</code><code class="sig-name descname">get_settings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.cli.arg_parser.get_settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse args from command line and store them in options_storage.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>tuple of parsed arguments and settings storage.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.cli.arg_parser.test_args">
+<code class="sig-prename descclassname">gadma.cli.arg_parser.</code><code class="sig-name descname">test_args</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.cli.arg_parser.test_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Put default args for test case.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.cli.arg_parser.usage">
+<code class="sig-prename descclassname">gadma.cli.arg_parser.</code><code class="sig-name descname">usage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.cli.arg_parser.usage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns usage of tool.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.cli.arg_parser.version">
+<code class="sig-prename descclassname">gadma.cli.arg_parser.</code><code class="sig-name descname">version</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.cli.arg_parser.version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns string with current version.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-gadma.cli.settings_storage">
+<span id="settingsstorage"></span><h2>SettingsStorage<a class="headerlink" href="#module-gadma.cli.settings_storage" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="gadma.cli.settings_storage.SettingsStorage">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.cli.settings_storage.</code><code class="sig-name descname">SettingsStorage</code><a class="headerlink" href="#gadma.cli.settings_storage.SettingsStorage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class to hold all settings of GADMA run. All default values of settings
+are defined in <code class="xref py py-mod docutils literal notranslate"><span class="pre">gadma.cli.settings</span></code>.</p>
+<dl class="py method">
+<dt id="gadma.cli.settings_storage.SettingsStorage.bootstrap_data">
+<em class="property">property </em><code class="sig-name descname">bootstrap_data</code><a class="headerlink" href="#gadma.cli.settings_storage.SettingsStorage.bootstrap_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.cli.settings_storage.SettingsStorage.fractions">
+<em class="property">property </em><code class="sig-name descname">fractions</code><a class="headerlink" href="#gadma.cli.settings_storage.SettingsStorage.fractions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.cli.settings_storage.SettingsStorage.from_file">
+<em class="property">static </em><code class="sig-name descname">from_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">param_file</span></em>, <em class="sig-param"><span class="n">extra_param_file</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.cli.settings_storage.SettingsStorage.from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates new object with settings from files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>param_file</strong> – File with base parameters.</p></li>
+<li><p><strong>extra_param_file</strong> – File with extra parameters.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.cli.settings_storage.SettingsStorage.get_engine_args">
+<code class="sig-name descname">get_engine_args</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">engine_id</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.cli.settings_storage.SettingsStorage.get_engine_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <cite>args</cite> of <code class="xref py py-func docutils literal notranslate"><span class="pre">engine.evaluate()</span></code> function.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.cli.settings_storage.SettingsStorage.get_global_optimizer">
+<code class="sig-name descname">get_global_optimizer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.cli.settings_storage.SettingsStorage.get_global_optimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return object of global optimizer for optimization according to current
+settings.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.cli.settings_storage.SettingsStorage.get_linear_constrain_for_model">
+<code class="sig-name descname">get_linear_constrain_for_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.cli.settings_storage.SettingsStorage.get_linear_constrain_for_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns linear constrain for model based of setted upper bound of
+splits. NOT WORKING.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.cli.settings_storage.SettingsStorage.get_local_optimizer">
+<code class="sig-name descname">get_local_optimizer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.cli.settings_storage.SettingsStorage.get_local_optimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return object of local optimizer for optimization according to current
+settings.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.cli.settings_storage.SettingsStorage.get_model">
+<code class="sig-name descname">get_model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.cli.settings_storage.SettingsStorage.get_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns demographic model to use according to current settings.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.cli.settings_storage.SettingsStorage.get_optimizers_init_kwargs">
+<code class="sig-name descname">get_optimizers_init_kwargs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.cli.settings_storage.SettingsStorage.get_optimizers_init_kwargs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns kwargs for first run of optimization. (<cite>X_init</cite> and <cite>Y_init</cite>).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.cli.settings_storage.SettingsStorage.get_optimizers_kwargs">
+<code class="sig-name descname">get_optimizers_kwargs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.cli.settings_storage.SettingsStorage.get_optimizers_kwargs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns kwargs for optimizations. (<cite>args</cite> and <cite>verbose</cite>).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.cli.settings_storage.SettingsStorage.inner_data">
+<em class="property">property </em><code class="sig-name descname">inner_data</code><a class="headerlink" href="#gadma.cli.settings_storage.SettingsStorage.inner_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.cli.settings_storage.SettingsStorage.read_bootstrap_data">
+<code class="sig-name descname">read_bootstrap_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">return_filenames</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.cli.settings_storage.SettingsStorage.read_bootstrap_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads all data in the directory <cite>self.bootstrap_data</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>return_filenames</strong> – If True then each data is a tuple of
+corresponding filename and data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.cli.settings_storage.SettingsStorage.read_data">
+<code class="sig-name descname">read_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.cli.settings_storage.SettingsStorage.read_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads data with engine. Attribute of`engine` and <cite>data_holder</cite> should
+be set.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.cli.settings_storage.SettingsStorage.to_files">
+<code class="sig-name descname">to_files</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">params_file</span></em>, <em class="sig-param"><span class="n">extra_params_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.cli.settings_storage.SettingsStorage.to_files" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves current options to files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>params_file</strong> – File with base parameters.</p></li>
+<li><p><strong>extra_param_file</strong> – File with extra parameters.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.cli.settings_storage.SettingsStorage.update_from_file">
+<code class="sig-name descname">update_from_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">param_file</span></em>, <em class="sig-param"><span class="n">extra_param_file</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.cli.settings_storage.SettingsStorage.update_from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates settings by reading new from files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>param_file</strong> – File with base parameters.</p></li>
+<li><p><strong>extra_param_file</strong> – File with extra parameters.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="gadma.core.html" class="btn btn-neutral float-right" title="Core of runs (core package)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="gadma.optimizers.html" class="btn btn-neutral float-left" title="Optimizers (optimizers package)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Ekaterina Noskova
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

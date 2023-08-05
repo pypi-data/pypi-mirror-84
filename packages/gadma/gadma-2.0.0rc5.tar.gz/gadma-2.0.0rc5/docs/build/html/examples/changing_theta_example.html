@@ -1,0 +1,411 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Changing theta &mdash; GADMA 2.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> GADMA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/hands_on.html">Hands on</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/user_manual.html">User manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/example_params_file.html">Example parameters file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_help.html">Getting help</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/gadma.html">API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GADMA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Changing theta</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/examples/changing_theta_example.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="changing-theta">
+<h1>Changing theta<a class="headerlink" href="#changing-theta" title="Permalink to this headline">¶</a></h1>
+<p>This example shows how to change parameter values according to new
+<code class="docutils literal notranslate"><span class="pre">Theta0</span></code>.</p>
+<p>For example, we have run some GADMA inference for YRI, CEU data (from
+<a class="reference external" href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000695">Gutenkunst et al.
+2009</a>):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>%%bash
+cat params
+rm -rf gadma_result
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Input</span> <span class="n">file</span><span class="p">:</span> <span class="n">YRI_CEU</span><span class="o">.</span><span class="n">fs</span>
+<span class="n">Output</span> <span class="n">directory</span><span class="p">:</span> <span class="n">gadma_result</span>
+<span class="n">Initial</span> <span class="n">structure</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span><span class="mi">1</span>
+<span class="n">Symmetric</span> <span class="n">migrations</span><span class="p">:</span> <span class="kc">True</span>
+<span class="n">Silence</span><span class="p">:</span> <span class="kc">True</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>%%bash
+gadma -p params
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">187.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">3131.77</span><span class="p">:</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">200.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">3062.15</span><span class="p">:</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">78.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">1043.88</span><span class="p">:</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">38.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">505.05</span><span class="p">:</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">180.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">2543.21</span><span class="p">:</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">200.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">3254.83</span><span class="p">:</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">57.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">1133.56</span><span class="p">:</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">200.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">3062.15</span><span class="p">:</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">200.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">3254.83</span><span class="p">:</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">180.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">2714.75</span><span class="p">:</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">180.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">2543.21</span><span class="p">:</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">149.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">2327.05</span><span class="p">:</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">113.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">2028.48</span><span class="p">:</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">140.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">1814.52</span><span class="p">:</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">180.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">2714.75</span><span class="p">:</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">200.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">3062.15</span><span class="p">:</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">15.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">268.335</span><span class="p">:</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">200.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">3062.15</span><span class="p">:</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">180.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">2543.21</span><span class="p">:</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">180.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">2543.21</span><span class="p">:</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Model</span> <span class="ow">is</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="n">where</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">masked</span><span class="o">.</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">Inference</span><span class="p">:</span><span class="n">Number</span> <span class="n">of</span> <span class="n">affected</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">200.</span> <span class="n">Sum</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">those</span> <span class="n">entries</span> <span class="ow">is</span> <span class="mf">3062.15</span><span class="p">:</span>
+</pre></div>
+</div>
+<p>And we have result output:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>%%bash
+tail -n <span class="m">18</span> gadma_result/GADMA.log
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[001:28:14]
+All best by log-likelihood models
+Number      log-likelihood  Model
+Run 1       -1154.44        [ [ 5.0(t1), [1.602(nu11)], [Sud(dyn11)] ],     [ 1 pop split   10.23% (s1) [0.164(s1*nu11), 1.438((1-s1)*nu11)] ],     [ 1.945(t2), [2.817(nu21), 0.56(nu22)], [[0, 1.326(m2_12)], [1.326(m2_12), 0]], [Exp(dyn21), Sud(dyn22)] ] ]    m       (theta =  2072.52)
+
+You can find picture and python code of best model in the output directory.
+
+
+--Finish pipeline--
+
+
+You didn&#39;t specify theta at the beginning. If you want change it and rescale parameters, please see tutorial.
+
+Thank you for using GADMA!
+
+In case of any questions or problems, please contact: ekaterina.e.noskova@gmail.com
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Show picture of our best model</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+
+<span class="n">Image</span><span class="p">(</span><span class="s2">&quot;gadma_result/best_logLL_model.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/changing_theta_example_5_0.png" src="../_images/changing_theta_example_5_0.png" />
+<p>All parameters are in genetic units as we have not set <code class="docutils literal notranslate"><span class="pre">Theta0</span></code> and
+<code class="docutils literal notranslate"><span class="pre">Relative</span> <span class="pre">parameters:</span> <span class="pre">True</span></code> in the <code class="docutils literal notranslate"><span class="pre">params</span></code> file. So now we want to
+transform it. <code class="docutils literal notranslate"><span class="pre">Theta0</span></code> is the mutation flux that is the result of:</p>
+<p><span class="math notranslate nohighlight">\(\theta_0 = 4 \mu L\)</span>,</p>
+<p>where</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mu\)</span> - mutation rate per base per generation,</p></li>
+<li><p><span class="math notranslate nohighlight">\(L\)</span> - length of sequence that was used to build data.</p></li>
+</ul>
+<p>As data is from <a class="reference external" href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000695">Gutenkunst et al.
+2009</a>
+we could take this values from the paper:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mu = 2.35 \cdot 10^{-8}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(L = 4.04 \cdot 10^6\)</span></p></li>
+</ul>
+<p>Then our
+<span class="math notranslate nohighlight">\(\theta_0 = 4 \cdot \mu \cdot L = 4 \cdot 2.35 \cdot 10^{-8} \cdot 4.04 \cdot 10^6 = 0.37976\)</span></p>
+<div class="section" id="translation">
+<h2>Translation<a class="headerlink" href="#translation" title="Permalink to this headline">¶</a></h2>
+<p>According to our log file <code class="docutils literal notranslate"><span class="pre">GADMA.log</span></code> we have the following parameters
+of the demographic model: <code class="docutils literal notranslate"><span class="pre">t1</span></code>, <code class="docutils literal notranslate"><span class="pre">nu11</span></code>, <code class="docutils literal notranslate"><span class="pre">s1</span></code>, <code class="docutils literal notranslate"><span class="pre">t2</span></code>, <code class="docutils literal notranslate"><span class="pre">nu21</span></code>,
+<code class="docutils literal notranslate"><span class="pre">nu22</span></code>, <code class="docutils literal notranslate"><span class="pre">m2_12</span></code>. The genetic units are following:</p>
+<ul class="simple">
+<li><p>Time is in <span class="math notranslate nohighlight">\(2 \cdot N_{ref}\)</span> generations.</p></li>
+<li><p>Populations sizes are relative to <span class="math notranslate nohighlight">\(N_{ref}\)</span>.</p></li>
+<li><p>Migrations are in <span class="math notranslate nohighlight">\(\frac{1}{2 \cdot N_{ref}}\)</span></p></li>
+<li><p>Fractions of splits of populations should not be translated.</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(N_{ref}\)</span> is reference size that is usually size of ancestral
+population (it is so in GADMA) and could be received by:</p>
+<p><span class="math notranslate nohighlight">\(N_{ref} = \frac{\theta}{\theta0}\)</span></p>
+<p>And <span class="math notranslate nohighlight">\(\theta\)</span> is indicated in the output of our run. So we could
+use the following function to translate our parameters:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">translate</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">par_labels</span><span class="p">,</span> <span class="n">N_ref</span><span class="p">):</span>
+    <span class="n">new_values</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">value</span><span class="p">,</span> <span class="n">label</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">par_labels</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">label</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">):</span>  <span class="c1"># Time</span>
+            <span class="n">new_value</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">N_ref</span> <span class="o">*</span> <span class="n">value</span>
+        <span class="k">elif</span> <span class="n">label</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">):</span>  <span class="c1"># Population size</span>
+            <span class="n">new_value</span> <span class="o">=</span> <span class="n">N_ref</span> <span class="o">*</span> <span class="n">value</span>
+        <span class="k">elif</span> <span class="n">label</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">):</span>  <span class="c1"># Migration</span>
+            <span class="n">new_value</span> <span class="o">=</span> <span class="n">value</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">N_ref</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>  <span class="c1"># Fractions</span>
+            <span class="n">new_value</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="n">new_values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_value</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">new_values</span>
+</pre></div>
+</div>
+<p>Now let us get our parameters and theta from generated code of our best
+model, get <span class="math notranslate nohighlight">\(N_{ref}\)</span> and translate values:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>%%bash
+cp gadma_result/best_logLL_model_moments_code.py final_model_moments_code.py
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">final_model_moments_code</span> <span class="kn">import</span> <span class="n">p0</span><span class="p">,</span> <span class="n">theta</span>
+<span class="n">par_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;t1&#39;</span><span class="p">,</span> <span class="s1">&#39;nu11&#39;</span><span class="p">,</span> <span class="s1">&#39;s1&#39;</span><span class="p">,</span> <span class="s1">&#39;t2&#39;</span><span class="p">,</span> <span class="s1">&#39;nu21&#39;</span><span class="p">,</span> <span class="s1">&#39;nu22&#39;</span><span class="p">,</span> <span class="s1">&#39;m2_12&#39;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Labels of our parameters:</span><span class="se">\n</span><span class="si">{</span><span class="n">par_labels</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Values of our parameters:</span><span class="se">\n</span><span class="si">{</span><span class="n">p0</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Optimal theta:</span><span class="se">\n</span><span class="si">{</span><span class="n">theta</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># get N_ref</span>
+<span class="n">N_ref</span> <span class="o">=</span> <span class="n">theta</span> <span class="o">/</span> <span class="mf">0.37976</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Reference size:</span><span class="se">\n</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">N_ref</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Translate our parameters</span>
+<span class="n">tr_values</span> <span class="o">=</span> <span class="n">translate</span><span class="p">(</span><span class="n">p0</span><span class="p">,</span> <span class="n">par_labels</span><span class="p">,</span> <span class="n">N_ref</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Translated values of our parameters:</span><span class="se">\n</span><span class="si">{</span><span class="n">tr_values</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Print our parameters</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">So parameters of our demographic history are:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">par_labels</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="se">\t</span><span class="s2">=</span><span class="se">\t</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">tr_values</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="si">}</span><span class="se">\t</span><span class="s2">-</span><span class="se">\t</span><span class="s2">&quot;</span>
+      <span class="s2">&quot;Time between ancestral population size growth/decrease and its split in generations.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">par_labels</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="se">\t</span><span class="s2">=</span><span class="se">\t</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">tr_values</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="si">}</span><span class="se">\t</span><span class="s2">-</span><span class="se">\t</span><span class="s2">&quot;</span>
+      <span class="s2">&quot;Size of ancestral population after growth/decrease.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">par_labels</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="se">\t</span><span class="s2">=</span><span class="se">\t</span><span class="si">{</span><span class="n">tr_values</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="si">:</span><span class="s2"> .2f</span><span class="si">}</span><span class="se">\t</span><span class="s2">-</span><span class="se">\t</span><span class="s2">&quot;</span>
+      <span class="s2">&quot;Fraction of ancestral population split. Defines initial sizes of populations after split.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">par_labels</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="si">}</span><span class="se">\t</span><span class="s2">=</span><span class="se">\t</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">tr_values</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="si">}</span><span class="se">\t</span><span class="s2">-</span><span class="se">\t</span><span class="s2">&quot;</span>
+      <span class="s2">&quot;Time of ancestral population split in generations.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">par_labels</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="si">}</span><span class="se">\t</span><span class="s2">=</span><span class="se">\t</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">tr_values</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span><span class="si">}</span><span class="se">\t</span><span class="s2">-</span><span class="se">\t</span><span class="s2">&quot;</span>
+      <span class="s2">&quot;Final size of population 1.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">par_labels</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="si">}</span><span class="se">\t</span><span class="s2">=</span><span class="se">\t</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">tr_values</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span><span class="si">}</span><span class="se">\t</span><span class="s2">-</span><span class="se">\t</span><span class="s2">&quot;</span>
+      <span class="s2">&quot;Final size of population 2.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">par_labels</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span><span class="si">}</span><span class="se">\t</span><span class="s2">=</span><span class="se">\t</span><span class="si">{</span><span class="n">tr_values</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="si">:</span><span class="s2"> .2e</span><span class="si">}</span><span class="se">\t</span><span class="s2">-</span><span class="se">\t</span><span class="s2">&quot;</span>
+      <span class="s2">&quot;Symmetric migration rate between population 1 and population 2.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Labels</span> <span class="n">of</span> <span class="n">our</span> <span class="n">parameters</span><span class="p">:</span>
+<span class="p">[</span><span class="s1">&#39;t1&#39;</span><span class="p">,</span> <span class="s1">&#39;nu11&#39;</span><span class="p">,</span> <span class="s1">&#39;s1&#39;</span><span class="p">,</span> <span class="s1">&#39;t2&#39;</span><span class="p">,</span> <span class="s1">&#39;nu21&#39;</span><span class="p">,</span> <span class="s1">&#39;nu22&#39;</span><span class="p">,</span> <span class="s1">&#39;m2_12&#39;</span><span class="p">]</span>
+<span class="n">Values</span> <span class="n">of</span> <span class="n">our</span> <span class="n">parameters</span><span class="p">:</span>
+<span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">1.6017267183354083</span><span class="p">,</span> <span class="mf">0.10231452390998837</span><span class="p">,</span> <span class="mf">1.9450055497773657</span><span class="p">,</span> <span class="mf">2.817456387415982</span><span class="p">,</span> <span class="mf">0.559720261493847</span><span class="p">,</span> <span class="mf">1.3258648052909567</span><span class="p">]</span>
+<span class="n">Optimal</span> <span class="n">theta</span><span class="p">:</span>
+<span class="mf">2072.518176089871</span>
+
+<span class="n">Reference</span> <span class="n">size</span><span class="p">:</span>
+<span class="mi">5457</span>
+
+<span class="n">Translated</span> <span class="n">values</span> <span class="n">of</span> <span class="n">our</span> <span class="n">parameters</span><span class="p">:</span>
+<span class="p">[</span><span class="mf">54574.42005713795</span><span class="p">,</span> <span class="mf">8741.330674317765</span><span class="p">,</span> <span class="mf">0.10231452390998837</span><span class="p">,</span> <span class="mf">21229.5099774029</span><span class="p">,</span> <span class="mf">15376.10483795062</span><span class="p">,</span> <span class="mf">3054.6408665256304</span><span class="p">,</span> <span class="mf">0.00012147310075881814</span><span class="p">]</span>
+
+<span class="n">So</span> <span class="n">parameters</span> <span class="n">of</span> <span class="n">our</span> <span class="n">demographic</span> <span class="n">history</span> <span class="n">are</span><span class="p">:</span>
+<span class="n">t1</span>  <span class="o">=</span>       <span class="mi">54574</span>   <span class="o">-</span>       <span class="n">Time</span> <span class="n">between</span> <span class="n">ancestral</span> <span class="n">population</span> <span class="n">size</span> <span class="n">growth</span><span class="o">/</span><span class="n">decrease</span> <span class="ow">and</span> <span class="n">its</span> <span class="n">split</span> <span class="ow">in</span> <span class="n">generations</span><span class="o">.</span>
+<span class="n">nu11</span>        <span class="o">=</span>       <span class="mi">8741</span>    <span class="o">-</span>       <span class="n">Size</span> <span class="n">of</span> <span class="n">ancestral</span> <span class="n">population</span> <span class="n">after</span> <span class="n">growth</span><span class="o">/</span><span class="n">decrease</span><span class="o">.</span>
+<span class="n">s1</span>  <span class="o">=</span>        <span class="mf">0.10</span>   <span class="o">-</span>       <span class="n">Fraction</span> <span class="n">of</span> <span class="n">ancestral</span> <span class="n">population</span> <span class="n">split</span><span class="o">.</span> <span class="n">Defines</span> <span class="n">initial</span> <span class="n">sizes</span> <span class="n">of</span> <span class="n">populations</span> <span class="n">after</span> <span class="n">split</span><span class="o">.</span>
+<span class="n">t2</span>  <span class="o">=</span>       <span class="mi">21229</span>   <span class="o">-</span>       <span class="n">Time</span> <span class="n">of</span> <span class="n">ancestral</span> <span class="n">population</span> <span class="n">split</span> <span class="ow">in</span> <span class="n">generations</span><span class="o">.</span>
+<span class="n">nu21</span>        <span class="o">=</span>       <span class="mi">15376</span>   <span class="o">-</span>       <span class="n">Final</span> <span class="n">size</span> <span class="n">of</span> <span class="n">population</span> <span class="mf">1.</span>
+<span class="n">nu22</span>        <span class="o">=</span>       <span class="mi">3054</span>    <span class="o">-</span>       <span class="n">Final</span> <span class="n">size</span> <span class="n">of</span> <span class="n">population</span> <span class="mf">2.</span>
+<span class="n">m2_12</span>       <span class="o">=</span>        <span class="mf">1.21e-04</span>       <span class="o">-</span>       <span class="n">Symmetric</span> <span class="n">migration</span> <span class="n">rate</span> <span class="n">between</span> <span class="n">population</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">population</span> <span class="mf">2.</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Ekaterina Noskova
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

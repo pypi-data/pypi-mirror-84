@@ -1,0 +1,566 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>GADMA with structure model &mdash; GADMA 2.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="GADMA with custom model" href="custom_model_example.html" />
+    <link rel="prev" title="Examples" href="examples.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> GADMA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/hands_on.html">Hands on</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/user_manual.html">User manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/example_params_file.html">Example parameters file</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="examples.html">Examples</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">GADMA with structure model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#data">Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#demographic-model">Demographic model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#inference-with-gadma">Inference with GADMA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#output-directory">Output directory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#plots">Plots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#run-generated-code-with-final-model">Run generated code with final model</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="custom_model_example.html">GADMA with custom model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optimize_ga.html">Function gadma.optimize_ga</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_help.html">Getting help</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/gadma.html">API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GADMA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="examples.html">Examples</a> &raquo;</li>
+        
+      <li>GADMA with structure model</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/examples/structure_model_example.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="gadma-with-structure-model">
+<h1>GADMA with structure model<a class="headerlink" href="#gadma-with-structure-model" title="Permalink to this headline">¶</a></h1>
+<p>By default GADMA is run for demographic model with structure. Structure
+defines how detailed demographic model is and GADMA finds all possible
+parameters for this model. Here we show how to set structure and use
+scheme with increasing structure which provides more stable runs.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#We will need dadi to show plots of our data.</span>
+<span class="kn">import</span> <span class="nn">dadi</span>
+</pre></div>
+</div>
+<div class="section" id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
+<p>This data was originally build in paper <a class="reference external" href="https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.14266">Portik et al.
+2017</a>.</p>
+<p>We have two populations of Gaboon forest frog <em>Scotobleps gabonicus</em>:</p>
+<ul class="simple">
+<li><p>CVLN</p></li>
+<li><p>CVLS</p></li>
+</ul>
+<p>Folded AFS has size of 30x18. We have <code class="docutils literal notranslate"><span class="pre">.txt</span></code> file with SNP’s in SNP’s
+dadi format:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>%%bash
+<span class="c1"># First 1- lines of file</span>
+head -10 dadi_2pops_CVLN_CVLS_snps.txt
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Ingroup</span>     <span class="n">Outgroup</span>        <span class="n">Allele1</span> <span class="n">CVLN</span>    <span class="n">CVLS</span>    <span class="n">Allele2</span> <span class="n">CVLN</span>    <span class="n">CVLS</span>    <span class="n">Gene</span>    <span class="n">Position</span>
+<span class="o">-</span><span class="n">G</span><span class="o">-</span> <span class="o">---</span>     <span class="n">G</span>       <span class="mi">46</span>      <span class="mi">22</span>      <span class="n">A</span>       <span class="mi">0</span>       <span class="mi">4</span>       <span class="mi">1</span>       <span class="mi">15</span>
+<span class="o">-</span><span class="n">A</span><span class="o">-</span> <span class="o">---</span>     <span class="n">A</span>       <span class="mi">45</span>      <span class="mi">26</span>      <span class="n">T</span>       <span class="mi">1</span>       <span class="mi">0</span>       <span class="mi">6</span>       <span class="mi">15</span>
+<span class="o">-</span><span class="n">C</span><span class="o">-</span> <span class="o">---</span>     <span class="n">C</span>       <span class="mi">45</span>      <span class="mi">24</span>      <span class="n">T</span>       <span class="mi">1</span>       <span class="mi">0</span>       <span class="mi">11</span>      <span class="mi">15</span>
+<span class="o">-</span><span class="n">G</span><span class="o">-</span> <span class="o">---</span>     <span class="n">G</span>       <span class="mi">33</span>      <span class="mi">14</span>      <span class="n">T</span>       <span class="mi">1</span>       <span class="mi">6</span>       <span class="mi">12</span>      <span class="mi">15</span>
+<span class="o">-</span><span class="n">G</span><span class="o">-</span> <span class="o">---</span>     <span class="n">G</span>       <span class="mi">44</span>      <span class="mi">26</span>      <span class="n">C</span>       <span class="mi">2</span>       <span class="mi">0</span>       <span class="mi">13</span>      <span class="mi">15</span>
+<span class="o">-</span><span class="n">A</span><span class="o">-</span> <span class="o">---</span>     <span class="n">A</span>       <span class="mi">45</span>      <span class="mi">20</span>      <span class="n">T</span>       <span class="mi">1</span>       <span class="mi">0</span>       <span class="mi">17</span>      <span class="mi">15</span>
+<span class="o">-</span><span class="n">G</span><span class="o">-</span> <span class="o">---</span>     <span class="n">G</span>       <span class="mi">42</span>      <span class="mi">15</span>      <span class="n">A</span>       <span class="mi">4</span>       <span class="mi">5</span>       <span class="mi">22</span>      <span class="mi">15</span>
+<span class="o">-</span><span class="n">C</span><span class="o">-</span> <span class="o">---</span>     <span class="n">C</span>       <span class="mi">45</span>      <span class="mi">26</span>      <span class="n">G</span>       <span class="mi">1</span>       <span class="mi">0</span>       <span class="mi">31</span>      <span class="mi">15</span>
+<span class="o">-</span><span class="n">G</span><span class="o">-</span> <span class="o">---</span>     <span class="n">G</span>       <span class="mi">39</span>      <span class="mi">24</span>      <span class="n">T</span>       <span class="mi">1</span>       <span class="mi">0</span>       <span class="mi">33</span>      <span class="mi">15</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="demographic-model">
+<h2>Demographic model<a class="headerlink" href="#demographic-model" title="Permalink to this headline">¶</a></h2>
+<p>We want to build demographic model with two time intervals for ancestral
+population before split and one time interval after split and asymmetric
+migrations. So our <code class="docutils literal notranslate"><span class="pre">Final</span> <span class="pre">structure</span></code> should be (2, 1). We could use
+<code class="docutils literal notranslate"><span class="pre">Initial</span> <span class="pre">structure</span></code> of (1, 1) and then GADMA will first infer
+demographic history with (1, 1) structure and then increase it to (2,
+1).</p>
+</div>
+<div class="section" id="inference-with-gadma">
+<h2>Inference with GADMA<a class="headerlink" href="#inference-with-gadma" title="Permalink to this headline">¶</a></h2>
+<p>To run GADMA we should set parameters file:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>%%bash
+cat params_file
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set data first</span>
+<span class="n">Input</span> <span class="n">file</span><span class="p">:</span> <span class="n">dadi_2pops_CVLN_CVLS_snps</span><span class="o">.</span><span class="n">txt</span>
+<span class="c1"># As we have SNP&#39;s file format we need to set the following settings:</span>
+<span class="n">Population</span> <span class="n">labels</span><span class="p">:</span> <span class="n">CVLN</span><span class="p">,</span> <span class="n">CVLS</span>
+<span class="n">Projections</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span>  <span class="c1"># we downsample AFS for fast example 30, 18 original sizes</span>
+<span class="n">Outgroup</span><span class="p">:</span> <span class="kc">False</span>
+
+
+<span class="c1"># Output folder. It should be empty.</span>
+<span class="n">Output</span> <span class="n">directory</span><span class="p">:</span> <span class="n">gadma_result</span>
+
+
+<span class="c1"># Set engine for simulations. We use default moments</span>
+<span class="n">Engine</span><span class="p">:</span> <span class="n">moments</span>
+<span class="c1"># But we specify grid size for dadi for its usage in generated code</span>
+<span class="n">Pts</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span>
+
+
+<span class="c1"># Now set structures</span>
+<span class="n">Initial</span> <span class="n">structure</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span><span class="mi">1</span>
+<span class="n">Final</span> <span class="n">structure</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span><span class="mi">1</span>
+
+<span class="c1"># We could specify some additional properties of our model</span>
+<span class="c1"># We want asymmetric migrations</span>
+<span class="n">Symmetric</span> <span class="n">migrations</span><span class="p">:</span> <span class="kc">False</span>
+<span class="c1"># If True then any population splits into two new in some fraction.</span>
+<span class="c1"># If False then two new populations after split have its own initial</span>
+<span class="c1"># sizes. We choose the last option.</span>
+<span class="n">Split</span> <span class="n">fractions</span><span class="p">:</span> <span class="kc">False</span>
+
+
+<span class="c1"># No output in stdout</span>
+<span class="n">Silence</span><span class="p">:</span> <span class="kc">True</span>
+
+<span class="c1"># How many repeates to run and how many processes to use.</span>
+<span class="n">Number</span> <span class="n">of</span> <span class="n">repeats</span><span class="p">:</span> <span class="mi">2</span>
+<span class="n">Number</span> <span class="n">of</span> <span class="n">processes</span><span class="p">:</span> <span class="mi">2</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>%%bash
+<span class="c1"># As output directory should be empty we remove it if it exists</span>
+rm -rf gadma_result
+</pre></div>
+</div>
+<p>Now we could run GADMA:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>%%bash
+gadma -p params_file
+</pre></div>
+</div>
+<p>The run was fast because we downsample our AFS data and and use
+<code class="docutils literal notranslate"><span class="pre">moments</span></code> as engine. Also usually one should run a lot of repeats: we
+have 2 here (50 is better for example).</p>
+</div>
+<div class="section" id="output-directory">
+<h2>Output directory<a class="headerlink" href="#output-directory" title="Permalink to this headline">¶</a></h2>
+<p>Now let us look at the output directory. Short descriptions:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">1</span></code> - directory with output of first repeat.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">GADMA_GA.log</span></code> - log of run.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">current_best_logLL_model_moments_code.py</span></code> - generated code for
+the last best by log-likelihood model and <code class="docutils literal notranslate"><span class="pre">moments</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">current_best_logLL_model_dadi_code.py</span></code> - generated code for the
+last best by log-likelihood model and <code class="docutils literal notranslate"><span class="pre">dadi</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">final_best_logLL_model_moments_code.py</span></code> - generated code for
+the final model and <code class="docutils literal notranslate"><span class="pre">moments</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">final_best_logLL_model_dadi_code.py</span></code> - generated code for the
+final model and <code class="docutils literal notranslate"><span class="pre">dadi</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">eval_file</span></code> - File with all evaluations.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">save_file_1_1</span></code> - File with saved info about run for (1,1)
+strcuture.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">save_file_2_1</span></code> - File with saved info about run for (2,1)
+strcuture.</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">2</span></code> - directory with output of second repeat.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">GADMA.log</span></code> - the output of base run.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">best_logLL_model_moments_code.py</span></code> - result best model code for
+<code class="docutils literal notranslate"><span class="pre">moments</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">best_logLL_model_dadi_code.py</span></code> - result best model code for
+<code class="docutils literal notranslate"><span class="pre">dadi</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">best_logLL_model.png</span></code> - picture of best model.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">params_file</span></code> - settings of the base run.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">extra_params_file</span></code> - extra settings of the base run.</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>%%bash
+tree gadma_result
+<span class="c1"># If you do not have tree:</span>
+<span class="c1"># ls gadma_result</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>gadma_result
+├── 1
+│   ├── current_best_logLL_model_dadi_code.py
+│   ├── current_best_logLL_model_moments_code.py
+│   ├── eval_file
+│   ├── final_best_logLL_model_dadi_code.py
+│   ├── final_best_logLL_model_moments_code.py
+│   ├── final_best_logLL_model.png
+│   ├── GADMA_GA.log
+│   ├── save_file
+│   ├── save_file_1_1
+│   └── save_file_2_1
+├── 2
+│   ├── current_best_logLL_model_dadi_code.py
+│   ├── current_best_logLL_model_moments_code.py
+│   ├── eval_file
+│   ├── final_best_logLL_model_dadi_code.py
+│   ├── final_best_logLL_model_moments_code.py
+│   ├── final_best_logLL_model.png
+│   ├── GADMA_GA.log
+│   ├── save_file
+│   ├── save_file_1_1
+│   └── save_file_2_1
+├── best_logLL_model_dadi_code.py
+├── best_logLL_model_moments_code.py
+├── best_logLL_model.png
+├── extra_params_file
+├── GADMA.log
+└── params_file
+
+2 directories, 26 files
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>%%bash
+<span class="c1"># GADMA.log contains the same output we have during run. Let us see last lines again:</span>
+tail -n <span class="m">20</span> gadma_result/GADMA.log
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Finish genetic algorithm number 2
+
+[001:03:13]
+All best by log-likelihood models
+Number      log-likelihood  Model
+Run 2       -157.72 [ [ 0.104(t1), [0.684(nu11)], [Lin(dyn11)] ],   [ 1 pop split  [0.027(nu11_1), 0.425(nu11_2)] ],        [ 1.0(t2), [6.008(nu21), 1.305(nu22)], [[0, 0.00e+00(m2_12)], [1.184(m2_21), 0]], [Lin(dyn21), Exp(dyn22)] ] ]  m       (theta =  417.82)
+Run 1       -157.82 [ [ 0.465(t1), [1.0(nu11)], [Sud(dyn11)] ],     [ 1 pop split  [0.027(nu11_1), 0.448(nu11_2)] ],        [ 1.027(t2), [6.156(nu21), 1.317(nu22)], [[0, 0(m2_12)], [1.156(m2_21), 0]], [Lin(dyn21), Exp(dyn22)] ] ]       (theta =  407.99)
+
+You can find picture and python code of best model in the output directory.
+
+
+--Finish pipeline--
+
+
+You didn&#39;t specify theta at the beginning. If you want change it and rescale parameters, please see tutorial.
+
+Thank you for using GADMA!
+
+In case of any questions or problems, please contact: ekaterina.e.noskova@gmail.com
+</pre></div>
+</div>
+<div class="section" id="plots">
+<h3>Plots<a class="headerlink" href="#plots" title="Permalink to this headline">¶</a></h3>
+<p>File best_logLL_model.png have picture of our best model:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+
+<span class="n">Image</span><span class="p">(</span><span class="s2">&quot;gadma_result/best_logLL_model.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/structure_model_example_14_0.png" src="../_images/structure_model_example_14_0.png" />
+</div>
+<div class="section" id="run-generated-code-with-final-model">
+<h3>Run generated code with final model<a class="headerlink" href="#run-generated-code-with-final-model" title="Permalink to this headline">¶</a></h3>
+<p>We could run the code of final model to get its log-likelihood. GADMA in
+case of demographic model with structure generates code both for
+<code class="docutils literal notranslate"><span class="pre">dadi</span></code> and <code class="docutils literal notranslate"><span class="pre">moments</span></code>. We used <code class="docutils literal notranslate"><span class="pre">moments</span></code> so let is rerun code of
+final model:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>%%bash
+<span class="c1"># Show generated code</span>
+cat gadma_result/best_logLL_model_moments_code.py
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">moments</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">model_func</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">ns</span><span class="p">):</span>
+    <span class="n">t1</span><span class="p">,</span> <span class="n">nu11</span><span class="p">,</span> <span class="n">nu11_1</span><span class="p">,</span> <span class="n">nu11_2</span><span class="p">,</span> <span class="n">t2</span><span class="p">,</span> <span class="n">nu21</span><span class="p">,</span> <span class="n">nu22</span><span class="p">,</span> <span class="n">m2_12</span><span class="p">,</span> <span class="n">m2_21</span> <span class="o">=</span> <span class="n">params</span>
+    <span class="n">sts</span> <span class="o">=</span> <span class="n">moments</span><span class="o">.</span><span class="n">LinearSystem_1D</span><span class="o">.</span><span class="n">steady_state_1D</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">ns</span><span class="p">))</span>
+    <span class="n">fs</span> <span class="o">=</span> <span class="n">moments</span><span class="o">.</span><span class="n">Spectrum</span><span class="p">(</span><span class="n">sts</span><span class="p">)</span>
+    <span class="n">nu1_func</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="mf">1.0</span> <span class="o">+</span> <span class="p">(</span><span class="n">nu11</span> <span class="o">-</span> <span class="mf">1.0</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">t</span> <span class="o">/</span> <span class="n">t1</span><span class="p">)</span>
+    <span class="n">fs</span><span class="o">.</span><span class="n">integrate</span><span class="p">(</span><span class="n">tf</span><span class="o">=</span><span class="n">t1</span><span class="p">,</span> <span class="n">Npop</span><span class="o">=</span><span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="p">[</span><span class="n">nu1_func</span><span class="p">(</span><span class="n">t</span><span class="p">)],</span> <span class="n">dt_fac</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+    <span class="n">fs</span> <span class="o">=</span> <span class="n">moments</span><span class="o">.</span><span class="n">Manips</span><span class="o">.</span><span class="n">split_1D_to_2D</span><span class="p">(</span><span class="n">fs</span><span class="p">,</span> <span class="n">ns</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ns</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">nu1_func</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="n">nu11_1</span> <span class="o">+</span> <span class="p">(</span><span class="n">nu21</span> <span class="o">-</span> <span class="n">nu11_1</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">t</span> <span class="o">/</span> <span class="n">t2</span><span class="p">)</span>
+    <span class="n">nu2_func</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="n">nu11_2</span> <span class="o">*</span> <span class="p">(</span><span class="n">nu22</span> <span class="o">/</span> <span class="n">nu11_2</span><span class="p">)</span> <span class="o">**</span> <span class="p">(</span><span class="n">t</span> <span class="o">/</span> <span class="n">t2</span><span class="p">)</span>
+    <span class="n">migs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="n">m2_12</span><span class="p">],</span> <span class="p">[</span><span class="n">m2_21</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
+    <span class="n">fs</span><span class="o">.</span><span class="n">integrate</span><span class="p">(</span><span class="n">tf</span><span class="o">=</span><span class="n">t2</span><span class="p">,</span> <span class="n">Npop</span><span class="o">=</span><span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="p">[</span><span class="n">nu1_func</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> <span class="n">nu2_func</span><span class="p">(</span><span class="n">t</span><span class="p">)],</span> <span class="n">m</span><span class="o">=</span><span class="n">migs</span><span class="p">,</span> <span class="n">dt_fac</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">fs</span>
+
+<span class="n">dd</span> <span class="o">=</span> <span class="n">moments</span><span class="o">.</span><span class="n">Misc</span><span class="o">.</span><span class="n">make_data_dict</span><span class="p">(</span><span class="s1">&#39;/home/katenos/Workspace/popgen/GADMA/examples/structure_model/dadi_2pops_CVLN_CVLS_snps.txt&#39;</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">moments</span><span class="o">.</span><span class="n">Spectrum</span><span class="o">.</span><span class="n">from_data_dict</span><span class="p">(</span><span class="n">dd</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;CVLN&#39;</span><span class="p">,</span> <span class="s1">&#39;CVLS&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="n">polarized</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">ns</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">sample_sizes</span>
+
+<span class="n">p0</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.10376664756510699</span><span class="p">,</span> <span class="mf">0.6842060211009087</span><span class="p">,</span> <span class="mf">0.026658306623565005</span><span class="p">,</span> <span class="mf">0.4253055557299519</span><span class="p">,</span> <span class="mf">1.0003743981743454</span><span class="p">,</span> <span class="mf">6.008416210104161</span><span class="p">,</span> <span class="mf">1.305377168258428</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.1843358227264176</span><span class="p">]</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">model_func</span><span class="p">(</span><span class="n">p0</span><span class="p">,</span> <span class="n">ns</span><span class="p">)</span>
+<span class="n">ll_model</span> <span class="o">=</span> <span class="n">moments</span><span class="o">.</span><span class="n">Inference</span><span class="o">.</span><span class="n">ll_multinom</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Model log likelihood (LL(model, data)): </span><span class="si">{0}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ll_model</span><span class="p">))</span>
+
+<span class="n">theta</span> <span class="o">=</span> <span class="n">moments</span><span class="o">.</span><span class="n">Inference</span><span class="o">.</span><span class="n">optimal_sfs_scaling</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Optimal value of theta: </span><span class="si">{0}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">theta</span><span class="p">))</span>
+<span class="n">Nanc</span> <span class="o">=</span> <span class="kc">None</span>
+
+
+<span class="n">plot_ns</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">ns</span><span class="p">]</span>  <span class="c1"># small sizes for fast drawing</span>
+<span class="n">gen_mod</span> <span class="o">=</span> <span class="n">moments</span><span class="o">.</span><span class="n">ModelPlot</span><span class="o">.</span><span class="n">generate_model</span><span class="p">(</span><span class="n">model_func</span><span class="p">,</span>
+                                           <span class="n">p0</span><span class="p">,</span> <span class="n">plot_ns</span><span class="p">)</span>
+<span class="n">moments</span><span class="o">.</span><span class="n">ModelPlot</span><span class="o">.</span><span class="n">plot_model</span><span class="p">(</span><span class="n">gen_mod</span><span class="p">,</span>
+                             <span class="n">save_file</span><span class="o">=</span><span class="s1">&#39;model_from_GADMA.png&#39;</span><span class="p">,</span>
+                             <span class="n">fig_title</span><span class="o">=</span><span class="s1">&#39;Demographic model from GADMA&#39;</span><span class="p">,</span>
+                             <span class="n">draw_scale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                             <span class="n">pop_labels</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;CVLN&#39;</span><span class="p">,</span> <span class="s1">&#39;CVLS&#39;</span><span class="p">],</span>
+                             <span class="n">nref</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                             <span class="n">gen_time</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+                             <span class="n">gen_time_units</span><span class="o">=</span><span class="s1">&#39;generations&#39;</span><span class="p">,</span>
+                             <span class="n">reverse_timeline</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>%%bash
+<span class="c1"># Run generated code</span>
+python3 gadma_result/best_logLL_model_moments_code.py
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Model</span> <span class="n">log</span> <span class="n">likelihood</span> <span class="p">(</span><span class="n">LL</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">data</span><span class="p">)):</span> <span class="o">-</span><span class="mf">157.723240897732</span>
+<span class="n">Optimal</span> <span class="n">value</span> <span class="n">of</span> <span class="n">theta</span><span class="p">:</span> <span class="mf">417.8151649912695</span>
+</pre></div>
+</div>
+<pre class="literal-block">/usr/local/lib/python3.6/dist-packages/moments-1.0.6-py3.6-linux-x86_64.egg/moments/Spectrum_mod.py:1362: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use <cite>arr[tuple(seq)]</cite> instead of <cite>arr[seq]</cite>. In the future this will be interpreted as an array index, <cite>arr[np.array(seq)]</cite>, which will result either in an error or a different result.
+  slices[pop_ii]</pre>
+<p>After run of generated code new plot of model is saved to
+<code class="docutils literal notranslate"><span class="pre">model_from_GADMA.png</span></code>:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;model_from_GADMA.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/structure_model_example_19_0.png" src="../_images/structure_model_example_19_0.png" />
+<p>And now we could run generated code for <code class="docutils literal notranslate"><span class="pre">dadi</span></code>, model is the same but
+as it is another engine value of log-likelihood will be different.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>%%bash
+<span class="c1"># Show generated code</span>
+cat gadma_result/best_logLL_model_dadi_code.py
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">dadi</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">model_func</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">ns</span><span class="p">,</span> <span class="n">pts</span><span class="p">):</span>
+    <span class="n">t1</span><span class="p">,</span> <span class="n">nu11</span><span class="p">,</span> <span class="n">nu11_1</span><span class="p">,</span> <span class="n">nu11_2</span><span class="p">,</span> <span class="n">t2</span><span class="p">,</span> <span class="n">nu21</span><span class="p">,</span> <span class="n">nu22</span><span class="p">,</span> <span class="n">m2_12</span><span class="p">,</span> <span class="n">m2_21</span> <span class="o">=</span> <span class="n">params</span>
+    <span class="n">xx</span> <span class="o">=</span> <span class="n">dadi</span><span class="o">.</span><span class="n">Numerics</span><span class="o">.</span><span class="n">default_grid</span><span class="p">(</span><span class="n">pts</span><span class="p">)</span>
+    <span class="n">phi</span> <span class="o">=</span> <span class="n">dadi</span><span class="o">.</span><span class="n">PhiManip</span><span class="o">.</span><span class="n">phi_1D</span><span class="p">(</span><span class="n">xx</span><span class="p">)</span>
+    <span class="n">nu1_func</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="mf">1.0</span> <span class="o">+</span> <span class="p">(</span><span class="n">nu11</span> <span class="o">-</span> <span class="mf">1.0</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">t</span> <span class="o">/</span> <span class="n">t1</span><span class="p">)</span>
+    <span class="n">phi</span> <span class="o">=</span> <span class="n">dadi</span><span class="o">.</span><span class="n">Integration</span><span class="o">.</span><span class="n">one_pop</span><span class="p">(</span><span class="n">phi</span><span class="p">,</span> <span class="n">xx</span><span class="p">,</span> <span class="n">T</span><span class="o">=</span><span class="n">t1</span><span class="p">,</span> <span class="n">nu</span><span class="o">=</span><span class="n">nu1_func</span><span class="p">)</span>
+    <span class="n">phi</span> <span class="o">=</span> <span class="n">dadi</span><span class="o">.</span><span class="n">PhiManip</span><span class="o">.</span><span class="n">phi_1D_to_2D</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">phi</span><span class="p">)</span>
+    <span class="n">nu1_func</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="n">nu11_1</span> <span class="o">+</span> <span class="p">(</span><span class="n">nu21</span> <span class="o">-</span> <span class="n">nu11_1</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">t</span> <span class="o">/</span> <span class="n">t2</span><span class="p">)</span>
+    <span class="n">nu2_func</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="n">nu11_2</span> <span class="o">*</span> <span class="p">(</span><span class="n">nu22</span> <span class="o">/</span> <span class="n">nu11_2</span><span class="p">)</span> <span class="o">**</span> <span class="p">(</span><span class="n">t</span> <span class="o">/</span> <span class="n">t2</span><span class="p">)</span>
+    <span class="n">phi</span> <span class="o">=</span> <span class="n">dadi</span><span class="o">.</span><span class="n">Integration</span><span class="o">.</span><span class="n">two_pops</span><span class="p">(</span><span class="n">phi</span><span class="p">,</span> <span class="n">xx</span><span class="p">,</span> <span class="n">T</span><span class="o">=</span><span class="n">t2</span><span class="p">,</span> <span class="n">nu1</span><span class="o">=</span><span class="n">nu1_func</span><span class="p">,</span> <span class="n">nu2</span><span class="o">=</span><span class="n">nu2_func</span><span class="p">,</span> <span class="n">m12</span><span class="o">=</span><span class="n">m2_12</span><span class="p">,</span> <span class="n">m21</span><span class="o">=</span><span class="n">m2_21</span><span class="p">)</span>
+    <span class="n">sfs</span> <span class="o">=</span> <span class="n">dadi</span><span class="o">.</span><span class="n">Spectrum</span><span class="o">.</span><span class="n">from_phi</span><span class="p">(</span><span class="n">phi</span><span class="p">,</span> <span class="n">ns</span><span class="p">,</span> <span class="p">[</span><span class="n">xx</span><span class="p">]</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">ns</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">sfs</span>
+
+<span class="n">dd</span> <span class="o">=</span> <span class="n">dadi</span><span class="o">.</span><span class="n">Misc</span><span class="o">.</span><span class="n">make_data_dict</span><span class="p">(</span><span class="s1">&#39;/home/katenos/Workspace/popgen/GADMA/examples/structure_model/dadi_2pops_CVLN_CVLS_snps.txt&#39;</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">dadi</span><span class="o">.</span><span class="n">Spectrum</span><span class="o">.</span><span class="n">from_data_dict</span><span class="p">(</span><span class="n">dd</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;CVLN&#39;</span><span class="p">,</span> <span class="s1">&#39;CVLS&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="n">polarized</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">pts</span> <span class="o">=</span> <span class="p">[</span><span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
+<span class="n">ns</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">sample_sizes</span>
+
+<span class="n">p0</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.10376664756510699</span><span class="p">,</span> <span class="mf">0.6842060211009087</span><span class="p">,</span> <span class="mf">0.026658306623565005</span><span class="p">,</span> <span class="mf">0.4253055557299519</span><span class="p">,</span> <span class="mf">1.0003743981743454</span><span class="p">,</span> <span class="mf">6.008416210104161</span><span class="p">,</span> <span class="mf">1.305377168258428</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.1843358227264176</span><span class="p">]</span>
+<span class="n">func_ex</span> <span class="o">=</span> <span class="n">dadi</span><span class="o">.</span><span class="n">Numerics</span><span class="o">.</span><span class="n">make_extrap_log_func</span><span class="p">(</span><span class="n">model_func</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">func_ex</span><span class="p">(</span><span class="n">p0</span><span class="p">,</span> <span class="n">ns</span><span class="p">,</span> <span class="n">pts</span><span class="p">)</span>
+<span class="n">ll_model</span> <span class="o">=</span> <span class="n">dadi</span><span class="o">.</span><span class="n">Inference</span><span class="o">.</span><span class="n">ll_multinom</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Model log likelihood (LL(model, data)): </span><span class="si">{0}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ll_model</span><span class="p">))</span>
+
+<span class="n">theta</span> <span class="o">=</span> <span class="n">dadi</span><span class="o">.</span><span class="n">Inference</span><span class="o">.</span><span class="n">optimal_sfs_scaling</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Optimal value of theta: </span><span class="si">{0}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">theta</span><span class="p">))</span>
+<span class="n">Nanc</span> <span class="o">=</span> <span class="kc">None</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>%%bash
+<span class="c1"># Run generated code</span>
+python3 gadma_result/best_logLL_model_dadi_code.py
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Model</span> <span class="n">log</span> <span class="n">likelihood</span> <span class="p">(</span><span class="n">LL</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">data</span><span class="p">)):</span> <span class="o">-</span><span class="mf">159.2142532384653</span>
+<span class="n">Optimal</span> <span class="n">value</span> <span class="n">of</span> <span class="n">theta</span><span class="p">:</span> <span class="mf">419.8896797928062</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="custom_model_example.html" class="btn btn-neutral float-right" title="GADMA with custom model" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="examples.html" class="btn btn-neutral float-left" title="Examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Ekaterina Noskova
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

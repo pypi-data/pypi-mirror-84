@@ -1,0 +1,768 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Engines (engines package) &mdash; GADMA 2.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Code generation (code_generator package)" href="gadma.code_generator.html" />
+    <link rel="prev" title="Models (models package)" href="gadma.models.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> GADMA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/hands_on.html">Hands on</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/user_manual.html">User manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/example_params_file.html">Example parameters file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_help.html">Getting help</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gadma.html">API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="gadma.Inference.html">Inference module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.data.html">Data (data package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.models.html">Models (models package)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Engines (engines package)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-gadma.engines.engine">Base class Engine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-gadma.engines.dadi_moments_common">Class DadiOrMomentsEngine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-gadma.engines.dadi_engine">Dadi engine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-gadma.engines.moments_engine">Moments engine</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.code_generator.html">Code generation (code_generator package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.optimizers.html">Optimizers (optimizers package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.cli.html">Command line interface (cli package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.core.html">Core of runs (core package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.utils.html">Utils and variables (utils package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.run_ls_on_boot_data.html">Run local search on bootstrap</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GADMA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="gadma.html">API</a> &raquo;</li>
+        
+      <li>Engines (engines package)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/gadma.engines.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="engines-engines-package">
+<h1>Engines (engines package)<a class="headerlink" href="#engines-engines-package" title="Permalink to this headline">¶</a></h1>
+<p>GADMA supports several engines of demographic inference.
+Additional engine could be implemented by creating new subclass of class
+<a class="reference internal" href="#gadma.engines.engine.Engine" title="gadma.engines.engine.Engine"><code class="xref py py-class docutils literal notranslate"><span class="pre">Engine</span></code></a> and register it with function <a class="reference internal" href="#gadma.engines.engine.register_engine" title="gadma.engines.engine.register_engine"><code class="xref py py-func docutils literal notranslate"><span class="pre">register_engine()</span></code></a>.</p>
+<div class="section" id="module-gadma.engines.engine">
+<span id="base-class-engine"></span><h2>Base class Engine<a class="headerlink" href="#module-gadma.engines.engine" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="gadma.engines.engine.Engine">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.engines.engine.</code><code class="sig-name descname">Engine</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">model</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.engine.Engine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Abstract class representing an engine of the demographic inference.</p>
+<p>New engine should be inheritted from this class.
+Engine must have at least the <code class="docutils literal notranslate"><span class="pre">id</span></code>, <code class="docutils literal notranslate"><span class="pre">supported_models</span></code>,
+<code class="docutils literal notranslate"><span class="pre">supported_data</span></code> and <code class="docutils literal notranslate"><span class="pre">inner_data</span></code> attributes, and
+implementations of <a class="reference internal" href="#gadma.engines.engine.Engine.read_data" title="gadma.engines.engine.Engine.read_data"><code class="xref py py-func docutils literal notranslate"><span class="pre">read_data()</span></code></a>
+and <a class="reference internal" href="#gadma.engines.engine.Engine.evaluate" title="gadma.engines.engine.Engine.evaluate"><code class="xref py py-func docutils literal notranslate"><span class="pre">evaluate()</span></code></a> functions of this abstract class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><a class="reference internal" href="#gadma.engines.engine.Engine.id" title="gadma.engines.engine.Engine.id"><strong>Engine.id</strong></a> (<em>str</em>) – the unique identifier of the engine.</p></li>
+<li><p><a class="reference internal" href="#gadma.engines.engine.Engine.supported_models" title="gadma.engines.engine.Engine.supported_models"><strong>Engine.supported_models</strong></a> – list of supported <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code> classes.</p></li>
+<li><p><a class="reference internal" href="#gadma.engines.engine.Engine.supported_data" title="gadma.engines.engine.Engine.supported_data"><strong>Engine.supported_data</strong></a> – list of supported <code class="xref py py-class docutils literal notranslate"><span class="pre">DataHolder</span></code> classes.</p></li>
+<li><p><a class="reference internal" href="#gadma.engines.engine.Engine.inner_data_type" title="gadma.engines.engine.Engine.inner_data_type"><strong>Engine.inner_data_type</strong></a> – class of inner data that is used by engine.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="gadma.engines.engine.Engine.data">
+<em class="property">property </em><code class="sig-name descname">data</code><a class="headerlink" href="#gadma.engines.engine.Engine.data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.engine.Engine.evaluate">
+<code class="sig-name descname">evaluate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">options</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.engine.Engine.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluation of the objective function of the engine.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>values</strong> – values of variables of setted demographic model.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.engine.Engine.generate_code">
+<code class="sig-name descname">generate_code</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em>, <em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.engine.Engine.generate_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints nice formated code in the format of engine to file or returns
+it as string if no file is set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>values</strong> – values for the engine’s model.</p></li>
+<li><p><strong>filename</strong> – file to print code. If None then the string will
+be returned.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.engine.Engine.get_value_from_var2value">
+<em class="property">static </em><code class="sig-name descname">get_value_from_var2value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">var2value</span></em>, <em class="sig-param"><span class="n">entity</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.engine.Engine.get_value_from_var2value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.engines.engine.Engine.id">
+<code class="sig-name descname">id</code><em class="property"> = ''</em><a class="headerlink" href="#gadma.engines.engine.Engine.id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.engines.engine.Engine.inner_data_type">
+<code class="sig-name descname">inner_data_type</code><em class="property"> = None</em><a class="headerlink" href="#gadma.engines.engine.Engine.inner_data_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.engine.Engine.model">
+<em class="property">property </em><code class="sig-name descname">model</code><a class="headerlink" href="#gadma.engines.engine.Engine.model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.engine.Engine.read_data">
+<em class="property">static </em><code class="sig-name descname">read_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data_holder</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.engine.Engine.read_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads data from <cite>data_holder.filename</cite> in inner type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data_holder</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.DataHolder</span></code>) – Holder of data to read.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>readed data</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">Engine.inner_data_type</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.engine.Engine.set_and_evaluate">
+<code class="sig-name descname">set_and_evaluate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em>, <em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">options</span><span class="o">=</span><span class="default_value">{}</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.engine.Engine.set_and_evaluate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets model and data for the engine instance and evaluates the
+objective function via calling <a class="reference internal" href="#gadma.engines.engine.Engine.evaluate" title="gadma.engines.engine.Engine.evaluate"><code class="xref py py-func docutils literal notranslate"><span class="pre">evaluate()</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>values</strong> – values of variables of the demographic model.</p></li>
+<li><p><strong>model</strong> (class from :attr:<code class="docutils literal notranslate"><span class="pre">supported_models</span></code>) – model.</p></li>
+<li><p><strong>data</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.DataHolder</span></code> or :attr:<code class="docutils literal notranslate"><span class="pre">inner_data</span></code>) – holder of the data or raw data for the engine.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – if <cite>model</cite> is <cite>None</cite> and any was not            setted before; or if <cite>data_holder</cite> is <cite>None</cite> and any            was not setted before.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.engine.Engine.set_data">
+<code class="sig-name descname">set_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.engine.Engine.set_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets new data for the engine.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">DataHolder</span></code> or <code class="docutils literal notranslate"><span class="pre">inner_data_type</span></code>.) – new data.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – when <code class="docutils literal notranslate"><span class="pre">data</span></code> is not supported by the engine.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.engine.Engine.set_model">
+<code class="sig-name descname">set_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.engine.Engine.set_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets new model for the engine.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>model</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code>) – new model.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – when model is not supported by engine.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.engines.engine.Engine.supported_data">
+<code class="sig-name descname">supported_data</code><em class="property"> = []</em><a class="headerlink" href="#gadma.engines.engine.Engine.supported_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.engines.engine.Engine.supported_models">
+<code class="sig-name descname">supported_models</code><em class="property"> = []</em><a class="headerlink" href="#gadma.engines.engine.Engine.supported_models" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.engines.engine.all_engines">
+<code class="sig-prename descclassname">gadma.engines.engine.</code><code class="sig-name descname">all_engines</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.engine.all_engines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns an iterator over all registered engines of the demographic
+inference.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.engines.engine.get_engine">
+<code class="sig-prename descclassname">gadma.engines.engine.</code><code class="sig-name descname">get_engine</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.engine.get_engine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the engine of the demographic inference with the specified id.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – if engine with such <code class="docutils literal notranslate"><span class="pre">id</span></code> was not registered.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.engines.engine.register_engine">
+<code class="sig-prename descclassname">gadma.engines.engine.</code><code class="sig-name descname">register_engine</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">engine</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.engine.register_engine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Registers the specified engine of the demographic inference.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – if engine with the same <code class="docutils literal notranslate"><span class="pre">id</span></code> was already                        registered.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-gadma.engines.dadi_moments_common">
+<span id="class-dadiormomentsengine"></span><h2>Class DadiOrMomentsEngine<a class="headerlink" href="#module-gadma.engines.dadi_moments_common" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="gadma.engines.dadi_moments_common.DadiOrMomentsEngine">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.engines.dadi_moments_common.</code><code class="sig-name descname">DadiOrMomentsEngine</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">model</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.dadi_moments_common.DadiOrMomentsEngine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.engines.engine.Engine" title="gadma.engines.engine.Engine"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.engines.engine.Engine</span></code></a></p>
+<p>Base engine class for dadi and moments engines. It has all common methods
+of both engines.</p>
+<dl class="py attribute">
+<dt id="gadma.engines.dadi_moments_common.DadiOrMomentsEngine.base_module">
+<code class="sig-name descname">base_module</code><em class="property"> = None</em><a class="headerlink" href="#gadma.engines.dadi_moments_common.DadiOrMomentsEngine.base_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.dadi_moments_common.DadiOrMomentsEngine.draw_sfs_plots">
+<code class="sig-name descname">draw_sfs_plots</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em>, <em class="sig-param"><span class="n">grid_sizes</span></em>, <em class="sig-param"><span class="n">save_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">vmin</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.dadi_moments_common.DadiOrMomentsEngine.draw_sfs_plots" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws plots of SFS data for observed data and simulated by model data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>values</strong> (<em>list</em><em> or </em><em>dict</em>) – Values of the model parameters, it could be list of
+values or dictionary {variable name: value}.</p></li>
+<li><p><strong>grid_sizes</strong> – special parameter for numerical solutions. It is
+<cite>pts</cite> for <code class="xref py py-class docutils literal notranslate"><span class="pre">DadiEngine</span></code> and
+<cite>dt_fac</cite> for <code class="xref py py-class docutils literal notranslate"><span class="pre">MomentsEngine</span></code>.</p></li>
+<li><p><strong>save_file</strong> (<em>str</em>) – File to save picture. If None then picture will be
+displayed to the screen.</p></li>
+<li><p><strong>vmin</strong> (<em>float</em>) – Values in sfs below vmin are masked in plot. Should be
+positive.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.dadi_moments_common.DadiOrMomentsEngine.evaluate">
+<code class="sig-name descname">evaluate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em>, <em class="sig-param"><span class="n">grid_sizes</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.dadi_moments_common.DadiOrMomentsEngine.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simulates SFS from values and evaluate log likelihood between
+simulated SFS and observed SFS.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.dadi_moments_common.DadiOrMomentsEngine.generate_code">
+<code class="sig-name descname">generate_code</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">grid_sizes</span></em>, <em class="sig-param"><span class="n">nanc</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">gen_time</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">gen_time_units</span><span class="o">=</span><span class="default_value">'years'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.dadi_moments_common.DadiOrMomentsEngine.generate_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints nice formated code in the format of engine to file or returns
+it as string if no file is set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>values</strong> – values for the engine’s model.</p></li>
+<li><p><strong>filename</strong> – file to print code. If None then the string will
+be returned.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.dadi_moments_common.DadiOrMomentsEngine.get_N_ancestral">
+<code class="sig-name descname">get_N_ancestral</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em>, <em class="sig-param"><span class="n">grid_sizes</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.dadi_moments_common.DadiOrMomentsEngine.get_N_ancestral" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.dadi_moments_common.DadiOrMomentsEngine.get_N_ancestral_from_theta">
+<code class="sig-name descname">get_N_ancestral_from_theta</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">theta</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.dadi_moments_common.DadiOrMomentsEngine.get_N_ancestral_from_theta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.dadi_moments_common.DadiOrMomentsEngine.get_claic_component">
+<code class="sig-name descname">get_claic_component</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x0</span></em>, <em class="sig-param"><span class="n">all_boots</span></em>, <em class="sig-param"><span class="n">grid_sizes</span></em>, <em class="sig-param"><span class="n">eps</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.dadi_moments_common.DadiOrMomentsEngine.get_claic_component" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.dadi_moments_common.DadiOrMomentsEngine.get_theta">
+<code class="sig-name descname">get_theta</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em>, <em class="sig-param"><span class="n">grid_sizes</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.dadi_moments_common.DadiOrMomentsEngine.get_theta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.engines.dadi_moments_common.DadiOrMomentsEngine.id">
+<code class="sig-name descname">id</code><em class="property"> = 'dadi_or_moments'</em><a class="headerlink" href="#gadma.engines.dadi_moments_common.DadiOrMomentsEngine.id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.engines.dadi_moments_common.DadiOrMomentsEngine.inner_data_type">
+<code class="sig-name descname">inner_data_type</code><em class="property"> = None</em><a class="headerlink" href="#gadma.engines.dadi_moments_common.DadiOrMomentsEngine.inner_data_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.dadi_moments_common.DadiOrMomentsEngine.read_data">
+<em class="property">classmethod </em><code class="sig-name descname">read_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data_holder</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.dadi_moments_common.DadiOrMomentsEngine.read_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads SFS data from <cite>data_holder</cite>.</p>
+<p>Could read two types of data:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="xref py py-mod docutils literal notranslate"><span class="pre">dadi</span></code> SFS data type</p></li>
+<li><p><code class="xref py py-mod docutils literal notranslate"><span class="pre">dadi</span></code> SNP data type</p></li>
+</ul>
+</div></blockquote>
+<p>Check <code class="xref py py-mod docutils literal notranslate"><span class="pre">dadi</span></code> manual for additional information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data_holder</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">SFSDataHolder</span></code>) – holder of the data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.engines.dadi_moments_common.DadiOrMomentsEngine.supported_data">
+<code class="sig-name descname">supported_data</code><em class="property"> = [&lt;class 'gadma.data.data.SFSDataHolder'&gt;]</em><a class="headerlink" href="#gadma.engines.dadi_moments_common.DadiOrMomentsEngine.supported_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.engines.dadi_moments_common.DadiOrMomentsEngine.supported_models">
+<code class="sig-name descname">supported_models</code><em class="property"> = [&lt;class 'gadma.models.demographic_model.DemographicModel'&gt;, &lt;class 'gadma.models.structure_demographic_model.StructureDemographicModel'&gt;, &lt;class 'gadma.models.custom_demographic_model.CustomDemographicModel'&gt;]</em><a class="headerlink" href="#gadma.engines.dadi_moments_common.DadiOrMomentsEngine.supported_models" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.engines.dadi_moments_common.read_dadi_data">
+<code class="sig-prename descclassname">gadma.engines.dadi_moments_common.</code><code class="sig-name descname">read_dadi_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">module</span></em>, <em class="sig-param"><span class="n">data_holder</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.dadi_moments_common.read_dadi_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read file in one of dadi’s formats.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>module</strong> – dadi or moments module (or analogue)</p></li>
+<li><p><strong>data_holder</strong> (<em>gadma.data.DataHolder</em>) – object holding the data.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>(‘sfs’/’snp’, data)</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>(str, <code class="xref py py-class docutils literal notranslate"><span class="pre">dadi.Spectrum</span></code>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-gadma.engines.dadi_engine">
+<span id="dadi-engine"></span><h2>Dadi engine<a class="headerlink" href="#module-gadma.engines.dadi_engine" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="gadma.engines.dadi_engine.DadiEngine">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.engines.dadi_engine.</code><code class="sig-name descname">DadiEngine</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">model</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.dadi_engine.DadiEngine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.engines.dadi_moments_common.DadiOrMomentsEngine" title="gadma.engines.dadi_moments_common.DadiOrMomentsEngine"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.engines.dadi_moments_common.DadiOrMomentsEngine</span></code></a></p>
+<p>Engine for using <code class="xref py py-mod docutils literal notranslate"><span class="pre">dadi</span></code> for demographic inference.</p>
+<p>Citation of <code class="xref py py-mod docutils literal notranslate"><span class="pre">dadi</span></code>:</p>
+<p>Gutenkunst RN, Hernandez RD, Williamson SH, Bustamante CD (2009)
+Inferring the Joint Demographic History of Multiple Populations
+from Multidimensional SNP Frequency Data. PLoS Genet 5(10): e1000695.
+<a class="reference external" href="https://doi.org/10.1371/journal.pgen.1000695">https://doi.org/10.1371/journal.pgen.1000695</a></p>
+<dl class="py attribute">
+<dt id="gadma.engines.dadi_engine.DadiEngine.base_module">
+<code class="sig-name descname">base_module</code><em class="property"> = &lt;module 'dadi' from '/home/katenos/.local/lib/python3.6/site-packages/dadi/__init__.py'&gt;</em><a class="headerlink" href="#gadma.engines.dadi_engine.DadiEngine.base_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.dadi_engine.DadiEngine.draw_schematic_model_plot">
+<code class="sig-name descname">draw_schematic_model_plot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em>, <em class="sig-param"><span class="n">save_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fig_title</span><span class="o">=</span><span class="default_value">'Demographic Model from GADMA'</span></em>, <em class="sig-param"><span class="n">nref</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">gen_time</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">gen_time_units</span><span class="o">=</span><span class="default_value">'Generations'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.dadi_engine.DadiEngine.draw_schematic_model_plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws schematic plot of the model with values with
+<code class="xref py py-class docutils literal notranslate"><span class="pre">MomentsEngine</span></code> (!).
+See moments manual for more information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>values</strong> (<em>list</em><em> or </em><em>dict</em>) – Values of the model parameters, it could be list of
+values or dictionary {variable name: value}.</p></li>
+<li><p><strong>save_file</strong> (<em>str</em>) – File to save picture. If None then picture will be
+displayed to the screen.</p></li>
+<li><p><strong>fig_title</strong> (<em>str</em>) – Title of the figure.</p></li>
+<li><p><strong>nref</strong> (<em>int</em>) – An ancestral population size. If None then parameters
+will be drawn in genetic units.</p></li>
+<li><p><strong>gen_type</strong> (<em>float</em>) – Time of one generation.</p></li>
+<li><p><strong>gen_time_units</strong> – Units of <cite>gen_type</cite>. For example, it
+could be Years, Generations, Thousand Years and
+so on.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.dadi_engine.DadiEngine.evaluate">
+<code class="sig-name descname">evaluate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em>, <em class="sig-param"><span class="n">pts</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.dadi_engine.DadiEngine.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simulates SFS from values and evaluate log likelihood between
+simulated SFS and observed SFS.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.dadi_engine.DadiEngine.generate_code">
+<code class="sig-name descname">generate_code</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">pts</span></em>, <em class="sig-param"><span class="n">nanc</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">gen_time</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">gen_time_units</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.dadi_engine.DadiEngine.generate_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints nice formated code in the format of engine to file or returns
+it as string if no file is set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>values</strong> – values for the engine’s model.</p></li>
+<li><p><strong>filename</strong> – file to print code. If None then the string will
+be returned.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.dadi_engine.DadiEngine.get_theta">
+<code class="sig-name descname">get_theta</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em>, <em class="sig-param"><span class="n">pts</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.dadi_engine.DadiEngine.get_theta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.engines.dadi_engine.DadiEngine.id">
+<code class="sig-name descname">id</code><em class="property"> = 'dadi'</em><a class="headerlink" href="#gadma.engines.dadi_engine.DadiEngine.id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.engines.dadi_engine.DadiEngine.inner_data_type">
+<code class="sig-name descname">inner_data_type</code><a class="headerlink" href="#gadma.engines.dadi_engine.DadiEngine.inner_data_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">dadi.Spectrum_mod.Spectrum</span></code></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.dadi_engine.DadiEngine.simulate">
+<code class="sig-name descname">simulate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em>, <em class="sig-param"><span class="n">ns</span></em>, <em class="sig-param"><span class="n">pts</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.dadi_engine.DadiEngine.simulate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns simulated expected SFS for <code class="xref py py-attr docutils literal notranslate"><span class="pre">demographic_model</span></code> with
+values as parameters. Simulation is performed with <code class="xref py py-attr docutils literal notranslate"><span class="pre">self.pts</span></code>
+as grid points for numerical solutions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>values</strong> – values of demographic model parameters.</p></li>
+<li><p><strong>ns</strong> – sample sizes of the simulated SFS.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.engines.dadi_engine.DadiEngine.supported_data">
+<code class="sig-name descname">supported_data</code><em class="property"> = [&lt;class 'gadma.data.data.SFSDataHolder'&gt;]</em><a class="headerlink" href="#gadma.engines.dadi_engine.DadiEngine.supported_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-gadma.engines.moments_engine">
+<span id="moments-engine"></span><h2>Moments engine<a class="headerlink" href="#module-gadma.engines.moments_engine" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="gadma.engines.moments_engine.MomentsEngine">
+<em class="property">class </em><code class="sig-prename descclassname">gadma.engines.moments_engine.</code><code class="sig-name descname">MomentsEngine</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">model</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.moments_engine.MomentsEngine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gadma.engines.dadi_moments_common.DadiOrMomentsEngine" title="gadma.engines.dadi_moments_common.DadiOrMomentsEngine"><code class="xref py py-class docutils literal notranslate"><span class="pre">gadma.engines.dadi_moments_common.DadiOrMomentsEngine</span></code></a></p>
+<p>Engine for using <code class="xref py py-mod docutils literal notranslate"><span class="pre">moments</span></code> for demographic inference.</p>
+<p>Citation of <code class="xref py py-mod docutils literal notranslate"><span class="pre">moments</span></code>:</p>
+<p>Jouganous, J., Long, W., Ragsdale, A. P., &amp; Gravel, S. (2017).
+Inferring the joint demographic history of multiple populations:
+beyond the diffusion approximation. Genetics, 206(3), 1549-1567.</p>
+<dl class="py attribute">
+<dt id="gadma.engines.moments_engine.MomentsEngine.base_module">
+<code class="sig-name descname">base_module</code><em class="property"> = &lt;module 'moments' from '/usr/local/lib/python3.6/dist-packages/moments-1.0.6-py3.6-linux-x86_64.egg/moments/__init__.py'&gt;</em><a class="headerlink" href="#gadma.engines.moments_engine.MomentsEngine.base_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.engines.moments_engine.MomentsEngine.default_dt_fac">
+<code class="sig-name descname">default_dt_fac</code><em class="property"> = 0.01</em><a class="headerlink" href="#gadma.engines.moments_engine.MomentsEngine.default_dt_fac" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.moments_engine.MomentsEngine.draw_schematic_model_plot">
+<code class="sig-name descname">draw_schematic_model_plot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em>, <em class="sig-param"><span class="n">save_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fig_title</span><span class="o">=</span><span class="default_value">'Demographic Model from GADMA'</span></em>, <em class="sig-param"><span class="n">nref</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">gen_time</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">gen_time_units</span><span class="o">=</span><span class="default_value">'Generations'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.moments_engine.MomentsEngine.draw_schematic_model_plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws schematic plot of the model with values.
+See moments manual for more information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>values</strong> (<em>list</em><em> or </em><em>dict</em>) – Values of the model parameters, it could be list of
+values or dictionary {variable name: value}.</p></li>
+<li><p><strong>save_file</strong> (<em>str</em>) – File to save picture. If None then picture will be
+displayed to the screen.</p></li>
+<li><p><strong>fig_title</strong> (<em>str</em>) – Title of the figure.</p></li>
+<li><p><strong>nref</strong> (<em>int</em>) – An ancestral population size. If None then parameters
+will be drawn in genetic units.</p></li>
+<li><p><strong>gen_type</strong> (<em>float</em>) – Time of one generation. Should be in units of
+<code class="docutils literal notranslate"><span class="pre">gen_time_units</span></code>.</p></li>
+<li><p><strong>gen_time_units</strong> – Units of <cite>gen_type</cite>. For example, it
+could be Years, Generations, Thousand Years and
+so on.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.moments_engine.MomentsEngine.evaluate">
+<code class="sig-name descname">evaluate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em>, <em class="sig-param"><span class="n">dt_fac</span><span class="o">=</span><span class="default_value">0.01</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.moments_engine.MomentsEngine.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simulates SFS from values and evaluate log likelihood between
+simulated SFS and observed SFS.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.moments_engine.MomentsEngine.generate_code">
+<code class="sig-name descname">generate_code</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em>, <em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">dt_fac</span><span class="o">=</span><span class="default_value">0.01</span></em>, <em class="sig-param"><span class="n">nanc</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">gen_time</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">gen_time_units</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.moments_engine.MomentsEngine.generate_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints nice formated code in the format of engine to file or returns
+it as string if no file is set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>values</strong> – values for the engine’s model.</p></li>
+<li><p><strong>filename</strong> – file to print code. If None then the string will
+be returned.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.moments_engine.MomentsEngine.get_theta">
+<code class="sig-name descname">get_theta</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em>, <em class="sig-param"><span class="n">dt_fac</span><span class="o">=</span><span class="default_value">0.01</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.moments_engine.MomentsEngine.get_theta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.engines.moments_engine.MomentsEngine.id">
+<code class="sig-name descname">id</code><em class="property"> = 'moments'</em><a class="headerlink" href="#gadma.engines.moments_engine.MomentsEngine.id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.engines.moments_engine.MomentsEngine.inner_data_type">
+<code class="sig-name descname">inner_data_type</code><a class="headerlink" href="#gadma.engines.moments_engine.MomentsEngine.inner_data_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">moments.Spectrum_mod.Spectrum</span></code></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gadma.engines.moments_engine.MomentsEngine.simulate">
+<code class="sig-name descname">simulate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span></em>, <em class="sig-param"><span class="n">ns</span></em>, <em class="sig-param"><span class="n">dt_fac</span><span class="o">=</span><span class="default_value">0.01</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.engines.moments_engine.MomentsEngine.simulate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns simulated expected SFS for <code class="xref py py-attr docutils literal notranslate"><span class="pre">demographic_model</span></code> with
+values as parameters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>values</strong> – Values of demographic model parameters.</p></li>
+<li><p><strong>ns</strong> – sample sizes of the simulated SFS.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="gadma.engines.moments_engine.MomentsEngine.supported_data">
+<code class="sig-name descname">supported_data</code><em class="property"> = [&lt;class 'gadma.data.data.SFSDataHolder'&gt;]</em><a class="headerlink" href="#gadma.engines.moments_engine.MomentsEngine.supported_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="gadma.code_generator.html" class="btn btn-neutral float-right" title="Code generation (code_generator package)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="gadma.models.html" class="btn btn-neutral float-left" title="Models (models package)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Ekaterina Noskova
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

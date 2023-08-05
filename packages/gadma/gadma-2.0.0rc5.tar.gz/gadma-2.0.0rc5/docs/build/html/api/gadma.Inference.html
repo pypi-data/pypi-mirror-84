@@ -1,0 +1,367 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Inference module &mdash; GADMA 2.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Data (data package)" href="gadma.data.html" />
+    <link rel="prev" title="API" href="gadma.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> GADMA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/hands_on.html">Hands on</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/user_manual.html">User manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_manual/example_params_file.html">Example parameters file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_help.html">Getting help</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gadma.html">API</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Inference module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.data.html">Data (data package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.models.html">Models (models package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.engines.html">Engines (engines package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.code_generator.html">Code generation (code_generator package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.optimizers.html">Optimizers (optimizers package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.cli.html">Command line interface (cli package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.core.html">Core of runs (core package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.utils.html">Utils and variables (utils package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadma.run_ls_on_boot_data.html">Run local search on bootstrap</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GADMA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="gadma.html">API</a> &raquo;</li>
+        
+      <li>Inference module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/gadma.Inference.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-gadma.Inference">
+<span id="inference-module"></span><span id="gadma-inference"></span><h1>Inference module<a class="headerlink" href="#module-gadma.Inference" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="gadma.Inference.get_claic_score">
+<code class="sig-prename descclassname">gadma.Inference.</code><code class="sig-name descname">get_claic_score</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">func_ex</span></em>, <em class="sig-param"><span class="n">all_boot</span></em>, <em class="sig-param"><span class="n">p0</span></em>, <em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">engine</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">args</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="n">eps</span><span class="o">=</span><span class="default_value">0.01</span></em>, <em class="sig-param"><span class="n">pts</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.Inference.get_claic_score" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns CLAIC score for demographic model with specified value of <cite>eps</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>func_ex</strong> – Custom function to evaluate demographic model.
+Usually it is model_func function from generated code of
+GADMA. It is run by calling func_ex(p, ns, <a href="#id1"><span class="problematic" id="id2">*</span></a>args), where
+p is values of parameters and ns - sample sizes.</p></li>
+<li><p><strong>all_boot</strong> – List of bootstrapped data for CLAIC evaluation.</p></li>
+<li><p><strong>p0</strong> – Values of parameters for <code class="docutils literal notranslate"><span class="pre">func_ex</span></code> demographic model.</p></li>
+<li><p><strong>data</strong> – Original data for CLAIC evaluation. It is data that was used
+for demographic inference.</p></li>
+<li><p><strong>engine</strong> – Engine id for likelihood evaluations. Could be one of the
+following:
+- dadi
+- moments</p></li>
+<li><p><strong>args</strong> – Arguments of <code class="docutils literal notranslate"><span class="pre">func_ex</span></code> function.</p></li>
+<li><p><strong>eps</strong> – Step size for Hessian and gradient calculations. Usually is
+between 1e-5 and 1e-2. The smaller eps is the more accurate
+CLAIC value is.</p></li>
+<li><p><strong>pts</strong> – Deprecated parameter from GADMA version 1. If is set then
+warning is printed.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>returns: None if failed to get CLAIC due to singular matrix of Hessian.</dt><dd><p>Could be solved by increasing value of <code class="docutils literal notranslate"><span class="pre">eps</span></code>.</p>
+</dd>
+<dt>note: There differencies between GADMA v1 and GADMA v2, there is some</dt><dd><p>backward compatibility, but sometimes errors could be raised.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.Inference.load_data_from_dir">
+<code class="sig-prename descclassname">gadma.Inference.</code><code class="sig-name descname">load_data_from_dir</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dirname</span></em>, <em class="sig-param"><span class="n">engine</span></em>, <em class="sig-param"><span class="n">projections</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">population_labels</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">outgroup</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.Inference.load_data_from_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load data of SFS type from the directory. Data is considered to be
+very consistent: for example, it could be bootstrap of one dataset. All
+data should have the same projections, pop labels and so on.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dirname</strong> – Path to the directory with data.</p></li>
+<li><p><strong>engine</strong> – Engine id for data loading. Could be one of the following:
+- dadi
+- moments</p></li>
+<li><p><strong>projections</strong> – Sample size of data. If None it will be chosen
+automatically.</p></li>
+<li><p><strong>population_labels</strong> – Labels of populations in the data.</p></li>
+<li><p><strong>outgroup</strong> – If True then there is outgroup represented in files. Then
+unfolded SFS will be loaded if SFS is needed.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gadma.Inference.optimize_ga">
+<code class="sig-prename descclassname">gadma.Inference.</code><code class="sig-name descname">optimize_ga</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">model_func</span></em>, <em class="sig-param"><span class="n">engine</span></em>, <em class="sig-param"><span class="n">args</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="n">lower_bound</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">upper_bound</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">p_ids</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">X_init</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">Y_init</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">num_init</span><span class="o">=</span><span class="default_value">50</span></em>, <em class="sig-param"><span class="n">gen_size</span><span class="o">=</span><span class="default_value">10</span></em>, <em class="sig-param"><span class="n">mut_strength</span><span class="o">=</span><span class="default_value">0.2</span></em>, <em class="sig-param"><span class="n">const_mut_strength</span><span class="o">=</span><span class="default_value">1.1</span></em>, <em class="sig-param"><span class="n">mut_rate</span><span class="o">=</span><span class="default_value">0.2</span></em>, <em class="sig-param"><span class="n">const_mut_rate</span><span class="o">=</span><span class="default_value">1.2</span></em>, <em class="sig-param"><span class="n">eps</span><span class="o">=</span><span class="default_value">0.01</span></em>, <em class="sig-param"><span class="n">n_stuck_gen</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">n_elitism</span><span class="o">=</span><span class="default_value">2</span></em>, <em class="sig-param"><span class="n">p_mutation</span><span class="o">=</span><span class="default_value">0.3</span></em>, <em class="sig-param"><span class="n">p_crossover</span><span class="o">=</span><span class="default_value">0.3</span></em>, <em class="sig-param"><span class="n">p_random</span><span class="o">=</span><span class="default_value">0.2</span></em>, <em class="sig-param"><span class="n">ga_maxiter</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">ga_maxeval</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">local_optimizer</span><span class="o">=</span><span class="default_value">'BFGS_log'</span></em>, <em class="sig-param"><span class="n">ls_maxiter</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">ls_maxeval</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">callback</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">save_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">eval_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">report_file</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gadma.Inference.optimize_ga" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs genetic algorithm optimizer in order to find best values of
+parameters for <code class="docutils literal notranslate"><span class="pre">model_func</span></code> demographic model from <code class="docutils literal notranslate"><span class="pre">data</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> – Data for demographic inference.</p></li>
+<li><p><strong>model_func</strong> – Function to use for demographic inference that
+simulates SFS to compare it with <code class="docutils literal notranslate"><span class="pre">data</span></code> with
+log-likelihood. Is called by model_func(p, ns, <a href="#id3"><span class="problematic" id="id4">*</span></a>args),
+where p is values of parameters, ns - sample size and
+args - other arguments.</p></li>
+<li><p><strong>engine</strong> – Engine id for demographic inference. Could be one of the
+following:
+- ‘dadi’
+- ‘moments’</p></li>
+<li><p><strong>args</strong> – Arguments for <code class="docutils literal notranslate"><span class="pre">model_func</span></code> function. It is <cite>pts</cite> for
+<cite>dadi</cite> engine and could be <cite>dt_fac</cite> (or nothing) for
+<cite>moments</cite> engine.</p></li>
+<li><p><strong>lower_bound</strong> (<em>list</em>) – Lower bound for each demographic parameter.</p></li>
+<li><p><strong>upper_bound</strong> (<em>list</em>) – Upper bound for each demographic parameter.</p></li>
+<li><p><strong>p_ids</strong> (<em>list</em>) – <p>Parameter identifiers for demographic parameters. Each
+identifier should start with one of the following letters:
+- n or N for size of populations;
+- t or T for time;
+- m or M for migration rates;
+- s or S for fractional parameters (between 0 and 1).</p>
+<p>For example valid identifiers are:
+[‘nu1F’, ‘nu2B’, ‘nu2F’, ‘m’, ‘Tp’, ‘T’]</p>
+</p></li>
+<li><p><strong>X_init</strong> (<em>list of lists</em>) – list of initial example parameters. GA will be initialized
+by those values. It could be used for combinations of
+optimizations or for restart.</p></li>
+<li><p><strong>Y_init</strong> (<em>list</em>) – value of log-likelihood for values in X_init.</p></li>
+<li><p><strong>num_init</strong> (<em>int</em>) – Number of initial points to start Genetic algorithm.</p></li>
+<li><p><strong>gen_size</strong> (<em>int</em>) – Size of generation of genetic algorithm. That is number
+of individuals/solutions on each step of GA.</p></li>
+<li><p><strong>mut_strength</strong> (<em>float</em>) – Mean fraction of parameters for mutation in GA.</p></li>
+<li><p><strong>const_mut_strength</strong> (<em>float</em>) – Const to change <code class="docutils literal notranslate"><span class="pre">mut_strength</span></code> during
+GA according to one-fifth rule.</p></li>
+<li><p><strong>mut_rate</strong> (<em>float</em>) – Mean rate of mutation in GA.</p></li>
+<li><p><strong>const_mut_rate</strong> (<em>float</em>) – Const to change <code class="docutils literal notranslate"><span class="pre">mut_rate</span></code> during GA.</p></li>
+<li><p><strong>eps</strong> (<em>float</em>) – const for model’s log likelihood compare.
+Model is better if its log likelihood is greater than
+log likelihood of another model by epsilon.</p></li>
+<li><p><strong>n_stuck_gen</strong> (<em>int</em>) – Number of iterations for GA stopping: GA stops when
+it can’t improve model during n_stuck_gen generations.</p></li>
+<li><p><strong>n_elitism</strong> (<em>int</em>) – Number of best models from previous generation in GA
+that will be taken to new iteration.</p></li>
+<li><p><strong>p_mutation</strong> (<em>float</em>) – probability of mutation in one generation of GA.</p></li>
+<li><p><strong>p_crossover</strong> (<em>float</em>) – probability of crossover in one generation of GA.</p></li>
+<li><p><strong>p_random</strong> (<em>float</em>) – Probability of random generated individual in one
+generation of GA.</p></li>
+<li><p><strong>ga_maxiter</strong> (<em>int</em>) – Maximum number of generations in GA.</p></li>
+<li><p><strong>ga_maxeval</strong> (<em>int</em>) – Maximum number of function evaluations in GA.</p></li>
+<li><p><strong>local_optimizer</strong> (<em>str</em>) – Local optimizer name to run for best solution of
+GA. Could be None or one of:
+* ‘BFGS’
+* ‘BFGS_log’
+* ‘L-BFGS-B’
+* ‘L-BFGS-B_log’
+* ‘Powell’
+* ‘Powell_log’
+* ‘Nelder-Mead’
+* ‘Nelder-Mead_log’</p></li>
+<li><p><strong>ls_maxiter</strong> (<em>int</em>) – Maximum number of iterations in local optimization.</p></li>
+<li><p><strong>ls_maxeval</strong> (<em>int</em>) – Maximum number of function evaluations in local
+optimization.</p></li>
+<li><p><strong>verbose</strong> (<em>int</em>) – Verbose of output.</p></li>
+<li><p><strong>callback</strong> – callback to call during optimizations. (callback(x, y))</p></li>
+<li><p><strong>save_file</strong> (<em>str</em>) – File for save GA’s state on current generation.</p></li>
+<li><p><strong>eval_file</strong> – File to save all evaluations during GA and local
+optimization.</p></li>
+<li><p><strong>report_file</strong> – File to write reports of GA and local optimization.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="gadma.data.html" class="btn btn-neutral float-right" title="Data (data package)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="gadma.html" class="btn btn-neutral float-left" title="API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Ekaterina Noskova
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,347 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Theta0 &mdash; GADMA 2.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Usefull settings" href="settings.html" />
+    <link rel="prev" title="Plotting model" href="plotting.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> GADMA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hands_on.html">Hands on</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="user_manual.html">User manual</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="input_data.html">Input data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_engine.html">Specifying an engine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_model.html">Specifying a model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inference.html">Inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="run_parallel.html">Repeats and parallel computing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="output.html">Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotting.html">Plotting model</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Theta0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#estimating-theta0">Estimating Theta0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changing-theta0">Changing Theta0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-of-theta0-and-time-for-generation">Examples of Theta0 and time for generation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="settings.html">Usefull settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extra_params_file.html">Extra parameter file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="units.html">Units of parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="confidence_intervals.html">Confidence intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="example_params_file.html">Example parameters file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_help.html">Getting help</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/gadma.html">API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GADMA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="user_manual.html">User manual</a> &raquo;</li>
+        
+      <li>Theta0</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/user_manual/theta.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="theta0">
+<h1>Theta0<a class="headerlink" href="#theta0" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">Theta0</span></code> is equal to the expected number of mutations that occur in one chromosome in one generation in the infinite-sited model. GADMA can scale all values of demographic model parameters due to known value of <code class="docutils literal notranslate"><span class="pre">Theta0</span></code>. However, it is not always possible to find it. There is a way to solve this problem: one can set <code class="docutils literal notranslate"><span class="pre">Theta0</span></code> to <code class="docutils literal notranslate"><span class="pre">None</span></code> or just not specify it at all, so GADMA will take it as <code class="docutils literal notranslate"><span class="pre">1.0</span></code> and after launch one can scale result values due to found <code class="docutils literal notranslate"><span class="pre">Theta0</span></code>.</p>
+<p>The alternative way to set <code class="docutils literal notranslate"><span class="pre">Theta0</span></code> is to specify both mutation rate and length of the sequence in parameters file instead. Then <code class="docutils literal notranslate"><span class="pre">Theta0</span></code> will be calculated automatcally.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># param file</span>
+<span class="o">...</span>
+<span class="n">Mutation</span> <span class="n">rate</span><span class="p">:</span> <span class="mf">2.35e-8</span>
+<span class="n">Sequence</span> <span class="n">length</span><span class="p">:</span> <span class="mf">4.04e6</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+<div class="section" id="estimating-theta0">
+<h2>Estimating Theta0<a class="headerlink" href="#estimating-theta0" title="Permalink to this headline">¶</a></h2>
+<p>If <code class="docutils literal notranslate"><span class="pre">mu</span></code> is the neutral mutation rate per site per generation and <code class="docutils literal notranslate"><span class="pre">L</span></code> is the length of the sequence, then:</p>
+<p><code class="docutils literal notranslate"><span class="pre">Theta_0</span></code> = 4 * <code class="docutils literal notranslate"><span class="pre">mu</span></code> * <code class="docutils literal notranslate"><span class="pre">L</span></code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">L</span></code> is the effective sequence length, which accounts for losses in alignment and missed calls.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">mu</span></code> should be estimated based on generation time. One can leave <code class="docutils literal notranslate"><span class="pre">Time</span> <span class="pre">per</span> <span class="pre">generation</span></code> option in the parameter file unspecified (then time on the model’s plots will be in the genetic units), but one should recalculate <code class="docutils literal notranslate"><span class="pre">mu</span></code>!</p>
+</div>
+<dl>
+<dt><strong>For example (Gutenkunst et al, 2009)</strong>:</dt><dd><p>We estimate the neutral mutation rate <code class="docutils literal notranslate"><span class="pre">mu</span></code> using the divergence between human and chimp. Comparing aligned sequences in our data, we estimate the divergence to be 1.13%. Assuming a divergence time of 6 million years and a mean generation time for human and chimp over this interval of 25 years, we have</p>
+<p><code class="docutils literal notranslate"><span class="pre">mu</span></code> = 0.0113 * 25 / (2 * 6 * 10^6) = 2.35 * 10^{-8} (per generation).</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="changing-theta0">
+<h2>Changing Theta0<a class="headerlink" href="#changing-theta0" title="Permalink to this headline">¶</a></h2>
+<p>If GADMA was launched with one <code class="docutils literal notranslate"><span class="pre">Theta0</span></code> and now one wants to use another or if it was launched with default <a href="#id1"><span class="problematic" id="id2">``</span></a>Theta0 = 1``and now one has estimated its real value, model’s parameters can be simply scaled:</p>
+<p>Let  <code class="docutils literal notranslate"><span class="pre">a</span></code> = <code class="docutils literal notranslate"><span class="pre">Theta0_NEW</span></code> / <code class="docutils literal notranslate"><span class="pre">Theta0_OLD</span></code>,</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Size of population / <code class="docutils literal notranslate"><span class="pre">a</span></code>,</p></li>
+<li><p>Time / <code class="docutils literal notranslate"><span class="pre">a</span></code>,</p></li>
+<li><p>Migration rates * <code class="docutils literal notranslate"><span class="pre">a</span></code>,</p></li>
+<li><p>Split percent stay the same.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="examples-of-theta0-and-time-for-generation">
+<h2>Examples of Theta0 and time for generation<a class="headerlink" href="#examples-of-theta0-and-time-for-generation" title="Permalink to this headline">¶</a></h2>
+<p>The following tables produce different possible values for the demographic model inference for three populations of modern people: YRI, CEU, CHB.</p>
+<p>Examples of different values of generation time and its influence on <code class="docutils literal notranslate"><span class="pre">mu</span></code> and <code class="docutils literal notranslate"><span class="pre">Theta0</span></code>:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+<col style="width: 23%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>FS filename</p></th>
+<th class="head"><p>Gen. time
+(years)</p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">mu</span></code>
+(per site per gen.)</p></th>
+<th class="head"><blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">L</span></code></p>
+</div></blockquote>
+<p>(base pair)</p>
+</th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">Theta0</span></code>
+(per chr. per gen.)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>YRI_CEU_CHB.fs</p></td>
+<td><p>25
+(Gutenkunst et al., 2009)</p></td>
+<td><p>2.35 * 10^{-8}
+(Gutenkunst et al., 2009)</p></td>
+<td><p>4.04 * 10^6
+(Gutenkunst et al., 2009)</p></td>
+<td><p>0.37976</p></td>
+</tr>
+<tr class="row-odd"><td><p>YRI_CEU_CHB.fs</p></td>
+<td><p>24
+(Lapierre et al., 2017)</p></td>
+<td><p>2.26 * 10^{-8}
+(Gutenkunst et al., 2009)</p></td>
+<td><p>4.04 * 10^6
+(Gutenkunst et al., 2009)</p></td>
+<td><p>0.36521</p></td>
+</tr>
+<tr class="row-even"><td><p>YRI_CEU_CHB.fs</p></td>
+<td><p>29
+(Jouganous et al., 2017)</p></td>
+<td><p>1.44 * 10^(-8)
+(Jouganous et al., 2017)</p></td>
+<td><p>4.04 * 10^6
+(Gutenkunst et al., 2009)</p></td>
+<td><p>0.23270</p></td>
+</tr>
+<tr class="row-odd"><td><p>YRI_CEU_CHB.fs</p></td>
+<td><p>24
+(Lapierre et al., 2017)</p></td>
+<td><p>1.2 * 10^(-8)
+(Jouganous et al., 2017)</p></td>
+<td><p>4.04 * 10^6
+(Gutenkunst et al., 2009)</p></td>
+<td><p>0.19392</p></td>
+</tr>
+</tbody>
+</table>
+<p>In Gutenkunst et al. 2009 generation time for human populations was equal to <code class="docutils literal notranslate"><span class="pre">25</span></code> years and mutation rate <code class="docutils literal notranslate"><span class="pre">mu</span></code> was estimated as <code class="docutils literal notranslate"><span class="pre">2.35</span> <span class="pre">*</span> <span class="pre">10^(-8)</span></code>. If one wants to change time for one generation to <code class="docutils literal notranslate"><span class="pre">24</span></code> years, one needs to scale <code class="docutils literal notranslate"><span class="pre">mu</span></code>: <code class="docutils literal notranslate"><span class="pre">mu</span></code> / 25 * 24 = 2.26 * 10^(-8).</p>
+<p>In Jouganous et al. 2017 generation time was grater - <code class="docutils literal notranslate"><span class="pre">29</span></code> years and mutation rate was equal to <code class="docutils literal notranslate"><span class="pre">1.44</span> <span class="pre">\*</span> <span class="pre">10^(-8)</span></code>. To change generation time to <code class="docutils literal notranslate"><span class="pre">24</span></code>, one needs to change value of the mutation rate: <code class="docutils literal notranslate"><span class="pre">muNEW</span></code> = <code class="docutils literal notranslate"><span class="pre">mu</span></code> / 29 * 24 = 1.2 * 10^(-8). <code class="docutils literal notranslate"><span class="pre">Theta0</span></code> is calculated then by the formula above.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>One can find FS files in <code class="docutils literal notranslate"><span class="pre">fs\_examples</span></code> directory.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="settings.html" class="btn btn-neutral float-right" title="Usefull settings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="plotting.html" class="btn btn-neutral float-left" title="Plotting model" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Ekaterina Noskova
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

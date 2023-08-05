@@ -1,0 +1,277 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Plotting model &mdash; GADMA 2.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Theta0" href="theta.html" />
+    <link rel="prev" title="Output" href="output.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> GADMA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hands_on.html">Hands on</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="user_manual.html">User manual</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="input_data.html">Input data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_engine.html">Specifying an engine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_model.html">Specifying a model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inference.html">Inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="run_parallel.html">Repeats and parallel computing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="output.html">Output</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Plotting model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#time-units-on-model-s-plot">Time units on model’s plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plotting-after-gadma-finished">Plotting after GADMA finished</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="theta.html">Theta0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="settings.html">Usefull settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extra_params_file.html">Extra parameter file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="units.html">Units of parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="confidence_intervals.html">Confidence intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="example_params_file.html">Example parameters file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_help.html">Getting help</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/gadma.html">API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GADMA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="user_manual.html">User manual</a> &raquo;</li>
+        
+      <li>Plotting model</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/user_manual/plotting.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="plotting-model">
+<h1>Plotting model<a class="headerlink" href="#plotting-model" title="Permalink to this headline">¶</a></h1>
+<p><em>Example of demographic model plot that GADMA draws during run:</em></p>
+<a class="reference internal image-reference" href="../_images/example_model_plot.png"><img alt="../_images/example_model_plot.png" src="../_images/example_model_plot.png" style="width: 100%;" /></a>
+<p>GADMA always draws final best models during genetic algorithms search for best solutions.</p>
+<p>However, models can be drawn during the pipeline every <code class="docutils literal notranslate"><span class="pre">N</span></code>’s iteration of each genetic algorithm. <code class="docutils literal notranslate"><span class="pre">N</span></code> is equal to the value of <code class="docutils literal notranslate"><span class="pre">Draw</span> <span class="pre">models</span> <span class="pre">every</span> <span class="pre">N</span> <span class="pre">iteration</span></code> option in the parameter file. So to enable drawing one should set this option in file.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Don’t draw models very often, because changes are usually not very significant and drawing takes some time, so optimization will be slower.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>One can disable drawing by setting <code class="docutils literal notranslate"><span class="pre">Draw</span> <span class="pre">models</span> <span class="pre">every</span> <span class="pre">N</span> <span class="pre">iteration</span> <span class="pre">:</span> <span class="pre">0</span></code> in the parameter file. This is also default behaviour. Final models will be drawn anyway to the base output directory.</p>
+</div>
+<p>Models are drawn with <code class="docutils literal notranslate"><span class="pre">moments</span></code> library, so it should be installed if one wants to have pictures. In the top left corner there is a size of ancestry population. Other parameters one can find in string representation of the model in the log files.</p>
+<div class="section" id="time-units-on-model-s-plot">
+<h2>Time units on model’s plot<a class="headerlink" href="#time-units-on-model-s-plot" title="Permalink to this headline">¶</a></h2>
+<p>Time on the demographic model’s plot can be drawn in units of years,  thousand years or in genetic units. By default choice depends on the <code class="docutils literal notranslate"><span class="pre">Time</span> <span class="pre">for</span> <span class="pre">generation</span></code> option in the parameter file: if it is set to some value (in years) then time will be shown in years, otherwise it will be in genetic units.</p>
+<p>But, of course, it is possible to tell GADMA which units are preferable. For example, if one wants time to be in thousands of years on the pictures, as it is a big value in years:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># param_file</span>
+<span class="o">...</span>
+<span class="n">Time</span> <span class="k">for</span> <span class="n">generation</span><span class="p">:</span> <span class="mi">25</span>  <span class="c1"># years</span>
+<span class="o">...</span>
+<span class="n">Units</span> <span class="n">of</span> <span class="n">time</span> <span class="ow">in</span> <span class="n">drawing</span> <span class="p">:</span> <span class="n">thousand</span> <span class="n">years</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="plotting-after-gadma-finished">
+<h2>Plotting after GADMA finished<a class="headerlink" href="#plotting-after-gadma-finished" title="Permalink to this headline">¶</a></h2>
+<p><em>Example of model’s plot that was drawn with generated python script:</em></p>
+<a class="reference internal image-reference" href="../_images/3d_lim_model_dadi.png"><img alt="../_images/3d_lim_model_dadi.png" src="../_images/3d_lim_model_dadi.png" style="width: 100%;" /></a>
+<p>Sometimes final pictures aren’t satisfying or one didn’t draw for some reasons (didn’t want to install <code class="docutils literal notranslate"><span class="pre">moments</span></code>, wanted fast launch) it is possible to plot demographic model (and only it) again.</p>
+<p>To do it one should run corresponding generated python script for the model. For example, final model can be drawn again in the following way:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python best_logll_model_moments_code.py
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Again it’s possible only if one has <code class="docutils literal notranslate"><span class="pre">moments</span></code> installed.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>One can change code inside the file and drawn again if picture isn’t satisfying.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="theta.html" class="btn btn-neutral float-right" title="Theta0" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="output.html" class="btn btn-neutral float-left" title="Output" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Ekaterina Noskova
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

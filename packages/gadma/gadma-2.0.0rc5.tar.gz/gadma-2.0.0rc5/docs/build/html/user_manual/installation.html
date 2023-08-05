@@ -1,0 +1,378 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installation &mdash; GADMA 2.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Hands on" href="hands_on.html" />
+    <link rel="prev" title="Welcome to GADMA’s documentation!" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> GADMA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-the-latest-release">Installing the latest release</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#manual-installation">Manual installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#auto-mode">Auto mode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#full-manual-mode">Full-manual mode</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verifying-installation">Verifying installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hands_on.html">Hands on</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_manual.html">User manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example_params_file.html">Example parameters file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_help.html">Getting help</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/gadma.html">API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GADMA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Installation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/user_manual/installation.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<p><strong>Current version of GADMA (later than 2.0.0) supports Python3 only</strong>. Older versions supported Python 2 as well but not any more.</p>
+<p>GADMA requires the following dependencies:</p>
+<ul class="simple">
+<li><p>Python3</p></li>
+<li><p>NumPy (&gt;= 1.2.0)</p></li>
+<li><p>Scipy (&gt;= 0.6.0)</p></li>
+<li><p>ruamel.yaml</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dadi</span></code> (&gt;= 1.7.0) or/and <code class="docutils literal notranslate"><span class="pre">moments</span></code> (&gt;= 1.0.0)</p></li>
+<li><p>nlopt (for <code class="docutils literal notranslate"><span class="pre">dadi</span></code>)</p></li>
+<li><p>Cython (for <code class="docutils literal notranslate"><span class="pre">moments</span></code>)</p></li>
+<li><p>mpmath (for <code class="docutils literal notranslate"><span class="pre">moments</span></code>)</p></li>
+</ul>
+<p>To draw demographic models one should install the following:</p>
+<ul class="simple">
+<li><p>matplotlib (&gt;= 0.98.1)</p></li>
+<li><p>Pillow (&gt;= 4.2.1) - optional</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">moments</span></code> (&gt;= 1.0.0)</p></li>
+</ul>
+<p>To calculate Confidence Intervals:</p>
+<ul class="simple">
+<li><p>pandas</p></li>
+</ul>
+</div>
+<div class="section" id="installing-the-latest-release">
+<h2>Installing the latest release<a class="headerlink" href="#installing-the-latest-release" title="Permalink to this headline">¶</a></h2>
+<p>The latest release of BoTorch is easily installed either via <code class="docutils literal notranslate"><span class="pre">pip</span></code>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install gadma
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Installation via <code class="docutils literal notranslate"><span class="pre">pip</span></code> will not install <code class="docutils literal notranslate"><span class="pre">moments</span></code> library. To install it one should run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install --upgrade Cython
+<span class="gp">$</span> pip install mpmath
+<span class="gp">$</span> git clone https://bitbucket.org/simongravel/moments/
+<span class="gp">$</span> <span class="nb">cd</span> moments
+<span class="gp">$</span> python3 setup.py install
+<span class="gp">$</span> <span class="nb">cd</span> ..
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="manual-installation">
+<h2>Manual installation<a class="headerlink" href="#manual-installation" title="Permalink to this headline">¶</a></h2>
+<p>Some features are added to GADMA project but are not released yet. One can try to install GADMA directly from the repository.</p>
+<p>First clone repository:</p>
+<blockquote>
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git clone https://github.com/ctlab/GADMA.git
+<span class="gp">$</span> <span class="nb">cd</span> GADMA
+</pre></div>
+</div>
+</div></blockquote>
+<p>Dependencies could be installed with one of two modes.</p>
+<div class="section" id="auto-mode">
+<h3>Auto mode<a class="headerlink" href="#auto-mode" title="Permalink to this headline">¶</a></h3>
+<p>One could install everything with <code class="docutils literal notranslate"><span class="pre">install</span></code> script:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> ./install
+</pre></div>
+</div>
+</div>
+<div class="section" id="full-manual-mode">
+<h3>Full-manual mode<a class="headerlink" href="#full-manual-mode" title="Permalink to this headline">¶</a></h3>
+<p>Install dependencies manually:</p>
+<blockquote>
+<div><ul>
+<li><dl>
+<dt>NumPy</dt><dd><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install numpy
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Scipy</dt><dd><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install scipy
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>ruamel.yaml</dt><dd><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install ruamel.yaml
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt><code class="docutils literal notranslate"><span class="pre">dadi</span></code>, nlopt</dt><dd><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install dadi
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt><code class="docutils literal notranslate"><span class="pre">moments</span></code>, mpmath, Cython</dt><dd><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install --upgrade Cython
+<span class="gp">$</span> pip install mpmath
+<span class="gp">$</span> git clone https://bitbucket.org/simongravel/moments/
+<span class="gp">$</span> <span class="nb">cd</span> moments
+<span class="gp">$</span> python3 setup.py install
+<span class="gp">$</span> <span class="nb">cd</span> ..
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>matplotlib</dt><dd><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install matplotlib
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Pillow</dt><dd><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install Pillow
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>pandas</dt><dd><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install pandas
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<ol class="arabic" start="3">
+<li><dl>
+<dt>Install GADMA</dt><dd><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python3 setup.py install
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="verifying-installation">
+<h2>Verifying installation<a class="headerlink" href="#verifying-installation" title="Permalink to this headline">¶</a></h2>
+<p>To verify the installation, run a test:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> gadma --test
+</pre></div>
+</div>
+<p>If the installation was successful, one will find the following information at the end:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">--Finish pipeline--</span>
+
+<span class="go">--Test passed correctly--</span>
+<span class="go">Thank you for using GADMA!</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="hands_on.html" class="btn btn-neutral float-right" title="Hands on" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to GADMA’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Ekaterina Noskova
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
