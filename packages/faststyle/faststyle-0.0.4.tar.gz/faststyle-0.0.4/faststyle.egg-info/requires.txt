@@ -1,0 +1,5 @@
+fastai>=2.0.16
+fastcore>=1.2.5
+kornia
+torch==1.6.0
+torchvision==0.7
