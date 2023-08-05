@@ -1,0 +1,4 @@
+configgenerated
+build/*
+opsbotgenerated.sh
+passwordgenerated.sh

@@ -1,0 +1,11 @@
+include README.md
+include PYPI-DESC.md
+include opsbot/template/*
+include opsbot/template/env/*
+include opsbot/template/fix/*
+include opsbot/template/setting/*
+include opsbot/template/site/*
+include opsbot/template/user/*
+include opsbot/template/global-tool/*
+include opsbot/template/site-tool/*
+include opsbot/template/util/*

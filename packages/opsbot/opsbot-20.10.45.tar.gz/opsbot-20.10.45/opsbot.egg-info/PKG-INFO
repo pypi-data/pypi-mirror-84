@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: opsbot
+Version: 20.10.45
+Summary: I'm Opsbot. I can help you create the best devops scripts.
+Home-page: https://gitlab.com/magiklab/opsbot-py
+Author: Diep Magik
+Author-email: diepnh@magik.vn
+License: MIT
+Description: usage: opsbot.py [-h] {init,build} ...
+        
+        I'm Opsbot. I can help you build the best devops scripts.
+        
+        positional arguments:
+          {init,build}  Avaiable commands
+            init        Create .opsbot file, where you will write devops plan
+            build       Build .opsbot file. export devops scripts
+        
+        optional arguments:
+          -h, --help    show this help message and exit
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: System :: Operating System
+Classifier: Topic :: System :: Shells
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
