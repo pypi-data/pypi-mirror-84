@@ -1,0 +1,16 @@
+stactools_core==0.1.0
+stactools_cli==0.1.0
+
+[all]
+stactools_landsat==0.1.0
+stactools_planet==0.1.0
+stactools_browse==0.1.0
+
+[browse]
+stactools_browse==0.1.0
+
+[landsat]
+stactools_landsat==0.1.0
+
+[planet]
+stactools_planet==0.1.0
