@@ -1,0 +1,16 @@
+tidy3d/__init__.py,sha256=G0lqikrgJo_0W9QsLZ-OngYq4tAJbSn5NHyPwFHCgiw,224
+tidy3d/constants.py,sha256=Vapt4yUQdXkZcozYhlEz-AtPEefrHqtPDUH6b4Ph5R8,641
+tidy3d/grid.py,sha256=4SB7Py-hb5TC9CP-KSBIE5mxRkB9T8XhfO0m54BwX2M,4655
+tidy3d/json_load.py,sha256=m_TJBHhNk5pHfL1394544bZloSQADxH8oVy2p69lxkY,2638
+tidy3d/json_ops.py,sha256=tA9AxcjIWiYagr7h56t2nrXRdH0PrYcTYDLiIIRRdXE,9158
+tidy3d/probe.py,sha256=LPgd7azO-9ruy6sJJYQdk7bpj8reqImyjAC__IYXEbM,4575
+tidy3d/simulation.py,sha256=cSVXX7ZX7QZUVktcLHXl1MhCP55VvcH21LYo0e9Wp_g,7844
+tidy3d/source.py,sha256=Lgc0-NizPoE7u40P4FJlJ1fJUZK71qMXdGIPXsfEzLs,5161
+tidy3d/structure.py,sha256=En6Oj9z_H2aDU2aYbFnt4M8SprzZ0-IyXzwKX1A-nOs,7192
+tidy3d/utils.py,sha256=hBsJprtfXqL81LtYTOXTJZiUuVlcRvWfV6zgVCaR3Xk,5407
+tidy3d/viz.py,sha256=W7jRiNLB2G7B41FBQS5n2j_3daBXZs33OmIVc_SLr0M,15767
+tidy3dclient-0.0.1.3.dist-info/METADATA,sha256=m4u_G-EvtPSlQZRETaBveIpJbCprnc9Q7dpEgWUVQDo,636
+tidy3dclient-0.0.1.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+tidy3dclient-0.0.1.3.dist-info/dependency_links.txt,sha256=bh6KuWEbD-HLR0j4u5L1UMScwEwWCY0CBuU-aMgr_DY,71
+tidy3dclient-0.0.1.3.dist-info/top_level.txt,sha256=cFzhiWh7iNuTuzO1dqe_yjK46PWQgVVHYd7MKIECPOw,7
+tidy3dclient-0.0.1.3.dist-info/RECORD,,
