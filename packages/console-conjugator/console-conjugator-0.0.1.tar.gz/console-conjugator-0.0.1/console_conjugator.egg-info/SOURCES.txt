@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+Deutschconjugation/__init__.py
+Deutschconjugation/cli.py
+Deutschconjugation/conjugator.py
+Deutschconjugation/version.py
+console_conjugator.egg-info/PKG-INFO
+console_conjugator.egg-info/SOURCES.txt
+console_conjugator.egg-info/dependency_links.txt
+console_conjugator.egg-info/top_level.txt
