@@ -1,0 +1,12 @@
+README.md
+setup.py
+pretrained_vit_pytorch.egg-info/PKG-INFO
+pretrained_vit_pytorch.egg-info/SOURCES.txt
+pretrained_vit_pytorch.egg-info/dependency_links.txt
+pretrained_vit_pytorch.egg-info/requires.txt
+pretrained_vit_pytorch.egg-info/top_level.txt
+vit_pytorch/__init__.py
+vit_pytorch/configs.py
+vit_pytorch/model.py
+vit_pytorch/transformer.py
+vit_pytorch/utils.py
