@@ -1,0 +1,12 @@
+tabarnak/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tabarnak/tabarnak.py,sha256=Q9zaBu9bBk8_JYQd2vJR4iXceKIxhAaAyTEUve8rJsw,26121
+tests/__init__.py,sha256=898BmEUMuFbPPBPi3zYNtg5CYK_D1dNWhVjWsnM74as,91
+tests/config.py,sha256=f7TTAnDSGST8wn4NgBEZKz7ZI-pKTrc3CCnMc2Cvz4M,483
+tests/test_bat.py,sha256=iFIniOrpnXnbWrvPhnHqLaIieFj3tIeCslIHu9kFPps,3485
+tests/test_case_base.py,sha256=JnTYBeaqW1wpZrQv03v-mQYkJkgU9OEQRdYp4KOA_z0,6329
+tabarnak_desjare-0.0.3.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+tabarnak_desjare-0.0.3.dist-info/METADATA,sha256=mr06ahyWO2xCE6NCb9ZKC4OqFvTGNY9vZxjWtqQ3QCg,2446
+tabarnak_desjare-0.0.3.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+tabarnak_desjare-0.0.3.dist-info/entry_points.txt,sha256=RjdYs8paPGRHpECOUua4MJZiS3lpEgFuGcDcjDMtx7o,53
+tabarnak_desjare-0.0.3.dist-info/top_level.txt,sha256=x4SJlW8MnPngTYMoWzT2HsNFaf00lV34bOldpDQkmxU,15
+tabarnak_desjare-0.0.3.dist-info/RECORD,,
