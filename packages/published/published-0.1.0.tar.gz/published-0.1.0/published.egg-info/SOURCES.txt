@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+published/__init__.py
+published/published.py
+published.egg-info/PKG-INFO
+published.egg-info/SOURCES.txt
+published.egg-info/dependency_links.txt
+published.egg-info/top_level.txt
+test/test_published.py
