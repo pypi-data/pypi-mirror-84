@@ -1,0 +1,211 @@
+======
+Boilee
+======
+
+.. image:: https://img.shields.io/github/license/vadolasi/boilee?style=for-the-badge
+    :alt: License 
+    :target: https://choosealicense.com/licenses/gpl-3.0/
+.. image:: https://img.shields.io/github/v/release/vadolasi/boilee?style=for-the-badge
+    :alt: GitHub release (latest by date)
+    :target: https://github.com/vadolasi/boilee/releases
+.. image:: https://img.shields.io/github/pipenv/locked/python-version/vadolasi/boilee?style=for-the-badge
+    :alt: Python version
+    :target: https://docs.python.org/3.8/
+.. image:: https://img.shields.io/github/last-commit/vadolasi/boilee?style=for-the-badge
+    :alt: Last commit
+    :target: https://github.com/vadolasi/boilee/commits/main
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg?style=for-the-badge
+    :alt: Code style: black
+    :target: https://github.com/psf/black
+.. image:: https://img.shields.io/badge/Gitpod-ready--to--code-blue?style=for-the-badge&logo=gitpod
+    :alt: Gitpod ready-to-code
+    :target: https://gitpod.io/#https://github.com/vadolasi/boilee
+.. image:: https://img.shields.io/badge/say%20thanks-!-blue?style=for-the-badge
+    :alt: Say Thanks!
+    :target: https://saythanks.io/to/vitor036daniel%40gmail.com
+
+|
+
+An easy way to create a tool to generate code boilerplates like :code:`npm init` and :code:`vue create` for any programming and markup language.
+
+Features
+========
+
+- **Cross-platform**: You can use it on Windows, Mac and Linux, and...
+- **You don't need to have Python installed!**
+- **Simple and beautiful command line interface!**
+- **Manipulate files with template engine**: Only knowing a model engine can create boilers for any programming and markup language. Currently...
+- **Jinja, Mako and Genshi are supported!**
+- **Manipulate files with template engine and YAML**: You can choose which files and directories will be written and define their content intuitively with a YAML file
+- **Complete**: You have several options to manipulate from input and arguments to commands to be executed and the behavior of the template engine
+- **You can add boilerplates to use offline**, just run: :code:`boilee add <boilerplate-name>`
+- **The outputs are true complete cli's**: The boilers generated can receive arguments, receive inputs, show help, show boilerplate information, get information from the system and execute commands. This makes them true cli's, as well as :code:`npm init` and :code:`vue-create`.
+
+Boilee or Cookiecutter
+======================
+
+This project was not created with the intention of being a competitor of cookiecutter, but it has some advantages in relation to it, just look at items 2, 3, 5, 6, 7, 8 and 9 of the list above.
+
+Installation
+============
+
+Obtain the executable
+---------------------
+
+You can get here the executables for Windows_, Linux_ and `Mac OS`_
+
+Installing via pip
+------------------
+
+You can install boilee via pip on your system (or on a venv) with the following command:
+
+.. code:: bash
+
+    pip install boilee
+
+Installing from source code
+---------------------------
+
+To get the executable from the source see the Build_ section
+
+Usage
+=====
+
+.. code:: bash
+
+    # Create a zip file that contains all the information of the boilerplate:
+    boilee make <input-directory> <boilerplate-name>
+    # Generate boilerplate
+    boilee run <input-file> <output-directory> [...boilerplate-options]
+
+QuickStart
+==========
+
+Create the following files:
+
+.. code:: python
+
+    # example_boilerplate/project/scripts/python3.py
+
+    def main():
+        print("Message from Python 3:")
+        print("{{ message }}")
+
+    if __name__ == "__main__":
+        main()
+
+.. code:: python
+
+    # example_boilerplate/project/scripts/python2.py
+
+    def main():
+        print "Message from Python 2:"
+        print "{{ message }}"
+
+    if __name__ == "__main__":
+        main()
+
+.. code:: yaml
+
+    # example_boilerplate/.boilee/structure.yml
+
+    - {{ project_name }} @content="project": # Creates a directory with a name provided by the user with the content of the "project" directory
+        - scripts: # "scripts" directory
+            - python{{ python-version }}.py
+
+.. code:: yaml
+
+    # example_boilerplate/.boilee/parameters.yml
+
+    project_name:
+        input-type: input
+        parameter_type: argument
+        message: Enter the project name
+    python-version:
+        input-type: list
+        message: Select a Python version
+        choices:
+            - Python 3:
+                value: 3
+            - Python 2:
+                value: 2
+    message:
+        input-type: input
+        message: Enter a message
+
+Create a zip file that contains all the information of the boilerplate:
+
+.. code:: bash
+
+    boilee make example_boilerplate example
+
+Generate boilerplate and test:
+
+.. code:: bash
+
+    boilee run example.zip example_python3 --python-version=3 --message=Hi!
+    python3 example_python3/scripts/python3.py
+
+    # Result
+    Message from Python 3:
+    Hi!
+
+.. code:: bash
+
+    boilee run example.zip example_python2 --python-version=2 --message=Hi!
+    python2 example_python2/scripts/python2.py
+
+    # Result
+    Message from Python 2:
+    Hi!
+
+If a parameter is not provided it will be requested later.
+
+.. image:: https://i.ibb.co/vZJtPdh/boilee-example.png
+    :alt: "boilee run" example
+
+Development
+===========
+
+To open this project in a development environment see the `Preparation section`_ in the `Contributor Guidelines`_
+
+You can also open this project in an automated development environment in gitpod:
+
+.. image:: https://gitpod.io/button/open-in-gitpod.svg
+    :alt: Open in Gitpod
+    :target: https://gitpod.io/#https://github.com/vadolasi/boilee
+
+Contributing
+============
+
+See `Contributor Guidelines`_
+
+.. _Build:
+
+Build
+=====
+
+By default boilee uses pyoxidizer_ to generate an executable.
+
+To generate an executable with pyoxidizer (if pyoxidizer is already installed) run the command:
+
+.. code:: bash
+
+    pyoxidizer build
+
+The executable will be generated inside the "build" directory
+
+License
+=======
+
+`GNU General Public License v3.0`_
+
+.. links
+
+.. _Windows: google.com
+.. _Linux: google.com
+.. _Mac OS: google.com
+.. _Preparation section: CONTRIBUTING.rst#Preparation
+.. _Contributor Guidelines: CONTRIBUTING.rst
+.. _pyoxidizer: https://pyoxidizer.readthedocs.io/en/stable/
+.. _GNU General Public License v3.0: https://choosealicense.com/licenses/gpl-3.0/
