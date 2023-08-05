@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: apatterson189_google_api_helpers
+Version: 0.1.0
+Summary: LIbrary of helpers for using google apis
+Home-page: UNKNOWN
+Author: Albert Patterson
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
