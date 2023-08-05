@@ -1,0 +1,8 @@
+README.md
+setup.py
+power-up/__init__.py
+power-up/dummy.py
+power_up.egg-info/PKG-INFO
+power_up.egg-info/SOURCES.txt
+power_up.egg-info/dependency_links.txt
+power_up.egg-info/top_level.txt
