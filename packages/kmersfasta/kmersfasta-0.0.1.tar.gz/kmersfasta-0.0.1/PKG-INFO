@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: kmersfasta
+Version: 0.0.1
+Summary: Display and count k-mers from the fasta file
+Home-page: UNKNOWN
+Author: Roshan Shrestha
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.6.0
