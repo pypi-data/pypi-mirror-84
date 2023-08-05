@@ -1,0 +1,7 @@
+setup.py
+bin/gql-compiler
+py_gql_client.egg-info/PKG-INFO
+py_gql_client.egg-info/SOURCES.txt
+py_gql_client.egg-info/dependency_links.txt
+py_gql_client.egg-info/requires.txt
+py_gql_client.egg-info/top_level.txt

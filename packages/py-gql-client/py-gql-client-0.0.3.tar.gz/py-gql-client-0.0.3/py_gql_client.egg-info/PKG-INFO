@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: py-gql-client
+Version: 0.0.3
+Summary: Python GraphQL generated code client
+Home-page: UNKNOWN
+Author: Facebook Inc.
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
