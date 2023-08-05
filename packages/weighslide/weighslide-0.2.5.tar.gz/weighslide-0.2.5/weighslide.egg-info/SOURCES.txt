@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+examples/contact.png
+examples/input.png
+examples/output.png
+tests/__init__.py
+tests/test_functional.py
+weighslide/__init__.py
+weighslide/weighslide.py
+weighslide.egg-info/PKG-INFO
+weighslide.egg-info/SOURCES.txt
+weighslide.egg-info/dependency_links.txt
+weighslide.egg-info/requires.txt
+weighslide.egg-info/top_level.txt
