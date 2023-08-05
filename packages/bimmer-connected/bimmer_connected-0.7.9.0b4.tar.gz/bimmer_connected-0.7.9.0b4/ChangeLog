@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+0.7.9.0b4
+---------
+
+* Revert API authorization & user agent
