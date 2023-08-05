@@ -1,0 +1,9 @@
+README.md
+setup.py
+fastapi_generator/__init__.py
+fastapi_generator/main.py
+fastapi_generator.egg-info/PKG-INFO
+fastapi_generator.egg-info/SOURCES.txt
+fastapi_generator.egg-info/dependency_links.txt
+fastapi_generator.egg-info/requires.txt
+fastapi_generator.egg-info/top_level.txt
