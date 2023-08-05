@@ -1,0 +1,15 @@
+igel/__init__.py,sha256=6M6lksEVknadYMwteLeeJRzglKhnYrqSHMtyyJWC1dI,174
+igel/cli.py,sha256=VbKf7NeWU7Z7ND8cTVyeax3BfaQjg9aTg1RLVu20bM0,21828
+igel/configs.py,sha256=2A2nTs3Sg2k3mZg64aSsDqZnB-bxftzjcrbRBHm5yE8,1564
+igel/data.py,sha256=hAbHaaf_pZ8uMtilF4kgPm2Vb-pCUQQ48X2czXSXASg,22325
+igel/hyperparams.py,sha256=sBijiYrbo0Bi2cxI6J9CNK82YyQEv5G0jKEhrbmBRlE,820
+igel/igel.py,sha256=-L2hedfpD1PGvtfiumqFeHaKc4JP3VAOJ48uK8YC0jA,24581
+igel/preprocessing.py,sha256=TXX83kfZ23i1D4lbJUAVIvYVtRZE88az3WGzql6la5Q,3479
+igel/utils.py,sha256=o1uO-aR_3RU84-pg5bPVSuQV94eyURIdnPDOwwPQQoQ,1351
+igel-0.3.1.dist-info/AUTHORS.rst,sha256=bqRk6aZUI1-wLWhgibIvzUXsEgMLYuljH7EIvq3Xvlo,157
+igel-0.3.1.dist-info/LICENSE,sha256=jqckQPK6IBswUrfTn4imGuhOOdKtUaoeorJkDfpKxMY,1075
+igel-0.3.1.dist-info/METADATA,sha256=jkNkys3FDjV75HnE0JDXBfY4o5GAQiLfA-O_r5amLeA,44972
+igel-0.3.1.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+igel-0.3.1.dist-info/entry_points.txt,sha256=idc9snr3uQfv5S569pOYpMG3Vl-scmapNto9r59bqc0,40
+igel-0.3.1.dist-info/top_level.txt,sha256=3DmuXNAGeXOkak-SLo68BtolI5dqGrCfArH7W0JOnJ0,5
+igel-0.3.1.dist-info/RECORD,,
