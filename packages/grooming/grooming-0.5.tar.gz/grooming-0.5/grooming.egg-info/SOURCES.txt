@@ -1,0 +1,9 @@
+setup.py
+grooming/__init__.py
+grooming/lemma.py
+grooming/txt.py
+grooming.egg-info/PKG-INFO
+grooming.egg-info/SOURCES.txt
+grooming.egg-info/dependency_links.txt
+grooming.egg-info/requires.txt
+grooming.egg-info/top_level.txt

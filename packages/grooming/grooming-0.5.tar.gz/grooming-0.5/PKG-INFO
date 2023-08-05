@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: grooming
+Version: 0.5
+Summary: Grooming is a easiest way to clean-up the text
+Home-page: https://github.com/jaysin60/grooming
+Author: Jayant Singh
+Author-email: jayantsingh75@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
