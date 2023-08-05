@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: MahaPala
+Version: 2020.11.1
+Summary: Detection of fruits disease by using Machine learning
+Home-page: https://github.com/AbhimanyuHK/MahaPala
+Author: Abhimanyu HK
+Author-email: manyu1994@hotmail.com
+License: UNKNOWN
+Description: # MahaPala
+        Detection of fruits disease by using Machine learning
+        
+        ## ಕರ್ನಾಟಕ ರಾಜೋತ್ಸವದ ಶುಭಾಶಯಗಳು
+        
+        ## Release Note
+        
+        ### 2020.11.01.dev
+        * Initial setup and environments
+        * Added a templete matching algorithm 
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

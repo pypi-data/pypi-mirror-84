@@ -1,0 +1,11 @@
+README.md
+setup.py
+MahaPala.egg-info/PKG-INFO
+MahaPala.egg-info/SOURCES.txt
+MahaPala.egg-info/dependency_links.txt
+MahaPala.egg-info/requires.txt
+MahaPala.egg-info/top_level.txt
+data/samples/messi5.jpg
+data/samples/messi_face.jpg
+mahapala/__init__.py
+mahapala/mahapala.py
