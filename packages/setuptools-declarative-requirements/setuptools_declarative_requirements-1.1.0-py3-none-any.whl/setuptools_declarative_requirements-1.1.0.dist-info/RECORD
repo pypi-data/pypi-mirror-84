@@ -1,0 +1,15 @@
+declarative_requirements/__init__.py,sha256=t672krNxRbf21jyKleKy6q6p1dhCmbx00ygLo--NcfY,330
+declarative_requirements/integration.py,sha256=g7WgLmynnhD8BYU-txZEY_ekQy-7miSyveAdZ9GSIYY,4524
+declarative_requirements/version.py,sha256=0y91PW-fcytGzZxMWcdcVL1uY8YfJz4Qb4CVpB1hAXg,21
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=BdPeTcNqmmA-Xk53zbCPbwiEc0Qxv32jexpYuEq_-P8,16485
+tests/integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/integration/test_requirements_parse.py,sha256=zYMCXSO0evHUTf-BfrBL4miIDgHxRnEtXgboZd_PvUw,2108
+tests/support/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/support/coverage/sitecustomize.py,sha256=5Vu1J8m6MIzukYsxx5gYlrQVfCM5QJS5-hGvF3oEXEk,211
+setuptools_declarative_requirements-1.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+setuptools_declarative_requirements-1.1.0.dist-info/METADATA,sha256=QUYMiXgz5RuB7vfKNZtU70yHzjC3AE1nF0mEnD21zpk,2951
+setuptools_declarative_requirements-1.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+setuptools_declarative_requirements-1.1.0.dist-info/entry_points.txt,sha256=3UW6jrDG7NKybouoEya_-5swx5dwTid4497CZ777Xfs,144
+setuptools_declarative_requirements-1.1.0.dist-info/top_level.txt,sha256=5st5x7pIDWYWkJBftGTqNI8CeTiywfGbivCvnFxS6rA,31
+setuptools_declarative_requirements-1.1.0.dist-info/RECORD,,
