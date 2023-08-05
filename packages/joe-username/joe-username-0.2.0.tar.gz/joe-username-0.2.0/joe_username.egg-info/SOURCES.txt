@@ -1,0 +1,10 @@
+README.md
+setup.py
+joe_username/__init__.py
+joe_username/__main__.py
+joe_username/generate.py
+joe_username.egg-info/PKG-INFO
+joe_username.egg-info/SOURCES.txt
+joe_username.egg-info/dependency_links.txt
+joe_username.egg-info/entry_points.txt
+joe_username.egg-info/top_level.txt
