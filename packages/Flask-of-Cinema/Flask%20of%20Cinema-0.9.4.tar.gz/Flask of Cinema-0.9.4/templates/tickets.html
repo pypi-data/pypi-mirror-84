@@ -1,0 +1,127 @@
+{% extends "base.html"%}
+
+{% block pagebody %}
+
+{% if not show %}
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">Lista biglietti acquistati</span>
+                {% if tickets and ((tickets | length) > 0) %}
+                <ul class="collection">
+                    {% for ticket in tickets %}
+                    <li class="collection-item" style="display: flex;">
+                        <div style="flex:1">
+                            <h6 style="display: flex; align-items:center;"><div style="flex:1; display:flex; align-items:center"><i class="material-icons">movie</i>&nbsp;{{ticket.filmName}}</div><div style="display:flex; align-items:center"><i class="material-icons">euro_symbol</i>&nbsp;{{ticket.price}}</div></h6>
+                            <div style="display:flex; align-items:center; margin: 4px 0px 4px 0px;">
+                                <div style="display: flex; align-items:center; flex:1"><i class="material-icons">today</i>&nbsp;{{ticket.showDate.strftime("%d/%m/%Y %H:%M")}}</div>
+                            </div>
+                            <div style="display:flex; align-items:center margin: 0px 0px 4px 0px;">
+                                <div style="display: flex; align-items:center; flex:1"><i class="material-icons">theaters</i>&nbsp;{{ticket.theater}}</div>
+                                <div style="display: flex; align-items:center; flex:1; margin-left: 8px;"><i class="material-icons">airline_seat_recline_normal</i>&nbsp;{{ticket.seat}}</div>
+                            </div>
+                            <div style="display:flex; align-items:center"><div style="flex:1"><b>Acquistato:</b> {{ticket.date.strftime("%d/%m/%Y %H:%M")}}</div></div>
+                        </div>
+                        {% if ticket.isDeletable %}
+                        <form method="POST" id="delete-{{ticket.id}}" action="/delete-ticket" style="margin-left: 16px;">
+                            <a href="#" onclick="document.getElementById('delete-{{ticket.id}}').submit(); return false;" class="secondary-content"><i class="material-icons" style="color:red">delete</i></a>
+                            <input name="id" type="hidden" value="{{ticket.id}}" />
+                        </form>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                    <div>Non hai ancora acquistato dei biglietti</div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                        <span class="card-title">Acquista Biglietto per {{film}}</span>
+                        <span class="card-subtitle" style="display:flex; align-items: center"><div style="display:flex; align-items: center; flex: 1"><i class="material-icons">theaters</i>{{show.theaterName}}</div><div style="display:flex; align-items: center; flex: 1"><i class="material-icons">today</i>&nbsp;{{show.date.strftime("%d/%m/%Y")}}</div><div style="display:flex; align-items: center; flex: 1"><i class="material-icons">access_time</i>&nbsp;{{show.date.strftime("%H:%M")}}</div></span>
+                        <form action="/tickets" method="POST">
+                            <h6 class="teal-text" style="margin-top: 16px">Lista posti disponibili</h6>
+                            {% with messages = get_flashed_messages(category_filter=["seats-error"]) %}
+                                {% if messages[0] %}
+                                    <span id="red-text" class="red-text">{{messages[0]}}</span>
+                                {% endif %}
+                            {% endwith %}
+                            <div style="display:flex; align-items:center; flex-wrap: wrap; padding: 16px">
+                            {% for seat in seats %}
+                                <div style="flex: 0 0 10%">
+                                    <label>
+                                        {% if seat.isOccupied %}
+                                        <input id="{{seat.id}}" class="seat-checkbox" type="checkbox" disabled="disabled"/>
+                                        {% elif seat.isSelected %}
+                                        <input id="{{seat.id}}" name="seats[]" class="seat-checkbox" type="checkbox" value="{{seat.id}}" checked/>
+                                        {% else %}
+                                        <input id="{{seat.id}}" name="seats[]" class="seat-checkbox" type="checkbox" value="{{seat.id}}"/>
+                                        {% endif %}
+                                        <span>{{seat.name}}</span>
+                                    </label>
+                                </div>
+                                <input name="price" type="hidden" value="{{show.price}}"/>
+                                <input name="idShow" type="hidden" value="{{show.id}}"/>
+                            {% endfor %}
+                            </div>
+                            <div style="display:flex; justify-content: center;">
+                                <div style="display:flex; align-items: flex-end;">
+                                    <h5 style="margin:0">{{show.price}}</h5>&nbsp;<i class="material-icons" class="teal">euro_symbol</i>
+                                </div>
+                            </div>
+                            <div class="card-action center-align" style="border:none">
+                                <button class="btn waves-effect waves-light" type="submit">Acquista</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.seat-checkbox').on('change', function(){ 
+        if(this.checked) 
+                $.ajax({
+                    url: '/add-occupied-seat',
+                    data: JSON.stringify({
+                        idSeat: this.id,
+                        idShow: {{show.id}}
+                    }),
+                    type: 'POST',
+                    success: function (response) {
+                    },
+                    error: function (error) {
+                    },
+                    dataType: "json",
+                    contentType: 'application/json;charset=UTF-8',
+                });
+                
+            else
+                $.ajax({
+                    url: '/remove-occupied-seat',
+                    data: JSON.stringify({
+                        idSeat: this.id,
+                        idShow: {{show.id}}
+                    }),
+                    type: 'POST',
+                    success: function (response) {
+                    },
+                    error: function (error) {
+                    },
+                    dataType: "json",
+                    contentType: 'application/json;charset=UTF-8',
+                });
+        })
+       
+    </script>
+{% endif %}
+
+{% endblock %}

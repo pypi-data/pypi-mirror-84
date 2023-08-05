@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Pitone</title>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/materialize.min.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/site.css')}}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/pitone.js')}}"></script>
+    <script>
+        var showChangeUser = false;
+        function showChangeUserMethod() {
+            if(showChangeUser){
+                document.getElementById('change-user').style.display = 'none';
+                document.getElementById('change-user-button').innerHTML = 'modifica';
+                showChangeUser = false;
+            } else {
+                if(document.getElementById('red-text'))
+                    document.getElementById('red-text').style.display = 'none';
+                document.getElementById('change-user').style.display = 'initial';
+                document.getElementById('change-user-button').innerHTML = 'nascondi';
+                showChangeUser = true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    {% if request.path != '/' and request.path != '/registration' %}
+    <nav> 
+        <div class="nav-wrapper">
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="#" class="brand-logo">Cinema Pitone</a>
+        </div>
+    </nav>
+
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view" style="padding-bottom: 16px">
+                <div class="background">
+                </div>
+                <img class="circle" src="{{ url_for('static', filename='img/avatar.svg')}}">
+                <div style="display:flex; flex-direction: column;">
+                    <div style="flex:1">
+                        <span class="white-text name">{{current_user.firstName}} {{current_user.lastName}}</span>
+                        <span class="white-text email">{{current_user.email}}</span>
+                    </div>
+                    <div>
+                        <button id="change-user-button" class="btn waves-effect waves-light" onclick="showChangeUserMethod(); return false;" style="background-color: #F5C002">Modifica</button>
+                    </div>
+                </div>
+                {% with messages = get_flashed_messages(category_filter=["user-error", "pass-error"]) %}
+                    {% if messages[0] %}
+                        <span id="red-text" class="red-text">{{messages[0]}}</span>
+                    {% endif %}
+                {% endwith %}
+                <div id="change-user" style="display:none">
+                    <form action="/update-user" method="post" style="background-color: white; padding: 8px; border-radius: 4px;">
+                        <h6 style="color: #F5C002">Info utente</h6>
+                        <div class="input-field">
+                            <input name="email" type="text" value="{{current_user.email}}">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input name="firstName" type="text" value="{{current_user.firstName}}">
+                            <label for="firstName">Nome</label>
+                        </div>
+                        <div class="input-field">
+                            <input name="lastName" type="text" value="{{current_user.lastName}}">
+                            <label for="lastName">Cognome</label>
+                        </div>
+                        <button id="change-user-button" type="submit" class="btn waves-effect waves-light" style="background-color: #F5C002">Modifica</button>
+                    </form>
+                    <div style="padding: 8px; border-radius: 4px; background-color: #fff; margin-top: 8px;">
+                        <h6 style="color: #F5C002">Cambia Password</h6>
+                        <form action="/change-password" method="post">
+                            <div class="input-field">
+                                <input name="oldPassword" type="password" value="">
+                                <label for="oldPassword">Vecchia Password</label>
+                            </div>
+                            <div class="input-field">
+                                <input name="newPassword" type="password" value="">
+                                <label for="newPassword">Nuova Password</label>
+                            </div>
+                            <button id="change-password-button" class="btn waves-effect waves-light" type="submit" style="background-color: #F5C002">Cambia Password</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="subheader">Menu</li>
+        {% if current_user.role == Roles.MANAGER %}
+            <li><a class="waves-effect" href="/"><i class="material-icons">home</i>Home</a></li>
+            <li><a class="waves-effect" href="/films"><i class="material-icons">movie</i>Films</a></li>
+            <li><a class="waves-effect" href="/stats"><i class="material-icons">analytics</i>Stats</a></li>
+        {% endif %}
+        {% if current_user.role == Roles.CLIENT%}
+            <li><a class="waves-effect" href="/"><i class="material-icons">local_movies</i>Spettacoli</a></li>
+            <li><a class="waves-effect" href="/tickets"><i class="material-icons">credit_card</i>Biglietti</a></li>
+        {% endif %}
+        <li><div class="divider"></div></li>
+        <li class="subheader">Logout</li>
+        <li><a class="waves-effect" href="/logout"><i class="material-icons">exit_to_app</i>Logout</a></li>
+    </ul>
+    {% endif %}
+    {% if request.path != '/' and request.path != '/registration' %}
+    <main class="padding">
+    {% else %}
+    <main>
+    {% endif %}
+        {% block pagebody %}
+        {% endblock %}
+    </main>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/materialize.min.js')}}"></script>
+</body>
+
+</html>

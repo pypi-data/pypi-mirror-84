@@ -1,0 +1,25 @@
+{% extends "flexbox.html"%}
+
+
+{% block flexcontent %}
+<div class="row">
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title">Elenco dei film</span>
+            <span class="card-item">Clicca qui per andare all'elenco dei film</span>
+        </div>
+        <div class="card-action">
+            <a href="/films">Vai!</a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title">Statistiche</span>
+            <span class="card-item">Clicca qui per andare alle statistiche</span>
+        </div>
+        <div class="card-action">
+            <a href="/stats">Vai!</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
