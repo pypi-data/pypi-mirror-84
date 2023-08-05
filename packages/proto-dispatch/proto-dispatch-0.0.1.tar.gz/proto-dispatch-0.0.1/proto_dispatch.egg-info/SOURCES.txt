@@ -1,0 +1,8 @@
+README.md
+setup.py
+proto-dispatch/__init__.py
+proto-dispatch/dummy.py
+proto_dispatch.egg-info/PKG-INFO
+proto_dispatch.egg-info/SOURCES.txt
+proto_dispatch.egg-info/dependency_links.txt
+proto_dispatch.egg-info/top_level.txt
