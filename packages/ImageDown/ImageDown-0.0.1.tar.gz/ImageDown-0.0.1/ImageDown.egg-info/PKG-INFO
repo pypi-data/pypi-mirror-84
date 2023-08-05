@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: ImageDown
+Version: 0.0.1
+Summary: [WIP] Google Images full-photo downloader
+Home-page: https://github.com/quiec/ImageDown
+Author: Yusuf Usta
+Author-email: yusuf@fusuf.codes
+Maintainer: Yusuf Usta
+Maintainer-email: yusuf@fusuf.codes
+License: GPL3
+Description: # ImageDown
+        [WIP] Google Images full-photo downloader
+        
+        **Not need ChromeDriver installion. It will be installed automatically..**
+        
+        ## 📦 Installation
+        ```sh
+        pip install imagedown
+        ```
+        
+        ## 🔷 Examples
+        ```python
+        from imagedown import ImageDown 
+        
+        print(
+            ImageDown('asena kurt', 10).get_urls()
+        ) # ['https://... # 
+        ```
+        
+        ## ☑️ To-Do
+        By time I do these, 1.0.0 will be ready.
+        
+        - [ ] Downloader
+        - [ ] More exception, More choice, stability.
+        
+        ## 💻 Contributors
+        [@Quiec](https://t.me/Fusuf)
+        
+        ## License
+        GPLV3
+Keywords: Google,Image,Downloader,Google-image
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
