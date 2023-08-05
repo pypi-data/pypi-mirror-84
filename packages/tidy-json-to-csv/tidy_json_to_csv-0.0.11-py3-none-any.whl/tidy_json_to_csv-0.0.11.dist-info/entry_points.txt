@@ -1,0 +1,3 @@
+[console_scripts]
+tidy_json_to_csv = tidy_json_to_csv:main
+
