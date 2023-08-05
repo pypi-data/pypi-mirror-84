@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: gunjancalc
+Version: 0.0.1
+Summary: A very basic calculator
+Home-page: UNKNOWN
+Author: Gunjan Shah
+Author-email: g7shah@uwaterloo.ca
+License: MIT
+Description: simple calc for add, sub, mul and div
+        
+        Change Log
+        ==========
+        
+        0.0.1 (31/10/2020)
+        -------------------
+        - First Release
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

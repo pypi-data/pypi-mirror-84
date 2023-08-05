@@ -1,0 +1,1 @@
+simple calc for add, sub, mul and div

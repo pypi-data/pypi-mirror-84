@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+gunjancalc/__init__.py
+gunjancalc.egg-info/PKG-INFO
+gunjancalc.egg-info/SOURCES.txt
+gunjancalc.egg-info/dependency_links.txt
+gunjancalc.egg-info/top_level.txt
