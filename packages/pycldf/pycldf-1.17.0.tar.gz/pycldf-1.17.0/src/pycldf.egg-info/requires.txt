@@ -1,0 +1,29 @@
+csvw>=1.7
+clldutils>=3.5
+uritemplate>=3.0
+python-dateutil
+
+[:python_version < "3.6"]
+pybtex<0.23
+
+[:python_version > "3.5"]
+pybtex
+
+[catalogs]
+cldfcatalog
+pyglottolog
+pyconcepticon
+
+[dev]
+flake8
+wheel
+twine
+
+[test]
+cldfcatalog
+pyglottolog
+pyconcepticon
+pytest>=5
+pytest-mock
+pytest-cov
+coverage>=4.2
