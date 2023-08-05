@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: pss-marta-danilo
+Version: 0.0.16
+Summary: ...
+Home-page: http://packages.python.org/pss_marta_danilo
+Author: Danilo Marta
+Author-email: UNKNOWN
+License: BSD
+Keywords: example documentation tutorial
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License
+
+## Componenti del gruppo
+
+Danilo Fumagalli, mat 830683
+
+Marta Pelusi, mat 800444
+
+## Introduzione
+
+Si vuole implementare una pipeline con GitLab per una applicazione scritta in lunguaggio Python che utilizza le seguenti librerie:
+
+​	\- matplotlib
+
+​	\- numpy
+
+​	\- MySQLdb
+
+L'applicazione vuole creare effetti di colore da immagini estratte da un database mySQL.
+
+## Come funziona
+
+Questo è un progetto strutturato in più script:
+
+​	\- media.py
+
+​	\- scambia.py
+
+​	\- main.py
+
+[media.py](https://gitlab.com/Bakedsloth/2020_assignment1_a1/-/blob/develop/media.py) è composto da una funzione *get_media* che prende in input un'immagine e restituisce un array 1x3 delle medie del colore nei tre canali colore RGB dell'immagine in input.
+
+[scambia.py](https://gitlab.com/Bakedsloth/2020_assignment1_a1/-/blob/develop/scambia.py) è composto da una funzione *scambia* che prende in input un'immagine e un intero *pos* e, in base al valore di pos, scambia tra loro due canali colore restituendo l'immagine modificata.
+
+l'intero *pos* corrisponde alla posizione (nell'array restituito dallo script media.py) della media colore che ha il valore più alto.
+
+media.py e scambia.py sono due script che possono essere eseguiti indipendentemente tra loro.
+
+[main.py](https://gitlab.com/Bakedsloth/2020_assignment1_a1/-/blob/develop/main.py) è lo script che unisce l'operato degli altri due script.
+
+L'altro componente dell'applicazione è un database mySQL composto da 5 righe e 4 colonne.
+
+Le quattro colonne sono rappresentative dell'id, del nome, dell'estensione e del percorso di 5 immagini.
+
+Le immagini sono contenute in una cartella chiamata *immagini* all'interno del repository GitLab.
+
+Il database è popolato attraverso un file csv chiamato metadata.csv, anch'esso all'interno del repository GitLab.
+
+## Assunzioni realizzazione della pipeline
+
+Il file [.gitlab-ci.yml](https://gitlab.com/Bakedsloth/2020_assignment1_a1/-/blob/develop/.gitlab-ci.yml) contiene la nostra pipeline.
+
+Abbiamo scelto di non imporre una versione precisa di Python, ma usare l'ultima versione installata.
+
+Come servizi abbiamo scelto di utilizzare l'ultima versione di mySQL per connetterci al nostro database.
+
+Abbiamo creato diverse variabili MYSQL username e password al fine di poterci connettere al nostro database, e altre variabili PYPI username e password per connetterci a PyPi. Tali variabili sono inserite anche come variabili d'ambiente in GitLab.
+
+Salviamo i moduli nella cache per risparmiare tempo nelle esecuzioni successive.
+
+Prima di eseguire lo script installiamo virtualenv e creiamo e attiviamo un ambiente virtuale che abbiamo nominato venv. 
+
+Gli stages che andiamo ad eseguire sono:	
+
+Nello stage **verify** utilizziamo le librerie prospector e bandit per individuare eventuali errori nello script main, in quanto esso è quello che mette insieme i vari script richiamandoli, come spiegato sopra.
+
+Nello stage **unit-test** utilizziamo la libreria pytest per eseguire i test all'interno dello script [test_unit.py](https://gitlab.com/Bakedsloth/2020_assignment1_a1/-/blob/develop/test_unit.py). Questo script testa il corretto funzionamento degli script media.py e scambia.py facendo delle prove: nel caso di media.py viene testata una proprietà specifica del calcolo della media aritmetica, mentre nel caso di scambia.py viene verificato se scambiando canali colore due volte l'immagine resta la stessa in quanto lo scambio è commutativo.
+
+Nello stage **integration-test** utilizziamo la libreria pytest per verificare che viene eseguita correttamente la connessione tra applicazione e database. Abbiamo scelto di utilizzare un nostro database in locale come secondo componente della nostra applicazione, ma per fare l'integration-test abbiamo utilizzato la funzione mySQL che offre gitlab e, attraverso lo script [popola_db.py](https://gitlab.com/assignment1_pelusi_fumagalli/2020_assignment1_a1_gruppo/-/blob/master/pss-marta-danilo/popola_db.py), abbiamo popolato il database su gitlab e lo abbiamo testato insieme allo script di test [test_integration.py](https://gitlab.com/assignment1_pelusi_fumagalli/2020_assignment1_a1_gruppo/-/blob/master/pss-marta-danilo/test_integration.py).
+
+Nello stage **package** installiamo ed utilizziamo le librerie setuptools wheel e, attraverso il file setup.py, creiamo un package in cui sono contenuti i nostri file di progetto. Nel file [setup.py](https://gitlab.com/assignment1_pelusi_fumagalli/2020_assignment1_a1_gruppo/-/blob/master/setup.py) precisiamo il nome del package che stiamo creando (nel nostro caso *"pss_marta_danilo"*), la versione, l'autore, una descrizione d'esempio, una licenza, nelle parole chiave d'esempio, l'url del nostro progetto e includiamo anche il file README.md.
+
+Nello stage **release** installiamo ed utilizziamo la libreria twine al fine di caricare sulla pagina del nostro account PyPi il package contenente il nostro progetto GitLab. Per accedervi utilizziamo le variabili contenti username e password precisate nell'elenco variabili in cima al file .gitlab-ci.yml.
+
+Nello stage **deploy** [...]
+
