@@ -1,0 +1,14 @@
+#!/bin/bash
+if [ "$EUID" -ne 0 ]; then echo "Please run as sudo.";  exit; fi
+if [ ! -f configgenerated ]; then echo "configgenerated not found!"; exit; fi
+
+{account_block}
+
+source configgenerated
+echo  "All variable && generated password stored in './configgenerated' "
+
+{script_block}
+
+# > OPSBOT DONE! > RESTARTING SERVICES TO APPLY SETTINGS..."
+
+{final_block}
