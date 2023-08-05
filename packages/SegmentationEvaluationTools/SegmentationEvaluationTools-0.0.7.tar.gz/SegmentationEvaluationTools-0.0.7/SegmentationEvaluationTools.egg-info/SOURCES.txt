@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+SegmentationEvaluationTools.egg-info/PKG-INFO
+SegmentationEvaluationTools.egg-info/SOURCES.txt
+SegmentationEvaluationTools.egg-info/dependency_links.txt
+SegmentationEvaluationTools.egg-info/requires.txt
+SegmentationEvaluationTools.egg-info/top_level.txt
+src/SegmentationEvaluationTools/SIKOverlapTools.py
+src/SegmentationEvaluationTools/__init__.py
