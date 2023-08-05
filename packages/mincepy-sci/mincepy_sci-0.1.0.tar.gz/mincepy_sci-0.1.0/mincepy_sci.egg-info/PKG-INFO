@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: mincepy-sci
+Version: 0.1.0
+Summary: Plugins to enable common scientific and machine learning type to be saved by mincePy
+Home-page: https://github.com/muhrin/mincepy_sci.git
+Author: Martin Uhrin
+Author-email: martin.uhrin.10@ucl.ac.uk
+License: GPLv3 and MIT
+Description: .. _mincePy: https://github.com/muhrin/mincepy
+        .. _mincepy documentation: https://mincepy.readthedocs.org/
+        
+        .. _ase: https://wiki.fysik.dtu.dk/ase/
+        .. _numpy: https://numpy.org/
+        .. _pandas: https://pandas.pydata.org/
+        
+        
+        mincePy
+        =======
+        
+        .. image:: https://codecov.io/gh/muhrin/mincepy_sci/branch/develop/graph/badge.svg
+            :target: https://codecov.io/gh/muhrin/mincepy_sci
+            :alt: Coverage
+        
+        .. image:: https://travis-ci.com/muhrin/mincepy_sci.svg?branch=master
+            :target: https://travis-ci.com/github/muhrin/mincepy_sci
+            :alt: Travis CI
+        
+        .. image:: https://img.shields.io/pypi/v/mincepy_sci.svg
+            :target: https://pypi.python.org/pypi/mincepy_sci/
+            :alt: Latest Version
+        
+        .. image:: https://img.shields.io/pypi/wheel/mincepy_sci.svg
+            :target: https://pypi.python.org/pypi/mincepy_sci/
+        
+        .. image:: https://img.shields.io/pypi/pyversions/mincepy_sci.svg
+            :target: https://pypi.python.org/pypi/mincepy_sci/
+        
+        .. image:: https://img.shields.io/pypi/l/mincepy_sci.svg
+            :target: https://pypi.python.org/pypi/mincepy_sci/
+        
+        
+        mincePy: move the database to one side and let your objects take centre stage.
+        
+        MincePy Sci is a set of plugins for `mincePy`_ that enable common scientific data formats to be saved.
+        
+        See `mincepy documentation`_ for more information.
+        
+        This plugin provide support for:
+        
+        `ase`_:
+            * ``Atoms``
+            * ``Cell``
+        
+        `numpy`_:
+            * ``ndarray``
+        
+        
+        `pandas`_:
+            * ``DataFrame``
+        
+Keywords: database schemaless nosql orm object-store concurrent optimistic-locking
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: dev
+Provides-Extra: full

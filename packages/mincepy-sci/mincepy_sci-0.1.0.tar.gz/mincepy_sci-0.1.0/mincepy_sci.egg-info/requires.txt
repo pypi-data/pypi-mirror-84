@@ -1,0 +1,16 @@
+mincepy
+
+[dev]
+pip
+pre-commit
+prospector
+pylint
+pytest-cov
+pytest>4
+twine
+yapf
+
+[full]
+ase
+numpy
+pandas
