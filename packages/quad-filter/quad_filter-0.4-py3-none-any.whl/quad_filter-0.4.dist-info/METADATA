@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: quad-filter
+Version: 0.4
+Summary: Filtering tools for quad trees
+Home-page: https://www.gitlab.com/jbrobertson/quad-filter/
+Author: JB Robertson
+Author-email: jbr@freeshell.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+
+A couple of utility functions used to locate the regions of a cartesian
+map where a condition is true or false
+
+In many cases, this is not the optimal way to generate such tiles,
+but it may be of use if you only have access to a function that
+return true for an area.
+
+See https://gitlab.com/jbrobertson/quad-filter/ for details.
+
+
