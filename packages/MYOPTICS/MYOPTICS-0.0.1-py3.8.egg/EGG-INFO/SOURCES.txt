@@ -1,0 +1,7 @@
+setup.py
+MYOPTICS.egg-info/PKG-INFO
+MYOPTICS.egg-info/SOURCES.txt
+MYOPTICS.egg-info/dependency_links.txt
+MYOPTICS.egg-info/top_level.txt
+optics_base_lonlat/MYOPTICS.py
+optics_base_lonlat/__init__.py
