@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dnd-character
+Version: 20.10.30
+Summary: make Dungeons & Dragons characters as serializable objects
+Home-page: https://github.com/tassaron2/dnd_character
+Author: Brianna Rainey
+License: EPL-2.0
+Description: missing readme.md
+Keywords: dnd trpg tabletop rpg
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Games/Entertainment :: Role-Playing
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: Eclipse Public License 2.0 (EPL-2.0)
+Description-Content-Type: text/markdown
