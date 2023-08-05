@@ -1,0 +1,7 @@
+README.md
+setup.py
+KyeDiscord/__init__.py
+KyeDiscord.egg-info/PKG-INFO
+KyeDiscord.egg-info/SOURCES.txt
+KyeDiscord.egg-info/dependency_links.txt
+KyeDiscord.egg-info/top_level.txt
