@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: FinAvn2
+Version: 0.7
+Summary: Performing Financial Time series forecasting using Machine Learning
+Home-page: https://github.com/avneeshdubey99/FinAvn
+Author: Avneesh Dubey
+Author-email: avneesh.d01@gmail.com
+License: MIT
+Download-URL: https://github.com/avneeshdubey99/FinAvn.git
+Description: UNKNOWN
+Keywords: Machine Learning,Pandas,Numpy,Analysis,Regression,Classification,Dimensionality,Classifiers
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
