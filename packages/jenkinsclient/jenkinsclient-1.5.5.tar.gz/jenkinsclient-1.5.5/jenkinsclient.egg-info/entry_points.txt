@@ -1,0 +1,5 @@
+
+        [console_scripts]
+        jenkins=jenkins_client:main
+        jks=jenkins_client:main
+    
