@@ -1,0 +1,11 @@
+tabletexifier/Table.py,sha256=-1S4cGUGJr5BQwAVc5akFBzmewRV1rQqYO3LRrYSn2g,9763
+tabletexifier/__init__.py,sha256=VoAExeX1BQrq3pKjIni9W53B5mfobDRNUzwlTx9wCu0,24
+tabletexifier/table_styles.py,sha256=dB3UjtQRUxfYmkg8nY8Hg5G1ryaaUwMeEs-asT9vSDA,4612
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_Table_styles.py,sha256=70QQiCXqAV-PmFO3L4GTrHT7oAQ32rRdUkJqBPh-RvI,125
+test/test_basic_functions.py,sha256=NJd5DRn3bVMYg5oQuR_TILQYsK8vihxluEXEPB-TXdM,3888
+tabletexifier-0.1.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tabletexifier-0.1.6.dist-info/METADATA,sha256=LQT5EOezjDiJ4-92xorE8wHrKO-Hm8vjgT8EVt9NgN0,4291
+tabletexifier-0.1.6.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+tabletexifier-0.1.6.dist-info/top_level.txt,sha256=4f8DVO2mpZKPipRkLWNPa7y7P7kKE-hz3_WTdILXopY,19
+tabletexifier-0.1.6.dist-info/RECORD,,
