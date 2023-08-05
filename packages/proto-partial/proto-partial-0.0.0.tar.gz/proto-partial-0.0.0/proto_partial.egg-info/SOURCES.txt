@@ -1,0 +1,8 @@
+README.md
+setup.py
+proto-partial/__init__.py
+proto-partial/dummy.py
+proto_partial.egg-info/PKG-INFO
+proto_partial.egg-info/SOURCES.txt
+proto_partial.egg-info/dependency_links.txt
+proto_partial.egg-info/top_level.txt
