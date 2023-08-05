@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: nextline-graphql
+Version: 0.0.1
+Summary: A GraphQL API for Nextline
+Home-page: https://github.com/simonsobs/nextline
+Author: Simons Observatory
+Author-email: so_software@simonsobservatory.org
+License: UNKNOWN
+Description: [![Build Status](https://travis-ci.com/simonsobs/nextline-graphql.svg?branch=main)](https://travis-ci.com/simonsobs/nextline-graphql) [![codecov](https://codecov.io/gh/simonsobs/nextline-graphql/branch/main/graph/badge.svg)](https://codecov.io/gh/simonsobs/nextline-graphql)
+        
+        # nextline-graphql
+        A GraphQL API for Nextline
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Provides-Extra: tests

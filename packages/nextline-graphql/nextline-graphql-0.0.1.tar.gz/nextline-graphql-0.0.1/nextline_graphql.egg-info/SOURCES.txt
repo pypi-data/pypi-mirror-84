@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+nextline_graphql.egg-info/PKG-INFO
+nextline_graphql.egg-info/SOURCES.txt
+nextline_graphql.egg-info/dependency_links.txt
+nextline_graphql.egg-info/requires.txt
+nextline_graphql.egg-info/top_level.txt
+nextlinegraphql/__init__.py
+nextlinegraphql/_version.py
