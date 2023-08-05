@@ -1,0 +1,10 @@
+spark_fhir_schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spark_fhir_schemas/r4/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spark_fhir_schemas/r4/generate_schema.py,sha256=D34EUlv6ZU49RvelFeaVAbyF0EhXWGtfNP2kZX87pRc,4656
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_simple.py,sha256=NJOb_JyfOXIJCHXdUINQw3rxdR4AWewt4SKm6gAGwas,36
+sparkfhirschemas-0.1.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sparkfhirschemas-0.1.2.dist-info/METADATA,sha256=31NWI1lWgXWy5H_XHOfInbOQu7uzEY0bZ_Bb4kTkdUM,564
+sparkfhirschemas-0.1.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+sparkfhirschemas-0.1.2.dist-info/top_level.txt,sha256=HmgC9LIcP2D1lYfg5-9_fLKoNH6bMzl2XPsvtM4pqBo,25
+sparkfhirschemas-0.1.2.dist-info/RECORD,,
