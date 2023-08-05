@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: literary
+Version: 0.1.0
+Summary: Literate-style programming using the Jupyter stack
+Author: Angus Hollands
+Author-email: goosey15@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: nbconvert (>=6.0.7,<7.0.0)
+Requires-Dist: nbformat (>=5.0.8,<6.0.0)
+Requires-Dist: traitlets (>=5.0.5,<6.0.0)

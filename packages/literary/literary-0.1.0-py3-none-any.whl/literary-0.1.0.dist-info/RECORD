@@ -1,0 +1,10 @@
+literary/__init__.py,sha256=i0bVPftW8ZGOGsYfyiM8kYLJ0HST4nBVW_QS58Qz5eU,33
+literary/build.py,sha256=CdsC8e83uO1CuAAr735Kg6rkWrcwXyxkELqQTuk-K58,2705
+literary/exporter.py,sha256=jZckDZAP7Y5Pb25rRpDhRCDt-umGisWl-w7ZW23lsTc,661
+literary/importer.py,sha256=Pa4Qs2X1AjJISESESDMMuQDRJt1qRXFd1IfkCtmy3Xs,2912
+literary/notebook.py,sha256=TDiWx2xan5r6rmwAMLlYBpJJe3E2VhnuKhzbMPGLK-8,847
+literary/preprocessor.py,sha256=f4TEYWQpHIE0RZAqQ_0CjU-VnLN9KnQ16U5lM2yOUNI,566
+literary-0.1.0.dist-info/entry_points.txt,sha256=S9dLcUYo2GDPkC_TrNW4cVOQ29i4UOrKhdf1ha_oiVI,53
+literary-0.1.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+literary-0.1.0.dist-info/METADATA,sha256=N04EJWWl7MtK-lRaJz5FRjaQUH4RlLD7vIfPFrBTgrI,419
+literary-0.1.0.dist-info/RECORD,,
