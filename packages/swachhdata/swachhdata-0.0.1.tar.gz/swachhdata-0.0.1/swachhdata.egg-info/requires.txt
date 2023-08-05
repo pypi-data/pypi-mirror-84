@@ -1,0 +1,16 @@
+beautifulsoup4==4.9.1
+contractions==0.0.25
+pycontractions
+regex==2020.6.8
+emoji==0.6.0
+html2text==2019.8.11
+html5lib==1.0.1
+httplib2==0.18.1
+lxml==4.5.1
+nltk==3.5
+num2words==0.5.10
+pycrypto==2.6.1
+textblob==0.15.3
+Unidecode==1.1.1
+unicode==2.7
+textsearch==0.0.17
