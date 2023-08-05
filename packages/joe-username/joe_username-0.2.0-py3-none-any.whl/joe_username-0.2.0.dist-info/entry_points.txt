@@ -1,0 +1,3 @@
+[console_scripts]
+joe-username = joe_username.__main__:main
+
