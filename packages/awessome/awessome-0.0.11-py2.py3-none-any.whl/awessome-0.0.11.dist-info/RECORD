@@ -1,0 +1,12 @@
+awessome/__init__.py,sha256=G2WICU_Zh5n_nB23EBynr3180BMfu-UHO-IerOnJgRg,17
+awessome/awessome_aggregator.py,sha256=nZBxMkuTCPd3JD0Vr55_yA-kvry2vrteZG74T2LoO_8,2074
+awessome/awessome_builder.py,sha256=mvalX0hqSCSFek46HJge2q9OxYg2zcF4SY8yB2fuHrs,8672
+awessome/awessome_scorer.py,sha256=ytAPFpeC5LplSxjomYnLBVoxa7US2NcSolDK5ij_p_Q,4266
+awessome/awessome_similarity.py,sha256=RwueuBSaiTOufpAfz_li2VeVpVEh3BXvXsMvJiH8fHs,1450
+awessome/labmt.txt,sha256=0nYjaaVPvl_cxGAbp8D1acb_XCJ4fbBPUrf0t5V1Edc,85868
+awessome/vader.txt,sha256=qRyqQAwcHe_qMV0HFEkKdk8L1KFXKE8--e1Lak_JVv4,14976
+awessome-0.0.11.dist-info/LICENSE.txt,sha256=t2mr9BZnq_B688kHqSvxm3j8mO9eFb6fmsAH0_iYdCk,1069
+awessome-0.0.11.dist-info/METADATA,sha256=4hWQNqHy1fxa_IszJT9qrIUbDPi9BF01LzbMwibvT78,5794
+awessome-0.0.11.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+awessome-0.0.11.dist-info/top_level.txt,sha256=UVJatcf0orvzjxdwKchUtzN6TqEWFH7dbVcYaZebYZI,9
+awessome-0.0.11.dist-info/RECORD,,
