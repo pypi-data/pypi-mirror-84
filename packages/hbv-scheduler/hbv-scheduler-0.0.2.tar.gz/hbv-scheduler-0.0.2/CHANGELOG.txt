@@ -1,0 +1,12 @@
+Change Log
+==========
+
+0.0.1 (October 30 2020)
+-----------------------
+- First Release
+- Scheduler works with multi resource multi job with arbitrary start and end locations
+
+0.0.2 (October 31 2020)
+-----------------------
+- Added routes description and types
+- Returns an array of results
