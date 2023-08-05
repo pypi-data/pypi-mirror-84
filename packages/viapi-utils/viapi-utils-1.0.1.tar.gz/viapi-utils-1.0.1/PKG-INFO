@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: viapi-utils
+Version: 1.0.1
+Summary: The viapi-utils module of alibabaCloud Python SDK.
+Home-page: https://github.com/aliyun/alibabacloud-viapi-sdk/tree/master/python
+Author: Alibaba Cloud
+Author-email: alibaba-cloud-sdk-dev-team@list.alibaba-inc.com
+License: Apache License 2.0
+Description: UNKNOWN
+Keywords: alibabacloud,sdk,viapi-utils
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
