@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: nenucal
+Version: 0.1.5
+Summary: Calibration pipeline for the NenuFAR Cosmic Dawn project
+Home-page: https://gitlab.com/flomertens/nenucal-cd
+License: GPL-3.0-or-later
+Author: "Florent Mertens"
+Author-email: "florent.mertens@gmail.com"
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: GPy (>=1.9.9,<2.0.0)
+Requires-Dist: astropy (>=4.0,<5.0)
+Requires-Dist: astroquery (>=0.4,<0.5)
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: keyring (>=20.0,<21.0)
+Requires-Dist: libpipe (>=0.1.1,<0.2.0)
+Requires-Dist: matplotlib (>=3.0,<4.0)
+Requires-Dist: nenupy (>=1.0,<2.0)
+Requires-Dist: python-casacore (>=3.0,<4.0)
+Requires-Dist: requests (>=2.0,<3.0)
+Requires-Dist: scipy (>=1.4,<2.0)
+Requires-Dist: tables (>=3.2,<4.0)
+Requires-Dist: tabulate (>=0.8.7,<0.9.0)
+Requires-Dist: toml (>=0.10,<0.11)
+Project-URL: Repository, https://gitlab.com/flomertens/nenucal-cd
+Description-Content-Type: text/markdown
+
+NenuCAL CD
+==========
+
+Calibration pipeline for the NenuFAR Cosmic Dawn project
+
+Installation
+------------
+
+nenucal-cd can be installed via pip:
+
+    $ pip install nenucal-cd
+
+and requires Python 3.7.0 or higher. For most tasks, you will also need [DPPP](https://github.com/lofar-astron/DP3/tree/master/DPPP), [LSMTool](https://www.astron.nl/citt/lsmtool/overview.html) that you can install with the command:
+
+    $ pip install git+https://github.com/darafferty/LSMTool.git
+
+and [LoSoTo](https://revoltek.github.io/losoto/) that you can install with the command:
+
+    $ pip install git+https://github.com/revoltek/losoto
+
+
