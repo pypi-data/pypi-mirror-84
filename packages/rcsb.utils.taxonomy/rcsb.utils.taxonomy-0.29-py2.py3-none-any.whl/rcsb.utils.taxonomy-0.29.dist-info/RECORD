@@ -1,0 +1,10 @@
+rcsb/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+rcsb/utils/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+rcsb/utils/taxonomy/TaxonomyProvider.py,sha256=1L14LjPPzhje3NW0l1dxn86MBi3UUlPh0tbj0e2_2So,17659
+rcsb/utils/taxonomy/__init__.py,sha256=9m2IFCLxRW2Sfjo_EVnkhj25z6AA8agpL0rVhaZQXrQ,154
+rcsb.utils.taxonomy-0.29.dist-info/LICENSE,sha256=VWLxXn8PvwE6ptB7BxQbpErZ9iyxodApO5MYZ2yZ2jk,552
+rcsb.utils.taxonomy-0.29.dist-info/METADATA,sha256=e4UgqZH6s_8tCaLEgBzvLDv-kJLE8DoX25OgQAx8wXk,841
+rcsb.utils.taxonomy-0.29.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+rcsb.utils.taxonomy-0.29.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+rcsb.utils.taxonomy-0.29.dist-info/top_level.txt,sha256=o9JzKwjXZKvIt99MG_WvJuOnR1DZn6_CIPtgWgUB0E8,5
+rcsb.utils.taxonomy-0.29.dist-info/RECORD,,
