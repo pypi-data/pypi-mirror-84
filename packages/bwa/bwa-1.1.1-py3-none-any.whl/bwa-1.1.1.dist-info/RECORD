@@ -1,0 +1,15 @@
+bwa/__init__.py,sha256=F-gicHLq3AQN-yaTYdMe5GgPqvq4AajFkdEtqhOcfZE,167
+bwa/discord.py,sha256=fvLQxVdRhbKI6FauYXY9zzMY4c1sxGH5Ovh1qsNlTck,3356
+bwa/gmail.py,sha256=JSe53uX4-w_SPrLvNNo8-qMmknN440muBaozkkMr_jE,4571
+bwa/slack.py,sha256=BsHZB5riFfMmG5-zK7AAq8SQIWhEsACnKhNZLxA38E4,3267
+bwa/telegm.py,sha256=DBXsPf_1eOj5clxKR0yed7K59k2KGuOJE37Q2MSqZdU,3469
+bwa/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bwa/test/test_discord.py,sha256=Xps2nhzLuMxNuCE8KsJ4qxEWFMljO1dODbGyVPPoMoU,2105
+bwa/test/test_gmail.py,sha256=tmw18t17TuDA09MVjZgFM_kiwm5H-0TZ63DM17oPHjk,3418
+bwa/test/test_slack.py,sha256=HLwgBBVvvOYiQplDYwcvriz3Zu_MRLKRJiiM68cOZ7c,2112
+bwa/test/test_telegram.py,sha256=4FOQsRTnGd3cpriBemLA20ygKRRXBswe_zNlSAISuNM,2291
+bwa-1.1.1.dist-info/LICENSE,sha256=FOOeGv1emu_9sEZn7E4LUqBoLcGyQHcr__Mf4EkrJbA,1069
+bwa-1.1.1.dist-info/METADATA,sha256=rVOZef5MVJH52Z2XUIQuNUhZ25NrUKndeXbvutj0emo,7040
+bwa-1.1.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+bwa-1.1.1.dist-info/top_level.txt,sha256=iLblCWD9oglAAkZ06GojV8tZNh8XNhOVMyG0EToJWX4,4
+bwa-1.1.1.dist-info/RECORD,,
