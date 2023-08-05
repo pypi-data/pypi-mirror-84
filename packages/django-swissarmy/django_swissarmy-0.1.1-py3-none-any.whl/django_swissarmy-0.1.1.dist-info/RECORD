@@ -1,0 +1,12 @@
+swissarmy/__init__.py,sha256=mrprZVUTcrl4C2kKdEahQu-GP5XPZeb3VkIEYx9H5Uo,76
+swissarmy/apps.py,sha256=HcZ66_dks6IAqZQFaGz5uNtnQi-vewu27IIN-pC1S9M,719
+swissarmy/defaults.py,sha256=7ajdMk3KguGbaXcKkslIhC1P3pfZQvWXPWXcxY1peCs,369
+swissarmy/mixins/models/__init__.py,sha256=MihHbu-Az9O6LncG4kvUpaES2WO5KVKB0n8Qa0T1Y8I,38
+swissarmy/mixins/models/uuid_model.py,sha256=HyZMAT3Zq8RBKTtJAJ38qi3FJ9zxyA_tZwdBpdSD-qA,1413
+swissarmy/mixins/settings/__init__.py,sha256=3kdqKfwDS4yQDvYIbowmmG-NGz72fv1k0O9Z-ND_Mg4,50
+swissarmy/mixins/settings/default_settings.py,sha256=vsLeWFFvtG47Sd2UoFS-xvbJiD5vf-MDExVl9seDTsA,149
+django_swissarmy-0.1.1.dist-info/LICENSE,sha256=DLQu5QYUqXGH3i_WKbAocpKI8vbZ4Scpa2ofhHDz-4k,1097
+django_swissarmy-0.1.1.dist-info/METADATA,sha256=RJK0Yz1qwznBVvla3HgjjszF8r_qklUBgykX3DjKA1c,578
+django_swissarmy-0.1.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+django_swissarmy-0.1.1.dist-info/top_level.txt,sha256=6LkXKvcG6DnnYDy0HV6d_JQ3bYcjJpfwaEk_qL9lx6k,10
+django_swissarmy-0.1.1.dist-info/RECORD,,

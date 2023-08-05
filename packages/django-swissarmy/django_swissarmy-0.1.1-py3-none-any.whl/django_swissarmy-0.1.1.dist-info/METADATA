@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: django-swissarmy
+Version: 0.1.1
+Summary: Handy dandy things for Django
+Home-page: https://github.com/djangoat/django-swissarmy
+Author: Djangoat
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Description-Content-Type: text/x-rst
+Requires-Dist: hashids (<1.4,>=1.3)
+
+django-swissarmy
+================
+
+Handy dandy things for Django.
+
+
