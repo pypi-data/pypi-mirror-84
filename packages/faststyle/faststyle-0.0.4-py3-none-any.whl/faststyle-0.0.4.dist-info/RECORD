@@ -1,0 +1,15 @@
+faststyle/__init__.py,sha256=avIyARPdTQj9CMDhat5jvVAqU6eQNazA67G8ObR5PZM,182
+faststyle/_nbdev.py,sha256=eGsuAey0_qLsQrqXiSuSZ6f9DARt3H_YT_avGGJ7I7Q,1813
+faststyle/callback.py,sha256=GeIGBQNGDLiVH1JHzp7xXeooTUegPC4EJnFJd1sZxs4,1299
+faststyle/core.py,sha256=VAyiSlZuB6bFDW5LyclIXNkDqwqtrI3XjYhSLIxYj2M,1390
+faststyle/data.py,sha256=FafpSZezrs-KEh8Gl51OkXR5gS3FphEyFr-MCZEUYGc,2689
+faststyle/layer_features.py,sha256=6Ob0vXxUwR2x7-0JQ-jf-pcpaunjpydV29HKWRJuu-A,1522
+faststyle/learner.py,sha256=r1YECmE5lnHjSou1fFGAAkdXT-NH60IqK6Hz-eGE89Y,577
+faststyle/loss.py,sha256=OFJ4qH0XdJyLoSBA5l-M4F94zK-em8rrO6o0Q1j55B4,3196
+faststyle/models.py,sha256=4CC-Mtckk_UO_WV3dwC1KlLiMa2nTHINGVT7rj6W2tE,4972
+faststyle-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+faststyle-0.0.4.dist-info/METADATA,sha256=maBoxPAppM_GjrZrz5Yj67QT4yR0SOWq4jE0Ksbz9tY,1846
+faststyle-0.0.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+faststyle-0.0.4.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+faststyle-0.0.4.dist-info/top_level.txt,sha256=gHJCJGXAL1e0JRsrj3WzHIY_vhfTs3FfNM0s1RetPe0,10
+faststyle-0.0.4.dist-info/RECORD,,
