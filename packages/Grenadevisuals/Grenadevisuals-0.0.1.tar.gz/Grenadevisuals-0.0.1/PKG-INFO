@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: Grenadevisuals
+Version: 0.0.1
+Summary: Python async library for pulling news off of https://www.epicgames.com/fortnite/en-US/news
+Home-page: https://github.com/BigBrain21/FortniteNewsGrabber
+Author: Riley
+License: UNKNOWN
+Description: # FortniteNewsGrabber
+        
+        An async python library for grabbing the news from [this site](https://www.epicgames.com/fortnite/en-US/news).<br />
+        
+        Installation<br />
+        -
+        ```py
+        pip install FortniteNewsGrabber
+        ```
+        
+        Basic Usage:<br />
+        -
+        ```py
+        import FortniteNewsGrabber
+        import asyncio
+        
+        async def main():
+            a = await FortniteNewsGrabber.getAllNews()
+            print(a[0].image)
+        
+        
+        asyncio.run(main())
+        ```
+        This will print a url to the image of the first news element:
+        ```
+        https://cdn2.unrealengine.com/13br-megadrop-blogthumb-576x576-730037014.jpg
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
