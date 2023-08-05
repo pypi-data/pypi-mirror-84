@@ -1,0 +1,12 @@
+README.md
+setup.py
+agent_exchange/__init__.py
+agent_exchange/agent.py
+agent_exchange/exchange.py
+agent_exchange/stock_exchange_v1.py
+agent_exchange.egg-info/PKG-INFO
+agent_exchange.egg-info/SOURCES.txt
+agent_exchange.egg-info/dependency_links.txt
+agent_exchange.egg-info/requires.txt
+agent_exchange.egg-info/top_level.txt
+examples/__init__.py
