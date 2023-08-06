@@ -1,0 +1,13 @@
+mangamon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mangamon/command_line.py,sha256=LZWj65xPPm-nngLy4j5HklkY5JkiTn_uaUPD9KcFAlI,3023
+mangamon/constants.py,sha256=RXXJ5J3DAk9vjisrtOw6ubxoa_OPMNvcr279ahFkjqA,151
+mangamon/download.py,sha256=1eANhcdX02B2TJoo-cHcxdQYyQexGDaCs3-8inSShN4,3990
+mangamon/manga.py,sha256=RH_SgZrVH-xx_PTlc5sjKVgNfX1ssCPcgiu2d7Oe5FI,3951
+mangamon/post_processor.py,sha256=EPjcre3aqbG3rUe-4wP5zi8WgZFlBuubaz94pJIfgTs,474
+mangamon/util.py,sha256=S9ryGA9QDfVzVojZ7YiPXc11DBrrhaxYed8H--_bVAo,1001
+mangamon-0.0.3.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+mangamon-0.0.3.dist-info/METADATA,sha256=OpSffxNxkif4QX1MP3ALKV4j_XpTodl-szelD5remRM,1231
+mangamon-0.0.3.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+mangamon-0.0.3.dist-info/entry_points.txt,sha256=4K6R7NHky6D9ztZBuefNYm24DBdVHSDMa2To9luwHnM,57
+mangamon-0.0.3.dist-info/top_level.txt,sha256=AOYzdmwc2AjqakPtMScsuyUSCBbaxgrLNXp5XrLW7tQ,9
+mangamon-0.0.3.dist-info/RECORD,,
