@@ -1,0 +1,11 @@
+openGraphMatching/CECIMatcher.py,sha256=MLxhj05wsdqfXlj3a3tGnX9X17-XI_u-vs7TX4yu6eQ,8578
+openGraphMatching/GQLMatcher.py,sha256=T8oFS8fg-QKLpVFOQWuX9OE_Ma2zKKEpFUEfxUmJmKc,5418
+openGraphMatching/NaiveMatcher.py,sha256=DbRbWLFPcMpYsYjMR5U7bqw64sk2fssx88AESI7ZXQQ,3075
+openGraphMatching/SubGraphMatcher.py,sha256=DF_yprJoiocWvnkTTZKX2bY-zzGDIskp40ZR2uuBSkE,5649
+openGraphMatching/__init__.py,sha256=-lU6NIOaMWG0RMVUScS_n0oN4W-rC4AzvT9MOtcLTxI,165
+openGraphMatching/utils.py,sha256=c2JrRldRKJbOT_4bvi8b3CTwaHd346VuEhVeEUSknOQ,2897
+openGraphMatching-0.0.1.dist-info/LICENSE,sha256=TdSyuiNPZEYjLMp95fJ7dkV6hfPqjDCEv9c54gR7bI8,1063
+openGraphMatching-0.0.1.dist-info/METADATA,sha256=FB1Wpm5oBjxG1cz3xelAnRJ31AICMB7uGihsbv6Koak,494
+openGraphMatching-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+openGraphMatching-0.0.1.dist-info/top_level.txt,sha256=IFetHpqsAyCYwvLKiQuAw2KPLoF5z1IXr5Fbf3V9aRw,18
+openGraphMatching-0.0.1.dist-info/RECORD,,
