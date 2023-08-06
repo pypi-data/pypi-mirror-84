@@ -1,0 +1,3 @@
+[console_scripts]
+clogs = clogs.cli:main
+
