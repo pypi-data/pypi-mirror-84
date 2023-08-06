@@ -1,0 +1,9 @@
+README.md
+setup.py
+waynepdf/__init__.py
+waynepdf/pdf2image.py
+waynepdf/pdf2text.py
+waynerpdftest.egg-info/PKG-INFO
+waynerpdftest.egg-info/SOURCES.txt
+waynerpdftest.egg-info/dependency_links.txt
+waynerpdftest.egg-info/top_level.txt
