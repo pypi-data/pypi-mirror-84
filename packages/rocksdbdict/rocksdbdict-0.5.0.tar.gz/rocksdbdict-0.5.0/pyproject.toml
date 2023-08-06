@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "rocksdbdict"
+version = "0.5.0"
+description = ""
+authors = ["Adam Marples <adammarples@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+python-rocksdb = "^0.7.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.1.2"
+dephell = "^0.8.3"
+
+[tool.dephell.main]
+from = {format = "poetry", path = "pyproject.toml"}
+to = {format = "setuppy", path = "setup.py"}
+# drop dev-dependencies
+envs = ["main"]
+
+[tool.dephell.pytest]
+# read dependencies from setup.py
+from = {format = "setuppy", path = "setup.py"}
+# install main dependencies and `tests` extra dependencies
+envs = ["main", "tests"]
+# run command `pytest`
+command = "pytest"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
