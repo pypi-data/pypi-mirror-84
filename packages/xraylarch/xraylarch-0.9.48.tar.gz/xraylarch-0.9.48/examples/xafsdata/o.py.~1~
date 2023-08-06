@@ -1,0 +1,13 @@
+from larch.io import read_ascii
+from larch.xafs import pre_edge
+from wxmplot.interactive import plot
+
+fname = 'fe2o3_rt1.xmu'
+dat = read_ascii(fname, labels='energy mu i0')
+
+pre_edge(dat, group=dat)
+
+plot(dat.energy, dat.mu, label='mu', label='Energy (eV)',
+     title=fname,show_legend=True)
+plot(dat.energy, dat.pre_edge, label='pre-edge line')
+plot(dat.energy, dat.post_edge, label='post-edge curve')

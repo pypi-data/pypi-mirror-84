@@ -1,0 +1,120 @@
+#= Feff85l 2020-11-05 21:31:53
+#= Feff85l rdinp module
+ Feff8L (EXAFS)      release  0.1
+ name:     cobalt
+ formula:  Co
+ sites:    Co1
+ refer1:   Kittel, ISSP
+ refer2:
+ schoen:
+ notes1:   metal, hexagonal close packed (hcp)
+#= Feff85l pot module
+ Calculating potentials ...
+    free atom potential and density for atom type    0
+    free atom potential and density for atom type    1
+    initial state energy
+    overlapped potential and density for unique potential    0
+    overlapped potential and density for unique potential    1
+    muffin tin radii and interstitial parameters
+    : ipot, Norman radius, Muffin tin radius, Overlap
+         0  1.36890E+00  1.33185E+00  1.06942E+00
+         1  1.38326E+00  1.34403E+00  1.07310E+00
+    : mu_old=   -11.812
+ Done with module 1: potentials.
+#= Feff85l xsph module
+ Calculating cross-section and phases...
+    absorption cross section
+    phase shifts for unique potential    0
+    phase shifts for unique potential    1
+ Done with module 2: cross-section and phases...
+#= Feff85l pathfinder module
+ Preparing plane wave scattering amplitudes...
+ Searching for paths...
+   WARNING:  rmax > distance to most distant atom.
+             Some paths may be missing.
+             rmax, ratx   5.00000E+00  0.00000E+00
+    Rmax  5.0000  keep and heap limits   0.0000000   0.0000000
+    Preparing neighbor table
+    Paths found      422   (maxheap, maxscatt      63   4)
+ Eliminating path degeneracies...
+    Plane wave chi amplitude filter   2.50%
+    Unique paths     24,  total paths     356
+ Done with module 4: pathfinder.
+#= Feff85l genfmt module
+ Calculating EXAFS parameters...
+    Curved wave chi amplitude ratio   4.00%
+    Discard feff.dat for paths with cw ratio <   2.67%
+    path  cw ratio     deg    nleg  reff
+      1   100.000     6.000     2   2.4982
+      2    99.000     6.000     2   2.5100
+      3    45.246     6.000     2   3.5413
+      4     5.437    12.000     3   3.7533
+      5    11.116    24.000     3   3.7533
+      6     5.453    12.000     3   3.7650
+      7    10.759     2.000     2   4.0700
+      8     7.006    24.000     3   4.2748
+      9    10.288    24.000     3   4.2748
+     10    10.297    24.000     3   4.2748
+     11    54.957    12.000     2   4.3407
+     12    27.370     6.000     2   4.3474
+     13     5.780    12.000     3   4.5332
+     14    11.051    24.000     3   4.6745
+     15    12.849    24.000     3   4.6744
+     16    12.844    24.000     3   4.6745
+     17     5.452    12.000     3   4.6837
+     18    12.650    24.000     3   4.6837
+     19    42.887    12.000     2   4.7817
+     20    11.602    12.000     3   4.8891
+     21    24.448    24.000     3   4.8891
+     22     3.336    12.000     4   4.9965
+     23     4.121     6.000     4   4.9965
+     24     4.597    12.000     4   4.9965
+   24 paths kept,   24 examined.
+ Done with module 5: F_eff.
+#ERROR Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+#= Feff85l ff2x module
+ Calculating chi...
+ feffdt, feff.pad to feff.dat conversion: Feff8L (EXAFS)      release  0.1
+ name:     cobalt                               Feff8L (EXAFS)       0.1
+ formula:  Co
+ sites:    Co1
+ refer1:   Kittel, ISSP
+ refer2:
+ schoen:
+ notes1:   metal, hexagonal close packed (hcp)
+ POT  Non-SCF, core-hole, AFOLP (folp(0)= 1.150)
+ Abs   Z=27 Rmt= 1.332 Rnm= 1.369 K  shell
+ Pot 1 Z=27 Rmt= 1.344 Rnm= 1.383
+ Gam_ch=1.436E+00 H-L exch
+ Mu=-1.181E+01 kf=2.060E+00 Vint=-2.798E+01 Rs_int= 1.761
+ PATH  Rmax= 5.000,  Keep_limit= 0.00, Heap_limit 0.00  Pwcrit= 2.50%
+      24 paths to process
+    path     filename
+       1     feff0001.dat
+       2     feff0002.dat
+       3     feff0003.dat
+       4     feff0004.dat
+       5     feff0005.dat
+       6     feff0006.dat
+       7     feff0007.dat
+       8     feff0008.dat
+       9     feff0009.dat
+      10     feff0010.dat
+      11     feff0011.dat
+      12     feff0012.dat
+      13     feff0013.dat
+      14     feff0014.dat
+      15     feff0015.dat
+      16     feff0016.dat
+      17     feff0017.dat
+      18     feff0018.dat
+      19     feff0019.dat
+      20     feff0020.dat
+      21     feff0021.dat
+      22     feff0022.dat
+      23     feff0023.dat
+      24     feff0024.dat
+    Use all paths with cw amplitude ratio   4.00%
+    S02  1.000  Global sig2  0.00000
+ Done with module 6: DW + final sum over paths.
+#= Feff85l done 2020-11-05 21:31:54

@@ -1,0 +1,21 @@
+
+environment:
+  matrix:
+    - PYTHON_VERSION: "3.8"
+      MINICONDA: "C:\\Miniconda36-x64"
+
+install:
+    - "%MINICONDA%\\Scripts\\activate.bat"
+    - conda config --set always_yes True
+    - conda config --add channels conda-forge
+    - conda update conda
+    - conda info -a
+    - conda install python=3.8 numpy scipy matplotlib h5py sqlalchemy scikit-image scikit-learn cython pillow psutil pandas nose pytest pyyaml sphinx dill pyfai pycifrw silx tomopy wxpython
+    - pip install lmfit peakutils pyepics pyshortcuts termcolor xraydb wxmplot wxutils
+
+build_script:
+    - python.exe setup.py install
+
+test_script:
+    - cd tests
+    - python -m pytest

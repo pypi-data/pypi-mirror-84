@@ -1,0 +1,7 @@
+import asteval
+
+
+a = asteval.Interpreter()
+a('x = 4')
+a('y = 5')
+a('sqrt(y+x)')

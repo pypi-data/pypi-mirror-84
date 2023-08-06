@@ -1,0 +1,55 @@
+## Larch Script for Fitting Cu XAFS
+# read data, perform background subtraction
+cu_data = read_xdi('cu_metal_rt.xdi')
+cu_data.mu = cu_data.mutrans
+autobk(cu_data, rbkg=1.2, kw=2)
+
+# define fitting parameter group
+fit_params=group(s02   = guess(1),
+                 e0    = guess(4),
+                 alpha = guess(0),
+                 c3_p1 = guess(0),
+                 ss2_p1= guess(0.002),
+                 ss2_p2= guess(0.002),
+                 ss2_p3= guess(0.002),
+                 ss2_p4= guess(0.002),
+                 ss2_p6= guess(0.002) )
+
+
+# define a list of Feff Paths and Path Parameters
+paths = [feffpath('feff0001.dat', sigma2='ss2_p1',
+                 third='c3_p1', s02='s02', e0='e0',
+                 deltar='alpha*reff')]
+for fpath, s2var in (('02', 'p2'), ('03', 'p3'),
+           ('04', 'p4'), ('05', 'p4'), ('06', 'p6'),
+           ('07', 'p6'), ('08', 'p4'), ('09', 'p4'),
+           ('10', 'p4'), ('11', 'p4'), ('12', 'p4'),
+           ('13', 'p4')):
+     paths.append(feffpath('feff00%s.dat' % fpath,
+                           sigma2='ss2_%s' % s2var,
+                           s02='s02', e0='e0',
+                           deltar='alpha*reff'))
+
+#endfor
+
+# set FT parameters, window function, fit ranges
+trans= feffit_transform(kmin=3, kmax=16, kw=2, dk=5,
+          window='kaiser', rmin=1.3, rmax=4.8)
+
+# define dataset with data, transform, path list
+
+dset = feffit_dataset(data=cu_data, transform=trans, pathlist=paths)
+
+# perform fit, show results
+result = feffit(fit_params, dset)
+
+print(feffit_report(result))
+
+plot_chifit(dset, show_imag=True, rmax=6.5)
+plot_axvline(1.3, win=2)
+plot_axvline(4.8, win=2)
+i1 = index_of(dset.data.r, 1.3)
+i2 = index_of(dset.data.r, 4.8)
+plot(dset.data.r[i1:i2],
+     -3+(dset.data.chir_im-dset.model.chir_im)[i1:i2],
+     sytle='short dashed', win=2)
