@@ -1,0 +1,3 @@
+[console_scripts]
+vspleeter = vspleeter.__main__:main
+
