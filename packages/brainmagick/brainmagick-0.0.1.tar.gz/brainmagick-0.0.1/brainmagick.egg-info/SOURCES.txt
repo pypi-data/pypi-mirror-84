@@ -1,0 +1,6 @@
+brainmagick.py
+setup.py
+brainmagick.egg-info/PKG-INFO
+brainmagick.egg-info/SOURCES.txt
+brainmagick.egg-info/dependency_links.txt
+brainmagick.egg-info/top_level.txt

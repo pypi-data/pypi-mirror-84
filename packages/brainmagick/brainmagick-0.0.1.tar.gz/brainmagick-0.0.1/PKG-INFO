@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: brainmagick
+Version: 0.0.1
+Summary: Tools for MEG processing
+Home-page: https://github.com/kingjr/bm
+Author: Alexandre Défossez
+Author-email: alexandre.defossez@gmail.com
+License: Creative Commons Attribution-NonCommercial 4.0 International
+Description: Tools for MEG processing
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
