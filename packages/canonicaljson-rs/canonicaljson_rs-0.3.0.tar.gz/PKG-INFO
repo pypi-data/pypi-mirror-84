@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: canonicaljson-rs
+Version: 0.3.0
+Summary: Python bindings for canonical_json
+Author: Mathieu Leplatre <mathieu@mozilla.com>
+Author-Email: Mathieu Leplatre <mathieu@mozilla.com>
+License: Mozilla Public License 2.0
