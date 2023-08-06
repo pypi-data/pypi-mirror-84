@@ -1,0 +1,14 @@
+quica/__init__.py,sha256=YwaAe6Sc6hJfUNubpNBElc8Hju2srYzVTo1ow0FDZ5w,132
+quica/quica.py,sha256=DmbygoBUYNgFyWIP5hwSJZlXCkQVxyNAd7gCaQ4AdqU,1350
+quica/dataset/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quica/dataset/dataset.py,sha256=efPkdtf8x86BzhGVlCXSNgAVdSgbfxJolmbNuFxlVAE,221
+quica/internal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quica/internal/measures.py,sha256=G6SjCWVh5YoeLN2y1fqjDbuiLIT0tKeBuRTdzaplegQ,18395
+quica/measures/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quica/measures/irr.py,sha256=RdG4saMVTWu8oNNJ3CDuTuTieA47_Dgt2EjMi_c0D58,3205
+quica-0.2.2.dist-info/AUTHORS.rst,sha256=yx-H7Qz4S-Z4ho-95-4d54Oen0P9Kk3XM9Sn1tgNMgU,165
+quica-0.2.2.dist-info/LICENSE,sha256=UvFoU6muYyHsz_R_RJEeOnhaGhYasKawx2_HVWyOvew,1075
+quica-0.2.2.dist-info/METADATA,sha256=0teT3Y3FeVi-8PSCyWxbYGx0ppQ6rBgDdHVwRxvKGgc,5658
+quica-0.2.2.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+quica-0.2.2.dist-info/top_level.txt,sha256=vGKbJh1pXQvk1S0Z_gmyP1qksUcCYQri5LbUyuVswX4,6
+quica-0.2.2.dist-info/RECORD,,
