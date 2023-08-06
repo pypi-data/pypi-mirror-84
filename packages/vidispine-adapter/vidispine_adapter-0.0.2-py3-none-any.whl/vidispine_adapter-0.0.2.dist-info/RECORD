@@ -1,0 +1,16 @@
+vidispine/__init__.py,sha256=Konp92dmwOXSmMSXvGAV6gq1APUlqMqeZt9E9hv9dbs,47
+vidispine/base.py,sha256=oF-DD40h2bsAoVU_OX0LiMKLKFqTY3-d7fPjic_DoFI,667
+vidispine/client.py,sha256=uWmi1AooJMdw9663TbsbAQv_1mFLgmKB6Yegkh_LYgw,7759
+vidispine/collections.py,sha256=JsrPW-H5xYk-MGMRIk-SrZIdlw67RJZ6UeB4eV7H84Y,3070
+vidispine/errors.py,sha256=g7RjiFvkAiEiVrCfhjVWXcXt6s6SsaPh8S6JEyMXx_A,158
+vidispine/items.py,sha256=oNYDY19ZIPGFHvuY9EBmFxE1ZDqhst6eNcfeGjOHtfU,4644
+vidispine/jobs.py,sha256=9wPwGjml-8nIUxE1rwJjQUKoVdkKkxH9LnnZIhEyi34,915
+vidispine/log.py,sha256=bGyJ535NfWpcbdSnFW-Bh8UioNFBuk3gZbGKy-BDrZU,644
+vidispine/metadata.py,sha256=PFFZ2IcVA1e8OwOXWl8ahT5AfMipNbZyZ3QbJIyfvuw,6429
+vidispine/search.py,sha256=MLX5uUFUgnUEMY5fc6C6Ey9Hy2tCSotBqxhZvi-EYJE,3398
+vidispine/typing.py,sha256=9JRNpsvTZm45HdAHjTNTZ47UbHQ3T6zsujPuCZ3KMIU,101
+vidispine/utils.py,sha256=qnlDlBlCsJMjICLA2dMX40ZcP5wQXNS8EZ52RAN25cc,702
+vidispine_adapter-0.0.2.dist-info/LICENSE,sha256=rdwSnTj9BX9mbhofNKxrEQV-_0OU2cScdXtMt0aD-NI,1060
+vidispine_adapter-0.0.2.dist-info/WHEEL,sha256=Q99itqWYDhV793oHzqzi24q7L7Kdiz6cb55YDfTXphE,84
+vidispine_adapter-0.0.2.dist-info/METADATA,sha256=CoKo8uDTdtbkaZt3KnYWkbTmJ5L3KU8_wAp2cF5sT4g,2966
+vidispine_adapter-0.0.2.dist-info/RECORD,,
