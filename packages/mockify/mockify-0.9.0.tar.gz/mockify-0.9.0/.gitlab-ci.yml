@@ -1,0 +1,67 @@
+image: python:3.7-slim
+
+stages:
+  - build
+  - test
+  - deploy
+
+before_script:
+  - pip install pipenv
+  - pipenv install --dev
+
+build:
+  stage: build
+  script:
+    - apt-get update
+    - apt-get install -y git
+    - pipenv run invoke -pe build
+
+.base-test:
+  stage: test
+  script:
+    - pipenv run invoke -pe check
+
+test Py3.8:
+  image: python:3.8-slim
+  extends: .base-test
+
+test Py3.7:
+  image: python:3.7-slim
+  extends: .base-test
+
+test Py3.6:
+  image: python:3.6-slim
+  extends: .base-test
+
+.base-deploy:
+  before_script:
+    - apt-get update
+    - apt-get install -y git
+    - pip install pipenv
+    - pipenv install --dev
+
+deploy_test:
+  stage: deploy
+  variables:
+    TWINE_USERNAME: $TEST_PYPI_USER
+    TWINE_PASSWORD: $TEST_PYPI_PASS
+  extends: .base-deploy
+  script:
+    - pipenv run invoke -pe deploy-test
+  only:
+    - branches
+    - tags
+  except:
+    - master
+
+deploy_production:
+  stage: deploy
+  variables:
+    TWINE_USERNAME: $PYPI_USER
+    TWINE_PASSWORD: $PYPI_PASS
+  extends: .base-deploy
+  script:
+    - pipenv run invoke -pe validate-tag $CI_COMMIT_TAG
+    - pipenv run invoke -pe deploy-prod
+  only:
+    - tags
