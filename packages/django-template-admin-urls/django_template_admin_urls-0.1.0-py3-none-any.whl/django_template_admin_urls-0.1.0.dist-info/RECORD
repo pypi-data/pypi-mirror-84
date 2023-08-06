@@ -1,0 +1,12 @@
+django_template_admin_urls-0.1.0.dist-info/dependency_links.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_template_admin_urls-0.1.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_template_admin_urls-0.1.0.dist-info/METADATA,sha256=J0hvQxmvz0l7-p0Fkj3SSm-dtw0s45y7NYChuHSdbY0,1072
+django_template_admin_urls-0.1.0.dist-info/top_level.txt,sha256=YA0Wipyy65KRBcNezw61qy4oI5RDJMMoAFrMDxqgKLk,22
+django_template_admin_urls-0.1.0.dist-info/WHEEL,sha256=Us79eivRQjLGHRjcJWcKLoOci69wgGrVnpmn7W4m6PA,86
+dj_template_admin_urls/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_template_admin_urls/templatetags/admin_links.py,sha256=rZJ16YF0tuB2DE-rNBgxHDg5XGDX5_sTjeOU8dme7W4,584
+dj_template_admin_urls/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_template_admin_urls/templates/admin_links.jinja,sha256=iMyplF6O_9_hFP8CLHnzSRG08keZWeGuvL2HMrZzogY,608
+django_template_admin_urls-0.1.0.dist-info/LICENSE,sha256=kFGB4QXkcwCY2rf5iB4A02lWS9UI1fVglfGK0lqUn7M,1098
+django_template_admin_urls-0.1.0.dist-info/AUTHORS,sha256=Z8z4uf3pTy1Dw-jekgRcGVdN_IamfYuLFEJPIQELUJQ,36
+django_template_admin_urls-0.1.0.dist-info/RECORD,,
