@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: casa-formats-io
+Version: 0.1
+Summary: Dask-based reader for CASA data
+Home-page: http://casa-formats-io.readthedocs.org
+Author: Thomas Robitaille, Adam Ginsburg, and Eric Koch
+Author-email: thomas.robitaille@gmail.com
+License: BSD
+Description: casa-formats-io
+        ---------------
+        
+        A small package implementing I/O for CASA data formats - see https://casa-formats-io.readthedocs.io for more details.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: test
+Provides-Extra: docs
