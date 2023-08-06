@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: pyfractals
+Version: v1.1
+Summary: Python Module which creates fractals design.
+Home-page: https://github.com/AbhayTr/PyFractals
+Author: Abhay Tripathi
+Author-email: abhay.triipathi@gmail.com
+License: MIT
+Download-URL: https://github.com/AbhayTr/PyFractals/archive/v1.1.tar.gz
+Description: UNKNOWN
+Keywords: PyFractals,Fractal,PyMandelBrot,Fractals,MandelBrot,Infinity,MandelBrot Graph
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
