@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: jakesutils
+Version: 0.1
+Summary: A collection of utils that I use all the time in my projects
+Home-page: https://github.com/JakeRoggenbuck/jakesutils
+Author: Jake Roggenbuck
+Author-email: jake@jr0.org
+License: MIT
+Description: # jakesutils
+        A collection of utils that I use all the time in my projects
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
