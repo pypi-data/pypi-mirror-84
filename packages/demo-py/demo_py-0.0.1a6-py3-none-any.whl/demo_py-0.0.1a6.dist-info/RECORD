@@ -1,0 +1,13 @@
+demopy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+demopy/download-csv-from-google-sheets.py,sha256=ROV3ocd2uPU_8X5Tu6pXaCj6RzLrMN2K-RVba9q85XY,1460
+demopy/notebook_imports.py,sha256=FawgQryUE5unVR_3vsObAGMFFAVnx-aTHzhYbnFb6yA,5541
+demopy/visualizing_sql.py,sha256=u2L5egOqlgCScty7x7wdtPXwWKaUuWBF3yqoCWAALas,2450
+demopy/visualizing_tasks.py,sha256=KpgLqdLsg-RO4xqhq0Sm8AOkmTBJ8xLWyS0Vc5h3J_U,4183
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/conftest.py,sha256=17njeNuXczxaDzHwOgttq5PH1pmX7-1O9bHyZ4wc8sg,250
+demo_py-0.0.1a6.dist-info/LICENSE,sha256=DjwyNINI6QjZFBOWKQcwbk0wBvfCHCH-QwkyGzbzb8k,1065
+demo_py-0.0.1a6.dist-info/METADATA,sha256=PFxZy9U6u2QnsiDTkTsTyNt0-raOFFrN3To5s7mYpLY,2273
+demo_py-0.0.1a6.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+demo_py-0.0.1a6.dist-info/entry_points.txt,sha256=5vQcZBlvXdVQQqIAl57wCyv7J4JwmoCAGYg-AYWbh9g,73
+demo_py-0.0.1a6.dist-info/top_level.txt,sha256=p-0-FHRqpp_ynOazvuik36L0okjbdvRYbP16l9IgfWY,12
+demo_py-0.0.1a6.dist-info/RECORD,,
