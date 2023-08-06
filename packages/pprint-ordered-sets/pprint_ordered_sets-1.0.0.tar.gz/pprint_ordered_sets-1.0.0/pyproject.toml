@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pprint_ordered_sets"
+version = "1.0.0"
+description = "The standard library pprint module, but sets are always ordered."
+authors = ["Ben Bonenfant <bonenfan5ben@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/bbonenfant/pprint_ordered_sets"
+repository = "https://github.com/bbonenfant/pprint_ordered_sets"
+classifiers = [
+    "License :: OSI Approved :: Python Software Foundation License",
+    "Operating System :: OS Independent",
+]
+keywords = ["pprint", "sets"]
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=1.0,poetry<1.1"]
+build-backend = "poetry.masonry.api"
