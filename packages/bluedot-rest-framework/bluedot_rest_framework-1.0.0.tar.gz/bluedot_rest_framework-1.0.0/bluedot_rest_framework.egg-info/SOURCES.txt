@@ -1,0 +1,10 @@
+README.md
+setup.py
+bluedot_rest_framework/__init__.py
+bluedot_rest_framework/apps.py
+bluedot_rest_framework/settings.py
+bluedot_rest_framework.egg-info/PKG-INFO
+bluedot_rest_framework.egg-info/SOURCES.txt
+bluedot_rest_framework.egg-info/dependency_links.txt
+bluedot_rest_framework.egg-info/top_level.txt
+bluedot_rest_framework.egg-info/zip-safe
