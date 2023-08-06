@@ -1,0 +1,3 @@
+[console_scripts]
+pypasswd = pypasswd.generator:main
+
