@@ -1,0 +1,13 @@
+README.md
+setup.py
+pyDocxReport/__init__.py
+pyDocxReport/databridge.py
+pyDocxReport/docx_template.py
+pyDocxReport.egg-info/PKG-INFO
+pyDocxReport.egg-info/SOURCES.txt
+pyDocxReport.egg-info/dependency_links.txt
+pyDocxReport.egg-info/requires.txt
+pyDocxReport.egg-info/top_level.txt
+tests/__init__.py
+tests/unit/__init__.py
+tests/unit/test_databridge.py
