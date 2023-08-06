@@ -1,0 +1,16 @@
+dask[complete]
+distributed
+boto
+boto3
+bs4
+docopt
+deprecated
+dkpro-cassis
+scikit-build
+cmake
+opencv-python==3.4.8.29
+numpy
+smart_open
+jsonlines
+s3fs==0.4.2
+dask_k8
