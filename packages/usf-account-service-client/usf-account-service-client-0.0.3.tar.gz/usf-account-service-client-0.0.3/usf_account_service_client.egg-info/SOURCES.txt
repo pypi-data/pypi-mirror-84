@@ -1,0 +1,6 @@
+setup.py
+usf_account_service_client.egg-info/PKG-INFO
+usf_account_service_client.egg-info/SOURCES.txt
+usf_account_service_client.egg-info/dependency_links.txt
+usf_account_service_client.egg-info/requires.txt
+usf_account_service_client.egg-info/top_level.txt
