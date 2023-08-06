@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+huntress/__init__.py
+huntress/main.py
+huntress.egg-info/PKG-INFO
+huntress.egg-info/SOURCES.txt
+huntress.egg-info/dependency_links.txt
+huntress.egg-info/entry_points.txt
+huntress.egg-info/top_level.txt

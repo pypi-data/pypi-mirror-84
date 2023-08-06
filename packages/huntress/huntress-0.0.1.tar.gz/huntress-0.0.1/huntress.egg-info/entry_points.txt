@@ -1,0 +1,3 @@
+[console_scripts]
+huntress = huntress.main:main
+
