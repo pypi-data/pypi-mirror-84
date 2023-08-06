@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: condolence-models
+Version: 0.0.1
+Summary: Detecting condolence, distress, and empathy in text
+Home-page: UNKNOWN
+Author: Naitian Zhou
+Author-email: naitian@umich.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: pytorch-transformers
+Requires-Dist: markdown
+Requires-Dist: beautifulsoup4
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: simpletransformers
+Requires-Dist: pandas
+
+# Condolence Models
+
+## Intro
+`condolence-models` is a package used to detect condolence and distress
+expressions, as well as empathetic comments. It is released with the
+EMNLP 2020 paper `Condolence and Empathy in Online Commmunities`. 
+
+
+## Install 
+
+### Use pip
+If `pip` is installed, question-intimacy could be installed directly from it:
+
+    pip3 install condolence-models
+
+### Dependencies
+    python>=3.6.0
+    torch>=1.6.0
+    pytorch-transformers
+    markdown
+    beautifulsoup4
+    numpy
+    tqdm
+    simpletransformers
+    pandas
+    numpy
+
+## Usage and Example
+
+## Contact
+Naitian Zhou (naitian@umich.edu)
+
+

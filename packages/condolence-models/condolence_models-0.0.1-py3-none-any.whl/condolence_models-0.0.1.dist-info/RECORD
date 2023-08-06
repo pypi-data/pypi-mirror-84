@@ -1,0 +1,10 @@
+condolence_models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+condolence_models/common.py,sha256=hd5mgpDMBIJ95Qdz4SuBi8WTJmtIzwqnpddxCNzFyFg,3958
+condolence_models/condolence_classifier.py,sha256=_6F4ViEFjpbtsp_CF3HRtWUnHlRVAQhQeNhZhr6V6pA,1435
+condolence_models/distress_classifier.py,sha256=KOBPFckANPYrii6MkD4Q_biplFotcFFny-wPtRMFsPg,1431
+condolence_models/empathy_classifier.py,sha256=RQjft3JMnMpUoooHrKqPOfg3CNmbDv1hK2ROwkrRtoA,1701
+condolence_models-0.0.1.dist-info/LICENSE,sha256=ZfBLznSKKfvrkcVx79xHcN8QCp6q5tmYqyDiZU3ACDM,1069
+condolence_models-0.0.1.dist-info/METADATA,sha256=clhjB_nG5bBGIyxIgQ4Ouvv7lrdsmi-n40eE_3llxfg,1122
+condolence_models-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+condolence_models-0.0.1.dist-info/top_level.txt,sha256=JQqtHY2Q-FIYgMBJ6W53mqzhcV17FTfBw14pcIfk4uk,18
+condolence_models-0.0.1.dist-info/RECORD,,
