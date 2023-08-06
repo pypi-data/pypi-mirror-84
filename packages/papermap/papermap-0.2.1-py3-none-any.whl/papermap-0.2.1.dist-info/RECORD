@@ -1,0 +1,15 @@
+papermap/__init__.py,sha256=PRIKA6Y45nRwy5UG9N2sFHW7oCOpWPM7bmGE86xQ4jU,81
+papermap/constants.py,sha256=xO3HVDcmr7GylWxngeS_L46uIT6qIENfqAh3tZk2JGg,862
+papermap/defaults.py,sha256=uCSrmogjz38HPJBJMJjpy_oLPgvPNGE9MnvOFBrlxrE,11793
+papermap/gpx.py,sha256=bhROcElUJT8afQiO9hIZrRneUbPKOlo1v05pB29o9Rc,6038
+papermap/papermap.py,sha256=nQnxqKgwR0FEavmwfSs1VChBI_qHNKLjHvEBIAWy16E,22616
+papermap/point.py,sha256=R7NO3-Qfy0sKXBMeSH4nPa22Mf84tIbiFZFzQfMK81U,3062
+papermap/tile.py,sha256=SkIA_Q2tCfehc7JJh235RfD2nAUAyjzSacwYrJUK_rI,428
+papermap/utils.py,sha256=IApsa4mV1lQYOcQrRuu-TxuL1l6TTIHg8Yp0qPkX078,27250
+papermap/icons/map_marker.png,sha256=7bk5mgO1xGJ5v68Tf1W2MLUNX5d4gDPDhncvAkgiPgs,49328
+papermap-0.2.1.dist-info/LICENSE,sha256=oO50YGSwbQnKsHaBFuwmX9DUUmHUCHya0saYoHx6rA4,35803
+papermap-0.2.1.dist-info/METADATA,sha256=mEg2-dZqWzm_r8SlLRMPruoUCqY4cA9O6gqktdRHTEA,5713
+papermap-0.2.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+papermap-0.2.1.dist-info/entry_points.txt,sha256=GQEmpsBeaK2x7Ky2DOrFeE-6nuy1kWvntx5f5uqaADM,53
+papermap-0.2.1.dist-info/top_level.txt,sha256=RT2nct1ZXBmIaDABa1utUX1VrGUXNGXtTCsWhWIICuA,9
+papermap-0.2.1.dist-info/RECORD,,
