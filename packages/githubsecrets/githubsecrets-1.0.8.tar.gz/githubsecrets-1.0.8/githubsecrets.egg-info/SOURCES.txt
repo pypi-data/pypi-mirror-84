@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+githubsecrets/__init__.py
+githubsecrets/__main__.py
+githubsecrets/config.py
+githubsecrets/ghs.py
+githubsecrets/profile.py
+githubsecrets/secret.py
+githubsecrets.egg-info/PKG-INFO
+githubsecrets.egg-info/SOURCES.txt
+githubsecrets.egg-info/dependency_links.txt
+githubsecrets.egg-info/entry_points.txt
+githubsecrets.egg-info/requires.txt
+githubsecrets.egg-info/top_level.txt
