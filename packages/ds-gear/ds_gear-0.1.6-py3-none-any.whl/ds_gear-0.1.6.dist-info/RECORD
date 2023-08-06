@@ -1,0 +1,16 @@
+dsg/CNN_classifier.py,sha256=K87xe1JJa4QexEwottTwt5W9WbWlL8FGW-5DyI8KYds,11390
+dsg/RNN_MTM_classifier.py,sha256=n4DVcnClbhM4F4GIT_AgP6e6MQo7XEH6D0C7KXBasKw,17813
+dsg/RNN_MTO_classifier.py,sha256=0Xt5gXk-TKB5c1XQV7uxtlPguMQq6WCHXiuVELHL_74,7484
+dsg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dsg/topic_detection.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dsg/base/__init__.py,sha256=8e7n0wpKSy9lVD1zgCeymaS2Hs9T3_ttMPtjFOVqw_s,222
+dsg/base/_base.py,sha256=VXhWGIF4f0YcAydvVzE8065Vr6_AqKChd2JWIb6X9_k,10990
+dsg/layers/__init__.py,sha256=uwhE3vX3r0bNZuDPvcGO9TeNYPJnd-kfIae5D3XBqz4,248
+dsg/layers/_cnn_layers.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dsg/layers/_rnn_layers.py,sha256=MPbknB55Je759XunVvzXqdRQ_2KFmYFiklOwDP2m-TY,5866
+ds_gear-0.1.6.dist-info/LICENSE,sha256=w-8vAsNo_1-nEsYigxMmUYwwCU3L9PJ3FrLxMcDJHe4,1105
+ds_gear-0.1.6.dist-info/METADATA,sha256=JRTB8qYgi8q1vpJe8Plm6KLALzLr5JTcYHgOSuPdSnI,1597
+ds_gear-0.1.6.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+ds_gear-0.1.6.dist-info/dependency_links.txt,sha256=zeLfv60K4x3l6vECb_lFy069uYqfvG6z9Z4hoDSJY10,74
+ds_gear-0.1.6.dist-info/top_level.txt,sha256=MzEPUxqLqBi75XzGcWPpOsGCLbGfz6ijvfc0R7a4yDY,4
+ds_gear-0.1.6.dist-info/RECORD,,
