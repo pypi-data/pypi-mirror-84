@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: ciscoglass
+Version: 0.1.5
+Summary: Wrapper/SDK for Cisco Glass Apps
+Home-page: https://wwwin-github.cisco.com/ciscoglass/python-sdk.git
+Author: Adyanth H
+Author-email: adyah@cisco.com
+License: UNKNOWN
+Description: # CiscoGlass Python SDK
+        
+        This is a python library to help simplify the process of building python apps for Cisco Glass.
+        
+        This provides an interface which abstracts away most of the repetitive code needed.
+        
+        Here is a sample below:
+        ```python
+        from ciscoglass import GlassApp
+        import requests
+        import time
+        
+        
+        class SampleRequest(GlassApp):
+            def run(self):
+        
+                endpoint = self.get_devices("TEST")[0]
+                resp = requests.get(f"https://{endpoint.host}/json", auth=(endpoint.username, endpoint.password))
+                with self.file("log.txt", 'w') as f:
+                    f.writelines([
+                        f"Log Time: {time.strftime('%Y%m%d-%H%M%S')}\n",
+                        resp.text + '\n'
+                    ])
+                    print("Ran successfully, please check the log for more details!")
+        
+        
+        if __name__ == "__main__":
+            SampleRequest().run()
+        ```
+        
+        It provides a robust file access method which has functionality such as copy on write if in case you want to modify an input file, without you manually having to copy the files to output location.
+        
+        Also, there is no need to remember the locations of input/output files, calling the API for device list, etc.
+        
+        Further, it has a CLI interface to get you started with a default template for an app, including the Dockerfile and a sample JSON spec created for you.
+        You can run the command as such:
+        ```shell script
+        python -m ciscoglass --help
+        python -m ciscoglass create my_first_glass_app
+        ```
+        
+Platform: UNKNOWN
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
