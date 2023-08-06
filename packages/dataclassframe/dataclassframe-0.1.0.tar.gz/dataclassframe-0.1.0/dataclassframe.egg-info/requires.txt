@@ -1,0 +1,19 @@
+pandas
+
+[:python_version < "3.7"]
+dataclasses
+
+[dev]
+pytest
+wheel
+setuptools
+twine
+sphinx>=3.2.1
+codecov
+recommonmark
+sphinx-rtd-theme
+bump2version
+
+[docs]
+sphinx
+sphinx-rtd-theme
