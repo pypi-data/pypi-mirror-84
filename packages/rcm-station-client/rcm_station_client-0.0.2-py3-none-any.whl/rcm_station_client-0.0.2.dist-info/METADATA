@@ -1,0 +1,237 @@
+Metadata-Version: 2.1
+Name: rcm-station-client
+Version: 0.0.2
+Summary: Collects measurement reports from various sensors and send them to the station-monitoring-service.
+Home-page: https://gitlab.com/residential-climate-monitoring/station-client
+Author: Pim Hazebroek
+Author-email: rcm@pimhazebroek.nl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Station client
+
+Scripts to read one or multiple sensors connected to the I2C bus on a Raspberry Pi and submit them to the station-monitoring-service.
+
+# Installation
+
+Learn how to connect the sensor and install the Station Client.
+
+## Prerequisites
+
+Before you can install and connect the sensors, make sure of the following:
+
+* Optional: copy your public SSH key to your Pi for [Passwordless SSH access]
+* I2C must be enabled. See [Enabling I2C]
+* The station-monitoring-service is running. See [running the Station Monitoring Service]
+* The station exists in the service.
+
+---
+
+1. Login to your Pi via SSH
+
+2. Optional: create virtual env
+
+    It is recommended (but not required) to install everything in a [virtual env]:
+
+    ```shell script
+    mkdir rcm && cd rcm (1)
+    python3 -m venv rcm-env (2)
+    source rcm-env/bin/activate (3)
+    ```
+
+    (1): Creates the directory `rcm` and navigate into it.
+
+    (2): Create a virtual env with the name `rcm-env`.
+
+    (3): Activate the virtual env.
+
+3. Connect the sensor(s)
+
+    Tip: install [gpiozero] to use the CLI tools and print the pinout on screen.
+
+    **BME680**
+
+    |RPIO         |Sensor    |
+    |-------------|----------|
+    |3.3v         |VIN       |
+    |GND          |GND       |
+    |GPIO 2 (SDA) |SDI       |
+    |GPIO 3 (SCL) |SCK       |
+
+    The default I2C address is 0x77. If you add a jumper from SDO to GND on the sensor, the address will change to 0x76.
+    Note: currently, it only supports the default address! 
+
+    **SHT31-D**
+
+    |RPIO         |Sensor    |
+    |-------------|----------|
+    |3.3v         |VIN       |
+    |GND          |GND       |
+    |GPIO 2 (SDA) |SDA       |
+    |GPIO 3 (SCL) |SCL       |
+
+    The default I2C address is 0x44, you can change it to 0x45 by connecting *ADR* to a high voltage signal.
+    Note: currently, it only supports the default address!
+
+    **TSL2591**
+
+    |RPIO         |Sensor    |
+    |-------------|----------|
+    |3.3v         |VIN       |
+    |GND          |GND       |
+    |GPIO 2 (SDA) |SDA       |
+    |GPIO 3 (SCL) |SCL       |
+
+    The I2C address is 0x29 and cannot be changed, so keep that in mind.
+
+4.  Install Station Client
+
+    Choose how you wish to install the Station Client: in development or production mode.
+
+    **Development mode**
+
+    To install all the dependencies manually, e.g. for development purposes:
+
+    ```shell script
+    git clone https://gitlab.com/residential-climate-monitoring/station-client.git
+    cd station-client
+    pip install -r requirements.txt
+    ```
+
+    **Production mode**
+
+    To install the package for production purposes:
+
+    ```shell script
+    pip install rcm-station-client
+    ```
+
+# Configuration
+
+Before the station client can be used, some environment variables must be set.
+When installed from git, you can edit the settings in the .env file.
+
+When installed as package, it is recommended to set environment variables by exporting them in the `/etc/profile` file like this:
+
+```shell script
+export RCM_CLIENT_SECRET=replace-this (1)
+export RCM_AUTH_ENABLED=false (2)
+export RCM_SENSORS=SHT31-D (3)
+export RCM_STATION_NAME=test (4)
+export RCM_SERVICE_HOST=https://raspberrypi.local:8080 (5)
+```
+
+(1): Replace `replace-this` with the actual token from Auth0.
+
+(2): Alternative to (1) to disable security. Note: requires the station-monitoring-service to run with the `unsecured` profile!
+
+(3): Configure the sensors connected to the station. Allowed values are the SENSOR_* constants. 
+
+(4): Configures the name of the station. Note: a station with this name must exist in the station-monitoring-service.
+
+(5): The address where the service-monitoring-service is running. Including port and optionally a context root. 
+
+## Sensor specific configuration
+
+*   **BME680**
+
+    The sensor can be calibrated with sea level pressure to calculate the current altitude. This is not implemented yet, stay tuned.
+
+*   **SHT31-D**
+
+    The SHT31-D supports two modes: `Single` and `Periodic`. Currently, it supports only Single (default) mode.
+
+    The sensor also comes with a heater than can be turned on to evaporate any condensation. It is planned to turn on the heater 
+    automatically in the future if humidity levels exceed a certain threshold. Stay tuned. 
+
+*   **TSL2591**
+
+    The TSL2591 has configurable `gain` and `integration time` for various lighting conditions.
+    Learn more about [Gain and timing].
+
+    ```shell script
+    export TSL2591_GAIN=GAIN_MEDIUM (1)
+    export TSL2591_IT_TIME=100MS (2)
+    ```
+
+    (1): Sets the gain to medium (25x) - default.
+
+    Supported values are:
+
+    * `GAIN_LOW` - Sets the gain to 1x (bright light)
+    * `GAIN_MEDIUM` - Sets the gain to 25x (general purpose) - default
+    * `GAIN_HIGH` - Sets the gain to 428x (low light)
+    * `GAIN_MAX` - Sets the gain to 9876x (extremely low light) 
+
+    (2): Set the integration time to 100 milliseconds.
+
+    Supported values are:
+
+    * `100MS` - 100 milliseconds - default 
+    * `200MS` - 200 milliseconds
+    * `300MS` - 300 milliseconds
+    * `400MS` - 400 milliseconds
+    * `500MS` - 500 milliseconds
+    * `600MS` - 600 milliseconds
+
+## Custom Auth0 configuration
+
+Additionally, to run with another Auth0 account:
+```shell script
+export RCM_CLIENT_ID=your-id (1)
+export RCM_AUDIENCE=your-audience (2)
+export RCM_TOKEN_ENDPOINT=https://your-app.yourzone.auth0.com/oauth/token (3)
+```
+
+(1): Replace `your-id` with your client-id.
+
+(2): Replace `your-audience` with the audience  
+
+(3): Replace `your-app` with your Auth0 tenant and `yourzone` with the zone your tenant uses. 
+
+# Usage
+To run the station client manually, run:
+
+```shell script
+python station_client.py
+```
+
+To run the station client periodically, configure it using [Crontab]:
+
+To edit crontab settings:
+```shell script
+crontab -e
+```
+
+Depending on how you installed the package, configure crontab accordingly:
+Assuming you are running the station client from the default location within a virtual env, add the following snippet:
+
+**For development mode:**
+```shell script
+* * * * * /home/pi/rcm/rcm-env/bin/python3 /home/pi/rcm/station-client/src/station_client.py
+```
+
+**For production mode:**
+```shell script
+* * * * * /home/pi/rcm/rcm-env/bin/python3 /home/pi/rcm/rcm-env/lib/python3.7/site-packages/rcm/station_client.py
+```
+
+The `* * * * *` expression executes the script once every minute.
+
+# Troubleshooting
+
+To troubleshoot, the logs can be found at: `/home/pi/rcm-station-client.log`
+
+[Passwordless SSH access]: https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md
+[Enabling I2C]: https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-i2c
+[running the Station Monitoring Service]: https://gitlab.com/residential-climate-monitoring/station-monitoring-service
+[virtual env]: https://docs.python.org/3/tutorial/venv.html
+[gpiozero]: https://gpiozero.readthedocs.io/en/stable/cli_tools.html
+[Gain and timing]: https://learn.adafruit.com/adafruit-tsl2591/wiring-and-test#gain-and-timing-762936-18
+[Crontab]: https://www.raspberrypi.org/documentation/linux/usage/cron.md
+
