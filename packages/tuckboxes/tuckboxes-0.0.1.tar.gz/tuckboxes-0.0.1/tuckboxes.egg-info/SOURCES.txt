@@ -1,0 +1,12 @@
+.gitignore
+LICENSE.md
+README.md
+setup.py
+tuckboxes/__init__.py
+tuckboxes/tuckboxes.py
+tuckboxes.egg-info/PKG-INFO
+tuckboxes.egg-info/SOURCES.txt
+tuckboxes.egg-info/dependency_links.txt
+tuckboxes.egg-info/entry_points.txt
+tuckboxes.egg-info/requires.txt
+tuckboxes.egg-info/top_level.txt

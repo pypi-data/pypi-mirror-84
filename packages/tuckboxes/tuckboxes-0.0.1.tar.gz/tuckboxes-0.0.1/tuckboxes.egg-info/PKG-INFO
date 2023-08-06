@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tuckboxes
+Version: 0.0.1
+Summary: Tuckbox Generation for Board- and Cardgames
+Home-page: http://domtabs.sandflea.org
+Author: Peter Gorniak
+Author-email: sumpfork@mailmight.net
+License: UNKNOWN
+Description: # Boardgame Tuckbox Generator
+        
+        A script to generate foldable card deck tuckboxes for boardgames and cardgames. See it in action at https://domdiv.bgtools.net/tuckboxes.
+        
+Keywords: boardgame,cardgame,tuckboxes
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
