@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: django-rest-fast
+Version: 0.0.2
+Summary: Fast create REST API with Swagger documentation based on native django views and forms.
+Home-page: https://github.com/qvp/django-rest-fast
+Author: Alexander Kuzmenko
+Author-email: mail@alex.md
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+
+Fast create REST API with Swagger documentation based on native django views and forms.
+
+
