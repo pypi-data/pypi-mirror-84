@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: SeqVectorizer
+Version: 0.5
+Summary: UNKNOWN
+Home-page: https://github.com/Kowsher/Impact-Learning-
+Author: Kowsher Ahmed, Avishek Das
+Author-email: ahmedshuvo969@gmail.com, avishek.das.ayan@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: nltk
+Requires-Dist: numpy (==1.18.5)
+
+# Sequence Vectorizer
+
+
+## Installation:
+
+```
+pip install SeqVectorizer
+```
+
+
+## Usage of Regressor:
+```python
+      from SeqVectorizer import Vectorizer
+      vec = Vectorizer()
+      x_train = vec.fit_transform(train_sentences)
+      x_test = vec.transform(test_sentences)
+```
+```python
+      vec.get_features()
+      #to get the vocabulary
+```
+
+
+
