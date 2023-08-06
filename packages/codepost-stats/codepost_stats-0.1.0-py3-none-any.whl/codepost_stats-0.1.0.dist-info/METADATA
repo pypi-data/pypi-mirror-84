@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: codepost-stats
+Version: 0.1.0
+Summary: A system to compile statistics automatically from a course on the codePost platform.
+Author: Jérémie Lumbroso
+Author-email: lumbroso@cs.princeton.edu
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: bs4 (>=0.0.1,<0.0.2)
+Requires-Dist: codepost (>=0.2.25,<0.3.0)
+Requires-Dist: confuse (>=1.3.0,<2.0.0)
+Requires-Dist: javalang (>=0.13.0,<0.14.0)
+Requires-Dist: mistune (>=0.8.4,<0.9.0)
+Requires-Dist: python-dateutil (>=2.8.1,<3.0.0)
+Requires-Dist: pyyaml (>=5.3.1,<6.0.0)
+Requires-Dist: tqdm (>=4.48.2,<5.0.0)
