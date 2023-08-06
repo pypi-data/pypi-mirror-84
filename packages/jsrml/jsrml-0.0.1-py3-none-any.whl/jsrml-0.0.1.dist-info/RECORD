@@ -1,0 +1,10 @@
+srml/__init__.py,sha256=14hcuYLrZvqAZpy4bhXI_FDC4EYtK0XYZeqgP3PazX4,543
+srml/mailbox.py,sha256=oBQcNAGnMoYznUBPhBL_kFK34tGKGGO2f6frDGEMpkE,5096
+srml/mime.hy,sha256=xJyYtzBJpUaxmMe-HTOK5TwLfqXjEhYQbKBm1SdldMo,319
+srml/popclient.py,sha256=4XXqWCR9nZb1sROUMInagWn0ld6LiZNAZosdAE0wIXE,2024
+srml/rcml.py,sha256=4Azfli1gV7OqG5qeNIMTh8VrGrgz9LbuurIRtJnGmzU,7487
+srml/sdml.hy,sha256=vbnSOgkRqOsgIrIX9PfgzA4bnyV3bRYn4oC8ar2TEdw,6541
+jsrml-0.0.1.dist-info/METADATA,sha256=Ex0G83dXKJy0855kea_efyxd1I_tWWxaHFzHTu8FHvo,2784
+jsrml-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+jsrml-0.0.1.dist-info/top_level.txt,sha256=ebbDU4HZQnJXmdORLJXIi1Xyhj94IKamXUXJqoaJlC0,5
+jsrml-0.0.1.dist-info/RECORD,,
