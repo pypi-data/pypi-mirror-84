@@ -1,0 +1,12 @@
+kg_lokistack/__init__.py,sha256=xBhIANSeNh-saQnzlYGUV_4TE-4DWXy519rM8H-xTQ4,186
+kg_lokistack/builder.py,sha256=yp-SD4IyEXua7NVtqD3yOt56IzMe601Hg5c8ebXvSPk,29074
+kg_lokistack/lokiconfigfile.py,sha256=9LIO1wDmOY4Of5YwzODT5wccSbhuTeO7Nlx7vO1zROA,3622
+kg_lokistack/option.py,sha256=feQ-ZaGhMuRgtRdfRpnV5I2ONyNCXNq6-YLqgfUVDHs,6865
+kg_lokistack/promtailconfigfile.py,sha256=vCNzRXkaosl5w4wO2YuaiR2Wdye_vBf-uW1pIByCT6k,13329
+kg_lokistack/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kg_lokistack/tests/test_builder.py,sha256=4W3wHA8kO27X7ND487sj4vObdyb6P5uxuHqGh4XGUZg,1685
+kg_lokistack-0.7.5.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+kg_lokistack-0.7.5.dist-info/METADATA,sha256=H4mTJTafTEH7iL3c4_ozXvey58yinjeAsc8pXHwCo78,6002
+kg_lokistack-0.7.5.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+kg_lokistack-0.7.5.dist-info/top_level.txt,sha256=NZytZrZoJaDIxPEtFjLG-ptHaFcRaHY2JBoZ9m3AzHg,13
+kg_lokistack-0.7.5.dist-info/RECORD,,
