@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pjeuler-chicotobi
+Version: 0.0.1
+Summary: Tools in Python for Project Euler
+Home-page: https://github.com/chicotobi/pjeuler_python
+Author: Chicotobi
+Author-email: tobias310788@googlemail.com
+License: UNKNOWN
+Description: # pjeuler_python
+        Tools for Project Euler
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

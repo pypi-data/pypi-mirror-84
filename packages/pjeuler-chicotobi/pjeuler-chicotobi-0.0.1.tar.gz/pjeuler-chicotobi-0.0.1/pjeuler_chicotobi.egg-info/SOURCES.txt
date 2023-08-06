@@ -1,0 +1,7 @@
+README.md
+setup.py
+pjeuler/__init__.py
+pjeuler_chicotobi.egg-info/PKG-INFO
+pjeuler_chicotobi.egg-info/SOURCES.txt
+pjeuler_chicotobi.egg-info/dependency_links.txt
+pjeuler_chicotobi.egg-info/top_level.txt
