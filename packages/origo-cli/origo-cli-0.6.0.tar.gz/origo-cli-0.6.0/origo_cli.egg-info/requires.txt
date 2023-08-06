@@ -1,0 +1,9 @@
+PrettyTable
+Sphinx
+docopt
+inquirer
+origo-sdk-python>=0.3.0
+pygments
+recommonmark
+requests
+questionary
