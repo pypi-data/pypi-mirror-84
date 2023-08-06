@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pyinsight-depositor-firestore
+Version: 0.0.6
+Summary: Insight Depositor Module Firestore
+Home-page: https://github.com/X-I-A/pyinsight-depositor-firestore
+Author: Soral
+Author-email: soral@x-i-a.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: pyinsight
+Requires-Dist: google-auth
+Requires-Dist: google-cloud-firestore
+
+# Insight Module Firestore Depositor
+This is a Depositor Plug-in of Insight Module
+## Depositor Introduction
+Depositor is one kind of worker in Insight Module
+* Depositore store received data and merge it
+* Once Package process 
+* Any Depositor Module should be able to store data without table structure predefintion
+## Firestore Depositor Introduction
+Google Cloud Firestore based implementation with the following advantage
+## How to use
+Depositor is used in an Insight Action (Receiver, Merger, Packager, etc...)
+An Insight Application is a workflow of multiple Insight Action
+## How to test
+Before running pytest, please:
+1. Set the needed GCP credential in the environnement variables
+2. Running init_topic to create needed index
+
+
