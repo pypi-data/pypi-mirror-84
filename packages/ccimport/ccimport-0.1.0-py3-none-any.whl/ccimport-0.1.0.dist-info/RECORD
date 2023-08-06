@@ -1,0 +1,15 @@
+ccimport/__init__.py,sha256=kfTUJl2ssSPfcQBfhScQQuwzHxSI8Oi6taxrxlFL5Gs,38
+ccimport/__version__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+ccimport/compat.py,sha256=pudgd4ljJVRC9PkBdtjW97TDPt353OctRkKIuhNPIZ4,5697
+ccimport/core.py,sha256=2_fBcKdpnh32Lo1IVnOJ4MfsDU2hEEJf2kY-lJttp50,12816
+ccimport/loader.py,sha256=o1NYKYlFUk1WsVt55rNN8dvTgMSFVC8A5_4SyMmKNw8,4123
+ccimport/source_iter.py,sha256=zRHs2V_KXNIUqp4bd712MsFHQlnWemTq-OAQpNjInSw,17169
+ccimport/utils.py,sha256=wtRoDOT4LE_-5dnKrAWyhF2iLaHu0BQ6a4Ap5GESiPw,368
+ccimport/buildtools/__init__.py,sha256=JllITm41Eco0dx9sBiDSubBkKzfeYpuas7H65PRcc0c,94
+ccimport/buildtools/writer.py,sha256=4zOCuX_I607gQ7GvQ5yq2ti0lZ2sOss3otd4QkumB9A,20695
+ccimport-0.1.0.dist-info/LICENSE,sha256=082oRUXgp_gZ3vuOFrmKHkMFIWlC8JKXp2Scd774GLo,1071
+ccimport-0.1.0.dist-info/METADATA,sha256=vhoZfP5iuk5_Fg6wIV2Sn93wLSeNiPg1eaZ3JZ83XMU,4092
+ccimport-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+ccimport-0.1.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+ccimport-0.1.0.dist-info/top_level.txt,sha256=mVj7rzXwEAx602aSVQBgs00X7XIvxtwaI5KOn3LI_8M,9
+ccimport-0.1.0.dist-info/RECORD,,
