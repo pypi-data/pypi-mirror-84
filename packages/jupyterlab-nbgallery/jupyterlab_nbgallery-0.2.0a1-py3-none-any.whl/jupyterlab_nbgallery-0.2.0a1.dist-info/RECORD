@@ -1,0 +1,13 @@
+jupyterlab_nbgallery/__init__.py,sha256=2yvn7d8pBLeyu1Zm5gRs7OE_7aAdog1301nhndz16F8,596
+jupyterlab_nbgallery/_version.py,sha256=C76jcxWfPqMDFYG1obHCgBi8ATTFCwQrGgoc06O9baM,79
+jupyterlab_nbgallery/handlers.py,sha256=9y6f_9FYyaXnQciQnnJrDjPjlF9K82mggMOZRIoK-iI,1551
+jupyterlab_nbgallery-0.2.0a1.data/data/etc/jupyter/jupyter_notebook_config.d/jupyterlab_nbgallery.json,sha256=t4gGiCe5MOCCZpZnTQAF7coArlfK7e9C3QMpAdSfPKU,97
+jupyterlab_nbgallery-0.2.0a1.data/data/share/jupyter/lab/extensions/jupyterlab-nbgallery-autodownload-0.2.0.tgz,sha256=TDHduKlgvl_-uud5Ie1Qyn3XBKk1AYnZ12HvlNV7pFE,2580
+jupyterlab_nbgallery-0.2.0a1.data/data/share/jupyter/lab/extensions/jupyterlab-nbgallery-environment-life-0.2.0.tgz,sha256=GEtqpMl74wTBgjng2uLjG4YKRRFAqIypk5jp3BT8oB8,2330
+jupyterlab_nbgallery-0.2.0a1.data/data/share/jupyter/lab/extensions/jupyterlab-nbgallery-environment-registration-0.2.0.tgz,sha256=m8cYTt_dTFiRg1M2O7g5JKz_4lzb_CPQoquZaey0e64,2594
+jupyterlab_nbgallery-0.2.0a1.data/data/share/jupyter/lab/extensions/jupyterlab-nbgallery-gallerymenu-0.2.1.tgz,sha256=fJjpmFrGvk_Wot6g2rdI2n0C1mEEagm4XiWA8ddIL8Q,6159
+jupyterlab_nbgallery-0.2.0a1.dist-info/LICENSE,sha256=f6j8ufccEsPua1CWQqkOa2MVtwlO_6_6SDWtoIq0yuA,1066
+jupyterlab_nbgallery-0.2.0a1.dist-info/METADATA,sha256=JBA0u2HRDkaMIrPshiKuB3r7d_9xr3Ubzd_tRR1QQIA,1949
+jupyterlab_nbgallery-0.2.0a1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+jupyterlab_nbgallery-0.2.0a1.dist-info/top_level.txt,sha256=-48mhjsbSp3wlNuAZ5FEGvGjlka6pgneoShdJw3K72w,21
+jupyterlab_nbgallery-0.2.0a1.dist-info/RECORD,,
