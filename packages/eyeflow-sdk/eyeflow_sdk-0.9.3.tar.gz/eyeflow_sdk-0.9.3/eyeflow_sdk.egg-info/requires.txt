@@ -1,0 +1,12 @@
+python-dateutil
+pymongo
+pika
+numpy
+opencv-python
+pillow
+arrow
+psutil
+pynvml
+xmltodict
+pyyaml
+azure-storage-blob
