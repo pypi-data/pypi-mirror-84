@@ -1,0 +1,8 @@
+pystac_io/__init__.py,sha256=fnogt7282OB3n_zek0gsN33YlmU_rsuBBUW9DAzZoPY,2408
+pystac_io/https/__init__.py,sha256=dONhcAmEZ8DsoeQ9TwECBkz-f6T5c8LByrPIVt3Rpk8,372
+pystac_io/s3/__init__.py,sha256=YeKa66fV7TELambTIZfrCRxpRvQh8RXSUM5V3yUZKn0,828
+pystac_io-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pystac_io-0.1.0.dist-info/METADATA,sha256=FEOC1R8G-nS7IHDhU2nTcbDym_HO97_CvS3svBgK2R8,902
+pystac_io-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pystac_io-0.1.0.dist-info/top_level.txt,sha256=utRDBbTA79vi-f21_1iGmuacClkht3g_vTCbPnLg_ak,10
+pystac_io-0.1.0.dist-info/RECORD,,
