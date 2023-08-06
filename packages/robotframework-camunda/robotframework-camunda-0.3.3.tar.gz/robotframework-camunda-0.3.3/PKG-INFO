@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: robotframework-camunda
+Version: 0.3.3
+Summary: Keywords for camunda rest api, leading open source workflow engine.
+Home-page: https://gitlab.com/postadress/robotframework/robotframework-camunda
+Author: Deutsche Post Adress GmbH & Co. KG
+Author-email: markus.stahl@postadress.de
+License: Apache License, Version 2.0
+Description: # Robot Framework Camunda
+        
+        This library provides keywords for accessing camunda workflow engine. Complete REST API reference of camunda 
+        can be found [here](https://docs.camunda.org/manual/7.5/reference/rest/).
+        
+        Library is in an early stage. Please review issue board for known issues or report one yourself. You are 
+        invited to contribute pull requests.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Robot Framework
+Description-Content-Type: text/markdown
