@@ -1,0 +1,8 @@
+README.md
+setup.py
+RBytes/RBytes.py
+RBytes/__init__.py
+RBytes.egg-info/PKG-INFO
+RBytes.egg-info/SOURCES.txt
+RBytes.egg-info/dependency_links.txt
+RBytes.egg-info/top_level.txt
