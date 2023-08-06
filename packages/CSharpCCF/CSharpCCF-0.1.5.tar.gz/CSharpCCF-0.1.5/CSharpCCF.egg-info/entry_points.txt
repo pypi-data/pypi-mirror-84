@@ -1,0 +1,3 @@
+[console_scripts]
+CSharpССF = CSharpССF.main:main
+
