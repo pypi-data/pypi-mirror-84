@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: selenide
+Version: 0.0.3
+Summary: Realization of UI automated testing wheels by selenium.
+Home-page: https://github.com/aquichita/selenide
+Author: aquichita
+Author-email: chaochao.wu@outlook.com
+License: UNKNOWN
+Description: # selenide
+        > Realization of UI automated testing wheels by selenium+allure.
+        
+        ```python
+        from selenium import webdriver
+        
+        from selenide.element import Element
+        from selenide.page import Page
+        
+        
+        class LoginPage(Page):
+            search = Element("input", "#kw")
+            search_btn = Element("search", "#su")
+        
+            def login(self):
+                self.driver.get("https://www.baidu.com/")
+                self.search.input("50331812").enter()
+                self.search_btn.click()
+        
+        
+        def test_login():
+            browser = webdriver.Chrome("chromedriver.exe")
+            LoginPage(browser).login()
+            assert browser.title == "expect value"
+        
+        ```
+        
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
