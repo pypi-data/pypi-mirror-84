@@ -1,0 +1,3 @@
+[console_scripts]
+sintel = sintel.cli:main
+
