@@ -1,0 +1,10 @@
+README.md
+setup.py
+libpythonpro_fnsouza/__init__.py
+libpythonpro_fnsouza/github_api.py
+libpythonpro_fnsouza.egg-info/PKG-INFO
+libpythonpro_fnsouza.egg-info/SOURCES.txt
+libpythonpro_fnsouza.egg-info/dependency_links.txt
+libpythonpro_fnsouza.egg-info/not-zip-safe
+libpythonpro_fnsouza.egg-info/requires.txt
+libpythonpro_fnsouza.egg-info/top_level.txt
