@@ -1,0 +1,6 @@
+README.md
+setup.py
+RMinimum_Algorithm.egg-info/PKG-INFO
+RMinimum_Algorithm.egg-info/SOURCES.txt
+RMinimum_Algorithm.egg-info/dependency_links.txt
+RMinimum_Algorithm.egg-info/top_level.txt
