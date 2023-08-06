@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: stepz
+Version: 0.14
+Summary: Easy parser for parse template $variable
+Home-page: https://github.com/hanzhichao/stepz
+Author: Han Zhichao
+Author-email: superhin@126.com
+License: MIT license
+Description: # stepz
+        Easy run kinds of steps define in yaml file 
+        
+        ## Features
+        
+        - Support define keywords in yaml file
+        - Support customized functions for steps
+        
+        ## Install
+        ```
+        $ pip install stepz
+        ```
+        
+        ## Use
+        ### Simple Use
+        
+        ```python
+        
+        ```
+        output:
+        ```
+        
+        ```
+Keywords: stepz,step runnser,step pipline
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
