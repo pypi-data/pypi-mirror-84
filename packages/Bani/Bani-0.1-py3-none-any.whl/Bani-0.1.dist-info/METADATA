@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: Bani
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://github.com/captanlevi/FAQ-QnA-matching.git
+Author: Rushi Babaria
+Author-email: rjlinkin50@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: sentence-transformers (==0.3.8)
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: regex
+Requires-Dist: nlpaug
+Requires-Dist: spacy
+Requires-Dist: tqdm
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
