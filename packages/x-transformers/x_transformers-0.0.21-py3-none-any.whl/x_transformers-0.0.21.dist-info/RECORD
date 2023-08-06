@@ -1,0 +1,8 @@
+x_transformers/__init__.py,sha256=ZVksvgMShB5CA_OA93bnfDXe3X9cn-Rbqj5Tz8Nu8AY,186
+x_transformers/autoregressive_wrapper.py,sha256=PIN7oo2CoMLodMWvAizh_An7jdZaFsWXkcJNdL9STR8,3077
+x_transformers/x_transformers.py,sha256=AlssO823eraNXo-b39ngzF6REpUmAhIMsphDbT3_7JM,14857
+x_transformers-0.0.21.dist-info/LICENSE,sha256=As9u198X-U-vph5noInuUfqsAG2zX_oXPHDmdjwlPPY,1066
+x_transformers-0.0.21.dist-info/METADATA,sha256=FjdDZmWp-ufbGSle0G_gVmBDBNIHQS2hcT_i8NIDYdc,651
+x_transformers-0.0.21.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+x_transformers-0.0.21.dist-info/top_level.txt,sha256=hO6KGpFuGucRNEtRfme4A_rGcM53AKwGP7RVlRIxS5Q,15
+x_transformers-0.0.21.dist-info/RECORD,,
