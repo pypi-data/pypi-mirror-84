@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: swt
+Version: 0.2.0
+Summary: Simple Web Token library for Python
+Home-page: https://github.com/davidolrik/python-swt
+License: MIT
+Keywords: swt
+Author: David Jack Wange Olrik
+Author-email: david@olrik.dk
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: poetry-version (>=0.1.5,<0.2.0)
+Requires-Dist: pycryptodome (>=3.9.7,<4.0.0)
+Project-URL: Documentation, https://python-swt.readthedocs.io/
+Project-URL: Repository, https://github.com/davidolrik/python-swt
+Description-Content-Type: text/markdown
+
+# Python SWT Library
+
+![Python version](https://img.shields.io/pypi/pyversions/swt)
+![PyPI version](https://img.shields.io/pypi/v/swt)
+![format](https://img.shields.io/pypi/format/swt)
+![status](https://img.shields.io/pypi/status/swt)
+![license](https://img.shields.io/pypi/l/swt)
+
+Python library for handling `Simple Web Tokens`.
+
+## Documentation
+
+You can find the docs [here](https://python-swt.readthedocs.io/).
+
+## Caveats
+
+- Please use `pycryptodome` and not `pycrypto` as the later is unmaintained and
+  broken on python 3.8+
+- Currently only supports RSA-SHA256
+
+## TODO
+
+- Add support HMAC SHA256
+- Add  Raises: KeyNotFoundError to sign()
+
