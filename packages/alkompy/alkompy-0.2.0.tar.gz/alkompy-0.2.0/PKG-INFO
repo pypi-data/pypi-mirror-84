@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: alkompy
+Version: 0.2.0
+Summary: A compute library written in Rust with WebGPU
+Home-page: https://github.com/RustyBamboo/alkomp
+License: bsd-3-clause
+Description: <p align="center">
+          <img width="25%" src="https://github.com/RustyBamboo/alkomp/raw/main/docs/alkomp-logo.png">
+        </p>
+        
+        --------------------------------------------------------------------
+        
+        Python bindings for [alkomp](https://github.com/RustyBamboo/alkomp), a GPGPU library written in Rust for performing compute operations.
+        
+        `pip3 install alkompy`
+        
+        ### Build from source
+        
+        `git clone https://github.com/RustyBamboo/alkomp && cd alkomp`
+        
+        `pip3 install -r requirements-dev.txt`
+        
+        `python3 setup.py develop --user`
+        
+        `python3 test/test.py`
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
