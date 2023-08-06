@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+Letterbomb.egg-info/PKG-INFO
+Letterbomb.egg-info/SOURCES.txt
+Letterbomb.egg-info/dependency_links.txt
+Letterbomb.egg-info/top_level.txt
+letterbomb/__init__.py
