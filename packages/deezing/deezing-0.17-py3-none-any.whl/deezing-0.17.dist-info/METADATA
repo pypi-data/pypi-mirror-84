@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: deezing
+Version: 0.17
+Summary: Download MP3 or FLAC from Deezer.com by Artist Name (for now just artist name)
+Home-page: https://github.com/cumulus13/deez
+Author: Hadi Cahyadi LD
+Author-email: cumulus13@gmail.com
+License: MIT
+Download-URL: https://github.com/cumulus13/deez/tarball/master
+Keywords: Deezer Deemix py-deezer pydeezer
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Utilities
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: py-deezer
+Requires-Dist: configset
+Requires-Dist: clipboard
+Requires-Dist: bitmath
+Requires-Dist: make-colors
+Requires-Dist: pydebugger
+Requires-Dist: pywget
+Requires-Dist: pywin32 (>=223)
+Requires-Dist: dcmd
+Requires-Dist: cefpython3
+
+UNKNOWN
+
+
