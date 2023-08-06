@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: dso
+Version: 0.0.3
+Summary: Python bindings for the DSO datastore
+Home-page: https://github.com/crucial-project/dso
+Author: Pierre Sutra
+Author-email: pierre.sutra@telecom-sudparis.eu
+License: UNKNOWN
+Description: Python bindings for the DSO datastore
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6

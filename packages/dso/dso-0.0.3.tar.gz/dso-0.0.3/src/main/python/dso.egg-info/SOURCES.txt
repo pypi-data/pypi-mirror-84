@@ -1,0 +1,9 @@
+setup.py
+src/main/python/dso/__init__.py
+src/main/python/dso/factory.py
+src/main/python/dso/version.py
+src/main/python/dso.egg-info/PKG-INFO
+src/main/python/dso.egg-info/SOURCES.txt
+src/main/python/dso.egg-info/dependency_links.txt
+src/main/python/dso.egg-info/requires.txt
+src/main/python/dso.egg-info/top_level.txt
