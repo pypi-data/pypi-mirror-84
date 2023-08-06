@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        chreader=scripts.cli:chreader_cli
+    
