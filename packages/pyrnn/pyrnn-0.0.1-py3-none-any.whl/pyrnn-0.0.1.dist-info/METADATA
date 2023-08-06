@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyrnn
+Version: 0.0.1
+Summary: Pytorch implementation of vanilla RNN
+Home-page: https://github.com/FedeClaudi/pyrnn
+Author: Federico Claudi
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6,
+Description-Content-Type: text/markdown
+Requires-Dist: rich (>=9.0.0)
+Requires-Dist: pyinspect
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: pytorch
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: coverage-badge ; extra == 'dev'
+
+# pyrnn
+pythorcn implementation of a vanilla RNN with some useful stuff.
+
+
