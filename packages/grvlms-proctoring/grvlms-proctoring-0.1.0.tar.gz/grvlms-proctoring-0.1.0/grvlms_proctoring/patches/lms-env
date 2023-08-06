@@ -1,0 +1,8 @@
+"PROCTORING_SETTINGS": {
+    "LINK_URLS": {
+        "contact_us": "{{ PROCTORING_CONTACT_US }}",
+        "faq": "{{ PROCTORING_FAQ }}",
+        "online_proctoring_rules": "{{ PROCTORING_ONLINE_PROCTORING_RULES }}",
+        "tech_requirements": "{{ PROCTORING_TECH_REQUIREMENTS }}"
+    }
+}

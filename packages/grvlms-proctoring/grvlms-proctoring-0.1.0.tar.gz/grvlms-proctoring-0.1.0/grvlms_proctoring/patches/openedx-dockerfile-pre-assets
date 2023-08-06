@@ -1,0 +1,5 @@
+RUN export DJANGO_SETTINGS_MODULE=$SERVICE_VARIANT.envs.$SETTINGS
+RUN echo "Loading settings $DJANGO_SETTINGS_MODULE"
+ARG PROCTORING_VERSION=2.2.4
+RUN echo "Installing edx-proctoring $PROCTORING_VERSION"
+RUN pip install edx-proctoring==$PROCTORING_VERSION

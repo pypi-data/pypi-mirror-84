@@ -1,0 +1,2 @@
+recursive-include grvlms_proctoring/patches *
+recursive-include grvlms_proctoring/templates *

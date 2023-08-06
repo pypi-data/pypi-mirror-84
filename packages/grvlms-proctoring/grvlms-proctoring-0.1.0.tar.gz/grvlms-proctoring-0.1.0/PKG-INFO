@@ -1,0 +1,52 @@
+Metadata-Version: 1.2
+Name: grvlms-proctoring
+Version: 0.1.0
+Summary: proctoring plugin for Grvlms
+Home-page: https://github.com/groovetch/grvlms-proctoring
+Author: GrooveTechnology
+License: AGPLv3
+Project-URL: Code, https://github.com/groovetch/grvlms-proctoring
+Project-URL: Issue tracker, https://github.com/groovetch/grvlms-proctoring/issues
+Description: proctoring plugin for `Grvlms <https://docs.grvlms.overhang.io>`__
+        ===================================================================================
+        
+        Installation
+        ------------
+        
+        ::
+        
+            pip install git+https://github.com/groovetch/grvlms-proctoring
+        
+        Usage
+        -----
+        
+        ::
+        
+            grvlms plugins enable proctoring
+            grvlms images build openedx
+            grvlms local start
+        
+        
+        configuration
+        -------------
+        
+        ::
+        
+            grvlms proctoring config -i (interactive mode)
+        
+            
+        
+        License
+        -------
+        
+        This software is licensed under the terms of the AGPLv3.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5

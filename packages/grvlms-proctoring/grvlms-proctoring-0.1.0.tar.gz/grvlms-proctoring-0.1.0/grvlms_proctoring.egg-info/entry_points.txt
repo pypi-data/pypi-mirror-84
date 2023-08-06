@@ -1,0 +1,3 @@
+[grvlms.plugin.v0]
+proctoring = grvlms_proctoring.plugin
+
