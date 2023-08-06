@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: zjwbox
+Version: 0.1.8
+Summary: a package for extend
+Home-page: https://github.com/pypa/sampleproject
+Author: zjw
+Author-email: 2415528031@qq.com
+License: UNKNOWN
+Description: #zjw
+        
+        This is a simple example package. You can use
+        [Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+        to write your content.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent

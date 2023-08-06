@@ -1,0 +1,11 @@
+wget==3.2
+lxml==4.6.1
+eventlet==0.29.1
+dataclasses
+pyppeteer
+aiohttp==3.7.1
+nest_asyncio==1.4.1
+parsel
+requests
+faker
+openpyxl
