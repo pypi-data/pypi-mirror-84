@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+django_rest_framework_serialization_spec.egg-info/PKG-INFO
+django_rest_framework_serialization_spec.egg-info/SOURCES.txt
+django_rest_framework_serialization_spec.egg-info/dependency_links.txt
+django_rest_framework_serialization_spec.egg-info/requires.txt
+django_rest_framework_serialization_spec.egg-info/top_level.txt
+serialization_spec/__init__.py
+serialization_spec/plugins.py
+serialization_spec/serialization.py
+serialization_spec/utils.py
