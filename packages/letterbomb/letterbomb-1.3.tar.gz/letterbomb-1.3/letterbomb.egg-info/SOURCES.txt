@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+letterbomb/__init__.py
+letterbomb/__main__.py
+letterbomb.egg-info/PKG-INFO
+letterbomb.egg-info/SOURCES.txt
+letterbomb.egg-info/dependency_links.txt
+letterbomb.egg-info/top_level.txt
