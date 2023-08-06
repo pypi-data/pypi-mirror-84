@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: chaostoolkit-gremlin-yy
+Version: 0.3.2
+Summary: Chaos Toolkit Gremlin, YY. support
+Home-page: https://github.com/beingcoder/chaostoolkit-gremlin
+Author: chaostoolkit Team
+Author-email: 1020828078@qq.com
+License: Apache License Version 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Freely Distributable
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.5.*
+Requires-Dist: chaostoolkit-lib (>=0.7.0)
+Requires-Dist: logzero
+Requires-Dist: requests
+Requires-Dist: pycodestyle
+
+# chaostoolkit-gremlin-yy
+
+[![Build Status](https://travis-ci.org/chaostoolkit/chaostoolkit-gremlin.svg?branch=master)](https://travis-ci.org/chaostoolkit/chaostoolkit-gremlin)
+
+[Gremlin, Inc][gremlin] support for the [Chaos Toolkit][chaostoolkit].
+
+[gremlin]: https://github.com/beingcoder/chaostoolkit-gremlin
+[gremlin]: https://www.gremlin.com/
+[chaostoolkit]: http://chaostoolkit.org/
+
+## Install
+
+To be used from your experiment, this package must be installed in the Python
+environment where [chaostoolkit][] already lives.
+
+[chaostoolkit]: https://github.com/chaostoolkit/chaostoolkit
+
+```
+$ pip install chaostoolkit-gremlin-yy
+```
+
+## Usage
+
+To use this package, you must create an account with [Gremlin, Inc][gremlin].
+Once registered, create a new organisation (formerly known as team). You may
+have to ask your Gremlin administrator to do this for you.
+
+Once this is done, you must set the following environmental variables
+so the Chaos Toolkit can pick up them:
+
+* `team_id`: the email used to register to Gremlin and associated to that
+  organisation
+* `api_key`: your api key
+
+
+Note that 2FA is not yet implemented in this package.
+
+Next you need to specify to load those
+variables and inject them into this package's activities. At the top of the
+experiment file, add the following object under secret:
+
+api_key: api_key_value
+team_id: team_id_value
+
+
+Finally, in all activities where you call a function from this package, make
+sure to add the following property:
+
+json
+"secrets": ["gremlin"]
+
+
+
+
+## Contribute
+
+If you wish to contribute more functions to this package, you are more than
+welcome to do so. Please, fork this project, make your changes following the
+usual [PEP 8][pep8] code style, sprinkling with tests and submit a PR for
+review.
+
+[pep8]: https://pycodestyle.readthedocs.io/en/latest/
+
+
