@@ -1,0 +1,9 @@
+README.md
+setup.py
+eiqlib/__init__.py
+eiqlib/eiqcalls.py
+eiqlib/eiqjson.py
+eiqlib.egg-info/PKG-INFO
+eiqlib.egg-info/SOURCES.txt
+eiqlib.egg-info/dependency_links.txt
+eiqlib.egg-info/top_level.txt
