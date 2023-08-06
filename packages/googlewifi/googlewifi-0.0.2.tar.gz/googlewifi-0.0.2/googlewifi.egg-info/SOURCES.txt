@@ -1,0 +1,7 @@
+README.md
+setup.py
+googlewifi/__init__.py
+googlewifi.egg-info/PKG-INFO
+googlewifi.egg-info/SOURCES.txt
+googlewifi.egg-info/dependency_links.txt
+googlewifi.egg-info/top_level.txt
