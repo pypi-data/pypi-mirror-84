@@ -1,0 +1,7 @@
+google-api-python-client>=1.12.5
+google-auth-httplib2>=0.0.4
+google-auth-oauthlib>=0.4.2
+mega.py>=1.0.8
+PyInquirer-fork==1.0.4
+pymkv>=1.0.8
+rich>=9.1.0
