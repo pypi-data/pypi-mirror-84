@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+__init__.py
+boot_django.py
+load_tests.py
+setup.py
+anyfield_auth_backend/__init__.py
+anyfield_auth_backend/anyfield_auth.py
+anyfield_auth_backend/apps.py
+anyfield_auth_backend/tests.py
+django_anyfield_auth_backend.egg-info/PKG-INFO
+django_anyfield_auth_backend.egg-info/SOURCES.txt
+django_anyfield_auth_backend.egg-info/dependency_links.txt
+django_anyfield_auth_backend.egg-info/top_level.txt
