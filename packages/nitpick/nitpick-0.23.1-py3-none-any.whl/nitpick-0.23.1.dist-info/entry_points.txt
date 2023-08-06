@@ -1,0 +1,10 @@
+[flake8.extension]
+NIP=nitpick.flake8:NitpickExtension
+
+[nitpick]
+json=nitpick.plugins.json
+pre_commit=nitpick.plugins.pre_commit
+pyproject_toml=nitpick.plugins.pyproject_toml
+setup_cfg=nitpick.plugins.setup_cfg
+text=nitpick.plugins.text
+
