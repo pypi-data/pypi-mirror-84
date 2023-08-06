@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: spotify-skipper
+Version: 1.0.0
+Summary: Blacklist artists and songs, no login needed.
+Home-page: https://github.com/Blatzar/spotify-skipper
+Author: Blatzar
+Author-email: blatzar@gmail.com
+License: UNKNOWN
+Description: # spotify-skipper
+        work in progress tool to permanently block songs and artists, no login or api needed.
+        
+Keywords: spotify,skip
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
