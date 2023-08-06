@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: roast
+Version: 1.0.1
+Summary: Randomized Okaying Across System Topologies (ROAST) Python Framework
+Home-page: https://github.com/Xilinx/roast
+Author: Ching-Hwa Yu
+Author-email: chinghwa@xilinx.com
+License: MIT
+Keywords: roast
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Requires-Dist: python-configuration[toml,yaml] (>=0.8)
+Requires-Dist: stevedore (==1.32.0)
+Requires-Dist: gitpython
+Requires-Dist: pexpect
+Requires-Dist: yamlordereddictloader
+Requires-Dist: mimesis
+Requires-Dist: filelock
+Requires-Dist: python-box
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: pytest-black ; extra == 'dev'
+Requires-Dist: pytest-freezegun ; extra == 'dev'
+
+# ROAST
+ROAST, a unified framework for component testing across system topologies addresses the challenges of testing a complex heterogenous adaptive computer acceleration platform (ACAP) against a wide range of scenarios, finding edge cases that would not have been usually covered with traditional testing methods. ROAST includes a modular plugin architecture built on Python for extensibility and scalability in building components, launching tests, and collecting results.
+
+
