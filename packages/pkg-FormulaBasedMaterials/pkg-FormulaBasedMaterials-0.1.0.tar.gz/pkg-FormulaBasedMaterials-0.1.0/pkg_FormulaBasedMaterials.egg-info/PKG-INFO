@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pkg-FormulaBasedMaterials
+Version: 0.1.0
+Summary: A code for generating Formula-Based Materials into Voxel, STL files.
+Home-page: https://github.com/MicDonald/FormulaBasedMaterials/archive/v0.1.0.tar.gz
+Author: Michael, Yu-Chuan, Hsu
+Author-email: mk60503mk60503@gmail.com
+License: UNKNOWN
+Description: # FormulaBasedMaterials
+        Generate Formula-Based Materials into Voxel, STL files
+        
+        # Usage:
+        ```python
+        import matplotlib.pyplot as plt
+        %matplotlib inline
+        import FormulaBasedMaterials as FBM
+        
+        test_SingleFM=FBM.SingleFormulaBasedMaterials(formula='sin(x)*cos(y)+sin(y)*cos(z)+sin(z)*cos(x)+1', l=10, r=[1,1,1], a=[1,1,1], eps=0.2, res=0.2, png=True, smooth=True)
+        test_SingleFM=FBM.SingleFormulaBasedMaterials(unit='random')
+        test_SingleFM=FBM.SingleFormulaBasedMaterials(unit='SchD')
+        test_SingleFM=FBM.SingleFormulaBasedMaterials(unit='gyroid')
+        test_SingleFM.save2stl()
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+FormulaBasedMaterials/SingleFormulaBasedMaterials.py
+FormulaBasedMaterials/__init__.py
+pkg_FormulaBasedMaterials.egg-info/PKG-INFO
+pkg_FormulaBasedMaterials.egg-info/SOURCES.txt
+pkg_FormulaBasedMaterials.egg-info/dependency_links.txt
+pkg_FormulaBasedMaterials.egg-info/requires.txt
+pkg_FormulaBasedMaterials.egg-info/top_level.txt
