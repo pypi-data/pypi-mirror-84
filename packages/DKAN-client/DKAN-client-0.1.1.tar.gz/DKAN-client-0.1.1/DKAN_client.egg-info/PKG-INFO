@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: DKAN-client
+Version: 0.1.1
+Summary: Client for DKAN
+Home-page: UNKNOWN
+Author: Konrad Wölms
+Author-email: konrad.woelms@gmail.com
+License: UNKNOWN
+Description: # DKAN-client
+        This repository uses the DKAN API as an example of how to setup a python package for an API client.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6

@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+DKAN_client.egg-info/PKG-INFO
+DKAN_client.egg-info/SOURCES.txt
+DKAN_client.egg-info/dependency_links.txt
+DKAN_client.egg-info/requires.txt
+DKAN_client.egg-info/top_level.txt
+DKAN_client.egg-info/.ipynb_checkpoints/PKG-INFO-checkpoint
+dkan_client/VERSION
+dkan_client/__init__.py
+dkan_client/data_load.py
