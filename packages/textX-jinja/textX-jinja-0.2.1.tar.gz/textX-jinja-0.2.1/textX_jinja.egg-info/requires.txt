@@ -1,0 +1,14 @@
+textX
+Jinja2
+click
+
+[dev]
+wheel
+twine
+
+[test]
+flake8
+tox
+coverage
+coveralls
+pytest
