@@ -1,0 +1,7 @@
+README.md
+setup.py
+maxgraph.egg-info/PKG-INFO
+maxgraph.egg-info/SOURCES.txt
+maxgraph.egg-info/dependency_links.txt
+maxgraph.egg-info/requires.txt
+maxgraph.egg-info/top_level.txt
