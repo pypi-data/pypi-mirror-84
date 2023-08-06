@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: dash_facebook_login
+Version: 0.0.1
+Summary: A Facebook Login component for Plotly Dash
+Home-page: UNKNOWN
+Author: Miklos Danka <danka.miklos@gmail.com>
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Dash

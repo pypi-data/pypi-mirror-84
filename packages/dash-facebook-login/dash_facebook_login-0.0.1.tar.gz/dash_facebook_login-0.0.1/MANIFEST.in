@@ -1,0 +1,7 @@
+include dash_facebook_login/dash_facebook_login.min.js
+include dash_facebook_login/dash_facebook_login.min.js.map
+include dash_facebook_login/metadata.json
+include dash_facebook_login/package-info.json
+include README.md
+include LICENSE
+include package.json
