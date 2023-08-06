@@ -1,0 +1,13 @@
+README.md
+setup.py
+bio_ting.egg-info/PKG-INFO
+bio_ting.egg-info/SOURCES.txt
+bio_ting.egg-info/dependency_links.txt
+bio_ting.egg-info/entry_points.txt
+bio_ting.egg-info/not-zip-safe
+bio_ting.egg-info/requires.txt
+bio_ting.egg-info/top_level.txt
+scripts/__init__.py
+scripts/imseq2ting.py
+ting/__init__.py
+ting/ting.py
