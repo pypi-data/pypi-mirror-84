@@ -1,0 +1,9 @@
+MANIFEST.in
+__init__.py
+setup.py
+testcore.py
+testwheel.egg-info/PKG-INFO
+testwheel.egg-info/SOURCES.txt
+testwheel.egg-info/dependency_links.txt
+testwheel.egg-info/top_level.txt
+testwheel.egg-info/zip-safe
