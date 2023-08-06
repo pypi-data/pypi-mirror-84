@@ -1,0 +1,7 @@
+flavio>=2.1.0
+multipledispatch
+pandas
+wilson
+
+[testing]
+nose
