@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mkctools
+Version: 0.6.1
+Summary: Machine Learning Libraries
+Home-page: http://github.com/mc6666/mkctools
+Author: Michael Chen
+Author-email: mc6666@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# mkctools Package
+
+This package is a Machine Learning Libraries as well as some common functions.
+
