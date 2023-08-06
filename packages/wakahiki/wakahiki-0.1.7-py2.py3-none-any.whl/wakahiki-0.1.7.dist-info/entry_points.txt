@@ -1,0 +1,3 @@
+[console_scripts]
+wakahiki = wakahiki.__main__:app
+
