@@ -1,0 +1,11 @@
+studyclient/__init__.py,sha256=RAnJkKq2vzVNQstRqe3CG_DsjJuCrXmCBGz2uv9LLNY,1296
+studyclient/connection.py,sha256=LvySrCi9f37J5fNcjERdvBsCy1yvjG9wQxAnxChEmes,19515
+studyclient/core.py,sha256=ZDDZv5V-A3uLvE0rlXSZK4XOVuUT8wzUkChQ71qa1z8,8666
+studyclient/drivers.py,sha256=uM3NR9JkHYAIY09s6Wl1oR7QX9gdHp7L0Oh-wERUsQo,395
+studyclient/exceptions.py,sha256=jkQGh4RwaMOwpVDxZphm-2u-j-x-w5Bjb7NMqKyM91c,929
+studygovernor_client-0.2.0.dist-info/LICENSE,sha256=ohsbe-1180tqV0K-E81i4S5MMEHucR1lLirw3LvIpXw,665
+studygovernor_client-0.2.0.dist-info/METADATA,sha256=i654DqkwbsfxLvOP9erf1c9HS_YycOvYY5BFZfmLDX8,1406
+studygovernor_client-0.2.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+studygovernor_client-0.2.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+studygovernor_client-0.2.0.dist-info/top_level.txt,sha256=3gV4DftqplhbpxSXUdQt0U0LbXnqwLA3_ktbWvyELqc,12
+studygovernor_client-0.2.0.dist-info/RECORD,,
