@@ -1,0 +1,11 @@
+keras-lmu>=0.3.0
+
+[all]
+pytest>=6.1.0
+
+[docs]
+
+[optional]
+
+[tests]
+pytest>=6.1.0
