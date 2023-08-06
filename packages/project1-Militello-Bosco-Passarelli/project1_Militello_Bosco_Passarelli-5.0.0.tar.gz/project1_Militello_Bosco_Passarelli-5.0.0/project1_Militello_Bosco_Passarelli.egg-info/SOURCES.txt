@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+country_package/__init__.py
+country_package/countries.py
+country_package/country.csv
+country_package/funzioni_country.py
+project1_Militello_Bosco_Passarelli.egg-info/PKG-INFO
+project1_Militello_Bosco_Passarelli.egg-info/SOURCES.txt
+project1_Militello_Bosco_Passarelli.egg-info/dependency_links.txt
+project1_Militello_Bosco_Passarelli.egg-info/top_level.txt
+test/test_integration_country.py
+test/test_unit_country.py
