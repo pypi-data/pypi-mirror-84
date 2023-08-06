@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: clusterfuzz
+Version: 0.0.1a0
+Summary: ClusterFuzz
+Home-page: https://github.com/google/clusterfuzz
+Author: ClusterFuzz authors
+Author-email: clusterfuzz-dev@googlegroups.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth (>=1.22.1)
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: google-cloud-core
+Requires-Dist: google-cloud-datastore
+Requires-Dist: google-cloud-logging
+Requires-Dist: google-cloud-monitoring
+Requires-Dist: google-cloud-ndb
+Requires-Dist: google-cloud-profiler
+Requires-Dist: google-cloud-storage
+Requires-Dist: grpcio
+Requires-Dist: httplib2
+Requires-Dist: mozprocess
+Requires-Dist: oauth2client
+Requires-Dist: protobuf
+Requires-Dist: psutil
+Requires-Dist: PyYAML
+Requires-Dist: requests
+Requires-Dist: six
+
+# libClusterFuzz
+
+
