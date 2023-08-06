@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: manim_live
+Version: 0.0.1
+Summary: Program that uses manim and can display animations and be controlled live
+Home-page: UNKNOWN
+Author: Cory Alexander Balaton
+Author-email: cory.balaton@gmail.com
+License: MIT
+Description: This is a lib that tries to make math animation easier to show live by being able to control them.
+        
+        Change log
+        ==========
+        
+        0.0.1 (2020/11/8)
+        -----------------
+        - First Release
+Keywords: animations
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
