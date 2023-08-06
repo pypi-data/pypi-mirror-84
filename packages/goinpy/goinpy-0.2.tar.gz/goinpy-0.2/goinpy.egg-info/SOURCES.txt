@@ -1,0 +1,7 @@
+CHANGELOG.txt
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+goinpy/__init__.py
+goinpy/goinpy.py
