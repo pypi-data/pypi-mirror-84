@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+durable_rules_tools/__init__.py
+durable_rules_tools/magic.py
+durable_rules_tools/rules_utils.py
+durable_rules_tools.egg-info/PKG-INFO
+durable_rules_tools.egg-info/SOURCES.txt
+durable_rules_tools.egg-info/dependency_links.txt
+durable_rules_tools.egg-info/requires.txt
+durable_rules_tools.egg-info/top_level.txt
