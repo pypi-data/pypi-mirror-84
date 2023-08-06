@@ -1,0 +1,10 @@
+pathlib
+matplotlib
+numpy
+astropy
+tqdm
+channelarchiver
+seaborn
+scipy
+setuptools
+datetime
