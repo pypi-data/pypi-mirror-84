@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: deltalake
+Version: 0.1.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: pyarrow>=2
+Requires-Dist: pandas; extra =='pandas'
+Requires-Dist: pytest; extra == 'devel'
+Requires-Dist: pytest-mock; extra == 'devel'
+Project-Url: Repo, https://github.com/delta-io/delta.rs
+Provides-Extra: pandas
+Provides-Extra: devel
+Summary: Python binding for delta.rs
+Home-Page: https://github.com/delta-io/delta.rs
+Author: Qingping Hou <dave2008713@gmail.com>
+Author-Email: Qingping Hou <dave2008713@gmail.com>
+License: Apache-2.0
