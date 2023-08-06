@@ -1,0 +1,10 @@
+foliant/preprocessors/apilinks/__init__.py,sha256=qzeBDItHijbc6i4JiCBxzsk9qjEsF8EXsQG8R-Ppvk0,35
+foliant/preprocessors/apilinks/apilinks.py,sha256=7XaDWcJ1KSldQYSOBEog6DB83iMbGyjmSjgWiVa5Zk8,14914
+foliant/preprocessors/apilinks/classes.py,sha256=DTrESV4Kq130i8uDHjYAhZRGQ8lE7Q4L6P5RMyaIY8s,9000
+foliant/preprocessors/apilinks/constants.py,sha256=bIrY2GSrGEVAP0VuPOSlbV7EKEXoRZIYgvDexPrD7TU,458
+foliant/preprocessors/apilinks/tools.py,sha256=upcaLreCvEzaDOS_5w8qcQnA2JRPd_yBruS_frH-ZsY,700
+foliantcontrib.apilinks-1.2.2.dist-info/LICENSE,sha256=BID7zn2U_7_uo5lJCy48h09lb7K_b57_4kimUdKFhoo,1069
+foliantcontrib.apilinks-1.2.2.dist-info/METADATA,sha256=1B3F_TjzOkDkAxkHSa1E67lMRlIWnWH1DVxaAalp5pQ,24207
+foliantcontrib.apilinks-1.2.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+foliantcontrib.apilinks-1.2.2.dist-info/top_level.txt,sha256=5uvI8ZIgBWKY09Z8Xs4ESLGD7yAEGbiLvIrdHdaC9mE,8
+foliantcontrib.apilinks-1.2.2.dist-info/RECORD,,
