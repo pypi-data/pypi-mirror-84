@@ -1,0 +1,7 @@
+opentelemetry/instrumentation/system_metrics/__init__.py,sha256=0Ey-sNIL0ztn1-3aqyBlC8JJIjdGPuylHYeFaz2yWho,26027
+opentelemetry/instrumentation/system_metrics/version.py,sha256=zIa5LOJxmXQw9fP_umgzqzrnNjr-5ydvjW8BEB5I9vo,608
+opentelemetry_instrumentation_system_metrics-0.15b0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+opentelemetry_instrumentation_system_metrics-0.15b0.dist-info/METADATA,sha256=9QQVdYNXlZvB94_He7D2IP0YRa6bfk17CIRUbS3Xoks,1775
+opentelemetry_instrumentation_system_metrics-0.15b0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+opentelemetry_instrumentation_system_metrics-0.15b0.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_instrumentation_system_metrics-0.15b0.dist-info/RECORD,,
