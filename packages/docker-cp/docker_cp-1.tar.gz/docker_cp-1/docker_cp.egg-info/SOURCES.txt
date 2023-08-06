@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+docker_cp/__init__.py
+docker_cp.egg-info/PKG-INFO
+docker_cp.egg-info/SOURCES.txt
+docker_cp.egg-info/dependency_links.txt
+docker_cp.egg-info/entry_points.txt
+docker_cp.egg-info/top_level.txt

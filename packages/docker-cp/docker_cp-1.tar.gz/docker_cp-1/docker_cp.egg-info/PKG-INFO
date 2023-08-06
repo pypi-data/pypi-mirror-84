@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: docker-cp
+Version: 1
+Summary: Tool to use Docker Volumes with cp
+Home-page: https://www.github.com/galaxy102/docker_cp
+Author: galaxy102
+Author-email: konstantin.koehring@gmail.com
+License: MIT License
+Description: # docker_cp
+        
+        docker_cp is a tool to use Docker volumes with cp. Just use it like cp.
+        
+        To access Docker volumes, just prefix a path with `docker:<volume_name>`.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
