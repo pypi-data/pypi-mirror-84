@@ -1,0 +1,11 @@
+subprocess_tee/__init__.py,sha256=B1K7nnSjm_3Wj3D2bAEl9RnLWnobuv-HMODbcfaZ-xQ,3452
+subprocess_tee/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+subprocess_tee/rich.py,sha256=-Go7xy7oVwOJz69OTnvVhAWdKZAB9gkRmFjFYiuZVtc,1871
+subprocess_tee/test/__init__.py,sha256=ENeZ5NHH0Z3rBgfUnAaJh-PsFAOL7fuKDPWmTC5j6aE,16
+subprocess_tee/test/test_rich.py,sha256=h6TsEU5ImwDj3GNTRUHD2gO3s8tehI19Su4O1ANo9Uw,534
+subprocess_tee/test/test_unit.py,sha256=nl5XFY40KbHpiU5SgzNxfoYEAPUsKlv5x3sU-ETm4W8,2353
+subprocess_tee-0.1.4.dist-info/LICENSE,sha256=_LJpHkepsUjm-7WhZ3WtQCDTxyJO533qBUPigkk6yKQ,1074
+subprocess_tee-0.1.4.dist-info/METADATA,sha256=Se-tVOt4JHDP0JDsmleJXHI-8ysY8ls-AC4QYdEtss4,3137
+subprocess_tee-0.1.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+subprocess_tee-0.1.4.dist-info/top_level.txt,sha256=ZJfyrrSueXdbOk5_BY3_yFHKbEgzveIKEMPXbt2_aAM,15
+subprocess_tee-0.1.4.dist-info/RECORD,,
