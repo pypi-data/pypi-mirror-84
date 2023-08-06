@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: PythonColouring
+Version: 0.1
+Summary: A module used to get colours to use in the Python terminal
+Home-page: UNKNOWN
+Author: CoolJames1610
+Author-email: jadokofie@gmail.com
+License: UNKNOWN
+Keywords: PYTHON,COLOURING,TERMINAL,COLORED,PRINT,STYLE,COLORS,COLOURS
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# PythonColouring
+
+PythonColouring is a module used to get colours to use in the Python terminal.
+
+This allows users to import different colours to use in their Python terminal to make their Python code look nicer.
+
+***
+
+Current Version: 0.1
+- Released
+
+***
+
+## **Requirements**
+* Use Python 3.6 or higher
+
+## **Installation**
+1. Install using Python's PIP manager:
+```
+pip install PythonColouring
+```
+2. In your Python file import PythonColouring:
+```py
+import os
+try:
+  import PythonColouring
+except:
+  os.system("pip3 install PythonColouring")
+  import PythonColouring
+```
+3. Now you can use the module:
+```py
+import PythonColouring as f
+
+f.help() # Gives you help about how to import colours
+# f.info() also returns the same value
+"""
+The above will guide you on how to import colours but below is an example:
+"""
+r = f.Red
+b = f.Reset
+print(f"{r}I support Manchester United!{b}")
+
+```
+Ta-da!
+![3Capture](https://storage.googleapis.com/replit/images/1604855419175_b5e5067f74c8d8fecc23af65f7717727.png)
+
+If you have any feedback then you can [email me](https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSGLrTGkHMrJKfHBhNsdmbbBGPSqMcrQgNQSDQtLQfSKQzxLNHhpzzDrpGrjWcgrMNSgSDGg) but I may take a while to respond, so if you have discord, then send me a friend request `@Zeliktric#4282` and I'll accept within 24 hours :)
+
+> For those who use American spelling, I'M SORRY I'M BRITISH - ~~maybe I'll just create another module with the American spelling xD~~
+
