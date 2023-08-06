@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: ikamail
+Version: 0.0.5
+Summary: Package using to call Mail providers API
+Home-page: https://gitlab.com/ikamail/ika_package.git
+Author: Manitra RANAIVOHARISON
+Author-email: mranaivoharison@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: pymongo
+
+# Ikamail Package
+
+ Install package from repository gitlab 
+```bash
+pip install --index-url https://__token__:<personal_access_token>@gitlab.com/api/v4/projects/<your_project_id>/packages/pypi/simple your_package_name
+```
+
+Install package from pip
+```bash
+pip install ikamail
+```
+
+Using package
+```py
+from ikamail.GmailHelper import GmailHelper
+
+message_id = GmailHelper("prod").get_message_id(
+    "me",
+    include_spam_trash=False,
+    max_results=25,
+    batch_using=True
+)
+
+print(message_id)
+```
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
+
