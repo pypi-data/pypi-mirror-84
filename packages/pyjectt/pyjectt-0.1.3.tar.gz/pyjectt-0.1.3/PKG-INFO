@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: pyjectt
+Version: 0.1.3
+Summary: Light ioc container for you
+Home-page: https://github.com/Bloodielie/pyject
+Author: Bloodie_lie
+Author-email: riopro2812@gmail.com
+License: MIT License
+Description: # pyject
+        
+        ## What is Pyject?
+        Pyject is a IocContainer for Python.
+        
+        It helps implementing the dependency injection principle.
+        
+        ## Installation
+        The package is available on the PyPi:
+        ```bash
+        pip install pyjectt
+        ```
+        
+        ## Examples
+        ```python
+        from abc import ABC, abstractmethod
+        from pyject import Container
+        
+        class DuckInterface(ABC):
+            @abstractmethod
+            def quack(self):
+                raise NotImplementedError()
+        
+        class QuackBehavior(ABC):
+            @abstractmethod
+            def quack(self):
+                raise NotImplementedError()
+        
+        class Sqeak(QuackBehavior):
+            def quack(self):
+                print("Quack_1")
+        
+        class DuckA(DuckInterface):
+            def __init__(self, squeak: QuackBehavior):
+                self._quack_behavior = squeak
+        
+            def quack(self):
+                self._quack_behavior.quack()
+        
+        class DuckC(DuckInterface):
+            def quack(self):
+                print("Quack_2")
+        
+        container = Container()
+        container.add_singleton(QuackBehavior, Sqeak)
+        container.add_transient(DuckInterface, DuckA)
+        container.add_singleton(DuckInterface, DuckC)
+        
+        duck = container.get(DuckInterface)
+        duck.quack()
+        
+        ducks = container.get_all(DuckInterface)
+        for duck in ducks:
+            duck.quack()
+        
+        print(container.get(DuckInterface) != container.get(DuckInterface))
+        ```
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Topic :: Internet
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
