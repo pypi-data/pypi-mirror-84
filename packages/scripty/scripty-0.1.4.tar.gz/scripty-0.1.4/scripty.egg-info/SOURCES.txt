@@ -1,0 +1,12 @@
+README.rst
+setup.py
+bin/scripty
+scripty/__init__.py
+scripty/__version__.py
+scripty/config_wrapper.py
+scripty/module.py
+scripty.egg-info/PKG-INFO
+scripty.egg-info/SOURCES.txt
+scripty.egg-info/dependency_links.txt
+scripty.egg-info/requires.txt
+scripty.egg-info/top_level.txt
