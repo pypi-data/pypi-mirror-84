@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Extract-Media-PowerPoint
+Version: 0.3
+Summary: Extract video PowerPoint
+Home-page: https://github.com/madyel/extract_media_ppt
+Author: MaDyEl
+Author-email: madyel@tutanota.com
+License: MIT
+Description: # Extract Media PowerPoint
+        
+        Example:
+        
+        
+        ```
+        from extract import PowerPoint
+        
+        if __name__ == '__main__':
+            ppt = PowerPoint(pptx,output)
+            ppt.extractVideo()
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
