@@ -1,0 +1,14 @@
+README.md
+setup.py
+atlas_s3_hook/Exceptions.py
+atlas_s3_hook/S3Hook.py
+atlas_s3_hook/S3MetadataClient.py
+atlas_s3_hook/S3PathClass.py
+atlas_s3_hook/S3PathType.py
+atlas_s3_hook/S3Scanner.py
+atlas_s3_hook/__init__.py
+atlass3hook.egg-info/PKG-INFO
+atlass3hook.egg-info/SOURCES.txt
+atlass3hook.egg-info/dependency_links.txt
+atlass3hook.egg-info/requires.txt
+atlass3hook.egg-info/top_level.txt

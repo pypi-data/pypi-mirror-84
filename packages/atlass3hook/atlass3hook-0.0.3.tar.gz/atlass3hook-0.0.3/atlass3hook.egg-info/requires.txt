@@ -1,0 +1,2 @@
+s3fs>=0.5.0
+atlaspyapi>=0.1.9
