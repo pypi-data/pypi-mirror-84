@@ -1,0 +1,29 @@
+== templates
+
+== Models
+
+== API
+Reparent_choices is a mess
+Test Multiple models
+Should have an exception catch on out-of-range ids?
+
+== Admin
+Auto-slug
+
+== Admin forms
+Term parents displaying the null option badly as '-1'
+Humm. Verification (for what?) not hard to add.
+
+
+== objects
+
+== Rendering
+== Bugs
+
+== SVGs
+
+== Tests
+What to say here?
+
+== Other
+Auto-slug code
