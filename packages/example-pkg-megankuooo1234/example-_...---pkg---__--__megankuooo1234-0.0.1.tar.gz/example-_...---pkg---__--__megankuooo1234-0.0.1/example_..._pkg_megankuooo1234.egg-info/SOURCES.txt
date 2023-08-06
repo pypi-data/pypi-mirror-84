@@ -1,0 +1,6 @@
+README.md
+setup.py
+example_..._pkg_megankuooo1234.egg-info/PKG-INFO
+example_..._pkg_megankuooo1234.egg-info/SOURCES.txt
+example_..._pkg_megankuooo1234.egg-info/dependency_links.txt
+example_..._pkg_megankuooo1234.egg-info/top_level.txt

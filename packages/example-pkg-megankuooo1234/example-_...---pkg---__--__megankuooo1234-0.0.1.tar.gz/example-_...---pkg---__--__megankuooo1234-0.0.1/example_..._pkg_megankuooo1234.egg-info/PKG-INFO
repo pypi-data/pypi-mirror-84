@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: example-...-pkg-megankuooo1234
+Version: 0.0.1
+Summary: testing the name normalization of pep 503 with periods
+Home-page: https://github.com/pypa/sampleproject
+Author: Megan Kuo
+Author-email: megankuo@example.com
+License: UNKNOWN
+Description: # Example Package
+        
+        This is a simple example package. 
+        
+        ## Creating a simple python package to use for testing
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
