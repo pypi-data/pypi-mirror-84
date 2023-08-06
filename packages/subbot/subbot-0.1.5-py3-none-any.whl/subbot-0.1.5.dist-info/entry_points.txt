@@ -1,0 +1,3 @@
+[console_scripts]
+subbot = subbot.__main__:cli
+
