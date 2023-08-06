@@ -1,0 +1,10 @@
+FoldingAtHomeControl/__init__.py,sha256=i27uURKQ3au9rCAlDWB4vDAfF6-jQKMQW9gSwTKSPpc,437
+FoldingAtHomeControl/const.py,sha256=toSwjQyBNqEE8ztWQTH3wm2bkatlT22Yox6VrxJD8iE,720
+FoldingAtHomeControl/exceptions.py,sha256=5KYAyih4uT9HyaIFcsef4BcqG3qnih7sGkjzAlyRAik,642
+FoldingAtHomeControl/foldingathomecontrol.py,sha256=PTUWALNFV0TOCz9LrdXFyFx0Lfy6BSrDs6MPnKOTLG8,11232
+FoldingAtHomeControl/pyonparser.py,sha256=IWBKqbb04Soe8hDt4sYPv9FaNi8Dbliw3h3L4czof8Q,421
+FoldingAtHomeControl/serialconnection.py,sha256=VdOzbTygo9G2EnTZqhT3WDA1Y0sVDABeIyz1gN79lT4,5839
+PyFoldingAtHomeControl-1.6.7.dist-info/LICENSE,sha256=42Ta7SH_abYmLz_dBLYSJUhjj8LgoLgyg82K3PZrR2w,1071
+PyFoldingAtHomeControl-1.6.7.dist-info/WHEEL,sha256=CqyTrkghQBNsEzLD3HbCSEIJ_fY58-XpoU29dUzwHSk,81
+PyFoldingAtHomeControl-1.6.7.dist-info/METADATA,sha256=yAIQ2XyBb1POoI6FjmtLn3sEtKNWVJlx3pNuQ_nDA9Q,2817
+PyFoldingAtHomeControl-1.6.7.dist-info/RECORD,,
