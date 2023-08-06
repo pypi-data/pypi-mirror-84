@@ -1,0 +1,13 @@
+dnaio-0.4.3.dist-info/top_level.txt,sha256=IalGSE5o2MSaO51DQjOdBtECJc4Xtty_BLRBF2pfJs4,6
+dnaio-0.4.3.dist-info/RECORD,,
+dnaio-0.4.3.dist-info/METADATA,sha256=NjZW8RuJHXbqVSkoJYQ9M5F0fBExNRUZ5Dp0_va_u58,2342
+dnaio-0.4.3.dist-info/LICENSE,sha256=Wer3cfVOTxRsKRBm1_eGNVpr7-tMfL2TwiK7e0IHCaM,1092
+dnaio-0.4.3.dist-info/WHEEL,sha256=cHXGicVjvwSkAYFLaVXWJmI_Jmjywv0hjj3FUBkjj6A,109
+dnaio/_util.py,sha256=62YIksbVYM46LT2qZJelZBcKu6Xh6-fuVzPxaPVTa5c,203
+dnaio/_version.py,sha256=p6FCu6AsGy-WjTcVr3aGI0i9yKSAMKp7FT6BA19HGn0,116
+dnaio/writers.py,sha256=We-H1qH29X3dY3_5Ux8cTS0hVNBdGeOu3KSXKGVxWeg,3388
+dnaio/_core.cpython-37m-x86_64-linux-gnu.so,sha256=Cm1svjg6HEW9wUPBQAilBXFpRAF7JH8fuJZCgMZJJKY,248688
+dnaio/exceptions.py,sha256=eSEv9xEBPWxM1fhgqPiqmR7lHGd5rc5atxz0UzBwNb0,745
+dnaio/readers.py,sha256=XhrU39ApWChUDngTU5IzlyoHz651dDW7FnbhjFmPyH8,4101
+dnaio/__init__.py,sha256=sXE2-b1zQ7iIruVUYwxscXLGWqY0dR2egX7xSzoFjV0,13441
+dnaio/chunks.py,sha256=3USFzJX_VtrpbyxupZq-ovQaQ59vNfurp5928lO0SFw,4420
