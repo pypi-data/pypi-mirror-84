@@ -1,0 +1,15 @@
+flonb/__init__.py,sha256=H7jXAxs1jqXo9YyW052H_e55WfkhILFDp2WrjY8uKPg,218
+flonb/task.py,sha256=72nfmkgG18xPEccujljLPw3WKPxJvSng9vFT1kl-Qoc,9602
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_basic_deps.py,sha256=xApLomWoyeVaI3tEtJ-xfmbm7wNYRDXE5p5P723TAko,2258
+tests/test_caching.py,sha256=_8zzSxsclPG0FIucIJwinfY60qReFZQq-dGaW2xZYkQ,1808
+tests/test_container_deps.py,sha256=gbNbRGMRosowWbCP5YShvF9GeIW9tJobp3_g4bHrvGY,1474
+tests/test_dynamic_deps.py,sha256=mGePfzNAAE8tftGxkPP9Yg9r6716MNlDq2_zlFX0Ado,872
+tests/test_errors.py,sha256=zIk0YTJhylx__4kOhNByGOlkAX-0qFwQsHX2FPSlgzc,2002
+tests/test_partial.py,sha256=h2TYmBdB0iNNA1ac3r_-9uXYEnOezC2YS8lEGHInyZU,623
+tests/test_task_func.py,sha256=nOcgx3cuaPE0PXxVqBIusKFta32cLmFkroAFsicxSo8,2012
+flonb-0.1.0.dist-info/LICENSE,sha256=WDmtC8Zpibi3Fq_8tTN7c6vCNOHhoJammEWO-N8NDy4,1067
+flonb-0.1.0.dist-info/METADATA,sha256=cWvJ6PmDI6LNP2Yh9rjRKNa3MHKm82-FX12oCjwsfkI,8145
+flonb-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+flonb-0.1.0.dist-info/top_level.txt,sha256=3YN5t2rM1qzd0oqZ8tUlGsp_FRvDPZvY4MWNQB86jNo,12
+flonb-0.1.0.dist-info/RECORD,,
