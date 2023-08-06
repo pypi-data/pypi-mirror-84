@@ -1,0 +1,10 @@
+tweedledum/core.cpython-39-i386-linux-gnu.so,sha256=A-3yCsN01rTAX2DaLt5j9rFQzNp4h4Cj1642kw0WWD8,344016
+tweedledum/__init__.py,sha256=RkT-D687wgBWdt7RVYm_d3l2dV_wc129V-xCal0i3LU,319
+tweedledum/parser/logic_network.py,sha256=HOWo5syUQWEU0RLec7qIEBWTkc9_7qeTxjIk35ROZ34,4332
+tweedledum/parser/__init__.py,sha256=5Ac8tcCaA_jLhAP_3Cry13ERqiU7hfeB36qTbZbBmjk,445
+tweedledum/parser/types.py,sha256=nFAq6cmoWz7OWXSLvT4B3J86L8KNZwbv6TQMqKVhC7k,471
+tweedledum-0.1b0.dist-info/RECORD,,
+tweedledum-0.1b0.dist-info/METADATA,sha256=h5-xN_9Nvxo7HSoEtgXOuDBynqe61egMr7aQZ-MlPyA,877
+tweedledum-0.1b0.dist-info/top_level.txt,sha256=yYecLcLcSosVcth_Kk1og1nnvV1znHCLaVQ1LzGaWA4,11
+tweedledum-0.1b0.dist-info/WHEEL,sha256=nR-Q2UTvMSmwQ2AemoyfdWxvAuYcNk3w_kc1qcXHINw,103
+tweedledum-0.1b0.dist-info/LICENSE,sha256=HgcOWoLaaFwFOX2xya4UHePWy2y4sHOQuURLgUYg-UE,1156
