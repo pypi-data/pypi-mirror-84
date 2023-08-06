@@ -1,0 +1,13 @@
+README.md
+setup.py
+jinfo/__init__.py
+jinfo/alignment.py
+jinfo/metabolite.py
+jinfo/phylogenetics.py
+jinfo/sequence.py
+jinfo/tables.py
+jinfo.egg-info/PKG-INFO
+jinfo.egg-info/SOURCES.txt
+jinfo.egg-info/dependency_links.txt
+jinfo.egg-info/not-zip-safe
+jinfo.egg-info/top_level.txt
