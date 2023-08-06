@@ -1,0 +1,7 @@
+setup.py
+poncho/__init__.py
+poncho.egg-info/PKG-INFO
+poncho.egg-info/SOURCES.txt
+poncho.egg-info/dependency_links.txt
+poncho.egg-info/not-zip-safe
+poncho.egg-info/top_level.txt
