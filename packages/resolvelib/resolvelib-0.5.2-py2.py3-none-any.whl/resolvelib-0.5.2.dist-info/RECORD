@@ -1,0 +1,12 @@
+resolvelib/__init__.py,sha256=PKj1ztoJq1Et6qtyGe3RS4cBu5dq9smy9zqj4FcQFIA,537
+resolvelib/providers.py,sha256=lzLwHTIVQ0siopEFXoL9gytVgxMD1zCW9z-YjXNBgg8,5091
+resolvelib/reporters.py,sha256=hQvvXuuEBOyEWO8KDfLsWKVjX55UFMAUwO0YZMNpzAw,1364
+resolvelib/resolvers.py,sha256=jrpCidXR-LaQA1n1MicWHv13OfdYoxe3jQvkYQbmXUM,14632
+resolvelib/structs.py,sha256=e1T497PmoKUDzFcL0hfyJh3hDHfQk1auIHWh6pPAAGc,4198
+resolvelib/compat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+resolvelib/compat/collections_abc.py,sha256=mtTkpr3Gf3OGvU1PD8YuvrJRhVbioxV82T-niFPoX3o,127
+resolvelib-0.5.2.dist-info/LICENSE,sha256=84j9OMrRMRLB3A9mm76A5_hFQe26-3LzAw0sp2QsPJ0,751
+resolvelib-0.5.2.dist-info/METADATA,sha256=B29LvMximV-GXt1zN_nCva-6Jlhm1JPx1vYE9w_I4qs,3747
+resolvelib-0.5.2.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+resolvelib-0.5.2.dist-info/top_level.txt,sha256=FDTG_P0FHx27WhAzm66T5zPx99M0H41BMfxiDMrhuyY,11
+resolvelib-0.5.2.dist-info/RECORD,,
