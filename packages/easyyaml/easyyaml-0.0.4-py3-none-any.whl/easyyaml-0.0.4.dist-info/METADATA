@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: easyyaml
+Version: 0.0.4
+Summary: Easy yaml parser and editer
+Home-page: https://github.com/ZQPei/easyyaml
+Author: ZQPei
+Author-email: dfzspzq@163.com
+License: MIT
+Platform: all
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+
+# EasyYaml
+
+## Introduction
+
+This is an easy library for loading, editing and saving yaml objects.
+
+## Installation
+
+You can install this project by a simple command.
+```bash
+    pip install easyyaml
+```
+
+## QuickStart
+
+It is quite simple to manipulate the yaml object.
+```python
+>>> yd = eyaml.load(eyaml.__test_yaml_file__)
+>>> for _ in range(4):
+        yd.list.pop()
+>>> yd.name = "this_is_a_simple_example_of_eyaml"
+>>> eyaml.save(eyaml.__temp_yaml_file__, yd)
+```
+
+
+
