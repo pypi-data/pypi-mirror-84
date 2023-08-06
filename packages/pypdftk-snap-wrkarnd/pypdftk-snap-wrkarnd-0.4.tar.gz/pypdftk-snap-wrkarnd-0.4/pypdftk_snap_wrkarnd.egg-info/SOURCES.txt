@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+licence.txt
+pypdftk.py
+setup.py
+pypdftk_snap_wrkarnd.egg-info/PKG-INFO
+pypdftk_snap_wrkarnd.egg-info/SOURCES.txt
+pypdftk_snap_wrkarnd.egg-info/dependency_links.txt
+pypdftk_snap_wrkarnd.egg-info/top_level.txt
