@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: chromatose
+Version: 0.0.2
+Summary: Personal palette collection & mini-palette visualizer
+Home-page: https://github.com/atisor73/chromatose
+Author: Rosita Fu
+Author-email: rosita.fu99@gmail.com
+License: MIT
+Download-URL: https://github.com/atisor73/chromatose/archive/v0.0.2.tar.gz
+Description: Personal palette collection in `palettes` & mini-palette visualizer with `palplot`
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Visualization
