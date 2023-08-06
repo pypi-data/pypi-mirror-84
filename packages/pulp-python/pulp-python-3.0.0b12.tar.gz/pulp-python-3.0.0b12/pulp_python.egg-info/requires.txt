@@ -1,0 +1,4 @@
+pulpcore<4.0,>=3.7
+pkginfo
+packaging
+bandersnatch
