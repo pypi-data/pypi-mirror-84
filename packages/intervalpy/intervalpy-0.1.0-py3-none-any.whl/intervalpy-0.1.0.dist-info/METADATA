@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: intervalpy
+Version: 0.1.0
+Summary: An interval set utility library.
+Home-page: https://github.com/diatche/intervalpy
+License: MIT
+Keywords: interval,set
+Author: Pavel Diatchenko
+Author-email: diatche@gmail.com
+Requires-Python: >=3.5,<4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: toml (>=0.9,<0.10)
+Project-URL: Repository, https://github.com/diatche/intervalpy
+Description-Content-Type: text/markdown
+
+# intervalpy
+
+![Tests](https://github.com/diatche/intervalpy/workflows/Tests/badge.svg)
+
+An interval set utility library.
+
+# Installation
+
+With [poetry](https://python-poetry.org):
+
+```bash
+poetry add intervalpy
+```
+
+Or with pip:
+
+```
+pip3 install intervalpy
+```
+
+# Usage
+
+Have a look at the [documentation](https://diatche.github.io/intervalpy/).
+
+Basic usage:
+
+```python
+from interval_util import Interval
+
+digits = Interval(0, 10, end_open=True)
+ten_and_up = digits.get_gt()
+positive_numbers = digits.get_gte()
+assert ten_and_up.is_subset_of(positive_numbers)
+
+assert positive_numbers.intersection(Interval.lt(10)) == digits
+```
+
