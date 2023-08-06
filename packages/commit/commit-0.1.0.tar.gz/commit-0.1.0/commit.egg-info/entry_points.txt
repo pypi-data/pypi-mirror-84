@@ -1,0 +1,3 @@
+[console_scripts]
+commit = commit.commit:cli
+
