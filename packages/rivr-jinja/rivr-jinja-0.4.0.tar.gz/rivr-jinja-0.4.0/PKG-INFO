@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: rivr-jinja
+Version: 0.4.0
+Summary: rivr integration for using the Jinja template engine.
+Home-page: https://github.com/rivrproject/rivr-jinja
+Author: Kyle Fuller
+Author-email: kyle@fuller.li
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: BSD License
