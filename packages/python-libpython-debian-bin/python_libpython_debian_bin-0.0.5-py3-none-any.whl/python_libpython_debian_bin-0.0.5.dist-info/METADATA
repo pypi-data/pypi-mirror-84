@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: python-libpython-debian-bin
+Version: 0.0.5
+Summary: Libraries for Python on debian
+Home-page: http://github.com/swimlane/python-libpython-debian-bin
+Author: Spencer Hanson, Swimlane
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: libpython
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+
+Libraries for Python on debian
+
+
