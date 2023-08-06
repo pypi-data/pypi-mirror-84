@@ -1,0 +1,15 @@
+{% if request.user.is_authenticated %}
+
+<div style="background: rgba(74, 74, 74, 0.15); display: flex; align-items: center; justify-content: center;">
+  {% if object %}
+    <a href="{{ object_admin_url(object) }}" target="_blank" style="margin: 0 10px;"><i class="mdi mdi mdi-lead-pencil"></i>
+      <p>{% trans %} Редактирования страницы {% endtrans %}</p>
+    </a>
+  {% endif %}
+
+  <a href="{{ admin_url() }}" target="_blank"><i class="mdi mdi mdi-account"></i>
+    <p>{% trans %} Панель администратора {% endtrans %}</p>
+  </a>
+</div>
+
+{% endif %}
