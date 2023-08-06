@@ -1,0 +1,6 @@
+click
+requests
+tabulate
+
+[:python_version < "3.7"]
+dataclasses
