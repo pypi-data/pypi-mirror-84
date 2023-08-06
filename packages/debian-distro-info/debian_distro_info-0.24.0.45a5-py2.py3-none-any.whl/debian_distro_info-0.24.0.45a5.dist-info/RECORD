@@ -1,0 +1,10 @@
+distro_info/__init__.py,sha256=ccwK4IIW3dtCoFB03286OQdw6gxuT5OVKMXkYxvl9gU,10779
+distro_info/debian.csv,sha256=F7vxOCvS930srtVGEHB--c32ugjBwuTr3ilDJ96gnmM,883
+distro_info/debian_distro_info.py,sha256=jinbpXB2-ny2ei1pWVc-L1XBB3MMmb4ajQWUVTiwStk,3751
+distro_info/ubuntu.csv,sha256=I8WlFkeUk_n2RbnPgPgYOQtfcifRAriw7tvfzSANVVo,2138
+distro_info/ubuntu_distro_info.py,sha256=Q8Djprl8EXRj3mfXQdQEeoLfmn6keDSg0Kvy2vG5u6Q,3523
+debian_distro_info-0.24.0.45a5.dist-info/METADATA,sha256=97clrE9_KAwS3TTko_xqmel-YsfAA80B_fRPK9yguhA,188
+debian_distro_info-0.24.0.45a5.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+debian_distro_info-0.24.0.45a5.dist-info/entry_points.txt,sha256=-lri76DRgj9UEK7gRvXeUaqk7Q_tc_qfGXEvDy1tXxc,133
+debian_distro_info-0.24.0.45a5.dist-info/top_level.txt,sha256=NmKDmEh13hGqR_4yh-j2PQFEAE6S6dUHXkEIJpcJuZI,12
+debian_distro_info-0.24.0.45a5.dist-info/RECORD,,

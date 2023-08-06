@@ -1,0 +1,4 @@
+[console_scripts]
+debian-distro-info = distro_info.debian_distro_info:main
+ubuntu-distro-info = distro_info.ubuntu_distro_info:main
+
