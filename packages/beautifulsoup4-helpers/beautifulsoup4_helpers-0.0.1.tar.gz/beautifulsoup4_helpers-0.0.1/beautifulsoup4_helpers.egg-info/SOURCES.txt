@@ -1,0 +1,9 @@
+README.md
+setup.py
+beautifulsoup4_helpers/__init__.py
+beautifulsoup4_helpers.egg-info/PKG-INFO
+beautifulsoup4_helpers.egg-info/SOURCES.txt
+beautifulsoup4_helpers.egg-info/dependency_links.txt
+beautifulsoup4_helpers.egg-info/not-zip-safe
+beautifulsoup4_helpers.egg-info/requires.txt
+beautifulsoup4_helpers.egg-info/top_level.txt
