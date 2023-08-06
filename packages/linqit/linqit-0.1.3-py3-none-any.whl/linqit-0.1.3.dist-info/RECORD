@@ -1,0 +1,9 @@
+linqit/__init__.py,sha256=OYY4tGtwuOyvc2kofADI8thjmMQzPT-vZ1Pw_5rqBJk,7653
+linqit/list.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_list.py,sha256=N7IZY70qB0qxFDe7FSkIunQBWC7dexWyg-tBkfi7mic,7432
+linqit-0.1.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+linqit-0.1.3.dist-info/METADATA,sha256=kXp16CIcZ95SoxetQWkPQg2vSWUc5uCkHEtlLL6n8cA,4454
+linqit-0.1.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+linqit-0.1.3.dist-info/top_level.txt,sha256=WYuh8o0k5HTyN-MSL6r815Sxe6BbkV5QbTpMDmY2b6k,13
+linqit-0.1.3.dist-info/RECORD,,
