@@ -1,0 +1,10 @@
+pc_tracker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pc_tracker/client.py,sha256=xxHzP_WhqfBozZubJQ_bDCgorB--EsPT11QXbc6LhcA,12083
+pc_tracker/logsys.py,sha256=UJpJ1tgsRDFw7EtfqxHTV06vswufyTsmxXIA9sMxYK0,764
+pc_tracker-0.0.0.data/scripts/manage.py,sha256=yzLTmFI7Qb4APA-p-VJcmu2eiJ9dM-CqfHF_HoWISr8,6671
+scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scripts/manage.py,sha256=yzLTmFI7Qb4APA-p-VJcmu2eiJ9dM-CqfHF_HoWISr8,6671
+pc_tracker-0.0.0.dist-info/METADATA,sha256=BWsNS0g1bcrHBZzcETc_UK8rJDCT556hjsHoxE3tpy0,3105
+pc_tracker-0.0.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+pc_tracker-0.0.0.dist-info/top_level.txt,sha256=t_Oq5NwVnQ0sZpE0RwiyDu-13wz8GKPJMwugEsRf2bQ,19
+pc_tracker-0.0.0.dist-info/RECORD,,
