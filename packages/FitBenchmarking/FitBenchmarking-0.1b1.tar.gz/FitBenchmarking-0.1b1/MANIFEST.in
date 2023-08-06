@@ -1,0 +1,2 @@
+recursive-include examples/benchmark_problems/NIST/*
+include ../examples/benchmark_problems/NIST/*
