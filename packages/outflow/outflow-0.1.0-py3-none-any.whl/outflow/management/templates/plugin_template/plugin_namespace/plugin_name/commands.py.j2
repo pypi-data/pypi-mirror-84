@@ -1,0 +1,47 @@
+from outflow.core.command import Command, RootCommand
+# from .tasks import MyTask1, MyTask2, MyTask3
+#
+# __all__ = ['{{ camel_case_plugin_name }}DoSomeStuff']
+#
+# @RootCommand.subcommand()
+# class {{ camel_case_plugin_name }}DoSomeStuff(Command):
+#     """
+#     Command to do some stuff
+#     """
+#
+#     def add_arguments(self):
+#         # my arg1
+#         self.add_argument(
+#             '--my_arg1',
+#             help="""
+#             Arg1 help
+#             """,
+#         )
+#
+#         # my arg2
+#         self.add_argument(
+#             '-m2', '--my_arg2',
+#             help="""
+#             Arg2 help
+#             """,
+#         )
+#
+#     def setup_tasks(self):
+#
+#         # instantiate tasks
+#         my_task1 = MyTask1(value_a=1)
+#         my_task3 = MyTask3()
+#
+#         # setup the workflow
+#         my_task1 >> MyTask2() >> my_task3
+#
+#         # return the terminating task(s)
+#         return my_task3
+
+@RootCommand.subcommand()
+def {{ camel_case_plugin_name }}():
+    """
+    {{ camel_case_plugin_name }} subcommand
+    """
+
+    print("Hello from {{ plugin_name }}")
