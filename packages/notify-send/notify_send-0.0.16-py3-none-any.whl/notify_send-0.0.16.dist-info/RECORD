@@ -1,0 +1,10 @@
+notify/__init__.py,sha256=fZK-f8On9X_kC2vatNmmNrC20XVSKLVduIhOfEfhsww,146
+notify/linux/__init__.py,sha256=04qiGod0Ef_jnpLYkROAswNzy0-O92lLgh57Ip_j4sY,71
+notify/linux/notify.py,sha256=aD7Eh3yHngF6P3GDBGFAEu8X-krt3WGkSRmxed5cAWs,982
+notify/notification.py,sha256=g5FRVgKqxDbkXchDJNLQeqtch3HktgVL6MaCQawvaHE,1066
+notify/win32/__init__.py,sha256=pQRPHpAIEX99SeOtGYn_03SuB823ZYvDuAn75W40_XI,71
+notify/win32/notify.py,sha256=SlQNcI3sRO4ZaiFLmOguQY-MncrrFh8txgH9RsZh6RI,3301
+notify_send-0.0.16.dist-info/LICENSE,sha256=ImTc4YRLoEo_5KH8IRKqEk6qc3kSt41OIkLw46Z4sTI,1073
+notify_send-0.0.16.dist-info/WHEEL,sha256=Q99itqWYDhV793oHzqzi24q7L7Kdiz6cb55YDfTXphE,84
+notify_send-0.0.16.dist-info/METADATA,sha256=gkCKIbFGWnGQzjjK4Ekq7Bz94I-ZrtLPorGhAr17V98,1929
+notify_send-0.0.16.dist-info/RECORD,,
