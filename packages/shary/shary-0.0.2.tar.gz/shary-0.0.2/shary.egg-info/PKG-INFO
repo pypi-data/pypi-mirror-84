@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: shary
+Version: 0.0.2
+Summary: API Wrapper around several File Hosting Services
+Home-page: https://github.com/aaronlyy/shary
+Author: Aaron Levi Can (aaronlyy)
+License: GNU General Public License Version 3
+Download-URL: https://github.com/aaronlyy/levish/archive/v0.0.2.tar.gz
+Description: # shary
+        API Wrapper around several File Hosting Services
+        
+Keywords: api,wrapper,files,hosting,filehosting
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

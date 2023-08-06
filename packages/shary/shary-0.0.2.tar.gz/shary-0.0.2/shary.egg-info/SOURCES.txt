@@ -1,0 +1,8 @@
+README.md
+setup.py
+shary/core.py
+shary.egg-info/PKG-INFO
+shary.egg-info/SOURCES.txt
+shary.egg-info/dependency_links.txt
+shary.egg-info/requires.txt
+shary.egg-info/top_level.txt
