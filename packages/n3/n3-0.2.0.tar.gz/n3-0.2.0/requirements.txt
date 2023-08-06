@@ -1,0 +1,11 @@
+# Builder
+inflection
+
+# PyTorch
+torch
+torchvision
+
+# Log
+tensorboard
+tensorboardX
+tqdm

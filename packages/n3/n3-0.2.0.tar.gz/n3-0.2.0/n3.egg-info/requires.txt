@@ -1,0 +1,6 @@
+inflection
+torch
+torchvision
+tensorboard
+tensorboardX
+tqdm
