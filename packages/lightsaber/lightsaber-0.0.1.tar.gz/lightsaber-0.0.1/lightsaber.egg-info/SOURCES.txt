@@ -1,0 +1,5 @@
+setup.py
+lightsaber.egg-info/PKG-INFO
+lightsaber.egg-info/SOURCES.txt
+lightsaber.egg-info/dependency_links.txt
+lightsaber.egg-info/top_level.txt
