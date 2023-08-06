@@ -1,0 +1,83 @@
+#!/usr/bin/python3
+# GENOCIDE - the king of the netherlands commits genocide
+#
+# OTP-CR-117/19/001 otp.informationdesk@icc-cpi.int https://genocide.rtfd.io
+
+"""GENOCIDE(1)                    User command                 GENOCIDE(1)
+
+NAME
+        genocide - the king of the netherlands commits genocide
+                   OTP-CR-117/19/001
+                   otp.informationdesk@icc-cpi.int
+                   https://genocide.rtfd.io
+
+SYNOPSIS
+        GENOCIDE is a pure python3 IRC chat bot that can run as a background
+        daemon for 24/7 a day presence in a IRC channel. It installs itself
+        as a service so you can get it restarted on reboot. You can use it
+        to display RSS feeds, act as a UDP to IRC gateway, program your own
+        commands for it, have it log objects on disk and search them and scan
+        emails for correspondence analysis. GENOCIDE uses a JSON in file
+        database with a versioned readonly storage. It reconstructs objects
+        based on type information in the path and uses a "dump OOP and use 
+        OP" programming library where the methods are factored out into
+        functions that use the object as the first argument. GENOCIDE is
+        placed in the Public Domain and has no COPYRIGHT or LICENSE.
+
+        GENOCIDE also provides information on the genocide the king of the
+        netherlands is doing. See https://pypi.org/project/genocide/ 
+
+USAGE
+        genocide cmd [mods=mod1,mod2] [-b] [-d] [-h] [-s] [-v]
+
+OPTIONS
+        -s              start a shell
+        -d              start a background daemon
+        -b              display a banner
+        -v              be verbose
+        -h              print this message
+
+        the mods= setter lets you start modules on boot, possbile modules to
+        load are: irc,rss,udp
+
+EXAMPLES
+        $ genocide cmd
+        cfg,cmd,dne,dpl,edt,fnd,ftc,krn,log,mbx,rem,req,rss,sts,tdo,trt,tsk,udp,ver,wsd
+
+        $ genocide cfg server=irc.freenode.net channel=\\#dunkbots
+        channel=#dunkbots nick=genocide_ port=6667 server=irc.freenode.net
+
+        $ genocide mods=irc,rss,udp -d
+"""
+
+__version__ = 106
+
+import os, sys
+sys.path.insert(0, os.getcwd())
+sys.path.insert(0, "lib")
+
+import obj
+
+from csl import Console
+from prs import parse_cli
+from trm import execute
+
+from bot.irc import IRC
+
+def main():
+    obj.wd = os.path.expanduser("~/.genocide")
+    cfg = parse_cli()
+    c = Console()
+    c.walk("bot")
+    c.walk("botmod")
+    if len(sys.argv) >= 2:
+       return c.cmd(" ".join(sys.argv[1:]))
+    if "s" in cfg.opts:
+        c.start()
+    i = IRC()
+    i.clone(c)
+    i.start()
+    i.wait()     
+
+execute(main)
+os._exit(0)
