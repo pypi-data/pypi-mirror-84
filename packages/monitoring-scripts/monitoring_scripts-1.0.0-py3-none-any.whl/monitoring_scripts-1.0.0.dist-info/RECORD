@@ -1,0 +1,11 @@
+monitoring_scripts/__init__.py,sha256=dg7JevOxtL-RTWrMDlmywB_giDyuecfpB6bN5x4Aq-o,1154
+monitoring_scripts/telegram_notification_host.py,sha256=4Iv__d8jMJqogqPZaXqzeMrEz5NNPl1XfsvQAtchFP0,1349
+monitoring_scripts/telegram_notification_service.py,sha256=wBD8Y18tyH7j1PVzDcHP2Lt9UyTNItuh4cUoOv1zwV8,1357
+monitoring_scripts-1.0.0.data/data/monitoring_scripts_doc/CHANGELOG.md,sha256=ViPM_YbZnB7mVAgS2aO_o3vHNsMjH2hMe6QXIx1QKgE,73
+monitoring_scripts-1.0.0.data/data/monitoring_scripts_doc/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+monitoring_scripts-1.0.0.data/data/monitoring_scripts_doc/README.md,sha256=R2Rjkmqf55P_P_2UCb53fYYbwntNEq4onVzISkl-7hs,2468
+monitoring_scripts-1.0.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+monitoring_scripts-1.0.0.dist-info/METADATA,sha256=i-zRxAwKHvJGpqrMlY6BnvLFycyF_Ruh4UI5EdO28Y0,3031
+monitoring_scripts-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+monitoring_scripts-1.0.0.dist-info/top_level.txt,sha256=giF2xXnbolueMZKmBaUext7XAD8kl25PasuuOavgXDI,19
+monitoring_scripts-1.0.0.dist-info/RECORD,,
