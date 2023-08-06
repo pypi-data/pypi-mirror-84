@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: pip-test-zzq
+Version: 1.0
+Summary: pip包测试
+Home-page: UNKNOWN
+Author: charycoder
+Author-email: charycoder@163.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3

@@ -1,0 +1,9 @@
+README.md
+setup.py
+pip_test_zzq/__init__.py
+pip_test_zzq/func.py
+pip_test_zzq.egg-info/PKG-INFO
+pip_test_zzq.egg-info/SOURCES.txt
+pip_test_zzq.egg-info/dependency_links.txt
+pip_test_zzq.egg-info/requires.txt
+pip_test_zzq.egg-info/top_level.txt
