@@ -1,0 +1,6 @@
+.coverage
+.git/index
+.mypy_cache/
+build/
+dist/
+tags
