@@ -1,0 +1,7 @@
+setup.py
+PyQE_Solver.egg-info/PKG-INFO
+PyQE_Solver.egg-info/SOURCES.txt
+PyQE_Solver.egg-info/dependency_links.txt
+PyQE_Solver.egg-info/top_level.txt
+QE_Solver/Solver.py
+QE_Solver/__init__.py

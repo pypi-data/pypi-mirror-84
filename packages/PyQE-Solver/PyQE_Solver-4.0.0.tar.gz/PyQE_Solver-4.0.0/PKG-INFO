@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: PyQE_Solver
+Version: 4.0.0
+Summary: Quadratic Equation Solver
+Home-page: https://github.com/PS218909/ROOT
+Author: Piyush
+Author-email: pyushsomani97@gmail.com
+License: UNKNOWN
+Description: TO QE SOLVE EQUATION 
+        
+        write script as Follow:
+        
+        from QE_Solver import Solver
+        Solver.start()
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
