@@ -1,0 +1,53 @@
+Metadata-Version: 1.1
+Name: rus2latin-date
+Version: 1.1
+Summary: Utility for converting Russian date into Roman
+Home-page: https://github.com/nevmenandr/rus2latin_date
+Author: Boris Orekhov
+Author-email: nevmenandr@gmail.com
+License: GPL
+Description: ====================================================================
+         Пакет для конвертирования русской даты в дату по римскому календарю
+        ====================================================================
+        
+        Пакет умеет конвертировать русскую дату в дату по римскому календарю. Например, 24 марта => ante diem IX Kalendas Apriles.
+        
+        Установка
+        ============
+        
+        Как обычно, с pip
+        
+        ::
+        
+            pip install rus2latin_date
+        
+        
+        Использование
+        ==============
+        
+        ::
+        
+            >>> from rus2latin_date import Converter
+            >>> c = Converter()
+            >>> c.conv("28 февраля 2012")
+            'ante diem III Kalendas Martias'
+            >>> c.conv("24 марта")
+            'ante diem IX Kalendas Apriles'
+            >>> c.conv("15-11-1983")
+            'ante diem XVII Kalendas Decembres'
+            >>> c.conv("26.5.1900")
+            'ante diem VII Kalendas Iunias'
+        
+        Источники
+        ==============
+        
+        * `Латинский календарь <https://telegra.ph/Latinskij-kalendar-09-03-2>`_
+        * `Index dierum calendarii Romani <https://la.wikipedia.org/wiki/Index_dierum_calendarii_Romani>`_
+        
+Keywords: nlp dates russian latin calendar
+Platform: UNKNOWN
+Classifier: Natural Language :: Russian
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Intended Audience :: Developers
