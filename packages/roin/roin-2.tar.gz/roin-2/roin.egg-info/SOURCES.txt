@@ -1,0 +1,7 @@
+README.txt
+setup.py
+roin.egg-info/PKG-INFO
+roin.egg-info/SOURCES.txt
+roin.egg-info/dependency_links.txt
+roin.egg-info/requires.txt
+roin.egg-info/top_level.txt
