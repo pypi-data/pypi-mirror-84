@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pycursorsio/__init__.py
+pycursorsio/__main__.py
+pycursorsio.egg-info/PKG-INFO
+pycursorsio.egg-info/SOURCES.txt
+pycursorsio.egg-info/dependency_links.txt
+pycursorsio.egg-info/not-zip-safe
+pycursorsio.egg-info/requires.txt
+pycursorsio.egg-info/top_level.txt
+pycursorsio/assets/NovaSquare.ttf
+pycursorsio/assets/cursor.png
+pycursorsio/assets/favicon.ico

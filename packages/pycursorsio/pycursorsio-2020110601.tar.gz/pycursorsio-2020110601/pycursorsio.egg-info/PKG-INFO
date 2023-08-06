@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: pycursorsio
+Version: 2020110601
+Summary: cursors.io client
+Home-page: https://forge.touhey.org/misc/pycursorsio.git/
+Author: Thomas Touhey
+Author-email: thomas@touhey.fr
+License: MIT
+Description: pycursorsio -- a Python client for cursors.io
+        =============================================
+        
+        This module is a Python graphical client for `cursors.io`_ made by
+        `Thomas Touhey`_. It contains efforts to:
+        
+        - reverse engineer the cursors.io protocol.
+        - reimplement the client-side application.
+        - experiment with pygame, websockets and asyncio.
+        
+        It was made in a rush in the first week of November 2020.
+        
+        .. _cursors.io: http://cursors.io/
+        .. _Thomas Touhey: https://thomas.touhey.fr/
+        
+Keywords: cursors.io
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: AsyncIO
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Games/Entertainment :: Multi-User Dungeons (MUD)
