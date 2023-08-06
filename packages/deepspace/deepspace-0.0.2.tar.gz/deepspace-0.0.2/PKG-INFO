@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: deepspace
+Version: 0.0.2
+Summary: A collection of search space for the DeepHyper package.
+Home-page: https://github.com/deephyper/deepspace
+Author: Prasanna Balaprakash <pbalapra@anl.gov>, Romain Egele <romain.egele@polytechnique.edu>, Romit Maulik <rmaulik@anl.gov>
+License: ANL
+Project-URL: Source, https://github.com/deephyper/deepspace
+Project-URL: Tracker, https://github.com/deephyper/deepspace/issues
+Description: 
+        # DeepSpace
+        
+        A collection of search space for the DeepHyper package.
+        
+        ## Requirements
+        
+        Graphviz.
+        
+        ## Quick Start
+        
+        ```python
+        def create_search_space(input_shape=(54,), output_shape=(7,), num_layers=10, dropout=0.0, **kwargs):
+            kwargs.update({k: v for k, v in locals().items() if k != "kwargs"})
+            return DenseSkipCoFactory(**kwargs).create_space()
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6, <3.8
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Provides-Extra: dev
+Provides-Extra: docs
