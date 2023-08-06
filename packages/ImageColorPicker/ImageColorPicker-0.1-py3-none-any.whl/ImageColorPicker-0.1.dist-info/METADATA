@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ImageColorPicker
+Version: 0.1
+Summary: Simple class for finding dominant colors from image
+Home-page: https://github.com/mar4elkin/ImageColorPicker
+Author: Mark Tamarov
+Author-email: marktamarov2001@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# ImageColorPicker
+Простой класс для получения доминирующих цветов из картинки
+
