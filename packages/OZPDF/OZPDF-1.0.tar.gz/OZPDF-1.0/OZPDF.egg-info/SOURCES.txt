@@ -1,0 +1,5 @@
+setup.py
+OZPDF.egg-info/PKG-INFO
+OZPDF.egg-info/SOURCES.txt
+OZPDF.egg-info/dependency_links.txt
+OZPDF.egg-info/top_level.txt
