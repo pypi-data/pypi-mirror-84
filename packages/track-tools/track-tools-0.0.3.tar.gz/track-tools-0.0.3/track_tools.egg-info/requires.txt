@@ -1,0 +1,8 @@
+matplotlib
+trackpy
+pims
+pillow
+click
+numba
+pandas
+scikit-image
