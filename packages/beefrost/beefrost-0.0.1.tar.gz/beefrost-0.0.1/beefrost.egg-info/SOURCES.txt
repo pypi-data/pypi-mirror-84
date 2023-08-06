@@ -1,0 +1,5 @@
+setup.py
+beefrost.egg-info/PKG-INFO
+beefrost.egg-info/SOURCES.txt
+beefrost.egg-info/dependency_links.txt
+beefrost.egg-info/top_level.txt

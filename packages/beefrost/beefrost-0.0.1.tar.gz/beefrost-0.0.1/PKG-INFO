@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: beefrost
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/CNES/beefrost
+Author: Myriam Cournet
+Author-email: myriam.cournet@cnes.fr
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
