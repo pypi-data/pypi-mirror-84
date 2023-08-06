@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+icondetection/__init__.py
+icondetection/box.py
+icondetection/helpers.py
+icondetection/manual_test.py
+icondetection/rectangle.py
+icondetection/weighted_quick_unionUF.py
+icondetection.egg-info/PKG-INFO
+icondetection.egg-info/SOURCES.txt
+icondetection.egg-info/dependency_links.txt
+icondetection.egg-info/entry_points.txt
+icondetection.egg-info/requires.txt
+icondetection.egg-info/top_level.txt
+images/screenshot.png
+test/test.py
