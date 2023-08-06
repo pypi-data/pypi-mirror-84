@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: crypt4ghfs
+Version: 1.1
+Summary: Crypt4GH FUSE file system
+Home-page: https://github.com/EGA-archive/crypt4ghfs
+Author: Frédéric Haziza
+Author-email: frederic.haziza@crg.eu
+License: Apache License 2.0
+Description: # Crypt4GH File System
+        
+        crypt4ghfs is a fuse layer exposing Crypt4GH-encrypted files, as if they were decrypted
+        
+        	crypt4ghfs [-f|--foreground] [--conf conf_file] <mountpoint>
+        	
+        The default configuration file is in `~/.c4gh/fs.conf`.
+        
+        See [the configuration sample](crypt4ghfs.conf.sample) for examples.
+        
+        By default, we daemonize the process. Use `-f` (or `--foreground`) to keep it in the foreground. This is useful to see the logs, since `stdout`/`stderr` are otherwise redirected to `/dev/null` when the process is daemonized.
+        
+        * `seckey` must point to a [Crypt4GH private key](https://crypt4gh.readthedocs.io/en/latest/keys.html) or an ED25519 ssh key. This option is required.
+        * `rootdir` must point to the root directory where the Crypt4GH-encrypted files reside. This option is required.
+        
+        Extra debug output is available if `log_level=LEVEL` is used (where `LEVEL` is a [Python logging levels](https://docs.python.org/3/library/logging.html#levels))
+        
+        In the case of an encrypting file system (ie not read-only mode), a list of recipients must be specified (potentially only including
+        yourself).
+        
+        
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: System :: Filesystems
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
