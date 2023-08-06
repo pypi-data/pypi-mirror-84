@@ -1,0 +1,254 @@
+{% extends "base.html" %}
+
+{% block extra_head %}
+<style>
+.nb-closed {
+  display: none;
+}
+
+.nb-open {
+  display: block;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+
+<script>
+// If the loaders are broken, do a fallback
+if (typeof marked === "undefined")
+  marked = (s) => s;
+
+if (typeof Prism === "undefined")
+    codestyle = (s) => s;
+  else
+    codestyle = (s) => Prism.highlight(s, Prism.languages.py, 'py');
+</script>
+
+<form>
+    <p><label for="searchbox">nbsearch: </label><input id="searchbox" type="search" placeholder="Search notebooks" style="width: 60%"></p>
+  </form>
+  <div id="results"></div>
+
+  <script>
+  const sql = `select
+   snippet(nbcontents_fts, -1, 'b4de2a49c8', '8c94a2ed4b', '...', 100) as snippet,
+   nbcontents_fts.rank, nbfiles.name, nbcontents.source, nbcontents.cell_type,
+   nbcontents.cell_num, nbcontents.tags, nbfiles.img, nbcontents.cell_type_num,
+   nbfiles.code_cells,  nbfiles.md_cells, nbfiles.last_modified, 
+   nbfiles.cells, nbfiles.nbid
+
+  from nbcontents
+    join nbcontents_fts on nbcontents.rowid = nbcontents_fts.rowid
+    join nbfiles on nbcontents.nbid = nbfiles.nbid
+  where nbcontents_fts match :search || "*"
+    order by rank limit 10`;
+
+  function toggle_display(e){
+    console.debug(e)
+    var result_group = document.getElementById(e.id).parentElement.firstElementChild;
+    if (result_group.classList.contains('nb-closed')) {
+      result_group.classList.remove('nb-closed');
+      result_group.classList.add('nb-open');
+    } else {
+      result_group.classList.remove('nb-open');
+      result_group.classList.add('nb-closed');
+    }
+  }
+
+  //https://webdesign.tutsplus.com/tutorials/copy-to-clipboard-made-easy-with-clipboardjs--cms-25086
+  function setupCopy(path){
+        // Run Clipboard
+        if (ClipboardJS  === "undefined") return;
+  
+        var copyCode = new ClipboardJS(path, {
+          target: function(trigger) {
+            return trigger.previousElementSibling;
+          }
+        });
+
+        // On success:
+        // - Change the "Copy" text to "Copied".
+        // - Swap it to "Copy" in 2s.
+        // - Lead user to the "contenteditable" area with Velocity scroll.
+
+        copyCode.on('success', function(event) {
+          event.clearSelection();
+          event.trigger.textContent = 'Copied';
+          window.setTimeout(function() {
+            event.trigger.textContent = 'Copy';
+          }, 2000);
+
+        });
+      }
+
+  // Can we run this once
+  setupCopy('.copy-button');
+
+  const searchbox = document.getElementById("searchbox");
+  
+  let requestInFlight = null;
+
+      
+  searchbox.onkeyup = debounce(() => {
+    const q = searchbox.value;
+    if (q=='') {
+        document.getElementById("results").innerHTML = "";
+        return;
+    }
+    const url = (
+      "{{urls.database('notebooks')}}.json?sql=" +
+      encodeURIComponent(sql) +
+      `&search=${encodeURIComponent(q)}&_shape=array`
+    );
+    let currentRequest = {};
+    requestInFlight = currentRequest;
+    fetch(url).then(r => r.json()).then(d => {
+      if (requestInFlight !== currentRequest) {
+        // Avoid race conditions where a slow request returns
+        // after a faster one.
+        return;
+      }
+
+      // Let's pick up on whether we have a code cell
+      // If we do, we can style it using a code style.
+      // We could also get the language for the notebook code cells
+      // if we store notebook metadata in the database somewhere.
+      // Open question: can we also mark up markdown code blocks
+      // with (language sensitive) code styling?
+      // Can we do better on the path? Where does urls.instance() point?
+      let results = d.map(r => `
+        <div class="result" style="background:ivory; margin-top: 15px;">
+          <div class="result_content" id="nb_${r.nbid}_${r.cell_num}" nbid="${r.nbid}">
+            <div class="result_cell" id="nb_${r.nbid}_${r.cell_num}_${r.cell_num}" cell_type="${r.cell_type}" cell_num="${r.cell_num}">${resultType(r)}</div>
+          </div>
+          <div>
+            <button id='nb_${r.nbid}_${r.cell_num}_all' cell_num='${r.cell_num}' nbid='${r.nbid}' onclick="nbsearch_showAll('${r.nbid}', ${r.cell_num})">Show all cell</button>
+            <button id='nb_${r.nbid}_${r.cell_num}_prev' cell_num='${r.cell_num}' maxval='${r.cells}' nbid='${r.nbid}' onclick="getNeighbouringCell('prev', 'nb_${r.nbid}_${r.cell_num}', '${r.nbid}')">Show previous cell</button>
+            <button id='nb_${r.nbid}_${r.cell_num}_next' cell_num='${r.cell_num}' maxval='${r.cells}' nbid='${r.nbid}' onclick="getNeighbouringCell('next', 'nb_${r.nbid}_${r.cell_num}', '${r.nbid}')">Show next cell</button>
+          </div>
+          <p><small><em>Cell ${r.cell_num+1} of ${r.cells} in <a href="../${htmlEscape(r.name)}">${htmlEscape(r.name)}</a></em></small></p>
+          <img id="nb_${r.nbid}_${r.cell_num}_view" src="data:image/png;base64,${r.img}" onclick="toggle_display(this)"/>
+          <hr/>
+          
+        </div>
+      `).join("");
+      document.getElementById("results").innerHTML = results;
+
+    });
+  }, 100);
+  
+  function debounce(func, wait, immediate) {
+    let timeout;
+    return function() {
+      let context = this, args = arguments;
+      let later = () => {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      let callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+
+
+  //const codestyle = (s) => Prism.highlight(s, Prism.languages.py, 'py');
+
+  const highlight = (s) => htmlEscape(s).replace(
+    /b4de2a49c8/g, '<b style="background:yellow">'
+  ).replace(
+    /8c94a2ed4b/g, '</b>'
+  );
+  
+  const htmlEscape = (s) => s.replace(
+    />/g, '&gt;'
+  ).replace(
+    /</g, '&lt;'
+  ).replace(
+    /&/g, '&amp;'
+  ).replace(
+    /"/g, '&quot;'
+  ).replace(
+    /'/g, '&#039;'
+  );
+
+  function resultType(r) {
+    if (r.cell_type=="code"){
+      //return "<p>"+highlight(r.snippet)+"</p>";
+          
+      return `<pre class="line-numbers language-py"><code class=".prismcode language-py">${codestyle(r.source)}</code><button class="copy-button">Copy</button></pre>`;
+    } else {
+        return `<p>${marked(highlight(r.snippet))}</p>`;
+    }
+  }
+
+function nbsearch_showAll(nbid, cell_num){
+  const fullsql = `select nbcontents.source as snippet,
+   nbcontents.source, nbcontents.cell_type
+  from nbcontents
+    join nbfiles on nbcontents.nbid = nbfiles.nbid
+  where nbcontents.nbid="${nbid}" and nbcontents.cell_num=${cell_num}
+  limit 1`;
+  const url = (
+      "{{urls.database('notebooks')}}.json?sql=" +
+      encodeURIComponent(fullsql) +
+      "&_shape=array"
+  );
+  // Show full contents of cell
+  fetch(url).then(r => r.json()).then(d => {
+    document.getElementById(`nb_${nbid}_${cell_num}_${cell_num}`).innerHTML = resultType(d[0]);
+  })
+}
+
+
+  function getNeighbouringCell(typ='next', cellid, nbid){
+
+    // Get the div where the results appear
+    var div = document.getElementById(cellid);
+    if (typ=='next')
+      currval = parseInt(document.getElementById(cellid).lastElementChild.getAttribute('cell_num'));
+    else
+      currval = parseInt(document.getElementById(cellid).firstElementChild.getAttribute('cell_num'));
+
+    maxval = parseInt(document.getElementById(`${cellid}_${typ}`).getAttribute('maxval'));
+    console.debug(maxval, currval, cellid, nbid, typ)
+    if (((typ=='prev') && (currval==0)) || ((typ=='next') && (currval==maxval-1))) return;
+
+    // query to get cell
+    const offset = (typ=='next') ? 1 : -1
+    const new_cell_num = currval+offset;
+    // We pass the full source as the "not" snippet
+    const neighboursql = `select nbcontents.source as snippet,
+   nbcontents.source, nbcontents.cell_type
+  from nbcontents
+    join nbfiles on nbcontents.nbid = nbfiles.nbid
+  where nbcontents.nbid="${nbid}" and nbcontents.cell_num=${new_cell_num}
+  limit 1`;
+
+  console.debug( nbid, new_cell_num);
+  const url = (
+      "{{urls.database('notebooks')}}.json?sql=" +
+      encodeURIComponent(neighboursql) +
+      "&_shape=array"
+  );
+    // display cell
+      // Show full contents of cell
+  fetch(url).then(r => r.json()).then(d => {
+    console.debug(d)
+    var newdiv = document.createElement('div');
+    newdiv.innerHTML = resultType(d[0]);
+    newdiv.setAttribute("id", `${cellid}_${new_cell_num}`);
+    newdiv.setAttribute("class", "result_cell");
+    newdiv.setAttribute("cell_num", new_cell_num);
+    newdiv.setAttribute("cell_type", d[0]['cell_type']);
+    if (typ=='next')
+      div.appendChild(newdiv);
+    else
+      div.insertBefore(newdiv, div.firstChild);
+  })
+
+  }
+  </script>
+  {% endblock %}
