@@ -1,0 +1,12 @@
+README.md
+catalyst_sphinx_theme.py
+setup.cfg
+setup.py
+catalyst_sphinx_theme/__init__.py
+catalyst_sphinx_theme.egg-info/PKG-INFO
+catalyst_sphinx_theme.egg-info/SOURCES.txt
+catalyst_sphinx_theme.egg-info/dependency_links.txt
+catalyst_sphinx_theme.egg-info/entry_points.txt
+catalyst_sphinx_theme.egg-info/not-zip-safe
+catalyst_sphinx_theme.egg-info/requires.txt
+catalyst_sphinx_theme.egg-info/top_level.txt
