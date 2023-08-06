@@ -1,0 +1,9 @@
+README.md
+setup.py
+BluetoothLEAiqi/AIQI_Bluetooth_LIB.dll
+BluetoothLEAiqi/__init__.py
+BluetoothLEAiqi.egg-info/PKG-INFO
+BluetoothLEAiqi.egg-info/SOURCES.txt
+BluetoothLEAiqi.egg-info/dependency_links.txt
+BluetoothLEAiqi.egg-info/requires.txt
+BluetoothLEAiqi.egg-info/top_level.txt
