@@ -1,0 +1,8 @@
+anyfield_auth_backend/__init__.py,sha256=RMdmhCZ8JMWBaMmnv5l-eAxj8sfH0RJntkPYiPFNJ4Y,305
+anyfield_auth_backend/anyfield_auth.py,sha256=3Taa_XU8b5RQwdB_8qbqy7bxrCx7f2uXdssgmRxXPcU,1867
+anyfield_auth_backend/apps.py,sha256=TWLnIwMsEAKobhnY--_P-T0wbpRS3e09GE5w4GIN2tg,117
+anyfield_auth_backend/tests.py,sha256=PuSY77ZS1V7UI9lWbnUVPTLN38yl2fgcRi6Uxdx-b90,1996
+django_anyfield_auth_backend-1.0.1.dist-info/METADATA,sha256=bsOT-xd8X1-aJ8R3aNDO9Y15bFyu3-hBAmPKGEP51SI,2111
+django_anyfield_auth_backend-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_anyfield_auth_backend-1.0.1.dist-info/top_level.txt,sha256=3dfeJioWtcnTgaJGrBg13Ga2re4G6uH47PL0YSKOt6U,22
+django_anyfield_auth_backend-1.0.1.dist-info/RECORD,,
