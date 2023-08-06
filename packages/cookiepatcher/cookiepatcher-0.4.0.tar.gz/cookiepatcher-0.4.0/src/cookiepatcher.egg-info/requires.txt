@@ -1,0 +1,4 @@
+click
+cookiecutter>=1.7
+aspectlib
+ruamel.yaml
