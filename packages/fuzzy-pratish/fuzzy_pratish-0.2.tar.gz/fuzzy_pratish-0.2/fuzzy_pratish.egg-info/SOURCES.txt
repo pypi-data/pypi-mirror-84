@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+fuzzy_pratish.egg-info/PKG-INFO
+fuzzy_pratish.egg-info/SOURCES.txt
+fuzzy_pratish.egg-info/dependency_links.txt
+fuzzy_pratish.egg-info/requires.txt
+fuzzy_pratish.egg-info/top_level.txt
+module/__init__.py
+module/fuzzy_operations.py
