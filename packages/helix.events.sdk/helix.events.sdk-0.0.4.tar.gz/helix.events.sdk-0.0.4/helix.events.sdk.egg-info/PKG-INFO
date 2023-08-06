@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: helix.events.sdk
+Version: 0.0.4
+Summary: Event SDK for creating Events in the helix architecture
+Home-page: https://github.com/icanbwell/helix.events.sdk
+Author: Michael Vidal
+Author-email: michael.vidal@icanbwell.com
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
