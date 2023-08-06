@@ -1,0 +1,12 @@
+django_tenant_schemas_q/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_tenant_schemas_q/cluster.py,sha256=oatB95OlI6crU39yjmZXc2PTvoZdrDsIMDBOaJJmsUM,25716
+django_tenant_schemas_q/custom.py,sha256=nQWSHiDCTa8YC-M3Srrmx73PuiSrWL-ytOJ0OH9iAJo,7461
+django_tenant_schemas_q/utils.py,sha256=Gm5d9Oc3BoHgKci7P4znh7meKjMkGq7Bv2eyUpcbRYo,8193
+django_tenant_schemas_q/management/__init.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_tenant_schemas_q/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_tenant_schemas_q/management/commands/mscluster.py,sha256=hIT3fjHgF39JcMJD0i6MzeRraCbBr_PmjLn7GWiymU8,757
+django_tenant_schemas_q-1.0.1.dist-info/LICENSE,sha256=-t1q88evAfy2qHtqo6fdaTr2YoGs5ufpzKQ6WjkP8BI,1072
+django_tenant_schemas_q-1.0.1.dist-info/METADATA,sha256=tE3SpOIykfAMXATEr2nuFeCEpic4sPtoI9k4H3_H5eU,6089
+django_tenant_schemas_q-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_tenant_schemas_q-1.0.1.dist-info/top_level.txt,sha256=aiCRayI-A6NfKnsa8mVa0LRXgImba4ifSdhNBCTOzT8,24
+django_tenant_schemas_q-1.0.1.dist-info/RECORD,,
