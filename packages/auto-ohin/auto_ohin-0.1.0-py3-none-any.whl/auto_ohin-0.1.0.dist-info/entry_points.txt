@@ -1,0 +1,4 @@
+[console_scripts]
+auto-ohin = auto_ohin.main:main
+auto_ohin = auto_ohin.main:main
+

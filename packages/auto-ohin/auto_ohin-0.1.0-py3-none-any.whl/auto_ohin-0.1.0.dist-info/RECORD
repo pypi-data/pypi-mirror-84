@@ -1,0 +1,10 @@
+auto_ohin/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+auto_ohin/main.py,sha256=3SKBvRzNSxpjZcv1LhHu_7M2F8jTDQ3Bg3-aXQMSd-0,511
+auto_ohin/ohin.py,sha256=fqtaP6iU_xPObgUdigqrCFJpabRaI_u08uFv4RurhP0,1169
+auto_ohin/overlay_pdf_maker.py,sha256=Ld-LLsiXfZVkJSyilzcS9MAj25GBFuhhitkXzhfVhoU,958
+auto_ohin-0.1.0.dist-info/LICENSE.md,sha256=AK9TZaJPL4XS3S9_4q5AjW1vbfeJWW4XhvHZiKe1lbA,1068
+auto_ohin-0.1.0.dist-info/METADATA,sha256=nlAf0iogNFmDYuloAcvzfflQpVsxshYLsva5PxBZTgg,1684
+auto_ohin-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+auto_ohin-0.1.0.dist-info/entry_points.txt,sha256=HbQ9I2R7uR39c6ZeQL7OSyXy2BB93u-03mmoQbzvbPQ,83
+auto_ohin-0.1.0.dist-info/top_level.txt,sha256=w9TQ0sgVYn97MHQZLDz2SgNJEHFOcL8fv3Rh_W2G2_4,10
+auto_ohin-0.1.0.dist-info/RECORD,,
