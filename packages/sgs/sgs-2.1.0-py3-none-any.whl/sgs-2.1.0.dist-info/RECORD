@@ -1,0 +1,13 @@
+sgs/__init__.py,sha256=DIu84fy0kGghXF9Mx5hyWutxdt3I7hFRHPY9KxXUnEE,443
+sgs/__version__.py,sha256=_GEKEa6BYjBV34SZkSlAR87aCM5Y9G0aSI0LXL52iJg,22
+sgs/api.py,sha256=DCo4T_nNQ0PScWJB_iYje95ZznMz9SVU-m9TSSOUh7Y,2032
+sgs/common.py,sha256=yjgFcUxsSICXAPFvgWVWgAoNz7j5f29PG9E4Od3m5TY,1131
+sgs/dataframe.py,sha256=3XRnx9xBH4p6Rlp6E4AHo7XjcApS_z1ePLb9PFR81bQ,1251
+sgs/metadata.py,sha256=m_cXW6qSpHGWIvXGGNWYFWkSvxltCUOcHVSxSdAjeVE,1557
+sgs/search.py,sha256=JHUFJ9_Z6tKtTsyiMtWxDxOkLoLxeLLkHfS9bJRdfY8,4955
+sgs/ts.py,sha256=UMW7zEHUAHt9VhKnQtH9s-a6pWScmJak1x-_FUxAWpg,1358
+sgs-2.1.0.dist-info/LICENSE,sha256=d8HTg9PDgrkQwJvW-718OXxXB8cpEPkcV3QDICp-Hdk,1071
+sgs-2.1.0.dist-info/METADATA,sha256=i7fLBjf1F-yJABkKNbmcCzdb8sujwtIrMWiKD6FnrAc,3994
+sgs-2.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+sgs-2.1.0.dist-info/top_level.txt,sha256=uQ0Hc6TuCpBaA-yR4RfSlg8Mrx9F7CqVPy-L6X9QdY8,4
+sgs-2.1.0.dist-info/RECORD,,
