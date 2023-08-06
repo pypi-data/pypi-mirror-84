@@ -1,0 +1,12 @@
+README.md
+setup.py
+picatrix/__init__.py
+picatrix/version.py
+picatrix.egg-info/PKG-INFO
+picatrix.egg-info/SOURCES.txt
+picatrix.egg-info/dependency_links.txt
+picatrix.egg-info/not-zip-safe
+picatrix.egg-info/requires.txt
+picatrix.egg-info/top_level.txt
+picatrix/lib/__init__.py
+picatrix/magics/__init__.py
