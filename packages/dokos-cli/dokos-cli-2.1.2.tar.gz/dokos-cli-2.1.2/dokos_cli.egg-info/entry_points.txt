@@ -1,0 +1,4 @@
+
+[console_scripts]
+docli=bench.cli:cli
+bench=bench.cli:cli
