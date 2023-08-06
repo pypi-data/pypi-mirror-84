@@ -1,0 +1,7 @@
+README.md
+setup.py
+bin/outages-scaffold
+outages_scaffold.egg-info/PKG-INFO
+outages_scaffold.egg-info/SOURCES.txt
+outages_scaffold.egg-info/dependency_links.txt
+outages_scaffold.egg-info/top_level.txt
