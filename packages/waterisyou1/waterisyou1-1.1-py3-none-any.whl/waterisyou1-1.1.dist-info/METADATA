@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: waterisyou1
+Version: 1.1
+Summary: A Python wrapper for The Movie Database API v3
+Home-page: UNKNOWN
+Author: Celia Oakley
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: movie,the movie database,movie database,tmdb,wrapper,database,themoviedb,moviedb,api
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Requires-Dist: requests
+
+UNKNOWN
+
+
