@@ -1,0 +1,10 @@
+README.md
+setup.py
+origo/lambda_helpers/__init__.py
+origo/lambda_helpers/logging.py
+origo_lambda_helpers.egg-info/PKG-INFO
+origo_lambda_helpers.egg-info/SOURCES.txt
+origo_lambda_helpers.egg-info/dependency_links.txt
+origo_lambda_helpers.egg-info/not-zip-safe
+origo_lambda_helpers.egg-info/requires.txt
+origo_lambda_helpers.egg-info/top_level.txt
