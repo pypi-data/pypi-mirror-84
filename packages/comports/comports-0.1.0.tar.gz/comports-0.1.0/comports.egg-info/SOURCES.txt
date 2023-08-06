@@ -1,0 +1,11 @@
+setup.py
+comports/__init__.py
+comports/gui.py
+comports/usb_ids.py
+comports.egg-info/PKG-INFO
+comports.egg-info/SOURCES.txt
+comports.egg-info/dependency_links.txt
+comports.egg-info/entry_points.txt
+comports.egg-info/requires.txt
+comports.egg-info/top_level.txt
+comports.egg-info/zip-safe

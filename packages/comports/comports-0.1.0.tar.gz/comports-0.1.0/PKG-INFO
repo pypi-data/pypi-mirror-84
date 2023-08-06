@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: comports
+Version: 0.1.0
+Summary: A small GUI for launching PuTTY for COM ports
+Home-page: https://github.com/zeevro/comports
+Author: Zeev Rotshtein
+Author-email: zeevro@gmail.com
+Maintainer: Zeev Rotshtein
+Maintainer-email: zeevro@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/zeevro/comports/archive/master.zip
+Description: UNKNOWN
+Keywords: PuTTY,COM,serial,GUI
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: Public Domain
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
