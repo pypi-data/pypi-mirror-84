@@ -1,0 +1,17 @@
+README.md
+setup.py
+debuggingbook/99_Appendices.py
+debuggingbook/ControlFlow.py
+debuggingbook/ExpectError.py
+debuggingbook/RailroadDiagrams.py
+debuggingbook/Timer.py
+debuggingbook/__init__.py
+debuggingbook.egg-info/PKG-INFO
+debuggingbook.egg-info/SOURCES.txt
+debuggingbook.egg-info/dependency_links.txt
+debuggingbook.egg-info/top_level.txt
+debuggingbook/bookutils/PrettyTable.py
+debuggingbook/bookutils/__init__.py
+debuggingbook/bookutils/export_notebook_code.py
+debuggingbook/bookutils/import_notebooks.py
+debuggingbook/bookutils/set_fixed_seed.py
