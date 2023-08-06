@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: swcpm
+Version: 0.1.2
+Summary: Manage Software City Packages
+Home-page: https://github.com/Software-City/SWC_packagemanager
+Author: davis_software
+License: MIT
+Download-URL: https://github.com/Software-City/SWC_packagemanager/archive/v0.1.2.tar.gz
+Description: # SWC_packageinstaller
+        
+        stuff coming soon
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Description-Content-Type: text/markdown
