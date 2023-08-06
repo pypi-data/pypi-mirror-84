@@ -1,0 +1,8 @@
+py_deploy/__init__.py,sha256=3KXfAcA5rzzQXMtfwpHphgbJNZdA0XWaW96kdWVSZJw,22
+py_deploy/cli_commands.py,sha256=SKnMKY_GqXSbfIBwaiMCtt646B5KVel_GrA7cziFkVc,3383
+py_deploy-1.0.1.dist-info/LICENSE,sha256=QXhR8A9TKp1DVCmCAMmuNpbyvO76OT6R50Dg83R5UFA,1073
+py_deploy-1.0.1.dist-info/METADATA,sha256=omWhkfsggcBy-zoqqVO12Jq2uE8kWAFFGsR0zLYerHE,2074
+py_deploy-1.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+py_deploy-1.0.1.dist-info/entry_points.txt,sha256=3vFQ5_m4l_SGhJvCeQSoyA9AaSKvDjo37foNPUymMbU,76
+py_deploy-1.0.1.dist-info/top_level.txt,sha256=IbHiTSfp2DSqv8QCuslUjN1sseKN43DJ_Pjrk2VDafI,10
+py_deploy-1.0.1.dist-info/RECORD,,
