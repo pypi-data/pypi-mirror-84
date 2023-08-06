@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: BluetoothLEAiqi
+Version: 1.0.1
+Summary: A BluetoothLE  in Windows 10 V2004
+Home-page: https://gitee.com/liuming_aiqi/python_bluetooth/tree/master
+Author: liumingming
+Author-email: 994505261@eqq.com
+License: UNKNOWN
+Description: BluetoothAiqi
+        =====
+        
+        这是基于 windows bluetooth pypi 蓝牙软件包
+        目前支持windows10 V2004,底层是C#基于net4.6编写dll
+        
+        
+        ------------
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
