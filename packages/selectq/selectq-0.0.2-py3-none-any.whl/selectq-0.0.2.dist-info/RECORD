@@ -1,0 +1,13 @@
+selectq/__init__.py,sha256=NVQ8JHsheo_hfu6CKyXFhHFp643qdXazjWPmtFE34Xk,1083
+selectq/browsers.py,sha256=BR8Cy3QbKTLh3gZcmR8_oo3rdnxwLYJ1lA0BRCGkkbw,9463
+selectq/predicates.py,sha256=9g14E7e6HPMqT3UNtmBSzV0O3zYdrhsC96qrwQ75Nto,3434
+selectq/selectq.py,sha256=Avz5OOpYR72IaIBWwytY3OnCEPQFknNAOydL2E7YJHk,6839
+selectq/shortcuts.py,sha256=zEFzdaqSzCmkji8rdl5_50f2o7YSszdajA69iErPaQY,927
+selectq/payload/selectq.css,sha256=p_SchC-caXlpXCrm13F_KajYwHHHQYtA2d4A9weViKM,49
+selectq/payload/selectq.js,sha256=t-e9wJl0stphx-cMrsT4-8W5_V1Mkof7_R-njI6MMZc,1082
+selectq-0.0.2.data/data/LICENSE,sha256=rud9qFlsgo-gW9j1pdR4bSYs2vgkB_10JBYMOGOGlXE,35097
+selectq-0.0.2.dist-info/LICENSE,sha256=rud9qFlsgo-gW9j1pdR4bSYs2vgkB_10JBYMOGOGlXE,35097
+selectq-0.0.2.dist-info/METADATA,sha256=oksxDjtLGPR_wzSj_n0r8hJVli1iOLVd-YO6SoL8unQ,913
+selectq-0.0.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+selectq-0.0.2.dist-info/top_level.txt,sha256=knQAsFuJRZPIkV0eILnhkLJ9dm-NBQ4lRfEqEU7DIz4,8
+selectq-0.0.2.dist-info/RECORD,,
