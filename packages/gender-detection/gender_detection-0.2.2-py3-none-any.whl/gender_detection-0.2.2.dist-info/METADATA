@@ -1,0 +1,32 @@
+Metadata-Version: 2.0
+Name: gender-detection
+Version: 0.2.2
+Summary: Python package for gender classification.
+Home-page: https://github.com/kensk8er/gender_detection
+Author: Kensuke Muraki
+Author-email: kensk8er1017@gmail.com
+Maintainer: Kensuke Muraki
+Maintainer-email: kensk8er1017@gmail.com
+License: UNKNOWN
+Keywords: natural-language-processing machine-learning tensorflow deep-learning recurrent-neural-networks lstm nlp python neural-network character-embeddings data-science gender-classification
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: docopt (>=0.6.2)
+Requires-Dist: numpy (==1.12.1)
+Requires-Dist: regex (>=2017.4.29)
+Requires-Dist: scikit-learn (==0.18.1)
+Requires-Dist: scipy (>=0.18.1)
+Requires-Dist: tensorflow (==1.0.1)
+
+Copy of the chicksexer package
+
+
