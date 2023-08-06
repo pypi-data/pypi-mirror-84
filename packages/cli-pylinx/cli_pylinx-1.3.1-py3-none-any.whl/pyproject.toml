@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "cli-pylinx"
+version = "1.3.1"
+description = "A lightweight CLI for uploading and managing your files on a linx-server instance."
+authors = ["Simon Goričar <simon.peter.goricar@gmail.com>"]
+repository = "https://github.com/DefaultSimon/pylinx"
+readme = "README.md"
+license = "MIT"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Topic :: Communications :: File Sharing",
+]
+include = [
+    "README.md",
+    "LICENSE.md",
+    "pyproject.toml",
+    "config/linxConfig.EXAMPLE.toml",
+    "assets/upload-cloud.ico"
+]
+packages = [
+    { include = "pylinx" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+toml = "^0.10.1"
+requests = "^2.24.0"
+requests_toolbelt = "^0.9.1"
+pyperclip = "^1.8.1"
+click = "^7.1.2"
+"hurry.filesize" = "^0.9"
+colorama = "^0.4.3"
+click-aliases = "^1.0.1"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+pylinx = "pylinx:cli"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
