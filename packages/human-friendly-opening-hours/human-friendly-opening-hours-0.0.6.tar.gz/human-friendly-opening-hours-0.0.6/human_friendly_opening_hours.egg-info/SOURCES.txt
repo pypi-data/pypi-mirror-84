@@ -1,0 +1,8 @@
+setup.py
+human_friendly_opening_hours/__init__.py
+human_friendly_opening_hours/main.py
+human_friendly_opening_hours.egg-info/PKG-INFO
+human_friendly_opening_hours.egg-info/SOURCES.txt
+human_friendly_opening_hours.egg-info/dependency_links.txt
+human_friendly_opening_hours.egg-info/top_level.txt
+human_friendly_opening_hours/tests/__init__.py
