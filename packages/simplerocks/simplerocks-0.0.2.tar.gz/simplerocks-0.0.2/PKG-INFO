@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: simplerocks
+Version: 0.0.2
+Summary: A few helper utilities to the dataset pip package
+Home-page: https://github.com/kapily/simplerocks
+Author: Kapil Yedidi
+Author-email: kapily.code@gmail.com
+License: UNKNOWN
+Description: # easyrocks
+        simple interface to rocksdb
+        
+        How to install
+        
+        ```
+        # https://github.com/facebook/rocksdb/blob/master/INSTALL.md
+        sudo apt-get install build-essential libsnappy-dev zlib1g-dev libbz2-dev libgflags-dev liblz4-dev libzstd-dev
+        git clone https://github.com/facebook/rocksdb.git
+        cd rocksdb
+        NUM_PROCS=$(nproc)
+        sudo make -j NUM_PROCS install
+        # Also see this for Python installation:
+        # https://pypi.org/project/python-rocksdb/
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
