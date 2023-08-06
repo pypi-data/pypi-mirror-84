@@ -1,0 +1,9 @@
+README.md
+setup.py
+apricopt/__init__.py
+apricopt.egg-info/PKG-INFO
+apricopt.egg-info/SOURCES.txt
+apricopt.egg-info/dependency_links.txt
+apricopt.egg-info/top_level.txt
+apricopt/model/Parameter.py
+apricopt/model/__init__.py
