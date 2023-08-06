@@ -1,0 +1,10 @@
+py_resilio_connect/__init__.py,sha256=Im4Uc8rG8zohlk9j71m4-zTC_3Cabjo5t_UYOAhjCok,30
+py_resilio_connect/agents.py,sha256=R7lV4PoxfSSledjqQxXNGhyp1Tv2sywi_f-bvxRe3zs,558
+py_resilio_connect/app.py,sha256=Ftw83T9Gq3Ris0pa8MmNRLZ5vzk-XXrumqnpF59Hlqw,2769
+py_resilio_connect/communication.py,sha256=UDOcbLe8BPidyxiErERomNagoAvDp8psW9R6ib3QbzA,1133
+py_resilio_connect/jobs.py,sha256=XEcktiQK5EAiG2NbprP6r_1TfC8qB5sxeasjNLh25mk,4194
+py_resilio_connect/jobs_from_csv.py,sha256=Fzs1TXA7ohUfbbvYirbbXQRpa92j1i1VT6s0nI2WvX0,3826
+py_resilio_connect-1.2.5.dist-info/METADATA,sha256=dKa57HNfbXfzeCS488yi1--6pFuXEGosz2lQPxx8ygo,287
+py_resilio_connect-1.2.5.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+py_resilio_connect-1.2.5.dist-info/top_level.txt,sha256=1Bvm0FqHILwi9D_xNzYDIzNT1VZ-ELMja56rI9UA_UE,19
+py_resilio_connect-1.2.5.dist-info/RECORD,,
