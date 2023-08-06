@@ -1,0 +1,14 @@
+predictor/__init__.py,sha256=cRgrnspTXEC2AfT2t4vGvvnwli7kMpJbuzlJ-qVT4hs,161
+predictor/crop/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+predictor/crop/crop.py,sha256=Mwkych0iTjziY0mKOCaKsojp2VW0d8zwcgbBtM5fS4g,1458
+predictor/crop/utils.py,sha256=OXl1B79rAwE96F-VSsRobF3QrPIIQhjmqOC7Ze2w2yY,4368
+predictor/doc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+predictor/doc/doc.py,sha256=RF_b95JpwZ10E2egy75csswbR9_CKUJevcRNm9XFTjE,1485
+predictor/layout/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+predictor/layout/layout.py,sha256=8hgUDARilIE5ZTr4ayLFYZ2hlW3g-rA4ggMbQqYiGvw,1789
+predictor/text/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+predictor/text/detector.py,sha256=SE1k3f6hbUqFgfbuczX0HtCwPmUthu-HtE2fTweIjPQ,1303
+ocr_predictor-0.2.1.dist-info/METADATA,sha256=aMO7kgtiHT5km2xqvb4MjpqAzt5o6fDtDhBSqegN4Pk,449
+ocr_predictor-0.2.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ocr_predictor-0.2.1.dist-info/top_level.txt,sha256=bZSpmmw3oQCRRZIcDL31p8LQfJgNCRmtaJdJ2_Pi6aQ,10
+ocr_predictor-0.2.1.dist-info/RECORD,,
