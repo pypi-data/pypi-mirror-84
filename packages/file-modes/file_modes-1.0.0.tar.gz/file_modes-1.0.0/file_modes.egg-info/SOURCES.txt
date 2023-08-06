@@ -1,0 +1,7 @@
+README.md
+setup.py
+file_modes.egg-info/PKG-INFO
+file_modes.egg-info/SOURCES.txt
+file_modes.egg-info/dependency_links.txt
+file_modes.egg-info/top_level.txt
+filemodes/__init__.py
