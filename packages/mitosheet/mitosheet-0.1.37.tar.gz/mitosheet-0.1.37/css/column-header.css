@@ -1,0 +1,10 @@
+
+.column-header-cell {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.column-header:hover {
+    text-decoration: underline;
+}
