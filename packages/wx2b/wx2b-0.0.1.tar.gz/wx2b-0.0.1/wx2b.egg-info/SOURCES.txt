@@ -1,0 +1,7 @@
+README.md
+setup.py
+api/__init__.py
+wx2b.egg-info/PKG-INFO
+wx2b.egg-info/SOURCES.txt
+wx2b.egg-info/dependency_links.txt
+wx2b.egg-info/top_level.txt
