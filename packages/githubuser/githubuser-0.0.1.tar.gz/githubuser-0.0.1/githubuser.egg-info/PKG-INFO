@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: githubuser
+Version: 0.0.1
+Summary: Find Github user basic details
+Home-page: UNKNOWN
+Author: Pranav V P
+Author-email: <pranavvp07@gmail.com>
+License: UNKNOWN
+Description: This package can be used to extract a Github user's basic details like name,no of repos etc.
+Keywords: python,Github,githubuser
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
