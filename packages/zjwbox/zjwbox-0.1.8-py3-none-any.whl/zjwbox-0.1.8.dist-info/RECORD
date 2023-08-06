@@ -1,0 +1,10 @@
+zjwbox/__init__.py,sha256=0qYN8BZOBuHG9V8Mw69ZHa0qWe7YpFRlJyN0yeZ9WuU,361
+zjwbox/auto_req.py,sha256=5-lkmAoWTsB83zOOydoP40LSK1uA9xB7COe3kYzOvfw,3385
+zjwbox/comm_req.py,sha256=WVeqX3ZWOcNxPqHWyZ-6_8uxRTUw9TAgeqx4PNLk5gs,3123
+zjwbox/store.py,sha256=bgpkUW06uUr916_lQ2ijMD1elKEBTXc7CoGPKeD1fHQ,7560
+zjwbox/zjwbox.py,sha256=cmpyG1gLWnmNfjG8R3i_tjlx9Ln7rwLGlPEfjemJB54,1806
+zjwbox-0.1.8.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+zjwbox-0.1.8.dist-info/METADATA,sha256=aai8rqZNbFYyqrqeCi3K8mNpWDs3qj3ptnYgsqBCoVc,861
+zjwbox-0.1.8.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+zjwbox-0.1.8.dist-info/top_level.txt,sha256=0yfomh8sTivDpqtcO6NyXUq_kSY3VqiIpIwnqdnzN0o,7
+zjwbox-0.1.8.dist-info/RECORD,,

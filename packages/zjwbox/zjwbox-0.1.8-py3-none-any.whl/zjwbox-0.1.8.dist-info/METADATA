@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: zjwbox
+Version: 0.1.8
+Summary: a package for extend
+Home-page: https://github.com/pypa/sampleproject
+Author: zjw
+Author-email: 2415528031@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Requires-Dist: wget (==3.2)
+Requires-Dist: lxml (==4.6.1)
+Requires-Dist: eventlet (==0.29.1)
+Requires-Dist: dataclasses
+Requires-Dist: pyppeteer
+Requires-Dist: aiohttp (==3.7.1)
+Requires-Dist: nest-asyncio (==1.4.1)
+Requires-Dist: parsel
+Requires-Dist: requests
+Requires-Dist: faker
+Requires-Dist: openpyxl
+
+#zjw
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
+
