@@ -1,0 +1,10 @@
+setup.py
+Pranay_Udacity_distributions/Binomialdistribution.py
+Pranay_Udacity_distributions/Gaussiandistribution.py
+Pranay_Udacity_distributions/Generaldistribution.py
+Pranay_Udacity_distributions/__init__.py
+Pranay_Udacity_distributions.egg-info/PKG-INFO
+Pranay_Udacity_distributions.egg-info/SOURCES.txt
+Pranay_Udacity_distributions.egg-info/dependency_links.txt
+Pranay_Udacity_distributions.egg-info/not-zip-safe
+Pranay_Udacity_distributions.egg-info/top_level.txt
