@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: topika
+Version: 0.2.2
+Summary: A python remote communications library
+Home-page: https://github.com/muhrin/topika.git
+Author: Martin Uhrin
+Author-email: martin.uhrin@gmail.com
+License: Apache v2, see LICENSE file
+Keywords: communication messaging rpc broadcast
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*
+Requires-Dist: furl
+Requires-Dist: pika (>=1.0.0)
+Requires-Dist: shortuuid
+Requires-Dist: six
+Requires-Dist: tornado (<6.0,>=4.0)
+Requires-Dist: backports.tempfile ; python_version<"3.2"
+Requires-Dist: mock ; python_version<"3.3"
+Requires-Dist: enum34 ; python_version<"3.4"
+Requires-Dist: singledispatch ; python_version<"3.4"
+Requires-Dist: typing ; python_version<"3.5"
+Provides-Extra: dev
+Requires-Dist: future ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest (>=4) ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+
+
+topika
+======
+
+topika = *to*\rnado *pika*, a backport of `aio_pika <https://aio-pika.readthedocs.io/en/latest/>`_ for python 2.7+.
+
+Where possible there API has been kept as close to aio_pika as possible, however due to the lack of native support for
+coroutine async calls modifications had to be made.
+
+Installation
+------------
+
+.. code-block:: shell
+
+    pip install topika
+
+
+
+
