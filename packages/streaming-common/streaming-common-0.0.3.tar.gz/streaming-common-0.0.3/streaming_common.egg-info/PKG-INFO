@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: streaming-common
+Version: 0.0.3
+Summary: Model structure that the data gets converted to before serialization into Kinesis stream.
+Home-page: https://github.com/seniorplanning/streaming-common
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Download-URL: https://github.com/seniorplanning/streaming-common/archive/v_03.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
