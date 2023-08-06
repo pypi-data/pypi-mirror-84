@@ -1,0 +1,17 @@
+elasticsearch>=7
+ftfy
+fuzzy
+toml
+unidecode>=0.10
+
+[dev]
+ipython
+isort
+jupyter
+matplotlib
+pandas
+pylint
+pytest
+pytest-cov
+twine
+yapf
