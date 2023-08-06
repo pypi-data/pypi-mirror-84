@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: myconfig
+Version: 0.1.0
+Summary: Python Projects Configuration Manager
+Home-page: https://github.com/azureswastika/myconfig
+Author: Deni
+License: MIT license
+Keywords: myconfig,config,project config
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: fire (>=0.3.1)
+Requires-Dist: PyYAML (>=5.3.1)
+Requires-Dist: toml (>=0.10.2)
+
+# myconfig
+
+
