@@ -1,0 +1,13 @@
+fastapi_pagination/__init__.py,sha256=mhweTvp_DMW4rl5Oh_IHjH8OySqUov8yw9ShTJ3vud4,106
+fastapi_pagination/ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_pagination/ext/gino.py,sha256=eQkIUjdSnnIH7pcBCfxcvF3WX-YsIwb4WMAdYHpbiLI,553
+fastapi_pagination/ext/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_pagination/ext/sqlalchemy.py,sha256=IcJx_dx57XGzCfQRpvIqE_LBztTiqMXG4Q8GvYbf3fA,1106
+fastapi_pagination/page.py,sha256=Jk_yvBnbQC9PrIXNpJa9TJCAgP9HXRKiV8_3314ExfU,1851
+fastapi_pagination/paginator.py,sha256=IfpVHRkM_APIoR1PR3emHHHGj10-osDqaxfjzcB3JLY,495
+fastapi_pagination/params.py,sha256=up__ixJwYcxe3AwUMUfExJbVmNcryR5yl0JWixp_GkE,831
+fastapi_pagination/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_pagination-0.1.0.dist-info/LICENSE,sha256=cgViEh42GHqvH181LnEQC72Bz-XI68gGdCZH5KiUVAA,1070
+fastapi_pagination-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+fastapi_pagination-0.1.0.dist-info/METADATA,sha256=cfSXh4l-_fCZR8U5m_Kc7ORwYDJwNGDBIr2tGlp8Paw,1834
+fastapi_pagination-0.1.0.dist-info/RECORD,,
