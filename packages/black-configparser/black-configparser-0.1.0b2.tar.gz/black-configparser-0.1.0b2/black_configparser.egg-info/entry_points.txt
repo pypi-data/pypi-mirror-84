@@ -1,0 +1,3 @@
+[console_scripts]
+black = black_configparser.black_configparser:main
+

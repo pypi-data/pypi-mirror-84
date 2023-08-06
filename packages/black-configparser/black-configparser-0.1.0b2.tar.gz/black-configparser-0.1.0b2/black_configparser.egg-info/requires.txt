@@ -1,0 +1,8 @@
+black>=18.6b2
+click>=6.5
+sh>=1.13.0
+
+[tests]
+coverage>=5.0
+pytest>=6.0
+pytest-sugar>=0.9
