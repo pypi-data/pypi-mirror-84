@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pystac-io
+Version: 0.1.0
+Summary: Python library providing additional IO implementations for PySTAC
+Home-page: https://github.com/azavea/pystac-io
+Author: Azavea
+Author-email: info@azavea.com
+License: Apache Software License 2.0
+Description: UNKNOWN
+Keywords: pystac,pystac_io,pystac-io,s3,catalog,STAC
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: https
+Provides-Extra: s3

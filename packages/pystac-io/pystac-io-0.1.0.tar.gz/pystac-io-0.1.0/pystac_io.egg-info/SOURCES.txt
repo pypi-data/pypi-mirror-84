@@ -1,0 +1,10 @@
+README.md
+setup.py
+pystac_io/__init__.py
+pystac_io.egg-info/PKG-INFO
+pystac_io.egg-info/SOURCES.txt
+pystac_io.egg-info/dependency_links.txt
+pystac_io.egg-info/requires.txt
+pystac_io.egg-info/top_level.txt
+pystac_io/https/__init__.py
+pystac_io/s3/__init__.py
