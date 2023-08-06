@@ -1,0 +1,8 @@
+setup.py
+src/assasin64/__init__.py
+src/assasin64/lgpdemo.py
+src/assasin64/lgplib.py
+src/assasin64.egg-info/PKG-INFO
+src/assasin64.egg-info/SOURCES.txt
+src/assasin64.egg-info/dependency_links.txt
+src/assasin64.egg-info/top_level.txt

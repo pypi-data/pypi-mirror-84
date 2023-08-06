@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: assasin64
+Version: 0.0.1
+Summary: library 
+Home-page: UNKNOWN
+Author: assasin
+Author-email: assasin0308@sina.com
+License: MIT Licence
+Description: library 
+Keywords: testing just for fun
+Platform: any
+Requires-Python: >=3.7.*
