@@ -1,0 +1,3 @@
+[console_scripts]
+cal = GoodCalculator.GoodCalculator_cli:run_cli
+
