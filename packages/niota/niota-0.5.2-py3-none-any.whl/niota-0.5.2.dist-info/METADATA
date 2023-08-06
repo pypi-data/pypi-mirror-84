@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: niota
+Version: 0.5.2
+Summary: Numbers PyOTA Wrapper
+Home-page: https://github.com/numbersprotocol/niota
+Author: Numbers Co., Inc
+Author-email: hi@numbersprotocol.io
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: ipfshttpclient (==0.6.0)
+Requires-Dist: PyOTA (==2.1.0)
+Requires-Dist: pycrypto (==2.6.1)
+Requires-Dist: python-magic (==0.4.18)
+
+# NIOTA
+
+Numbers PyOTA wrapper.
+
+# Installation
+
+Two ways to install:
+
+1. Insatll by using PyPI (stable versoin)
+
+    ```
+    $ python3 -m pip install niota
+    ```
+
+2. Install manually (latest version)
+
+    ```
+    $ python3 setup.py bdist_wheel
+    $ python3 -m pip install dist/niota-<version>-py3-none-any.whl
+    ```
+
+# Unit Testing
+
+```
+$ python3 -m unittest discover -s tests
+```
+
+
