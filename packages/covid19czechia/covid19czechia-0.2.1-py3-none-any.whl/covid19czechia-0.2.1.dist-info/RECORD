@@ -1,0 +1,10 @@
+covid19czechia/__init__.py,sha256=3U_Qj3djy-EI-vnJSYWNPy5PJY1KXEoE2zumbc5zhyQ,404
+covid19czechia/mzcr.py,sha256=jLUJ38zlMsmmCD3RRqPCJ4wsrpeplKqYyHSn6VvD85U,2366
+covid19czechia/offline.py,sha256=7ft0q6x1BhjkBDYjvCY72lLcnSZHdEvOc6zhM0SWagM,431
+covid19czechia/data/deaths.csv,sha256=T3HjnmXsDyNak5cir827FEEmc4HSSFMD4YE1PZ6M34Q,90189
+covid19czechia/data/events.json,sha256=4_45Oh62m-q1d7MlcESeMGm3Qh2osBpKxhzLE1Dysts,214
+covid19czechia-0.2.1.dist-info/LICENSE,sha256=bGLaVeGYv0kbEdzrbRRFS0Wsw9EngDp3Y7_h-leZiYw,1090
+covid19czechia-0.2.1.dist-info/METADATA,sha256=7QrrwJjpKsagzOlTxUNxuTxvm_hOhxKJt97lLD4kU_o,2816
+covid19czechia-0.2.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+covid19czechia-0.2.1.dist-info/top_level.txt,sha256=MSLE-NJtndCygB7x_ze2ks3QeXGjbYHA6Z1nXQXObB4,15
+covid19czechia-0.2.1.dist-info/RECORD,,
