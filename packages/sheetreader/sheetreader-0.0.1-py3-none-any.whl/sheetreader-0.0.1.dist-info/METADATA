@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: sheetreader
+Version: 0.0.1
+Summary: Iterate through rows of a Google Spreadsheet as if it were a Python CSV DictReader or DictWriter.
+Home-page: https://github.com/jastrauss/SheetReader
+Author: Jason Strauss
+Author-email: jason@popcornnotify.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+
+See https://github.com/jastrauss/SheetReader/blob/master/README.md
+
+
