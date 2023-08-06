@@ -1,0 +1,6 @@
+watchdog
+yara-python
+python-magic
+termcolor
+pyclamd
+progress
