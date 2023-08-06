@@ -1,0 +1,7 @@
+README.md
+setup.py
+forsyde_io_python.egg-info/PKG-INFO
+forsyde_io_python.egg-info/SOURCES.txt
+forsyde_io_python.egg-info/dependency_links.txt
+forsyde_io_python.egg-info/requires.txt
+forsyde_io_python.egg-info/top_level.txt
