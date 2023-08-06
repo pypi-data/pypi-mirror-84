@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Pymagej
+Version: 0.2.1
+Summary: Python tools for ImageJ
+Home-page: https://github.com/Jhsmit/PymageJ/
+Author: Jochem Smit
+Author-email: jhsmit@mgail.com
+License: GNU
+Keywords: ImageJ ROI
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+
+
