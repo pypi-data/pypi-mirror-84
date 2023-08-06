@@ -1,0 +1,7 @@
+README.rst
+setup.py
+featureselect/featureselect.egg-info/PKG-INFO
+featureselect/featureselect.egg-info/SOURCES.txt
+featureselect/featureselect.egg-info/dependency_links.txt
+featureselect/featureselect.egg-info/requires.txt
+featureselect/featureselect.egg-info/top_level.txt
