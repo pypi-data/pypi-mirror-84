@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+vutil/__init__.py
+vutil/_nbdev.py
+vutil/imports.py
+vutil/pprint.py
+vutil.egg-info/PKG-INFO
+vutil.egg-info/SOURCES.txt
+vutil.egg-info/dependency_links.txt
+vutil.egg-info/entry_points.txt
+vutil.egg-info/not-zip-safe
+vutil.egg-info/top_level.txt
