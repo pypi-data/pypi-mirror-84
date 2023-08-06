@@ -1,0 +1,7 @@
+README.md
+setup.py
+tsanalysis.egg-info/PKG-INFO
+tsanalysis.egg-info/SOURCES.txt
+tsanalysis.egg-info/dependency_links.txt
+tsanalysis.egg-info/requires.txt
+tsanalysis.egg-info/top_level.txt

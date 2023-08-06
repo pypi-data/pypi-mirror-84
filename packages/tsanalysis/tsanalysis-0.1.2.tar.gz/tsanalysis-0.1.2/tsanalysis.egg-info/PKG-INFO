@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: tsanalysis
+Version: 0.1.2
+Summary: Machine Learning library for time series analysis
+Home-page: https://github.com/etiennedemontalivet/time-series-analysis
+Author: Etienne de Montalivet
+Author-email: etienne.demontalivet@gmail.com
+License: UNKNOWN
+Description: # Time Series Analysis
+        
+        A framework for time-series analysis and features extraction / visualization.
+        
+        ## Installation
+        
+        ### From Github
+        Download or clone the sources from the [github page](https://github.com/etiennedemontalivet/time-series-analysis/) and run:
+        ```
+        python steup.py install
+        ```
+        
+        ### Release
+        ```
+        pip install tsanalysis
+        ```
+        
+        ## Documentation
+        
+        This is **Work In Progress**
+        
+Keywords: ml datascience timeseries dataanalysis
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
