@@ -1,0 +1,3 @@
+[console_scripts]
+nbae-quiz-scan = grading.quiz_scan:main
+
