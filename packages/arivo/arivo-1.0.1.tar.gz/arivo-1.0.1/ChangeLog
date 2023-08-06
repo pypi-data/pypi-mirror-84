@@ -1,0 +1,13 @@
+CHANGES
+=======
+
+v1.0.1
+------
+
+* cleanup repository
+
+v1.0.0
+------
+
+* added webhook secret [skip ci]
+* initial commit
