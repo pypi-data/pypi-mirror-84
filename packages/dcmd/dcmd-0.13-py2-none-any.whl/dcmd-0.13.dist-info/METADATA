@@ -1,0 +1,32 @@
+Metadata-Version: 2.0
+Name: dcmd
+Version: 0.13
+Summary: simple hide, list, show and rechange windows terminal (cmd)
+Home-page: https://github.com/cumulus13/dcmd
+Author: Hadi Cahyadi LD
+Author-email: cumulus13@gmail.com
+License: MIT
+Download-URL: https://github.com/cumulus13/dcmd/tarball/master
+Description-Content-Type: UNKNOWN
+Keywords: pywin32 terminal win32
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Utilities
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: make-colors
+Requires-Dist: psutil
+Requires-Dist: pydebugger
+
+UNKNOWN
+
+
