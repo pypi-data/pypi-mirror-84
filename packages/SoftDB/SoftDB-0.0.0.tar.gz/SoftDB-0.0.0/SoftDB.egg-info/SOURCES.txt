@@ -1,0 +1,8 @@
+README.md
+setup.py
+SoftDB/__init__.py
+SoftDB/test.py
+SoftDB.egg-info/PKG-INFO
+SoftDB.egg-info/SOURCES.txt
+SoftDB.egg-info/dependency_links.txt
+SoftDB.egg-info/top_level.txt
