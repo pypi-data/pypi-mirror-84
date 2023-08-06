@@ -1,0 +1,17 @@
+README.md
+setup.py
+demo_py.egg-info/PKG-INFO
+demo_py.egg-info/SOURCES.txt
+demo_py.egg-info/dependency_links.txt
+demo_py.egg-info/entry_points.txt
+demo_py.egg-info/not-zip-safe
+demo_py.egg-info/requires.txt
+demo_py.egg-info/top_level.txt
+demopy/__init__.py
+demopy/download-csv-from-google-sheets.py
+demopy/notebook_imports.py
+demopy/parsing.py
+demopy/visualizing_sql.py
+demopy/visualizing_tasks.py
+test/__init__.py
+test/conftest.py
