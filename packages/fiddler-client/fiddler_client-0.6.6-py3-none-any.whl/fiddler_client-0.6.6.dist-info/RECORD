@@ -1,0 +1,15 @@
+fiddler/__init__.py,sha256=kNElguhT9C3Kr318blCFv7txGOoz2hoiVfRWsxuUNpg,911
+fiddler/_version.py,sha256=bSuLoXsCr0tyq73AR1msMfHVln1UlaeZ5tDociTj1ok,22
+fiddler/client.py,sha256=wr8yDDlfGpbGDxdqBUAJkv4wVg1e1SBnCR98pTistng,5166
+fiddler/core_objects.py,sha256=KXVkghTvYc1H7H-sirzDvr9-KGWxj4zm5VrGAV-b3o8,46404
+fiddler/fiddler_api.py,sha256=4zHNuCQcbqe_SsMSJb3ej8lJTxBD6v0f2QcL4sgkzcI,58129
+fiddler/model_loaders.py,sha256=tmA7EbizV3WRtEx22JUoxTRidS-C0dtELRZgN4Oaxdo,8239
+fiddler/utils.py,sha256=3W5NFgaVdAWoPGE6PSxXEDmWYWBr17hWYEvZIBTHZpE,3256
+fiddler/validator.py,sha256=ehBqWgIQp9CZkVcV5pf7Gq1bObhruSxAjr6sS5qyAjg,13656
+fiddler/assets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fiddler/assets/pg_reserved_words.py,sha256=Ar8Y4vrw5cJxc6xMmul42cNw0NEu-LjEV5jK6QlKisY,8200
+fiddler_client-0.6.6.dist-info/LICENSE.txt,sha256=w8-LUAb_VLBWSsCNmih0pAqLIicJfGu8OJXpDjkIg_o,559
+fiddler_client-0.6.6.dist-info/METADATA,sha256=2Ay-N4X4T69Zkw_gAlnQHiuoxKKdar44bFZysjvrVaw,1834
+fiddler_client-0.6.6.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+fiddler_client-0.6.6.dist-info/top_level.txt,sha256=ndC6LqvKmrTTs8czRlBOYdYgSqZbHuMf0zHt_HWpzzk,8
+fiddler_client-0.6.6.dist-info/RECORD,,
