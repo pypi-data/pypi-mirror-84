@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+airflow_ecs_fargate_executor/__init__.py
+airflow_ecs_fargate_executor/ecs_fargate_default_configs.py
+airflow_ecs_fargate_executor/ecs_fargate_plugin.py
+airflow_ecs_fargate_executor.egg-info/PKG-INFO
+airflow_ecs_fargate_executor.egg-info/SOURCES.txt
+airflow_ecs_fargate_executor.egg-info/dependency_links.txt
+airflow_ecs_fargate_executor.egg-info/requires.txt
+airflow_ecs_fargate_executor.egg-info/top_level.txt
