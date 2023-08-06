@@ -1,0 +1,45 @@
+
+from adapay_core import log_util
+from adapay_core.log_util import log_error
+from adapay_core.param_handler import read_file
+
+mer_configs = {}
+
+
+"""
+全局的配置字典
+{"member_id1":{},
+ "member_id2":{},
+ "member_id3":{},
+   ···
+}
+"""
+
+
+from fishbase.fish_logger import set_log_file, set_log_stdout
+
+connect_timeout = 30
+
+
+def init_log(console_enable=False, log_level='', log_tag='{adapay}', log_file_path=''):
+    """
+    :param log_tag:
+    :param log_level:
+    :param console_enable: 是否在控台输出日志
+    :param log_file_path:
+    :return:
+    """
+    if console_enable:
+        set_log_stdout()
+    if log_file_path:
+        set_log_file(log_file_path)
+    if log_level:
+        log_util.log_level = log_level
+        if log_tag:
+            log_util.log_tag = log_tag
+
+
+# sdk 版本
+__version__ = '1.2.0'
+
+from adapay_merchant.api import *
