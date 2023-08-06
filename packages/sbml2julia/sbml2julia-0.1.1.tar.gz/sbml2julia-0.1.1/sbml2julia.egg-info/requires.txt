@@ -1,0 +1,10 @@
+cement>=3.0.0
+julia
+matplotlib
+numpy
+openpyxl
+pandas
+petab
+python-libsbml
+scipy
+setuptools

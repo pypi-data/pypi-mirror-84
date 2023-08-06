@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.dev.txt
+requirements.txt
+setup.py
+sbml2julia/__init__.py
+sbml2julia/__main__.py
+sbml2julia/_version.py
+sbml2julia/core.py
+sbml2julia.egg-info/PKG-INFO
+sbml2julia.egg-info/SOURCES.txt
+sbml2julia.egg-info/dependency_links.txt
+sbml2julia.egg-info/entry_points.txt
+sbml2julia.egg-info/requires.txt
+sbml2julia.egg-info/top_level.txt
