@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: scop
+Version: 0.0.1
+Summary: Wrapper of SCOP(Solver for  COnstraint Programing)
+Author: Saito Tsutomu
+Author-email: tsutomu7@hotmail.co.jp
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
