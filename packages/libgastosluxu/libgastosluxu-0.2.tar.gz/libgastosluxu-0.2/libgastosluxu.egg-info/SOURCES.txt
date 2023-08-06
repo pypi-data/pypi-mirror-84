@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+libgastosluxu/__init__.py
+libgastosluxu/github_api.py
+libgastosluxu.egg-info/PKG-INFO
+libgastosluxu.egg-info/SOURCES.txt
+libgastosluxu.egg-info/dependency_links.txt
+libgastosluxu.egg-info/not-zip-safe
+libgastosluxu.egg-info/requires.txt
+libgastosluxu.egg-info/top_level.txt
