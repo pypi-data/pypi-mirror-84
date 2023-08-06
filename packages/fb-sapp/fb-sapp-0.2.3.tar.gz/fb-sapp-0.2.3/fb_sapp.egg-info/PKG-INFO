@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: fb-sapp
+Version: 0.2.3
+Summary: Static Analysis Post-Processor for processing taint analysis results.
+Home-page: https://pyre-check.org/
+Author: Facebook
+Maintainer-email: pyre@fb.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
