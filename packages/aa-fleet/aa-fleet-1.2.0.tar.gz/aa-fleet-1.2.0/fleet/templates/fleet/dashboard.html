@@ -1,0 +1,61 @@
+{% extends 'fleet/base.html' %}
+{% load i18n %}
+{% load humanize %}
+{% load evelinks %}
+
+{% block fleet_block %}
+    <div class="container col-sm-12">
+        {% if error %}
+            <div class="alert alert-danger" role="alert">{{error}}</div>
+        {% endif %}
+        <h2>
+            Available Fleets
+        </h2>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <table class="table table-hover">
+                    <thead>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Created At</th>
+                        <th>Join</th>
+                        {% if perms.fleet.manage %}
+                            <th>Details</th>
+                        {% endif %}
+                        {% if perms.fleet.manage %}
+                            <th>Edit</th>
+                        {% endif %}
+                    </thead>
+                    <tbody>
+                        {% for fleet in fleets %}
+                        <tr>
+                            <td>
+                                <img class="img-circle eve-character-portrait" style="display: block; margin: auto;" src="{{ fleet.fleet_commander_id|character_portrait_url:64 }}">
+                            </td>
+                            <td>
+                                {{fleet.name}}
+                            </td>
+                            <td>
+                                {{fleet.created_at}}
+                            </td>
+                            <td>
+                                <a href="{% url 'fleet:join_fleet' fleet.fleet_id %}" class="btn btn-xs btn-success">Join Fleet</a>
+                            </td>
+                            {% if perms.fleet.manage %}
+                            <td>
+                                <a href="{% url 'fleet:fleet_details' fleet.fleet_id %}"  class="btn btn-xs btn-success">View fleet details</a>
+                            </td>
+                            {% endif %}
+                            {% if perms.fleet.manage %}
+                            <td>
+                                <a href="{% url 'fleet:edit_fleet' fleet.fleet_id %}"  class="btn btn-xs btn-success">Edit Fleet advert</a>
+                            </td>
+                            {% endif %}
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
