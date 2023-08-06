@@ -1,0 +1,9 @@
+ERROR.txt
+PACKAGE_NAME
+README.rst
+package_info.py
+setup.py
+pytorch_quantization.egg-info/PKG-INFO
+pytorch_quantization.egg-info/SOURCES.txt
+pytorch_quantization.egg-info/dependency_links.txt
+pytorch_quantization.egg-info/top_level.txt
