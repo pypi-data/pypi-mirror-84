@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: whatsappapi
+Version: 0.0.3
+Summary: A Basic Beta Whatsapp API
+Home-page: UNKNOWN
+Author: Enzo Barizza Leal
+Author-email: enzobarizza@gmail.com
+License: MIT
+Description: 
+        
+        NEW METHOD FOR FIND THE CONTACTS
+        
+        DOCUMENTATION IN https://github.com/oneXD/whatsappapi/wiki/Documentation
+Keywords: whatsapp
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
