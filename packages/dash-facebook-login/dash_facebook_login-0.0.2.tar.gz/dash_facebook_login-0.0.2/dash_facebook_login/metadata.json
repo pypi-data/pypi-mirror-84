@@ -1,0 +1,284 @@
+{
+  "src/lib/components/DashFacebookLogin.react.js": {
+    "description": "DashFacebookLogin provides a Facebook login button for Plotly Dash dashboards.\nFor details on its configuration, see https://developers.facebook.com/docs/facebook-login/web/login-button/",
+    "displayName": "DashFacebookLogin",
+    "methods": [
+      {
+        "name": "setIsSdkLoaded",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "setFbAsyncInit",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "loadSdkAsynchronously",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "refreshLoginStatus",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "onFacebookLoginResponse",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "setProps",
+            "type": null
+          },
+          {
+            "name": "response",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      },
+      "appId": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "Your Facebook application ID. If you don't have one find it in the App dashboard\nor go there to create a new app."
+      },
+      "language": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The language code, such as \"en_US\".\n@default en_US",
+        "defaultValue": {
+          "value": "\"en_US\"",
+          "computed": false
+        }
+      },
+      "version": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Determines which versions of the Graph API and any API dialogs or\nplugins are invoked when using the .api() and .ui() functions. Valid\nvalues are determined by currently available versions, such as 'v2.0'.\n@default v8.0",
+        "defaultValue": {
+          "value": "\"v8.0\"",
+          "computed": false
+        }
+      },
+      "cookie": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Determines whether a cookie is created for the session or not. If enabled,\nit can be accessed by server-side code.\n@default false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "status": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Determines whether the current login status of the user is freshly retrieved\non every page load. If this is disabled, that status will have to be manually\nretrieved using .getLoginStatus().\n@default false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "xfbml": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Determines whether XFBML tags used by social plugins are parsed, and\ntherefore whether the plugins are rendered or not.\n@default false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "frictionlessRequests": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Frictionless Requests are available to games on Facebook.com or on mobile\nweb using the JavaScript SDK. This parameter determines whether they are\nenabled.\n@default false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "autoLogoutLink": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If enabled, the button will change to a logout button when the user is logged in.\n@default false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "scope": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The list of permissions to request during login.\n@default public_profile",
+        "defaultValue": {
+          "value": "\"public_profile\"",
+          "computed": false
+        }
+      },
+      "size": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "\"small\"",
+              "computed": false
+            },
+            {
+              "value": "\"medium\"",
+              "computed": false
+            },
+            {
+              "value": "\"large\"",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Picks one of the size options for the button.\n@default small",
+        "defaultValue": {
+          "value": "\"small\"",
+          "computed": false
+        }
+      },
+      "defaultAudience": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "\"everyone\"",
+              "computed": false
+            },
+            {
+              "value": "\"friends\"",
+              "computed": false
+            },
+            {
+              "value": "\"only_me\"",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Determines what audience will be selected by default, when requesting write permissions.\n@default friends",
+        "defaultValue": {
+          "value": "\"friends\"",
+          "computed": false
+        }
+      },
+      "layout": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "\"default\"",
+              "computed": false
+            },
+            {
+              "value": "\"rounded\"",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Determines the display type of the button.\n@default default",
+        "defaultValue": {
+          "value": "\"default\"",
+          "computed": false
+        }
+      },
+      "buttonType": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "\"continue_with\"",
+              "computed": false
+            },
+            {
+              "value": "\"login_with\"",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Determines the type of button text.\n@default continue_with",
+        "defaultValue": {
+          "value": "\"continue_with\"",
+          "computed": false
+        }
+      },
+      "useContinueAs": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Determines whether to show the user's profile picture when available.\n@default false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A custom class to add to the button.\n@default fb-login-button",
+        "defaultValue": {
+          "value": "\"fb-login-button\"",
+          "computed": false
+        }
+      },
+      "facebookLoginResponse": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "The properties returned by the Facebook login callback."
+      }
+    }
+  }
+}

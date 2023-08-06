@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+dash_facebook_login/DashFacebookLogin.py
+dash_facebook_login/__init__.py
+dash_facebook_login/_imports_.py
+dash_facebook_login/dash_facebook_login.min.js
+dash_facebook_login/dash_facebook_login.min.js.map
+dash_facebook_login/metadata.json
+dash_facebook_login/package-info.json
+dash_facebook_login.egg-info/PKG-INFO
+dash_facebook_login.egg-info/SOURCES.txt
+dash_facebook_login.egg-info/dependency_links.txt
+dash_facebook_login.egg-info/top_level.txt
