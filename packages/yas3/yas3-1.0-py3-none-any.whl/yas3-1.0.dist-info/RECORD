@@ -1,0 +1,9 @@
+yas3/__init__.py,sha256=_22tXo45ODxqQTcl6x-VfMaDFhiTF3OLUOivMG9RDE4,72
+yas3/aws.py,sha256=-UYEiJGAFiVWiQC1D4AGfMe7Ht1YdtErpZVTGKpNC44,492
+yas3/connection.py,sha256=rAfLflq0id-UxptnQx9oF8ehi0OwDClAPkYzdpXcjwE,5037
+yas3/utils.py,sha256=HbCzJUkUlLlCIaz3h4Wh27cySsUAqovzXQqYSRUUmVc,938
+yas3-1.0.dist-info/LICENSE,sha256=cTHxopo7CA3uTarQaSTCBa-GH4p4vyAu8Lhp-NhdwhM,11247
+yas3-1.0.dist-info/METADATA,sha256=qBBm7yFVCAWBa84saqwjjoM3eMHqnBcYegaY_g8r-iM,4343
+yas3-1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+yas3-1.0.dist-info/top_level.txt,sha256=Cp5tI01HeeXKzmxwXyzLyHCnHHD52nGfG9RwIE_Z3V4,5
+yas3-1.0.dist-info/RECORD,,
