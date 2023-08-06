@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+france_naf.egg-info/PKG-INFO
+france_naf.egg-info/SOURCES.txt
+france_naf.egg-info/dependency_links.txt
+france_naf.egg-info/requires.txt
+france_naf.egg-info/top_level.txt
+naf/__init__.py
+naf/db
