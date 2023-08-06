@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: split-up
+Version: 1.0.2
+Summary: Splitting files in a folder
+Home-page: UNKNOWN
+Author: Arvind R Menon
+Author-email: arvind.ramesh.menon@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+## Split the files in a directory!
+
+This package aims to let a user partition the files in a directory to folders. E.g. one could use this package to split the images of a folder into Train, Validation, and Test. The ratio and the number of splits is customizable. One could also copy the files instead of merely moving them to a different folder.
+
+
+## Installation 
+`pip Install split-up`
+
+## Usage
+Move or copy files of a folder to another, based on a predefined split ratio.
+#### Example: 
+`Import split-up as sp`
+
+`sp.split_custom(source_folder, destination_folder, 80, 20, copy = True)`
+
+The above code would *copy* the files from the source to the destination folder in 80 : 20 ratio.
+## Function
+   ` split_custom(source_folder, destination_folder, *p, copy = False)`
+
+## Parameters
+**Source_folder** : The path of the folder containing the files to be split.
+**Destination_folder**: The path of the folder where the directories with split files need to be stored.
+**\*p**: The ratio of the split. E.g. "*80,20*", "*70, 15, 15*", "*40, 20, 20, 20*". The ratio must add upto 100, else an error message would be displayed. (*Note*: The function does not have a default split ratio.)
+**copy**:  Set to 'False' by default, it could be set to 'True' in order to copy the file from the source to the destination folder insted of moving.
+
+## Output
+The files would be present in "Split_(i)" folders, where i = 1, 2, 3...n, depending on the number of splits.
+
+
+
