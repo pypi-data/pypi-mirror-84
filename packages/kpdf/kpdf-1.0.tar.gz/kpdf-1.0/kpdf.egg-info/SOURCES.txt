@@ -1,0 +1,8 @@
+README.md
+setup.py
+KPDF/__init__.py
+KPDF/pdf2txt.py
+kpdf.egg-info/PKG-INFO
+kpdf.egg-info/SOURCES.txt
+kpdf.egg-info/dependency_links.txt
+kpdf.egg-info/top_level.txt
