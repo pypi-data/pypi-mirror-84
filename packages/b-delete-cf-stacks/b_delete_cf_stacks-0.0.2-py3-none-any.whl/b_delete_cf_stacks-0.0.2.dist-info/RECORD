@@ -1,0 +1,10 @@
+b_delete_cf_stacks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+b_delete_cf_stacks/delete_stacks.py,sha256=cUMpgdjpaMyATcsqFbJVx-5VHQzrAg83VgdDcnkLG08,1728
+b_delete_cf_stacks/get_all_stacks.py,sha256=xbwbBWiMDo4Pc6dw31E5-G0NpkcmZVt2Bki_Ho8xesU,1608
+b_delete_cf_stacks/stack.py,sha256=mshDhSlUrn5Q3aFm3hYT-nrGKckt5SB5PGnnAnuD1L8,590
+b_delete_cf_stacks/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+b_delete_cf_stacks/commands/delcfall.py,sha256=-bc6z9rad2RXfvHr7EjK6kiWe9bm4oDO0s0iHEi8zPE,921
+b_delete_cf_stacks-0.0.2.dist-info/METADATA,sha256=rFRevAeAPajueWjjL3fKP5BPlbYG0CWGp3NkdU5xK-M,492
+b_delete_cf_stacks-0.0.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+b_delete_cf_stacks-0.0.2.dist-info/top_level.txt,sha256=97tLfCZm0Trd5itb_v9rxkCTgPpF55ikgJhLRYaw41A,19
+b_delete_cf_stacks-0.0.2.dist-info/RECORD,,
