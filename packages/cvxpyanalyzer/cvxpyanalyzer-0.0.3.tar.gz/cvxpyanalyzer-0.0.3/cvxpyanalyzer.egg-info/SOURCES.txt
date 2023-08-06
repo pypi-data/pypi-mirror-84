@@ -1,0 +1,13 @@
+README.md
+setup.py
+analyzer/__init__.py
+analyzer/codegen.py
+analyzer/convexity_checker.py
+analyzer/solvers.py
+analyzer/tech_support.py
+analyzer/version.py
+cvxpyanalyzer.egg-info/PKG-INFO
+cvxpyanalyzer.egg-info/SOURCES.txt
+cvxpyanalyzer.egg-info/dependency_links.txt
+cvxpyanalyzer.egg-info/requires.txt
+cvxpyanalyzer.egg-info/top_level.txt
