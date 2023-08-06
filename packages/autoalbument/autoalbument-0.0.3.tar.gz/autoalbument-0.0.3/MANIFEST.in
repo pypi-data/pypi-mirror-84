@@ -1,0 +1,8 @@
+include LICENSE
+include README.md
+
+graft benchmark
+graft tests
+graft autoalbument/faster_autoaugment/templates
+
+global-exclude *.py[co] .DS_Store
