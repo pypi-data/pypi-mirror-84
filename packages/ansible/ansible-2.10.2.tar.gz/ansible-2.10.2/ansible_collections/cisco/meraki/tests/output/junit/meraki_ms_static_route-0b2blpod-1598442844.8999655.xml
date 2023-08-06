@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="1.530365228652954">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_ms_static_route-0b2blpod" skipped="0" tests="1" time="1.530365228652954">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_static_route-75xyu3y8-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_static_route/tasks/main.yml:139" name="[localhost] meraki: meraki_ms_static_route : Update static route auth_key={{auth_key}}, state=present, serial={{ serial_switch_l3 }}, name=Test Route to 1.1.1.1, subnet=192.168.17.0/24, next_hop_ip=192.168.17.1, advertise_via_ospf_enabled=True" time="1.530365">
+			<failure type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: null,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

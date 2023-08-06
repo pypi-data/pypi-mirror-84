@@ -1,0 +1,510 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="28" time="76.7997260093689">
+	<testsuite disabled="0" errors="0" failures="0" name="meraki_switch_stack-4s1gcdik" skipped="0" tests="28" time="76.7997260093689">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:7" name="[localhost] meraki: meraki_switch_stack : Create network with type switch auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name={{test_switch_net_name}}, type=switch, timezone=America/Chicago" time="4.786283">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685668&quot;,
+&quot;name&quot;: &quot;Home - Switch&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;switch&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Switch/n/NkOYXdUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:18" name="[localhost] meraki: meraki_switch_stack : set_fact net_id={{create_net_switch.data.id}}" time="0.093345">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_id&quot;: &quot;N_624874448297685668&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:21" name="[localhost] meraki: meraki_switch_stack : Claim devices into network auth_key={{auth_key}}, org_name={{test_org_name}}, net_id={{net_id}}, serial={{item}}, state=present" time="24.832472">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;All items completed&quot;,
+&quot;results&quot;: [
+{
+&quot;ansible_loop_var&quot;: &quot;item&quot;,
+&quot;changed&quot;: true,
+&quot;data&quot;: [
+{}
+],
+&quot;failed&quot;: false,
+&quot;invocation&quot;: {
+&quot;module_args&quot;: {
+&quot;address&quot;: null,
+&quot;auth_key&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+&quot;follow_redirects&quot;: &quot;all&quot;,
+&quot;host&quot;: &quot;api.meraki.com&quot;,
+&quot;hostname&quot;: null,
+&quot;internal_error_retry_time&quot;: 60,
+&quot;lat&quot;: null,
+&quot;lldp_cdp_timespan&quot;: null,
+&quot;lng&quot;: null,
+&quot;model&quot;: null,
+&quot;move_map_marker&quot;: null,
+&quot;net_id&quot;: &quot;N_624874448297685668&quot;,
+&quot;net_name&quot;: null,
+&quot;note&quot;: null,
+&quot;org_id&quot;: null,
+&quot;org_name&quot;: &quot;kbreit@insight.com&quot;,
+&quot;output_format&quot;: &quot;snakecase&quot;,
+&quot;output_level&quot;: &quot;normal&quot;,
+&quot;protocol&quot;: &quot;https&quot;,
+&quot;query&quot;: null,
+&quot;rate_limit_retry_time&quot;: 165,
+&quot;serial&quot;: &quot;QBSB-BPR6-PRER&quot;,
+&quot;state&quot;: &quot;present&quot;,
+&quot;tags&quot;: null,
+&quot;timeout&quot;: 30,
+&quot;use_https&quot;: true,
+&quot;use_proxy&quot;: false,
+&quot;validate_certs&quot;: true
+}
+},
+&quot;item&quot;: &quot;QBSB-BPR6-PRER&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+},
+{
+&quot;ansible_loop_var&quot;: &quot;item&quot;,
+&quot;changed&quot;: true,
+&quot;data&quot;: [
+{}
+],
+&quot;failed&quot;: false,
+&quot;invocation&quot;: {
+&quot;module_args&quot;: {
+&quot;address&quot;: null,
+&quot;auth_key&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+&quot;follow_redirects&quot;: &quot;all&quot;,
+&quot;host&quot;: &quot;api.meraki.com&quot;,
+&quot;hostname&quot;: null,
+&quot;internal_error_retry_time&quot;: 60,
+&quot;lat&quot;: null,
+&quot;lldp_cdp_timespan&quot;: null,
+&quot;lng&quot;: null,
+&quot;model&quot;: null,
+&quot;move_map_marker&quot;: null,
+&quot;net_id&quot;: &quot;N_624874448297685668&quot;,
+&quot;net_name&quot;: null,
+&quot;note&quot;: null,
+&quot;org_id&quot;: null,
+&quot;org_name&quot;: &quot;kbreit@insight.com&quot;,
+&quot;output_format&quot;: &quot;snakecase&quot;,
+&quot;output_level&quot;: &quot;normal&quot;,
+&quot;protocol&quot;: &quot;https&quot;,
+&quot;query&quot;: null,
+&quot;rate_limit_retry_time&quot;: 165,
+&quot;serial&quot;: &quot;QBSB-VLNE-E299&quot;,
+&quot;state&quot;: &quot;present&quot;,
+&quot;tags&quot;: null,
+&quot;timeout&quot;: 30,
+&quot;use_https&quot;: true,
+&quot;use_proxy&quot;: false,
+&quot;validate_certs&quot;: true
+}
+},
+&quot;item&quot;: &quot;QBSB-VLNE-E299&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+},
+{
+&quot;ansible_loop_var&quot;: &quot;item&quot;,
+&quot;changed&quot;: true,
+&quot;data&quot;: [
+{}
+],
+&quot;failed&quot;: false,
+&quot;invocation&quot;: {
+&quot;module_args&quot;: {
+&quot;address&quot;: null,
+&quot;auth_key&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+&quot;follow_redirects&quot;: &quot;all&quot;,
+&quot;host&quot;: &quot;api.meraki.com&quot;,
+&quot;hostname&quot;: null,
+&quot;internal_error_retry_time&quot;: 60,
+&quot;lat&quot;: null,
+&quot;lldp_cdp_timespan&quot;: null,
+&quot;lng&quot;: null,
+&quot;model&quot;: null,
+&quot;move_map_marker&quot;: null,
+&quot;net_id&quot;: &quot;N_624874448297685668&quot;,
+&quot;net_name&quot;: null,
+&quot;note&quot;: null,
+&quot;org_id&quot;: null,
+&quot;org_name&quot;: &quot;kbreit@insight.com&quot;,
+&quot;output_format&quot;: &quot;snakecase&quot;,
+&quot;output_level&quot;: &quot;normal&quot;,
+&quot;protocol&quot;: &quot;https&quot;,
+&quot;query&quot;: null,
+&quot;rate_limit_retry_time&quot;: 165,
+&quot;serial&quot;: &quot;QBSB-D75G-PXCG&quot;,
+&quot;state&quot;: &quot;present&quot;,
+&quot;tags&quot;: null,
+&quot;timeout&quot;: 30,
+&quot;use_https&quot;: true,
+&quot;use_proxy&quot;: false,
+&quot;validate_certs&quot;: true
+}
+},
+&quot;item&quot;: &quot;QBSB-D75G-PXCG&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:35" name="[localhost] meraki: meraki_switch_stack : Create new stack auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name={{test_switch_net_name}}, name=Test stack, serials=['QBSB-BPR6-PRER', 'QBSB-VLNE-E299']" time="5.837685">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;id&quot;: &quot;624874448297657268&quot;,
+&quot;name&quot;: &quot;Test stack&quot;,
+&quot;serials&quot;: [
+&quot;QBSB-BPR6-PRER&quot;,
+&quot;QBSB-VLNE-E299&quot;
+]
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:47" name="[localhost] meraki: meraki_switch_stack : debug var=create" time="0.096109">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;create&quot;: {
+        &quot;ansible_facts&quot;: {
+            &quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+        },
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;id&quot;: &quot;624874448297657268&quot;,
+            &quot;name&quot;: &quot;Test stack&quot;,
+            &quot;serials&quot;: [
+                &quot;QBSB-BPR6-PRER&quot;,
+                &quot;QBSB-VLNE-E299&quot;
+            ]
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 201
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:50" name="[localhost] meraki: meraki_switch_stack : set_fact stack_id={{create.data.id}}" time="0.094488">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;stack_id&quot;: &quot;624874448297657268&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:53" name="[localhost] meraki: meraki_switch_stack : assert that=['create.data is defined', 'create is changed']" time="0.102085">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:58" name="[localhost] meraki: meraki_switch_stack : Add switch to stack auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name={{test_switch_net_name}}, stack_id={{stack_id}}, serials=['QBSB-D75G-PXCG']" time="3.986920">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;id&quot;: &quot;624874448297657268&quot;,
+&quot;name&quot;: &quot;Test stack&quot;,
+&quot;serials&quot;: [
+&quot;QBSB-BPR6-PRER&quot;,
+&quot;QBSB-VLNE-E299&quot;,
+&quot;QBSB-D75G-PXCG&quot;
+]
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:69" name="[localhost] meraki: meraki_switch_stack : assert that=['add_stack.data is defined', 'add_stack.data.serials | length == 3', 'add_stack is changed']" time="0.102257">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:75" name="[localhost] meraki: meraki_switch_stack : Add switch to stack idempotent auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name={{test_switch_net_name}}, stack_id={{stack_id}}, serials=['QBSB-D75G-PXCG']" time="3.287027">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;id&quot;: &quot;624874448297657268&quot;,
+&quot;name&quot;: &quot;Test stack&quot;,
+&quot;serials&quot;: [
+&quot;QBSB-BPR6-PRER&quot;,
+&quot;QBSB-VLNE-E299&quot;,
+&quot;QBSB-D75G-PXCG&quot;
+]
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:86" name="[localhost] meraki: meraki_switch_stack : assert that=['add_stack_idempotent.data is defined', 'add_stack_idempotent.data.serials | length == 3', 'add_stack_idempotent is not changed']" time="0.100304">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:92" name="[localhost] meraki: meraki_switch_stack : Remove switch from stack auth_key={{ auth_key }}, state=absent, org_name={{test_org_name}}, net_name={{test_switch_net_name}}, stack_id={{stack_id}}, serials=['QBSB-D75G-PXCG']" time="4.353373">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;id&quot;: &quot;624874448297657268&quot;,
+&quot;name&quot;: &quot;Test stack&quot;,
+&quot;serials&quot;: [
+&quot;QBSB-BPR6-PRER&quot;,
+&quot;QBSB-VLNE-E299&quot;
+]
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:103" name="[localhost] meraki: meraki_switch_stack : debug var=remove_from_stack" time="0.095307">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;remove_from_stack&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;id&quot;: &quot;624874448297657268&quot;,
+            &quot;name&quot;: &quot;Test stack&quot;,
+            &quot;serials&quot;: [
+                &quot;QBSB-BPR6-PRER&quot;,
+                &quot;QBSB-VLNE-E299&quot;
+            ]
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:106" name="[localhost] meraki: meraki_switch_stack : assert that=['remove_from_stack.data is defined', 'remove_from_stack.data.serials | length == 2', 'remove_from_stack is changed']" time="0.101443">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:112" name="[localhost] meraki: meraki_switch_stack : Remove switch from stack idempotent auth_key={{ auth_key }}, state=absent, org_name={{test_org_name}}, net_name={{test_switch_net_name}}, stack_id={{stack_id}}, serials=['QBSB-D75G-PXCG']" time="3.390652">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;id&quot;: &quot;624874448297657268&quot;,
+&quot;name&quot;: &quot;Test stack&quot;,
+&quot;serials&quot;: [
+&quot;QBSB-BPR6-PRER&quot;,
+&quot;QBSB-VLNE-E299&quot;
+]
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:123" name="[localhost] meraki: meraki_switch_stack : debug var=remove_from_stack_idempotent" time="0.092675">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;remove_from_stack_idempotent&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;id&quot;: &quot;624874448297657268&quot;,
+            &quot;name&quot;: &quot;Test stack&quot;,
+            &quot;serials&quot;: [
+                &quot;QBSB-BPR6-PRER&quot;,
+                &quot;QBSB-VLNE-E299&quot;
+            ]
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:126" name="[localhost] meraki: meraki_switch_stack : assert that=['remove_from_stack_idempotent.data is defined', 'remove_from_stack_idempotent.data.serials | length == 2', 'remove_from_stack_idempotent is not changed']" time="0.105325">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:132" name="[localhost] meraki: meraki_switch_stack : Query all stacks in the network auth_key={{ auth_key }}, state=query, org_name={{test_org_name}}, net_name={{test_switch_net_name}}" time="3.140407">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: [
+{
+&quot;id&quot;: &quot;624874448297657268&quot;,
+&quot;name&quot;: &quot;Test stack&quot;,
+&quot;serials&quot;: [
+&quot;QBSB-BPR6-PRER&quot;,
+&quot;QBSB-VLNE-E299&quot;
+]
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:140" name="[localhost] meraki: meraki_switch_stack : debug var=query_all" time="0.093859">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;query_all&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: [
+            {
+                &quot;id&quot;: &quot;624874448297657268&quot;,
+                &quot;name&quot;: &quot;Test stack&quot;,
+                &quot;serials&quot;: [
+                    &quot;QBSB-BPR6-PRER&quot;,
+                    &quot;QBSB-VLNE-E299&quot;
+                ]
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:143" name="[localhost] meraki: meraki_switch_stack : assert that=['query_all.data is defined', 'query_all is not changed']" time="0.099677">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:148" name="[localhost] meraki: meraki_switch_stack : Query one stack auth_key={{ auth_key }}, state=query, org_name={{test_org_name}}, net_name={{test_switch_net_name}}, stack_id={{stack_id}}" time="3.507542">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;id&quot;: &quot;624874448297657268&quot;,
+&quot;name&quot;: &quot;Test stack&quot;,
+&quot;serials&quot;: [
+&quot;QBSB-BPR6-PRER&quot;,
+&quot;QBSB-VLNE-E299&quot;
+]
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:157" name="[localhost] meraki: meraki_switch_stack : debug var=query_one" time="0.099039">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;query_one&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;id&quot;: &quot;624874448297657268&quot;,
+            &quot;name&quot;: &quot;Test stack&quot;,
+            &quot;serials&quot;: [
+                &quot;QBSB-BPR6-PRER&quot;,
+                &quot;QBSB-VLNE-E299&quot;
+            ]
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:160" name="[localhost] meraki: meraki_switch_stack : assert that=['query_one.data is defined', 'query_one is not changed']" time="0.101495">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:165" name="[localhost] meraki: meraki_switch_stack : Query one stack using name auth_key={{ auth_key }}, state=query, org_name={{test_org_name}}, net_name={{test_switch_net_name}}, name=Test stack" time="4.180545">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;id&quot;: &quot;624874448297657268&quot;,
+&quot;name&quot;: &quot;Test stack&quot;,
+&quot;serials&quot;: [
+&quot;QBSB-BPR6-PRER&quot;,
+&quot;QBSB-VLNE-E299&quot;
+]
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:174" name="[localhost] meraki: meraki_switch_stack : debug var=query_one_name" time="0.094013">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;query_one_name&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;id&quot;: &quot;624874448297657268&quot;,
+            &quot;name&quot;: &quot;Test stack&quot;,
+            &quot;serials&quot;: [
+                &quot;QBSB-BPR6-PRER&quot;,
+                &quot;QBSB-VLNE-E299&quot;
+            ]
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:177" name="[localhost] meraki: meraki_switch_stack : assert that=['query_one_name.data is defined', 'query_one_name is not changed']" time="0.098495">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:183" name="[localhost] meraki: meraki_switch_stack : Delete stack auth_key={{ auth_key }}, state=absent, org_name={{test_org_name}}, net_name={{test_switch_net_name}}, stack_id={{stack_id}}" time="6.040660">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-j14lq4gf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:192" name="[localhost] meraki: meraki_switch_stack : Delete network auth_key={{ auth_key }}, state=absent, org_name={{test_org_name}}, net_name={{test_switch_net_name}}" time="7.886243">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

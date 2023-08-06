@@ -1,0 +1,289 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="5" time="21.961129426956177">
+	<testsuite disabled="0" errors="0" failures="0" name="meraki_alert-6tc_t4uq" skipped="0" tests="5" time="21.961129426956177">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-5twcgkjd-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:7" name="[localhost] meraki: meraki_alert : Create network with type wireless auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, type=wireless, timezone=America/Chicago" time="6.942513">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297687090&quot;,
+&quot;name&quot;: &quot;IntTestNetworkWireless&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;wireless&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkWi/n/4iWk2bUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-5twcgkjd-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:17" name="[localhost] meraki: meraki_alert : Query all settings auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=query" time="7.263598">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;alerts&quot;: [
+{
+&quot;alert_destinations&quot;: {
+&quot;all_admins&quot;: false,
+&quot;emails&quot;: [],
+&quot;http_server_ids&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {
+&quot;timeout&quot;: 60
+},
+&quot;type&quot;: &quot;gatewayDown&quot;
+},
+{
+&quot;alert_destinations&quot;: {
+&quot;all_admins&quot;: false,
+&quot;emails&quot;: [],
+&quot;http_server_ids&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {},
+&quot;type&quot;: &quot;gatewayToRepeater&quot;
+},
+{
+&quot;alert_destinations&quot;: {
+&quot;all_admins&quot;: false,
+&quot;emails&quot;: [],
+&quot;http_server_ids&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {
+&quot;timeout&quot;: 60
+},
+&quot;type&quot;: &quot;repeaterDown&quot;
+},
+{
+&quot;alert_destinations&quot;: {
+&quot;all_admins&quot;: false,
+&quot;emails&quot;: [],
+&quot;http_server_ids&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {},
+&quot;type&quot;: &quot;rogueAp&quot;
+},
+{
+&quot;alert_destinations&quot;: {
+&quot;all_admins&quot;: false,
+&quot;emails&quot;: [],
+&quot;http_server_ids&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {},
+&quot;type&quot;: &quot;settingsChanged&quot;
+},
+{
+&quot;alert_destinations&quot;: {
+&quot;all_admins&quot;: false,
+&quot;emails&quot;: [],
+&quot;http_server_ids&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {},
+&quot;type&quot;: &quot;vpnConnectivityChange&quot;
+},
+{
+&quot;alert_destinations&quot;: {
+&quot;all_admins&quot;: false,
+&quot;emails&quot;: [],
+&quot;http_server_ids&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {
+&quot;period&quot;: 1200,
+&quot;threshold&quot;: 104857600
+},
+&quot;type&quot;: &quot;usageAlert&quot;
+},
+{
+&quot;alert_destinations&quot;: {
+&quot;all_admins&quot;: false,
+&quot;emails&quot;: [],
+&quot;http_server_ids&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {},
+&quot;type&quot;: &quot;weeklyPresence&quot;
+}
+],
+&quot;default_destinations&quot;: {
+&quot;all_admins&quot;: true,
+&quot;emails&quot;: [],
+&quot;http_server_ids&quot;: [],
+&quot;snmp&quot;: false
+}
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-5twcgkjd-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:26" name="[localhost] meraki: meraki_alert : debug var=query_all" time="0.090758">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;query_all&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;alerts&quot;: [
+                {
+                    &quot;alert_destinations&quot;: {
+                        &quot;all_admins&quot;: false,
+                        &quot;emails&quot;: [],
+                        &quot;http_server_ids&quot;: [],
+                        &quot;snmp&quot;: false
+                    },
+                    &quot;enabled&quot;: false,
+                    &quot;filters&quot;: {
+                        &quot;timeout&quot;: 60
+                    },
+                    &quot;type&quot;: &quot;gatewayDown&quot;
+                },
+                {
+                    &quot;alert_destinations&quot;: {
+                        &quot;all_admins&quot;: false,
+                        &quot;emails&quot;: [],
+                        &quot;http_server_ids&quot;: [],
+                        &quot;snmp&quot;: false
+                    },
+                    &quot;enabled&quot;: false,
+                    &quot;filters&quot;: {},
+                    &quot;type&quot;: &quot;gatewayToRepeater&quot;
+                },
+                {
+                    &quot;alert_destinations&quot;: {
+                        &quot;all_admins&quot;: false,
+                        &quot;emails&quot;: [],
+                        &quot;http_server_ids&quot;: [],
+                        &quot;snmp&quot;: false
+                    },
+                    &quot;enabled&quot;: false,
+                    &quot;filters&quot;: {
+                        &quot;timeout&quot;: 60
+                    },
+                    &quot;type&quot;: &quot;repeaterDown&quot;
+                },
+                {
+                    &quot;alert_destinations&quot;: {
+                        &quot;all_admins&quot;: false,
+                        &quot;emails&quot;: [],
+                        &quot;http_server_ids&quot;: [],
+                        &quot;snmp&quot;: false
+                    },
+                    &quot;enabled&quot;: false,
+                    &quot;filters&quot;: {},
+                    &quot;type&quot;: &quot;rogueAp&quot;
+                },
+                {
+                    &quot;alert_destinations&quot;: {
+                        &quot;all_admins&quot;: false,
+                        &quot;emails&quot;: [],
+                        &quot;http_server_ids&quot;: [],
+                        &quot;snmp&quot;: false
+                    },
+                    &quot;enabled&quot;: false,
+                    &quot;filters&quot;: {},
+                    &quot;type&quot;: &quot;settingsChanged&quot;
+                },
+                {
+                    &quot;alert_destinations&quot;: {
+                        &quot;all_admins&quot;: false,
+                        &quot;emails&quot;: [],
+                        &quot;http_server_ids&quot;: [],
+                        &quot;snmp&quot;: false
+                    },
+                    &quot;enabled&quot;: false,
+                    &quot;filters&quot;: {},
+                    &quot;type&quot;: &quot;vpnConnectivityChange&quot;
+                },
+                {
+                    &quot;alert_destinations&quot;: {
+                        &quot;all_admins&quot;: false,
+                        &quot;emails&quot;: [],
+                        &quot;http_server_ids&quot;: [],
+                        &quot;snmp&quot;: false
+                    },
+                    &quot;enabled&quot;: false,
+                    &quot;filters&quot;: {
+                        &quot;period&quot;: 1200,
+                        &quot;threshold&quot;: 104857600
+                    },
+                    &quot;type&quot;: &quot;usageAlert&quot;
+                },
+                {
+                    &quot;alert_destinations&quot;: {
+                        &quot;all_admins&quot;: false,
+                        &quot;emails&quot;: [],
+                        &quot;http_server_ids&quot;: [],
+                        &quot;snmp&quot;: false
+                    },
+                    &quot;enabled&quot;: false,
+                    &quot;filters&quot;: {},
+                    &quot;type&quot;: &quot;weeklyPresence&quot;
+                }
+            ],
+            &quot;default_destinations&quot;: {
+                &quot;all_admins&quot;: true,
+                &quot;emails&quot;: [],
+                &quot;http_server_ids&quot;: [],
+                &quot;snmp&quot;: false
+            }
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-5twcgkjd-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:29" name="[localhost] meraki: meraki_alert : assert that=['query_all.data is defined']" time="0.089444">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-5twcgkjd-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:39" name="[localhost] meraki: meraki_alert : Delete network auth_key={{ auth_key }}, state=absent, org_name={{test_org_name}}, net_name=IntTestNetworkWireless" time="7.574816">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

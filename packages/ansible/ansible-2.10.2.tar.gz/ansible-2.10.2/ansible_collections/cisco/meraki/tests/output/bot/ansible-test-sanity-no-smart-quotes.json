@@ -1,0 +1,10 @@
+{
+    "docs": "https://docs.ansible.com/ansible/2.9/dev_guide/testing/sanity/no-smart-quotes.html",
+    "results": [
+        {
+            "message": "The test `ansible-test sanity --test no-smart-quotes` [[explain](https://docs.ansible.com/ansible/2.9/dev_guide/testing/sanity/no-smart-quotes.html)] failed with 6 errors:",
+            "output": "venv/lib/python3.7/site-packages/pip/_vendor/distlib/compat.py:335:65: use ASCII quotes `'` and `\"` instead of Unicode quotes\nvenv/lib/python3.7/site-packages/pip/_vendor/lockfile/pidlockfile.py:155:37: use ASCII quotes `'` and `\"` instead of Unicode quotes\nvenv/lib/python3.7/site-packages/pip/_vendor/webencodings/__init__.py:64:21: use ASCII quotes `'` and `\"` instead of Unicode quotes\nvenv/lib/python3.7/site-packages/pip/_vendor/webencodings/__init__.py:248:5: use ASCII quotes `'` and `\"` instead of Unicode quotes\nvenv/lib/python3.7/site-packages/pip/_vendor/webencodings/__init__.py:274:5: use ASCII quotes `'` and `\"` instead of Unicode quotes\nvenv/lib/python3.7/site-packages/pip/_vendor/webencodings/__init__.py:325:5: use ASCII quotes `'` and `\"` instead of Unicode quotes"
+        }
+    ],
+    "verified": false
+}

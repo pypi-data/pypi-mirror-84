@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="3" time="6.472807884216309">
+	<testsuite disabled="0" errors="0" failures="0" name="meraki_ms_ospf-372f30n7" skipped="0" tests="3" time="6.472807884216309">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-5hj5zl2y-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:7" name="[localhost] meraki: meraki_ms_ospf : Create network with type switch auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, type=switch, timezone=America/Chicago" time="2.891495">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685887&quot;,
+&quot;name&quot;: &quot;IntTestNetworkSwitch&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;switch&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkSw/n/pqmb_bUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-5hj5zl2y-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:27" name="[localhost] meraki: meraki_ms_ospf : Query OSPF settings auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, state=query" time="3.484293">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enabled&quot;: false
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-5hj5zl2y-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:36" name="[localhost] meraki: meraki_ms_ospf : debug var=query_all" time="0.097020">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;query_all&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;enabled&quot;: false
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

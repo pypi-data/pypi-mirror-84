@@ -1,0 +1,10 @@
+{
+    "docs": "https://docs.ansible.com/ansible/2.10/dev_guide/testing/sanity/pep8.html", 
+    "results": [
+        {
+            "message": "The test `ansible-test sanity --test pep8` [[explain](https://docs.ansible.com/ansible/2.10/dev_guide/testing/sanity/pep8.html)] failed with 3 errors:", 
+            "output": "plugins/modules/meraki_mx_l2_interface.py:141:26: W291: trailing whitespace\nplugins/modules/meraki_mx_l2_interface.py:180:1: E302: expected 2 blank lines, found 1\nplugins/modules/meraki_mx_l2_interface.py:197:9: E123: closing bracket does not match indentation of opening bracket's line"
+        }
+    ], 
+    "verified": false
+}

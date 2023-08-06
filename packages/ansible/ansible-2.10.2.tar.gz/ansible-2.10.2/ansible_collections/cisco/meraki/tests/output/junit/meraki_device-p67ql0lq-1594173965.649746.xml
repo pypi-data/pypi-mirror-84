@@ -1,0 +1,939 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="33" time="80.80963444709778">
+	<testsuite disabled="0" errors="0" failures="0" name="meraki_device-p67ql0lq" skipped="0" tests="33" time="80.80963444709778">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:17" name="[localhost] meraki: meraki_device : Create network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, type=appliance, state=present" time="2.965196">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685426&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/0bpMtaUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:26" name="[localhost] meraki: meraki_device : set_fact net_id={{net_info.data.id}}" time="0.089261">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_id&quot;: &quot;N_624874448297685426&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:29" name="[localhost] meraki: meraki_device : Query status of all devices in an organization auth_key={{auth_key}}, org_name={{test_org_name}}, state=query" time="3.867383">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: [
+{
+&quot;claimed_at&quot;: &quot;2020-03-02T02:51:02.950870Z&quot;,
+&quot;mac&quot;: &quot;0c:8d:db:5c:96:54&quot;,
+&quot;model&quot;: &quot;vMX100&quot;,
+&quot;name&quot;: &quot;&quot;,
+&quot;network_id&quot;: null,
+&quot;order_number&quot;: null,
+&quot;serial&quot;: &quot;Q2AZ-2T5F-RKFP&quot;
+},
+{
+&quot;claimed_at&quot;: &quot;2020-03-02T02:51:28.607884Z&quot;,
+&quot;mac&quot;: &quot;0c:8d:db:5c:3e:1d&quot;,
+&quot;model&quot;: &quot;vMX100&quot;,
+&quot;name&quot;: &quot;&quot;,
+&quot;network_id&quot;: null,
+&quot;order_number&quot;: null,
+&quot;serial&quot;: &quot;Q2AZ-E39X-URFT&quot;
+},
+{
+&quot;claimed_at&quot;: &quot;2019-11-27T22:37:38.808422Z&quot;,
+&quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+&quot;model&quot;: &quot;MX60&quot;,
+&quot;name&quot;: &quot;mx60&quot;,
+&quot;network_id&quot;: null,
+&quot;order_number&quot;: &quot;4C4666277&quot;,
+&quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;
+},
+{
+&quot;claimed_at&quot;: &quot;2015-07-25T20:29:44.884791Z&quot;,
+&quot;mac&quot;: &quot;00:18:0a:b2:b0:8f&quot;,
+&quot;model&quot;: &quot;MS220-8P&quot;,
+&quot;name&quot;: &quot;&quot;,
+&quot;network_id&quot;: &quot;N_624874448297683727&quot;,
+&quot;order_number&quot;: &quot;4C4666277&quot;,
+&quot;serial&quot;: &quot;Q2HP-2C6E-GTLD&quot;
+},
+{
+&quot;claimed_at&quot;: &quot;2019-06-12T00:47:13.601849Z&quot;,
+&quot;mac&quot;: &quot;e0:cb:bc:90:1e:06&quot;,
+&quot;model&quot;: &quot;MR42&quot;,
+&quot;name&quot;: &quot;&quot;,
+&quot;network_id&quot;: null,
+&quot;order_number&quot;: &quot;4C3954709&quot;,
+&quot;serial&quot;: &quot;Q2KD-83UG-JL8X&quot;
+},
+{
+&quot;claimed_at&quot;: &quot;2020-02-28T20:29:01.980414Z&quot;,
+&quot;mac&quot;: &quot;4c:c8:a1:03:00:04&quot;,
+&quot;model&quot;: &quot;MX450&quot;,
+&quot;name&quot;: &quot;&quot;,
+&quot;network_id&quot;: &quot;N_624874448297683435&quot;,
+&quot;order_number&quot;: null,
+&quot;serial&quot;: &quot;QBSA-5UDA-KXNB&quot;
+},
+{
+&quot;claimed_at&quot;: &quot;2020-02-28T20:29:18.031333Z&quot;,
+&quot;mac&quot;: &quot;4c:c8:a1:03:00:03&quot;,
+&quot;model&quot;: &quot;MX450&quot;,
+&quot;name&quot;: &quot;&quot;,
+&quot;network_id&quot;: &quot;N_624874448297683434&quot;,
+&quot;order_number&quot;: null,
+&quot;serial&quot;: &quot;QBSA-N3KM-CZNY&quot;
+},
+{
+&quot;claimed_at&quot;: &quot;2019-12-27T21:37:34.049249Z&quot;,
+&quot;mac&quot;: &quot;4c:c8:a1:09:00:1e&quot;,
+&quot;model&quot;: &quot;MS425-32&quot;,
+&quot;name&quot;: &quot;&quot;,
+&quot;network_id&quot;: null,
+&quot;order_number&quot;: null,
+&quot;serial&quot;: &quot;QBSB-3UEA-PDS8&quot;
+},
+{
+&quot;claimed_at&quot;: &quot;2019-12-27T21:37:34.055881Z&quot;,
+&quot;mac&quot;: &quot;4c:c8:a1:09:00:1f&quot;,
+&quot;model&quot;: &quot;MS425-32&quot;,
+&quot;name&quot;: &quot;&quot;,
+&quot;network_id&quot;: &quot;N_624874448297683727&quot;,
+&quot;order_number&quot;: null,
+&quot;serial&quot;: &quot;QBSB-4UDD-YPT9&quot;
+},
+{
+&quot;claimed_at&quot;: &quot;2019-12-27T21:37:34.078501Z&quot;,
+&quot;mac&quot;: &quot;4c:c8:a1:09:00:22&quot;,
+&quot;model&quot;: &quot;MS425-32&quot;,
+&quot;name&quot;: null,
+&quot;network_id&quot;: null,
+&quot;order_number&quot;: null,
+&quot;serial&quot;: &quot;QBSB-8UF6-RBK4&quot;
+},
+{
+&quot;claimed_at&quot;: &quot;2019-12-27T21:37:34.003555Z&quot;,
+&quot;mac&quot;: &quot;4c:c8:a1:09:00:1d&quot;,
+&quot;model&quot;: &quot;MS425-32&quot;,
+&quot;name&quot;: &quot;&quot;,
+&quot;network_id&quot;: &quot;N_624874448297683727&quot;,
+&quot;order_number&quot;: null,
+&quot;serial&quot;: &quot;QBSB-BPR6-PRER&quot;
+},
+{
+&quot;claimed_at&quot;: &quot;2019-12-27T21:37:34.062483Z&quot;,
+&quot;mac&quot;: &quot;4c:c8:a1:09:00:20&quot;,
+&quot;model&quot;: &quot;MS425-32&quot;,
+&quot;name&quot;: &quot;&quot;,
+&quot;network_id&quot;: &quot;N_624874448297683727&quot;,
+&quot;order_number&quot;: null,
+&quot;serial&quot;: &quot;QBSB-D75G-PXCG&quot;
+},
+{
+&quot;claimed_at&quot;: &quot;2019-12-27T11:49:42.661823Z&quot;,
+&quot;mac&quot;: &quot;4c:c8:a1:09:00:63&quot;,
+&quot;model&quot;: &quot;MS425-32&quot;,
+&quot;name&quot;: &quot;&quot;,
+&quot;network_id&quot;: &quot;N_624874448297683727&quot;,
+&quot;order_number&quot;: null,
+&quot;serial&quot;: &quot;QBSB-VLNE-E299&quot;
+},
+{
+&quot;claimed_at&quot;: &quot;2019-12-27T21:37:34.069032Z&quot;,
+&quot;mac&quot;: &quot;4c:c8:a1:09:00:21&quot;,
+&quot;model&quot;: &quot;MS425-32&quot;,
+&quot;name&quot;: null,
+&quot;network_id&quot;: null,
+&quot;order_number&quot;: null,
+&quot;serial&quot;: &quot;QBSB-W5QZ-5AXN&quot;
+},
+{
+&quot;claimed_at&quot;: &quot;2020-03-20T15:15:30.832553Z&quot;,
+&quot;mac&quot;: &quot;4c:c8:a1:0c:00:02&quot;,
+&quot;model&quot;: &quot;MR52&quot;,
+&quot;name&quot;: &quot;abc123&quot;,
+&quot;network_id&quot;: &quot;N_624874448297662962&quot;,
+&quot;order_number&quot;: null,
+&quot;serial&quot;: &quot;QBSC-HJSL-A64F&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:37" name="[localhost] meraki: meraki_device : debug msg={{query_device_org}}" time="0.096124">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: [
+            {
+                &quot;claimed_at&quot;: &quot;2020-03-02T02:51:02.950870Z&quot;,
+                &quot;mac&quot;: &quot;0c:8d:db:5c:96:54&quot;,
+                &quot;model&quot;: &quot;vMX100&quot;,
+                &quot;name&quot;: &quot;&quot;,
+                &quot;network_id&quot;: null,
+                &quot;order_number&quot;: null,
+                &quot;serial&quot;: &quot;Q2AZ-2T5F-RKFP&quot;
+            },
+            {
+                &quot;claimed_at&quot;: &quot;2020-03-02T02:51:28.607884Z&quot;,
+                &quot;mac&quot;: &quot;0c:8d:db:5c:3e:1d&quot;,
+                &quot;model&quot;: &quot;vMX100&quot;,
+                &quot;name&quot;: &quot;&quot;,
+                &quot;network_id&quot;: null,
+                &quot;order_number&quot;: null,
+                &quot;serial&quot;: &quot;Q2AZ-E39X-URFT&quot;
+            },
+            {
+                &quot;claimed_at&quot;: &quot;2019-11-27T22:37:38.808422Z&quot;,
+                &quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+                &quot;model&quot;: &quot;MX60&quot;,
+                &quot;name&quot;: &quot;mx60&quot;,
+                &quot;network_id&quot;: null,
+                &quot;order_number&quot;: &quot;4C4666277&quot;,
+                &quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;
+            },
+            {
+                &quot;claimed_at&quot;: &quot;2015-07-25T20:29:44.884791Z&quot;,
+                &quot;mac&quot;: &quot;00:18:0a:b2:b0:8f&quot;,
+                &quot;model&quot;: &quot;MS220-8P&quot;,
+                &quot;name&quot;: &quot;&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297683727&quot;,
+                &quot;order_number&quot;: &quot;4C4666277&quot;,
+                &quot;serial&quot;: &quot;Q2HP-2C6E-GTLD&quot;
+            },
+            {
+                &quot;claimed_at&quot;: &quot;2019-06-12T00:47:13.601849Z&quot;,
+                &quot;mac&quot;: &quot;e0:cb:bc:90:1e:06&quot;,
+                &quot;model&quot;: &quot;MR42&quot;,
+                &quot;name&quot;: &quot;&quot;,
+                &quot;network_id&quot;: null,
+                &quot;order_number&quot;: &quot;4C3954709&quot;,
+                &quot;serial&quot;: &quot;Q2KD-83UG-JL8X&quot;
+            },
+            {
+                &quot;claimed_at&quot;: &quot;2020-02-28T20:29:01.980414Z&quot;,
+                &quot;mac&quot;: &quot;4c:c8:a1:03:00:04&quot;,
+                &quot;model&quot;: &quot;MX450&quot;,
+                &quot;name&quot;: &quot;&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297683435&quot;,
+                &quot;order_number&quot;: null,
+                &quot;serial&quot;: &quot;QBSA-5UDA-KXNB&quot;
+            },
+            {
+                &quot;claimed_at&quot;: &quot;2020-02-28T20:29:18.031333Z&quot;,
+                &quot;mac&quot;: &quot;4c:c8:a1:03:00:03&quot;,
+                &quot;model&quot;: &quot;MX450&quot;,
+                &quot;name&quot;: &quot;&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297683434&quot;,
+                &quot;order_number&quot;: null,
+                &quot;serial&quot;: &quot;QBSA-N3KM-CZNY&quot;
+            },
+            {
+                &quot;claimed_at&quot;: &quot;2019-12-27T21:37:34.049249Z&quot;,
+                &quot;mac&quot;: &quot;4c:c8:a1:09:00:1e&quot;,
+                &quot;model&quot;: &quot;MS425-32&quot;,
+                &quot;name&quot;: &quot;&quot;,
+                &quot;network_id&quot;: null,
+                &quot;order_number&quot;: null,
+                &quot;serial&quot;: &quot;QBSB-3UEA-PDS8&quot;
+            },
+            {
+                &quot;claimed_at&quot;: &quot;2019-12-27T21:37:34.055881Z&quot;,
+                &quot;mac&quot;: &quot;4c:c8:a1:09:00:1f&quot;,
+                &quot;model&quot;: &quot;MS425-32&quot;,
+                &quot;name&quot;: &quot;&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297683727&quot;,
+                &quot;order_number&quot;: null,
+                &quot;serial&quot;: &quot;QBSB-4UDD-YPT9&quot;
+            },
+            {
+                &quot;claimed_at&quot;: &quot;2019-12-27T21:37:34.078501Z&quot;,
+                &quot;mac&quot;: &quot;4c:c8:a1:09:00:22&quot;,
+                &quot;model&quot;: &quot;MS425-32&quot;,
+                &quot;name&quot;: null,
+                &quot;network_id&quot;: null,
+                &quot;order_number&quot;: null,
+                &quot;serial&quot;: &quot;QBSB-8UF6-RBK4&quot;
+            },
+            {
+                &quot;claimed_at&quot;: &quot;2019-12-27T21:37:34.003555Z&quot;,
+                &quot;mac&quot;: &quot;4c:c8:a1:09:00:1d&quot;,
+                &quot;model&quot;: &quot;MS425-32&quot;,
+                &quot;name&quot;: &quot;&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297683727&quot;,
+                &quot;order_number&quot;: null,
+                &quot;serial&quot;: &quot;QBSB-BPR6-PRER&quot;
+            },
+            {
+                &quot;claimed_at&quot;: &quot;2019-12-27T21:37:34.062483Z&quot;,
+                &quot;mac&quot;: &quot;4c:c8:a1:09:00:20&quot;,
+                &quot;model&quot;: &quot;MS425-32&quot;,
+                &quot;name&quot;: &quot;&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297683727&quot;,
+                &quot;order_number&quot;: null,
+                &quot;serial&quot;: &quot;QBSB-D75G-PXCG&quot;
+            },
+            {
+                &quot;claimed_at&quot;: &quot;2019-12-27T11:49:42.661823Z&quot;,
+                &quot;mac&quot;: &quot;4c:c8:a1:09:00:63&quot;,
+                &quot;model&quot;: &quot;MS425-32&quot;,
+                &quot;name&quot;: &quot;&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297683727&quot;,
+                &quot;order_number&quot;: null,
+                &quot;serial&quot;: &quot;QBSB-VLNE-E299&quot;
+            },
+            {
+                &quot;claimed_at&quot;: &quot;2019-12-27T21:37:34.069032Z&quot;,
+                &quot;mac&quot;: &quot;4c:c8:a1:09:00:21&quot;,
+                &quot;model&quot;: &quot;MS425-32&quot;,
+                &quot;name&quot;: null,
+                &quot;network_id&quot;: null,
+                &quot;order_number&quot;: null,
+                &quot;serial&quot;: &quot;QBSB-W5QZ-5AXN&quot;
+            },
+            {
+                &quot;claimed_at&quot;: &quot;2020-03-20T15:15:30.832553Z&quot;,
+                &quot;mac&quot;: &quot;4c:c8:a1:0c:00:02&quot;,
+                &quot;model&quot;: &quot;MR52&quot;,
+                &quot;name&quot;: &quot;abc123&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297662962&quot;,
+                &quot;order_number&quot;: null,
+                &quot;serial&quot;: &quot;QBSC-HJSL-A64F&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:40" name="[localhost] meraki: meraki_device : Claim a device into a network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, serials={{serial}}, state=present" time="7.640434">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: [
+{}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:50" name="[localhost] meraki: meraki_device : debug msg={{claim_device}}" time="0.094344">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: [
+            {}
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:53" name="[localhost] meraki: meraki_device : assert that=['claim_device.changed == true']" time="0.094140">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:57" name="[localhost] meraki: meraki_device : Query all devices in one network by network ID auth_key={{auth_key}}, org_name={{test_org_name}}, net_id={{net_id}}, state=query" time="3.874682">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: [
+{
+&quot;address&quot;: &quot;1060 W. Addison St., Chicago, IL&quot;,
+&quot;firmware&quot;: &quot;Not running configured version&quot;,
+&quot;floor_plan_id&quot;: null,
+&quot;lat&quot;: 41.948038,
+&quot;lng&quot;: -87.65568,
+&quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+&quot;model&quot;: &quot;MX60&quot;,
+&quot;name&quot;: &quot;mx60&quot;,
+&quot;network_id&quot;: &quot;N_624874448297685426&quot;,
+&quot;notes&quot;: &quot;Test device notes&quot;,
+&quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;,
+&quot;tags&quot;: [
+&quot;recently-added&quot;
+],
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/0bpMtaUb/manage/nodes/new_list/4321982&quot;,
+&quot;wan1_ip&quot;: null,
+&quot;wan2_ip&quot;: null
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:66" name="[localhost] meraki: meraki_device : debug msg={{query_one_net_id}}" time="0.098573">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: [
+            {
+                &quot;address&quot;: &quot;1060 W. Addison St., Chicago, IL&quot;,
+                &quot;firmware&quot;: &quot;Not running configured version&quot;,
+                &quot;floor_plan_id&quot;: null,
+                &quot;lat&quot;: 41.948038,
+                &quot;lng&quot;: -87.65568,
+                &quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+                &quot;model&quot;: &quot;MX60&quot;,
+                &quot;name&quot;: &quot;mx60&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297685426&quot;,
+                &quot;notes&quot;: &quot;Test device notes&quot;,
+                &quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;,
+                &quot;tags&quot;: [
+                    &quot;recently-added&quot;
+                ],
+                &quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/0bpMtaUb/manage/nodes/new_list/4321982&quot;,
+                &quot;wan1_ip&quot;: null,
+                &quot;wan2_ip&quot;: null
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:69" name="[localhost] meraki: meraki_device : Query all devices in one network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, state=query" time="4.571881">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: [
+{
+&quot;address&quot;: &quot;1060 W. Addison St., Chicago, IL&quot;,
+&quot;firmware&quot;: &quot;Not running configured version&quot;,
+&quot;floor_plan_id&quot;: null,
+&quot;lat&quot;: 41.948038,
+&quot;lng&quot;: -87.65568,
+&quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+&quot;model&quot;: &quot;MX60&quot;,
+&quot;name&quot;: &quot;mx60&quot;,
+&quot;network_id&quot;: &quot;N_624874448297685426&quot;,
+&quot;notes&quot;: &quot;Test device notes&quot;,
+&quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;,
+&quot;tags&quot;: [
+&quot;recently-added&quot;
+],
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/0bpMtaUb/manage/nodes/new_list/4321982&quot;,
+&quot;wan1_ip&quot;: null,
+&quot;wan2_ip&quot;: null
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:78" name="[localhost] meraki: meraki_device : debug msg={{query_one_net}}" time="0.094975">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: [
+            {
+                &quot;address&quot;: &quot;1060 W. Addison St., Chicago, IL&quot;,
+                &quot;firmware&quot;: &quot;Not running configured version&quot;,
+                &quot;floor_plan_id&quot;: null,
+                &quot;lat&quot;: 41.948038,
+                &quot;lng&quot;: -87.65568,
+                &quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+                &quot;model&quot;: &quot;MX60&quot;,
+                &quot;name&quot;: &quot;mx60&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297685426&quot;,
+                &quot;notes&quot;: &quot;Test device notes&quot;,
+                &quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;,
+                &quot;tags&quot;: [
+                    &quot;recently-added&quot;
+                ],
+                &quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/0bpMtaUb/manage/nodes/new_list/4321982&quot;,
+                &quot;wan1_ip&quot;: null,
+                &quot;wan2_ip&quot;: null
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:81" name="[localhost] meraki: meraki_device : Query device by serial auth_key={{auth_key}}, org_name={{test_org_name}}, serial={{serial}}, state=query" time="4.678009">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;claimed_at&quot;: &quot;2019-11-27T22:37:38.808422Z&quot;,
+&quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+&quot;model&quot;: &quot;MX60&quot;,
+&quot;name&quot;: &quot;mx60&quot;,
+&quot;network_id&quot;: &quot;N_624874448297685426&quot;,
+&quot;order_number&quot;: &quot;4C4666277&quot;,
+&quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:90" name="[localhost] meraki: meraki_device : debug msg={{query_serial_no_net}}" time="0.093512">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;claimed_at&quot;: &quot;2019-11-27T22:37:38.808422Z&quot;,
+            &quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+            &quot;model&quot;: &quot;MX60&quot;,
+            &quot;name&quot;: &quot;mx60&quot;,
+            &quot;network_id&quot;: &quot;N_624874448297685426&quot;,
+            &quot;order_number&quot;: &quot;4C4666277&quot;,
+            &quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:93" name="[localhost] meraki: meraki_device : Query device by serial auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, serial={{serial}}, state=query" time="4.653797">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: [
+{
+&quot;address&quot;: &quot;1060 W. Addison St., Chicago, IL&quot;,
+&quot;firmware&quot;: &quot;Not running configured version&quot;,
+&quot;floor_plan_id&quot;: null,
+&quot;lat&quot;: 41.948038,
+&quot;lng&quot;: -87.65568,
+&quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+&quot;model&quot;: &quot;MX60&quot;,
+&quot;name&quot;: &quot;mx60&quot;,
+&quot;network_id&quot;: &quot;N_624874448297685426&quot;,
+&quot;notes&quot;: &quot;Test device notes&quot;,
+&quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;,
+&quot;tags&quot;: [
+&quot;recently-added&quot;
+],
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/0bpMtaUb/manage/nodes/new_list/4321982&quot;,
+&quot;wan1_ip&quot;: null,
+&quot;wan2_ip&quot;: null
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:103" name="[localhost] meraki: meraki_device : debug msg={{query_serial}}" time="0.093728">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: [
+            {
+                &quot;address&quot;: &quot;1060 W. Addison St., Chicago, IL&quot;,
+                &quot;firmware&quot;: &quot;Not running configured version&quot;,
+                &quot;floor_plan_id&quot;: null,
+                &quot;lat&quot;: 41.948038,
+                &quot;lng&quot;: -87.65568,
+                &quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+                &quot;model&quot;: &quot;MX60&quot;,
+                &quot;name&quot;: &quot;mx60&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297685426&quot;,
+                &quot;notes&quot;: &quot;Test device notes&quot;,
+                &quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;,
+                &quot;tags&quot;: [
+                    &quot;recently-added&quot;
+                ],
+                &quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/0bpMtaUb/manage/nodes/new_list/4321982&quot;,
+                &quot;wan1_ip&quot;: null,
+                &quot;wan2_ip&quot;: null
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:106" name="[localhost] meraki: meraki_device : assert that=['query_serial.changed == False']" time="0.093221">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:110" name="[localhost] meraki: meraki_device : Query uplink information for a device auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, serial={{serial}}, state=query, query=uplink" time="5.541336">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;address&quot;: &quot;1060 W. Addison St., Chicago, IL&quot;,
+&quot;firmware&quot;: &quot;Not running configured version&quot;,
+&quot;floor_plan_id&quot;: null,
+&quot;lat&quot;: 41.948038,
+&quot;lng&quot;: -87.65568,
+&quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+&quot;model&quot;: &quot;MX60&quot;,
+&quot;name&quot;: &quot;mx60&quot;,
+&quot;network_id&quot;: &quot;N_624874448297685426&quot;,
+&quot;notes&quot;: &quot;Test device notes&quot;,
+&quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;,
+&quot;tags&quot;: [
+&quot;recently-added&quot;
+],
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/0bpMtaUb/manage/nodes/new_list/4321982&quot;,
+&quot;wan1_ip&quot;: null,
+&quot;wan2_ip&quot;: null
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:121" name="[localhost] meraki: meraki_device : debug msg={{query_serial_uplink}}" time="0.093127">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;address&quot;: &quot;1060 W. Addison St., Chicago, IL&quot;,
+            &quot;firmware&quot;: &quot;Not running configured version&quot;,
+            &quot;floor_plan_id&quot;: null,
+            &quot;lat&quot;: 41.948038,
+            &quot;lng&quot;: -87.65568,
+            &quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+            &quot;model&quot;: &quot;MX60&quot;,
+            &quot;name&quot;: &quot;mx60&quot;,
+            &quot;network_id&quot;: &quot;N_624874448297685426&quot;,
+            &quot;notes&quot;: &quot;Test device notes&quot;,
+            &quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;,
+            &quot;tags&quot;: [
+                &quot;recently-added&quot;
+            ],
+            &quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/0bpMtaUb/manage/nodes/new_list/4321982&quot;,
+            &quot;wan1_ip&quot;: null,
+            &quot;wan2_ip&quot;: null
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:124" name="[localhost] meraki: meraki_device : Query LLDP/CDP information about a device auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, serial={{serial}}, lldp_cdp_timespan=6000, state=query, query=lldp_cdp" time="5.692100">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: [
+{
+&quot;address&quot;: &quot;1060 W. Addison St., Chicago, IL&quot;,
+&quot;firmware&quot;: &quot;Not running configured version&quot;,
+&quot;floor_plan_id&quot;: null,
+&quot;lat&quot;: 41.948038,
+&quot;lng&quot;: -87.65568,
+&quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+&quot;model&quot;: &quot;MX60&quot;,
+&quot;name&quot;: &quot;mx60&quot;,
+&quot;network_id&quot;: &quot;N_624874448297685426&quot;,
+&quot;notes&quot;: &quot;Test device notes&quot;,
+&quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;,
+&quot;tags&quot;: [
+&quot;recently-added&quot;
+],
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/0bpMtaUb/manage/nodes/new_list/4321982&quot;,
+&quot;wan1_ip&quot;: null,
+&quot;wan2_ip&quot;: null
+},
+{
+&quot;ports&quot;: {
+&quot;port5&quot;: {
+&quot;cdp&quot;: {
+&quot;address&quot;: &quot;192.168.128.3&quot;,
+&quot;device_id&quot;: &quot;00180ab2b08f&quot;,
+&quot;port_id&quot;: &quot;Port 8&quot;,
+&quot;source_port&quot;: &quot;port5&quot;
+},
+&quot;lldp&quot;: {
+&quot;management_address&quot;: &quot;192.168.128.3&quot;,
+&quot;port_id&quot;: &quot;8&quot;,
+&quot;source_port&quot;: &quot;port5&quot;,
+&quot;system_name&quot;: &quot;Meraki MS220-8P - Home - Switch&quot;
+}
+},
+&quot;wan0&quot;: {
+&quot;lldp&quot;: {
+&quot;port_id&quot;: &quot;0/9&quot;,
+&quot;source_port&quot;: &quot;wan0&quot;,
+&quot;system_name&quot;: &quot;SW-16P&quot;
+}
+}
+},
+&quot;source_mac&quot;: &quot;00:18:0a:41:f2:be&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:136" name="[localhost] meraki: meraki_device : debug msg={{query_serial_lldp_cdp}}" time="0.095089">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: [
+            {
+                &quot;address&quot;: &quot;1060 W. Addison St., Chicago, IL&quot;,
+                &quot;firmware&quot;: &quot;Not running configured version&quot;,
+                &quot;floor_plan_id&quot;: null,
+                &quot;lat&quot;: 41.948038,
+                &quot;lng&quot;: -87.65568,
+                &quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+                &quot;model&quot;: &quot;MX60&quot;,
+                &quot;name&quot;: &quot;mx60&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297685426&quot;,
+                &quot;notes&quot;: &quot;Test device notes&quot;,
+                &quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;,
+                &quot;tags&quot;: [
+                    &quot;recently-added&quot;
+                ],
+                &quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/0bpMtaUb/manage/nodes/new_list/4321982&quot;,
+                &quot;wan1_ip&quot;: null,
+                &quot;wan2_ip&quot;: null
+            },
+            {
+                &quot;ports&quot;: {
+                    &quot;port5&quot;: {
+                        &quot;cdp&quot;: {
+                            &quot;address&quot;: &quot;192.168.128.3&quot;,
+                            &quot;device_id&quot;: &quot;00180ab2b08f&quot;,
+                            &quot;port_id&quot;: &quot;Port 8&quot;,
+                            &quot;source_port&quot;: &quot;port5&quot;
+                        },
+                        &quot;lldp&quot;: {
+                            &quot;management_address&quot;: &quot;192.168.128.3&quot;,
+                            &quot;port_id&quot;: &quot;8&quot;,
+                            &quot;source_port&quot;: &quot;port5&quot;,
+                            &quot;system_name&quot;: &quot;Meraki MS220-8P - Home - Switch&quot;
+                        }
+                    },
+                    &quot;wan0&quot;: {
+                        &quot;lldp&quot;: {
+                            &quot;port_id&quot;: &quot;0/9&quot;,
+                            &quot;source_port&quot;: &quot;wan0&quot;,
+                            &quot;system_name&quot;: &quot;SW-16P&quot;
+                        }
+                    }
+                },
+                &quot;source_mac&quot;: &quot;00:18:0a:41:f2:be&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:139" name="[localhost] meraki: meraki_device : Query a device by hostname auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, hostname=test-hostname, state=query" time="4.537632">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:149" name="[localhost] meraki: meraki_device : debug msg={{query_hostname}}" time="0.095211">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:152" name="[localhost] meraki: meraki_device : Query a device by model auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, model=MR26, state=query" time="4.622193">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: [],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:162" name="[localhost] meraki: meraki_device : debug msg={{query_model}}" time="0.103346">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: [],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:165" name="[localhost] meraki: meraki_device : Change device name for future test auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, serial={{serial}}, hostname=mx60-temporary, address=1060 W. Addison St., Chicago, IL, lat=41.948038, lng=-87.65568, tags=recently-added, state=present, move_map_marker=True, note=Test device notes" time="6.968713">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: [
+{
+&quot;address&quot;: &quot;1060 W. Addison St., Chicago, IL&quot;,
+&quot;firmware&quot;: &quot;Not running configured version&quot;,
+&quot;floor_plan_id&quot;: null,
+&quot;lat&quot;: 41.948038,
+&quot;lng&quot;: -87.65568,
+&quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+&quot;model&quot;: &quot;MX60&quot;,
+&quot;name&quot;: &quot;mx60-temporary&quot;,
+&quot;network_id&quot;: &quot;N_624874448297685426&quot;,
+&quot;notes&quot;: &quot;Test device notes&quot;,
+&quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;,
+&quot;tags&quot;: [
+&quot;recently-added&quot;
+],
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/0bpMtaUb/manage/nodes/new_list/4321982&quot;,
+&quot;wan1_ip&quot;: null,
+&quot;wan2_ip&quot;: null
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:182" name="[localhost] meraki: meraki_device : Update a device auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, serial={{serial}}, hostname=mx60, address=1060 W. Addison St., Chicago, IL, lat=41.948038, lng=-87.65568, tags=recently-added, state=present, move_map_marker=True, note=Test device notes" time="7.312172">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: [
+{
+&quot;address&quot;: &quot;1060 W. Addison St., Chicago, IL&quot;,
+&quot;firmware&quot;: &quot;Not running configured version&quot;,
+&quot;floor_plan_id&quot;: null,
+&quot;lat&quot;: 41.948038,
+&quot;lng&quot;: -87.65568,
+&quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+&quot;model&quot;: &quot;MX60&quot;,
+&quot;name&quot;: &quot;mx60&quot;,
+&quot;network_id&quot;: &quot;N_624874448297685426&quot;,
+&quot;notes&quot;: &quot;Test device notes&quot;,
+&quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;,
+&quot;tags&quot;: [
+&quot;recently-added&quot;
+],
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/0bpMtaUb/manage/nodes/new_list/4321982&quot;,
+&quot;wan1_ip&quot;: null,
+&quot;wan2_ip&quot;: null
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:199" name="[localhost] meraki: meraki_device : assert that=['update_device.changed == true', 'update_device.data.0.notes == &quot;Test device notes&quot;', '&quot;1060 W. Addison St., Chicago, IL&quot; in update_device.data.0.address']" time="0.102549">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:205" name="[localhost] meraki: meraki_device : Update a device with idempotency auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, serial={{serial}}, name=mx60, address=1060 W. Addison St., Chicago, IL, lat=41.948038, lng=-87.65568, tags=recently-added, state=present, move_map_marker=True, note=Test device notes" time="5.764219">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;address&quot;: &quot;1060 W. Addison St., Chicago, IL&quot;,
+&quot;firmware&quot;: &quot;Not running configured version&quot;,
+&quot;floor_plan_id&quot;: null,
+&quot;lat&quot;: 41.948038,
+&quot;lng&quot;: -87.65568,
+&quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+&quot;model&quot;: &quot;MX60&quot;,
+&quot;name&quot;: &quot;mx60&quot;,
+&quot;network_id&quot;: &quot;N_624874448297685426&quot;,
+&quot;notes&quot;: &quot;Test device notes&quot;,
+&quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;,
+&quot;tags&quot;: [
+&quot;recently-added&quot;
+],
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/0bpMtaUb/manage/nodes/new_list/4321982&quot;,
+&quot;wan1_ip&quot;: null,
+&quot;wan2_ip&quot;: null
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:222" name="[localhost] meraki: meraki_device : debug msg={{update_device_idempotent}}" time="0.094469">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;address&quot;: &quot;1060 W. Addison St., Chicago, IL&quot;,
+            &quot;firmware&quot;: &quot;Not running configured version&quot;,
+            &quot;floor_plan_id&quot;: null,
+            &quot;lat&quot;: 41.948038,
+            &quot;lng&quot;: -87.65568,
+            &quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+            &quot;model&quot;: &quot;MX60&quot;,
+            &quot;name&quot;: &quot;mx60&quot;,
+            &quot;network_id&quot;: &quot;N_624874448297685426&quot;,
+            &quot;notes&quot;: &quot;Test device notes&quot;,
+            &quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;,
+            &quot;tags&quot;: [
+                &quot;recently-added&quot;
+            ],
+            &quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/0bpMtaUb/manage/nodes/new_list/4321982&quot;,
+            &quot;wan1_ip&quot;: null,
+            &quot;wan2_ip&quot;: null
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:225" name="[localhost] meraki: meraki_device : assert that=['update_device_idempotent.changed == False', 'update_device_idempotent.data is defined']" time="0.099036">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:231" name="[localhost] meraki: meraki_device : Remove a device from a network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, serial={{serial}}, state=absent" time="6.401737">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:241" name="[localhost] meraki: meraki_device : debug msg={{delete_device}}" time="0.095962">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 204
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-wh720f1z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:244" name="[localhost] meraki: meraki_device : assert that=['delete_device.changed == true']" time="0.091484">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

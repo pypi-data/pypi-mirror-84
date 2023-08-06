@@ -1,0 +1,183 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="9" time="11.793758869171143">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_mx_l7_firewall-v19oi5b1" skipped="0" tests="9" time="11.793758869171143">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l7_firewall-0pee0uxf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l7_firewall/tasks/tests.yml:346" name="[localhost] meraki: meraki_mx_l7_firewall : Create firewall rule for allowed countries with idempotency auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=TestNetAppliance, state=present, rules=[{'type': 'blocked_countries', 'countries': ['US', 'FR']}]" time="4.579783">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;rules&quot;: [
+{
+&quot;policy&quot;: &quot;deny&quot;,
+&quot;type&quot;: &quot;blockedCountries&quot;,
+&quot;value&quot;: [
+&quot;US&quot;,
+&quot;FR&quot;
+]
+}
+]
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l7_firewall-0pee0uxf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l7_firewall/tasks/tests.yml:359" name="[localhost] meraki: meraki_mx_l7_firewall : assert that=['allowed_countries_idempotent is not changed']" time="0.106144">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l7_firewall-0pee0uxf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l7_firewall/tasks/tests.yml:363" name="[localhost] meraki: meraki_mx_l7_firewall : Create multiple firewall rules auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=TestNetAppliance, state=present, rules=[{'type': 'application_category', 'application': {'id': 'meraki:layer7/category/27'}}, {'type': 'blocked_countries', 'countries': ['CN']}, {'policy': 'deny', 'type': 'port', 'port': 8080}]" time="5.765200">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;rules&quot;: [
+{
+&quot;application_category&quot;: {
+&quot;id&quot;: &quot;meraki:layer7/category/27&quot;,
+&quot;name&quot;: &quot;Advertising&quot;
+},
+&quot;policy&quot;: &quot;deny&quot;,
+&quot;type&quot;: &quot;applicationCategory&quot;
+},
+{
+&quot;blocked_countries&quot;: [
+&quot;CN&quot;
+],
+&quot;policy&quot;: &quot;deny&quot;,
+&quot;type&quot;: &quot;blockedCountries&quot;
+},
+{
+&quot;policy&quot;: &quot;deny&quot;,
+&quot;port&quot;: &quot;8080&quot;,
+&quot;type&quot;: &quot;port&quot;
+}
+]
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;8080\&quot; (type int) was converted to \&quot;'8080'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l7_firewall-0pee0uxf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l7_firewall/tasks/tests.yml:381" name="[localhost] meraki: meraki_mx_l7_firewall : debug var=multiple_rules" time="0.102091">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;multiple_rules&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;rules&quot;: [
+                {
+                    &quot;application_category&quot;: {
+                        &quot;id&quot;: &quot;meraki:layer7/category/27&quot;,
+                        &quot;name&quot;: &quot;Advertising&quot;
+                    },
+                    &quot;policy&quot;: &quot;deny&quot;,
+                    &quot;type&quot;: &quot;applicationCategory&quot;
+                },
+                {
+                    &quot;blocked_countries&quot;: [
+                        &quot;CN&quot;
+                    ],
+                    &quot;policy&quot;: &quot;deny&quot;,
+                    &quot;type&quot;: &quot;blockedCountries&quot;
+                },
+                {
+                    &quot;policy&quot;: &quot;deny&quot;,
+                    &quot;port&quot;: &quot;8080&quot;,
+                    &quot;type&quot;: &quot;port&quot;
+                }
+            ]
+        },
+        &quot;diff&quot;: {
+            &quot;after&quot;: {
+                &quot;rules&quot;: [
+                    {
+                        &quot;application_category&quot;: {
+                            &quot;id&quot;: &quot;meraki:layer7/category/27&quot;,
+                            &quot;name&quot;: &quot;Advertising&quot;
+                        },
+                        &quot;policy&quot;: &quot;deny&quot;,
+                        &quot;type&quot;: &quot;applicationCategory&quot;
+                    },
+                    {
+                        &quot;blocked_countries&quot;: [
+                            &quot;CN&quot;
+                        ],
+                        &quot;policy&quot;: &quot;deny&quot;,
+                        &quot;type&quot;: &quot;blockedCountries&quot;
+                    },
+                    {
+                        &quot;policy&quot;: &quot;deny&quot;,
+                        &quot;port&quot;: &quot;8080&quot;,
+                        &quot;type&quot;: &quot;port&quot;
+                    }
+                ]
+            },
+            &quot;before&quot;: {
+                &quot;rules&quot;: [
+                    {
+                        &quot;blocked_countries&quot;: [
+                            &quot;US&quot;,
+                            &quot;FR&quot;
+                        ],
+                        &quot;policy&quot;: &quot;deny&quot;,
+                        &quot;type&quot;: &quot;blockedCountries&quot;
+                    }
+                ]
+            }
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;8080\&quot; (type int) was converted to \&quot;'8080'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l7_firewall-0pee0uxf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l7_firewall/tasks/tests.yml:384" name="[localhost] meraki: meraki_mx_l7_firewall : assert that=['multiple_rules.data.rules | length == 3', 'multiple_rules is changed']" time="0.121619">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l7_firewall-0pee0uxf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l7_firewall/tasks/tests.yml:393" name="[localhost] meraki: meraki_mx_l7_firewall : Test blocked_countries incomplete arguments auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=TestNetAppliance, state=present, rules=[{'type': 'blocked_countries'}]" time="0.443272">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;msg&quot;: &quot;countries argument is required when type is blocked_countries.&quot;,
+&quot;response&quot;: null,
+&quot;status&quot;: null
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l7_firewall-0pee0uxf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l7_firewall/tasks/tests.yml:404" name="[localhost] meraki: meraki_mx_l7_firewall : assert that=['error_allowed.msg == &quot;countries argument is required when type is blocked_countries.&quot;']" time="0.118341">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l7_firewall-0pee0uxf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l7_firewall/tasks/tests.yml:408" name="[localhost] meraki: meraki_mx_l7_firewall : Test denied_countries incomplete arguments auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=TestNetAppliance, state=present, rules=[{'type': 'denied_countries'}]" time="0.437148">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;msg&quot;: &quot;value of type must be one of: application, application_category, blocked_countries, host, ip_range, port, allowed_countries, got: denied_countries found in rules&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l7_firewall-0pee0uxf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l7_firewall/tasks/tests.yml:419" name="[localhost] meraki: meraki_mx_l7_firewall : assert that=['error_denied.msg == &quot;countries argument is required when type is denied_countries.&quot;']" time="0.120161">
+			<failure message="Assertion failed" type="failure">{
+    &quot;assertion&quot;: &quot;error_denied.msg == \&quot;countries argument is required when type is denied_countries.\&quot;&quot;,
+    &quot;changed&quot;: false,
+    &quot;evaluated_to&quot;: false,
+    &quot;msg&quot;: &quot;Assertion failed&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

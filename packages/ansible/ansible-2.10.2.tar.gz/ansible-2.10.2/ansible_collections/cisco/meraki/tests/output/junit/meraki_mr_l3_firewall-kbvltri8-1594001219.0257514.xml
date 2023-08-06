@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="0" tests="3" time="5.922075033187866">
+	<testsuite disabled="0" errors="1" failures="0" name="meraki_mr_l3_firewall-kbvltri8" skipped="0" tests="3" time="5.922075033187866">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_l3_firewall-ozku2xav-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_l3_firewall/tasks/main.yml:7" name="[localhost] meraki: meraki_mr_l3_firewall : Create wireless network auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=TestNetWireless, type=wireless" time="3.343180">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685385&quot;,
+&quot;name&quot;: &quot;TestNetWireless&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;wireless&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/TestNetWireless/n/96ReabUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_l3_firewall-ozku2xav-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_l3_firewall/tasks/main.yml:17" name="[localhost] meraki: meraki_mr_l3_firewall : set_fact net={{new_net.data.id}}" time="0.090163">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net&quot;: &quot;N_624874448297685385&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_l3_firewall-ozku2xav-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_l3_firewall/tasks/main.yml:74" name="[localhost] meraki: meraki_mr_l3_firewall : Enable local LAN access with check mode auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_id={{net}}, number=1, allow_lan_access=True" time="2.488731">
+			<error message="IndexError: list index out of range" type="error">Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1594001216.6237428-145-114564111090022/AnsiballZ_meraki_mr_l3_firewall.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1594001216.6237428-145-114564111090022/AnsiballZ_meraki_mr_l3_firewall.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1594001216.6237428-145-114564111090022/AnsiballZ_meraki_mr_l3_firewall.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_mr_l3_firewall', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_mr_l3_firewall_payload_bt8pcgws/ansible_meraki_mr_l3_firewall_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_mr_l3_firewall.py&quot;, line 288, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_mr_l3_firewall_payload_bt8pcgws/ansible_meraki_mr_l3_firewall_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_mr_l3_firewall.py&quot;, line 267, in main
+IndexError: list index out of range
+</error>
+		</testcase>
+	</testsuite>
+</testsuites>

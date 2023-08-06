@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="2" tests="4" time="0.8347165584564209">
+	<testsuite disabled="0" errors="0" failures="2" name="meraki_network-hfsihuqs" skipped="0" tests="4" time="0.8347165584564209">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-8i9jwxgw-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:7" name="[localhost] meraki: meraki_network : Create network without type auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetwork, timezone=America/Chicago" time="0.271441">
+			<system-out>{
+&quot;msg&quot;: &quot;Unable to import ('ansible_collections', 'cisco', 'meraki', 'plugins', 'module_utils', 'network', 'meraki', 'meraki') due to positional argument follows keyword argument&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-8i9jwxgw-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:18" name="[localhost] meraki: meraki_network : assert that=[&quot;create_net_no_type.msg == 'type parameter is required when creating a network.'&quot;]" time="0.091113">
+			<failure message="Assertion failed" type="failure">{
+    &quot;assertion&quot;: &quot;create_net_no_type.msg == 'type parameter is required when creating a network.'&quot;,
+    &quot;changed&quot;: false,
+    &quot;evaluated_to&quot;: false,
+    &quot;msg&quot;: &quot;Assertion failed&quot;
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-8i9jwxgw-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:407" name="[localhost] meraki: meraki_network : Delete network without org auth_key={{ auth_key }}, state=absent, net_name=IntTestNetworkSwitch" time="0.236656">
+			<system-out>{
+&quot;msg&quot;: &quot;Unable to import ('ansible_collections', 'cisco', 'meraki', 'plugins', 'module_utils', 'network', 'meraki', 'meraki') due to positional argument follows keyword argument&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-8i9jwxgw-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:416" name="[localhost] meraki: meraki_network : Delete network by org ID and check mode auth_key={{ auth_key }}, state=absent, org_id={{test_org_id}}, net_name=IntTestNetworkSwitchOrgID" time="0.235507">
+			<failure message="Unable to import ('ansible_collections', 'cisco', 'meraki', 'plugins', 'module_utils', 'network', 'meraki', 'meraki') due to positional argument follows keyword argument" type="failure">{
+&quot;msg&quot;: &quot;Unable to import ('ansible_collections', 'cisco', 'meraki', 'plugins', 'module_utils', 'network', 'meraki', 'meraki') due to positional argument follows keyword argument&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

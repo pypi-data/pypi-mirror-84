@@ -1,0 +1,1202 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="47" time="95.98643064498901">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_ssid-5ojl0gwh" skipped="2" tests="47" time="95.98643064498901">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:8" name="[localhost] meraki: meraki_ssid : set_fact wpa_enabled=False" time="0.071307">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;wpa_enabled&quot;: false
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:11" name="[localhost] meraki: meraki_ssid : Test an API key is provided msg=Please define an API key" time="0.095330">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:16" name="[localhost] meraki: meraki_ssid : Create test network auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=TestNetSSID, type=wireless" time="4.788232">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297686041&quot;,
+&quot;name&quot;: &quot;TestNetSSID&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;wireless&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/TestNetSSID/n/2aqOMaUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:25" name="[localhost] meraki: meraki_ssid : debug msg={{test_net}}" time="0.115329">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;ansible_facts&quot;: {
+            &quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+        },
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;enrollment_string&quot;: null,
+            &quot;id&quot;: &quot;N_624874448297686041&quot;,
+            &quot;name&quot;: &quot;TestNetSSID&quot;,
+            &quot;organization_id&quot;: &quot;133277&quot;,
+            &quot;product_types&quot;: [
+                &quot;wireless&quot;
+            ],
+            &quot;tags&quot;: [],
+            &quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+            &quot;url&quot;: &quot;https://n110.meraki.com/TestNetSSID/n/2aqOMaUb/manage/usage/list&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 201
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:28" name="[localhost] meraki: meraki_ssid : Add access points to network auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=TestNetSSID, serial={{serial_wireless}}" time="6.834081">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: [
+{}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:37" name="[localhost] meraki: meraki_ssid : Query all SSIDs auth_key={{auth_key}}, state=query, org_name={{test_org_name}}, net_name=TestNetSSID" time="4.176124">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: [
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: true,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;TestNetSSID WiFi&quot;,
+&quot;number&quot;: 0,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 2&quot;,
+&quot;number&quot;: 1,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 3&quot;,
+&quot;number&quot;: 2,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 4&quot;,
+&quot;number&quot;: 3,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 5&quot;,
+&quot;number&quot;: 4,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 6&quot;,
+&quot;number&quot;: 5,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 7&quot;,
+&quot;number&quot;: 6,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 8&quot;,
+&quot;number&quot;: 7,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 9&quot;,
+&quot;number&quot;: 8,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 10&quot;,
+&quot;number&quot;: 9,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 11&quot;,
+&quot;number&quot;: 10,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 12&quot;,
+&quot;number&quot;: 11,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 13&quot;,
+&quot;number&quot;: 12,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 14&quot;,
+&quot;number&quot;: 13,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 15&quot;,
+&quot;number&quot;: 14,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:46" name="[localhost] meraki: meraki_ssid : Enable and name SSID with check mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=TestNetSSID, name=AnsibleSSID, enabled=True" time="5.923404">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: true,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;AnsibleSSID&quot;,
+&quot;number&quot;: 0,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:58" name="[localhost] meraki: meraki_ssid : assert that=['enable_name_ssid_check is changed', 'enable_name_ssid_check.data is defined']" time="0.094265">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:63" name="[localhost] meraki: meraki_ssid : Enable and name SSID auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=TestNetSSID, name=AnsibleSSID, enabled=True" time="4.841614">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: true,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;AnsibleSSID&quot;,
+&quot;number&quot;: 1,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:74" name="[localhost] meraki: meraki_ssid : debug msg={{ enable_name_ssid }}" time="0.090567">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;auth_mode&quot;: &quot;open&quot;,
+            &quot;availability_tags&quot;: [],
+            &quot;available_on_all_aps&quot;: true,
+            &quot;band_selection&quot;: &quot;Dual band operation&quot;,
+            &quot;enabled&quot;: true,
+            &quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+            &quot;mandatory_dhcp_enabled&quot;: false,
+            &quot;min_bitrate&quot;: 11,
+            &quot;name&quot;: &quot;AnsibleSSID&quot;,
+            &quot;number&quot;: 1,
+            &quot;per_client_bandwidth_limit_down&quot;: 0,
+            &quot;per_client_bandwidth_limit_up&quot;: 0,
+            &quot;per_ssid_bandwidth_limit_down&quot;: 0,
+            &quot;per_ssid_bandwidth_limit_up&quot;: 0,
+            &quot;splash_page&quot;: &quot;None&quot;,
+            &quot;ssid_admin_accessible&quot;: false,
+            &quot;visible&quot;: true
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:77" name="[localhost] meraki: meraki_ssid : assert that=['query_all.data | length == 15', &quot;query_all.data.0.name == 'TestNetSSID WiFi'&quot;, &quot;enable_name_ssid.data.name == 'AnsibleSSID'&quot;]" time="0.098217">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:83" name="[localhost] meraki: meraki_ssid : Check for idempotency auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=TestNetSSID, name=AnsibleSSID, enabled=True" time="11.557205">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: true,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;AnsibleSSID&quot;,
+&quot;number&quot;: 1,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:94" name="[localhost] meraki: meraki_ssid : debug msg={{ enable_name_ssid_idempotent }}" time="0.091408">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;auth_mode&quot;: &quot;open&quot;,
+            &quot;availability_tags&quot;: [],
+            &quot;available_on_all_aps&quot;: true,
+            &quot;band_selection&quot;: &quot;Dual band operation&quot;,
+            &quot;enabled&quot;: true,
+            &quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+            &quot;mandatory_dhcp_enabled&quot;: false,
+            &quot;min_bitrate&quot;: 11,
+            &quot;name&quot;: &quot;AnsibleSSID&quot;,
+            &quot;number&quot;: 1,
+            &quot;per_client_bandwidth_limit_down&quot;: 0,
+            &quot;per_client_bandwidth_limit_up&quot;: 0,
+            &quot;per_ssid_bandwidth_limit_down&quot;: 0,
+            &quot;per_ssid_bandwidth_limit_up&quot;: 0,
+            &quot;splash_page&quot;: &quot;None&quot;,
+            &quot;ssid_admin_accessible&quot;: false,
+            &quot;visible&quot;: true
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:97" name="[localhost] meraki: meraki_ssid : assert that=['enable_name_ssid_idempotent.changed == False', 'enable_name_ssid_idempotent.data is defined']" time="0.095420">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:102" name="[localhost] meraki: meraki_ssid : Query one SSIDs auth_key={{auth_key}}, state=query, org_name={{test_org_name}}, net_name=TestNetSSID, name=AnsibleSSID" time="6.345978">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: true,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;AnsibleSSID&quot;,
+&quot;number&quot;: 1,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:112" name="[localhost] meraki: meraki_ssid : debug msg={{query_one}}" time="0.089487">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;auth_mode&quot;: &quot;open&quot;,
+            &quot;availability_tags&quot;: [],
+            &quot;available_on_all_aps&quot;: true,
+            &quot;band_selection&quot;: &quot;Dual band operation&quot;,
+            &quot;enabled&quot;: true,
+            &quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+            &quot;mandatory_dhcp_enabled&quot;: false,
+            &quot;min_bitrate&quot;: 11,
+            &quot;name&quot;: &quot;AnsibleSSID&quot;,
+            &quot;number&quot;: 1,
+            &quot;per_client_bandwidth_limit_down&quot;: 0,
+            &quot;per_client_bandwidth_limit_up&quot;: 0,
+            &quot;per_ssid_bandwidth_limit_down&quot;: 0,
+            &quot;per_ssid_bandwidth_limit_up&quot;: 0,
+            &quot;splash_page&quot;: &quot;None&quot;,
+            &quot;ssid_admin_accessible&quot;: false,
+            &quot;visible&quot;: true
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:115" name="[localhost] meraki: meraki_ssid : assert that=[&quot;query_one.data.name == 'AnsibleSSID'&quot;]" time="0.090377">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:119" name="[localhost] meraki: meraki_ssid : Query one SSID with number auth_key={{auth_key}}, state=query, org_name={{test_org_name}}, net_name=TestNetSSID, number=1" time="3.772026">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: true,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;AnsibleSSID&quot;,
+&quot;number&quot;: 1,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:129" name="[localhost] meraki: meraki_ssid : debug msg={{query_one_number}}" time="0.091654">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;auth_mode&quot;: &quot;open&quot;,
+            &quot;availability_tags&quot;: [],
+            &quot;available_on_all_aps&quot;: true,
+            &quot;band_selection&quot;: &quot;Dual band operation&quot;,
+            &quot;enabled&quot;: true,
+            &quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+            &quot;mandatory_dhcp_enabled&quot;: false,
+            &quot;min_bitrate&quot;: 11,
+            &quot;name&quot;: &quot;AnsibleSSID&quot;,
+            &quot;number&quot;: 1,
+            &quot;per_client_bandwidth_limit_down&quot;: 0,
+            &quot;per_client_bandwidth_limit_up&quot;: 0,
+            &quot;per_ssid_bandwidth_limit_down&quot;: 0,
+            &quot;per_ssid_bandwidth_limit_up&quot;: 0,
+            &quot;splash_page&quot;: &quot;None&quot;,
+            &quot;ssid_admin_accessible&quot;: false,
+            &quot;visible&quot;: true
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:132" name="[localhost] meraki: meraki_ssid : assert that=[&quot;query_one_number.data.name == 'AnsibleSSID'&quot;]" time="0.093126">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:136" name="[localhost] meraki: meraki_ssid : Disable SSID without specifying number auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=TestNetSSID, name=AnsibleSSID, enabled=False" time="4.659125">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;AnsibleSSID&quot;,
+&quot;number&quot;: 1,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:147" name="[localhost] meraki: meraki_ssid : debug msg={{ disable_ssid.data.enabled }}" time="0.091819">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:150" name="[localhost] meraki: meraki_ssid : assert that=['disable_ssid.data.enabled == False']" time="0.091595">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:154" name="[localhost] meraki: meraki_ssid : Enable SSID with number auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=TestNetSSID, number=1, enabled=True" time="4.882892">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: true,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;AnsibleSSID&quot;,
+&quot;number&quot;: 1,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:165" name="[localhost] meraki: meraki_ssid : debug msg={{ enable_ssid_number.data.enabled }}" time="0.094385">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: true
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:168" name="[localhost] meraki: meraki_ssid : assert that=['enable_ssid_number.data.enabled == True']" time="0.091535">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:172" name="[localhost] meraki: meraki_ssid : Set VLAN arg spec auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=TestNetSSID, number=1, use_vlan_tagging=True, ip_assignment_mode=Bridge mode, default_vlan_id=1, ap_tags_vlan_ids=[{'tags': 'wifi', 'vlan_id': 2}]" time="6.482859">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;ap_tags_and_vlan_ids&quot;: [
+{
+&quot;tags&quot;: [
+&quot;wifi&quot;
+],
+&quot;vlan_id&quot;: 2
+}
+],
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;default_vlan_id&quot;: 1,
+&quot;enabled&quot;: true,
+&quot;ip_assignment_mode&quot;: &quot;Bridge mode&quot;,
+&quot;lan_isolation_enabled&quot;: false,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;AnsibleSSID&quot;,
+&quot;number&quot;: 1,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;use_vlan_tagging&quot;: true,
+&quot;visible&quot;: true
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:188" name="[localhost] meraki: meraki_ssid : debug var=set_vlan_arg" time="0.091136">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;set_vlan_arg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;ap_tags_and_vlan_ids&quot;: [
+                {
+                    &quot;tags&quot;: [
+                        &quot;wifi&quot;
+                    ],
+                    &quot;vlan_id&quot;: 2
+                }
+            ],
+            &quot;auth_mode&quot;: &quot;open&quot;,
+            &quot;availability_tags&quot;: [],
+            &quot;available_on_all_aps&quot;: true,
+            &quot;band_selection&quot;: &quot;Dual band operation&quot;,
+            &quot;default_vlan_id&quot;: 1,
+            &quot;enabled&quot;: true,
+            &quot;ip_assignment_mode&quot;: &quot;Bridge mode&quot;,
+            &quot;lan_isolation_enabled&quot;: false,
+            &quot;mandatory_dhcp_enabled&quot;: false,
+            &quot;min_bitrate&quot;: 11,
+            &quot;name&quot;: &quot;AnsibleSSID&quot;,
+            &quot;number&quot;: 1,
+            &quot;per_client_bandwidth_limit_down&quot;: 0,
+            &quot;per_client_bandwidth_limit_up&quot;: 0,
+            &quot;per_ssid_bandwidth_limit_down&quot;: 0,
+            &quot;per_ssid_bandwidth_limit_up&quot;: 0,
+            &quot;splash_page&quot;: &quot;None&quot;,
+            &quot;ssid_admin_accessible&quot;: false,
+            &quot;use_vlan_tagging&quot;: true,
+            &quot;visible&quot;: true
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:191" name="[localhost] meraki: meraki_ssid : assert that=set_vlan_arg is changed" time="0.092827">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:194" name="[localhost] meraki: meraki_ssid : Set VLAN arg spec auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=TestNetSSID, number=1, use_vlan_tagging=True, ip_assignment_mode=Bridge mode, default_vlan_id=1, ap_tags_vlan_ids=[{'tags': 'wifi', 'vlan_id': 2}]" time="3.771910">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;ap_tags_and_vlan_ids&quot;: [
+{
+&quot;tags&quot;: [
+&quot;wifi&quot;
+],
+&quot;vlan_id&quot;: 2
+}
+],
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;default_vlan_id&quot;: 1,
+&quot;enabled&quot;: true,
+&quot;ip_assignment_mode&quot;: &quot;Bridge mode&quot;,
+&quot;lan_isolation_enabled&quot;: false,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;AnsibleSSID&quot;,
+&quot;number&quot;: 1,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;use_vlan_tagging&quot;: true,
+&quot;visible&quot;: true
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:210" name="[localhost] meraki: meraki_ssid : debug var=set_vlan_arg_idempotent" time="0.091710">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;set_vlan_arg_idempotent&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;ap_tags_and_vlan_ids&quot;: [
+                {
+                    &quot;tags&quot;: [
+                        &quot;wifi&quot;
+                    ],
+                    &quot;vlan_id&quot;: 2
+                }
+            ],
+            &quot;auth_mode&quot;: &quot;open&quot;,
+            &quot;availability_tags&quot;: [],
+            &quot;available_on_all_aps&quot;: true,
+            &quot;band_selection&quot;: &quot;Dual band operation&quot;,
+            &quot;default_vlan_id&quot;: 1,
+            &quot;enabled&quot;: true,
+            &quot;ip_assignment_mode&quot;: &quot;Bridge mode&quot;,
+            &quot;lan_isolation_enabled&quot;: false,
+            &quot;mandatory_dhcp_enabled&quot;: false,
+            &quot;min_bitrate&quot;: 11,
+            &quot;name&quot;: &quot;AnsibleSSID&quot;,
+            &quot;number&quot;: 1,
+            &quot;per_client_bandwidth_limit_down&quot;: 0,
+            &quot;per_client_bandwidth_limit_up&quot;: 0,
+            &quot;per_ssid_bandwidth_limit_down&quot;: 0,
+            &quot;per_ssid_bandwidth_limit_up&quot;: 0,
+            &quot;splash_page&quot;: &quot;None&quot;,
+            &quot;ssid_admin_accessible&quot;: false,
+            &quot;use_vlan_tagging&quot;: true,
+            &quot;visible&quot;: true
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:213" name="[localhost] meraki: meraki_ssid : assert that=set_vlan_arg_idempotent is not changed" time="0.091944">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:217" name="[localhost] meraki: meraki_ssid : Set PSK auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=TestNetSSID, name=AnsibleSSID, auth_mode=psk, psk=abc1234567890, encryption_mode=wpa" time="3.864024">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;ap_tags_and_vlan_ids&quot;: [
+{
+&quot;tags&quot;: [
+&quot;wifi&quot;
+],
+&quot;vlan_id&quot;: 2
+}
+],
+&quot;auth_mode&quot;: &quot;psk&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;default_vlan_id&quot;: 1,
+&quot;enabled&quot;: true,
+&quot;encryption_mode&quot;: &quot;wpa&quot;,
+&quot;ip_assignment_mode&quot;: &quot;Bridge mode&quot;,
+&quot;lan_isolation_enabled&quot;: false,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;AnsibleSSID&quot;,
+&quot;number&quot;: 1,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;psk&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;use_vlan_tagging&quot;: true,
+&quot;visible&quot;: true,
+&quot;wpa_encryption_mode&quot;: &quot;WPA2 only&quot;
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:230" name="[localhost] meraki: meraki_ssid : debug msg={{ psk }}" time="0.098037">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;ap_tags_and_vlan_ids&quot;: [
+                {
+                    &quot;tags&quot;: [
+                        &quot;wifi&quot;
+                    ],
+                    &quot;vlan_id&quot;: 2
+                }
+            ],
+            &quot;auth_mode&quot;: &quot;psk&quot;,
+            &quot;availability_tags&quot;: [],
+            &quot;available_on_all_aps&quot;: true,
+            &quot;band_selection&quot;: &quot;Dual band operation&quot;,
+            &quot;default_vlan_id&quot;: 1,
+            &quot;enabled&quot;: true,
+            &quot;encryption_mode&quot;: &quot;wpa&quot;,
+            &quot;ip_assignment_mode&quot;: &quot;Bridge mode&quot;,
+            &quot;lan_isolation_enabled&quot;: false,
+            &quot;mandatory_dhcp_enabled&quot;: false,
+            &quot;min_bitrate&quot;: 11,
+            &quot;name&quot;: &quot;AnsibleSSID&quot;,
+            &quot;number&quot;: 1,
+            &quot;per_client_bandwidth_limit_down&quot;: 0,
+            &quot;per_client_bandwidth_limit_up&quot;: 0,
+            &quot;per_ssid_bandwidth_limit_down&quot;: 0,
+            &quot;per_ssid_bandwidth_limit_up&quot;: 0,
+            &quot;psk&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+            &quot;splash_page&quot;: &quot;None&quot;,
+            &quot;ssid_admin_accessible&quot;: false,
+            &quot;use_vlan_tagging&quot;: true,
+            &quot;visible&quot;: true,
+            &quot;wpa_encryption_mode&quot;: &quot;WPA2 only&quot;
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:233" name="[localhost] meraki: meraki_ssid : assert that=[&quot;psk.data.auth_mode == 'psk'&quot;, &quot;psk.data.encryption_mode == 'wpa'&quot;, &quot;psk.data.wpa_encryption_mode == 'WPA2 only'&quot;]" time="0.096218">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:239" name="[localhost] meraki: meraki_ssid : Set PSK with idempotency auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=TestNetSSID, name=AnsibleSSID, auth_mode=psk, psk=abc1234567890, encryption_mode=wpa" time="3.173963">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;ap_tags_and_vlan_ids&quot;: [
+{
+&quot;tags&quot;: [
+&quot;wifi&quot;
+],
+&quot;vlan_id&quot;: 2
+}
+],
+&quot;auth_mode&quot;: &quot;psk&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;default_vlan_id&quot;: 1,
+&quot;enabled&quot;: true,
+&quot;encryption_mode&quot;: &quot;wpa&quot;,
+&quot;ip_assignment_mode&quot;: &quot;Bridge mode&quot;,
+&quot;lan_isolation_enabled&quot;: false,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;AnsibleSSID&quot;,
+&quot;number&quot;: 1,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;psk&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;use_vlan_tagging&quot;: true,
+&quot;visible&quot;: true,
+&quot;wpa_encryption_mode&quot;: &quot;WPA2 only&quot;
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:252" name="[localhost] meraki: meraki_ssid : debug msg={{ psk_idempotent }}" time="0.092792">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;ap_tags_and_vlan_ids&quot;: [
+                {
+                    &quot;tags&quot;: [
+                        &quot;wifi&quot;
+                    ],
+                    &quot;vlan_id&quot;: 2
+                }
+            ],
+            &quot;auth_mode&quot;: &quot;psk&quot;,
+            &quot;availability_tags&quot;: [],
+            &quot;available_on_all_aps&quot;: true,
+            &quot;band_selection&quot;: &quot;Dual band operation&quot;,
+            &quot;default_vlan_id&quot;: 1,
+            &quot;enabled&quot;: true,
+            &quot;encryption_mode&quot;: &quot;wpa&quot;,
+            &quot;ip_assignment_mode&quot;: &quot;Bridge mode&quot;,
+            &quot;lan_isolation_enabled&quot;: false,
+            &quot;mandatory_dhcp_enabled&quot;: false,
+            &quot;min_bitrate&quot;: 11,
+            &quot;name&quot;: &quot;AnsibleSSID&quot;,
+            &quot;number&quot;: 1,
+            &quot;per_client_bandwidth_limit_down&quot;: 0,
+            &quot;per_client_bandwidth_limit_up&quot;: 0,
+            &quot;per_ssid_bandwidth_limit_down&quot;: 0,
+            &quot;per_ssid_bandwidth_limit_up&quot;: 0,
+            &quot;psk&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+            &quot;splash_page&quot;: &quot;None&quot;,
+            &quot;ssid_admin_accessible&quot;: false,
+            &quot;use_vlan_tagging&quot;: true,
+            &quot;visible&quot;: true,
+            &quot;wpa_encryption_mode&quot;: &quot;WPA2 only&quot;
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:255" name="[localhost] meraki: meraki_ssid : assert that=['psk_idempotent is not changed']" time="0.091749">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:262" name="[localhost] meraki: meraki_ssid : Set WPA3 Transition Mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=TestNetSSID, name=AnsibleSSID, auth_mode=psk, psk=abc1234567890, encryption_mode=wpa, wpa_encryption_mode=WPA3 Transition Mode" time="0.087999">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:277" name="[localhost] meraki: meraki_ssid : debug msg={{ psk_wpa3_transition_mode }}" time="0.090695">
+			<failure message="The conditional check 'wpa_enabled is True' failed. The error was: template error while templating string: no test named 'True'. String: {% if wpa_enabled is True %} True {% else %} False {% endif %}
+
+The error appears to be in '/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml': line 277, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+  - debug:
+    ^ here
+" type="failure">{
+&quot;msg&quot;: &quot;The conditional check 'wpa_enabled is True' failed. The error was: template error while templating string: no test named 'True'. String: {% if wpa_enabled is True %} True {% else %} False {% endif %}\n\nThe error appears to be in '/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml': line 277, column 5, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n  - debug:\n    ^ here\n&quot;
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:509" name="[localhost] meraki: meraki_ssid : Delete SSID with check mode auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, net_name=TestNetSSID, name=AnsibleSSID" time="3.399206">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:520" name="[localhost] meraki: meraki_ssid : assert that=['delete_ssid_check is changed', 'delete_ssid_check.data is defined']" time="0.094356">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:525" name="[localhost] meraki: meraki_ssid : Delete SSID auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, net_name=TestNetSSID, name=AnsibleSSID" time="4.143000">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;auth_mode&quot;: &quot;psk&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;encryption_mode&quot;: &quot;wpa&quot;,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;mandatory_dhcp_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 2&quot;,
+&quot;number&quot;: 1,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;psk&quot;: &quot;abc1234567890&quot;,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true,
+&quot;wpa_encryption_mode&quot;: &quot;WPA2 only&quot;
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:535" name="[localhost] meraki: meraki_ssid : debug msg={{ delete_ssid }}" time="0.091225">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;auth_mode&quot;: &quot;psk&quot;,
+            &quot;availability_tags&quot;: [],
+            &quot;available_on_all_aps&quot;: true,
+            &quot;band_selection&quot;: &quot;Dual band operation&quot;,
+            &quot;enabled&quot;: false,
+            &quot;encryption_mode&quot;: &quot;wpa&quot;,
+            &quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+            &quot;mandatory_dhcp_enabled&quot;: false,
+            &quot;min_bitrate&quot;: 11,
+            &quot;name&quot;: &quot;Unconfigured SSID 2&quot;,
+            &quot;number&quot;: 1,
+            &quot;per_client_bandwidth_limit_down&quot;: 0,
+            &quot;per_client_bandwidth_limit_up&quot;: 0,
+            &quot;per_ssid_bandwidth_limit_down&quot;: 0,
+            &quot;per_ssid_bandwidth_limit_up&quot;: 0,
+            &quot;psk&quot;: &quot;abc1234567890&quot;,
+            &quot;splash_page&quot;: &quot;None&quot;,
+            &quot;ssid_admin_accessible&quot;: false,
+            &quot;visible&quot;: true,
+            &quot;wpa_encryption_mode&quot;: &quot;WPA2 only&quot;
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:538" name="[localhost] meraki: meraki_ssid : assert that=[&quot;delete_ssid.data.name == 'Unconfigured SSID 2'&quot;]" time="0.092184">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:542" name="[localhost] meraki: meraki_ssid : Delete test network auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, net_name=TestNetSSID" time="10.591292">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-9b9bx_mf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:550" name="[localhost] meraki: meraki_ssid : debug msg={{delete_net}}" time="0.090805">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 204
+    }
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

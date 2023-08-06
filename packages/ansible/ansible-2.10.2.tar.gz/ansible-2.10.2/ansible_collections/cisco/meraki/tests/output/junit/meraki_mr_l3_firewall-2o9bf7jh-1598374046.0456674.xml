@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="2" tests="2" time="4.56196403503418">
+	<testsuite disabled="0" errors="0" failures="2" name="meraki_mr_l3_firewall-2o9bf7jh" skipped="0" tests="2" time="4.56196403503418">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_l3_firewall-73epcr3n-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_l3_firewall/tasks/main.yml:7" name="[localhost] meraki: meraki_mr_l3_firewall : Create wireless network auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=TestNetWireless, type=wireless" time="4.448838">
+			<failure message="HTTP error 400 - https://api.meraki.com/api/v1/organizations/133277/networks - Name has already been taken" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;HTTP error 400 - https://api.meraki.com/api/v1/organizations/133277/networks - Name has already been taken&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 400
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_l3_firewall-73epcr3n-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_l3_firewall/tasks/main.yml:156" name="[localhost] meraki: meraki_mr_l3_firewall : Delete wireless SSID auth_key={{ auth_key }}, state=absent, org_name={{test_org_name}}, net_id={{net}}, number=1" time="0.113126">
+			<failure message="The task includes an option with an undefined variable. The error was: 'net' is undefined
+
+The error appears to be in '/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_l3_firewall-73epcr3n-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_l3_firewall/tasks/main.yml': line 156, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  always:
+  - name: Delete wireless SSID
+    ^ here
+" type="failure">{
+&quot;msg&quot;: &quot;The task includes an option with an undefined variable. The error was: 'net' is undefined\n\nThe error appears to be in '/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_l3_firewall-73epcr3n-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_l3_firewall/tasks/main.yml': line 156, column 5, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  always:\n  - name: Delete wireless SSID\n    ^ here\n&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

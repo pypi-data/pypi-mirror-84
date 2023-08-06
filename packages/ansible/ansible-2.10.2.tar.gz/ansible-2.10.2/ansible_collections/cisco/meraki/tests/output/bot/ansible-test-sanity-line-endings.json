@@ -1,0 +1,10 @@
+{
+    "docs": "https://docs.ansible.com/ansible/2.9/dev_guide/testing/sanity/line-endings.html",
+    "results": [
+        {
+            "message": "The test `ansible-test sanity --test line-endings` [[explain](https://docs.ansible.com/ansible/2.9/dev_guide/testing/sanity/line-endings.html)] failed with 4 errors:",
+            "output": "venv/lib/python3.7/site-packages/pip-19.2.3.dist-info/RECORD:0:0: use \"\\n\" for line endings instead of \"\\r\\n\"\nvenv/lib/python3.7/site-packages/pkg_resources/_vendor/pyparsing.py:0:0: use \"\\n\" for line endings instead of \"\\r\\n\"\nvenv/lib/python3.7/site-packages/setuptools-41.2.0.dist-info/RECORD:0:0: use \"\\n\" for line endings instead of \"\\r\\n\"\nvenv/lib/python3.7/site-packages/setuptools/_vendor/pyparsing.py:0:0: use \"\\n\" for line endings instead of \"\\r\\n\""
+        }
+    ],
+    "verified": false
+}

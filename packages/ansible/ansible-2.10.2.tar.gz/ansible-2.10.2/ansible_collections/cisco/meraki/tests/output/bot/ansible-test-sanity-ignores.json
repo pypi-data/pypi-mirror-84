@@ -1,0 +1,10 @@
+{
+    "docs": "https://docs.ansible.com/ansible/devel/dev_guide/testing/sanity/ignores.html", 
+    "results": [
+        {
+            "message": "The test `ansible-test sanity --test ignores` [[explain](https://docs.ansible.com/ansible/devel/dev_guide/testing/sanity/ignores.html)] failed with 2 errors:", 
+            "output": "tests/sanity/ignore-2.10.txt:1:1: Sanity test 'validate-modules' does not test path 'plugins/modules/meraki_intrusion_prevention.py'\ntests/sanity/ignore-2.10.txt:2:1: Sanity test 'validate-modules' does not test path 'plugins/modules/meraki_intrusion_prevention.py'"
+        }
+    ], 
+    "verified": false
+}

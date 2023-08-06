@@ -1,0 +1,30 @@
+{
+    "targets": {
+        "meraki_switchport": {
+            "aliases": [
+                "meraki_switchport", 
+                "network/", 
+                "network/meraki/", 
+                "network/meraki/meraki_switchport", 
+                "non_destructive/", 
+                "non_destructive/meraki_switchport", 
+                "non_module/", 
+                "non_module/meraki_switchport", 
+                "role/", 
+                "role/meraki_switchport", 
+                "unsupported/", 
+                "unsupported/meraki_switchport"
+            ], 
+            "coverage": true, 
+            "coverage_label": "docker-default", 
+            "modules": [], 
+            "name": "meraki_switchport", 
+            "python_version": "3.7", 
+            "run_time_seconds": 76, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }
+    }
+}

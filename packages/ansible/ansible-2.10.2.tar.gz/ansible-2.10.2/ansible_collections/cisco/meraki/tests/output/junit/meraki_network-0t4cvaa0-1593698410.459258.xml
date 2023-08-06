@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="4.607381105422974">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_network-0t4cvaa0" skipped="0" tests="1" time="4.607381105422974">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-rd2pnl7z-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:254" name="[localhost] meraki: meraki_network : Disable remote status page auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkCombined, remote_status_page_enabled=False" time="4.607381">
+			<failure message="{'auth_key': 'VALUE_SPECIFIED_IN_NO_LOG_PARAMETER', 'state': 'present', 'org_name': 'kbreit@insight.com', 'net_name': 'IntTestNetworkCombined', 'remote_status_page_enabled': False, 'host': 'api.meraki.com', 'use_proxy': False, 'use_https': True, 'validate_certs': True, 'output_format': 'snakecase', 'output_level': 'normal', 'timeout': 30, 'rate_limit_retry_time': 165, 'internal_error_retry_time': 60, 'org_id': None, 'net_id': None, 'type': None, 'tags': None, 'timezone': None, 'enable_vlans': None, 'local_status_page_enabled': None, 'follow_redirects': 'all', 'protocol': 'https'}" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: {
+&quot;auth_key&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+&quot;enable_vlans&quot;: null,
+&quot;follow_redirects&quot;: &quot;all&quot;,
+&quot;host&quot;: &quot;api.meraki.com&quot;,
+&quot;internal_error_retry_time&quot;: 60,
+&quot;local_status_page_enabled&quot;: null,
+&quot;net_id&quot;: null,
+&quot;net_name&quot;: &quot;IntTestNetworkCombined&quot;,
+&quot;org_id&quot;: null,
+&quot;org_name&quot;: &quot;kbreit@insight.com&quot;,
+&quot;output_format&quot;: &quot;snakecase&quot;,
+&quot;output_level&quot;: &quot;normal&quot;,
+&quot;protocol&quot;: &quot;https&quot;,
+&quot;rate_limit_retry_time&quot;: 165,
+&quot;remote_status_page_enabled&quot;: false,
+&quot;state&quot;: &quot;present&quot;,
+&quot;tags&quot;: null,
+&quot;timeout&quot;: 30,
+&quot;timezone&quot;: null,
+&quot;type&quot;: null,
+&quot;use_https&quot;: true,
+&quot;use_proxy&quot;: false,
+&quot;validate_certs&quot;: true
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

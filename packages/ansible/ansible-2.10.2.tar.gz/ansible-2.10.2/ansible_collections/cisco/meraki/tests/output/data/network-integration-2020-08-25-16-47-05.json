@@ -1,0 +1,30 @@
+{
+    "targets": {
+        "meraki_vlan": {
+            "aliases": [
+                "meraki_vlan", 
+                "network/", 
+                "network/meraki/", 
+                "network/meraki/meraki_vlan", 
+                "non_destructive/", 
+                "non_destructive/meraki_vlan", 
+                "non_module/", 
+                "non_module/meraki_vlan", 
+                "role/", 
+                "role/meraki_vlan", 
+                "unsupported/", 
+                "unsupported/meraki_vlan"
+            ], 
+            "coverage": true, 
+            "coverage_label": "docker-default", 
+            "modules": [], 
+            "name": "meraki_vlan", 
+            "python_version": "3.7", 
+            "run_time_seconds": 140, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }
+    }
+}

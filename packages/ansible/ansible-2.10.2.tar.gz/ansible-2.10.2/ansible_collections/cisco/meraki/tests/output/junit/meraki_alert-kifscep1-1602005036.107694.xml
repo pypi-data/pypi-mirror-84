@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="0.12897539138793945">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_alert-kifscep1" skipped="0" tests="1" time="0.12897539138793945">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-vb2l6voj-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:74" name="[localhost] meraki: meraki_alert : Update settings idempotent auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=present, default_destinations={'emails': ['{{ email_prefix }}@{{ email_domain }}', '{{ email_prefix }}2@{{ email_domain }}'], 'all_admins': True, 'snmp': True}, alerts=[{'type': 'gatewayDown', 'enabled': True, 'filters': {'timeout': 60}, 'alert_destinations': {'emails': ['{{ email_prefix }}@{{ email_domain }}', '{{ email_prefix }}2@{{ email_domain }}'], 'all_admins': True, 'snmp': False}}]" time="0.128975">
+			<failure message="Unable to import meraki_alert due to invalid syntax" type="failure">{
+&quot;msg&quot;: &quot;Unable to import meraki_alert due to invalid syntax&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

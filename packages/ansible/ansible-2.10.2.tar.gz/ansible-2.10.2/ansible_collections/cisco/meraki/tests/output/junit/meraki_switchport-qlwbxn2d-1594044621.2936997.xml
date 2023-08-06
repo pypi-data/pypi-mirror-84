@@ -1,0 +1,555 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="9" time="9.146965503692627">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_switchport-qlwbxn2d" skipped="1" tests="9" time="9.146965503692627">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-2pzu8hm4-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:6" name="[localhost] meraki: meraki_switchport : Test an API key is provided msg=Please define an API key" time="0.098292">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-2pzu8hm4-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:11" name="[localhost] meraki: meraki_switchport : Query all switchports auth_key={{auth_key}}, state=query, serial={{ serial_switch }}" time="2.254765">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: [
+{
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: null,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;1&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [],
+&quot;type&quot;: &quot;trunk&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 1,
+&quot;voice_vlan&quot;: null
+},
+{
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: null,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;2&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [],
+&quot;type&quot;: &quot;trunk&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 1,
+&quot;voice_vlan&quot;: null
+},
+{
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: null,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;3&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [],
+&quot;type&quot;: &quot;trunk&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 1,
+&quot;voice_vlan&quot;: null
+},
+{
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: null,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;4&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [],
+&quot;type&quot;: &quot;trunk&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 1,
+&quot;voice_vlan&quot;: null
+},
+{
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: null,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;5&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [],
+&quot;type&quot;: &quot;trunk&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 1,
+&quot;voice_vlan&quot;: null
+},
+{
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: null,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;6&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [],
+&quot;type&quot;: &quot;trunk&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 1,
+&quot;voice_vlan&quot;: null
+},
+{
+&quot;allowed_vlans&quot;: &quot;2,10,15,20&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: &quot;Server port&quot;,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;7&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [
+&quot;server&quot;
+],
+&quot;type&quot;: &quot;trunk&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 2,
+&quot;voice_vlan&quot;: null
+},
+{
+&quot;access_policy_type&quot;: &quot;Open&quot;,
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: &quot;Test Port&quot;,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;8&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [],
+&quot;type&quot;: &quot;access&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 10,
+&quot;voice_vlan&quot;: null
+},
+{
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: null,
+&quot;poe_enabled&quot;: false,
+&quot;port_id&quot;: &quot;9&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [],
+&quot;type&quot;: &quot;trunk&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 1,
+&quot;voice_vlan&quot;: null
+},
+{
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: null,
+&quot;poe_enabled&quot;: false,
+&quot;port_id&quot;: &quot;10&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [],
+&quot;type&quot;: &quot;trunk&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 1,
+&quot;voice_vlan&quot;: null
+}
+],
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-2pzu8hm4-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:19" name="[localhost] meraki: meraki_switchport : debug msg={{query_all}}" time="0.124104">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: [
+            {
+                &quot;allowed_vlans&quot;: &quot;all&quot;,
+                &quot;enabled&quot;: true,
+                &quot;isolation_enabled&quot;: false,
+                &quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+                &quot;name&quot;: null,
+                &quot;poe_enabled&quot;: true,
+                &quot;port_id&quot;: &quot;1&quot;,
+                &quot;port_schedule_id&quot;: null,
+                &quot;rstp_enabled&quot;: true,
+                &quot;stp_guard&quot;: &quot;disabled&quot;,
+                &quot;tags&quot;: [],
+                &quot;type&quot;: &quot;trunk&quot;,
+                &quot;udld&quot;: &quot;Alert only&quot;,
+                &quot;vlan&quot;: 1,
+                &quot;voice_vlan&quot;: null
+            },
+            {
+                &quot;allowed_vlans&quot;: &quot;all&quot;,
+                &quot;enabled&quot;: true,
+                &quot;isolation_enabled&quot;: false,
+                &quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+                &quot;name&quot;: null,
+                &quot;poe_enabled&quot;: true,
+                &quot;port_id&quot;: &quot;2&quot;,
+                &quot;port_schedule_id&quot;: null,
+                &quot;rstp_enabled&quot;: true,
+                &quot;stp_guard&quot;: &quot;disabled&quot;,
+                &quot;tags&quot;: [],
+                &quot;type&quot;: &quot;trunk&quot;,
+                &quot;udld&quot;: &quot;Alert only&quot;,
+                &quot;vlan&quot;: 1,
+                &quot;voice_vlan&quot;: null
+            },
+            {
+                &quot;allowed_vlans&quot;: &quot;all&quot;,
+                &quot;enabled&quot;: true,
+                &quot;isolation_enabled&quot;: false,
+                &quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+                &quot;name&quot;: null,
+                &quot;poe_enabled&quot;: true,
+                &quot;port_id&quot;: &quot;3&quot;,
+                &quot;port_schedule_id&quot;: null,
+                &quot;rstp_enabled&quot;: true,
+                &quot;stp_guard&quot;: &quot;disabled&quot;,
+                &quot;tags&quot;: [],
+                &quot;type&quot;: &quot;trunk&quot;,
+                &quot;udld&quot;: &quot;Alert only&quot;,
+                &quot;vlan&quot;: 1,
+                &quot;voice_vlan&quot;: null
+            },
+            {
+                &quot;allowed_vlans&quot;: &quot;all&quot;,
+                &quot;enabled&quot;: true,
+                &quot;isolation_enabled&quot;: false,
+                &quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+                &quot;name&quot;: null,
+                &quot;poe_enabled&quot;: true,
+                &quot;port_id&quot;: &quot;4&quot;,
+                &quot;port_schedule_id&quot;: null,
+                &quot;rstp_enabled&quot;: true,
+                &quot;stp_guard&quot;: &quot;disabled&quot;,
+                &quot;tags&quot;: [],
+                &quot;type&quot;: &quot;trunk&quot;,
+                &quot;udld&quot;: &quot;Alert only&quot;,
+                &quot;vlan&quot;: 1,
+                &quot;voice_vlan&quot;: null
+            },
+            {
+                &quot;allowed_vlans&quot;: &quot;all&quot;,
+                &quot;enabled&quot;: true,
+                &quot;isolation_enabled&quot;: false,
+                &quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+                &quot;name&quot;: null,
+                &quot;poe_enabled&quot;: true,
+                &quot;port_id&quot;: &quot;5&quot;,
+                &quot;port_schedule_id&quot;: null,
+                &quot;rstp_enabled&quot;: true,
+                &quot;stp_guard&quot;: &quot;disabled&quot;,
+                &quot;tags&quot;: [],
+                &quot;type&quot;: &quot;trunk&quot;,
+                &quot;udld&quot;: &quot;Alert only&quot;,
+                &quot;vlan&quot;: 1,
+                &quot;voice_vlan&quot;: null
+            },
+            {
+                &quot;allowed_vlans&quot;: &quot;all&quot;,
+                &quot;enabled&quot;: true,
+                &quot;isolation_enabled&quot;: false,
+                &quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+                &quot;name&quot;: null,
+                &quot;poe_enabled&quot;: true,
+                &quot;port_id&quot;: &quot;6&quot;,
+                &quot;port_schedule_id&quot;: null,
+                &quot;rstp_enabled&quot;: true,
+                &quot;stp_guard&quot;: &quot;disabled&quot;,
+                &quot;tags&quot;: [],
+                &quot;type&quot;: &quot;trunk&quot;,
+                &quot;udld&quot;: &quot;Alert only&quot;,
+                &quot;vlan&quot;: 1,
+                &quot;voice_vlan&quot;: null
+            },
+            {
+                &quot;allowed_vlans&quot;: &quot;2,10,15,20&quot;,
+                &quot;enabled&quot;: true,
+                &quot;isolation_enabled&quot;: false,
+                &quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+                &quot;name&quot;: &quot;Server port&quot;,
+                &quot;poe_enabled&quot;: true,
+                &quot;port_id&quot;: &quot;7&quot;,
+                &quot;port_schedule_id&quot;: null,
+                &quot;rstp_enabled&quot;: true,
+                &quot;stp_guard&quot;: &quot;disabled&quot;,
+                &quot;tags&quot;: [
+                    &quot;server&quot;
+                ],
+                &quot;type&quot;: &quot;trunk&quot;,
+                &quot;udld&quot;: &quot;Alert only&quot;,
+                &quot;vlan&quot;: 2,
+                &quot;voice_vlan&quot;: null
+            },
+            {
+                &quot;access_policy_type&quot;: &quot;Open&quot;,
+                &quot;allowed_vlans&quot;: &quot;all&quot;,
+                &quot;enabled&quot;: true,
+                &quot;isolation_enabled&quot;: false,
+                &quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+                &quot;name&quot;: &quot;Test Port&quot;,
+                &quot;poe_enabled&quot;: true,
+                &quot;port_id&quot;: &quot;8&quot;,
+                &quot;port_schedule_id&quot;: null,
+                &quot;rstp_enabled&quot;: true,
+                &quot;stp_guard&quot;: &quot;disabled&quot;,
+                &quot;tags&quot;: [],
+                &quot;type&quot;: &quot;access&quot;,
+                &quot;udld&quot;: &quot;Alert only&quot;,
+                &quot;vlan&quot;: 10,
+                &quot;voice_vlan&quot;: null
+            },
+            {
+                &quot;allowed_vlans&quot;: &quot;all&quot;,
+                &quot;enabled&quot;: true,
+                &quot;isolation_enabled&quot;: false,
+                &quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+                &quot;name&quot;: null,
+                &quot;poe_enabled&quot;: false,
+                &quot;port_id&quot;: &quot;9&quot;,
+                &quot;port_schedule_id&quot;: null,
+                &quot;rstp_enabled&quot;: true,
+                &quot;stp_guard&quot;: &quot;disabled&quot;,
+                &quot;tags&quot;: [],
+                &quot;type&quot;: &quot;trunk&quot;,
+                &quot;udld&quot;: &quot;Alert only&quot;,
+                &quot;vlan&quot;: 1,
+                &quot;voice_vlan&quot;: null
+            },
+            {
+                &quot;allowed_vlans&quot;: &quot;all&quot;,
+                &quot;enabled&quot;: true,
+                &quot;isolation_enabled&quot;: false,
+                &quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+                &quot;name&quot;: null,
+                &quot;poe_enabled&quot;: false,
+                &quot;port_id&quot;: &quot;10&quot;,
+                &quot;port_schedule_id&quot;: null,
+                &quot;rstp_enabled&quot;: true,
+                &quot;stp_guard&quot;: &quot;disabled&quot;,
+                &quot;tags&quot;: [],
+                &quot;type&quot;: &quot;trunk&quot;,
+                &quot;udld&quot;: &quot;Alert only&quot;,
+                &quot;vlan&quot;: 1,
+                &quot;voice_vlan&quot;: null
+            }
+        ],
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-2pzu8hm4-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:22" name="[localhost] meraki: meraki_switchport : Query one switchport auth_key={{auth_key}}, state=query, serial={{ serial_switch }}, number=1" time="1.681935">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: null,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;1&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [],
+&quot;type&quot;: &quot;trunk&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 1,
+&quot;voice_vlan&quot;: null
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 1\&quot; (type int) was converted to \&quot;auth_key: '1'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-2pzu8hm4-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:31" name="[localhost] meraki: meraki_switchport : debug msg={{query_one}}" time="0.092319">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;allowed_vlans&quot;: &quot;all&quot;,
+            &quot;enabled&quot;: true,
+            &quot;isolation_enabled&quot;: false,
+            &quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+            &quot;name&quot;: null,
+            &quot;poe_enabled&quot;: true,
+            &quot;port_id&quot;: &quot;1&quot;,
+            &quot;port_schedule_id&quot;: null,
+            &quot;rstp_enabled&quot;: true,
+            &quot;stp_guard&quot;: &quot;disabled&quot;,
+            &quot;tags&quot;: [],
+            &quot;type&quot;: &quot;trunk&quot;,
+            &quot;udld&quot;: &quot;Alert only&quot;,
+            &quot;vlan&quot;: 1,
+            &quot;voice_vlan&quot;: null
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;auth_key: 1\&quot; (type int) was converted to \&quot;auth_key: '1'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-2pzu8hm4-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:34" name="[localhost] meraki: meraki_switchport : Enable switchport with check mode auth_key={{auth_key}}, state=present, serial={{ serial_switch }}, number=7, enabled=True" time="1.939601">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;access_policy_number&quot;: null,
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: null,
+&quot;number&quot;: &quot;7&quot;,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;7&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: null,
+&quot;type&quot;: &quot;access&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 1,
+&quot;voice_vlan&quot;: null
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 7\&quot; (type int) was converted to \&quot;auth_key: '7'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-2pzu8hm4-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:45" name="[localhost] meraki: meraki_switchport : debug msg={{update_port_true_check}}" time="0.104899">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;access_policy_number&quot;: null,
+            &quot;allowed_vlans&quot;: &quot;all&quot;,
+            &quot;enabled&quot;: true,
+            &quot;isolation_enabled&quot;: false,
+            &quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+            &quot;name&quot;: null,
+            &quot;number&quot;: &quot;7&quot;,
+            &quot;poe_enabled&quot;: true,
+            &quot;port_id&quot;: &quot;7&quot;,
+            &quot;port_schedule_id&quot;: null,
+            &quot;rstp_enabled&quot;: true,
+            &quot;stp_guard&quot;: &quot;disabled&quot;,
+            &quot;tags&quot;: null,
+            &quot;type&quot;: &quot;access&quot;,
+            &quot;udld&quot;: &quot;Alert only&quot;,
+            &quot;vlan&quot;: 1,
+            &quot;voice_vlan&quot;: null
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;auth_key: 7\&quot; (type int) was converted to \&quot;auth_key: '7'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-2pzu8hm4-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:48" name="[localhost] meraki: meraki_switchport : assert that=['update_port_true_check is changed', 'update_port_true_check.data is defined']" time="0.104863">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-2pzu8hm4-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:53" name="[localhost] meraki: meraki_switchport : Enable switchport auth_key={{auth_key}}, state=present, serial={{ serial_switch }}, number=7, enabled=True" time="2.746186">
+			<failure message="HTTP request to https://api.meraki.com/api/v1/devices/Q2HP-2C6E-GTLD/switch/ports/7 failed with error code 400" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;HTTP request to https://api.meraki.com/api/v1/devices/Q2HP-2C6E-GTLD/switch/ports/7 failed with error code 400&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 400,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 7\&quot; (type int) was converted to \&quot;auth_key: '7'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="0.7813084125518799">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_device-_4mj0a0o" skipped="0" tests="1" time="0.7813084125518799">
+		<testcase classname="/root/ansible/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-4nxsjqev-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:163" name="[localhost] meraki: meraki_device : Update a device to fix bug 98 auth_key={{auth_key}}, org_id={{test_org_id}}, net_name={{test_wireless_net_name}}, state=present, serial={{serial}}, hostname=abc123" time="0.781308">
+			<failure message="Unable to import meraki_device due to expected an indented block" type="failure">{
+&quot;msg&quot;: &quot;Unable to import meraki_device due to expected an indented block&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="4" time="20.02306318283081">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_ms_l3_interface-d6nfh_5u" skipped="0" tests="4" time="20.02306318283081">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_l3_interface-h574jksp-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_l3_interface/tasks/main.yml:7" name="[localhost] meraki: meraki_ms_l3_interface : Create network with type switch auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, type=switch, timezone=America/Chicago" time="5.387997">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685884&quot;,
+&quot;name&quot;: &quot;IntTestNetworkSwitch&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;switch&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkSw/n/_euinbUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_l3_interface-h574jksp-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_l3_interface/tasks/main.yml:18" name="[localhost] meraki: meraki_ms_l3_interface : Claim a device into a network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, serial=QBSB-VLNE-E299, state=present" time="6.725393">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: [
+{}
+],
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_l3_interface-h574jksp-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_l3_interface/tasks/main.yml:27" name="[localhost] meraki: meraki_ms_l3_interface : Query all l3 interfaces auth_key={{ auth_key }}, state=query, serial=QBSB-VLNE-E299" time="1.325647">
+			<failure message="401" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: 401,
+&quot;response&quot;: null,
+&quot;status&quot;: 401,
+&quot;url&quot;: &quot;https://api.meraki.com/api/v1/devices/QBSB-VLNE-E299/switch/routing/interfaces&quot;
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_l3_interface-h574jksp-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_l3_interface/tasks/main.yml:65" name="[localhost] meraki: meraki_ms_l3_interface : Delete network auth_key={{ auth_key }}, state=absent, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch" time="6.584026">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

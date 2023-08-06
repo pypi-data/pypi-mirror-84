@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="3" time="4.913883209228516">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_network-7cjs266l" skipped="0" tests="3" time="4.913883209228516">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-c_g7ze0j-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:254" name="[localhost] meraki: meraki_network : Disable remote status page auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkCombined, remote_status_page_enabled=False" time="4.723988">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;L_624874448297663692&quot;,
+&quot;name&quot;: &quot;IntTestNetworkCombined&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;,
+&quot;switch&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkCo/n/w8FJPcUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-c_g7ze0j-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:264" name="[localhost] meraki: meraki_network : debug var=enable_remote_status" time="0.095041">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;enable_remote_status&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;enrollment_string&quot;: null,
+            &quot;id&quot;: &quot;L_624874448297663692&quot;,
+            &quot;name&quot;: &quot;IntTestNetworkCombined&quot;,
+            &quot;organization_id&quot;: &quot;133277&quot;,
+            &quot;product_types&quot;: [
+                &quot;appliance&quot;,
+                &quot;switch&quot;
+            ],
+            &quot;tags&quot;: [],
+            &quot;time_zone&quot;: &quot;America/Chicago&quot;,
+            &quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkCo/n/w8FJPcUb/manage/usage/list&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-c_g7ze0j-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:267" name="[localhost] meraki: meraki_network : assert that=['enable_remote_status.data.remote_status_page_enabled == False']" time="0.094854">
+			<failure message="The conditional check 'enable_remote_status.data.remote_status_page_enabled == False' failed. The error was: error while evaluating conditional (enable_remote_status.data.remote_status_page_enabled == False): 'dict object' has no attribute 'remote_status_page_enabled'" type="failure">{
+&quot;msg&quot;: &quot;The conditional check 'enable_remote_status.data.remote_status_page_enabled == False' failed. The error was: error while evaluating conditional (enable_remote_status.data.remote_status_page_enabled == False): 'dict object' has no attribute 'remote_status_page_enabled'&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,10 @@
+{
+    "docs": "https://docs.ansible.com/ansible/2.10/dev_guide/testing/sanity/ansible-doc.html", 
+    "results": [
+        {
+            "message": "The test `ansible-test sanity --test ansible-doc` [[explain](https://docs.ansible.com/ansible/2.10/dev_guide/testing/sanity/ansible-doc.html)] failed with the error:", 
+            "output": "Command \"ansible-doc -t module cisco.meraki.meraki_admin cisco.meraki.meraki_config_template cisco.meraki.meraki_device cisco.meraki.meraki_firewalled_services cisco.meraki.meraki_management_interface cisco.meraki.meraki_mr_l3_firewall cisco.meraki.meraki_mr_rf_profile cisco.meraki.meraki_mr_settings cisco.meraki.meraki_mr_ssid cisco.meraki.meraki_ms_access_list cisco.meraki.meraki_ms_l3_interface cisco.meraki.meraki_ms_link_aggregation cisco.meraki.meraki_ms_ospf cisco.meraki.meraki_ms_stack cisco.meraki.meraki_ms_storm_control cisco.meraki.meraki_ms_switchport cisco.meraki.meraki_mx_content_filtering cisco.meraki.meraki_mx_intrusion_prevention cisco.meraki.meraki_mx_l2_interface cisco.meraki.meraki_mx_l3_firewall cisco.meraki.meraki_mx_l7_firewall cisco.meraki.meraki_mx_malware cisco.meraki.meraki_mx_nat cisco.meraki.meraki_mx_site_to_site_firewall cisco.meraki.meraki_mx_site_to_site_vpn cisco.meraki.meraki_mx_static_route cisco.meraki.meraki_mx_uplink_bandwidth cisco.meraki.meraki_mx_vlan cisco.meraki.meraki_network cisco.meraki.meraki_organization cisco.meraki.meraki_snmp cisco.meraki.meraki_syslog cisco.meraki.meraki_webhook\" returned exit status 1.\n>>> Standard Error\nERROR! Unable to retrieve documentation from 'cisco.meraki.meraki_mx_l2_interface' due to: 'NoneType' object is not iterable"
+        }
+    ], 
+    "verified": false
+}

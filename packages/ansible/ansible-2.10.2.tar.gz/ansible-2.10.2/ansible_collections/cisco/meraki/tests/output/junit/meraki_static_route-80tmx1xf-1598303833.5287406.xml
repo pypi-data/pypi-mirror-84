@@ -1,0 +1,505 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="24" time="63.24316716194153">
+	<testsuite disabled="0" errors="0" failures="0" name="meraki_static_route-80tmx1xf" skipped="0" tests="24" time="63.24316716194153">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:7" name="[localhost] meraki: meraki_static_route : Create appliance network auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetwork, timezone=America/Chicago, type=appliance" time="5.363701">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297686227&quot;,
+&quot;name&quot;: &quot;IntTestNetwork&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetwork/n/lW9k2dUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:18" name="[localhost] meraki: meraki_static_route : set_fact net_id={{net.data.id}}" time="0.127564">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_id&quot;: &quot;N_624874448297686227&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:21" name="[localhost] meraki: meraki_static_route : Initialize static route id list route_ids=[]" time="0.122706">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;route_ids&quot;: []
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:25" name="[localhost] meraki: meraki_static_route : Create static_route auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=IntTestNetwork, name=Test Route, subnet=192.0.1.0/24, gateway_ip=192.168.128.1" time="5.651272">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enabled&quot;: true,
+&quot;fixed_ip_assignments&quot;: {},
+&quot;gateway_ip&quot;: &quot;192.168.128.1&quot;,
+&quot;id&quot;: &quot;a64c21f2-1916-4233-82d8-8b3b2e3ffcc0&quot;,
+&quot;name&quot;: &quot;Test Route&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686227&quot;,
+&quot;reserved_ip_ranges&quot;: [],
+&quot;subnet&quot;: &quot;192.0.1.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:37" name="[localhost] meraki: meraki_static_route : set_fact route_ids={{ route_ids + [create_route.data.id] }}" time="0.158665">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;route_ids&quot;: [
+&quot;a64c21f2-1916-4233-82d8-8b3b2e3ffcc0&quot;
+]
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:40" name="[localhost] meraki: meraki_static_route : Create static_route with idempotency auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=IntTestNetwork, name=Test Route, subnet=192.0.1.0/24, gateway_ip=192.168.128.1" time="4.666958">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enabled&quot;: true,
+&quot;fixed_ip_assignments&quot;: {},
+&quot;gateway_ip&quot;: &quot;192.168.128.1&quot;,
+&quot;id&quot;: &quot;a64c21f2-1916-4233-82d8-8b3b2e3ffcc0&quot;,
+&quot;name&quot;: &quot;Test Route&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686227&quot;,
+&quot;reserved_ip_ranges&quot;: [],
+&quot;subnet&quot;: &quot;192.0.1.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:52" name="[localhost] meraki: meraki_static_route : assert that=['create_route_idempotent is not changed']" time="0.130673">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:56" name="[localhost] meraki: meraki_static_route : Create second static_route auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=IntTestNetwork, name=Test Route 2, subnet=192.0.2.0/24, gateway_ip=192.168.128.1" time="7.598961">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enabled&quot;: true,
+&quot;fixed_ip_assignments&quot;: {},
+&quot;gateway_ip&quot;: &quot;192.168.128.1&quot;,
+&quot;id&quot;: &quot;2f0f436d-f52f-43cf-ac1c-d35d6952ce70&quot;,
+&quot;name&quot;: &quot;Test Route 2&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686227&quot;,
+&quot;reserved_ip_ranges&quot;: [],
+&quot;subnet&quot;: &quot;192.0.2.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:68" name="[localhost] meraki: meraki_static_route : set_fact route_ids={{ route_ids + [second_create.data.id] }}" time="0.146974">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;route_ids&quot;: [
+&quot;a64c21f2-1916-4233-82d8-8b3b2e3ffcc0&quot;,
+&quot;2f0f436d-f52f-43cf-ac1c-d35d6952ce70&quot;
+]
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:71" name="[localhost] meraki: meraki_static_route : assert that=['create_route.changed == True', 'create_route.data.id is defined']" time="0.160988">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:76" name="[localhost] meraki: meraki_static_route : Update static route auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=IntTestNetwork, route_id={{create_route.data.id}}, subnet=192.0.3.0/24, enabled=True" time="5.174989">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enabled&quot;: true,
+&quot;fixed_ip_assignments&quot;: {},
+&quot;gateway_ip&quot;: &quot;192.168.128.1&quot;,
+&quot;id&quot;: &quot;a64c21f2-1916-4233-82d8-8b3b2e3ffcc0&quot;,
+&quot;name&quot;: &quot;Test Route&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686227&quot;,
+&quot;reserved_ip_ranges&quot;: [],
+&quot;subnet&quot;: &quot;192.0.3.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:88" name="[localhost] meraki: meraki_static_route : assert that=['update is changed', 'update.data.subnet == &quot;192.0.3.0/24&quot;']" time="0.124759">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:93" name="[localhost] meraki: meraki_static_route : Query static routes auth_key={{auth_key}}, state=query, org_name={{test_org_name}}, net_name=IntTestNetwork" time="3.956367">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: [
+{
+&quot;enabled&quot;: true,
+&quot;fixed_ip_assignments&quot;: {},
+&quot;gateway_ip&quot;: &quot;192.168.128.1&quot;,
+&quot;id&quot;: &quot;a64c21f2-1916-4233-82d8-8b3b2e3ffcc0&quot;,
+&quot;name&quot;: &quot;Test Route&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686227&quot;,
+&quot;reserved_ip_ranges&quot;: [],
+&quot;subnet&quot;: &quot;192.0.3.0/24&quot;
+},
+{
+&quot;enabled&quot;: true,
+&quot;fixed_ip_assignments&quot;: {},
+&quot;gateway_ip&quot;: &quot;192.168.128.1&quot;,
+&quot;id&quot;: &quot;2f0f436d-f52f-43cf-ac1c-d35d6952ce70&quot;,
+&quot;name&quot;: &quot;Test Route 2&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686227&quot;,
+&quot;reserved_ip_ranges&quot;: [],
+&quot;subnet&quot;: &quot;192.0.2.0/24&quot;
+}
+],
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:102" name="[localhost] meraki: meraki_static_route : debug var=query_all" time="0.158484">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;query_all&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: [
+            {
+                &quot;enabled&quot;: true,
+                &quot;fixed_ip_assignments&quot;: {},
+                &quot;gateway_ip&quot;: &quot;192.168.128.1&quot;,
+                &quot;id&quot;: &quot;a64c21f2-1916-4233-82d8-8b3b2e3ffcc0&quot;,
+                &quot;name&quot;: &quot;Test Route&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297686227&quot;,
+                &quot;reserved_ip_ranges&quot;: [],
+                &quot;subnet&quot;: &quot;192.0.3.0/24&quot;
+            },
+            {
+                &quot;enabled&quot;: true,
+                &quot;fixed_ip_assignments&quot;: {},
+                &quot;gateway_ip&quot;: &quot;192.168.128.1&quot;,
+                &quot;id&quot;: &quot;2f0f436d-f52f-43cf-ac1c-d35d6952ce70&quot;,
+                &quot;name&quot;: &quot;Test Route 2&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297686227&quot;,
+                &quot;reserved_ip_ranges&quot;: [],
+                &quot;subnet&quot;: &quot;192.0.2.0/24&quot;
+            }
+        ],
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:105" name="[localhost] meraki: meraki_static_route : assert that=['query_all.data | length &gt;= 2']" time="0.161196">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:109" name="[localhost] meraki: meraki_static_route : Update static route with idempotency auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=IntTestNetwork, route_id={{create_route.data.id}}, name=Test Route, gateway_ip=192.168.128.1, subnet=192.0.3.0/24, enabled=True" time="3.855294">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enabled&quot;: true,
+&quot;fixed_ip_assignments&quot;: {},
+&quot;gateway_ip&quot;: &quot;192.168.128.1&quot;,
+&quot;id&quot;: &quot;a64c21f2-1916-4233-82d8-8b3b2e3ffcc0&quot;,
+&quot;name&quot;: &quot;Test Route&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686227&quot;,
+&quot;reserved_ip_ranges&quot;: [],
+&quot;subnet&quot;: &quot;192.0.3.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:123" name="[localhost] meraki: meraki_static_route : assert that=['update_idempotent.changed == False', 'update_idempotent.data is defined']" time="0.133277">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:128" name="[localhost] meraki: meraki_static_route : Update static route with fixed IP assignment and reservation auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=IntTestNetwork, route_id={{create_route.data.id}}, fixed_ip_assignments=[{'mac': 'aa:bb:cc:dd:ee:ff', 'ip': '192.0.3.11', 'name': 'WebServer'}], reserved_ip_ranges=[{'start': '192.168.3.2', 'end': '192.168.3.10', 'comment': 'Printers'}]" time="6.746442">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enabled&quot;: true,
+&quot;fixed_ip_assignments&quot;: {
+&quot;aa:bb:cc:dd:ee:ff&quot;: {
+&quot;ip&quot;: &quot;192.0.3.11&quot;,
+&quot;name&quot;: &quot;WebServer&quot;
+}
+},
+&quot;gateway_ip&quot;: &quot;192.168.128.1&quot;,
+&quot;id&quot;: &quot;a64c21f2-1916-4233-82d8-8b3b2e3ffcc0&quot;,
+&quot;name&quot;: &quot;Test Route&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686227&quot;,
+&quot;reserved_ip_ranges&quot;: [
+{
+&quot;comment&quot;: &quot;Printers&quot;,
+&quot;end&quot;: &quot;192.168.3.10&quot;,
+&quot;start&quot;: &quot;192.168.3.2&quot;
+}
+],
+&quot;subnet&quot;: &quot;192.0.3.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:146" name="[localhost] meraki: meraki_static_route : debug var=fixed_ip" time="0.142378">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;fixed_ip&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;enabled&quot;: true,
+            &quot;fixed_ip_assignments&quot;: {
+                &quot;aa:bb:cc:dd:ee:ff&quot;: {
+                    &quot;ip&quot;: &quot;192.0.3.11&quot;,
+                    &quot;name&quot;: &quot;WebServer&quot;
+                }
+            },
+            &quot;gateway_ip&quot;: &quot;192.168.128.1&quot;,
+            &quot;id&quot;: &quot;a64c21f2-1916-4233-82d8-8b3b2e3ffcc0&quot;,
+            &quot;name&quot;: &quot;Test Route&quot;,
+            &quot;network_id&quot;: &quot;N_624874448297686227&quot;,
+            &quot;reserved_ip_ranges&quot;: [
+                {
+                    &quot;comment&quot;: &quot;Printers&quot;,
+                    &quot;end&quot;: &quot;192.168.3.10&quot;,
+                    &quot;start&quot;: &quot;192.168.3.2&quot;
+                }
+            ],
+            &quot;subnet&quot;: &quot;192.0.3.0/24&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:149" name="[localhost] meraki: meraki_static_route : assert that=['fixed_ip.data.fixed_ip_assignments | length == 1', 'fixed_ip.data.reserved_ip_ranges | length == 1']" time="0.147227">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:155" name="[localhost] meraki: meraki_static_route : Query single static route auth_key={{auth_key}}, state=query, org_name={{test_org_name}}, net_name=IntTestNetwork, route_id={{create_route.data.id}}" time="3.546478">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enabled&quot;: true,
+&quot;fixed_ip_assignments&quot;: {
+&quot;aa:bb:cc:dd:ee:ff&quot;: {
+&quot;ip&quot;: &quot;192.0.3.11&quot;,
+&quot;name&quot;: &quot;WebServer&quot;
+}
+},
+&quot;gateway_ip&quot;: &quot;192.168.128.1&quot;,
+&quot;id&quot;: &quot;a64c21f2-1916-4233-82d8-8b3b2e3ffcc0&quot;,
+&quot;name&quot;: &quot;Test Route&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686227&quot;,
+&quot;reserved_ip_ranges&quot;: [
+{
+&quot;comment&quot;: &quot;Printers&quot;,
+&quot;end&quot;: &quot;192.168.3.10&quot;,
+&quot;start&quot;: &quot;192.168.3.2&quot;
+}
+],
+&quot;subnet&quot;: &quot;192.0.3.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:165" name="[localhost] meraki: meraki_static_route : assert that=['query_one.data.name == &quot;Test Route&quot;']" time="0.127043">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:169" name="[localhost] meraki: meraki_static_route : Delete static routes auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, net_name=IntTestNetwork, route_id={{item}}" time="8.696803">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;All items completed&quot;,
+&quot;results&quot;: [
+{
+&quot;ansible_loop_var&quot;: &quot;item&quot;,
+&quot;changed&quot;: true,
+&quot;data&quot;: {},
+&quot;failed&quot;: false,
+&quot;invocation&quot;: {
+&quot;module_args&quot;: {
+&quot;auth_key&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+&quot;enabled&quot;: null,
+&quot;fixed_ip_assignments&quot;: null,
+&quot;follow_redirects&quot;: &quot;all&quot;,
+&quot;gateway_ip&quot;: null,
+&quot;host&quot;: &quot;api.meraki.com&quot;,
+&quot;internal_error_retry_time&quot;: 60,
+&quot;name&quot;: null,
+&quot;net_id&quot;: null,
+&quot;net_name&quot;: &quot;IntTestNetwork&quot;,
+&quot;org_id&quot;: null,
+&quot;org_name&quot;: &quot;kbreit@insight.com&quot;,
+&quot;output_format&quot;: &quot;snakecase&quot;,
+&quot;output_level&quot;: &quot;normal&quot;,
+&quot;protocol&quot;: &quot;https&quot;,
+&quot;rate_limit_retry_time&quot;: 165,
+&quot;reserved_ip_ranges&quot;: null,
+&quot;route_id&quot;: &quot;a64c21f2-1916-4233-82d8-8b3b2e3ffcc0&quot;,
+&quot;state&quot;: &quot;absent&quot;,
+&quot;subnet&quot;: null,
+&quot;timeout&quot;: 30,
+&quot;use_https&quot;: true,
+&quot;use_proxy&quot;: false,
+&quot;validate_certs&quot;: true
+}
+},
+&quot;item&quot;: &quot;a64c21f2-1916-4233-82d8-8b3b2e3ffcc0&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+},
+{
+&quot;ansible_loop_var&quot;: &quot;item&quot;,
+&quot;changed&quot;: true,
+&quot;data&quot;: {},
+&quot;failed&quot;: false,
+&quot;invocation&quot;: {
+&quot;module_args&quot;: {
+&quot;auth_key&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+&quot;enabled&quot;: null,
+&quot;fixed_ip_assignments&quot;: null,
+&quot;follow_redirects&quot;: &quot;all&quot;,
+&quot;gateway_ip&quot;: null,
+&quot;host&quot;: &quot;api.meraki.com&quot;,
+&quot;internal_error_retry_time&quot;: 60,
+&quot;name&quot;: null,
+&quot;net_id&quot;: null,
+&quot;net_name&quot;: &quot;IntTestNetwork&quot;,
+&quot;org_id&quot;: null,
+&quot;org_name&quot;: &quot;kbreit@insight.com&quot;,
+&quot;output_format&quot;: &quot;snakecase&quot;,
+&quot;output_level&quot;: &quot;normal&quot;,
+&quot;protocol&quot;: &quot;https&quot;,
+&quot;rate_limit_retry_time&quot;: 165,
+&quot;reserved_ip_ranges&quot;: null,
+&quot;route_id&quot;: &quot;2f0f436d-f52f-43cf-ac1c-d35d6952ce70&quot;,
+&quot;state&quot;: &quot;absent&quot;,
+&quot;subnet&quot;: null,
+&quot;timeout&quot;: 30,
+&quot;use_https&quot;: true,
+&quot;use_proxy&quot;: false,
+&quot;validate_certs&quot;: true
+}
+},
+&quot;item&quot;: &quot;2f0f436d-f52f-43cf-ac1c-d35d6952ce70&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_static_route-q2z83q12-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_static_route/tasks/main.yml:181" name="[localhost] meraki: meraki_static_route : Delete appliance network auth_key={{ auth_key }}, state=absent, org_name={{test_org_name}}, net_name=IntTestNetwork" time="6.143969">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

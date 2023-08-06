@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="3" time="8.915323734283447">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_switch_storm_control-yz436cow" skipped="0" tests="3" time="8.915323734283447">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_storm_control-inet8ccl-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_storm_control/tasks/main.yml:7" name="[localhost] meraki: meraki_switch_storm_control : Create switch network auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=Home - Switch, timezone=America/Chicago, type=switch" time="4.413913">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297686225&quot;,
+&quot;name&quot;: &quot;Home - Switch&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;switch&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Switch/n/2389iaUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_storm_control-inet8ccl-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_storm_control/tasks/main.yml:18" name="[localhost] meraki: meraki_switch_storm_control : set_fact net_id={{net.data.id}}" time="0.091920">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_id&quot;: &quot;N_624874448297686225&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_storm_control-inet8ccl-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_storm_control/tasks/main.yml:21" name="[localhost] meraki: meraki_switch_storm_control : Reset data auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=Home - Switch, broadcast_threshold=100, multicast_threshold=100, unknown_unicast_threshold=100" time="4.409490">
+			<failure message="HTTP error 400 - https://api.meraki.com/api/v1/networks/N_624874448297686225/switch/stormControl - Storm Control is not supported on the switch models in your network." type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;HTTP error 400 - https://api.meraki.com/api/v1/networks/N_624874448297686225/switch/stormControl - Storm Control is not supported on the switch models in your network.&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 400
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

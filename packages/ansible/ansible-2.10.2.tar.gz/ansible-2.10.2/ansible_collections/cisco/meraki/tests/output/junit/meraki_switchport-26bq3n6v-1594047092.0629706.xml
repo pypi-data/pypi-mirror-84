@@ -1,0 +1,732 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="26" time="28.853780031204224">
+	<testsuite disabled="0" errors="0" failures="0" name="meraki_switchport-26bq3n6v" skipped="0" tests="26" time="28.853780031204224">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:128" name="[localhost] meraki: meraki_switchport : Configure access port auth_key={{auth_key}}, state=present, serial={{ serial_switch }}, number=7, enabled=True, name=Test Port, tags=desktop, type=access, vlan=10" time="1.821700">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;access_policy_type&quot;: &quot;Open&quot;,
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: &quot;Test Port&quot;,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;7&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [
+&quot;desktop&quot;
+],
+&quot;type&quot;: &quot;access&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 10,
+&quot;voice_vlan&quot;: 11
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 7\&quot; (type int) was converted to \&quot;auth_key: '7'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:142" name="[localhost] meraki: meraki_switchport : debug msg={{update_access_port}}" time="0.092242">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;access_policy_type&quot;: &quot;Open&quot;,
+            &quot;allowed_vlans&quot;: &quot;all&quot;,
+            &quot;enabled&quot;: true,
+            &quot;isolation_enabled&quot;: false,
+            &quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+            &quot;name&quot;: &quot;Test Port&quot;,
+            &quot;poe_enabled&quot;: true,
+            &quot;port_id&quot;: &quot;7&quot;,
+            &quot;port_schedule_id&quot;: null,
+            &quot;rstp_enabled&quot;: true,
+            &quot;stp_guard&quot;: &quot;disabled&quot;,
+            &quot;tags&quot;: [
+                &quot;desktop&quot;
+            ],
+            &quot;type&quot;: &quot;access&quot;,
+            &quot;udld&quot;: &quot;Alert only&quot;,
+            &quot;vlan&quot;: 10,
+            &quot;voice_vlan&quot;: 11
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;auth_key: 7\&quot; (type int) was converted to \&quot;auth_key: '7'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:145" name="[localhost] meraki: meraki_switchport : assert that=['update_access_port.data.vlan == 10']" time="0.092937">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:149" name="[localhost] meraki: meraki_switchport : Configure port as trunk auth_key={{auth_key}}, state=present, serial={{ serial_switch }}, number=8, enabled=True, name=Test Port, type=trunk, vlan=10, allowed_vlans=10, 100, 200" time="2.894094">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;allowed_vlans&quot;: &quot;10,100,200&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: &quot;Test Port&quot;,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;8&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [],
+&quot;type&quot;: &quot;trunk&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 10,
+&quot;voice_vlan&quot;: null
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 8\&quot; (type int) was converted to \&quot;auth_key: '8'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:162" name="[localhost] meraki: meraki_switchport : Convert trunk port to access auth_key={{auth_key}}, state=present, serial={{ serial_switch }}, number=8, enabled=True, name=Test Port, type=access, vlan=10" time="2.952656">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;access_policy_type&quot;: &quot;Open&quot;,
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: &quot;Test Port&quot;,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;8&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [],
+&quot;type&quot;: &quot;access&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 10,
+&quot;voice_vlan&quot;: null
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 8\&quot; (type int) was converted to \&quot;auth_key: '8'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:174" name="[localhost] meraki: meraki_switchport : Test converted port for idempotency auth_key={{auth_key}}, state=present, serial={{ serial_switch }}, number=8, enabled=True, name=Test Port, type=access, vlan=10" time="1.545333">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;access_policy_type&quot;: &quot;Open&quot;,
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: &quot;Test Port&quot;,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;8&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [],
+&quot;type&quot;: &quot;access&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 10,
+&quot;voice_vlan&quot;: null
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 8\&quot; (type int) was converted to \&quot;auth_key: '8'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:187" name="[localhost] meraki: meraki_switchport : assert that=['convert_idempotent.changed == False']" time="0.090749">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:191" name="[localhost] meraki: meraki_switchport : Change voice VLAN for next task auth_key={{auth_key}}, state=present, serial={{ serial_switch }}, number=7, enabled=True, name=Test Port, tags=desktop, type=access, vlan=10, voice_vlan=12" time="3.072139">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;access_policy_type&quot;: &quot;Open&quot;,
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: &quot;Test Port&quot;,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;7&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [
+&quot;desktop&quot;
+],
+&quot;type&quot;: &quot;access&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 10,
+&quot;voice_vlan&quot;: 12
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 7\&quot; (type int) was converted to \&quot;auth_key: '7'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:206" name="[localhost] meraki: meraki_switchport : Configure access port with voice VLAN auth_key={{auth_key}}, state=present, serial={{ serial_switch }}, number=7, enabled=True, name=Test Port, tags=desktop, type=access, vlan=10, voice_vlan=11" time="2.760655">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;access_policy_type&quot;: &quot;Open&quot;,
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: &quot;Test Port&quot;,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;7&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [
+&quot;desktop&quot;
+],
+&quot;type&quot;: &quot;access&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 10,
+&quot;voice_vlan&quot;: 11
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 7\&quot; (type int) was converted to \&quot;auth_key: '7'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:221" name="[localhost] meraki: meraki_switchport : debug msg={{update_port_vvlan}}" time="0.092036">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;access_policy_type&quot;: &quot;Open&quot;,
+            &quot;allowed_vlans&quot;: &quot;all&quot;,
+            &quot;enabled&quot;: true,
+            &quot;isolation_enabled&quot;: false,
+            &quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+            &quot;name&quot;: &quot;Test Port&quot;,
+            &quot;poe_enabled&quot;: true,
+            &quot;port_id&quot;: &quot;7&quot;,
+            &quot;port_schedule_id&quot;: null,
+            &quot;rstp_enabled&quot;: true,
+            &quot;stp_guard&quot;: &quot;disabled&quot;,
+            &quot;tags&quot;: [
+                &quot;desktop&quot;
+            ],
+            &quot;type&quot;: &quot;access&quot;,
+            &quot;udld&quot;: &quot;Alert only&quot;,
+            &quot;vlan&quot;: 10,
+            &quot;voice_vlan&quot;: 11
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;auth_key: 7\&quot; (type int) was converted to \&quot;auth_key: '7'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:224" name="[localhost] meraki: meraki_switchport : assert that=['update_port_vvlan.data.voice_vlan == 11', 'update_port_vvlan.changed == True']" time="0.096239">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:229" name="[localhost] meraki: meraki_switchport : Check access port for idempotenty auth_key={{auth_key}}, state=present, serial={{ serial_switch }}, number=7, enabled=True, name=Test Port, tags=desktop, type=access, vlan=10, voice_vlan=11" time="1.575464">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;access_policy_type&quot;: &quot;Open&quot;,
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: &quot;Test Port&quot;,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;7&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [
+&quot;desktop&quot;
+],
+&quot;type&quot;: &quot;access&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 10,
+&quot;voice_vlan&quot;: 11
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 7\&quot; (type int) was converted to \&quot;auth_key: '7'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:244" name="[localhost] meraki: meraki_switchport : debug msg={{update_port_access_idempotent}}" time="0.095064">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;access_policy_type&quot;: &quot;Open&quot;,
+            &quot;allowed_vlans&quot;: &quot;all&quot;,
+            &quot;enabled&quot;: true,
+            &quot;isolation_enabled&quot;: false,
+            &quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+            &quot;name&quot;: &quot;Test Port&quot;,
+            &quot;poe_enabled&quot;: true,
+            &quot;port_id&quot;: &quot;7&quot;,
+            &quot;port_schedule_id&quot;: null,
+            &quot;rstp_enabled&quot;: true,
+            &quot;stp_guard&quot;: &quot;disabled&quot;,
+            &quot;tags&quot;: [
+                &quot;desktop&quot;
+            ],
+            &quot;type&quot;: &quot;access&quot;,
+            &quot;udld&quot;: &quot;Alert only&quot;,
+            &quot;vlan&quot;: 10,
+            &quot;voice_vlan&quot;: 11
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;auth_key: 7\&quot; (type int) was converted to \&quot;auth_key: '7'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:247" name="[localhost] meraki: meraki_switchport : assert that=['update_port_access_idempotent.changed == False', 'update_port_access_idempotent.data is defined']" time="0.095492">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:252" name="[localhost] meraki: meraki_switchport : Configure trunk port auth_key={{auth_key}}, state=present, serial={{ serial_switch }}, number=7, enabled=True, name=Server port, tags=server, type=trunk, allowed_vlans=all, vlan=8" time="3.010181">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: &quot;Server port&quot;,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;7&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [
+&quot;server&quot;
+],
+&quot;type&quot;: &quot;trunk&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 8,
+&quot;voice_vlan&quot;: 11
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 7\&quot; (type int) was converted to \&quot;auth_key: '7'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:267" name="[localhost] meraki: meraki_switchport : debug msg={{update_trunk}}" time="0.098405">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;allowed_vlans&quot;: &quot;all&quot;,
+            &quot;enabled&quot;: true,
+            &quot;isolation_enabled&quot;: false,
+            &quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+            &quot;name&quot;: &quot;Server port&quot;,
+            &quot;poe_enabled&quot;: true,
+            &quot;port_id&quot;: &quot;7&quot;,
+            &quot;port_schedule_id&quot;: null,
+            &quot;rstp_enabled&quot;: true,
+            &quot;stp_guard&quot;: &quot;disabled&quot;,
+            &quot;tags&quot;: [
+                &quot;server&quot;
+            ],
+            &quot;type&quot;: &quot;trunk&quot;,
+            &quot;udld&quot;: &quot;Alert only&quot;,
+            &quot;vlan&quot;: 8,
+            &quot;voice_vlan&quot;: 11
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;auth_key: 7\&quot; (type int) was converted to \&quot;auth_key: '7'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:270" name="[localhost] meraki: meraki_switchport : assert that=[&quot;update_trunk.data.tags.0 == 'server'&quot;, &quot;update_trunk.data.type == 'trunk'&quot;, &quot;update_trunk.data.allowed_vlans == 'all'&quot;]" time="0.099283">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:276" name="[localhost] meraki: meraki_switchport : Configure trunk port with specific VLANs auth_key={{auth_key}}, state=present, serial={{ serial_switch }}, number=7, enabled=True, name=Server port, tags=server, type=trunk, vlan=8, allowed_vlans=[10, 15, 20]" time="2.759318">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;allowed_vlans&quot;: &quot;8,10,15,20&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: &quot;Server port&quot;,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;7&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [
+&quot;server&quot;
+],
+&quot;type&quot;: &quot;trunk&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 8,
+&quot;voice_vlan&quot;: 11
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 7\&quot; (type int) was converted to \&quot;auth_key: '7'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+&quot;The value \&quot;allowed_vlans: 10\&quot; (type int) was converted to \&quot;allowed_vlans: '10'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+&quot;The value \&quot;allowed_vlans: 15\&quot; (type int) was converted to \&quot;allowed_vlans: '15'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+&quot;The value \&quot;allowed_vlans: 20\&quot; (type int) was converted to \&quot;allowed_vlans: '20'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:294" name="[localhost] meraki: meraki_switchport : debug msg={{update_trunk}}" time="0.092361">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;allowed_vlans&quot;: &quot;8,10,15,20&quot;,
+            &quot;enabled&quot;: true,
+            &quot;isolation_enabled&quot;: false,
+            &quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+            &quot;name&quot;: &quot;Server port&quot;,
+            &quot;poe_enabled&quot;: true,
+            &quot;port_id&quot;: &quot;7&quot;,
+            &quot;port_schedule_id&quot;: null,
+            &quot;rstp_enabled&quot;: true,
+            &quot;stp_guard&quot;: &quot;disabled&quot;,
+            &quot;tags&quot;: [
+                &quot;server&quot;
+            ],
+            &quot;type&quot;: &quot;trunk&quot;,
+            &quot;udld&quot;: &quot;Alert only&quot;,
+            &quot;vlan&quot;: 8,
+            &quot;voice_vlan&quot;: 11
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;auth_key: 7\&quot; (type int) was converted to \&quot;auth_key: '7'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+            &quot;The value \&quot;allowed_vlans: 10\&quot; (type int) was converted to \&quot;allowed_vlans: '10'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+            &quot;The value \&quot;allowed_vlans: 15\&quot; (type int) was converted to \&quot;allowed_vlans: '15'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+            &quot;The value \&quot;allowed_vlans: 20\&quot; (type int) was converted to \&quot;allowed_vlans: '20'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:297" name="[localhost] meraki: meraki_switchport : assert that=[&quot;update_trunk.data.tags.0 == 'server'&quot;, &quot;update_trunk.data.type == 'trunk'&quot;, &quot;update_trunk.data.allowed_vlans == '8,10,15,20'&quot;]" time="0.101864">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:303" name="[localhost] meraki: meraki_switchport : Configure trunk port with specific VLANs and native VLAN auth_key={{auth_key}}, state=present, serial={{ serial_switch }}, number=7, enabled=True, name=Server port, tags=server, type=trunk, vlan=2, allowed_vlans=[10, 15, 20]" time="2.679723">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;allowed_vlans&quot;: &quot;2,10,15,20&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: &quot;Server port&quot;,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;7&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [
+&quot;server&quot;
+],
+&quot;type&quot;: &quot;trunk&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 2,
+&quot;voice_vlan&quot;: 11
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 7\&quot; (type int) was converted to \&quot;auth_key: '7'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+&quot;The value \&quot;allowed_vlans: 10\&quot; (type int) was converted to \&quot;allowed_vlans: '10'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+&quot;The value \&quot;allowed_vlans: 15\&quot; (type int) was converted to \&quot;allowed_vlans: '15'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+&quot;The value \&quot;allowed_vlans: 20\&quot; (type int) was converted to \&quot;allowed_vlans: '20'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:321" name="[localhost] meraki: meraki_switchport : debug msg={{update_trunk}}" time="0.092401">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;allowed_vlans&quot;: &quot;2,10,15,20&quot;,
+            &quot;enabled&quot;: true,
+            &quot;isolation_enabled&quot;: false,
+            &quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+            &quot;name&quot;: &quot;Server port&quot;,
+            &quot;poe_enabled&quot;: true,
+            &quot;port_id&quot;: &quot;7&quot;,
+            &quot;port_schedule_id&quot;: null,
+            &quot;rstp_enabled&quot;: true,
+            &quot;stp_guard&quot;: &quot;disabled&quot;,
+            &quot;tags&quot;: [
+                &quot;server&quot;
+            ],
+            &quot;type&quot;: &quot;trunk&quot;,
+            &quot;udld&quot;: &quot;Alert only&quot;,
+            &quot;vlan&quot;: 2,
+            &quot;voice_vlan&quot;: 11
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;auth_key: 7\&quot; (type int) was converted to \&quot;auth_key: '7'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+            &quot;The value \&quot;allowed_vlans: 10\&quot; (type int) was converted to \&quot;allowed_vlans: '10'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+            &quot;The value \&quot;allowed_vlans: 15\&quot; (type int) was converted to \&quot;allowed_vlans: '15'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+            &quot;The value \&quot;allowed_vlans: 20\&quot; (type int) was converted to \&quot;allowed_vlans: '20'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:324" name="[localhost] meraki: meraki_switchport : assert that=[&quot;update_trunk.data.tags.0 == 'server'&quot;, &quot;update_trunk.data.type == 'trunk'&quot;, &quot;update_trunk.data.allowed_vlans == '2,10,15,20'&quot;]" time="0.099884">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:330" name="[localhost] meraki: meraki_switchport : Check for idempotency on trunk port auth_key={{auth_key}}, state=present, serial={{ serial_switch }}, number=7, enabled=True, name=Server port, tags=server, type=trunk, vlan=2, allowed_vlans=[10, 15, 20]" time="2.356349">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;allowed_vlans&quot;: &quot;2,10,15,20&quot;,
+&quot;enabled&quot;: true,
+&quot;isolation_enabled&quot;: false,
+&quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: &quot;Server port&quot;,
+&quot;poe_enabled&quot;: true,
+&quot;port_id&quot;: &quot;7&quot;,
+&quot;port_schedule_id&quot;: null,
+&quot;rstp_enabled&quot;: true,
+&quot;stp_guard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: [
+&quot;server&quot;
+],
+&quot;type&quot;: &quot;trunk&quot;,
+&quot;udld&quot;: &quot;Alert only&quot;,
+&quot;vlan&quot;: 2,
+&quot;voice_vlan&quot;: 11
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 7\&quot; (type int) was converted to \&quot;auth_key: '7'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+&quot;The value \&quot;allowed_vlans: 10\&quot; (type int) was converted to \&quot;allowed_vlans: '10'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+&quot;The value \&quot;allowed_vlans: 15\&quot; (type int) was converted to \&quot;allowed_vlans: '15'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+&quot;The value \&quot;allowed_vlans: 20\&quot; (type int) was converted to \&quot;allowed_vlans: '20'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:348" name="[localhost] meraki: meraki_switchport : debug msg={{update_trunk_idempotent}}" time="0.091650">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;allowed_vlans&quot;: &quot;2,10,15,20&quot;,
+            &quot;enabled&quot;: true,
+            &quot;isolation_enabled&quot;: false,
+            &quot;link_negotiation&quot;: &quot;Auto negotiate&quot;,
+            &quot;name&quot;: &quot;Server port&quot;,
+            &quot;poe_enabled&quot;: true,
+            &quot;port_id&quot;: &quot;7&quot;,
+            &quot;port_schedule_id&quot;: null,
+            &quot;rstp_enabled&quot;: true,
+            &quot;stp_guard&quot;: &quot;disabled&quot;,
+            &quot;tags&quot;: [
+                &quot;server&quot;
+            ],
+            &quot;type&quot;: &quot;trunk&quot;,
+            &quot;udld&quot;: &quot;Alert only&quot;,
+            &quot;vlan&quot;: 2,
+            &quot;voice_vlan&quot;: 11
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;auth_key: 7\&quot; (type int) was converted to \&quot;auth_key: '7'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+            &quot;The value \&quot;allowed_vlans: 10\&quot; (type int) was converted to \&quot;allowed_vlans: '10'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+            &quot;The value \&quot;allowed_vlans: 15\&quot; (type int) was converted to \&quot;allowed_vlans: '15'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+            &quot;The value \&quot;allowed_vlans: 20\&quot; (type int) was converted to \&quot;allowed_vlans: '20'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-7li7j9ny-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:351" name="[localhost] meraki: meraki_switchport : assert that=['update_trunk_idempotent.changed == False', 'update_trunk_idempotent.data is defined']" time="0.095560">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

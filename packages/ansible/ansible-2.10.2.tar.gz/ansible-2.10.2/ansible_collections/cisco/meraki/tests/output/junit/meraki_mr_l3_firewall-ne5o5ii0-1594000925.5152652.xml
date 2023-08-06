@@ -1,0 +1,132 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="5" time="6.4382548332214355">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_mr_l3_firewall-ne5o5ii0" skipped="0" tests="5" time="6.4382548332214355">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_l3_firewall-nwifiayg-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_l3_firewall/tasks/main.yml:7" name="[localhost] meraki: meraki_mr_l3_firewall : Create wireless network auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=TestNetWireless, type=wireless" time="3.287533">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685385&quot;,
+&quot;name&quot;: &quot;TestNetWireless&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;wireless&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/TestNetWireless/n/96ReabUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_l3_firewall-nwifiayg-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_l3_firewall/tasks/main.yml:17" name="[localhost] meraki: meraki_mr_l3_firewall : set_fact net={{new_net.data.id}}" time="0.113133">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net&quot;: &quot;N_624874448297685385&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_l3_firewall-nwifiayg-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_l3_firewall/tasks/main.yml:74" name="[localhost] meraki: meraki_mr_l3_firewall : Enable local LAN access with check mode auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_id={{net}}, number=1, allow_lan_access=True" time="2.753237">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;rules&quot;: [
+{
+&quot;comment&quot;: &quot;Integration test rule&quot;,
+&quot;dest_cidr&quot;: &quot;192.0.2.0/24&quot;,
+&quot;dest_port&quot;: &quot;80&quot;,
+&quot;policy&quot;: &quot;allow&quot;,
+&quot;protocol&quot;: &quot;tcp&quot;
+},
+{
+&quot;comment&quot;: &quot;Wireless clients accessing LAN&quot;,
+&quot;dest_cidr&quot;: &quot;Local LAN&quot;,
+&quot;dest_port&quot;: &quot;Any&quot;,
+&quot;policy&quot;: &quot;deny&quot;,
+&quot;protocol&quot;: &quot;Any&quot;
+},
+{
+&quot;comment&quot;: &quot;Default rule&quot;,
+&quot;dest_cidr&quot;: &quot;Any&quot;,
+&quot;dest_port&quot;: &quot;Any&quot;,
+&quot;policy&quot;: &quot;allow&quot;,
+&quot;protocol&quot;: &quot;Any&quot;
+}
+]
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 1\&quot; (type int) was converted to \&quot;auth_key: '1'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_l3_firewall-nwifiayg-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_l3_firewall/tasks/main.yml:86" name="[localhost] meraki: meraki_mr_l3_firewall : debug var=enable_lan_check" time="0.134157">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;enable_lan_check&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;rules&quot;: [
+                {
+                    &quot;comment&quot;: &quot;Integration test rule&quot;,
+                    &quot;dest_cidr&quot;: &quot;192.0.2.0/24&quot;,
+                    &quot;dest_port&quot;: &quot;80&quot;,
+                    &quot;policy&quot;: &quot;allow&quot;,
+                    &quot;protocol&quot;: &quot;tcp&quot;
+                },
+                {
+                    &quot;comment&quot;: &quot;Wireless clients accessing LAN&quot;,
+                    &quot;dest_cidr&quot;: &quot;Local LAN&quot;,
+                    &quot;dest_port&quot;: &quot;Any&quot;,
+                    &quot;policy&quot;: &quot;deny&quot;,
+                    &quot;protocol&quot;: &quot;Any&quot;
+                },
+                {
+                    &quot;comment&quot;: &quot;Default rule&quot;,
+                    &quot;dest_cidr&quot;: &quot;Any&quot;,
+                    &quot;dest_port&quot;: &quot;Any&quot;,
+                    &quot;policy&quot;: &quot;allow&quot;,
+                    &quot;protocol&quot;: &quot;Any&quot;
+                }
+            ]
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;auth_key: 1\&quot; (type int) was converted to \&quot;auth_key: '1'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_l3_firewall-nwifiayg-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_l3_firewall/tasks/main.yml:89" name="[localhost] meraki: meraki_mr_l3_firewall : assert that=[&quot;enable_lan_check.data.rules.1.policy == 'allow'&quot;, 'enable_lan_check is changed']" time="0.150195">
+			<failure message="Assertion failed" type="failure">{
+    &quot;assertion&quot;: &quot;enable_lan_check.data.rules.1.policy == 'allow'&quot;,
+    &quot;changed&quot;: false,
+    &quot;evaluated_to&quot;: false,
+    &quot;msg&quot;: &quot;Assertion failed&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

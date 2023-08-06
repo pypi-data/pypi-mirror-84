@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="3" time="3.5333595275878906">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_webhook-3xme9t85" skipped="1" tests="3" time="3.5333595275878906">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-vfoct0nn-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:7" name="[localhost] meraki: meraki_webhook : Test an API key is provided msg=Please define an API key" time="0.099134">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-vfoct0nn-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:12" name="[localhost] meraki: meraki_webhook : Create test network auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, type=appliance" time="3.314699">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685412&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/KQG12aUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-vfoct0nn-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:20" name="[localhost] meraki: meraki_webhook : Create webhook with check mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, name=Test_Hook, url=https://webhook.site/8eb5b76f-b167-4cb8-9fc4-42621b724244, shared_secret=shhhdonttellanyone" time="0.119526">
+			<failure message="Unable to import meraki_webhook due to unexpected indent" type="failure">{
+&quot;msg&quot;: &quot;Unable to import meraki_webhook due to unexpected indent&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

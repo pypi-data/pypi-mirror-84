@@ -1,0 +1,1557 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="52" time="127.43884873390198">
+	<testsuite disabled="0" errors="0" failures="0" name="meraki_vlan-q115ps5l" skipped="1" tests="52" time="127.43884873390198">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:7" name="[localhost] meraki: meraki_vlan : Test an API key is provided msg=Please define an API key" time="0.229281">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:12" name="[localhost] meraki: meraki_vlan : Create test network auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, type=appliance" time="6.877667">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297686250&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/_NvZXcUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:21" name="[localhost] meraki: meraki_vlan : Enable VLANs on network auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, enable_vlans=True" time="6.757166">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;vlans_enabled&quot;: true
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:30" name="[localhost] meraki: meraki_vlan : Create VLAN in check mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2, name=TestVLAN, subnet=192.168.250.0/24, appliance_ip=192.168.250.1" time="4.894320">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;appliance_ip&quot;: &quot;192.168.250.1&quot;,
+&quot;id&quot;: 2,
+&quot;name&quot;: &quot;TestVLAN&quot;,
+&quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:44" name="[localhost] meraki: meraki_vlan : debug var=create_vlan_check" time="0.376459">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;create_vlan_check&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;appliance_ip&quot;: &quot;192.168.250.1&quot;,
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;TestVLAN&quot;,
+            &quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:47" name="[localhost] meraki: meraki_vlan : assert that=['create_vlan_check is changed']" time="0.234761">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:51" name="[localhost] meraki: meraki_vlan : Create VLAN auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2, name=TestVLAN, subnet=192.168.250.0/24, appliance_ip=192.168.250.1" time="7.770353">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;applianceIp&quot;: &quot;192.168.250.1&quot;,
+&quot;dhcpBootOptionsEnabled&quot;: false,
+&quot;dhcpHandling&quot;: &quot;Run a DHCP server&quot;,
+&quot;dhcpLeaseTime&quot;: &quot;1 day&quot;,
+&quot;dhcpOptions&quot;: [],
+&quot;dnsNameservers&quot;: &quot;upstream_dns&quot;,
+&quot;fixedIpAssignments&quot;: {},
+&quot;id&quot;: 2,
+&quot;name&quot;: &quot;TestVLAN&quot;,
+&quot;networkId&quot;: &quot;N_624874448297686250&quot;,
+&quot;reservedIpRanges&quot;: [],
+&quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;collection_name&quot;: &quot;cisco.meraki&quot;,
+&quot;date&quot;: &quot;2022-06-01&quot;,
+&quot;msg&quot;: &quot;Update your playbooks to support snake_case format instead of camelCase format.&quot;
+},
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:66" name="[localhost] meraki: meraki_vlan : debug msg={{create_vlan}}" time="0.170868">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;applianceIp&quot;: &quot;192.168.250.1&quot;,
+            &quot;dhcpBootOptionsEnabled&quot;: false,
+            &quot;dhcpHandling&quot;: &quot;Run a DHCP server&quot;,
+            &quot;dhcpLeaseTime&quot;: &quot;1 day&quot;,
+            &quot;dhcpOptions&quot;: [],
+            &quot;dnsNameservers&quot;: &quot;upstream_dns&quot;,
+            &quot;fixedIpAssignments&quot;: {},
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;TestVLAN&quot;,
+            &quot;networkId&quot;: &quot;N_624874448297686250&quot;,
+            &quot;reservedIpRanges&quot;: [],
+            &quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;collection_name&quot;: &quot;cisco.meraki&quot;,
+                &quot;date&quot;: &quot;2022-06-01&quot;,
+                &quot;msg&quot;: &quot;Update your playbooks to support snake_case format instead of camelCase format.&quot;
+            },
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 201
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:69" name="[localhost] meraki: meraki_vlan : assert that=['create_vlan.data.id == 2', 'create_vlan.changed == True', 'create_vlan.data.networkId is defined']" time="0.169291">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:75" name="[localhost] meraki: meraki_vlan : Update VLAN with check mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2, name=TestVLAN, subnet=192.168.250.0/24, appliance_ip=192.168.250.2, fixed_ip_assignments=[{'mac': '13:37:de:ad:be:ef', 'ip': '192.168.250.10', 'name': 'fixed_ip'}], reserved_ip_range=[{'start': '192.168.250.10', 'end': '192.168.250.20', 'comment': 'reserved_range'}], dns_nameservers=opendns" time="5.596874">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+&quot;dhcp_boot_options_enabled&quot;: false,
+&quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+&quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+&quot;dhcp_options&quot;: [],
+&quot;dns_nameservers&quot;: &quot;opendns&quot;,
+&quot;fixed_ip_assignments&quot;: {
+&quot;13:37:de:ad:be:ef&quot;: {
+&quot;ip&quot;: &quot;192.168.250.10&quot;,
+&quot;name&quot;: &quot;fixed_ip&quot;
+}
+},
+&quot;id&quot;: 2,
+&quot;name&quot;: &quot;TestVLAN&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+&quot;reserved_ip_ranges&quot;: [
+{
+&quot;comment&quot;: &quot;reserved_range&quot;,
+&quot;end&quot;: &quot;192.168.250.20&quot;,
+&quot;start&quot;: &quot;192.168.250.10&quot;
+}
+],
+&quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:98" name="[localhost] meraki: meraki_vlan : debug var=update_vlan_check" time="0.163694">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;update_vlan_check&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+            &quot;dhcp_boot_options_enabled&quot;: false,
+            &quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+            &quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+            &quot;dhcp_options&quot;: [],
+            &quot;dns_nameservers&quot;: &quot;opendns&quot;,
+            &quot;fixed_ip_assignments&quot;: {
+                &quot;13:37:de:ad:be:ef&quot;: {
+                    &quot;ip&quot;: &quot;192.168.250.10&quot;,
+                    &quot;name&quot;: &quot;fixed_ip&quot;
+                }
+            },
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;TestVLAN&quot;,
+            &quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+            &quot;reserved_ip_ranges&quot;: [
+                {
+                    &quot;comment&quot;: &quot;reserved_range&quot;,
+                    &quot;end&quot;: &quot;192.168.250.20&quot;,
+                    &quot;start&quot;: &quot;192.168.250.10&quot;
+                }
+            ],
+            &quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;diff&quot;: {
+            &quot;after&quot;: {
+                &quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+                &quot;dns_nameservers&quot;: &quot;opendns&quot;,
+                &quot;fixed_ip_assignments&quot;: {
+                    &quot;13:37:de:ad:be:ef&quot;: {
+                        &quot;ip&quot;: &quot;192.168.250.10&quot;,
+                        &quot;name&quot;: &quot;fixed_ip&quot;
+                    }
+                },
+                &quot;reserved_ip_ranges&quot;: [
+                    {
+                        &quot;comment&quot;: &quot;reserved_range&quot;,
+                        &quot;end&quot;: &quot;192.168.250.20&quot;,
+                        &quot;start&quot;: &quot;192.168.250.10&quot;
+                    }
+                ]
+            },
+            &quot;before&quot;: {
+                &quot;appliance_ip&quot;: &quot;192.168.250.1&quot;,
+                &quot;dhcp_boot_options_enabled&quot;: false,
+                &quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+                &quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+                &quot;dhcp_options&quot;: [],
+                &quot;dns_nameservers&quot;: &quot;upstream_dns&quot;,
+                &quot;fixed_ip_assignments&quot;: {},
+                &quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+                &quot;reserved_ip_ranges&quot;: []
+            }
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:101" name="[localhost] meraki: meraki_vlan : assert that=['update_vlan_check is changed']" time="0.162634">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:105" name="[localhost] meraki: meraki_vlan : Update VLAN auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2, name=TestVLAN, subnet=192.168.250.0/24, appliance_ip=192.168.250.2, fixed_ip_assignments=[{'mac': '13:37:de:ad:be:ef', 'ip': '192.168.250.10', 'name': 'fixed_ip'}], reserved_ip_range=[{'start': '192.168.250.10', 'end': '192.168.250.20', 'comment': 'reserved_range'}], dns_nameservers=opendns" time="7.245915">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+&quot;dhcp_boot_options_enabled&quot;: false,
+&quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+&quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+&quot;dhcp_options&quot;: [],
+&quot;dns_nameservers&quot;: &quot;opendns&quot;,
+&quot;fixed_ip_assignments&quot;: {
+&quot;13:37:de:ad:be:ef&quot;: {
+&quot;ip&quot;: &quot;192.168.250.10&quot;,
+&quot;name&quot;: &quot;fixed_ip&quot;
+}
+},
+&quot;id&quot;: 2,
+&quot;name&quot;: &quot;TestVLAN&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+&quot;reserved_ip_ranges&quot;: [
+{
+&quot;comment&quot;: &quot;reserved_range&quot;,
+&quot;end&quot;: &quot;192.168.250.20&quot;,
+&quot;start&quot;: &quot;192.168.250.10&quot;
+}
+],
+&quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:127" name="[localhost] meraki: meraki_vlan : debug msg={{update_vlan}}" time="0.237259">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+            &quot;dhcp_boot_options_enabled&quot;: false,
+            &quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+            &quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+            &quot;dhcp_options&quot;: [],
+            &quot;dns_nameservers&quot;: &quot;opendns&quot;,
+            &quot;fixed_ip_assignments&quot;: {
+                &quot;13:37:de:ad:be:ef&quot;: {
+                    &quot;ip&quot;: &quot;192.168.250.10&quot;,
+                    &quot;name&quot;: &quot;fixed_ip&quot;
+                }
+            },
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;TestVLAN&quot;,
+            &quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+            &quot;reserved_ip_ranges&quot;: [
+                {
+                    &quot;comment&quot;: &quot;reserved_range&quot;,
+                    &quot;end&quot;: &quot;192.168.250.20&quot;,
+                    &quot;start&quot;: &quot;192.168.250.10&quot;
+                }
+            ],
+            &quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;diff&quot;: {
+            &quot;after&quot;: {
+                &quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+                &quot;dns_nameservers&quot;: &quot;opendns&quot;,
+                &quot;fixed_ip_assignments&quot;: {
+                    &quot;13:37:de:ad:be:ef&quot;: {
+                        &quot;ip&quot;: &quot;192.168.250.10&quot;,
+                        &quot;name&quot;: &quot;fixed_ip&quot;
+                    }
+                },
+                &quot;reserved_ip_ranges&quot;: [
+                    {
+                        &quot;comment&quot;: &quot;reserved_range&quot;,
+                        &quot;end&quot;: &quot;192.168.250.20&quot;,
+                        &quot;start&quot;: &quot;192.168.250.10&quot;
+                    }
+                ]
+            },
+            &quot;before&quot;: {
+                &quot;appliance_ip&quot;: &quot;192.168.250.1&quot;,
+                &quot;dns_nameservers&quot;: &quot;upstream_dns&quot;,
+                &quot;fixed_ip_assignments&quot;: {},
+                &quot;reserved_ip_ranges&quot;: []
+            }
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:130" name="[localhost] meraki: meraki_vlan : assert that=[&quot;update_vlan.data.appliance_ip == '192.168.250.2'&quot;, 'update_vlan.changed == True']" time="0.295802">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:135" name="[localhost] meraki: meraki_vlan : Update VLAN with idempotency and check mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2, name=TestVLAN, subnet=192.168.250.0/24, appliance_ip=192.168.250.2, fixed_ip_assignments=[{'mac': '13:37:de:ad:be:ef', 'ip': '192.168.250.10', 'name': 'fixed_ip'}], reserved_ip_range=[{'start': '192.168.250.10', 'end': '192.168.250.20', 'comment': 'reserved_range'}], dns_nameservers=opendns" time="5.157734">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+&quot;dhcp_boot_options_enabled&quot;: false,
+&quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+&quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+&quot;dhcp_options&quot;: [],
+&quot;dns_nameservers&quot;: &quot;opendns&quot;,
+&quot;fixed_ip_assignments&quot;: {
+&quot;13:37:de:ad:be:ef&quot;: {
+&quot;ip&quot;: &quot;192.168.250.10&quot;,
+&quot;name&quot;: &quot;fixed_ip&quot;
+}
+},
+&quot;id&quot;: 2,
+&quot;name&quot;: &quot;TestVLAN&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+&quot;reserved_ip_ranges&quot;: [
+{
+&quot;comment&quot;: &quot;reserved_range&quot;,
+&quot;end&quot;: &quot;192.168.250.20&quot;,
+&quot;start&quot;: &quot;192.168.250.10&quot;
+}
+],
+&quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:158" name="[localhost] meraki: meraki_vlan : debug var=update_vlan_idempotent_check" time="0.168579">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;update_vlan_idempotent_check&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+            &quot;dhcp_boot_options_enabled&quot;: false,
+            &quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+            &quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+            &quot;dhcp_options&quot;: [],
+            &quot;dns_nameservers&quot;: &quot;opendns&quot;,
+            &quot;fixed_ip_assignments&quot;: {
+                &quot;13:37:de:ad:be:ef&quot;: {
+                    &quot;ip&quot;: &quot;192.168.250.10&quot;,
+                    &quot;name&quot;: &quot;fixed_ip&quot;
+                }
+            },
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;TestVLAN&quot;,
+            &quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+            &quot;reserved_ip_ranges&quot;: [
+                {
+                    &quot;comment&quot;: &quot;reserved_range&quot;,
+                    &quot;end&quot;: &quot;192.168.250.20&quot;,
+                    &quot;start&quot;: &quot;192.168.250.10&quot;
+                }
+            ],
+            &quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:161" name="[localhost] meraki: meraki_vlan : assert that=['update_vlan_idempotent_check is not changed']" time="0.219971">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:165" name="[localhost] meraki: meraki_vlan : Update VLAN with idempotency auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2, name=TestVLAN, subnet=192.168.250.0/24, appliance_ip=192.168.250.2, fixed_ip_assignments=[{'mac': '13:37:de:ad:be:ef', 'ip': '192.168.250.10', 'name': 'fixed_ip'}], reserved_ip_range=[{'start': '192.168.250.10', 'end': '192.168.250.20', 'comment': 'reserved_range'}], dns_nameservers=opendns" time="5.238626">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+&quot;dhcp_boot_options_enabled&quot;: false,
+&quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+&quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+&quot;dhcp_options&quot;: [],
+&quot;dns_nameservers&quot;: &quot;opendns&quot;,
+&quot;fixed_ip_assignments&quot;: {
+&quot;13:37:de:ad:be:ef&quot;: {
+&quot;ip&quot;: &quot;192.168.250.10&quot;,
+&quot;name&quot;: &quot;fixed_ip&quot;
+}
+},
+&quot;id&quot;: 2,
+&quot;name&quot;: &quot;TestVLAN&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+&quot;reserved_ip_ranges&quot;: [
+{
+&quot;comment&quot;: &quot;reserved_range&quot;,
+&quot;end&quot;: &quot;192.168.250.20&quot;,
+&quot;start&quot;: &quot;192.168.250.10&quot;
+}
+],
+&quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:187" name="[localhost] meraki: meraki_vlan : debug msg={{update_vlan_idempotent}}" time="0.267967">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+            &quot;dhcp_boot_options_enabled&quot;: false,
+            &quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+            &quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+            &quot;dhcp_options&quot;: [],
+            &quot;dns_nameservers&quot;: &quot;opendns&quot;,
+            &quot;fixed_ip_assignments&quot;: {
+                &quot;13:37:de:ad:be:ef&quot;: {
+                    &quot;ip&quot;: &quot;192.168.250.10&quot;,
+                    &quot;name&quot;: &quot;fixed_ip&quot;
+                }
+            },
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;TestVLAN&quot;,
+            &quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+            &quot;reserved_ip_ranges&quot;: [
+                {
+                    &quot;comment&quot;: &quot;reserved_range&quot;,
+                    &quot;end&quot;: &quot;192.168.250.20&quot;,
+                    &quot;start&quot;: &quot;192.168.250.10&quot;
+                }
+            ],
+            &quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:190" name="[localhost] meraki: meraki_vlan : assert that=['update_vlan_idempotent.changed == False', 'update_vlan_idempotent.data is defined']" time="0.156045">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:195" name="[localhost] meraki: meraki_vlan : Add IP assignments and reserved IP ranges auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2, name=TestVLAN, subnet=192.168.250.0/24, appliance_ip=192.168.250.2, fixed_ip_assignments=[{'mac': '13:37:de:ad:be:ef', 'ip': '192.168.250.10', 'name': 'fixed_ip'}, {'mac': '12:34:56:78:90:12', 'ip': '192.168.250.11', 'name': 'another_fixed_ip'}], reserved_ip_range=[{'start': '192.168.250.10', 'end': '192.168.250.20', 'comment': 'reserved_range'}, {'start': '192.168.250.100', 'end': '192.168.250.120', 'comment': 'reserved_range_high'}], dns_nameservers=opendns" time="6.057583">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+&quot;dhcp_boot_options_enabled&quot;: false,
+&quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+&quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+&quot;dhcp_options&quot;: [],
+&quot;dns_nameservers&quot;: &quot;opendns&quot;,
+&quot;fixed_ip_assignments&quot;: {
+&quot;12:34:56:78:90:12&quot;: {
+&quot;ip&quot;: &quot;192.168.250.11&quot;,
+&quot;name&quot;: &quot;another_fixed_ip&quot;
+},
+&quot;13:37:de:ad:be:ef&quot;: {
+&quot;ip&quot;: &quot;192.168.250.10&quot;,
+&quot;name&quot;: &quot;fixed_ip&quot;
+}
+},
+&quot;id&quot;: 2,
+&quot;name&quot;: &quot;TestVLAN&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+&quot;reserved_ip_ranges&quot;: [
+{
+&quot;comment&quot;: &quot;reserved_range&quot;,
+&quot;end&quot;: &quot;192.168.250.20&quot;,
+&quot;start&quot;: &quot;192.168.250.10&quot;
+},
+{
+&quot;comment&quot;: &quot;reserved_range_high&quot;,
+&quot;end&quot;: &quot;192.168.250.120&quot;,
+&quot;start&quot;: &quot;192.168.250.100&quot;
+}
+],
+&quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:223" name="[localhost] meraki: meraki_vlan : debug msg={{update_vlan_add_ip}}" time="0.190723">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+            &quot;dhcp_boot_options_enabled&quot;: false,
+            &quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+            &quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+            &quot;dhcp_options&quot;: [],
+            &quot;dns_nameservers&quot;: &quot;opendns&quot;,
+            &quot;fixed_ip_assignments&quot;: {
+                &quot;12:34:56:78:90:12&quot;: {
+                    &quot;ip&quot;: &quot;192.168.250.11&quot;,
+                    &quot;name&quot;: &quot;another_fixed_ip&quot;
+                },
+                &quot;13:37:de:ad:be:ef&quot;: {
+                    &quot;ip&quot;: &quot;192.168.250.10&quot;,
+                    &quot;name&quot;: &quot;fixed_ip&quot;
+                }
+            },
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;TestVLAN&quot;,
+            &quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+            &quot;reserved_ip_ranges&quot;: [
+                {
+                    &quot;comment&quot;: &quot;reserved_range&quot;,
+                    &quot;end&quot;: &quot;192.168.250.20&quot;,
+                    &quot;start&quot;: &quot;192.168.250.10&quot;
+                },
+                {
+                    &quot;comment&quot;: &quot;reserved_range_high&quot;,
+                    &quot;end&quot;: &quot;192.168.250.120&quot;,
+                    &quot;start&quot;: &quot;192.168.250.100&quot;
+                }
+            ],
+            &quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;diff&quot;: {
+            &quot;after&quot;: {
+                &quot;fixed_ip_assignments&quot;: {
+                    &quot;12:34:56:78:90:12&quot;: {
+                        &quot;ip&quot;: &quot;192.168.250.11&quot;,
+                        &quot;name&quot;: &quot;another_fixed_ip&quot;
+                    }
+                },
+                &quot;reserved_ip_ranges&quot;: [
+                    {
+                        &quot;comment&quot;: &quot;reserved_range&quot;,
+                        &quot;end&quot;: &quot;192.168.250.20&quot;,
+                        &quot;start&quot;: &quot;192.168.250.10&quot;
+                    },
+                    {
+                        &quot;comment&quot;: &quot;reserved_range_high&quot;,
+                        &quot;end&quot;: &quot;192.168.250.120&quot;,
+                        &quot;start&quot;: &quot;192.168.250.100&quot;
+                    }
+                ]
+            },
+            &quot;before&quot;: {
+                &quot;fixed_ip_assignments&quot;: {},
+                &quot;reserved_ip_ranges&quot;: [
+                    {
+                        &quot;comment&quot;: &quot;reserved_range&quot;,
+                        &quot;end&quot;: &quot;192.168.250.20&quot;,
+                        &quot;start&quot;: &quot;192.168.250.10&quot;
+                    }
+                ]
+            }
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:226" name="[localhost] meraki: meraki_vlan : assert that=['update_vlan_add_ip.changed == True', 'update_vlan_add_ip.data.fixed_ip_assignments | length == 2', 'update_vlan_add_ip.data.reserved_ip_ranges | length == 2']" time="0.198084">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:232" name="[localhost] meraki: meraki_vlan : Remove IP assignments and reserved IP ranges auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2, name=TestVLAN, subnet=192.168.250.0/24, appliance_ip=192.168.250.2, fixed_ip_assignments=[{'mac': '13:37:de:ad:be:ef', 'ip': '192.168.250.10', 'name': 'fixed_ip'}], reserved_ip_range=[{'start': '192.168.250.10', 'end': '192.168.250.20', 'comment': 'reserved_range'}], dns_nameservers=opendns" time="7.064157">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+&quot;dhcp_boot_options_enabled&quot;: false,
+&quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+&quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+&quot;dhcp_options&quot;: [],
+&quot;dns_nameservers&quot;: &quot;opendns&quot;,
+&quot;fixed_ip_assignments&quot;: {
+&quot;13:37:de:ad:be:ef&quot;: {
+&quot;ip&quot;: &quot;192.168.250.10&quot;,
+&quot;name&quot;: &quot;fixed_ip&quot;
+}
+},
+&quot;id&quot;: 2,
+&quot;name&quot;: &quot;TestVLAN&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+&quot;reserved_ip_ranges&quot;: [
+{
+&quot;comment&quot;: &quot;reserved_range&quot;,
+&quot;end&quot;: &quot;192.168.250.20&quot;,
+&quot;start&quot;: &quot;192.168.250.10&quot;
+}
+],
+&quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:254" name="[localhost] meraki: meraki_vlan : debug msg={{update_vlan_remove_ip}}" time="0.219116">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+            &quot;dhcp_boot_options_enabled&quot;: false,
+            &quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+            &quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+            &quot;dhcp_options&quot;: [],
+            &quot;dns_nameservers&quot;: &quot;opendns&quot;,
+            &quot;fixed_ip_assignments&quot;: {
+                &quot;13:37:de:ad:be:ef&quot;: {
+                    &quot;ip&quot;: &quot;192.168.250.10&quot;,
+                    &quot;name&quot;: &quot;fixed_ip&quot;
+                }
+            },
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;TestVLAN&quot;,
+            &quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+            &quot;reserved_ip_ranges&quot;: [
+                {
+                    &quot;comment&quot;: &quot;reserved_range&quot;,
+                    &quot;end&quot;: &quot;192.168.250.20&quot;,
+                    &quot;start&quot;: &quot;192.168.250.10&quot;
+                }
+            ],
+            &quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;diff&quot;: {
+            &quot;after&quot;: {
+                &quot;fixed_ip_assignments&quot;: {},
+                &quot;reserved_ip_ranges&quot;: [
+                    {
+                        &quot;comment&quot;: &quot;reserved_range&quot;,
+                        &quot;end&quot;: &quot;192.168.250.20&quot;,
+                        &quot;start&quot;: &quot;192.168.250.10&quot;
+                    }
+                ]
+            },
+            &quot;before&quot;: {
+                &quot;fixed_ip_assignments&quot;: {
+                    &quot;12:34:56:78:90:12&quot;: {
+                        &quot;ip&quot;: &quot;192.168.250.11&quot;,
+                        &quot;name&quot;: &quot;another_fixed_ip&quot;
+                    }
+                },
+                &quot;reserved_ip_ranges&quot;: [
+                    {
+                        &quot;comment&quot;: &quot;reserved_range&quot;,
+                        &quot;end&quot;: &quot;192.168.250.20&quot;,
+                        &quot;start&quot;: &quot;192.168.250.10&quot;
+                    },
+                    {
+                        &quot;comment&quot;: &quot;reserved_range_high&quot;,
+                        &quot;end&quot;: &quot;192.168.250.120&quot;,
+                        &quot;start&quot;: &quot;192.168.250.100&quot;
+                    }
+                ]
+            }
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:257" name="[localhost] meraki: meraki_vlan : assert that=['update_vlan_remove_ip.changed == True', 'update_vlan_remove_ip.data.fixed_ip_assignments | length == 1', 'update_vlan_remove_ip.data.reserved_ip_ranges | length == 1']" time="0.280947">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:263" name="[localhost] meraki: meraki_vlan : Update VLAN with idempotency auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2, name=TestVLAN, subnet=192.168.250.0/24, appliance_ip=192.168.250.2, fixed_ip_assignments=[{'mac': '13:37:de:ad:be:ef', 'ip': '192.168.250.10', 'name': 'fixed_ip'}], reserved_ip_range=[{'start': '192.168.250.10', 'end': '192.168.250.20', 'comment': 'reserved_range'}], dns_nameservers=opendns" time="6.412258">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+&quot;dhcp_boot_options_enabled&quot;: false,
+&quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+&quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+&quot;dhcp_options&quot;: [],
+&quot;dns_nameservers&quot;: &quot;opendns&quot;,
+&quot;fixed_ip_assignments&quot;: {
+&quot;13:37:de:ad:be:ef&quot;: {
+&quot;ip&quot;: &quot;192.168.250.10&quot;,
+&quot;name&quot;: &quot;fixed_ip&quot;
+}
+},
+&quot;id&quot;: 2,
+&quot;name&quot;: &quot;TestVLAN&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+&quot;reserved_ip_ranges&quot;: [
+{
+&quot;comment&quot;: &quot;reserved_range&quot;,
+&quot;end&quot;: &quot;192.168.250.20&quot;,
+&quot;start&quot;: &quot;192.168.250.10&quot;
+}
+],
+&quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:285" name="[localhost] meraki: meraki_vlan : debug msg={{update_vlan_idempotent}}" time="0.146562">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+            &quot;dhcp_boot_options_enabled&quot;: false,
+            &quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+            &quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+            &quot;dhcp_options&quot;: [],
+            &quot;dns_nameservers&quot;: &quot;opendns&quot;,
+            &quot;fixed_ip_assignments&quot;: {
+                &quot;13:37:de:ad:be:ef&quot;: {
+                    &quot;ip&quot;: &quot;192.168.250.10&quot;,
+                    &quot;name&quot;: &quot;fixed_ip&quot;
+                }
+            },
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;TestVLAN&quot;,
+            &quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+            &quot;reserved_ip_ranges&quot;: [
+                {
+                    &quot;comment&quot;: &quot;reserved_range&quot;,
+                    &quot;end&quot;: &quot;192.168.250.20&quot;,
+                    &quot;start&quot;: &quot;192.168.250.10&quot;
+                }
+            ],
+            &quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:288" name="[localhost] meraki: meraki_vlan : assert that=['update_vlan_idempotent.changed == False', 'update_vlan_idempotent.data is defined']" time="0.151751">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:293" name="[localhost] meraki: meraki_vlan : Update VLAN with list of DNS entries auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2, name=TestVLAN, subnet=192.168.250.0/24, appliance_ip=192.168.250.2, fixed_ip_assignments=[{'mac': '13:37:de:ad:be:ef', 'ip': '192.168.250.10', 'name': 'fixed_ip'}], reserved_ip_range=[{'start': '192.168.250.10', 'end': '192.168.250.20', 'comment': 'reserved_range'}], dns_nameservers=1.1.1.1;8.8.8.8" time="6.606214">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+&quot;dhcp_boot_options_enabled&quot;: false,
+&quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+&quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+&quot;dhcp_options&quot;: [],
+&quot;dns_nameservers&quot;: &quot;1.1.1.1\n8.8.8.8&quot;,
+&quot;fixed_ip_assignments&quot;: {
+&quot;13:37:de:ad:be:ef&quot;: {
+&quot;ip&quot;: &quot;192.168.250.10&quot;,
+&quot;name&quot;: &quot;fixed_ip&quot;
+}
+},
+&quot;id&quot;: 2,
+&quot;name&quot;: &quot;TestVLAN&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+&quot;reserved_ip_ranges&quot;: [
+{
+&quot;comment&quot;: &quot;reserved_range&quot;,
+&quot;end&quot;: &quot;192.168.250.20&quot;,
+&quot;start&quot;: &quot;192.168.250.10&quot;
+}
+],
+&quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:315" name="[localhost] meraki: meraki_vlan : debug msg={{update_vlan_dns_list}}" time="0.200669">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+            &quot;dhcp_boot_options_enabled&quot;: false,
+            &quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+            &quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+            &quot;dhcp_options&quot;: [],
+            &quot;dns_nameservers&quot;: &quot;1.1.1.1\n8.8.8.8&quot;,
+            &quot;fixed_ip_assignments&quot;: {
+                &quot;13:37:de:ad:be:ef&quot;: {
+                    &quot;ip&quot;: &quot;192.168.250.10&quot;,
+                    &quot;name&quot;: &quot;fixed_ip&quot;
+                }
+            },
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;TestVLAN&quot;,
+            &quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+            &quot;reserved_ip_ranges&quot;: [
+                {
+                    &quot;comment&quot;: &quot;reserved_range&quot;,
+                    &quot;end&quot;: &quot;192.168.250.20&quot;,
+                    &quot;start&quot;: &quot;192.168.250.10&quot;
+                }
+            ],
+            &quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;diff&quot;: {
+            &quot;after&quot;: {
+                &quot;dns_nameservers&quot;: &quot;1.1.1.1\n8.8.8.8&quot;
+            },
+            &quot;before&quot;: {
+                &quot;dns_nameservers&quot;: &quot;opendns&quot;
+            }
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:318" name="[localhost] meraki: meraki_vlan : assert that=['&quot;1.1.1.1&quot; in update_vlan_dns_list.data.dns_nameservers', 'update_vlan_dns_list.changed == True']" time="0.194437">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:323" name="[localhost] meraki: meraki_vlan : Enable DHCP Relay on VLAN auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2, name=TestVLAN, subnet=192.168.250.0/24, appliance_ip=192.168.250.2, dhcp_handling=relay, dhcp_relay_server_ips=['192.168.100.1']" time="8.302457">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+&quot;dhcp_handling&quot;: &quot;Relay DHCP to another server&quot;,
+&quot;dhcp_relay_server_ips&quot;: [
+&quot;192.168.100.1&quot;
+],
+&quot;dns_nameservers&quot;: &quot;1.1.1.1\n8.8.8.8&quot;,
+&quot;fixed_ip_assignments&quot;: {
+&quot;13:37:de:ad:be:ef&quot;: {
+&quot;ip&quot;: &quot;192.168.250.10&quot;,
+&quot;name&quot;: &quot;fixed_ip&quot;
+}
+},
+&quot;id&quot;: 2,
+&quot;name&quot;: &quot;TestVLAN&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+&quot;reserved_ip_ranges&quot;: [
+{
+&quot;comment&quot;: &quot;reserved_range&quot;,
+&quot;end&quot;: &quot;192.168.250.20&quot;,
+&quot;start&quot;: &quot;192.168.250.10&quot;
+}
+],
+&quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:339" name="[localhost] meraki: meraki_vlan : debug var=enable_relay" time="0.140994">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;enable_relay&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+            &quot;dhcp_handling&quot;: &quot;Relay DHCP to another server&quot;,
+            &quot;dhcp_relay_server_ips&quot;: [
+                &quot;192.168.100.1&quot;
+            ],
+            &quot;dns_nameservers&quot;: &quot;1.1.1.1\n8.8.8.8&quot;,
+            &quot;fixed_ip_assignments&quot;: {
+                &quot;13:37:de:ad:be:ef&quot;: {
+                    &quot;ip&quot;: &quot;192.168.250.10&quot;,
+                    &quot;name&quot;: &quot;fixed_ip&quot;
+                }
+            },
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;TestVLAN&quot;,
+            &quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+            &quot;reserved_ip_ranges&quot;: [
+                {
+                    &quot;comment&quot;: &quot;reserved_range&quot;,
+                    &quot;end&quot;: &quot;192.168.250.20&quot;,
+                    &quot;start&quot;: &quot;192.168.250.10&quot;
+                }
+            ],
+            &quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;diff&quot;: {
+            &quot;after&quot;: {
+                &quot;dhcp_handling&quot;: &quot;Relay DHCP to another server&quot;,
+                &quot;dhcp_relay_server_ips&quot;: [
+                    &quot;192.168.100.1&quot;
+                ]
+            },
+            &quot;before&quot;: {
+                &quot;dhcp_boot_options_enabled&quot;: false,
+                &quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+                &quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+                &quot;dhcp_options&quot;: []
+            }
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:342" name="[localhost] meraki: meraki_vlan : assert that=['enable_relay is changed', &quot;enable_relay.data.dhcp_handling == 'Relay DHCP to another server'&quot;, &quot;enable_relay.data.dhcp_relay_server_ips[0] == '192.168.100.1'&quot;]" time="0.151540">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:348" name="[localhost] meraki: meraki_vlan : Enable DHCP on VLAN auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2, name=TestVLAN, subnet=192.168.250.0/24, appliance_ip=192.168.250.2, dhcp_handling=server" time="6.501463">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+&quot;dhcp_boot_options_enabled&quot;: false,
+&quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+&quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+&quot;dhcp_options&quot;: [],
+&quot;dns_nameservers&quot;: &quot;1.1.1.1\n8.8.8.8&quot;,
+&quot;fixed_ip_assignments&quot;: {
+&quot;13:37:de:ad:be:ef&quot;: {
+&quot;ip&quot;: &quot;192.168.250.10&quot;,
+&quot;name&quot;: &quot;fixed_ip&quot;
+}
+},
+&quot;id&quot;: 2,
+&quot;name&quot;: &quot;TestVLAN&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+&quot;reserved_ip_ranges&quot;: [
+{
+&quot;comment&quot;: &quot;reserved_range&quot;,
+&quot;end&quot;: &quot;192.168.250.20&quot;,
+&quot;start&quot;: &quot;192.168.250.10&quot;
+}
+],
+&quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:362" name="[localhost] meraki: meraki_vlan : debug var=enable_dhcp" time="0.153421">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;enable_dhcp&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+            &quot;dhcp_boot_options_enabled&quot;: false,
+            &quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+            &quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+            &quot;dhcp_options&quot;: [],
+            &quot;dns_nameservers&quot;: &quot;1.1.1.1\n8.8.8.8&quot;,
+            &quot;fixed_ip_assignments&quot;: {
+                &quot;13:37:de:ad:be:ef&quot;: {
+                    &quot;ip&quot;: &quot;192.168.250.10&quot;,
+                    &quot;name&quot;: &quot;fixed_ip&quot;
+                }
+            },
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;TestVLAN&quot;,
+            &quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+            &quot;reserved_ip_ranges&quot;: [
+                {
+                    &quot;comment&quot;: &quot;reserved_range&quot;,
+                    &quot;end&quot;: &quot;192.168.250.20&quot;,
+                    &quot;start&quot;: &quot;192.168.250.10&quot;
+                }
+            ],
+            &quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;diff&quot;: {
+            &quot;after&quot;: {
+                &quot;dhcp_boot_options_enabled&quot;: false,
+                &quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+                &quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+                &quot;dhcp_options&quot;: []
+            },
+            &quot;before&quot;: {
+                &quot;dhcp_handling&quot;: &quot;Relay DHCP to another server&quot;,
+                &quot;dhcp_relay_server_ips&quot;: [
+                    &quot;192.168.100.1&quot;
+                ]
+            }
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:365" name="[localhost] meraki: meraki_vlan : assert that=['enable_dhcp is changed', &quot;enable_dhcp.data.dhcp_handling == 'Run a DHCP server'&quot;]" time="0.160045">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:370" name="[localhost] meraki: meraki_vlan : Enable DHCP on VLAN with options auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2, name=TestVLAN, subnet=192.168.250.0/24, appliance_ip=192.168.250.2, dhcp_handling=server, dhcp_lease_time=1 hour, dhcp_boot_options_enabled=False, dhcp_options=[{'code': 5, 'type': 'ip', 'value': '192.0.1.1'}]" time="6.023627">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+&quot;dhcp_boot_options_enabled&quot;: false,
+&quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+&quot;dhcp_lease_time&quot;: &quot;1 hour&quot;,
+&quot;dhcp_options&quot;: [
+{
+&quot;code&quot;: &quot;5&quot;,
+&quot;type&quot;: &quot;ip&quot;,
+&quot;value&quot;: &quot;192.0.1.1&quot;
+}
+],
+&quot;dns_nameservers&quot;: &quot;1.1.1.1\n8.8.8.8&quot;,
+&quot;fixed_ip_assignments&quot;: {
+&quot;13:37:de:ad:be:ef&quot;: {
+&quot;ip&quot;: &quot;192.168.250.10&quot;,
+&quot;name&quot;: &quot;fixed_ip&quot;
+}
+},
+&quot;id&quot;: 2,
+&quot;name&quot;: &quot;TestVLAN&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+&quot;reserved_ip_ranges&quot;: [
+{
+&quot;comment&quot;: &quot;reserved_range&quot;,
+&quot;end&quot;: &quot;192.168.250.20&quot;,
+&quot;start&quot;: &quot;192.168.250.10&quot;
+}
+],
+&quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:390" name="[localhost] meraki: meraki_vlan : assert that=['enable_dhcp_options is changed', &quot;enable_dhcp_options.data.dhcp_handling == 'Run a DHCP server'&quot;, &quot;enable_dhcp_options.data.dhcp_options.0.code == '5'&quot;]" time="0.157776">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:396" name="[localhost] meraki: meraki_vlan : Query all VLANs in network auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name={{test_net_name}}, state=query" time="3.935467">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: [
+{
+&quot;appliance_ip&quot;: &quot;192.168.128.1&quot;,
+&quot;dhcp_boot_options_enabled&quot;: false,
+&quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+&quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+&quot;dhcp_options&quot;: [],
+&quot;dns_nameservers&quot;: &quot;upstream_dns&quot;,
+&quot;fixed_ip_assignments&quot;: {},
+&quot;id&quot;: 1,
+&quot;name&quot;: &quot;Default&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+&quot;reserved_ip_ranges&quot;: [],
+&quot;subnet&quot;: &quot;192.168.128.0/24&quot;
+},
+{
+&quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+&quot;dhcp_boot_options_enabled&quot;: false,
+&quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+&quot;dhcp_lease_time&quot;: &quot;1 hour&quot;,
+&quot;dhcp_options&quot;: [
+{
+&quot;code&quot;: &quot;5&quot;,
+&quot;type&quot;: &quot;ip&quot;,
+&quot;value&quot;: &quot;192.0.1.1&quot;
+}
+],
+&quot;dns_nameservers&quot;: &quot;1.1.1.1\n8.8.8.8&quot;,
+&quot;fixed_ip_assignments&quot;: {
+&quot;13:37:de:ad:be:ef&quot;: {
+&quot;ip&quot;: &quot;192.168.250.10&quot;,
+&quot;name&quot;: &quot;fixed_ip&quot;
+}
+},
+&quot;id&quot;: 2,
+&quot;name&quot;: &quot;TestVLAN&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+&quot;reserved_ip_ranges&quot;: [
+{
+&quot;comment&quot;: &quot;reserved_range&quot;,
+&quot;end&quot;: &quot;192.168.250.20&quot;,
+&quot;start&quot;: &quot;192.168.250.10&quot;
+}
+],
+&quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+}
+],
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:405" name="[localhost] meraki: meraki_vlan : debug msg={{query_vlans}}" time="0.150094">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: [
+            {
+                &quot;appliance_ip&quot;: &quot;192.168.128.1&quot;,
+                &quot;dhcp_boot_options_enabled&quot;: false,
+                &quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+                &quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+                &quot;dhcp_options&quot;: [],
+                &quot;dns_nameservers&quot;: &quot;upstream_dns&quot;,
+                &quot;fixed_ip_assignments&quot;: {},
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;Default&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+                &quot;reserved_ip_ranges&quot;: [],
+                &quot;subnet&quot;: &quot;192.168.128.0/24&quot;
+            },
+            {
+                &quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+                &quot;dhcp_boot_options_enabled&quot;: false,
+                &quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+                &quot;dhcp_lease_time&quot;: &quot;1 hour&quot;,
+                &quot;dhcp_options&quot;: [
+                    {
+                        &quot;code&quot;: &quot;5&quot;,
+                        &quot;type&quot;: &quot;ip&quot;,
+                        &quot;value&quot;: &quot;192.0.1.1&quot;
+                    }
+                ],
+                &quot;dns_nameservers&quot;: &quot;1.1.1.1\n8.8.8.8&quot;,
+                &quot;fixed_ip_assignments&quot;: {
+                    &quot;13:37:de:ad:be:ef&quot;: {
+                        &quot;ip&quot;: &quot;192.168.250.10&quot;,
+                        &quot;name&quot;: &quot;fixed_ip&quot;
+                    }
+                },
+                &quot;id&quot;: 2,
+                &quot;name&quot;: &quot;TestVLAN&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+                &quot;reserved_ip_ranges&quot;: [
+                    {
+                        &quot;comment&quot;: &quot;reserved_range&quot;,
+                        &quot;end&quot;: &quot;192.168.250.20&quot;,
+                        &quot;start&quot;: &quot;192.168.250.10&quot;
+                    }
+                ],
+                &quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+            }
+        ],
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:408" name="[localhost] meraki: meraki_vlan : assert that=['query_vlans.data | length &gt;= 2', 'query_vlans.data.1.id == 2', 'query_vlans.changed == False']" time="0.151072">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:414" name="[localhost] meraki: meraki_vlan : Query single VLAN auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2, state=query, output_level=debug" time="3.706751">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+&quot;dhcp_boot_options_enabled&quot;: false,
+&quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+&quot;dhcp_lease_time&quot;: &quot;1 hour&quot;,
+&quot;dhcp_options&quot;: [
+{
+&quot;code&quot;: &quot;5&quot;,
+&quot;type&quot;: &quot;ip&quot;,
+&quot;value&quot;: &quot;192.0.1.1&quot;
+}
+],
+&quot;dns_nameservers&quot;: &quot;1.1.1.1\n8.8.8.8&quot;,
+&quot;fixed_ip_assignments&quot;: {
+&quot;13:37:de:ad:be:ef&quot;: {
+&quot;ip&quot;: &quot;192.168.250.10&quot;,
+&quot;name&quot;: &quot;fixed_ip&quot;
+}
+},
+&quot;id&quot;: 2,
+&quot;name&quot;: &quot;TestVLAN&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+&quot;reserved_ip_ranges&quot;: [
+{
+&quot;comment&quot;: &quot;reserved_range&quot;,
+&quot;end&quot;: &quot;192.168.250.20&quot;,
+&quot;start&quot;: &quot;192.168.250.10&quot;
+}
+],
+&quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;method&quot;: &quot;GET&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;url&quot;: &quot;https://api.meraki.com/api/v1/networks/N_624874448297686250/appliance/vlans/2&quot;,
+&quot;warnings&quot;: [
+&quot;Enable debug output because ANSIBLE_DEBUG was set or output_level is set to debug.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:425" name="[localhost] meraki: meraki_vlan : debug msg={{query_vlan}}" time="0.164649">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+            &quot;dhcp_boot_options_enabled&quot;: false,
+            &quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+            &quot;dhcp_lease_time&quot;: &quot;1 hour&quot;,
+            &quot;dhcp_options&quot;: [
+                {
+                    &quot;code&quot;: &quot;5&quot;,
+                    &quot;type&quot;: &quot;ip&quot;,
+                    &quot;value&quot;: &quot;192.0.1.1&quot;
+                }
+            ],
+            &quot;dns_nameservers&quot;: &quot;1.1.1.1\n8.8.8.8&quot;,
+            &quot;fixed_ip_assignments&quot;: {
+                &quot;13:37:de:ad:be:ef&quot;: {
+                    &quot;ip&quot;: &quot;192.168.250.10&quot;,
+                    &quot;name&quot;: &quot;fixed_ip&quot;
+                }
+            },
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;TestVLAN&quot;,
+            &quot;network_id&quot;: &quot;N_624874448297686250&quot;,
+            &quot;reserved_ip_ranges&quot;: [
+                {
+                    &quot;comment&quot;: &quot;reserved_range&quot;,
+                    &quot;end&quot;: &quot;192.168.250.20&quot;,
+                    &quot;start&quot;: &quot;192.168.250.10&quot;
+                }
+            ],
+            &quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;method&quot;: &quot;GET&quot;,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;url&quot;: &quot;https://api.meraki.com/api/v1/networks/N_624874448297686250/appliance/vlans/2&quot;,
+        &quot;warnings&quot;: [
+            &quot;Enable debug output because ANSIBLE_DEBUG was set or output_level is set to debug.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:428" name="[localhost] meraki: meraki_vlan : assert that=['query_vlan.data.id == 2', 'query_vlan.changed == False']" time="0.153299">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:437" name="[localhost] meraki: meraki_vlan : Delete VLAN with check mode auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2" time="4.111274">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:448" name="[localhost] meraki: meraki_vlan : assert that=delete_vlan_check is changed" time="0.139423">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:452" name="[localhost] meraki: meraki_vlan : Delete VLAN auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2" time="4.665112">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:462" name="[localhost] meraki: meraki_vlan : debug msg={{delete_vlan}}" time="0.163935">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {},
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 204
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-g6xfs4e7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:465" name="[localhost] meraki: meraki_vlan : Delete test network auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, net_name={{test_net_name}}" time="8.392682">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,326 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="18" time="65.11549067497253">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_vlan-wxx8zri0" skipped="1" tests="18" time="65.11549067497253">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-zcr2_cl8-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:7" name="[localhost] meraki: meraki_vlan : Test an API key is provided msg=Please define an API key" time="0.405465">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-zcr2_cl8-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:12" name="[localhost] meraki: meraki_vlan : Create test network auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, type=appliance" time="10.105587">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297686256&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/QmuMbbUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-zcr2_cl8-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:21" name="[localhost] meraki: meraki_vlan : Enable VLANs on network auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, enable_vlans=True" time="6.311653">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;vlans_enabled&quot;: true
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-zcr2_cl8-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:30" name="[localhost] meraki: meraki_vlan : Create VLAN in check mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2, name=TestVLAN, subnet=192.168.250.0/24, appliance_ip=192.168.250.1" time="8.597556">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;appliance_ip&quot;: &quot;192.168.250.1&quot;,
+&quot;id&quot;: 2,
+&quot;name&quot;: &quot;TestVLAN&quot;,
+&quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-zcr2_cl8-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:44" name="[localhost] meraki: meraki_vlan : debug var=create_vlan_check" time="0.271505">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;create_vlan_check&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;appliance_ip&quot;: &quot;192.168.250.1&quot;,
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;TestVLAN&quot;,
+            &quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-zcr2_cl8-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:47" name="[localhost] meraki: meraki_vlan : assert that=['create_vlan_check is changed']" time="0.421694">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-zcr2_cl8-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:51" name="[localhost] meraki: meraki_vlan : Create VLAN auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2, name=TestVLAN, subnet=192.168.250.0/24, appliance_ip=192.168.250.1" time="6.822808">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;applianceIp&quot;: &quot;192.168.250.1&quot;,
+&quot;dhcpBootOptionsEnabled&quot;: false,
+&quot;dhcpHandling&quot;: &quot;Run a DHCP server&quot;,
+&quot;dhcpLeaseTime&quot;: &quot;1 day&quot;,
+&quot;dhcpOptions&quot;: [],
+&quot;dnsNameservers&quot;: &quot;upstream_dns&quot;,
+&quot;fixedIpAssignments&quot;: {},
+&quot;id&quot;: 2,
+&quot;name&quot;: &quot;TestVLAN&quot;,
+&quot;networkId&quot;: &quot;N_624874448297686256&quot;,
+&quot;reservedIpRanges&quot;: [],
+&quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;collection_name&quot;: &quot;cisco.meraki&quot;,
+&quot;date&quot;: &quot;2022-06-01&quot;,
+&quot;msg&quot;: &quot;Update your playbooks to support snake_case format instead of camelCase format.&quot;
+},
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-zcr2_cl8-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:66" name="[localhost] meraki: meraki_vlan : debug msg={{create_vlan}}" time="0.217349">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;applianceIp&quot;: &quot;192.168.250.1&quot;,
+            &quot;dhcpBootOptionsEnabled&quot;: false,
+            &quot;dhcpHandling&quot;: &quot;Run a DHCP server&quot;,
+            &quot;dhcpLeaseTime&quot;: &quot;1 day&quot;,
+            &quot;dhcpOptions&quot;: [],
+            &quot;dnsNameservers&quot;: &quot;upstream_dns&quot;,
+            &quot;fixedIpAssignments&quot;: {},
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;TestVLAN&quot;,
+            &quot;networkId&quot;: &quot;N_624874448297686256&quot;,
+            &quot;reservedIpRanges&quot;: [],
+            &quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;collection_name&quot;: &quot;cisco.meraki&quot;,
+                &quot;date&quot;: &quot;2022-06-01&quot;,
+                &quot;msg&quot;: &quot;Update your playbooks to support snake_case format instead of camelCase format.&quot;
+            },
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 201
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-zcr2_cl8-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:69" name="[localhost] meraki: meraki_vlan : assert that=['create_vlan.data.id == 2', 'create_vlan.changed == True', 'create_vlan.data.networkId is defined']" time="0.346998">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-zcr2_cl8-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:75" name="[localhost] meraki: meraki_vlan : Update VLAN with check mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2, name=TestVLAN, subnet=192.168.250.0/24, appliance_ip=192.168.250.2, fixed_ip_assignments=[{'mac': '13:37:de:ad:be:ef', 'ip': '192.168.250.10', 'name': 'fixed_ip'}], reserved_ip_range=[{'start': '192.168.250.10', 'end': '192.168.250.20', 'comment': 'reserved_range'}], dns_nameservers=opendns" time="6.304887">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+&quot;dns_nameservers&quot;: &quot;opendns&quot;,
+&quot;fixed_ip_assignments&quot;: {
+&quot;13:37:de:ad:be:ef&quot;: {
+&quot;ip&quot;: &quot;192.168.250.10&quot;,
+&quot;name&quot;: &quot;fixed_ip&quot;
+}
+},
+&quot;id&quot;: 2,
+&quot;name&quot;: &quot;TestVLAN&quot;,
+&quot;reserved_ip_ranges&quot;: [
+{
+&quot;comment&quot;: &quot;reserved_range&quot;,
+&quot;end&quot;: &quot;192.168.250.20&quot;,
+&quot;start&quot;: &quot;192.168.250.10&quot;
+}
+],
+&quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-zcr2_cl8-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:98" name="[localhost] meraki: meraki_vlan : debug var=update_vlan_check" time="0.228131">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;update_vlan_check&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;appliance_ip&quot;: &quot;192.168.250.2&quot;,
+            &quot;dns_nameservers&quot;: &quot;opendns&quot;,
+            &quot;fixed_ip_assignments&quot;: {
+                &quot;13:37:de:ad:be:ef&quot;: {
+                    &quot;ip&quot;: &quot;192.168.250.10&quot;,
+                    &quot;name&quot;: &quot;fixed_ip&quot;
+                }
+            },
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;TestVLAN&quot;,
+            &quot;reserved_ip_ranges&quot;: [
+                {
+                    &quot;comment&quot;: &quot;reserved_range&quot;,
+                    &quot;end&quot;: &quot;192.168.250.20&quot;,
+                    &quot;start&quot;: &quot;192.168.250.10&quot;
+                }
+            ],
+            &quot;subnet&quot;: &quot;192.168.250.0/24&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-zcr2_cl8-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:101" name="[localhost] meraki: meraki_vlan : assert that=['update_vlan_check is changed']" time="0.283605">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-zcr2_cl8-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:105" name="[localhost] meraki: meraki_vlan : Update VLAN auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2, name=TestVLAN, subnet=192.168.250.0/24, appliance_ip=192.168.250.2, fixed_ip_assignments=[{'mac': '13:37:de:ad:be:ef', 'ip': '192.168.250.10', 'name': 'fixed_ip'}], reserved_ip_range=[{'start': '192.168.250.10', 'end': '192.168.250.20', 'comment': 'reserved_range'}], dns_nameservers=opendns" time="7.955841">
+			<failure message="HTTP error 400 - https://api.meraki.com/api/v1/networks/N_624874448297686256/appliance/vlans - VLANs cannot be added to bound networks" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;HTTP error 400 - https://api.meraki.com/api/v1/networks/N_624874448297686256/appliance/vlans - VLANs cannot be added to bound networks&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 400
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-zcr2_cl8-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:437" name="[localhost] meraki: meraki_vlan : Delete VLAN with check mode auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2" time="4.667168">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-zcr2_cl8-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:448" name="[localhost] meraki: meraki_vlan : assert that=delete_vlan_check is changed" time="0.151303">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-zcr2_cl8-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:452" name="[localhost] meraki: meraki_vlan : Delete VLAN auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, net_name={{test_net_name}}, vlan_id=2" time="5.155635">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-zcr2_cl8-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:462" name="[localhost] meraki: meraki_vlan : debug msg={{delete_vlan}}" time="0.111127">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {},
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 204
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_vlan-zcr2_cl8-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_vlan/tasks/main.yml:465" name="[localhost] meraki: meraki_vlan : Delete test network auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, net_name={{test_net_name}}" time="6.757177">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

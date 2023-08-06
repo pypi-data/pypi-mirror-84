@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="0" tests="3" time="18.95191264152527">
+	<testsuite disabled="0" errors="1" failures="0" name="meraki_alert-l93yoovp" skipped="0" tests="3" time="18.95191264152527">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-6ox1rzm7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:7" name="[localhost] meraki: meraki_alert : Create network with type wireless auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, type=wireless, timezone=America/Chicago" time="4.828844">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297687108&quot;,
+&quot;name&quot;: &quot;IntTestNetworkWireless&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;wireless&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkWi/n/3fFftbUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-6ox1rzm7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:33" name="[localhost] meraki: meraki_alert : Update settings auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=present, default_destinations={'emails': ['{{ email_prefix }}@{{ email_domain }}', '{{ email_prefix }}2@{{ email_domain }}'], 'all_admins': True, 'snmp': True}, alerts=[{'type': 'gatewayDown', 'enabled': True, 'filters': {'timeout': 60}, 'alert_destinations': [{'emails': ['{{ email_prefix }}@{{ email_domain }}', '{{ email_prefix }}2@{{ email_domain }}'], 'all_admins': True, 'snmp': False}]}, {'type': 'interfaceDown', 'enabled': True, 'filters': {'timeout': 60}, 'alert_destinations': [{'emails': ['{{ email_prefix }}@{{ email_domain }}', '{{ email_prefix }}2@{{ email_domain }}'], 'all_admins': True, 'snmp': False}]}]" time="6.480352">
+			<error message="AttributeError: 'tuple' object has no attribute 'lstrip'" type="error">Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1601951427.5797405-148-252133712043686/AnsiballZ_meraki_alert.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1601951427.5797405-148-252133712043686/AnsiballZ_meraki_alert.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1601951427.5797405-148-252133712043686/AnsiballZ_meraki_alert.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_alert', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_alert_payload_qfz93rhw/ansible_meraki_alert_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_alert.py&quot;, line 257, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_alert_payload_qfz93rhw/ansible_meraki_alert_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_alert.py&quot;, line 246, in main
+  File &quot;/tmp/ansible_meraki_alert_payload_qfz93rhw/ansible_meraki_alert_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 422, in request
+  File &quot;/tmp/ansible_meraki_alert_payload_qfz93rhw/ansible_meraki_alert_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 368, in _set_url
+AttributeError: 'tuple' object has no attribute 'lstrip'
+</error>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-6ox1rzm7-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:82" name="[localhost] meraki: meraki_alert : Delete network auth_key={{ auth_key }}, state=absent, org_name={{test_org_name}}, net_name=IntTestNetworkWireless" time="7.642717">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

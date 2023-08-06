@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="58.581817865371704">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_ms_ospf-2hdsxg_q" skipped="0" tests="1" time="58.581817865371704">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-5kpg5r27-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:7" name="[localhost] meraki: meraki_ms_ospf : Create network with type switch auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, type=switch, timezone=America/Chicago" time="58.581818">
+			<failure message="Something" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;Something&quot;,
+&quot;response&quot;: null,
+&quot;status&quot;: 429,
+&quot;warnings&quot;: [
+&quot;Rate limiter hit, retry 0&quot;,
+&quot;Rate limiter hit, retry 1&quot;,
+&quot;Rate limiter hit, retry 2&quot;,
+&quot;Rate limiter hit, retry 3&quot;,
+&quot;Rate limiter hit, retry 4&quot;,
+&quot;Rate limiter hit, retry 5&quot;,
+&quot;Rate limiter hit, retry 6&quot;,
+&quot;Rate limiter hit, retry 7&quot;,
+&quot;Rate limiter hit, retry 8&quot;,
+&quot;Rate limiter hit, retry 9&quot;,
+&quot;Rate limiter hit, retry 10&quot;
+]
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

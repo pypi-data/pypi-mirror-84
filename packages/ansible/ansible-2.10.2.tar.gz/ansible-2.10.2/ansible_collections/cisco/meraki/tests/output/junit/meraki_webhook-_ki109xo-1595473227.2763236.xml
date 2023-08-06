@@ -1,0 +1,209 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="17" time="34.47888398170471">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_webhook-_ki109xo" skipped="1" tests="17" time="34.47888398170471">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-l0x3z767-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:7" name="[localhost] meraki: meraki_webhook : Test an API key is provided msg=Please define an API key" time="0.102493">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-l0x3z767-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:12" name="[localhost] meraki: meraki_webhook : Create test network auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, type=appliance" time="4.194664">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685683&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/RrAL0dUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-l0x3z767-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:20" name="[localhost] meraki: meraki_webhook : Create webhook with check mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, name=Test_Hook, url=https://webhook.site/8eb5b76f-b167-4cb8-9fc4-42621b724244, shared_secret=shhhdonttellanyone" time="3.366925">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;name&quot;: &quot;Test_Hook&quot;,
+&quot;network_id&quot;: &quot;N_624874448297685683&quot;,
+&quot;shared_secret&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+&quot;url&quot;: &quot;https://webhook.site/8eb5b76f-b167-4cb8-9fc4-42621b724244&quot;
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-l0x3z767-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:32" name="[localhost] meraki: meraki_webhook : debug var=create_one_check" time="0.095339">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;create_one_check&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;name&quot;: &quot;Test_Hook&quot;,
+            &quot;network_id&quot;: &quot;N_624874448297685683&quot;,
+            &quot;shared_secret&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+            &quot;url&quot;: &quot;https://webhook.site/8eb5b76f-b167-4cb8-9fc4-42621b724244&quot;
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-l0x3z767-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:35" name="[localhost] meraki: meraki_webhook : assert that=['create_one_check is changed', 'create_one_check.data is defined']" time="0.097390">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-l0x3z767-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:40" name="[localhost] meraki: meraki_webhook : Create webhook auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, name=Test_Hook, url=https://webhook.site/8eb5b76f-b167-4cb8-9fc4-42621b724244, shared_secret=shhhdonttellanyone" time="4.476923">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;id&quot;: &quot;aHR0cHM6Ly93ZWJob29rLnNpdGUvOGViNWI3NmYtYjE2Ny00Y2I4LTlmYzQtNDI2MjFiNzI0MjQ0&quot;,
+&quot;name&quot;: &quot;Test_Hook&quot;,
+&quot;network_id&quot;: &quot;N_624874448297685683&quot;,
+&quot;shared_secret&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+&quot;url&quot;: &quot;https://webhook.site/8eb5b76f-b167-4cb8-9fc4-42621b724244&quot;
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-l0x3z767-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:51" name="[localhost] meraki: meraki_webhook : debug var=create_one" time="0.094887">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;create_one&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;id&quot;: &quot;aHR0cHM6Ly93ZWJob29rLnNpdGUvOGViNWI3NmYtYjE2Ny00Y2I4LTlmYzQtNDI2MjFiNzI0MjQ0&quot;,
+            &quot;name&quot;: &quot;Test_Hook&quot;,
+            &quot;network_id&quot;: &quot;N_624874448297685683&quot;,
+            &quot;shared_secret&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+            &quot;url&quot;: &quot;https://webhook.site/8eb5b76f-b167-4cb8-9fc4-42621b724244&quot;
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 201
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-l0x3z767-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:54" name="[localhost] meraki: meraki_webhook : assert that=['create_one is changed', 'create_one.data is defined']" time="0.100721">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-l0x3z767-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:59" name="[localhost] meraki: meraki_webhook : set_fact webhook_id={{create_one.data.id}}" time="0.095042">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;webhook_id&quot;: &quot;aHR0cHM6Ly93ZWJob29rLnNpdGUvOGViNWI3NmYtYjE2Ny00Y2I4LTlmYzQtNDI2MjFiNzI0MjQ0&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-l0x3z767-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:62" name="[localhost] meraki: meraki_webhook : Query one webhook auth_key={{auth_key}}, state=query, org_name={{test_org_name}}, net_name={{test_net_name}}, name=Test_Hook" time="6.143277">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;id&quot;: &quot;aHR0cHM6Ly93ZWJob29rLnNpdGUvOGViNWI3NmYtYjE2Ny00Y2I4LTlmYzQtNDI2MjFiNzI0MjQ0&quot;,
+&quot;name&quot;: &quot;Test_Hook&quot;,
+&quot;network_id&quot;: &quot;N_624874448297685683&quot;,
+&quot;shared_secret&quot;: &quot;shhhdonttellanyone&quot;,
+&quot;url&quot;: &quot;https://webhook.site/8eb5b76f-b167-4cb8-9fc4-42621b724244&quot;
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-l0x3z767-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:71" name="[localhost] meraki: meraki_webhook : debug var=query_one" time="0.098500">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;query_one&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;id&quot;: &quot;aHR0cHM6Ly93ZWJob29rLnNpdGUvOGViNWI3NmYtYjE2Ny00Y2I4LTlmYzQtNDI2MjFiNzI0MjQ0&quot;,
+            &quot;name&quot;: &quot;Test_Hook&quot;,
+            &quot;network_id&quot;: &quot;N_624874448297685683&quot;,
+            &quot;shared_secret&quot;: &quot;shhhdonttellanyone&quot;,
+            &quot;url&quot;: &quot;https://webhook.site/8eb5b76f-b167-4cb8-9fc4-42621b724244&quot;
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-l0x3z767-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:74" name="[localhost] meraki: meraki_webhook : assert that=['query_one.data is defined']" time="0.096136">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-l0x3z767-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:78" name="[localhost] meraki: meraki_webhook : Query one webhook with id auth_key={{auth_key}}, state=query, org_name={{test_org_name}}, net_name={{test_net_name}}, webhook_id={{webhook_id}}" time="4.740469">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;id&quot;: &quot;aHR0cHM6Ly93ZWJob29rLnNpdGUvOGViNWI3NmYtYjE2Ny00Y2I4LTlmYzQtNDI2MjFiNzI0MjQ0&quot;,
+&quot;name&quot;: &quot;Test_Hook&quot;,
+&quot;network_id&quot;: &quot;N_624874448297685683&quot;,
+&quot;shared_secret&quot;: &quot;shhhdonttellanyone&quot;,
+&quot;url&quot;: &quot;https://webhook.site/8eb5b76f-b167-4cb8-9fc4-42621b724244&quot;
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-l0x3z767-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:87" name="[localhost] meraki: meraki_webhook : debug var=query_one_id" time="0.094324">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;query_one_id&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;id&quot;: &quot;aHR0cHM6Ly93ZWJob29rLnNpdGUvOGViNWI3NmYtYjE2Ny00Y2I4LTlmYzQtNDI2MjFiNzI0MjQ0&quot;,
+            &quot;name&quot;: &quot;Test_Hook&quot;,
+            &quot;network_id&quot;: &quot;N_624874448297685683&quot;,
+            &quot;shared_secret&quot;: &quot;shhhdonttellanyone&quot;,
+            &quot;url&quot;: &quot;https://webhook.site/8eb5b76f-b167-4cb8-9fc4-42621b724244&quot;
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-l0x3z767-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:90" name="[localhost] meraki: meraki_webhook : assert that=['query_one_id.data is defined']" time="0.097908">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-l0x3z767-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:94" name="[localhost] meraki: meraki_webhook : Update webhook with check mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, name=Test_Hook, url=https://webhook.site/8eb5b76f-b167-4cb8-9fc4-42621b724244, shared_secret=shhhdonttellanyonehere" time="4.887690">
+			<failure message="here" type="failure">{
+&quot;changed&quot;: false,
+&quot;msg&quot;: &quot;here&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-l0x3z767-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:269" name="[localhost] meraki: meraki_webhook : Delete test network auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, net_name={{test_net_name}}" time="5.696198">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

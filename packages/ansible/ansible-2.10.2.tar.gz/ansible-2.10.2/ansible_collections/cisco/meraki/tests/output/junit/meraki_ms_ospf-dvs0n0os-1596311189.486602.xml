@@ -1,0 +1,217 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="7" time="15.833148956298828">
+	<testsuite disabled="0" errors="0" failures="0" name="meraki_ms_ospf-dvs0n0os" skipped="0" tests="7" time="15.833148956298828">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-yc_22rfu-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:7" name="[localhost] meraki: meraki_ms_ospf : Create network with type switch auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, type=switch, timezone=America/Chicago" time="3.038748">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685887&quot;,
+&quot;name&quot;: &quot;IntTestNetworkSwitch&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;switch&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkSw/n/pqmb_bUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-yc_22rfu-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:18" name="[localhost] meraki: meraki_ms_ospf : debug var=create_net_switch" time="0.101934">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;create_net_switch&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;enrollment_string&quot;: null,
+            &quot;id&quot;: &quot;N_624874448297685887&quot;,
+            &quot;name&quot;: &quot;IntTestNetworkSwitch&quot;,
+            &quot;organization_id&quot;: &quot;133277&quot;,
+            &quot;product_types&quot;: [
+                &quot;switch&quot;
+            ],
+            &quot;tags&quot;: [],
+            &quot;time_zone&quot;: &quot;America/Chicago&quot;,
+            &quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkSw/n/pqmb_bUb/manage/usage/list&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-yc_22rfu-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:21" name="[localhost] meraki: meraki_ms_ospf : Claim a device into a network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, serial=QBSB-VLNE-E299, state=present" time="4.662442">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;address&quot;: &quot;&quot;,
+&quot;firmware&quot;: &quot;Not running configured version&quot;,
+&quot;floor_plan_id&quot;: null,
+&quot;lan_ip&quot;: null,
+&quot;lat&quot;: 37.4180951010362,
+&quot;lng&quot;: -122.098531723022,
+&quot;mac&quot;: &quot;4c:c8:a1:09:00:63&quot;,
+&quot;model&quot;: &quot;MS425-32&quot;,
+&quot;network_id&quot;: &quot;N_624874448297685887&quot;,
+&quot;serial&quot;: &quot;QBSB-VLNE-E299&quot;,
+&quot;switch_profile_id&quot;: null,
+&quot;tags&quot;: [],
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkSw/n/pqmb_bUb/manage/nodes/new_list/84424578891875&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-yc_22rfu-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:30" name="[localhost] meraki: meraki_ms_ospf : Query OSPF settings auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, state=query" time="3.838305">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;areas&quot;: [
+{
+&quot;area_id&quot;: 0,
+&quot;area_name&quot;: &quot;Backbone&quot;,
+&quot;area_type&quot;: &quot;normal&quot;
+}
+],
+&quot;dead_timer_in_seconds&quot;: 60,
+&quot;enabled&quot;: true,
+&quot;hello_timer_in_seconds&quot;: 20,
+&quot;md5_authentication_enabled&quot;: false
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-yc_22rfu-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:39" name="[localhost] meraki: meraki_ms_ospf : debug var=query_all" time="0.070120">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;query_all&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;areas&quot;: [
+                {
+                    &quot;area_id&quot;: 0,
+                    &quot;area_name&quot;: &quot;Backbone&quot;,
+                    &quot;area_type&quot;: &quot;normal&quot;
+                }
+            ],
+            &quot;dead_timer_in_seconds&quot;: 60,
+            &quot;enabled&quot;: true,
+            &quot;hello_timer_in_seconds&quot;: 20,
+            &quot;md5_authentication_enabled&quot;: false
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-yc_22rfu-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:42" name="[localhost] meraki: meraki_ms_ospf : Enable OSPF auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, state=present, enabled=True, hello_timer=20, dead_timer=60, md5_authentication_enabled=False, areas=[{'area_id': 0, 'area_name': 'Backbone', 'area_type': 'normal'}, {'area_id': 1, 'area_name': 'Office', 'area_type': 'nssa'}]" time="4.016598">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;areas&quot;: [
+{
+&quot;area_id&quot;: 0,
+&quot;area_name&quot;: &quot;Backbone&quot;,
+&quot;area_type&quot;: &quot;normal&quot;
+},
+{
+&quot;area_id&quot;: 1,
+&quot;area_name&quot;: &quot;Office&quot;,
+&quot;area_type&quot;: &quot;nssa&quot;
+}
+],
+&quot;dead_timer_in_seconds&quot;: 60,
+&quot;enabled&quot;: true,
+&quot;hello_timer_in_seconds&quot;: 20,
+&quot;md5_authentication_enabled&quot;: false
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;0\&quot; (type int) was converted to \&quot;'0'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+&quot;The value \&quot;1\&quot; (type int) was converted to \&quot;'1'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-yc_22rfu-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:62" name="[localhost] meraki: meraki_ms_ospf : debug var=enable_ospf" time="0.105002">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;enable_ospf&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;areas&quot;: [
+                {
+                    &quot;area_id&quot;: 0,
+                    &quot;area_name&quot;: &quot;Backbone&quot;,
+                    &quot;area_type&quot;: &quot;normal&quot;
+                },
+                {
+                    &quot;area_id&quot;: 1,
+                    &quot;area_name&quot;: &quot;Office&quot;,
+                    &quot;area_type&quot;: &quot;nssa&quot;
+                }
+            ],
+            &quot;dead_timer_in_seconds&quot;: 60,
+            &quot;enabled&quot;: true,
+            &quot;hello_timer_in_seconds&quot;: 20,
+            &quot;md5_authentication_enabled&quot;: false
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;0\&quot; (type int) was converted to \&quot;'0'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+            &quot;The value \&quot;1\&quot; (type int) was converted to \&quot;'1'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

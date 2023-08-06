@@ -1,0 +1,258 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="11" time="22.982905864715576">
+	<testsuite disabled="0" errors="0" failures="0" name="meraki_ms_ospf-0ve03gar" skipped="0" tests="11" time="22.982905864715576">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-zpjuzyr6-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:7" name="[localhost] meraki: meraki_ms_ospf : Create network with type switch auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, type=switch, timezone=America/Chicago" time="3.206980">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685887&quot;,
+&quot;name&quot;: &quot;IntTestNetworkSwitch&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;switch&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkSw/n/pqmb_bUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-zpjuzyr6-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:18" name="[localhost] meraki: meraki_ms_ospf : Claim a device into a network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, serial={{serial_switch_l3}}, state=present" time="5.462201">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;address&quot;: &quot;&quot;,
+&quot;firmware&quot;: &quot;Not running configured version&quot;,
+&quot;floor_plan_id&quot;: null,
+&quot;lan_ip&quot;: null,
+&quot;lat&quot;: 37.4180951010362,
+&quot;lng&quot;: -122.098531723022,
+&quot;mac&quot;: &quot;4c:c8:a1:09:00:63&quot;,
+&quot;model&quot;: &quot;MS425-32&quot;,
+&quot;network_id&quot;: &quot;N_624874448297685887&quot;,
+&quot;serial&quot;: &quot;QBSB-VLNE-E299&quot;,
+&quot;switch_profile_id&quot;: null,
+&quot;tags&quot;: [],
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkSw/n/pqmb_bUb/manage/nodes/new_list/84424578891875&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-zpjuzyr6-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:27" name="[localhost] meraki: meraki_ms_ospf : Query OSPF settings auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, state=query" time="3.607565">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;areas&quot;: [
+{
+&quot;area_id&quot;: 0,
+&quot;area_name&quot;: &quot;Backbone&quot;,
+&quot;area_type&quot;: &quot;normal&quot;
+},
+{
+&quot;area_id&quot;: 1,
+&quot;area_name&quot;: &quot;Office&quot;,
+&quot;area_type&quot;: &quot;nssa&quot;
+}
+],
+&quot;dead_timer_in_seconds&quot;: 60,
+&quot;enabled&quot;: true,
+&quot;hello_timer_in_seconds&quot;: 20,
+&quot;md5_authentication_enabled&quot;: true,
+&quot;md5_authentication_key&quot;: {
+&quot;id&quot;: 1,
+&quot;passphrase&quot;: &quot;secretpass&quot;
+}
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-zpjuzyr6-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:37" name="[localhost] meraki: meraki_ms_ospf : assert that=['query_all.data is defined']" time="0.100401">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-zpjuzyr6-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:41" name="[localhost] meraki: meraki_ms_ospf : Enable OSPF with check mode auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, state=present, enabled=True, hello_timer=20, dead_timer=60, areas=[{'area_id': 0, 'area_name': 'Backbone', 'area_type': 'normal'}, {'area_id': 1, 'area_name': 'Office', 'area_type': 'nssa'}], md5_authentication_enabled=True, md5_authentication_key={'id': 1, 'passphrase': 'secretpass'}" time="3.440597">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;areas&quot;: [
+{
+&quot;area_id&quot;: 0,
+&quot;area_name&quot;: &quot;Backbone&quot;,
+&quot;area_type&quot;: &quot;normal&quot;
+},
+{
+&quot;area_id&quot;: 1,
+&quot;area_name&quot;: &quot;Office&quot;,
+&quot;area_type&quot;: &quot;nssa&quot;
+}
+],
+&quot;dead_timer_in_seconds&quot;: 60,
+&quot;enabled&quot;: true,
+&quot;hello_timer_in_seconds&quot;: 20,
+&quot;md5_authentication_enabled&quot;: true,
+&quot;md5_authentication_key&quot;: {
+&quot;id&quot;: 1,
+&quot;passphrase&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;
+}
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;1\&quot; (type int) was converted to \&quot;'1'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-zpjuzyr6-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:64" name="[localhost] meraki: meraki_ms_ospf : assert that=['enable_check_mode.data is defined']" time="0.094512">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-zpjuzyr6-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:68" name="[localhost] meraki: meraki_ms_ospf : Enable OSPF auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, state=present, enabled=True, hello_timer=20, dead_timer=60, areas=[{'area_id': 0, 'area_name': 'Backbone', 'area_type': 'normal'}, {'area_id': 1, 'area_name': 'Office', 'area_type': 'nssa'}], md5_authentication_enabled=True, md5_authentication_key={'id': 1, 'passphrase': 'secretpass'}" time="3.348909">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;areas&quot;: [
+{
+&quot;area_id&quot;: 0,
+&quot;area_name&quot;: &quot;Backbone&quot;,
+&quot;area_type&quot;: &quot;normal&quot;
+},
+{
+&quot;area_id&quot;: 1,
+&quot;area_name&quot;: &quot;Office&quot;,
+&quot;area_type&quot;: &quot;nssa&quot;
+}
+],
+&quot;dead_timer_in_seconds&quot;: 60,
+&quot;enabled&quot;: true,
+&quot;hello_timer_in_seconds&quot;: 20,
+&quot;md5_authentication_enabled&quot;: true,
+&quot;md5_authentication_key&quot;: {
+&quot;id&quot;: 1,
+&quot;passphrase&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;
+}
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;1\&quot; (type int) was converted to \&quot;'1'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-zpjuzyr6-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:90" name="[localhost] meraki: meraki_ms_ospf : assert that=['enable.data is defined']" time="0.105147">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-zpjuzyr6-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:94" name="[localhost] meraki: meraki_ms_ospf : Enable OSPF with idempotency auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, state=present, enabled=True, hello_timer=20, dead_timer=60, areas=[{'area_id': 0, 'area_name': 'Backbone', 'area_type': 'normal'}, {'area_id': 1, 'area_name': 'Office', 'area_type': 'nssa'}], md5_authentication_enabled=True, md5_authentication_key={'id': 1, 'passphrase': 'secretpass'}" time="3.425008">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;areas&quot;: [
+{
+&quot;area_id&quot;: 0,
+&quot;area_name&quot;: &quot;Backbone&quot;,
+&quot;area_type&quot;: &quot;normal&quot;
+},
+{
+&quot;area_id&quot;: 1,
+&quot;area_name&quot;: &quot;Office&quot;,
+&quot;area_type&quot;: &quot;nssa&quot;
+}
+],
+&quot;dead_timer_in_seconds&quot;: 60,
+&quot;enabled&quot;: true,
+&quot;hello_timer_in_seconds&quot;: 20,
+&quot;md5_authentication_enabled&quot;: true,
+&quot;md5_authentication_key&quot;: {
+&quot;id&quot;: 1,
+&quot;passphrase&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;
+}
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;1\&quot; (type int) was converted to \&quot;'1'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-zpjuzyr6-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:117" name="[localhost] meraki: meraki_ms_ospf : debug var=enable_ospf_idempotent" time="0.094112">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;enable_ospf_idempotent&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;areas&quot;: [
+                {
+                    &quot;area_id&quot;: 0,
+                    &quot;area_name&quot;: &quot;Backbone&quot;,
+                    &quot;area_type&quot;: &quot;normal&quot;
+                },
+                {
+                    &quot;area_id&quot;: 1,
+                    &quot;area_name&quot;: &quot;Office&quot;,
+                    &quot;area_type&quot;: &quot;nssa&quot;
+                }
+            ],
+            &quot;dead_timer_in_seconds&quot;: 60,
+            &quot;enabled&quot;: true,
+            &quot;hello_timer_in_seconds&quot;: 20,
+            &quot;md5_authentication_enabled&quot;: true,
+            &quot;md5_authentication_key&quot;: {
+                &quot;id&quot;: 1,
+                &quot;passphrase&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;
+            }
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;1\&quot; (type int) was converted to \&quot;'1'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-zpjuzyr6-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:120" name="[localhost] meraki: meraki_ms_ospf : assert that=['enable_ospf_idempotent is not changed', 'enable_ospf_idempotent.data is defined']" time="0.097474">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

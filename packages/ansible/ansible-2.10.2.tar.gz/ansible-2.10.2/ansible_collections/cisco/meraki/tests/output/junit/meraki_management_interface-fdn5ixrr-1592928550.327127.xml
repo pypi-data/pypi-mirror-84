@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="6" time="5.222620010375977">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_management_interface-fdn5ixrr" skipped="1" tests="6" time="5.222620010375977">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-teebj6rj-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:7" name="[localhost] meraki: meraki_management_interface : Test an API key is provided msg=Please define an API key" time="0.097454">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-teebj6rj-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:12" name="[localhost] meraki: meraki_management_interface : set_fact net_name=TestNet - Appliance" time="0.078686">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_name&quot;: &quot;TestNet - Appliance&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-teebj6rj-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:15" name="[localhost] meraki: meraki_management_interface : Create test network auth_key={{auth_key}}, state=present, org_id={{test_org_id}}, net_name={{net_name}}, type=appliance" time="2.177954">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;disable_my_meraki_com&quot;: false,
+&quot;disable_remote_status_page&quot;: true,
+&quot;id&quot;: &quot;N_624874448297679182&quot;,
+&quot;name&quot;: &quot;TestNet - Appliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: null,
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;type&quot;: &quot;appliance&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 133277\&quot; (type int) was converted to \&quot;auth_key: '133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-teebj6rj-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:25" name="[localhost] meraki: meraki_management_interface : set_fact net_id={{net.data.id}}" time="0.092390">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_id&quot;: &quot;N_624874448297679182&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-teebj6rj-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:28" name="[localhost] meraki: meraki_management_interface : Set WAN1 as DHCP in check mode auth_key={{auth_key}}, state=present, org_id={{test_org_id}}, net_id={{net_id}}, serial={{serial}}, wan1={'wan_enabled': 'enabled', 'using_static_ip': False, 'vlan': 1}" time="1.516184">
+			<failure message="HTTP error 404 - https://api.meraki.com/api/v0/networks/N_624874448297679182/devices/Q2BN-MCH8-VEL5/managementInterfaceSettings" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;HTTP error 404 - https://api.meraki.com/api/v0/networks/N_624874448297679182/devices/Q2BN-MCH8-VEL5/managementInterfaceSettings&quot;,
+&quot;response&quot;: &quot;HTTP Error 404: Not Found&quot;,
+&quot;status&quot;: 404,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 133277\&quot; (type int) was converted to \&quot;auth_key: '133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-teebj6rj-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:172" name="[localhost] meraki: meraki_management_interface : Reset settings for all interfaces auth_key={{auth_key}}, state=present, org_id={{test_org_id}}, net_id={{net_id}}, serial={{serial}}, wan1={'wan_enabled': 'disabled', 'using_static_ip': False}, wan2={'wan_enabled': 'enabled', 'using_static_ip': False}" time="1.259951">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;HTTP error 404 - https://api.meraki.com/api/v0/networks/N_624874448297679182/devices/Q2BN-MCH8-VEL5/managementInterfaceSettings&quot;,
+&quot;response&quot;: &quot;HTTP Error 404: Not Found&quot;,
+&quot;status&quot;: 404,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 133277\&quot; (type int) was converted to \&quot;auth_key: '133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

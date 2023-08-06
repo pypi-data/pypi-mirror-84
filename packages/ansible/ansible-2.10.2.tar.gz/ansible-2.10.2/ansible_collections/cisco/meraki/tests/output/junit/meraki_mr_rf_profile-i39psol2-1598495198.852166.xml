@@ -1,0 +1,517 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="23" time="53.83855390548706">
+	<testsuite disabled="0" errors="0" failures="0" name="meraki_mr_rf_profile-i39psol2" skipped="0" tests="23" time="53.83855390548706">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:7" name="[localhost] meraki: meraki_mr_rf_profile : Create network with type wireless auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, type=wireless, timezone=America/Chicago" time="4.923294">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297686356&quot;,
+&quot;name&quot;: &quot;IntTestNetworkWireless&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;wireless&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkWi/n/WEmswdUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:17" name="[localhost] meraki: meraki_mr_rf_profile : Create RF profile in check mode auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=present, name=Test Profile, band_selection_type=ap, client_balancing_enabled=True, ap_band_settings={'mode': 'dual', 'band_steering_enabled': True}, five_ghz_settings={'max_power': 10, 'min_bitrate': 12, 'min_power': 8, 'rxsop': -65, 'channel_width': 20, 'valid_auto_channels': [36, 40, 44]}, two_four_ghz_settings={'max_power': 10, 'min_bitrate': 12, 'min_power': 8, 'rxsop': -65, 'ax_enabled': False, 'valid_auto_channels': [1]}" time="6.334943">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;ap_band_settings&quot;: {
+&quot;band_operation_mode&quot;: &quot;dual&quot;,
+&quot;band_steering_enabled&quot;: true
+},
+&quot;band_selection_type&quot;: &quot;ap&quot;,
+&quot;client_balancing_enabled&quot;: true,
+&quot;five_ghz_settings&quot;: {
+&quot;channel_width&quot;: &quot;20&quot;,
+&quot;max_power&quot;: 10,
+&quot;min_bitrate&quot;: 12,
+&quot;min_power&quot;: 8,
+&quot;rxsop&quot;: -65,
+&quot;valid_auto_channels&quot;: [
+36,
+40,
+44
+]
+},
+&quot;name&quot;: &quot;Test Profile&quot;,
+&quot;two_four_ghz_settings&quot;: {
+&quot;ax_enabled&quot;: false,
+&quot;max_power&quot;: 10,
+&quot;min_bitrate&quot;: 12.0,
+&quot;min_power&quot;: 8,
+&quot;rxsop&quot;: -65,
+&quot;valid_auto_channels&quot;: [
+1
+]
+}
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;20\&quot; (type int) was converted to \&quot;'20'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:51" name="[localhost] meraki: meraki_mr_rf_profile : assert that=['create_check.data is defined', 'create_check is changed']" time="0.247978">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:56" name="[localhost] meraki: meraki_mr_rf_profile : Create RF profile auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=present, name=Test Profile, band_selection_type=ap, client_balancing_enabled=True, ap_band_settings={'mode': 'dual', 'band_steering_enabled': True}, five_ghz_settings={'max_power': 10, 'min_bitrate': 12, 'min_power': 8, 'rxsop': -65, 'channel_width': 20, 'valid_auto_channels': [36, 40, 44]}, two_four_ghz_settings={'max_power': 10, 'min_bitrate': 12, 'min_power': 8, 'rxsop': -65, 'ax_enabled': False, 'valid_auto_channels': [1]}" time="5.280271">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;ap_band_settings&quot;: {
+&quot;band_operation_mode&quot;: &quot;dual&quot;,
+&quot;band_steering_enabled&quot;: true
+},
+&quot;band_selection_type&quot;: &quot;ap&quot;,
+&quot;client_balancing_enabled&quot;: true,
+&quot;five_ghz_settings&quot;: {
+&quot;channel_width&quot;: &quot;20&quot;,
+&quot;max_power&quot;: 10,
+&quot;min_bitrate&quot;: 12,
+&quot;min_power&quot;: 8,
+&quot;rxsop&quot;: -65,
+&quot;valid_auto_channels&quot;: [
+36,
+40,
+44
+]
+},
+&quot;id&quot;: &quot;624874448297657789&quot;,
+&quot;min_bitrate_type&quot;: &quot;band&quot;,
+&quot;name&quot;: &quot;Test Profile&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686356&quot;,
+&quot;two_four_ghz_settings&quot;: {
+&quot;ax_enabled&quot;: false,
+&quot;max_power&quot;: 10,
+&quot;min_bitrate&quot;: 12,
+&quot;min_power&quot;: 8,
+&quot;rxsop&quot;: -65,
+&quot;valid_auto_channels&quot;: [
+1
+]
+}
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201,
+&quot;warnings&quot;: [
+&quot;The value \&quot;20\&quot; (type int) was converted to \&quot;'20'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:89" name="[localhost] meraki: meraki_mr_rf_profile : set_fact profile_id={{ create.data.id }}" time="0.287244">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;profile_id&quot;: &quot;624874448297657789&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:92" name="[localhost] meraki: meraki_mr_rf_profile : Query all RF profiles by profile ID auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=query, profile_id={{ profile_id }}" time="3.346643">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: null,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:102" name="[localhost] meraki: meraki_mr_rf_profile : debug var=query_one" time="0.182321">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;query_one&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: null,
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:105" name="[localhost] meraki: meraki_mr_rf_profile : assert that=['query_one.data is defined']" time="0.183568">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:109" name="[localhost] meraki: meraki_mr_rf_profile : Update profile with check mode auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=present, profile_id={{ profile_id }}, band_selection_type=ap, client_balancing_enabled=True, ap_band_settings={'mode': 'dual', 'band_steering_enabled': True}, five_ghz_settings={'max_power': 10, 'min_bitrate': 12, 'min_power': 8, 'rxsop': -65, 'channel_width': 20, 'valid_auto_channels': [36, 44]}, two_four_ghz_settings={'max_power': 10, 'min_bitrate': 12, 'min_power': 8, 'rxsop': -75, 'ax_enabled': False, 'valid_auto_channels': [1]}" time="4.966844">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;ap_band_settings&quot;: {
+&quot;band_operation_mode&quot;: &quot;dual&quot;,
+&quot;band_steering_enabled&quot;: true
+},
+&quot;band_selection_type&quot;: &quot;ap&quot;,
+&quot;client_balancing_enabled&quot;: true,
+&quot;five_ghz_settings&quot;: {
+&quot;channel_width&quot;: &quot;20&quot;,
+&quot;max_power&quot;: 10,
+&quot;min_bitrate&quot;: 12,
+&quot;min_power&quot;: 8,
+&quot;rxsop&quot;: -65,
+&quot;valid_auto_channels&quot;: [
+36,
+44
+]
+},
+&quot;two_four_ghz_settings&quot;: {
+&quot;ax_enabled&quot;: false,
+&quot;max_power&quot;: 10,
+&quot;min_bitrate&quot;: 12.0,
+&quot;min_power&quot;: 8,
+&quot;rxsop&quot;: -75,
+&quot;valid_auto_channels&quot;: [
+1
+]
+}
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;20\&quot; (type int) was converted to \&quot;'20'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:142" name="[localhost] meraki: meraki_mr_rf_profile : assert that=['update_check.data is defined', 'update_check is changed']" time="0.148087">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:147" name="[localhost] meraki: meraki_mr_rf_profile : Update profile auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=present, profile_id={{ profile_id }}, band_selection_type=ap, client_balancing_enabled=True, ap_band_settings={'mode': 'dual', 'band_steering_enabled': True}, five_ghz_settings={'max_power': 10, 'min_bitrate': 12, 'min_power': 8, 'rxsop': -65, 'channel_width': 20, 'valid_auto_channels': [36, 44]}, two_four_ghz_settings={'max_power': 10, 'min_bitrate': 12, 'min_power': 8, 'rxsop': -75, 'ax_enabled': False, 'valid_auto_channels': [1]}" time="5.187123">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;ap_band_settings&quot;: {
+&quot;band_operation_mode&quot;: &quot;dual&quot;,
+&quot;band_steering_enabled&quot;: true
+},
+&quot;band_selection_type&quot;: &quot;ap&quot;,
+&quot;client_balancing_enabled&quot;: true,
+&quot;five_ghz_settings&quot;: {
+&quot;channel_width&quot;: &quot;20&quot;,
+&quot;max_power&quot;: 10,
+&quot;min_bitrate&quot;: 12,
+&quot;min_power&quot;: 8,
+&quot;rxsop&quot;: -65,
+&quot;valid_auto_channels&quot;: [
+36,
+44
+]
+},
+&quot;id&quot;: &quot;624874448297657789&quot;,
+&quot;min_bitrate_type&quot;: &quot;band&quot;,
+&quot;name&quot;: &quot;Test Profile&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686356&quot;,
+&quot;two_four_ghz_settings&quot;: {
+&quot;ax_enabled&quot;: false,
+&quot;max_power&quot;: 10,
+&quot;min_bitrate&quot;: 12,
+&quot;min_power&quot;: 8,
+&quot;rxsop&quot;: -75,
+&quot;valid_auto_channels&quot;: [
+1
+]
+}
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;20\&quot; (type int) was converted to \&quot;'20'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:179" name="[localhost] meraki: meraki_mr_rf_profile : assert that=['update.data is defined', 'update is changed']" time="0.201100">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:184" name="[localhost] meraki: meraki_mr_rf_profile : Update profile with idempotency auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=present, profile_id={{ profile_id }}, band_selection_type=ap, client_balancing_enabled=True, ap_band_settings={'mode': 'dual', 'band_steering_enabled': True}, five_ghz_settings={'max_power': 10, 'min_bitrate': 12, 'min_power': 8, 'rxsop': -65, 'channel_width': 20, 'valid_auto_channels': [36, 44]}, two_four_ghz_settings={'max_power': 10, 'min_bitrate': 12, 'min_power': 8, 'rxsop': -75, 'ax_enabled': False, 'valid_auto_channels': [1]}" time="4.339706">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;ap_band_settings&quot;: {
+&quot;band_operation_mode&quot;: &quot;dual&quot;,
+&quot;band_steering_enabled&quot;: true
+},
+&quot;band_selection_type&quot;: &quot;ap&quot;,
+&quot;client_balancing_enabled&quot;: true,
+&quot;five_ghz_settings&quot;: {
+&quot;channel_width&quot;: &quot;20&quot;,
+&quot;max_power&quot;: 10,
+&quot;min_bitrate&quot;: 12,
+&quot;min_power&quot;: 8,
+&quot;rxsop&quot;: -65,
+&quot;valid_auto_channels&quot;: [
+36,
+44
+]
+},
+&quot;id&quot;: &quot;624874448297657789&quot;,
+&quot;min_bitrate_type&quot;: &quot;band&quot;,
+&quot;name&quot;: &quot;Test Profile&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686356&quot;,
+&quot;two_four_ghz_settings&quot;: {
+&quot;ax_enabled&quot;: false,
+&quot;max_power&quot;: 10,
+&quot;min_bitrate&quot;: 12,
+&quot;min_power&quot;: 8,
+&quot;rxsop&quot;: -75,
+&quot;valid_auto_channels&quot;: [
+1
+]
+}
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;20\&quot; (type int) was converted to \&quot;'20'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:216" name="[localhost] meraki: meraki_mr_rf_profile : assert that=['update_idempotent.data is defined', 'update_idempotent is not changed']" time="0.169916">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:221" name="[localhost] meraki: meraki_mr_rf_profile : Query all RF profiles auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=query" time="4.868457">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: [
+{
+&quot;ap_band_settings&quot;: {
+&quot;band_operation_mode&quot;: &quot;dual&quot;,
+&quot;band_steering_enabled&quot;: true
+},
+&quot;band_selection_type&quot;: &quot;ap&quot;,
+&quot;client_balancing_enabled&quot;: true,
+&quot;five_ghz_settings&quot;: {
+&quot;channel_width&quot;: &quot;20&quot;,
+&quot;max_power&quot;: 10,
+&quot;min_bitrate&quot;: 12,
+&quot;min_power&quot;: 8,
+&quot;rxsop&quot;: -65,
+&quot;valid_auto_channels&quot;: [
+36,
+44
+]
+},
+&quot;id&quot;: &quot;624874448297657789&quot;,
+&quot;min_bitrate_type&quot;: &quot;band&quot;,
+&quot;name&quot;: &quot;Test Profile&quot;,
+&quot;network_id&quot;: &quot;N_624874448297686356&quot;,
+&quot;two_four_ghz_settings&quot;: {
+&quot;ax_enabled&quot;: false,
+&quot;max_power&quot;: 10,
+&quot;min_bitrate&quot;: 12,
+&quot;min_power&quot;: 8,
+&quot;rxsop&quot;: -75,
+&quot;valid_auto_channels&quot;: [
+1
+]
+}
+}
+],
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:230" name="[localhost] meraki: meraki_mr_rf_profile : debug var=query_all" time="0.167082">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;query_all&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: [
+            {
+                &quot;ap_band_settings&quot;: {
+                    &quot;band_operation_mode&quot;: &quot;dual&quot;,
+                    &quot;band_steering_enabled&quot;: true
+                },
+                &quot;band_selection_type&quot;: &quot;ap&quot;,
+                &quot;client_balancing_enabled&quot;: true,
+                &quot;five_ghz_settings&quot;: {
+                    &quot;channel_width&quot;: &quot;20&quot;,
+                    &quot;max_power&quot;: 10,
+                    &quot;min_bitrate&quot;: 12,
+                    &quot;min_power&quot;: 8,
+                    &quot;rxsop&quot;: -65,
+                    &quot;valid_auto_channels&quot;: [
+                        36,
+                        44
+                    ]
+                },
+                &quot;id&quot;: &quot;624874448297657789&quot;,
+                &quot;min_bitrate_type&quot;: &quot;band&quot;,
+                &quot;name&quot;: &quot;Test Profile&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297686356&quot;,
+                &quot;two_four_ghz_settings&quot;: {
+                    &quot;ax_enabled&quot;: false,
+                    &quot;max_power&quot;: 10,
+                    &quot;min_bitrate&quot;: 12,
+                    &quot;min_power&quot;: 8,
+                    &quot;rxsop&quot;: -75,
+                    &quot;valid_auto_channels&quot;: [
+                        1
+                    ]
+                }
+            }
+        ],
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:233" name="[localhost] meraki: meraki_mr_rf_profile : assert that=['query_all.data is defined']" time="0.138177">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:237" name="[localhost] meraki: meraki_mr_rf_profile : Query one RF profile by ID auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=query, profile_id={{ profile_id }}" time="3.187596">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: null,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:247" name="[localhost] meraki: meraki_mr_rf_profile : debug var=query_one_id" time="0.178693">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;query_one_id&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: null,
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:250" name="[localhost] meraki: meraki_mr_rf_profile : assert that=['query_one_id.data is defined']" time="0.191575">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:254" name="[localhost] meraki: meraki_mr_rf_profile : Delete RF profile auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=absent, profile_id={{ profile_id }}" time="4.090607">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:264" name="[localhost] meraki: meraki_mr_rf_profile : assert that=['delete.data is defined', 'delete is changed']" time="0.155552">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-fo8quplk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:275" name="[localhost] meraki: meraki_mr_rf_profile : Delete network auth_key={{ auth_key }}, state=absent, org_name={{test_org_name}}, net_name=IntTestNetworkWireless" time="5.061777">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

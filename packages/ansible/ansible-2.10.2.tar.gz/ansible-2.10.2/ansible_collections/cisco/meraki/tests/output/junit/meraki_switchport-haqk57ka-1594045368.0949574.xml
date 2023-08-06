@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="0" tests="1" time="1.6344184875488281">
+	<testsuite disabled="0" errors="1" failures="0" name="meraki_switchport-haqk57ka" skipped="0" tests="1" time="1.6344184875488281">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-d_9r9_ga-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:53" name="[localhost] meraki: meraki_switchport : Enable switchport auth_key={{auth_key}}, state=present, serial={{ serial_switch }}, number=7, enabled=True" time="1.634418">
+			<error message="TypeError: object of type 'NoneType' has no len()" type="error">Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1594045366.4556675-107-106239073495358/AnsiballZ_meraki_switchport.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1594045366.4556675-107-106239073495358/AnsiballZ_meraki_switchport.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1594045366.4556675-107-106239073495358/AnsiballZ_meraki_switchport.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_switchport', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_switchport_payload_kjqwol5k/ansible_meraki_switchport_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_switchport.py&quot;, line 411, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_switchport_payload_kjqwol5k/ansible_meraki_switchport_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_switchport.py&quot;, line 389, in main
+  File &quot;/tmp/ansible_meraki_switchport_payload_kjqwol5k/ansible_meraki_switchport_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 180, in is_update_required
+  File &quot;/tmp/ansible_meraki_switchport_payload_kjqwol5k/ansible_meraki_switchport_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 168, in is_update_required
+TypeError: object of type 'NoneType' has no len()
+</error>
+		</testcase>
+	</testsuite>
+</testsuites>

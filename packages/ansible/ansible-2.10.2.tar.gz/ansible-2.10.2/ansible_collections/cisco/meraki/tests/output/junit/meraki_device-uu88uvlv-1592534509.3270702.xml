@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="4.099783658981323">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_device-uu88uvlv" skipped="0" tests="1" time="4.099783658981323">
+		<testcase classname="/root/ansible/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-78gs6b37-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:163" name="[localhost] meraki: meraki_device : Update a device to fix bug 98 auth_key={{auth_key}}, org_id={{test_org_id}}, net_name={{test_wireless_net_name}}, state=present, serial={{serial}}, hostname=abc123" time="4.099784">
+			<failure message="{'name': 'abc123'}" type="failure">{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: {
+&quot;name&quot;: &quot;abc123&quot;
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value 133277 (type int) in a string field was converted to '133277' (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

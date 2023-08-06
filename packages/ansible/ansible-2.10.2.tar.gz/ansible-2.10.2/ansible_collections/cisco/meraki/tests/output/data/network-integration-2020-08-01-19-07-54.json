@@ -1,0 +1,31 @@
+{
+    "targets": {
+        "meraki_ms_ospf": {
+            "aliases": [
+                "meraki_ms_ospf", 
+                "module/", 
+                "module/meraki_ms_ospf/", 
+                "module/meraki_ms_ospf/meraki_ms_ospf", 
+                "network/", 
+                "network/meraki/", 
+                "network/meraki/meraki_ms_ospf", 
+                "non_destructive/", 
+                "non_destructive/meraki_ms_ospf", 
+                "role/", 
+                "role/meraki_ms_ospf"
+            ], 
+            "coverage": true, 
+            "coverage_label": "docker-default", 
+            "modules": [
+                "meraki_ms_ospf"
+            ], 
+            "name": "meraki_ms_ospf", 
+            "python_version": "3.7", 
+            "run_time_seconds": 7, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }
+    }
+}

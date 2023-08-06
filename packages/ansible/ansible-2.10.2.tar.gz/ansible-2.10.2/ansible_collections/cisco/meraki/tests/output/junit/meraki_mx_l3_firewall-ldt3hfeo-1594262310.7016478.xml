@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="0" tests="1" time="5.275155067443848">
+	<testsuite disabled="0" errors="1" failures="0" name="meraki_mx_l3_firewall-ldt3hfeo" skipped="0" tests="1" time="5.275155067443848">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l3_firewall-98574kj0-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l3_firewall/tasks/main.yml:118" name="[localhost] meraki: meraki_mx_l3_firewall : Update one existing rule auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=TestNetAppliance, state=present, rules=[{'comment': 'Deny all documentation addresses', 'src_port': 'Any', 'src_cidr': 'Any', 'dest_port': '80,443', 'dest_cidr': '192.0.1.1/32,192.0.1.2/32', 'protocol': 'tcp', 'policy': 'deny'}]" time="5.275155">
+			<error message="AttributeError: 'dict' object has no attribute 'append'" type="error">Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1594262305.4544086-107-22892986023110/AnsiballZ_meraki_mx_l3_firewall.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1594262305.4544086-107-22892986023110/AnsiballZ_meraki_mx_l3_firewall.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1594262305.4544086-107-22892986023110/AnsiballZ_meraki_mx_l3_firewall.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_mx_l3_firewall', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_mx_l3_firewall_payload_w3m_vgww/ansible_meraki_mx_l3_firewall_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_mx_l3_firewall.py&quot;, line 360, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_mx_l3_firewall_payload_w3m_vgww/ansible_meraki_mx_l3_firewall_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_mx_l3_firewall.py&quot;, line 330, in main
+AttributeError: 'dict' object has no attribute 'append'
+</error>
+		</testcase>
+	</testsuite>
+</testsuites>

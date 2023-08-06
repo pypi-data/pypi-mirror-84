@@ -1,0 +1,105 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="0" tests="6" time="6.001422166824341">
+	<testsuite disabled="0" errors="1" failures="0" name="meraki_management_interface-wsd_j8lp" skipped="1" tests="6" time="6.001422166824341">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-19_2c7ce-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:7" name="[localhost] meraki: meraki_management_interface : Test an API key is provided msg=Please define an API key" time="0.096310">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-19_2c7ce-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:12" name="[localhost] meraki: meraki_management_interface : set_fact net_name=TestNet - Appliance" time="0.074143">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_name&quot;: &quot;TestNet - Appliance&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-19_2c7ce-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:15" name="[localhost] meraki: meraki_management_interface : Create test network TestNet - Appliance auth_key={{auth_key}}, state=present, org_id={{test_org_id}}, net_name={{net_name}}, type=appliance" time="2.280639">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297679182&quot;,
+&quot;name&quot;: &quot;TestNet - Appliance&quot;,
+&quot;notes&quot;: &quot;&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/TestNet-Applianc/n/9TIYVdUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-19_2c7ce-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:25" name="[localhost] meraki: meraki_management_interface : set_fact net_id={{net.data.id}}" time="0.079564">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_id&quot;: &quot;N_624874448297679182&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-19_2c7ce-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:28" name="[localhost] meraki: meraki_management_interface : Set management interface on switch to not configured auth_key={{auth_key}}, state=present, org_id={{test_org_id}}, net_id={{test_switch_net_name}}, serial={{serial_switch}}, wan1={'wan_enabled': 'not configured', 'using_static_ip': False}" time="2.215312">
+			<error message="AttributeError: 'MerakiModule' object has no attribute 'meraki'" type="error">Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1604284170.3642023-149-246725368649829/AnsiballZ_meraki_management_interface.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1604284170.3642023-149-246725368649829/AnsiballZ_meraki_management_interface.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1604284170.3642023-149-246725368649829/AnsiballZ_meraki_management_interface.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_management_interface', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_management_interface_payload_sse8nyaf/ansible_meraki_management_interface_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_management_interface.py&quot;, line 370, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_management_interface_payload_sse8nyaf/ansible_meraki_management_interface_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_management_interface.py&quot;, line 356, in main
+AttributeError: 'MerakiModule' object has no attribute 'meraki'
+</error>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-19_2c7ce-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:256" name="[localhost] meraki: meraki_management_interface : Reset settings for all interfaces auth_key={{auth_key}}, state=present, org_id={{test_org_id}}, net_id={{net_id}}, serial={{serial}}, wan1={'wan_enabled': 'disabled', 'using_static_ip': False}, wan2={'wan_enabled': 'enabled', 'using_static_ip': False}" time="1.255454">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;ddns_hostnames&quot;: {
+&quot;active_ddns_hostname&quot;: &quot;testnet-appliance-vmrdqtzwwk.dynamic-m.com&quot;,
+&quot;ddns_hostname_wan1&quot;: &quot;testnet-appliance-vmrdqtzwwk-1.dynamic-m.com&quot;,
+&quot;ddns_hostname_wan2&quot;: &quot;testnet-appliance-vmrdqtzwwk-2.dynamic-m.com&quot;
+},
+&quot;wan1&quot;: {
+&quot;using_static_ip&quot;: false,
+&quot;vlan&quot;: 1,
+&quot;wan_enabled&quot;: &quot;disabled&quot;
+},
+&quot;wan2&quot;: {
+&quot;using_static_ip&quot;: false,
+&quot;vlan&quot;: null,
+&quot;wan_enabled&quot;: &quot;enabled&quot;
+}
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

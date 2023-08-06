@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="6.9808690547943115">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_device-6du9uf9j" skipped="0" tests="1" time="6.9808690547943115">
+		<testcase classname="/root/ansible/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-abr4fu4w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:163" name="[localhost] meraki: meraki_device : Update a device to fix bug 98 auth_key={{auth_key}}, org_id={{test_org_id}}, net_name={{test_wireless_net_name}}, state=present, serial={{serial}}, hostname=abc123" time="6.980869">
+			<failure message="HTTP error 400 - https://api.meraki.com/api/v0/networks/N_624874448297662962/devices/QBSC-HJSL-A64F - [&quot;'moveMapMarker' must be a boolean&quot;]" type="failure">{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;body&quot;: {
+&quot;errors&quot;: [
+&quot;'moveMapMarker' must be a boolean&quot;
+]
+},
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;HTTP error 400 - https://api.meraki.com/api/v0/networks/N_624874448297662962/devices/QBSC-HJSL-A64F - [\&quot;'moveMapMarker' must be a boolean\&quot;]&quot;,
+&quot;response&quot;: &quot;HTTP Error 400: Bad Request&quot;,
+&quot;status&quot;: 400,
+&quot;warnings&quot;: [
+&quot;The value 133277 (type int) in a string field was converted to '133277' (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

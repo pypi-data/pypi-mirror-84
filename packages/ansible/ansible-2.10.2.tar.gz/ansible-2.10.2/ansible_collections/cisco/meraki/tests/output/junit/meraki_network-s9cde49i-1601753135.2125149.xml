@@ -1,0 +1,983 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="40" time="139.0625705718994">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_network-s9cde49i" skipped="0" tests="40" time="139.0625705718994">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:7" name="[localhost] meraki: meraki_network : Create network without type auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetwork, timezone=America/Chicago" time="2.519120">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;type parameter is required when creating a network.&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:18" name="[localhost] meraki: meraki_network : assert that=[&quot;create_net_no_type.msg == 'type parameter is required when creating a network.'&quot;]" time="0.094964">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:22" name="[localhost] meraki: meraki_network : Create network without organization auth_key={{ auth_key }}, state=present, net_name=IntTestNetwork, timezone=America/Chicago" time="0.457839">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;org_name or org_id parameters are required&quot;,
+&quot;response&quot;: null,
+&quot;status&quot;: null
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:32" name="[localhost] meraki: meraki_network : Create network with type switch with check mode auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, type=switch, timezone=America/Chicago" time="4.368828">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;id&quot;: &quot;N_12345&quot;,
+&quot;name&quot;: &quot;IntTestNetworkSwitch&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;switch&quot;
+],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:44" name="[localhost] meraki: meraki_network : assert that=['create_net_switch_check is changed', 'create_net_switch_check.data is defined', 'create_net_switch_check.data.organization_id == &quot;{{test_org_id |string}}&quot;']" time="0.095865">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:50" name="[localhost] meraki: meraki_network : Create network with type switch auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, type=switch, timezone=America/Chicago" time="7.144813">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297687033&quot;,
+&quot;name&quot;: &quot;IntTestNetworkSwitch&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;switch&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkSw/n/LodrtaUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:61" name="[localhost] meraki: meraki_network : Create network with type switch by org ID auth_key={{ auth_key }}, state=present, org_id={{test_org_id}}, net_name=IntTestNetworkSwitchOrgID, type=switch, timezone=America/Chicago" time="3.484168">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297687034&quot;,
+&quot;name&quot;: &quot;IntTestNetworkSwitchOrgID&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;switch&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkSw/n/nXJQLdUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201,
+&quot;warnings&quot;: [
+&quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:72" name="[localhost] meraki: meraki_network : Create network with type appliance and no timezone auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkAppliance, type=appliance" time="8.932992">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297687035&quot;,
+&quot;name&quot;: &quot;IntTestNetworkAppliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkAp/n/PCTNVcUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:82" name="[localhost] meraki: meraki_network : Enable VLAN support on appliance network with check mode auth_key={{ auth_key }}, state=present, org_name={{ test_org_name }}, net_name=IntTestNetworkAppliance, enable_vlans=True" time="5.058215">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;network_id&quot;: &quot;N_624874448297687035&quot;,
+&quot;vlans_enabled&quot;: true
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;False&quot;,
+&quot;False&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:93" name="[localhost] meraki: meraki_network : assert that=['enable_vlan_check.data.vlans_enabled == True', 'enable_vlan_check is changed']" time="0.095952">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:98" name="[localhost] meraki: meraki_network : Enable VLAN support on appliance network auth_key={{ auth_key }}, state=present, org_name={{ test_org_name }}, net_name=IntTestNetworkAppliance, enable_vlans=True" time="5.056378">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;vlans_enabled&quot;: true
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;False&quot;,
+&quot;False&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:108" name="[localhost] meraki: meraki_network : assert that=['enable_vlan.data.vlans_enabled == True']" time="0.094519">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:112" name="[localhost] meraki: meraki_network : Enable VLAN support on appliance network with idempotency auth_key={{ auth_key }}, state=present, org_name={{ test_org_name }}, net_name=IntTestNetworkAppliance, enable_vlans=True" time="5.690749">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;vlans_enabled&quot;: true
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;False&quot;,
+&quot;False&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:122" name="[localhost] meraki: meraki_network : assert that=['enable_vlan_idempotent is not changed', 'enable_vlan_idempotent.data is defined']" time="0.098701">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:127" name="[localhost] meraki: meraki_network : Disable VLAN support on appliance network auth_key={{ auth_key }}, state=present, org_name={{ test_org_name }}, net_name=IntTestNetworkAppliance, enable_vlans=False" time="6.949378">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;vlans_enabled&quot;: false
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;False&quot;,
+&quot;False&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:137" name="[localhost] meraki: meraki_network : assert that=['disable_vlan.data.vlans_enabled == False']" time="0.090476">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:141" name="[localhost] meraki: meraki_network : Disable VLAN support on appliance network with idempotency auth_key={{ auth_key }}, state=present, org_name={{ test_org_name }}, net_name=IntTestNetworkAppliance, enable_vlans=False" time="3.959933">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;vlans_enabled&quot;: false
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;False&quot;,
+&quot;False&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:151" name="[localhost] meraki: meraki_network : assert that=['disable_vlan_idempotent is not changed', 'disable_vlan_idempotent.data is defined']" time="0.094383">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:156" name="[localhost] meraki: meraki_network : Create network with type wireless auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, type=wireless, timezone=America/Chicago" time="4.534392">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297687036&quot;,
+&quot;name&quot;: &quot;IntTestNetworkWireless&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;wireless&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkWi/n/tWHYOdUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:167" name="[localhost] meraki: meraki_network : assert that=['&quot;IntTestNetworkWireless&quot; in create_net_wireless.data.name']" time="0.092895">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:172" name="[localhost] meraki: meraki_network : Create network with type wireless and check for idempotency auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, type=wireless, timezone=America/Chicago" time="3.571788">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297687036&quot;,
+&quot;name&quot;: &quot;IntTestNetworkWireless&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;wireless&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkWi/n/tWHYOdUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;False&quot;,
+&quot;False&quot;,
+&quot;False&quot;,
+&quot;False&quot;,
+&quot;False&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:183" name="[localhost] meraki: meraki_network : assert that=['create_net_wireless_idempotent.changed == False', 'create_net_wireless_idempotent.data is defined']" time="0.093398">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:188" name="[localhost] meraki: meraki_network : Create network with type combined auth_key={{ auth_key }}, state=present, org_name={{ test_org_name }}, net_name=IntTestNetworkCombined, type=['appliance', 'switch'], timezone=America/Chicago" time="4.281434">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;L_624874448297664058&quot;,
+&quot;name&quot;: &quot;IntTestNetworkCombined&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;,
+&quot;switch&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkCo/n/kckMCbUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:201" name="[localhost] meraki: meraki_network : assert that=['create_net_combined.data.product_types | length &gt; 1']" time="0.089661">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:205" name="[localhost] meraki: meraki_network : Reenable my.meraki.com with check mode auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkCombined, local_status_page_enabled=True" time="2.458361">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;L_624874448297664058&quot;,
+&quot;local_status_page_enabled&quot;: true,
+&quot;name&quot;: &quot;IntTestNetworkCombined&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;,
+&quot;switch&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkCo/n/KQOQIbUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;False&quot;,
+&quot;False&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:216" name="[localhost] meraki: meraki_network : assert that=['enable_meraki_com_check is changed', 'enable_meraki_com_check.data is defined']" time="0.094030">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:221" name="[localhost] meraki: meraki_network : Reenable my.meraki.com auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkCombined, local_status_page_enabled=True" time="5.553202">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;local_status_page_enabled&quot;: true,
+&quot;remote_status_page_enabled&quot;: false
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;False&quot;,
+&quot;False&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:231" name="[localhost] meraki: meraki_network : assert that=['enable_meraki_com.data.local_status_page_enabled == True']" time="0.091601">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:235" name="[localhost] meraki: meraki_network : Disable my.meraki.com for next test auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkCombined, local_status_page_enabled=False" time="5.626808">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;local_status_page_enabled&quot;: false,
+&quot;remote_status_page_enabled&quot;: false
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;False&quot;,
+&quot;False&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:244" name="[localhost] meraki: meraki_network : Enable remote status page auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkCombined, remote_status_page_enabled=True" time="4.700160">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;local_status_page_enabled&quot;: false,
+&quot;remote_status_page_enabled&quot;: true
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;False&quot;,
+&quot;False&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:254" name="[localhost] meraki: meraki_network : assert that=['enable_remote_status.data.remote_status_page_enabled == True', 'enable_remote_status is changed']" time="0.091500">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:259" name="[localhost] meraki: meraki_network : Enable remote status page with idempotency auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkCombined, remote_status_page_enabled=True" time="4.712869">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;local_status_page_enabled&quot;: false,
+&quot;remote_status_page_enabled&quot;: true
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;False&quot;,
+&quot;False&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:269" name="[localhost] meraki: meraki_network : assert that=['enable_remote_status_idempotent.data.remote_status_page_enabled == True', 'enable_remote_status is not changed']" time="0.093318">
+			<failure message="Assertion failed" type="failure">{
+    &quot;assertion&quot;: &quot;enable_remote_status is not changed&quot;,
+    &quot;changed&quot;: false,
+    &quot;evaluated_to&quot;: false,
+    &quot;msg&quot;: &quot;Assertion failed&quot;
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:436" name="[localhost] meraki: meraki_network : Delete network without org auth_key={{ auth_key }}, state=absent, net_name=IntTestNetworkSwitch" time="0.482826">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;org_name or org_id parameters are required&quot;,
+&quot;response&quot;: null,
+&quot;status&quot;: null
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:445" name="[localhost] meraki: meraki_network : Delete network by org ID and check mode auth_key={{ auth_key }}, state=absent, org_id={{test_org_id}}, net_name=IntTestNetworkSwitchOrgID" time="2.025592">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:455" name="[localhost] meraki: meraki_network : assert that=['delete_net_org_id_check is changed', 'delete_net_org_id_check.data is defined']" time="0.095660">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:460" name="[localhost] meraki: meraki_network : Delete network by org ID auth_key={{ auth_key }}, state=absent, org_id={{test_org_id}}, net_name=IntTestNetworkSwitchOrgID" time="4.119789">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204,
+&quot;warnings&quot;: [
+&quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:469" name="[localhost] meraki: meraki_network : Query after delete with org ID auth_key={{ auth_key }}, state=query, org_name={{test_org_name}}" time="4.547956">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: [
+{
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;L_624874448297664058&quot;,
+&quot;name&quot;: &quot;IntTestNetworkCombined&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;,
+&quot;switch&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkCo/n/KQOQIbUb/manage/usage/list&quot;
+},
+{
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297674947&quot;,
+&quot;name&quot;: &quot;Home - SM&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;systemsManager&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-SM/n/e46GecUb/manage/usage/list&quot;
+},
+{
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297679182&quot;,
+&quot;name&quot;: &quot;TestNet - Appliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/TestNet-Applianc/n/9TIYVdUb/manage/usage/list&quot;
+},
+{
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297679183&quot;,
+&quot;name&quot;: &quot;TestNet - Wireless&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;wireless&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/TestNet-Wireless/n/78W1_bUb/manage/usage/list&quot;
+},
+{
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297679371&quot;,
+&quot;name&quot;: &quot;Home - Firewall - IPS&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Firewall-IP/n/eIQ2PdUb/manage/usage/list&quot;
+},
+{
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297683434&quot;,
+&quot;name&quot;: &quot;Home - Appliance_hub&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance_h/n/1tzBXaUb/manage/usage/list&quot;
+},
+{
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297683435&quot;,
+&quot;name&quot;: &quot;Home - Appliance_spoke&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance_s/n/O3kNEaUb/manage/usage/list&quot;
+},
+{
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297684988&quot;,
+&quot;name&quot;: &quot;TestNet&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;switch&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/TestNet/n/d8QMNcUb/manage/usage/list&quot;
+},
+{
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297686225&quot;,
+&quot;name&quot;: &quot;Home - Switch&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;switch&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Switch/n/2389iaUb/manage/usage/list&quot;
+},
+{
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297686880&quot;,
+&quot;name&quot;: &quot;Home - Wireless&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;wireless&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Wireless/n/mazrGdUb/manage/usage/list&quot;
+},
+{
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297687033&quot;,
+&quot;name&quot;: &quot;IntTestNetworkSwitch&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;switch&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkSw/n/LodrtaUb/manage/usage/list&quot;
+},
+{
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297687035&quot;,
+&quot;name&quot;: &quot;IntTestNetworkAppliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkAp/n/PCTNVcUb/manage/usage/list&quot;
+},
+{
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297687036&quot;,
+&quot;name&quot;: &quot;IntTestNetworkWireless&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;wireless&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkWi/n/tWHYOdUb/manage/usage/list&quot;
+},
+{
+&quot;id&quot;: &quot;L_624874448297661409&quot;,
+&quot;name&quot;: &quot;AnsibleTemplate&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;,
+&quot;switch&quot;,
+&quot;wireless&quot;
+],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;
+}
+],
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:477" name="[localhost] meraki: meraki_network : Delete all networks auth_key={{ auth_key }}, state=absent, org_name={{test_org_name}}, net_name={{ item }}" time="37.327998">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;All items completed&quot;,
+&quot;results&quot;: [
+{
+&quot;ansible_loop_var&quot;: &quot;item&quot;,
+&quot;changed&quot;: true,
+&quot;failed&quot;: false,
+&quot;invocation&quot;: {
+&quot;module_args&quot;: {
+&quot;auth_key&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+&quot;enable_vlans&quot;: null,
+&quot;follow_redirects&quot;: &quot;all&quot;,
+&quot;host&quot;: &quot;api.meraki.com&quot;,
+&quot;internal_error_retry_time&quot;: 60,
+&quot;local_status_page_enabled&quot;: null,
+&quot;net_id&quot;: null,
+&quot;net_name&quot;: &quot;IntTestNetworkSwitch&quot;,
+&quot;org_id&quot;: null,
+&quot;org_name&quot;: &quot;kbreit@insight.com&quot;,
+&quot;output_format&quot;: &quot;snakecase&quot;,
+&quot;output_level&quot;: &quot;normal&quot;,
+&quot;protocol&quot;: &quot;https&quot;,
+&quot;rate_limit_retry_time&quot;: 165,
+&quot;remote_status_page_enabled&quot;: null,
+&quot;state&quot;: &quot;absent&quot;,
+&quot;tags&quot;: null,
+&quot;timeout&quot;: 30,
+&quot;timezone&quot;: null,
+&quot;type&quot;: null,
+&quot;use_https&quot;: true,
+&quot;use_proxy&quot;: false,
+&quot;validate_certs&quot;: true
+}
+},
+&quot;item&quot;: &quot;IntTestNetworkSwitch&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+},
+{
+&quot;ansible_loop_var&quot;: &quot;item&quot;,
+&quot;changed&quot;: true,
+&quot;failed&quot;: false,
+&quot;invocation&quot;: {
+&quot;module_args&quot;: {
+&quot;auth_key&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+&quot;enable_vlans&quot;: null,
+&quot;follow_redirects&quot;: &quot;all&quot;,
+&quot;host&quot;: &quot;api.meraki.com&quot;,
+&quot;internal_error_retry_time&quot;: 60,
+&quot;local_status_page_enabled&quot;: null,
+&quot;net_id&quot;: null,
+&quot;net_name&quot;: &quot;IntTestNetworkWireless&quot;,
+&quot;org_id&quot;: null,
+&quot;org_name&quot;: &quot;kbreit@insight.com&quot;,
+&quot;output_format&quot;: &quot;snakecase&quot;,
+&quot;output_level&quot;: &quot;normal&quot;,
+&quot;protocol&quot;: &quot;https&quot;,
+&quot;rate_limit_retry_time&quot;: 165,
+&quot;remote_status_page_enabled&quot;: null,
+&quot;state&quot;: &quot;absent&quot;,
+&quot;tags&quot;: null,
+&quot;timeout&quot;: 30,
+&quot;timezone&quot;: null,
+&quot;type&quot;: null,
+&quot;use_https&quot;: true,
+&quot;use_proxy&quot;: false,
+&quot;validate_certs&quot;: true
+}
+},
+&quot;item&quot;: &quot;IntTestNetworkWireless&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+},
+{
+&quot;ansible_loop_var&quot;: &quot;item&quot;,
+&quot;changed&quot;: true,
+&quot;failed&quot;: false,
+&quot;invocation&quot;: {
+&quot;module_args&quot;: {
+&quot;auth_key&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+&quot;enable_vlans&quot;: null,
+&quot;follow_redirects&quot;: &quot;all&quot;,
+&quot;host&quot;: &quot;api.meraki.com&quot;,
+&quot;internal_error_retry_time&quot;: 60,
+&quot;local_status_page_enabled&quot;: null,
+&quot;net_id&quot;: null,
+&quot;net_name&quot;: &quot;IntTestNetworkAppliance&quot;,
+&quot;org_id&quot;: null,
+&quot;org_name&quot;: &quot;kbreit@insight.com&quot;,
+&quot;output_format&quot;: &quot;snakecase&quot;,
+&quot;output_level&quot;: &quot;normal&quot;,
+&quot;protocol&quot;: &quot;https&quot;,
+&quot;rate_limit_retry_time&quot;: 165,
+&quot;remote_status_page_enabled&quot;: null,
+&quot;state&quot;: &quot;absent&quot;,
+&quot;tags&quot;: null,
+&quot;timeout&quot;: 30,
+&quot;timezone&quot;: null,
+&quot;type&quot;: null,
+&quot;use_https&quot;: true,
+&quot;use_proxy&quot;: false,
+&quot;validate_certs&quot;: true
+}
+},
+&quot;item&quot;: &quot;IntTestNetworkAppliance&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+},
+{
+&quot;ansible_loop_var&quot;: &quot;item&quot;,
+&quot;changed&quot;: true,
+&quot;failed&quot;: false,
+&quot;invocation&quot;: {
+&quot;module_args&quot;: {
+&quot;auth_key&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+&quot;enable_vlans&quot;: null,
+&quot;follow_redirects&quot;: &quot;all&quot;,
+&quot;host&quot;: &quot;api.meraki.com&quot;,
+&quot;internal_error_retry_time&quot;: 60,
+&quot;local_status_page_enabled&quot;: null,
+&quot;net_id&quot;: null,
+&quot;net_name&quot;: &quot;IntTestNetworkCombined&quot;,
+&quot;org_id&quot;: null,
+&quot;org_name&quot;: &quot;kbreit@insight.com&quot;,
+&quot;output_format&quot;: &quot;snakecase&quot;,
+&quot;output_level&quot;: &quot;normal&quot;,
+&quot;protocol&quot;: &quot;https&quot;,
+&quot;rate_limit_retry_time&quot;: 165,
+&quot;remote_status_page_enabled&quot;: null,
+&quot;state&quot;: &quot;absent&quot;,
+&quot;tags&quot;: null,
+&quot;timeout&quot;: 30,
+&quot;timezone&quot;: null,
+&quot;type&quot;: null,
+&quot;use_https&quot;: true,
+&quot;use_proxy&quot;: false,
+&quot;validate_certs&quot;: true
+}
+},
+&quot;item&quot;: &quot;IntTestNetworkCombined&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+},
+{
+&quot;ansible_loop_var&quot;: &quot;item&quot;,
+&quot;changed&quot;: false,
+&quot;failed&quot;: false,
+&quot;invocation&quot;: {
+&quot;module_args&quot;: {
+&quot;auth_key&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+&quot;enable_vlans&quot;: null,
+&quot;follow_redirects&quot;: &quot;all&quot;,
+&quot;host&quot;: &quot;api.meraki.com&quot;,
+&quot;internal_error_retry_time&quot;: 60,
+&quot;local_status_page_enabled&quot;: null,
+&quot;net_id&quot;: null,
+&quot;net_name&quot;: &quot;IntTestNetworkTag&quot;,
+&quot;org_id&quot;: null,
+&quot;org_name&quot;: &quot;kbreit@insight.com&quot;,
+&quot;output_format&quot;: &quot;snakecase&quot;,
+&quot;output_level&quot;: &quot;normal&quot;,
+&quot;protocol&quot;: &quot;https&quot;,
+&quot;rate_limit_retry_time&quot;: 165,
+&quot;remote_status_page_enabled&quot;: null,
+&quot;state&quot;: &quot;absent&quot;,
+&quot;tags&quot;: null,
+&quot;timeout&quot;: 30,
+&quot;timezone&quot;: null,
+&quot;type&quot;: null,
+&quot;use_https&quot;: true,
+&quot;use_proxy&quot;: false,
+&quot;validate_certs&quot;: true
+}
+},
+&quot;item&quot;: &quot;IntTestNetworkTag&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+},
+{
+&quot;ansible_loop_var&quot;: &quot;item&quot;,
+&quot;changed&quot;: false,
+&quot;failed&quot;: false,
+&quot;invocation&quot;: {
+&quot;module_args&quot;: {
+&quot;auth_key&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+&quot;enable_vlans&quot;: null,
+&quot;follow_redirects&quot;: &quot;all&quot;,
+&quot;host&quot;: &quot;api.meraki.com&quot;,
+&quot;internal_error_retry_time&quot;: 60,
+&quot;local_status_page_enabled&quot;: null,
+&quot;net_id&quot;: null,
+&quot;net_name&quot;: &quot;IntTestNetworkTags&quot;,
+&quot;org_id&quot;: null,
+&quot;org_name&quot;: &quot;kbreit@insight.com&quot;,
+&quot;output_format&quot;: &quot;snakecase&quot;,
+&quot;output_level&quot;: &quot;normal&quot;,
+&quot;protocol&quot;: &quot;https&quot;,
+&quot;rate_limit_retry_time&quot;: 165,
+&quot;remote_status_page_enabled&quot;: null,
+&quot;state&quot;: &quot;absent&quot;,
+&quot;tags&quot;: null,
+&quot;timeout&quot;: 30,
+&quot;timezone&quot;: null,
+&quot;type&quot;: null,
+&quot;use_https&quot;: true,
+&quot;use_proxy&quot;: false,
+&quot;validate_certs&quot;: true
+}
+},
+&quot;item&quot;: &quot;IntTestNetworkTags&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-zycrl7am-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:494" name="[localhost] meraki: meraki_network : assert that=['delete_all_no_org.msg == &quot;org_name or org_id parameters are required&quot;']" time="0.090062">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

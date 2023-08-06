@@ -1,0 +1,259 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="3" time="8.85657787322998">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_alert-nx5455db" skipped="0" tests="3" time="8.85657787322998">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-_rjwywof-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:74" name="[localhost] meraki: meraki_alert : Update settings idempotent auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=present, default_destinations={'emails': ['{{ email_prefix }}@{{ email_domain }}', '{{ email_prefix }}2@{{ email_domain }}'], 'all_admins': True, 'snmp': False}, alerts=[{'type': 'gatewayDown', 'enabled': True, 'filters': {'timeout': 60}, 'alert_destinations': {'emails': ['{{ email_prefix }}@{{ email_domain }}', '{{ email_prefix }}23@{{ email_domain }}'], 'all_admins': True, 'snmp': False}}]" time="8.639845">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;alerts&quot;: [
+{
+&quot;alert_destinations&quot;: {
+&quot;all_admins&quot;: false,
+&quot;emails&quot;: [],
+&quot;http_server_ids&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: true,
+&quot;filters&quot;: {
+&quot;timeout&quot;: 60
+},
+&quot;type&quot;: &quot;gatewayDown&quot;
+},
+{
+&quot;alert_destinations&quot;: {
+&quot;all_admins&quot;: false,
+&quot;emails&quot;: [],
+&quot;http_server_ids&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {},
+&quot;type&quot;: &quot;gatewayToRepeater&quot;
+},
+{
+&quot;alert_destinations&quot;: {
+&quot;all_admins&quot;: false,
+&quot;emails&quot;: [],
+&quot;http_server_ids&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {
+&quot;timeout&quot;: 60
+},
+&quot;type&quot;: &quot;repeaterDown&quot;
+},
+{
+&quot;alert_destinations&quot;: {
+&quot;all_admins&quot;: false,
+&quot;emails&quot;: [],
+&quot;http_server_ids&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {},
+&quot;type&quot;: &quot;rogueAp&quot;
+},
+{
+&quot;alert_destinations&quot;: {
+&quot;all_admins&quot;: false,
+&quot;emails&quot;: [],
+&quot;http_server_ids&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {},
+&quot;type&quot;: &quot;settingsChanged&quot;
+},
+{
+&quot;alert_destinations&quot;: {
+&quot;all_admins&quot;: false,
+&quot;emails&quot;: [],
+&quot;http_server_ids&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {},
+&quot;type&quot;: &quot;vpnConnectivityChange&quot;
+},
+{
+&quot;alert_destinations&quot;: {
+&quot;all_admins&quot;: false,
+&quot;emails&quot;: [],
+&quot;http_server_ids&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {
+&quot;period&quot;: 1200,
+&quot;threshold&quot;: 104857600
+},
+&quot;type&quot;: &quot;usageAlert&quot;
+},
+{
+&quot;alert_destinations&quot;: {
+&quot;all_admins&quot;: false,
+&quot;emails&quot;: [],
+&quot;http_server_ids&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {},
+&quot;type&quot;: &quot;weeklyPresence&quot;
+}
+],
+&quot;default_destinations&quot;: {
+&quot;all_admins&quot;: true,
+&quot;emails&quot;: [
+&quot;meraki@kevinbreit.net&quot;,
+&quot;meraki2@kevinbreit.net&quot;
+],
+&quot;http_server_ids&quot;: [],
+&quot;snmp&quot;: false
+}
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-_rjwywof-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:110" name="[localhost] meraki: meraki_alert : debug var=update_idempotent" time="0.107228">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;update_idempotent&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;alerts&quot;: [
+                {
+                    &quot;alert_destinations&quot;: {
+                        &quot;all_admins&quot;: false,
+                        &quot;emails&quot;: [],
+                        &quot;http_server_ids&quot;: [],
+                        &quot;snmp&quot;: false
+                    },
+                    &quot;enabled&quot;: true,
+                    &quot;filters&quot;: {
+                        &quot;timeout&quot;: 60
+                    },
+                    &quot;type&quot;: &quot;gatewayDown&quot;
+                },
+                {
+                    &quot;alert_destinations&quot;: {
+                        &quot;all_admins&quot;: false,
+                        &quot;emails&quot;: [],
+                        &quot;http_server_ids&quot;: [],
+                        &quot;snmp&quot;: false
+                    },
+                    &quot;enabled&quot;: false,
+                    &quot;filters&quot;: {},
+                    &quot;type&quot;: &quot;gatewayToRepeater&quot;
+                },
+                {
+                    &quot;alert_destinations&quot;: {
+                        &quot;all_admins&quot;: false,
+                        &quot;emails&quot;: [],
+                        &quot;http_server_ids&quot;: [],
+                        &quot;snmp&quot;: false
+                    },
+                    &quot;enabled&quot;: false,
+                    &quot;filters&quot;: {
+                        &quot;timeout&quot;: 60
+                    },
+                    &quot;type&quot;: &quot;repeaterDown&quot;
+                },
+                {
+                    &quot;alert_destinations&quot;: {
+                        &quot;all_admins&quot;: false,
+                        &quot;emails&quot;: [],
+                        &quot;http_server_ids&quot;: [],
+                        &quot;snmp&quot;: false
+                    },
+                    &quot;enabled&quot;: false,
+                    &quot;filters&quot;: {},
+                    &quot;type&quot;: &quot;rogueAp&quot;
+                },
+                {
+                    &quot;alert_destinations&quot;: {
+                        &quot;all_admins&quot;: false,
+                        &quot;emails&quot;: [],
+                        &quot;http_server_ids&quot;: [],
+                        &quot;snmp&quot;: false
+                    },
+                    &quot;enabled&quot;: false,
+                    &quot;filters&quot;: {},
+                    &quot;type&quot;: &quot;settingsChanged&quot;
+                },
+                {
+                    &quot;alert_destinations&quot;: {
+                        &quot;all_admins&quot;: false,
+                        &quot;emails&quot;: [],
+                        &quot;http_server_ids&quot;: [],
+                        &quot;snmp&quot;: false
+                    },
+                    &quot;enabled&quot;: false,
+                    &quot;filters&quot;: {},
+                    &quot;type&quot;: &quot;vpnConnectivityChange&quot;
+                },
+                {
+                    &quot;alert_destinations&quot;: {
+                        &quot;all_admins&quot;: false,
+                        &quot;emails&quot;: [],
+                        &quot;http_server_ids&quot;: [],
+                        &quot;snmp&quot;: false
+                    },
+                    &quot;enabled&quot;: false,
+                    &quot;filters&quot;: {
+                        &quot;period&quot;: 1200,
+                        &quot;threshold&quot;: 104857600
+                    },
+                    &quot;type&quot;: &quot;usageAlert&quot;
+                },
+                {
+                    &quot;alert_destinations&quot;: {
+                        &quot;all_admins&quot;: false,
+                        &quot;emails&quot;: [],
+                        &quot;http_server_ids&quot;: [],
+                        &quot;snmp&quot;: false
+                    },
+                    &quot;enabled&quot;: false,
+                    &quot;filters&quot;: {},
+                    &quot;type&quot;: &quot;weeklyPresence&quot;
+                }
+            ],
+            &quot;default_destinations&quot;: {
+                &quot;all_admins&quot;: true,
+                &quot;emails&quot;: [
+                    &quot;meraki@kevinbreit.net&quot;,
+                    &quot;meraki2@kevinbreit.net&quot;
+                ],
+                &quot;http_server_ids&quot;: [],
+                &quot;snmp&quot;: false
+            }
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-_rjwywof-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:113" name="[localhost] meraki: meraki_alert : assert that=['update_idempotent.data is defined', 'update_idempotent is not changed']" time="0.109504">
+			<failure message="Assertion failed" type="failure">{
+    &quot;assertion&quot;: &quot;update_idempotent is not changed&quot;,
+    &quot;changed&quot;: false,
+    &quot;evaluated_to&quot;: false,
+    &quot;msg&quot;: &quot;Assertion failed&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

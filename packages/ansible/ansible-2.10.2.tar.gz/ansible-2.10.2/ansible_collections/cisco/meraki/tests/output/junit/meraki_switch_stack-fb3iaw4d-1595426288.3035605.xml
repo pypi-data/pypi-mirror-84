@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="0" tests="5" time="15.792320489883423">
+	<testsuite disabled="0" errors="1" failures="0" name="meraki_switch_stack-fb3iaw4d" skipped="0" tests="5" time="15.792320489883423">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-2ngwynm9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:34" name="[localhost] meraki: meraki_switch_stack : Create new stack auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name={{test_switch_net_name}}, name=Test stack, serials=['QBSB-BPR6-PRER', 'QBSB-VLNE-E299']" time="6.003600">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;id&quot;: &quot;624874448297657261&quot;,
+&quot;name&quot;: &quot;Test stack&quot;,
+&quot;serials&quot;: [
+&quot;QBSB-BPR6-PRER&quot;,
+&quot;QBSB-VLNE-E299&quot;
+]
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-2ngwynm9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:46" name="[localhost] meraki: meraki_switch_stack : debug var=create" time="0.095649">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;create&quot;: {
+        &quot;ansible_facts&quot;: {
+            &quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+        },
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;id&quot;: &quot;624874448297657261&quot;,
+            &quot;name&quot;: &quot;Test stack&quot;,
+            &quot;serials&quot;: [
+                &quot;QBSB-BPR6-PRER&quot;,
+                &quot;QBSB-VLNE-E299&quot;
+            ]
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 201
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-2ngwynm9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:49" name="[localhost] meraki: meraki_switch_stack : set_fact stack_id={{create.data.id}}" time="0.095502">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;stack_id&quot;: &quot;624874448297657261&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-2ngwynm9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:57" name="[localhost] meraki: meraki_switch_stack : Add switch to stack auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name={{test_switch_net_name}}, stack_id=624874448297657260, serials=['QBSB-D75G-PXCG']" time="3.537093">
+			<error message="AttributeError: 'NoneType' object has no attribute 'update'" type="error">Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1595426278.6877713-143-200060164579828/AnsiballZ_meraki_switch_stack.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1595426278.6877713-143-200060164579828/AnsiballZ_meraki_switch_stack.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1595426278.6877713-143-200060164579828/AnsiballZ_meraki_switch_stack.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_switch_stack', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_switch_stack_payload_mmhnt47x/ansible_meraki_switch_stack_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_switch_stack.py&quot;, line 275, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_switch_stack_payload_mmhnt47x/ansible_meraki_switch_stack_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_switch_stack.py&quot;, line 237, in main
+AttributeError: 'NoneType' object has no attribute 'update'
+</error>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switch_stack-2ngwynm9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switch_stack/tasks/main.yml:183" name="[localhost] meraki: meraki_switch_stack : Delete stack auth_key={{ auth_key }}, state=absent, org_name={{test_org_name}}, net_name={{test_switch_net_name}}, stack_id={{stack_id}}" time="6.060477">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

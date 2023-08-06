@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="0.18977808952331543">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_mx_site_to_site_firewall-06xu20hn" skipped="0" tests="1" time="0.18977808952331543">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_site_to_site_firewall-evn312ty-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_site_to_site_firewall/tasks/main.yml:117" name="[localhost] meraki: meraki_mx_site_to_site_firewall : Update one existing rule auth_key={{ auth_key }}, org_name={{test_org_name}}, state=present, rules=[{'comment': 'Deny all documentation addresses', 'src_port': 'Any', 'src_cidr': 'Any', 'dest_port': '80,443', 'dest_cidr': '192.0.1.1/32,192.0.1.2/32', 'protocol': 'tcp', 'policy': 'deny'}]" time="0.189778">
+			<failure message="Unable to import meraki_mx_site_to_site_firewall due to invalid syntax" type="failure">{
+&quot;msg&quot;: &quot;Unable to import meraki_mx_site_to_site_firewall due to invalid syntax&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

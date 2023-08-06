@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="3" time="10.969703674316406">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_alert-p5msbh1r" skipped="0" tests="3" time="10.969703674316406">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-uug5cxz3-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:7" name="[localhost] meraki: meraki_alert : Create network with type wireless auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, type=wireless, timezone=America/Chicago" time="3.960410">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297687122&quot;,
+&quot;name&quot;: &quot;IntTestNetworkWireless&quot;,
+&quot;notes&quot;: null,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;wireless&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkWi/n/AS4RScUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-uug5cxz3-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:33" name="[localhost] meraki: meraki_alert : Update settings auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=present, default_destinations={'emails': ['{{ email_prefix }}@{{ email_domain }}', '{{ email_prefix }}2@{{ email_domain }}'], 'all_admins': True, 'snmp': True}, alerts=[{'type': 'gatewayDown', 'enabled': True, 'filters': {'timeout': 60}, 'alert_destinations': {'emails': ['{{ email_prefix }}@{{ email_domain }}', '{{ email_prefix }}2@{{ email_domain }}'], 'all_admins': True, 'snmp': False}}, {'type': 'usageAlert', 'enabled': True, 'filters': {'timeout': 60}, 'alert_destinations': [{'emails': ['{{ email_prefix }}@{{ email_domain }}', '{{ email_prefix }}2@{{ email_domain }}'], 'all_admins': True, 'snmp': False}]}]" time="0.620656">
+			<failure message="argument alert_destinations is of type &lt;class 'list'&gt; found in 'alerts'. and we were unable to convert to dict: &lt;class 'list'&gt; cannot be converted to a dict" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;argument alert_destinations is of type &lt;class 'list'&gt; found in 'alerts'. and we were unable to convert to dict: &lt;class 'list'&gt; cannot be converted to a dict&quot;
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-uug5cxz3-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:124" name="[localhost] meraki: meraki_alert : Delete network auth_key={{ auth_key }}, state=absent, org_name={{test_org_name}}, net_name=IntTestNetworkWireless" time="6.388638">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

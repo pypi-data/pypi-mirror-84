@@ -1,0 +1,85 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="2" tests="6" time="10.723201274871826">
+	<testsuite disabled="0" errors="0" failures="2" name="meraki_intrusion_prevention-37nr8841" skipped="1" tests="6" time="10.723201274871826">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-0piiesj_-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:7" name="[localhost] meraki: meraki_intrusion_prevention : Test an API key is provided msg=Please define an API key" time="0.101994">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-0piiesj_-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:12" name="[localhost] meraki: meraki_intrusion_prevention : Create test network auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}} - IPS, type=appliance" time="5.287315">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685365&quot;,
+&quot;name&quot;: &quot;Home - Appliance - IPS&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance-I/n/ksghFdUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-0piiesj_-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:21" name="[localhost] meraki: meraki_intrusion_prevention : debug var=net" time="0.094194">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;net&quot;: {
+        &quot;ansible_facts&quot;: {
+            &quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+        },
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;enrollment_string&quot;: null,
+            &quot;id&quot;: &quot;N_624874448297685365&quot;,
+            &quot;name&quot;: &quot;Home - Appliance - IPS&quot;,
+            &quot;organization_id&quot;: &quot;133277&quot;,
+            &quot;product_types&quot;: [
+                &quot;appliance&quot;
+            ],
+            &quot;tags&quot;: [],
+            &quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+            &quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance-I/n/ksghFdUb/manage/usage/list&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 201
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-0piiesj_-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:24" name="[localhost] meraki: meraki_intrusion_prevention : Set whitelist for organization in check mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, whitelisted_rules=[{'rule_id': 'meraki:intrusion/snort/GID/01/SID/5805', 'message': 'Test rule'}]" time="0.128618">
+			<failure message="Unable to import meraki_intrusion_prevention due to unexpected indent" type="failure">{
+&quot;msg&quot;: &quot;Unable to import meraki_intrusion_prevention due to unexpected indent&quot;
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-0piiesj_-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:266" name="[localhost] meraki: meraki_intrusion_prevention : Delete network auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, net_name={{test_net_name}} - IPS" time="4.986985">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-0piiesj_-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:274" name="[localhost] meraki: meraki_intrusion_prevention : Clear rules from organization with check mode auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, whitelisted_rules=[None]" time="0.124095">
+			<failure message="Unable to import meraki_intrusion_prevention due to unexpected indent" type="failure">{
+&quot;msg&quot;: &quot;Unable to import meraki_intrusion_prevention due to unexpected indent&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

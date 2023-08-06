@@ -1,0 +1,156 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="4.668954849243164">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_alert-5rf7jiv4" skipped="0" tests="1" time="4.668954849243164">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-227j37z2-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:74" name="[localhost] meraki: meraki_alert : Update settings idempotent auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=present, default_destinations={'emails': ['{{ email_prefix }}@{{ email_domain }}', '{{ email_prefix }}2@{{ email_domain }}'], 'all_admins': True, 'snmp': True}, alerts=[{'type': 'gatewayDown', 'enabled': True, 'filters': {'timeout': 60}, 'alert_destinations': [{'emails': ['{{ email_prefix }}@{{ email_domain }}', '{{ email_prefix }}2@{{ email_domain }}'], 'all_admins': True, 'snmp': False}]}]" time="4.668955">
+			<failure message="Compare" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;Compare&quot;,
+&quot;original&quot;: {
+&quot;alerts&quot;: [
+{
+&quot;alertDestinations&quot;: {
+&quot;allAdmins&quot;: false,
+&quot;emails&quot;: [],
+&quot;httpServerIds&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: true,
+&quot;filters&quot;: {
+&quot;timeout&quot;: 60
+},
+&quot;type&quot;: &quot;gatewayDown&quot;
+},
+{
+&quot;alertDestinations&quot;: {
+&quot;allAdmins&quot;: false,
+&quot;emails&quot;: [],
+&quot;httpServerIds&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {},
+&quot;type&quot;: &quot;gatewayToRepeater&quot;
+},
+{
+&quot;alertDestinations&quot;: {
+&quot;allAdmins&quot;: false,
+&quot;emails&quot;: [],
+&quot;httpServerIds&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {
+&quot;timeout&quot;: 60
+},
+&quot;type&quot;: &quot;repeaterDown&quot;
+},
+{
+&quot;alertDestinations&quot;: {
+&quot;allAdmins&quot;: false,
+&quot;emails&quot;: [],
+&quot;httpServerIds&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {},
+&quot;type&quot;: &quot;rogueAp&quot;
+},
+{
+&quot;alertDestinations&quot;: {
+&quot;allAdmins&quot;: false,
+&quot;emails&quot;: [],
+&quot;httpServerIds&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {},
+&quot;type&quot;: &quot;settingsChanged&quot;
+},
+{
+&quot;alertDestinations&quot;: {
+&quot;allAdmins&quot;: false,
+&quot;emails&quot;: [],
+&quot;httpServerIds&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {},
+&quot;type&quot;: &quot;vpnConnectivityChange&quot;
+},
+{
+&quot;alertDestinations&quot;: {
+&quot;allAdmins&quot;: false,
+&quot;emails&quot;: [],
+&quot;httpServerIds&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {
+&quot;period&quot;: 1200,
+&quot;threshold&quot;: 104857600
+},
+&quot;type&quot;: &quot;usageAlert&quot;
+},
+{
+&quot;alertDestinations&quot;: {
+&quot;allAdmins&quot;: false,
+&quot;emails&quot;: [],
+&quot;httpServerIds&quot;: [],
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: false,
+&quot;filters&quot;: {},
+&quot;type&quot;: &quot;weeklyPresence&quot;
+}
+],
+&quot;defaultDestinations&quot;: {
+&quot;allAdmins&quot;: true,
+&quot;emails&quot;: [
+&quot;meraki@kevinbreit.net&quot;,
+&quot;meraki2@kevinbreit.net&quot;
+],
+&quot;httpServerIds&quot;: [],
+&quot;snmp&quot;: true
+}
+},
+&quot;payload&quot;: {
+&quot;alerts&quot;: [
+{
+&quot;alertDestinations&quot;: [
+{
+&quot;allAdmins&quot;: true,
+&quot;emails&quot;: [
+&quot;meraki@kevinbreit.net&quot;,
+&quot;meraki2@kevinbreit.net&quot;
+],
+&quot;snmp&quot;: false
+}
+],
+&quot;enabled&quot;: true,
+&quot;filters&quot;: {
+&quot;timeout&quot;: 60
+},
+&quot;type&quot;: &quot;gatewayDown&quot;
+}
+],
+&quot;defaultDestinations&quot;: {
+&quot;allAdmins&quot;: true,
+&quot;emails&quot;: [
+&quot;meraki@kevinbreit.net&quot;,
+&quot;meraki2@kevinbreit.net&quot;
+],
+&quot;snmp&quot;: true
+}
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

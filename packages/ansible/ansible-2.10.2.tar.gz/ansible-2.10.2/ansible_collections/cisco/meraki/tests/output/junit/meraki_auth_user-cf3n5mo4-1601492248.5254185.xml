@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="5" time="11.391633033752441">
+	<testsuite disabled="0" errors="0" failures="0" name="meraki_auth_user-cf3n5mo4" skipped="1" tests="5" time="11.391633033752441">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_auth_user-sz3iqsgr-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_auth_user/tasks/main.yml:7" name="[localhost] meraki: meraki_auth_user : Test an API key is provided msg=Please define an API key" time="0.110264">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_auth_user-sz3iqsgr-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_auth_user/tasks/main.yml:12" name="[localhost] meraki: meraki_auth_user : Create a network auth_key={{auth_key}}, state=present, org_name={{ test_org_name }}, net_name={{ test_net_name }}, type=switch" time="3.943879">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297686876&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;switch&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/Q485HbUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_auth_user-sz3iqsgr-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_auth_user/tasks/main.yml:22" name="[localhost] meraki: meraki_auth_user : set_fact net_id={{net_info.data.id}}" time="0.097161">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_id&quot;: &quot;N_624874448297686876&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_auth_user-sz3iqsgr-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_auth_user/tasks/main.yml:25" name="[localhost] meraki: meraki_auth_user : Query all authenticated users auth_key={{auth_key}}, state=query, org_name={{ test_org_name }}, net_name={{ test_net_name }}" time="7.137932">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: [],
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_auth_user-sz3iqsgr-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_auth_user/tasks/main.yml:34" name="[localhost] meraki: meraki_auth_user : debug var=query_all" time="0.102398">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;query_all&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: [],
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="2" tests="6" time="14.018697261810303">
+	<testsuite disabled="0" errors="0" failures="2" name="meraki_content_filtering-xy7p7042" skipped="1" tests="6" time="14.018697261810303">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_content_filtering-pvoemfuc-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_content_filtering/tasks/main.yml:7" name="[localhost] meraki: meraki_content_filtering : Test an API key is provided msg=Please define an API key" time="0.098260">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_content_filtering-pvoemfuc-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_content_filtering/tasks/main.yml:12" name="[localhost] meraki: meraki_content_filtering : Create network auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, type=appliance, timezone=America/Chicago" time="5.463642">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685322&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/2qkdbcUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_content_filtering-pvoemfuc-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_content_filtering/tasks/main.yml:23" name="[localhost] meraki: meraki_content_filtering : Test net_name and id exclusivity auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, net_id=12345, state=present, allowed_urls=['http://www.ansible.com/*']" time="0.629791">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;net_name and net_id are mutually exclusive&quot;,
+&quot;response&quot;: null,
+&quot;status&quot;: null,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 12345\&quot; (type int) was converted to \&quot;auth_key: '12345'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_content_filtering-pvoemfuc-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_content_filtering/tasks/main.yml:35" name="[localhost] meraki: meraki_content_filtering : assert that=['net_exclusive.msg == &quot;net_name and net_id are mutually exclusive&quot;']" time="0.101597">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_content_filtering-pvoemfuc-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_content_filtering/tasks/main.yml:39" name="[localhost] meraki: meraki_content_filtering : Set single allowed URL pattern with check mode auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, state=present, allowed_urls=['http://www.ansible.com/*']" time="4.179930">
+			<failure message="404" type="failure">{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: 404,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 404,
+&quot;url&quot;: &quot;https://api.meraki.com/api/v1/networks/N_624874448297685322/contentFiltering&quot;
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_content_filtering-pvoemfuc-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_content_filtering/tasks/main.yml:237" name="[localhost] meraki: meraki_content_filtering : Reset policies auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, state=present, category_list_size=full list, allowed_urls=[None], blocked_urls=[None]" time="3.545476">
+			<failure message="404" type="failure">{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: 404,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 404,
+&quot;url&quot;: &quot;https://api.meraki.com/api/v1/networks/N_624874448297685322/contentFiltering&quot;,
+&quot;warnings&quot;: [
+&quot;The value \&quot;allowed_urls: None\&quot; (type NoneType) was converted to \&quot;allowed_urls: 'None'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;,
+&quot;The value \&quot;blocked_urls: None\&quot; (type NoneType) was converted to \&quot;blocked_urls: 'None'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

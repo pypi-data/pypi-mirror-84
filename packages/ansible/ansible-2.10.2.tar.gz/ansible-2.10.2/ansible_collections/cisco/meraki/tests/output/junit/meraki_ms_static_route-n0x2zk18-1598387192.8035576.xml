@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="3" time="10.362597703933716">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_ms_static_route-n0x2zk18" skipped="0" tests="3" time="10.362597703933716">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_static_route-2kz0ga5v-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_static_route/tasks/main.yml:7" name="[localhost] meraki: meraki_ms_static_route : Create network with type switch auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, type=switch, timezone=America/Chicago" time="3.781880">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297686266&quot;,
+&quot;name&quot;: &quot;IntTestNetworkSwitch&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;switch&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkSw/n/ofoUXdUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_static_route-2kz0ga5v-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_static_route/tasks/main.yml:123" name="[localhost] meraki: meraki_ms_static_route : Enable OSPF auth_key={{auth_key}}, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, state=present, enabled=True, hello_timer=20, dead_timer=60, areas=[{'area_id': 0, 'area_name': 'Backbone', 'area_type': 'normal'}], md5_authentication_enabled=False" time="3.985976">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;areas&quot;: [
+{
+&quot;area_id&quot;: 0,
+&quot;area_name&quot;: &quot;Backbone&quot;,
+&quot;area_type&quot;: &quot;normal&quot;
+}
+],
+&quot;dead_timer_in_seconds&quot;: 60,
+&quot;enabled&quot;: true,
+&quot;hello_timer_in_seconds&quot;: 20,
+&quot;md5_authentication_enabled&quot;: false
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_static_route-2kz0ga5v-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_static_route/tasks/main.yml:139" name="[localhost] meraki: meraki_ms_static_route : Update static route auth_key={{auth_key}}, state=present, serial={{ serial_switch_l3 }}, name=Test Route, subnet=192.168.17.0/24, next_hop_ip=192.168.17.1, advertise_via_ospf_enabled=True, prefer_over_ospf_routes_enabled=True" time="2.594742">
+			<failure message="HTTP error 400 - https://api.meraki.com/api/v1/devices/QBSB-VLNE-E299/switch/routing/staticRoutes/624874448297661319 - Cannot configure advertiseViaOspfEnabled when OSPF is disabled" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;HTTP error 400 - https://api.meraki.com/api/v1/devices/QBSB-VLNE-E299/switch/routing/staticRoutes/624874448297661319 - Cannot configure advertiseViaOspfEnabled when OSPF is disabled&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 400
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="2" tests="4" time="3.7630467414855957">
+	<testsuite disabled="0" errors="0" failures="2" name="meraki_device-60anu3iy" skipped="0" tests="4" time="3.7630467414855957">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-58yv1oiz-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:17" name="[localhost] meraki: meraki_device : Create network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, type=appliance, state=present" time="3.441433">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685426&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/0bpMtaUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-58yv1oiz-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:26" name="[localhost] meraki: meraki_device : set_fact net_id={{net_info.data.id}}" time="0.089807">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_id&quot;: &quot;N_624874448297685426&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-58yv1oiz-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:29" name="[localhost] meraki: meraki_device : Query status of all devices in an organization auth_key={{auth_key}}, org_name={{test_org_name}}, state=query" time="0.115617">
+			<failure message="Unable to import meraki_device due to invalid syntax" type="failure">{
+&quot;msg&quot;: &quot;Unable to import meraki_device due to invalid syntax&quot;
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-58yv1oiz-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:231" name="[localhost] meraki: meraki_device : Remove a device from a network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, serial={{serial}}, state=absent" time="0.116190">
+			<failure message="Unable to import meraki_device due to invalid syntax" type="failure">{
+&quot;msg&quot;: &quot;Unable to import meraki_device due to invalid syntax&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

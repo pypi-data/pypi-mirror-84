@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="5" time="21.518800258636475">
+	<testsuite disabled="0" errors="0" failures="0" name="meraki_mr_rf_profile-r4ytvyuv" skipped="0" tests="5" time="21.518800258636475">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-65uipafn-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:7" name="[localhost] meraki: meraki_mr_rf_profile : Create network with type wireless auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, type=wireless, timezone=America/Chicago" time="5.085479">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297686288&quot;,
+&quot;name&quot;: &quot;IntTestNetworkWireless&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;wireless&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkWi/n/OqmE_cUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-65uipafn-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:17" name="[localhost] meraki: meraki_mr_rf_profile : Query all RF profiles auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=query" time="4.267343">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;ipv6_bridge_enabled&quot;: true,
+&quot;led_lights_on&quot;: true,
+&quot;location_analytics_enabled&quot;: true,
+&quot;meshing_enabled&quot;: true,
+&quot;upgrade_strategy&quot;: &quot;minimizeUpgradeTime&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-65uipafn-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:26" name="[localhost] meraki: meraki_mr_rf_profile : debug var=query_all" time="0.100117">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;query_all&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;ipv6_bridge_enabled&quot;: true,
+            &quot;led_lights_on&quot;: true,
+            &quot;location_analytics_enabled&quot;: true,
+            &quot;meshing_enabled&quot;: true,
+            &quot;upgrade_strategy&quot;: &quot;minimizeUpgradeTime&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-65uipafn-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:29" name="[localhost] meraki: meraki_mr_rf_profile : assert that=['query_all.data is defined']" time="0.108007">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-65uipafn-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:96" name="[localhost] meraki: meraki_mr_rf_profile : Delete network auth_key={{ auth_key }}, state=absent, org_name={{test_org_name}}, net_name=IntTestNetworkWireless" time="11.957854">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

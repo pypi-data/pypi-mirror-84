@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="5.823802471160889">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_alert-9v2u4z01" skipped="0" tests="1" time="5.823802471160889">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-i0vpswzy-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:74" name="[localhost] meraki: meraki_alert : Update settings idempotent auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=present, default_destinations={'emails': ['{{ email_prefix }}@{{ email_domain }}', '{{ email_prefix }}2@{{ email_domain }}'], 'all_admins': True, 'snmp': False}, alerts=[{'type': 'gatewayDown', 'enabled': True, 'filters': {'timeout': 60}, 'alert_destinations': {'emails': ['{{ email_prefix }}@{{ email_domain }}', '{{ email_prefix }}2@{{ email_domain }}'], 'all_admins': True, 'snmp': False}}]" time="5.823802">
+			<failure message="[{'type': 'gatewayDown', 'enabled': True, 'filters': {'timeout': 60}, 'alert_destinations': {'emails': ['meraki@kevinbreit.net', 'meraki2@kevinbreit.net'], 'all_admins': True, 'snmp': False, 'http_server_ids': None}, 'alertDestinations': {'emails': ['meraki@kevinbreit.net', 'meraki2@kevinbreit.net'], 'allAdmins': True, 'snmp': False, 'httpServerIds': None}}]" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: [
+{
+&quot;alertDestinations&quot;: {
+&quot;allAdmins&quot;: true,
+&quot;emails&quot;: [
+&quot;meraki@kevinbreit.net&quot;,
+&quot;meraki2@kevinbreit.net&quot;
+],
+&quot;httpServerIds&quot;: null,
+&quot;snmp&quot;: false
+},
+&quot;alert_destinations&quot;: {
+&quot;all_admins&quot;: true,
+&quot;emails&quot;: [
+&quot;meraki@kevinbreit.net&quot;,
+&quot;meraki2@kevinbreit.net&quot;
+],
+&quot;http_server_ids&quot;: null,
+&quot;snmp&quot;: false
+},
+&quot;enabled&quot;: true,
+&quot;filters&quot;: {
+&quot;timeout&quot;: 60
+},
+&quot;type&quot;: &quot;gatewayDown&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

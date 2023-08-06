@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="0" tests="1" time="98.52548289299011">
+	<testsuite disabled="0" errors="1" failures="0" name="meraki_ms_ospf-ttjo3igb" skipped="0" tests="1" time="98.52548289299011">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-kqnwv9a0-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:7" name="[localhost] meraki: meraki_ms_ospf : Create network with type switch auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, type=switch, timezone=America/Chicago" time="98.525483">
+			<error message="AttributeError: 'NoneType' object has no attribute 'read'" type="error">Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1597080687.7032144-112-15505164168566/AnsiballZ_meraki_network.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1597080687.7032144-112-15505164168566/AnsiballZ_meraki_network.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1597080687.7032144-112-15505164168566/AnsiballZ_meraki_network.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_network', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_network_payload_lo4v5q12/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_network.py&quot;, line 374, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_network_payload_lo4v5q12/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_network.py&quot;, line 269, in main
+  File &quot;/tmp/ansible_meraki_network_payload_lo4v5q12/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 256, in get_nets
+  File &quot;/tmp/ansible_meraki_network_payload_lo4v5q12/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 416, in request
+  File &quot;/tmp/ansible_meraki_network_payload_lo4v5q12/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 384, in _execute_request
+  File &quot;/tmp/ansible_meraki_network_payload_lo4v5q12/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 416, in request
+  File &quot;/tmp/ansible_meraki_network_payload_lo4v5q12/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 384, in _execute_request
+  File &quot;/tmp/ansible_meraki_network_payload_lo4v5q12/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 416, in request
+  File &quot;/tmp/ansible_meraki_network_payload_lo4v5q12/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 384, in _execute_request
+  File &quot;/tmp/ansible_meraki_network_payload_lo4v5q12/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 416, in request
+  File &quot;/tmp/ansible_meraki_network_payload_lo4v5q12/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 384, in _execute_request
+  File &quot;/tmp/ansible_meraki_network_payload_lo4v5q12/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 416, in request
+  File &quot;/tmp/ansible_meraki_network_payload_lo4v5q12/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 384, in _execute_request
+  File &quot;/tmp/ansible_meraki_network_payload_lo4v5q12/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 416, in request
+  File &quot;/tmp/ansible_meraki_network_payload_lo4v5q12/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 384, in _execute_request
+  File &quot;/tmp/ansible_meraki_network_payload_lo4v5q12/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 416, in request
+  File &quot;/tmp/ansible_meraki_network_payload_lo4v5q12/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 384, in _execute_request
+  File &quot;/tmp/ansible_meraki_network_payload_lo4v5q12/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 416, in request
+  File &quot;/tmp/ansible_meraki_network_payload_lo4v5q12/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 384, in _execute_request
+  File &quot;/tmp/ansible_meraki_network_payload_lo4v5q12/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 426, in request
+AttributeError: 'NoneType' object has no attribute 'read'
+</error>
+		</testcase>
+	</testsuite>
+</testsuites>

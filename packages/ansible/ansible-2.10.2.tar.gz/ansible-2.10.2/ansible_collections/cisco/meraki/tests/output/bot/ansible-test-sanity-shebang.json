@@ -1,0 +1,10 @@
+{
+    "docs": "https://docs.ansible.com/ansible/2.9/dev_guide/testing/sanity/shebang.html",
+    "results": [
+        {
+            "message": "The test `ansible-test sanity --test shebang` [[explain](https://docs.ansible.com/ansible/2.9/dev_guide/testing/sanity/shebang.html)] failed with 5 errors:",
+            "output": "venv/bin/easy_install:1:1: unexpected non-module shebang: b'#!/Users/kbreit/Documents/Programming/ansible_collections/cisco/meraki/venv/bin/python'\nvenv/bin/easy_install-3.7:1:1: unexpected non-module shebang: b'#!/Users/kbreit/Documents/Programming/ansible_collections/cisco/meraki/venv/bin/python'\nvenv/bin/pip:1:1: unexpected non-module shebang: b'#!/Users/kbreit/Documents/Programming/ansible_collections/cisco/meraki/venv/bin/python'\nvenv/bin/pip3:1:1: unexpected non-module shebang: b'#!/Users/kbreit/Documents/Programming/ansible_collections/cisco/meraki/venv/bin/python'\nvenv/bin/pip3.7:1:1: unexpected non-module shebang: b'#!/Users/kbreit/Documents/Programming/ansible_collections/cisco/meraki/venv/bin/python'"
+        }
+    ],
+    "verified": false
+}

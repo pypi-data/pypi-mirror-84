@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="2" tests="7" time="14.028964757919312">
+	<testsuite disabled="0" errors="0" failures="2" name="meraki_intrusion_prevention-cg5pl888" skipped="1" tests="7" time="14.028964757919312">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-k3m7aelk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:7" name="[localhost] meraki: meraki_intrusion_prevention : Test an API key is provided msg=Please define an API key" time="0.109056">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-k3m7aelk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:12" name="[localhost] meraki: meraki_intrusion_prevention : Create test network auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}} - IPS, type=appliance" time="4.860474">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685357&quot;,
+&quot;name&quot;: &quot;Home - Appliance - IPS&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance-I/n/YaYcRcUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-k3m7aelk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:21" name="[localhost] meraki: meraki_intrusion_prevention : debug var=net" time="0.096910">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;net&quot;: {
+        &quot;ansible_facts&quot;: {
+            &quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+        },
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;enrollment_string&quot;: null,
+            &quot;id&quot;: &quot;N_624874448297685357&quot;,
+            &quot;name&quot;: &quot;Home - Appliance - IPS&quot;,
+            &quot;organization_id&quot;: &quot;133277&quot;,
+            &quot;product_types&quot;: [
+                &quot;appliance&quot;
+            ],
+            &quot;tags&quot;: [],
+            &quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+            &quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance-I/n/YaYcRcUb/manage/usage/list&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 201
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-k3m7aelk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:24" name="[localhost] meraki: meraki_intrusion_prevention : Set whitelist for organization in check mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, whitelisted_rules=[{'rule_id': 'meraki:intrusion/snort/GID/01/SID/5805', 'message': 'Test rule'}]" time="2.582544">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;whitelisted_rules&quot;: [
+{
+&quot;message&quot;: &quot;MALWARE-OTHER Trackware myway speedbar runtime detection - switch engines&quot;,
+&quot;rule_id&quot;: &quot;meraki:intrusion/snort/GID/01/SID/5805&quot;
+}
+]
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-k3m7aelk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:35" name="[localhost] meraki: meraki_intrusion_prevention : assert that=['create_org_check is changed', 'create_org_check.data is defined']" time="0.095653">
+			<failure message="Assertion failed" type="failure">{
+    &quot;assertion&quot;: &quot;create_org_check is changed&quot;,
+    &quot;changed&quot;: false,
+    &quot;evaluated_to&quot;: false,
+    &quot;msg&quot;: &quot;Assertion failed&quot;
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-k3m7aelk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:266" name="[localhost] meraki: meraki_intrusion_prevention : Delete network auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, net_name={{test_net_name}} - IPS" time="5.872568">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-k3m7aelk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:274" name="[localhost] meraki: meraki_intrusion_prevention : Clear rules from organization with check mode auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, whitelisted_rules=[None]" time="0.411760">
+			<failure message="Failure when processing no_log parameters. Module invocation will be hidden. Value 'None' in the sub parameter field 'whitelisted_rules' must by a list, not 'NoneType'" type="failure">{
+&quot;changed&quot;: false,
+&quot;msg&quot;: &quot;Failure when processing no_log parameters. Module invocation will be hidden. Value 'None' in the sub parameter field 'whitelisted_rules' must by a list, not 'NoneType'&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

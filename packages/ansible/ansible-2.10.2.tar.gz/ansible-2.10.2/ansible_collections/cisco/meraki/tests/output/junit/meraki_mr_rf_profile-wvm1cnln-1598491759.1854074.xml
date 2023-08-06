@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="0" tests="3" time="15.060739278793335">
+	<testsuite disabled="0" errors="1" failures="0" name="meraki_mr_rf_profile-wvm1cnln" skipped="0" tests="3" time="15.060739278793335">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-nedqr7hf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:7" name="[localhost] meraki: meraki_mr_rf_profile : Create network with type wireless auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, type=wireless, timezone=America/Chicago" time="5.089302">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297686321&quot;,
+&quot;name&quot;: &quot;IntTestNetworkWireless&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;wireless&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkWi/n/R5Q5edUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-nedqr7hf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:37" name="[localhost] meraki: meraki_mr_rf_profile : Create RF profile auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=present, name=Test Profile, band_selection_type=ap, client_balancing_enabled=True, ap_band_settings={'mode': 'dual', 'band_steering_enabled': True}, five_ghz_settings={'max_power': 10, 'min_bitrate': 12, 'min_power': 8, 'rxsop': -65, 'channel_width': 20, 'valid_auto_channels': [36, 40, 44]}, two_four_ghz_settings={'max_power': 10, 'min_bitrate': 12, 'min_power': 8, 'rxsop': -65, 'ax_enabled': False, 'valid_auto_channels': [1]}" time="4.622091">
+			<error message="KeyError: 'channel_width'" type="error">Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1598491749.2841008-141-66871983178514/AnsiballZ_meraki_mr_rf_profile.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1598491749.2841008-141-66871983178514/AnsiballZ_meraki_mr_rf_profile.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1598491749.2841008-141-66871983178514/AnsiballZ_meraki_mr_rf_profile.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_mr_rf_profile', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_mr_rf_profile_payload_kotegocf/ansible_meraki_mr_rf_profile_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_mr_rf_profile.py&quot;, line 364, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_mr_rf_profile_payload_kotegocf/ansible_meraki_mr_rf_profile_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_mr_rf_profile.py&quot;, line 333, in main
+  File &quot;/tmp/ansible_meraki_mr_rf_profile_payload_kotegocf/ansible_meraki_mr_rf_profile_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_mr_rf_profile.py&quot;, line 185, in construct_payload
+KeyError: 'channel_width'
+</error>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_rf_profile-nedqr7hf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_rf_profile/tasks/main.yml:115" name="[localhost] meraki: meraki_mr_rf_profile : Delete network auth_key={{ auth_key }}, state=absent, org_name={{test_org_name}}, net_name=IntTestNetworkWireless" time="5.349347">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

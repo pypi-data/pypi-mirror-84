@@ -1,0 +1,30 @@
+{
+    "targets": {
+        "meraki_ms_static_route": {
+            "aliases": [
+                "meraki_ms_static_route", 
+                "network/", 
+                "network/meraki/", 
+                "network/meraki/meraki_ms_static_route", 
+                "non_destructive/", 
+                "non_destructive/meraki_ms_static_route", 
+                "non_module/", 
+                "non_module/meraki_ms_static_route", 
+                "role/", 
+                "role/meraki_ms_static_route", 
+                "unsupported/", 
+                "unsupported/meraki_ms_static_route"
+            ], 
+            "coverage": true, 
+            "coverage_label": "docker-default", 
+            "modules": [], 
+            "name": "meraki_ms_static_route", 
+            "python_version": "3.7", 
+            "run_time_seconds": 21, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }
+    }
+}

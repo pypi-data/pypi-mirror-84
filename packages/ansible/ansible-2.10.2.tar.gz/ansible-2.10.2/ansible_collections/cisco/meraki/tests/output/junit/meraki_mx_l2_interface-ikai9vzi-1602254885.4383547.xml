@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="5" time="34.422096252441406">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_mx_l2_interface-ikai9vzi" skipped="0" tests="5" time="34.422096252441406">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-x0y5vibk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:7" name="[localhost] meraki: meraki_mx_l2_interface : Create network with type appliance auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name={{test_appliance_net_name}}, type=appliance, timezone=America/Chicago" time="7.714924">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297687178&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;notes&quot;: null,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/zJbK1cUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-x0y5vibk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:18" name="[localhost] meraki: meraki_mx_l2_interface : Claim a device into a network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_appliance_net_name}}, serial={{serial_appliance}}, state=present" time="9.947806">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: [
+{}
+],
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-x0y5vibk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:27" name="[localhost] meraki: meraki_mx_l2_interface : Query layer 2 interface settings auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name={{test_appliance_net_name}}, state=query" time="5.316789">
+			<failure message="HTTP error 400 - https://api.meraki.com/api/v1/networks/N_624874448297687178/appliance/ports - VLANs are not enabled for this network" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;HTTP error 400 - https://api.meraki.com/api/v1/networks/N_624874448297687178/appliance/ports - VLANs are not enabled for this network&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 400
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-x0y5vibk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:46" name="[localhost] meraki: meraki_mx_l2_interface : Remove device from network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_appliance_net_name}}, serial={{serial_appliance}}, state=absent" time="6.814738">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-x0y5vibk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:55" name="[localhost] meraki: meraki_mx_l2_interface : Delete network auth_key={{ auth_key }}, state=absent, org_name={{test_org_name}}, net_name={{test_appliance_net_name}}" time="4.627840">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

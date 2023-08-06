@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="1" tests="3" time="0.8872356414794922">
+	<testsuite disabled="0" errors="1" failures="1" name="meraki_organization-_vb8iqtf" skipped="1" tests="3" time="0.8872356414794922">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_organization-h54xciaa-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_organization/tasks/tests.yml:7" name="[localhost] meraki: meraki_organization : Test an API key is provided msg=Please define an API key" time="0.111778">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_organization-h54xciaa-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_organization/tasks/tests.yml:12" name="[localhost] meraki: meraki_organization : Create a new organization named IntTestOrg auth_key={{ auth_key }}, org_name=IntTestOrg, state=present, output_level=debug" time="0.685135">
+			<error message="NameError: name 'set_url' is not defined" type="error">Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1593395510.8369448-108-261120177143065/AnsiballZ_meraki_organization.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1593395510.8369448-108-261120177143065/AnsiballZ_meraki_organization.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1593395510.8369448-108-261120177143065/AnsiballZ_meraki_organization.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_organization', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_organization_payload_9ctyxqqh/ansible_meraki_organization_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_organization.py&quot;, line 242, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_organization_payload_9ctyxqqh/ansible_meraki_organization_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_organization.py&quot;, line 169, in main
+  File &quot;/tmp/ansible_meraki_organization_payload_9ctyxqqh/ansible_meraki_organization_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 260, in get_orgs
+  File &quot;/tmp/ansible_meraki_organization_payload_9ctyxqqh/ansible_meraki_organization_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 420, in request
+NameError: name 'set_url' is not defined
+</error>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_organization-h54xciaa-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_organization/tasks/tests.yml:118" name="[localhost] meraki: meraki_organization : Delete cloned organizations with check mode auth_key={{ auth_key }}, state=absent, org_name=IntTestOrgCloned, delete_confirm={{cloned_net_id}}" time="0.090323">
+			<failure message="The task includes an option with an undefined variable. The error was: 'cloned_net_id' is undefined
+
+The error appears to be in '/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_organization-h54xciaa-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_organization/tasks/tests.yml': line 118, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+  - name: Delete cloned organizations with check mode
+    ^ here
+" type="failure">{
+&quot;msg&quot;: &quot;The task includes an option with an undefined variable. The error was: 'cloned_net_id' is undefined\n\nThe error appears to be in '/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_organization-h54xciaa-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_organization/tasks/tests.yml': line 118, column 5, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n  - name: Delete cloned organizations with check mode\n    ^ here\n&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

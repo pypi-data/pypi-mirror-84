@@ -1,0 +1,210 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="2" tests="8" time="25.648248195648193">
+	<testsuite disabled="0" errors="0" failures="2" name="meraki_device-id7gz8au" skipped="0" tests="8" time="25.648248195648193">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-zl_slsgu-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:17" name="[localhost] meraki: meraki_device : Create network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, type=appliance, state=present" time="4.862527">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297687176&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;notes&quot;: null,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/dvcfpdUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;False&quot;,
+&quot;False&quot;,
+&quot;False&quot;,
+&quot;False&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-zl_slsgu-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:26" name="[localhost] meraki: meraki_device : set_fact net_id={{net_info.data.id}}" time="0.112161">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_id&quot;: &quot;N_624874448297687176&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-zl_slsgu-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:29" name="[localhost] meraki: meraki_device : Query status of all devices in an organization auth_key={{auth_key}}, org_name={{test_org_name}}, state=query" time="6.049796">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: [
+{
+&quot;address&quot;: &quot;1060 W. Addison St., Chicago, IL&quot;,
+&quot;configuration_updated_at&quot;: &quot;2020-08-24T19:08:52Z&quot;,
+&quot;firmware&quot;: &quot;Not running configured version&quot;,
+&quot;lat&quot;: 41.948038,
+&quot;lng&quot;: -87.65568,
+&quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+&quot;model&quot;: &quot;MX60&quot;,
+&quot;name&quot;: &quot;mx60&quot;,
+&quot;network_id&quot;: &quot;N_624874448297679182&quot;,
+&quot;notes&quot;: &quot;Test device notes&quot;,
+&quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;,
+&quot;tags&quot;: [
+&quot;recently-added&quot;
+],
+&quot;url&quot;: &quot;https://n110.meraki.com/TestNet-Applianc/n/9TIYVdUb/manage/nodes/new_list/4321982&quot;,
+&quot;wan1_ip&quot;: null,
+&quot;wan2_ip&quot;: null
+},
+{
+&quot;address&quot;: &quot;&quot;,
+&quot;configuration_updated_at&quot;: &quot;2020-03-07T03:08:09Z&quot;,
+&quot;firmware&quot;: &quot;Not running configured version&quot;,
+&quot;lat&quot;: 37.4180951010362,
+&quot;lng&quot;: -122.098531723022,
+&quot;mac&quot;: &quot;4c:c8:a1:03:00:04&quot;,
+&quot;model&quot;: &quot;MX450&quot;,
+&quot;name&quot;: &quot;&quot;,
+&quot;network_id&quot;: &quot;N_624874448297683435&quot;,
+&quot;notes&quot;: &quot;&quot;,
+&quot;serial&quot;: &quot;QBSA-5UDA-KXNB&quot;,
+&quot;tags&quot;: [],
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance_s/n/O3kNEaUb/manage/nodes/new_list/84424578498564&quot;,
+&quot;wan1_ip&quot;: null,
+&quot;wan2_ip&quot;: null
+},
+{
+&quot;address&quot;: &quot;&quot;,
+&quot;configuration_updated_at&quot;: &quot;2020-03-02T04:08:13Z&quot;,
+&quot;firmware&quot;: &quot;Not running configured version&quot;,
+&quot;lat&quot;: 37.4180951010362,
+&quot;lng&quot;: -122.098531723022,
+&quot;mac&quot;: &quot;4c:c8:a1:03:00:03&quot;,
+&quot;model&quot;: &quot;MX450&quot;,
+&quot;name&quot;: &quot;&quot;,
+&quot;network_id&quot;: &quot;N_624874448297683434&quot;,
+&quot;notes&quot;: &quot;&quot;,
+&quot;serial&quot;: &quot;QBSA-N3KM-CZNY&quot;,
+&quot;tags&quot;: [],
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance_h/n/1tzBXaUb/manage/nodes/new_list/84424578498563&quot;,
+&quot;wan1_ip&quot;: null,
+&quot;wan2_ip&quot;: null
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-zl_slsgu-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:37" name="[localhost] meraki: meraki_device : debug msg={{query_device_org}}" time="0.099472">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: [
+            {
+                &quot;address&quot;: &quot;1060 W. Addison St., Chicago, IL&quot;,
+                &quot;configuration_updated_at&quot;: &quot;2020-08-24T19:08:52Z&quot;,
+                &quot;firmware&quot;: &quot;Not running configured version&quot;,
+                &quot;lat&quot;: 41.948038,
+                &quot;lng&quot;: -87.65568,
+                &quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+                &quot;model&quot;: &quot;MX60&quot;,
+                &quot;name&quot;: &quot;mx60&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297679182&quot;,
+                &quot;notes&quot;: &quot;Test device notes&quot;,
+                &quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;,
+                &quot;tags&quot;: [
+                    &quot;recently-added&quot;
+                ],
+                &quot;url&quot;: &quot;https://n110.meraki.com/TestNet-Applianc/n/9TIYVdUb/manage/nodes/new_list/4321982&quot;,
+                &quot;wan1_ip&quot;: null,
+                &quot;wan2_ip&quot;: null
+            },
+            {
+                &quot;address&quot;: &quot;&quot;,
+                &quot;configuration_updated_at&quot;: &quot;2020-03-07T03:08:09Z&quot;,
+                &quot;firmware&quot;: &quot;Not running configured version&quot;,
+                &quot;lat&quot;: 37.4180951010362,
+                &quot;lng&quot;: -122.098531723022,
+                &quot;mac&quot;: &quot;4c:c8:a1:03:00:04&quot;,
+                &quot;model&quot;: &quot;MX450&quot;,
+                &quot;name&quot;: &quot;&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297683435&quot;,
+                &quot;notes&quot;: &quot;&quot;,
+                &quot;serial&quot;: &quot;QBSA-5UDA-KXNB&quot;,
+                &quot;tags&quot;: [],
+                &quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance_s/n/O3kNEaUb/manage/nodes/new_list/84424578498564&quot;,
+                &quot;wan1_ip&quot;: null,
+                &quot;wan2_ip&quot;: null
+            },
+            {
+                &quot;address&quot;: &quot;&quot;,
+                &quot;configuration_updated_at&quot;: &quot;2020-03-02T04:08:13Z&quot;,
+                &quot;firmware&quot;: &quot;Not running configured version&quot;,
+                &quot;lat&quot;: 37.4180951010362,
+                &quot;lng&quot;: -122.098531723022,
+                &quot;mac&quot;: &quot;4c:c8:a1:03:00:03&quot;,
+                &quot;model&quot;: &quot;MX450&quot;,
+                &quot;name&quot;: &quot;&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297683434&quot;,
+                &quot;notes&quot;: &quot;&quot;,
+                &quot;serial&quot;: &quot;QBSA-N3KM-CZNY&quot;,
+                &quot;tags&quot;: [],
+                &quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance_h/n/1tzBXaUb/manage/nodes/new_list/84424578498563&quot;,
+                &quot;wan1_ip&quot;: null,
+                &quot;wan2_ip&quot;: null
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-zl_slsgu-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:40" name="[localhost] meraki: meraki_device : Claim a device into a network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, serial={{serial}}, state=present" time="8.896895">
+			<failure message="HTTP error 400 - https://api.meraki.com/api/v1/networks/N_624874448297687176/devices/claim - Device with serial Q2BN-MCH8-VEL5 is already claimed and in TestNet - Appliance" type="failure">{
+&quot;changed&quot;: false,
+&quot;msg&quot;: &quot;HTTP error 400 - https://api.meraki.com/api/v1/networks/N_624874448297687176/devices/claim - Device with serial Q2BN-MCH8-VEL5 is already claimed and in TestNet - Appliance&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 400
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-zl_slsgu-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:231" name="[localhost] meraki: meraki_device : Remove a device from a network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, serial={{serial}}, state=absent" time="5.436369">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-zl_slsgu-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:241" name="[localhost] meraki: meraki_device : debug msg={{delete_device}}" time="0.095128">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-zl_slsgu-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:244" name="[localhost] meraki: meraki_device : assert that=['delete_device.changed == true']" time="0.095899">
+			<failure message="Assertion failed" type="failure">{
+    &quot;assertion&quot;: &quot;delete_device.changed == true&quot;,
+    &quot;changed&quot;: false,
+    &quot;evaluated_to&quot;: false,
+    &quot;msg&quot;: &quot;Assertion failed&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

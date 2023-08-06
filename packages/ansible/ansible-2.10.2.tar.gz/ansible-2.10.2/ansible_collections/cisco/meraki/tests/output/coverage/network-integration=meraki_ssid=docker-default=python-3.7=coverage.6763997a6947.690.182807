@@ -1,0 +1,1 @@
+!coverage.py: This is a private format, don't read it directly!{"arcs":{"/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-eirtv190-\u00c5\u00d1\u015a\u00cc\u03b2\u0141\u00c8/tests/integration/{'changed': False, 'response': None, 'status': None, 'failed': True, 'msg': 'PSK is only allowed when auth_mode is set to psk'}":[[-1,1],[1,-1]]}}

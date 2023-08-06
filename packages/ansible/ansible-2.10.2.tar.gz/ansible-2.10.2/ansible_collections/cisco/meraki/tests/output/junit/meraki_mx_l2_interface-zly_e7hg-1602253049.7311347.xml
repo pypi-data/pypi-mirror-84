@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="2" time="9.633687496185303">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_mx_l2_interface-zly_e7hg" skipped="0" tests="2" time="9.633687496185303">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-jvj_p36o-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:7" name="[localhost] meraki: meraki_mx_l2_interface : Create network with type appliance auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name={{test_appliance_net_name}}, type=appliance, timezone=America/Chicago" time="2.866997">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297687172&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;notes&quot;: null,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/ac96vdUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;False&quot;,
+&quot;False&quot;,
+&quot;False&quot;,
+&quot;False&quot;,
+&quot;False&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-jvj_p36o-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:18" name="[localhost] meraki: meraki_mx_l2_interface : Claim a device into a network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_appliance_net_name}}, serial={{serial_appliance}}, state=present" time="6.766690">
+			<failure message="HTTP error 400 - https://api.meraki.com/api/v1/networks/N_624874448297687172/devices/claim - Device with serial Q2BN-MCH8-VEL5 is already claimed and in TestNet - Appliance" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;HTTP error 400 - https://api.meraki.com/api/v1/networks/N_624874448297687172/devices/claim - Device with serial Q2BN-MCH8-VEL5 is already claimed and in TestNet - Appliance&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 400
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

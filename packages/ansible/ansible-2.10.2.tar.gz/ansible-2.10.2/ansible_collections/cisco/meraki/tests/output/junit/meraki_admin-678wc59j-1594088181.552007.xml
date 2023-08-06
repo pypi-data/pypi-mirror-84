@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="5.481764793395996">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_admin-678wc59j" skipped="0" tests="1" time="5.481764793395996">
+		<testcase classname="/root/ansible/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_admin-ruuonpjx-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_admin/tasks/main.yml:187" name="[localhost] meraki: meraki_admin : Create administrator with networks with check mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, name=Jim Doe, email={{email_prefix}}+jimdoe@{{email_domain}}, orgAccess=none, networks=[{'network': 'TestNet', 'access': 'read-only'}, {'id': 'testnet2_id', 'access': 'full'}]" time="5.481765">
+			<failure message="No network found with the name None" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;No network found with the name None&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

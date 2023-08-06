@@ -1,0 +1,210 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="9" time="31.820587158203125">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_mx_site_to_site_firewall-ulm4uglf" skipped="1" tests="9" time="31.820587158203125">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_site_to_site_firewall-i6p3pjw3-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_site_to_site_firewall/tasks/main.yml:7" name="[localhost] meraki: meraki_mx_site_to_site_firewall : Test an API key is provided msg=Please define an API key" time="0.174351">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_site_to_site_firewall-i6p3pjw3-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_site_to_site_firewall/tasks/main.yml:12" name="[localhost] meraki: meraki_mx_site_to_site_firewall : Create network auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=TestNetAppliance, state=present, type=appliance" time="9.729963">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685467&quot;,
+&quot;name&quot;: &quot;TestNetAppliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/TestNetAppliance/n/XEctEbUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_site_to_site_firewall-i6p3pjw3-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_site_to_site_firewall/tasks/main.yml:21" name="[localhost] meraki: meraki_mx_site_to_site_firewall : Query firewall rules auth_key={{ auth_key }}, org_name={{test_org_name}}, state=query" time="6.150522">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;rules&quot;: [
+{
+&quot;comment&quot;: &quot;Default rule&quot;,
+&quot;dest_cidr&quot;: &quot;Any&quot;,
+&quot;dest_port&quot;: &quot;Any&quot;,
+&quot;policy&quot;: &quot;allow&quot;,
+&quot;protocol&quot;: &quot;Any&quot;,
+&quot;src_cidr&quot;: &quot;Any&quot;,
+&quot;src_port&quot;: &quot;Any&quot;,
+&quot;syslog_enabled&quot;: false
+}
+]
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_site_to_site_firewall-i6p3pjw3-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_site_to_site_firewall/tasks/main.yml:29" name="[localhost] meraki: meraki_mx_site_to_site_firewall : debug var=query" time="0.115576">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;query&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;rules&quot;: [
+                {
+                    &quot;comment&quot;: &quot;Default rule&quot;,
+                    &quot;dest_cidr&quot;: &quot;Any&quot;,
+                    &quot;dest_port&quot;: &quot;Any&quot;,
+                    &quot;policy&quot;: &quot;allow&quot;,
+                    &quot;protocol&quot;: &quot;Any&quot;,
+                    &quot;src_cidr&quot;: &quot;Any&quot;,
+                    &quot;src_port&quot;: &quot;Any&quot;,
+                    &quot;syslog_enabled&quot;: false
+                }
+            ]
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_site_to_site_firewall-i6p3pjw3-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_site_to_site_firewall/tasks/main.yml:36" name="[localhost] meraki: meraki_mx_site_to_site_firewall : Set one firewall rule with check mode auth_key={{ auth_key }}, org_name={{test_org_name}}, state=present, rules=[{'comment': 'Deny to documentation address', 'src_port': 'Any', 'src_cidr': 'Any', 'dest_port': '80,443', 'dest_cidr': '192.0.1.1/32', 'protocol': 'tcp', 'policy': 'deny'}]" time="3.081361">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: [
+{
+&quot;comment&quot;: &quot;Deny to documentation address&quot;,
+&quot;dest_cidr&quot;: &quot;192.0.1.1/32&quot;,
+&quot;dest_port&quot;: &quot;80,443&quot;,
+&quot;policy&quot;: &quot;deny&quot;,
+&quot;protocol&quot;: &quot;tcp&quot;,
+&quot;src_cidr&quot;: &quot;Any&quot;,
+&quot;src_port&quot;: &quot;Any&quot;,
+&quot;syslog_enabled&quot;: false
+},
+{
+&quot;comment&quot;: &quot;Default rule&quot;,
+&quot;dest_cidr&quot;: &quot;Any&quot;,
+&quot;dest_port&quot;: &quot;Any&quot;,
+&quot;policy&quot;: &quot;allow&quot;,
+&quot;protocol&quot;: &quot;Any&quot;,
+&quot;src_cidr&quot;: &quot;Any&quot;,
+&quot;src_port&quot;: &quot;Any&quot;,
+&quot;syslog_enabled&quot;: false
+}
+],
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_site_to_site_firewall-i6p3pjw3-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_site_to_site_firewall/tasks/main.yml:53" name="[localhost] meraki: meraki_mx_site_to_site_firewall : debug var=create_one_check" time="0.133499">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;create_one_check&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: [
+            {
+                &quot;comment&quot;: &quot;Deny to documentation address&quot;,
+                &quot;dest_cidr&quot;: &quot;192.0.1.1/32&quot;,
+                &quot;dest_port&quot;: &quot;80,443&quot;,
+                &quot;policy&quot;: &quot;deny&quot;,
+                &quot;protocol&quot;: &quot;tcp&quot;,
+                &quot;src_cidr&quot;: &quot;Any&quot;,
+                &quot;src_port&quot;: &quot;Any&quot;,
+                &quot;syslog_enabled&quot;: false
+            },
+            {
+                &quot;comment&quot;: &quot;Default rule&quot;,
+                &quot;dest_cidr&quot;: &quot;Any&quot;,
+                &quot;dest_port&quot;: &quot;Any&quot;,
+                &quot;policy&quot;: &quot;allow&quot;,
+                &quot;protocol&quot;: &quot;Any&quot;,
+                &quot;src_cidr&quot;: &quot;Any&quot;,
+                &quot;src_port&quot;: &quot;Any&quot;,
+                &quot;syslog_enabled&quot;: false
+            }
+        ],
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_site_to_site_firewall-i6p3pjw3-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_site_to_site_firewall/tasks/main.yml:56" name="[localhost] meraki: meraki_mx_site_to_site_firewall : assert that=['create_one_check.data|length == 2', &quot;create_one_check.data.rules.0.dest_cidr == '192.0.1.1/32'&quot;, &quot;create_one_check.data.rules.0.protocol == 'tcp'&quot;, &quot;create_one_check.data.rules.0.policy == 'deny'&quot;, 'create_one_check is changed', 'create_one_check.data is defined']" time="0.122775">
+			<failure message="The conditional check 'create_one_check.data.rules.0.dest_cidr == '192.0.1.1/32'' failed. The error was: error while evaluating conditional (create_one_check.data.rules.0.dest_cidr == '192.0.1.1/32'): 'list object' has no attribute 'rules'" type="failure">{
+&quot;msg&quot;: &quot;The conditional check 'create_one_check.data.rules.0.dest_cidr == '192.0.1.1/32'' failed. The error was: error while evaluating conditional (create_one_check.data.rules.0.dest_cidr == '192.0.1.1/32'): 'list object' has no attribute 'rules'&quot;
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_site_to_site_firewall-i6p3pjw3-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_site_to_site_firewall/tasks/main.yml:292" name="[localhost] meraki: meraki_mx_site_to_site_firewall : Delete all firewall rules auth_key={{ auth_key }}, org_name={{test_org_name}}, state=present, rules=[]" time="2.655526">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;rules&quot;: [
+{
+&quot;comment&quot;: &quot;Default rule&quot;,
+&quot;dest_cidr&quot;: &quot;Any&quot;,
+&quot;dest_port&quot;: &quot;Any&quot;,
+&quot;policy&quot;: &quot;allow&quot;,
+&quot;protocol&quot;: &quot;Any&quot;,
+&quot;src_cidr&quot;: &quot;Any&quot;,
+&quot;src_port&quot;: &quot;Any&quot;,
+&quot;syslog_enabled&quot;: false
+}
+]
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_site_to_site_firewall-i6p3pjw3-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_site_to_site_firewall/tasks/main.yml:301" name="[localhost] meraki: meraki_mx_site_to_site_firewall : Delete network auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=TestNetAppliance, state=absent" time="9.657015">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

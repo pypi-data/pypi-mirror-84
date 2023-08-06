@@ -1,0 +1,31 @@
+{
+    "targets": {
+        "meraki_mr_settings": {
+            "aliases": [
+                "meraki_mr_settings", 
+                "module/", 
+                "module/meraki_mr_settings/", 
+                "module/meraki_mr_settings/meraki_mr_settings", 
+                "network/", 
+                "network/meraki/", 
+                "network/meraki/meraki_mr_settings", 
+                "non_destructive/", 
+                "non_destructive/meraki_mr_settings", 
+                "role/", 
+                "role/meraki_mr_settings"
+            ], 
+            "coverage": true, 
+            "coverage_label": "docker-default", 
+            "modules": [
+                "meraki_mr_settings"
+            ], 
+            "name": "meraki_mr_settings", 
+            "python_version": "3.7", 
+            "run_time_seconds": 21, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }
+    }
+}

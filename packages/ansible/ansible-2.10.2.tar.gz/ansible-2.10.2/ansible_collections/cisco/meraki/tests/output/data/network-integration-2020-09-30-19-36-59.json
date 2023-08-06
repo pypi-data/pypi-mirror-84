@@ -1,0 +1,33 @@
+{
+    "targets": {
+        "meraki_auth_user": {
+            "aliases": [
+                "meraki_auth_user", 
+                "module/", 
+                "module/meraki_auth_user/", 
+                "module/meraki_auth_user/meraki_auth_user", 
+                "network/", 
+                "network/meraki/", 
+                "network/meraki/meraki_auth_user", 
+                "non_destructive/", 
+                "non_destructive/meraki_auth_user", 
+                "role/", 
+                "role/meraki_auth_user", 
+                "unsupported/", 
+                "unsupported/meraki_auth_user"
+            ], 
+            "coverage": true, 
+            "coverage_label": "docker-default", 
+            "modules": [
+                "meraki_auth_user"
+            ], 
+            "name": "meraki_auth_user", 
+            "python_version": "3.7", 
+            "run_time_seconds": 15, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }
+    }
+}

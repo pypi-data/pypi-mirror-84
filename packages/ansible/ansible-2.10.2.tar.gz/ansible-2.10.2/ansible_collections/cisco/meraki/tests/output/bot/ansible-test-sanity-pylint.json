@@ -1,0 +1,10 @@
+{
+    "docs": "https://docs.ansible.com/ansible/devel/dev_guide/testing/sanity/pylint.html", 
+    "results": [
+        {
+            "message": "The test `ansible-test sanity --test pylint` [[explain](https://docs.ansible.com/ansible/devel/dev_guide/testing/sanity/pylint.html)] failed with 1 error:", 
+            "output": "plugins/modules/meraki_mr_settings.py:206:49: trailing-whitespace: Trailing whitespace"
+        }
+    ], 
+    "verified": false
+}

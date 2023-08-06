@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="0" tests="4" time="11.644036293029785">
+	<testsuite disabled="0" errors="1" failures="0" name="meraki_mx_uplink-fn882kf2" skipped="1" tests="4" time="11.644036293029785">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_uplink-nexniqq_-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_uplink/tasks/main.yml:7" name="[localhost] meraki: meraki_mx_uplink : Test an API key is provided msg=Please define an API key" time="0.102852">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_uplink-nexniqq_-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_uplink/tasks/main.yml:12" name="[localhost] meraki: meraki_mx_uplink : Create test network auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}} - Uplink, type=appliance" time="5.176810">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;disable_my_meraki_com&quot;: false,
+&quot;disable_remote_status_page&quot;: true,
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685070&quot;,
+&quot;name&quot;: &quot;Home - Appliance - Uplink&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: &quot;&quot;,
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;type&quot;: &quot;appliance&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance-U/n/Lci_MaUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_uplink-nexniqq_-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_uplink/tasks/main.yml:21" name="[localhost] meraki: meraki_mx_uplink : Set MX uplink settings with check mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}} - Uplink, wan1={'bandwidth_limits': {'limit_down': 1000000, 'limit_up': 100}}, cellular={'bandwidth_limits': {'limit_down': 0, 'limit_up': 0}}" time="0.122806">
+			<error message="ImportError: No module named '__init__'" type="error">Traceback (most recent call last):
+  File &quot;/root/ansible/lib/ansible/executor/task_executor.py&quot;, line 155, in run
+    res = self._execute()
+  File &quot;/root/ansible/lib/ansible/executor/task_executor.py&quot;, line 650, in _execute
+    result = self._handler.run(task_vars=variables)
+  File &quot;/root/ansible/lib/ansible/plugins/action/normal.py&quot;, line 46, in run
+    result = merge_hash(result, self._execute_module(task_vars=task_vars, wrap_async=wrap_async))
+  File &quot;/root/ansible/lib/ansible/plugins/action/__init__.py&quot;, line 859, in _execute_module
+    (module_style, shebang, module_data, module_path) = self._configure_module(module_name=module_name, module_args=module_args, task_vars=task_vars)
+  File &quot;/root/ansible/lib/ansible/plugins/action/__init__.py&quot;, line 232, in _configure_module
+    **become_kwargs)
+  File &quot;/root/ansible/lib/ansible/executor/module_common.py&quot;, line 1289, in modify_module
+    environment=environment)
+  File &quot;/root/ansible/lib/ansible/executor/module_common.py&quot;, line 1126, in _find_module_utils
+    py_module_cache, zf)
+  File &quot;/root/ansible/lib/ansible/executor/module_common.py&quot;, line 873, in recursive_finder
+    [os.path.join(p, *relative_module_utils[:-1]) for p in module_utils_paths])
+  File &quot;/root/ansible/lib/ansible/executor/module_common.py&quot;, line 614, in __init__
+    raise ImportError(&quot;No module named '%s'&quot; % name)
+ImportError: No module named '__init__'
+</error>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_uplink-nexniqq_-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_uplink/tasks/main.yml:119" name="[localhost] meraki: meraki_mx_uplink : Delete test network auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, net_name={{test_net_name}} - Uplink" time="6.241569">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

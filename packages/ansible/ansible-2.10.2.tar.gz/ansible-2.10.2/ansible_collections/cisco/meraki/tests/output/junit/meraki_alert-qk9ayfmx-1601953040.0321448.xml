@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="0.617999792098999">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_alert-qk9ayfmx" skipped="0" tests="1" time="0.617999792098999">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-z24wc6q0-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:74" name="[localhost] meraki: meraki_alert : Update settings idempotent auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=present, default_destinations={'emails': ['{{ email_prefix }}@{{ email_domain }}', '{{ email_prefix }}2@{{ email_domain }}'], 'all_admins': True, 'snmp': True}, alerts=[{'type': 'gatewayDown', 'enabled': True, 'filters': {'timeout': 60}, 'alert_destinations': [{'emails': ['{{ email_prefix }}@{{ email_domain }}', '{{ email_prefix }}2@{{ email_domain }}'], 'all_admins': True, 'snmp': False}]}]" time="0.618000">
+			<failure message="argument alert_destinations is of type &lt;class 'list'&gt; found in 'alerts'. and we were unable to convert to dict: &lt;class 'list'&gt; cannot be converted to a dict" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;argument alert_destinations is of type &lt;class 'list'&gt; found in 'alerts'. and we were unable to convert to dict: &lt;class 'list'&gt; cannot be converted to a dict&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

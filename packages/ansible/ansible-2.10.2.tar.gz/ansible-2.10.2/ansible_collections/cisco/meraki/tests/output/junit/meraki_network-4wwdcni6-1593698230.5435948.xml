@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="2" time="7.164554595947266">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_network-4wwdcni6" skipped="0" tests="2" time="7.164554595947266">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-58rm45ki-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:216" name="[localhost] meraki: meraki_network : Reenable my.meraki.com auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkCombined, local_status_page_enabled=True" time="7.043990">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;local_status_page_enabled&quot;: true,
+&quot;remote_status_page_enabled&quot;: true
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-58rm45ki-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:226" name="[localhost] meraki: meraki_network : assert that=['enable_meraki_com.data.local_status_page_enabled == False']" time="0.120565">
+			<failure message="Assertion failed" type="failure">{
+    &quot;assertion&quot;: &quot;enable_meraki_com.data.local_status_page_enabled == False&quot;,
+    &quot;changed&quot;: false,
+    &quot;evaluated_to&quot;: false,
+    &quot;msg&quot;: &quot;Assertion failed&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

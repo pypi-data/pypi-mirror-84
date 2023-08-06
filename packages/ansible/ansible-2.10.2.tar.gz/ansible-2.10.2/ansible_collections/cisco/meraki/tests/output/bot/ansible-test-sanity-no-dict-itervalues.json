@@ -1,0 +1,10 @@
+{
+    "docs": "https://docs.ansible.com/ansible/2.9/dev_guide/testing/sanity/no-dict-itervalues.html",
+    "results": [
+        {
+            "message": "The test `ansible-test sanity --test no-dict-itervalues` [[explain](https://docs.ansible.com/ansible/2.9/dev_guide/testing/sanity/no-dict-itervalues.html)] failed with 11 errors:",
+            "output": "venv/lib/python3.7/site-packages/pip/_vendor/distlib/compat.py:715:40: use `dict.values` or `ansible.module_utils.six.itervalues` instead of `dict.itervalues`\nvenv/lib/python3.7/site-packages/pip/_vendor/distlib/compat.py:766:17: use `dict.values` or `ansible.module_utils.six.itervalues` instead of `dict.itervalues`\nvenv/lib/python3.7/site-packages/pip/_vendor/pyparsing.py:625:30: use `dict.values` or `ansible.module_utils.six.itervalues` instead of `dict.itervalues`\nvenv/lib/python3.7/site-packages/pip/_vendor/requests/cookies.py:250:26: use `dict.values` or `ansible.module_utils.six.itervalues` instead of `dict.itervalues`\nvenv/lib/python3.7/site-packages/pip/_vendor/six.py:602:18: use `dict.values` or `ansible.module_utils.six.itervalues` instead of `dict.itervalues`\nvenv/lib/python3.7/site-packages/pip/_vendor/urllib3/_collections.py:174:37: use `dict.values` or `ansible.module_utils.six.itervalues` instead of `dict.itervalues`\nvenv/lib/python3.7/site-packages/pip/_vendor/urllib3/packages/six.py:596:18: use `dict.values` or `ansible.module_utils.six.itervalues` instead of `dict.itervalues`\nvenv/lib/python3.7/site-packages/pkg_resources/_vendor/pyparsing.py:500:30: use `dict.values` or `ansible.module_utils.six.itervalues` instead of `dict.itervalues`\nvenv/lib/python3.7/site-packages/pkg_resources/_vendor/six.py:596:18: use `dict.values` or `ansible.module_utils.six.itervalues` instead of `dict.itervalues`\nvenv/lib/python3.7/site-packages/setuptools/_vendor/pyparsing.py:500:30: use `dict.values` or `ansible.module_utils.six.itervalues` instead of `dict.itervalues`\nvenv/lib/python3.7/site-packages/setuptools/_vendor/six.py:596:18: use `dict.values` or `ansible.module_utils.six.itervalues` instead of `dict.itervalues`"
+        }
+    ],
+    "verified": false
+}

@@ -1,0 +1,30 @@
+{
+    "targets": {
+        "meraki_site_to_site_vpn": {
+            "aliases": [
+                "meraki_site_to_site_vpn", 
+                "network/", 
+                "network/meraki/", 
+                "network/meraki/meraki_site_to_site_vpn", 
+                "non_destructive/", 
+                "non_destructive/meraki_site_to_site_vpn", 
+                "non_module/", 
+                "non_module/meraki_site_to_site_vpn", 
+                "role/", 
+                "role/meraki_site_to_site_vpn", 
+                "unsupported/", 
+                "unsupported/meraki_site_to_site_vpn"
+            ], 
+            "coverage": true, 
+            "coverage_label": "docker-default", 
+            "modules": [], 
+            "name": "meraki_site_to_site_vpn", 
+            "python_version": "3.7", 
+            "run_time_seconds": 47, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }
+    }
+}

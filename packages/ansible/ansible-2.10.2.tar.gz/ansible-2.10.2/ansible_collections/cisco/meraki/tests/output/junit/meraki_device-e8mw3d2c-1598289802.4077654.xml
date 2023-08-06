@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="2" tests="6" time="14.902494668960571">
+	<testsuite disabled="0" errors="0" failures="2" name="meraki_device-e8mw3d2c" skipped="0" tests="6" time="14.902494668960571">
+		<testcase classname="/root/ansible/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-r84jj85k-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:17" name="[localhost] meraki: meraki_device : Create network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, type=appliance, state=present" time="5.318969">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297686205&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/bhYcYbUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-r84jj85k-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:26" name="[localhost] meraki: meraki_device : set_fact net_id={{net_info.data.id}}" time="0.638161">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_id&quot;: &quot;N_624874448297686205&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-r84jj85k-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:29" name="[localhost] meraki: meraki_device : Query status of all devices in an organization auth_key={{auth_key}}, org_name={{test_org_name}}, state=query" time="3.533926">
+			<failure message="404" type="failure">{
+&quot;changed&quot;: false,
+&quot;msg&quot;: 404,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 404,
+&quot;url&quot;: &quot;https://api.meraki.com/api/v1/organizations/133277/inventory&quot;
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-r84jj85k-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:231" name="[localhost] meraki: meraki_device : Remove a device from a network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, serial={{serial}}, state=absent" time="4.135785">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-r84jj85k-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:241" name="[localhost] meraki: meraki_device : debug msg={{delete_device}}" time="0.636840">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-r84jj85k-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:244" name="[localhost] meraki: meraki_device : assert that=['delete_device.changed == true']" time="0.638813">
+			<failure message="Assertion failed" type="failure">{
+    &quot;assertion&quot;: &quot;delete_device.changed == true&quot;,
+    &quot;changed&quot;: false,
+    &quot;evaluated_to&quot;: false,
+    &quot;msg&quot;: &quot;Assertion failed&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

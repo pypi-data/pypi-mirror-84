@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="4" time="20.575044870376587">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_webhook-kv8rl7_b" skipped="1" tests="4" time="20.575044870376587">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-qur2l_da-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:7" name="[localhost] meraki: meraki_webhook : Test an API key is provided msg=Please define an API key" time="0.100139">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-qur2l_da-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:12" name="[localhost] meraki: meraki_webhook : Create test network auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, type=appliance" time="7.529185">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297686136&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/AINC_bUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-qur2l_da-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:20" name="[localhost] meraki: meraki_webhook : Create webhook with check mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, name=Test_Hook, url=https://webhook.site/8eb5b76f-b167-4cb8-9fc4-42621b724244, shared_secret=shhhdonttellanyone" time="6.744710">
+			<failure message="404" type="failure">{
+&quot;changed&quot;: false,
+&quot;msg&quot;: 404,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 404,
+&quot;url&quot;: &quot;https://api.meraki.com/api/v1/networks/N_624874448297686136/httpServers&quot;
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-qur2l_da-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:269" name="[localhost] meraki: meraki_webhook : Delete test network auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, net_name={{test_net_name}}" time="6.201011">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="2" failures="0" tests="4" time="4.852258682250977">
+	<testsuite disabled="0" errors="2" failures="0" name="meraki_device-c__wh1nz" skipped="0" tests="4" time="4.852258682250977">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-xfkf1rrj-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:17" name="[localhost] meraki: meraki_device : Create network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, type=appliance, state=present" time="3.752739">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685426&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/0bpMtaUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-xfkf1rrj-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:26" name="[localhost] meraki: meraki_device : set_fact net_id={{net_info.data.id}}" time="0.090911">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_id&quot;: &quot;N_624874448297685426&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-xfkf1rrj-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:29" name="[localhost] meraki: meraki_device : Query status of all devices in an organization auth_key={{auth_key}}, org_name={{test_org_name}}, state=query" time="0.590804">
+			<error message="KeyError: 'serial_lldp_cdp'" type="error">Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1594174274.814427-145-32962167751870/AnsiballZ_meraki_device.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1594174274.814427-145-32962167751870/AnsiballZ_meraki_device.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1594174274.814427-145-32962167751870/AnsiballZ_meraki_device.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_device', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_device_payload_v88i9vda/ansible_meraki_device_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_device.py&quot;, line 430, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_device_payload_v88i9vda/ansible_meraki_device_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_device.py&quot;, line 284, in main
+KeyError: 'serial_lldp_cdp'
+</error>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-xfkf1rrj-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:231" name="[localhost] meraki: meraki_device : Remove a device from a network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, serial={{serial}}, state=absent" time="0.417804">
+			<error message="KeyError: 'serial_lldp_cdp'" type="error">Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1594174275.414889-169-188229749277097/AnsiballZ_meraki_device.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1594174275.414889-169-188229749277097/AnsiballZ_meraki_device.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1594174275.414889-169-188229749277097/AnsiballZ_meraki_device.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_device', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_device_payload_qm34vzpu/ansible_meraki_device_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_device.py&quot;, line 430, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_device_payload_qm34vzpu/ansible_meraki_device_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_device.py&quot;, line 284, in main
+KeyError: 'serial_lldp_cdp'
+</error>
+		</testcase>
+	</testsuite>
+</testsuites>

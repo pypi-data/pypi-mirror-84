@@ -1,0 +1,10 @@
+{
+    "docs": "https://docs.ansible.com/ansible/2.10/dev_guide/testing/sanity/changelog.html", 
+    "results": [
+        {
+            "message": "The test `ansible-test sanity --test changelog` [[explain](https://docs.ansible.com/ansible/2.10/dev_guide/testing/sanity/changelog.html)] failed with 1 error:", 
+            "output": "changelogs/fragments/management_ms_fix.yml:0:0: invalid section: documentation"
+        }
+    ], 
+    "verified": false
+}

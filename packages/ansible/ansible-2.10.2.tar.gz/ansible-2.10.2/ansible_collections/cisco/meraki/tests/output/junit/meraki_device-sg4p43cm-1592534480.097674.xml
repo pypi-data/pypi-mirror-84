@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="0" tests="1" time="3.6867287158966064">
+	<testsuite disabled="0" errors="1" failures="0" name="meraki_device-sg4p43cm" skipped="0" tests="1" time="3.6867287158966064">
+		<testcase classname="/root/ansible/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-5e8ljgdc-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:163" name="[localhost] meraki: meraki_device : Update a device to fix bug 98 auth_key={{auth_key}}, org_id={{test_org_id}}, net_name={{test_wireless_net_name}}, state=present, serial={{serial}}, hostname=abc123" time="3.686729">
+			<error message="KeyError: 'notes'" type="error">Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1592534477.0731134-95-156871465823506/AnsiballZ_meraki_device.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1592534477.0731134-95-156871465823506/AnsiballZ_meraki_device.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1592534477.0731134-95-156871465823506/AnsiballZ_meraki_device.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_device', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_device_payload_jbrivt_9/ansible_meraki_device_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_device.py&quot;, line 444, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_device_payload_jbrivt_9/ansible_meraki_device_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_device.py&quot;, line 404, in main
+  File &quot;/tmp/ansible_meraki_device_payload_jbrivt_9/ansible_meraki_device_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_device.py&quot;, line 257, in construct_payload
+KeyError: 'notes'
+</error>
+		</testcase>
+	</testsuite>
+</testsuites>

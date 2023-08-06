@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="0.9721076488494873">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_ms_ospf-hdeinpx8" skipped="0" tests="1" time="0.9721076488494873">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-u_smodjk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:7" name="[localhost] meraki: meraki_ms_ospf : Create network with type switch auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, type=switch, timezone=America/Chicago" time="0.972108">
+			<failure message="{'url': 'https://api.meraki.com/api/v1/organizations', 'status': 429, 'server': 'nginx', 'date': 'Mon, 10 Aug 2020 17:26:57 GMT', 'content-type': 'text/html', 'content-length': '162', 'connection': 'close', 'msg': 'HTTP Error 429: Too Many Requests', 'body': '&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;429 Too Many Requests&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;429 Too Many Requests&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n'}" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: {
+&quot;body&quot;: &quot;&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;429 Too Many Requests&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;429 Too Many Requests&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;,
+&quot;connection&quot;: &quot;close&quot;,
+&quot;content-length&quot;: &quot;162&quot;,
+&quot;content-type&quot;: &quot;text/html&quot;,
+&quot;date&quot;: &quot;Mon, 10 Aug 2020 17:26:57 GMT&quot;,
+&quot;msg&quot;: &quot;HTTP Error 429: Too Many Requests&quot;,
+&quot;server&quot;: &quot;nginx&quot;,
+&quot;status&quot;: 429,
+&quot;url&quot;: &quot;https://api.meraki.com/api/v1/organizations&quot;
+},
+&quot;response&quot;: null,
+&quot;status&quot;: 429,
+&quot;warnings&quot;: [
+&quot;Rate limiter hit, retry 0&quot;
+]
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

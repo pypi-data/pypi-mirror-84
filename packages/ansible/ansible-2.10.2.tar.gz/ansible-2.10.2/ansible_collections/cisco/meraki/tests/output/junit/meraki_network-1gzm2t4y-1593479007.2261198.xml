@@ -1,0 +1,160 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="1" tests="11" time="14.46222734451294">
+	<testsuite disabled="0" errors="1" failures="1" name="meraki_network-1gzm2t4y" skipped="0" tests="11" time="14.46222734451294">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-rtobj1fk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:7" name="[localhost] meraki: meraki_network : Create network without type auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetwork, timezone=America/Chicago" time="3.158222">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;type parameter is required when creating a network.&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-rtobj1fk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:18" name="[localhost] meraki: meraki_network : assert that=[&quot;create_net_no_type.msg == 'type parameter is required when creating a network.'&quot;]" time="0.089937">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-rtobj1fk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:22" name="[localhost] meraki: meraki_network : Create network without organization auth_key={{ auth_key }}, state=present, net_name=IntTestNetwork, timezone=America/Chicago" time="0.440045">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;org_name or org_id parameters are required&quot;,
+&quot;response&quot;: null,
+&quot;status&quot;: null
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-rtobj1fk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:32" name="[localhost] meraki: meraki_network : Create network with type switch with check mode auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, type=switch, timezone=America/Chicago" time="3.025552">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;id&quot;: &quot;N_12345&quot;,
+&quot;name&quot;: &quot;IntTestNetworkSwitch&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;type&quot;: &quot;switch&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-rtobj1fk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:44" name="[localhost] meraki: meraki_network : debug var=create_net_switch_check" time="0.091416">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;create_net_switch_check&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;id&quot;: &quot;N_12345&quot;,
+            &quot;name&quot;: &quot;IntTestNetworkSwitch&quot;,
+            &quot;organization_id&quot;: &quot;133277&quot;,
+            &quot;time_zone&quot;: &quot;America/Chicago&quot;,
+            &quot;type&quot;: &quot;switch&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-rtobj1fk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:47" name="[localhost] meraki: meraki_network : debug var=create_net_switch_check.data.organization_id" time="0.092287">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;create_net_switch_check.data.organization_id&quot;: &quot;133277&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-rtobj1fk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:50" name="[localhost] meraki: meraki_network : assert that=['create_net_switch_check is changed', 'create_net_switch_check.data is defined', 'create_net_switch_check.data.organization_id == &quot;{{test_org_id |string}}&quot;']" time="0.098608">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-rtobj1fk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:56" name="[localhost] meraki: meraki_network : Create network with type switch auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, type=switch, timezone=America/Chicago" time="4.754154">
+			<error message="UnboundLocalError: local variable 'info' referenced before assignment" type="error">Traceback (most recent call last):
+  File &quot;/tmp/ansible_meraki_network_payload_wf0s3goq/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 408, in request
+  File &quot;/tmp/ansible_meraki_network_payload_wf0s3goq/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 397, in _execute_request
+ansible_collections.cisco.meraki.plugins.module_utils.network.meraki.meraki.HTTPError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1593478999.826448-216-250930701594701/AnsiballZ_meraki_network.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1593478999.826448-216-250930701594701/AnsiballZ_meraki_network.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1593478999.826448-216-250930701594701/AnsiballZ_meraki_network.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_network', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_network_payload_wf0s3goq/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_network.py&quot;, line 402, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_network_payload_wf0s3goq/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_network.py&quot;, line 338, in main
+  File &quot;/tmp/ansible_meraki_network_payload_wf0s3goq/ansible_meraki_network_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 410, in request
+UnboundLocalError: local variable 'info' referenced before assignment
+</error>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-rtobj1fk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:413" name="[localhost] meraki: meraki_network : Delete network without org auth_key={{ auth_key }}, state=absent, net_name=IntTestNetworkSwitch" time="0.409588">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;org_name or org_id parameters are required&quot;,
+&quot;response&quot;: null,
+&quot;status&quot;: null
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-rtobj1fk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:422" name="[localhost] meraki: meraki_network : Delete network by org ID and check mode auth_key={{ auth_key }}, state=absent, org_id={{test_org_id}}, net_name=IntTestNetworkSwitchOrgID" time="2.210702">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 133277\&quot; (type int) was converted to \&quot;auth_key: '133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_network-rtobj1fk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_network/tasks/main.yml:432" name="[localhost] meraki: meraki_network : assert that=['delete_net_org_id_check is changed', 'delete_net_org_id_check.data is defined']" time="0.091715">
+			<failure message="Assertion failed" type="failure">{
+    &quot;assertion&quot;: &quot;delete_net_org_id_check is changed&quot;,
+    &quot;changed&quot;: false,
+    &quot;evaluated_to&quot;: false,
+    &quot;msg&quot;: &quot;Assertion failed&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,31 @@
+{
+    "targets": {
+        "meraki_ms_l3_interface": {
+            "aliases": [
+                "meraki_ms_l3_interface", 
+                "module/", 
+                "module/meraki_ms_l3_interface/", 
+                "module/meraki_ms_l3_interface/meraki_ms_l3_interface", 
+                "network/", 
+                "network/meraki/", 
+                "network/meraki/meraki_ms_l3_interface", 
+                "non_destructive/", 
+                "non_destructive/meraki_ms_l3_interface", 
+                "role/", 
+                "role/meraki_ms_l3_interface"
+            ], 
+            "coverage": true, 
+            "coverage_label": "docker-default", 
+            "modules": [
+                "meraki_ms_l3_interface"
+            ], 
+            "name": "meraki_ms_l3_interface", 
+            "python_version": "3.7", 
+            "run_time_seconds": 20, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }
+    }
+}

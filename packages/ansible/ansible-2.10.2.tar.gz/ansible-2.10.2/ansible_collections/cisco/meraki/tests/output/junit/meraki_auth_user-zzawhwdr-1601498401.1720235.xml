@@ -1,0 +1,146 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="8" time="14.779550552368164">
+	<testsuite disabled="0" errors="0" failures="0" name="meraki_auth_user-zzawhwdr" skipped="1" tests="8" time="14.779550552368164">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_auth_user-inn242zk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_auth_user/tasks/main.yml:7" name="[localhost] meraki: meraki_auth_user : Test an API key is provided msg=Please define an API key" time="0.110163">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_auth_user-inn242zk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_auth_user/tasks/main.yml:12" name="[localhost] meraki: meraki_auth_user : Create a network auth_key={{auth_key}}, state=present, org_name={{ test_org_name }}, net_name={{ test_wireless_net_name }}, type=wireless" time="3.358468">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297686880&quot;,
+&quot;name&quot;: &quot;Home - Wireless&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;wireless&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Wireless/n/mazrGdUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_auth_user-inn242zk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_auth_user/tasks/main.yml:22" name="[localhost] meraki: meraki_auth_user : debug var=net_info" time="0.098234">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;net_info&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;enrollment_string&quot;: null,
+            &quot;id&quot;: &quot;N_624874448297686880&quot;,
+            &quot;name&quot;: &quot;Home - Wireless&quot;,
+            &quot;organization_id&quot;: &quot;133277&quot;,
+            &quot;product_types&quot;: [
+                &quot;wireless&quot;
+            ],
+            &quot;tags&quot;: [],
+            &quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+            &quot;url&quot;: &quot;https://n110.meraki.com/Home-Wireless/n/mazrGdUb/manage/usage/list&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_auth_user-inn242zk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_auth_user/tasks/main.yml:25" name="[localhost] meraki: meraki_auth_user : set_fact net_id={{net_info.data.id}}" time="0.099453">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_id&quot;: &quot;N_624874448297686880&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_auth_user-inn242zk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_auth_user/tasks/main.yml:28" name="[localhost] meraki: meraki_auth_user : Create an authenticated user auth_key={{auth_key}}, state=query, org_name={{ test_org_name }}, net_name={{ test_wireless_net_name }}, type=802.1X, name=Jim Tester, email={{email_prefix}}@{{email_domain}}, password=P@ssword, email_password_to_user=True" time="6.676624">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: [],
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;Module did not set no_log for email_password_to_user&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_auth_user-inn242zk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_auth_user/tasks/main.yml:42" name="[localhost] meraki: meraki_auth_user : debug var=create_user" time="0.098977">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;create_user&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: [],
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;Module did not set no_log for email_password_to_user&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_auth_user-inn242zk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_auth_user/tasks/main.yml:45" name="[localhost] meraki: meraki_auth_user : Query all authenticated users auth_key={{auth_key}}, state=query, org_name={{ test_org_name }}, net_name={{ test_wireless_net_name }}" time="4.238770">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: [],
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;Module did not set no_log for email_password_to_user&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_auth_user-inn242zk-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_auth_user/tasks/main.yml:54" name="[localhost] meraki: meraki_auth_user : debug var=query_all" time="0.098861">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;query_all&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: [],
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;Module did not set no_log for email_password_to_user&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

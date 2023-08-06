@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="0" tests="1" time="6.936611652374268">
+	<testsuite disabled="0" errors="1" failures="0" name="meraki_alert-_htciuj_" skipped="0" tests="1" time="6.936611652374268">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-w_ru06me-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:74" name="[localhost] meraki: meraki_alert : Update settings idempotent auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=present, default_destinations={'emails': ['{{ email_prefix }}@{{ email_domain }}', '{{ email_prefix }}2@{{ email_domain }}'], 'all_admins': True, 'snmp': False}, alerts=[{'type': 'gatewayDown', 'enabled': True, 'filters': {'timeout': 60}, 'alert_destinations': {'emails': ['{{ email_prefix }}@{{ email_domain }}', '{{ email_prefix }}2@{{ email_domain }}'], 'all_admins': True, 'snmp': False}}]" time="6.936612">
+			<error message="AttributeError: 'MerakiModule' object has no attribute 'meraki'" type="error">Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1602182642.1023219-107-60762251384375/AnsiballZ_meraki_alert.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1602182642.1023219-107-60762251384375/AnsiballZ_meraki_alert.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1602182642.1023219-107-60762251384375/AnsiballZ_meraki_alert.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_alert', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_alert_payload_hp2k2b42/ansible_meraki_alert_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_alert.py&quot;, line 238, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_alert_payload_hp2k2b42/ansible_meraki_alert_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_alert.py&quot;, line 220, in main
+  File &quot;/tmp/ansible_meraki_alert_payload_hp2k2b42/ansible_meraki_alert_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_alert.py&quot;, line 150, in construct_payload
+AttributeError: 'MerakiModule' object has no attribute 'meraki'
+</error>
+		</testcase>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,185 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="2" failures="0" tests="6" time="11.891311407089233">
+	<testsuite disabled="0" errors="2" failures="0" name="meraki_intrusion_prevention-kpbrjyl5" skipped="1" tests="6" time="11.891311407089233">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-3iz0p63c-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:7" name="[localhost] meraki: meraki_intrusion_prevention : Test an API key is provided msg=Please define an API key" time="0.101159">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-3iz0p63c-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:12" name="[localhost] meraki: meraki_intrusion_prevention : Create test network auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}} - IPS, type=appliance" time="5.460948">
+			<system-out>{
+    &quot;ansible_facts&quot;: {
+        &quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+    },
+    &quot;changed&quot;: true,
+    &quot;data&quot;: {
+        &quot;disable_my_meraki_com&quot;: false,
+        &quot;disable_remote_status_page&quot;: true,
+        &quot;enrollment_string&quot;: null,
+        &quot;id&quot;: &quot;N_624874448297685063&quot;,
+        &quot;name&quot;: &quot;Home - Appliance - IPS&quot;,
+        &quot;organization_id&quot;: &quot;133277&quot;,
+        &quot;product_types&quot;: [
+            &quot;appliance&quot;
+        ],
+        &quot;tags&quot;: &quot;&quot;,
+        &quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+        &quot;type&quot;: &quot;appliance&quot;,
+        &quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance-I/n/wdiTjaUb/manage/usage/list&quot;
+    },
+    &quot;deprecations&quot;: [
+        {
+            &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+            &quot;version&quot;: &quot;2.12&quot;
+        }
+    ],
+    &quot;invocation&quot;: {
+        &quot;module_args&quot;: {
+            &quot;auth_key&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+            &quot;disable_my_meraki&quot;: null,
+            &quot;enable_my_meraki&quot;: null,
+            &quot;enable_remote_status_page&quot;: null,
+            &quot;enable_vlans&quot;: null,
+            &quot;follow_redirects&quot;: &quot;all&quot;,
+            &quot;host&quot;: &quot;api.meraki.com&quot;,
+            &quot;internal_error_retry_time&quot;: 60,
+            &quot;net_id&quot;: null,
+            &quot;net_name&quot;: &quot;Home - Appliance - IPS&quot;,
+            &quot;org_id&quot;: null,
+            &quot;org_name&quot;: &quot;kbreit@insight.com&quot;,
+            &quot;output_format&quot;: &quot;snakecase&quot;,
+            &quot;output_level&quot;: &quot;normal&quot;,
+            &quot;protocol&quot;: &quot;https&quot;,
+            &quot;rate_limit_retry_time&quot;: 165,
+            &quot;state&quot;: &quot;present&quot;,
+            &quot;tags&quot;: null,
+            &quot;timeout&quot;: 30,
+            &quot;timezone&quot;: null,
+            &quot;type&quot;: [
+                &quot;appliance&quot;
+            ],
+            &quot;use_https&quot;: true,
+            &quot;use_proxy&quot;: false,
+            &quot;validate_certs&quot;: true
+        }
+    },
+    &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+    &quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-3iz0p63c-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:21" name="[localhost] meraki: meraki_intrusion_prevention : debug var=net" time="0.122661">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;net&quot;: {
+        &quot;ansible_facts&quot;: {
+            &quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+        },
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;disable_my_meraki_com&quot;: false,
+            &quot;disable_remote_status_page&quot;: true,
+            &quot;enrollment_string&quot;: null,
+            &quot;id&quot;: &quot;N_624874448297685063&quot;,
+            &quot;name&quot;: &quot;Home - Appliance - IPS&quot;,
+            &quot;organization_id&quot;: &quot;133277&quot;,
+            &quot;product_types&quot;: [
+                &quot;appliance&quot;
+            ],
+            &quot;tags&quot;: &quot;&quot;,
+            &quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+            &quot;type&quot;: &quot;appliance&quot;,
+            &quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance-I/n/wdiTjaUb/manage/usage/list&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 201
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-3iz0p63c-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:24" name="[localhost] meraki: meraki_intrusion_prevention : Set whitelist for organization in check mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, whitelisted_rules=[{'rule_id': 'meraki:intrusion/snort/GID/01/SID/5805', 'message': 'Test rule'}]" time="0.152317">
+			<error message="ImportError: No module named '__init__'" type="error">Traceback (most recent call last):
+  File &quot;/root/ansible/lib/ansible/executor/task_executor.py&quot;, line 155, in run
+    res = self._execute()
+  File &quot;/root/ansible/lib/ansible/executor/task_executor.py&quot;, line 650, in _execute
+    result = self._handler.run(task_vars=variables)
+  File &quot;/root/ansible/lib/ansible/plugins/action/normal.py&quot;, line 46, in run
+    result = merge_hash(result, self._execute_module(task_vars=task_vars, wrap_async=wrap_async))
+  File &quot;/root/ansible/lib/ansible/plugins/action/__init__.py&quot;, line 859, in _execute_module
+    (module_style, shebang, module_data, module_path) = self._configure_module(module_name=module_name, module_args=module_args, task_vars=task_vars)
+  File &quot;/root/ansible/lib/ansible/plugins/action/__init__.py&quot;, line 232, in _configure_module
+    **become_kwargs)
+  File &quot;/root/ansible/lib/ansible/executor/module_common.py&quot;, line 1289, in modify_module
+    environment=environment)
+  File &quot;/root/ansible/lib/ansible/executor/module_common.py&quot;, line 1126, in _find_module_utils
+    py_module_cache, zf)
+  File &quot;/root/ansible/lib/ansible/executor/module_common.py&quot;, line 873, in recursive_finder
+    [os.path.join(p, *relative_module_utils[:-1]) for p in module_utils_paths])
+  File &quot;/root/ansible/lib/ansible/executor/module_common.py&quot;, line 614, in __init__
+    raise ImportError(&quot;No module named '%s'&quot; % name)
+ImportError: No module named '__init__'
+</error>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-3iz0p63c-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:266" name="[localhost] meraki: meraki_intrusion_prevention : Delete network auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, net_name={{test_net_name}} - IPS" time="5.919114">
+			<system-out>{
+    &quot;changed&quot;: true,
+    &quot;invocation&quot;: {
+        &quot;module_args&quot;: {
+            &quot;auth_key&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+            &quot;disable_my_meraki&quot;: null,
+            &quot;enable_my_meraki&quot;: null,
+            &quot;enable_remote_status_page&quot;: null,
+            &quot;enable_vlans&quot;: null,
+            &quot;follow_redirects&quot;: &quot;all&quot;,
+            &quot;host&quot;: &quot;api.meraki.com&quot;,
+            &quot;internal_error_retry_time&quot;: 60,
+            &quot;net_id&quot;: null,
+            &quot;net_name&quot;: &quot;Home - Appliance - IPS&quot;,
+            &quot;org_id&quot;: null,
+            &quot;org_name&quot;: &quot;kbreit@insight.com&quot;,
+            &quot;output_format&quot;: &quot;snakecase&quot;,
+            &quot;output_level&quot;: &quot;normal&quot;,
+            &quot;protocol&quot;: &quot;https&quot;,
+            &quot;rate_limit_retry_time&quot;: 165,
+            &quot;state&quot;: &quot;absent&quot;,
+            &quot;tags&quot;: null,
+            &quot;timeout&quot;: 30,
+            &quot;timezone&quot;: null,
+            &quot;type&quot;: null,
+            &quot;use_https&quot;: true,
+            &quot;use_proxy&quot;: false,
+            &quot;validate_certs&quot;: true
+        }
+    },
+    &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+    &quot;status&quot;: 204
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-3iz0p63c-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:274" name="[localhost] meraki: meraki_intrusion_prevention : Clear rules from organization with check mode auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, whitelisted_rules=[None]" time="0.135113">
+			<error message="ImportError: No module named '__init__'" type="error">Traceback (most recent call last):
+  File &quot;/root/ansible/lib/ansible/executor/task_executor.py&quot;, line 155, in run
+    res = self._execute()
+  File &quot;/root/ansible/lib/ansible/executor/task_executor.py&quot;, line 650, in _execute
+    result = self._handler.run(task_vars=variables)
+  File &quot;/root/ansible/lib/ansible/plugins/action/normal.py&quot;, line 46, in run
+    result = merge_hash(result, self._execute_module(task_vars=task_vars, wrap_async=wrap_async))
+  File &quot;/root/ansible/lib/ansible/plugins/action/__init__.py&quot;, line 859, in _execute_module
+    (module_style, shebang, module_data, module_path) = self._configure_module(module_name=module_name, module_args=module_args, task_vars=task_vars)
+  File &quot;/root/ansible/lib/ansible/plugins/action/__init__.py&quot;, line 232, in _configure_module
+    **become_kwargs)
+  File &quot;/root/ansible/lib/ansible/executor/module_common.py&quot;, line 1289, in modify_module
+    environment=environment)
+  File &quot;/root/ansible/lib/ansible/executor/module_common.py&quot;, line 1126, in _find_module_utils
+    py_module_cache, zf)
+  File &quot;/root/ansible/lib/ansible/executor/module_common.py&quot;, line 873, in recursive_finder
+    [os.path.join(p, *relative_module_utils[:-1]) for p in module_utils_paths])
+  File &quot;/root/ansible/lib/ansible/executor/module_common.py&quot;, line 614, in __init__
+    raise ImportError(&quot;No module named '%s'&quot; % name)
+ImportError: No module named '__init__'
+</error>
+		</testcase>
+	</testsuite>
+</testsuites>

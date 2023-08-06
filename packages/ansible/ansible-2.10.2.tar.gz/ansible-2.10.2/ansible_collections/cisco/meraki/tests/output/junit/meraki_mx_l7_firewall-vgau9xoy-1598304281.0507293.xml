@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="0" tests="1" time="5.710051536560059">
+	<testsuite disabled="0" errors="1" failures="0" name="meraki_mx_l7_firewall-vgau9xoy" skipped="0" tests="1" time="5.710051536560059">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l7_firewall-w2xi9mnf-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l7_firewall/tasks/tests.yml:346" name="[localhost] meraki: meraki_mx_l7_firewall : Create firewall rule for whitelisted countries with idempotency auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=TestNetAppliance, state=present, rules=[{'type': 'whitelisted_countries', 'countries': ['US', 'FR']}]" time="5.710052">
+			<error message="TypeError: 'NoneType' object is not subscriptable" type="error">Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1598304275.383574-108-250215567483392/AnsiballZ_meraki_mx_l7_firewall.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1598304275.383574-108-250215567483392/AnsiballZ_meraki_mx_l7_firewall.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1598304275.383574-108-250215567483392/AnsiballZ_meraki_mx_l7_firewall.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_mx_l7_firewall', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_mx_l7_firewall_payload_2sykwpfz/ansible_meraki_mx_l7_firewall_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_mx_l7_firewall.py&quot;, line 479, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_mx_l7_firewall_payload_2sykwpfz/ansible_meraki_mx_l7_firewall_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_mx_l7_firewall.py&quot;, line 461, in main
+  File &quot;/tmp/ansible_meraki_mx_l7_firewall_payload_2sykwpfz/ansible_meraki_mx_l7_firewall_payload.zip/ansible_collections/cisco/meraki/plugins/module_utils/network/meraki/meraki.py&quot;, line 198, in generate_diff
+TypeError: 'NoneType' object is not subscriptable
+</error>
+		</testcase>
+	</testsuite>
+</testsuites>

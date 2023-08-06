@@ -1,0 +1,30 @@
+{
+    "targets": {
+        "meraki_mx_uplink": {
+            "aliases": [
+                "meraki_mx_uplink", 
+                "network/", 
+                "network/meraki/", 
+                "network/meraki/meraki_mx_uplink", 
+                "non_destructive/", 
+                "non_destructive/meraki_mx_uplink", 
+                "non_module/", 
+                "non_module/meraki_mx_uplink", 
+                "role/", 
+                "role/meraki_mx_uplink", 
+                "unsupported/", 
+                "unsupported/meraki_mx_uplink"
+            ], 
+            "coverage": true, 
+            "coverage_label": "docker-default", 
+            "modules": [], 
+            "name": "meraki_mx_uplink", 
+            "python_version": "3.7", 
+            "run_time_seconds": 32, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }
+    }
+}

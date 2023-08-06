@@ -1,0 +1,250 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="14" time="68.32159280776978">
+	<testsuite disabled="0" errors="0" failures="0" name="meraki_mx_l2_interface-mvr9a8c4" skipped="0" tests="14" time="68.32159280776978">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-h9ts2l68-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:7" name="[localhost] meraki: meraki_mx_l2_interface : Create network with type appliance auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name={{test_appliance_net_name}}, type=appliance, timezone=America/Chicago" time="4.674894">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297687198&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;notes&quot;: null,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/F0XKdaUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-h9ts2l68-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:18" name="[localhost] meraki: meraki_mx_l2_interface : Claim a device into a network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_appliance_net_name}}, serial={{serial_appliance}}, state=present" time="10.697036">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: [
+{}
+],
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-h9ts2l68-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:27" name="[localhost] meraki: meraki_mx_l2_interface : Enable VLAN support on appliance network auth_key={{ auth_key }}, state=present, org_name={{ test_org_name }}, net_name={{test_appliance_net_name}}, enable_vlans=True" time="6.223854">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;vlans_enabled&quot;: true
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;False&quot;,
+&quot;False&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-h9ts2l68-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:36" name="[localhost] meraki: meraki_mx_l2_interface : Create a VLAN auth_key={{ auth_key }}, org_name={{ test_org_name }}, net_name={{test_appliance_net_name}}, state=present, vlan_id=10, name=TestVLAN, subnet=192.0.10.0/24, appliance_ip=192.0.10.1" time="6.144243">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;appliance_ip&quot;: &quot;192.0.10.1&quot;,
+&quot;dhcp_boot_options_enabled&quot;: false,
+&quot;dhcp_handling&quot;: &quot;Run a DHCP server&quot;,
+&quot;dhcp_lease_time&quot;: &quot;1 day&quot;,
+&quot;dhcp_options&quot;: [],
+&quot;dns_nameservers&quot;: &quot;upstream_dns&quot;,
+&quot;fixed_ip_assignments&quot;: {},
+&quot;id&quot;: 10,
+&quot;name&quot;: &quot;TestVLAN&quot;,
+&quot;network_id&quot;: &quot;N_624874448297687198&quot;,
+&quot;reserved_ip_ranges&quot;: [],
+&quot;subnet&quot;: &quot;192.0.10.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-h9ts2l68-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:48" name="[localhost] meraki: meraki_mx_l2_interface : Query layer 2 interface settings auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name={{test_appliance_net_name}}, state=query" time="4.284694">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: [
+{
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;drop_untagged_traffic&quot;: true,
+&quot;enabled&quot;: true,
+&quot;number&quot;: 2,
+&quot;type&quot;: &quot;trunk&quot;
+},
+{
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;drop_untagged_traffic&quot;: true,
+&quot;enabled&quot;: true,
+&quot;number&quot;: 3,
+&quot;type&quot;: &quot;trunk&quot;
+},
+{
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;drop_untagged_traffic&quot;: true,
+&quot;enabled&quot;: true,
+&quot;number&quot;: 4,
+&quot;type&quot;: &quot;trunk&quot;
+}
+],
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-h9ts2l68-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:57" name="[localhost] meraki: meraki_mx_l2_interface : assert that=['query_all.data is defined']" time="0.091970">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-h9ts2l68-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:61" name="[localhost] meraki: meraki_mx_l2_interface : Query a single layer 2 interface settings auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name={{test_appliance_net_name}}, state=query, number=2" time="5.190820">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;allowed_vlans&quot;: &quot;all&quot;,
+&quot;drop_untagged_traffic&quot;: true,
+&quot;enabled&quot;: true,
+&quot;number&quot;: 2,
+&quot;type&quot;: &quot;trunk&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-h9ts2l68-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:71" name="[localhost] meraki: meraki_mx_l2_interface : assert that=['query_one.data is defined']" time="0.092652">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-h9ts2l68-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:75" name="[localhost] meraki: meraki_mx_l2_interface : Update interface configuration auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name={{test_appliance_net_name}}, state=present, number=2, type=access, vlan=10" time="6.669167">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;access_policy&quot;: &quot;open&quot;,
+&quot;drop_untagged_traffic&quot;: false,
+&quot;enabled&quot;: true,
+&quot;number&quot;: 2,
+&quot;type&quot;: &quot;access&quot;,
+&quot;vlan&quot;: 10
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;False&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-h9ts2l68-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:87" name="[localhost] meraki: meraki_mx_l2_interface : assert that=['update.data is defined', 'update.data.vlan == 10', 'update is changed']" time="0.099350">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-h9ts2l68-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:93" name="[localhost] meraki: meraki_mx_l2_interface : Update interface configuration with idempotency auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name={{test_appliance_net_name}}, state=present, number=2, type=access, vlan=10" time="6.540850">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;access_policy&quot;: &quot;open&quot;,
+&quot;drop_untagged_traffic&quot;: false,
+&quot;enabled&quot;: true,
+&quot;number&quot;: 2,
+&quot;type&quot;: &quot;access&quot;,
+&quot;vlan&quot;: 10
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;False&quot;,
+&quot;False&quot;,
+&quot;False&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-h9ts2l68-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:105" name="[localhost] meraki: meraki_mx_l2_interface : assert that=['update_idempotent.data is defined', 'update_idempotent.data.vlan == 10', 'update_idempotent is not changed']" time="0.100308">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-h9ts2l68-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:117" name="[localhost] meraki: meraki_mx_l2_interface : Remove device from network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_appliance_net_name}}, serial={{serial_appliance}}, state=absent" time="10.926059">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mx_l2_interface-h9ts2l68-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mx_l2_interface/tasks/main.yml:126" name="[localhost] meraki: meraki_mx_l2_interface : Delete network auth_key={{ auth_key }}, state=absent, org_name={{test_org_name}}, net_name={{test_appliance_net_name}}" time="6.585696">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

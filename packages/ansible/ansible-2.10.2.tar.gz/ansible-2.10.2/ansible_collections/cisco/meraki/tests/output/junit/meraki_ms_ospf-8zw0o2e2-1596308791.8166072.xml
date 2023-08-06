@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="2" time="4.372236013412476">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_ms_ospf-8zw0o2e2" skipped="0" tests="2" time="4.372236013412476">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-xk3v9ikc-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:7" name="[localhost] meraki: meraki_ms_ospf : Create network with type switch auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, type=switch, timezone=America/Chicago" time="3.715282">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685887&quot;,
+&quot;name&quot;: &quot;IntTestNetworkSwitch&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;switch&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkSw/n/pqmb_bUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_ospf-xk3v9ikc-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_ospf/tasks/main.yml:27" name="[localhost] meraki: meraki_ms_ospf : Query OSPF settings auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, state=query" time="0.656954">
+			<failure message="Unsupported parameters for (meraki_ms_ospf) module: net_name Supported parameters include: auth_key, default_gateway, host, interface_ip, internal_error_retry_time, multicast_routing, name, org_id, org_name, ospf_settings, output_format, output_level, rate_limit_retry_time, serial, state, subnet, timeout, use_https, use_proxy, validate_certs, vlan_id" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;Unsupported parameters for (meraki_ms_ospf) module: net_name Supported parameters include: auth_key, default_gateway, host, interface_ip, internal_error_retry_time, multicast_routing, name, org_id, org_name, ospf_settings, output_format, output_level, rate_limit_retry_time, serial, state, subnet, timeout, use_https, use_proxy, validate_certs, vlan_id&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

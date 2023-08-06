@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="5" time="11.162163972854614">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_device-fh6_4mui" skipped="0" tests="5" time="11.162163972854614">
+		<testcase classname="/root/ansible/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-9olst9ty-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:17" name="[localhost] meraki: meraki_device : Create network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, type=appliance, state=present" time="3.787787">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;disable_my_meraki_com&quot;: false,
+&quot;disable_remote_status_page&quot;: true,
+&quot;id&quot;: &quot;N_624874448297684981&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: null,
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;type&quot;: &quot;appliance&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-9olst9ty-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:26" name="[localhost] meraki: meraki_device : set_fact net_id={{net_info.data.id}}" time="0.654771">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_id&quot;: &quot;N_624874448297684981&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-9olst9ty-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:40" name="[localhost] meraki: meraki_device : Claim a device into a network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, serial={{serial}}, state=present" time="5.405345">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;address&quot;: &quot;1060 W. Addison St., Chicago, IL&quot;,
+&quot;firmware&quot;: &quot;Not running configured version&quot;,
+&quot;floor_plan_id&quot;: null,
+&quot;lan_ip&quot;: &quot;192.168.15.186&quot;,
+&quot;lat&quot;: 41.948038,
+&quot;lng&quot;: -87.65568,
+&quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+&quot;model&quot;: &quot;MX60&quot;,
+&quot;name&quot;: &quot;mr26&quot;,
+&quot;network_id&quot;: &quot;N_624874448297684981&quot;,
+&quot;notes&quot;: &quot;Test device notes&quot;,
+&quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;,
+&quot;tags&quot;: &quot; recently-added &quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/IYeD2bUb/manage/nodes/new_list/4321982&quot;,
+&quot;wan1_ip&quot;: &quot;192.168.15.186&quot;,
+&quot;wan2_ip&quot;: null
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-9olst9ty-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:50" name="[localhost] meraki: meraki_device : debug msg={{claim_device}}" time="0.656169">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;address&quot;: &quot;1060 W. Addison St., Chicago, IL&quot;,
+            &quot;firmware&quot;: &quot;Not running configured version&quot;,
+            &quot;floor_plan_id&quot;: null,
+            &quot;lan_ip&quot;: &quot;192.168.15.186&quot;,
+            &quot;lat&quot;: 41.948038,
+            &quot;lng&quot;: -87.65568,
+            &quot;mac&quot;: &quot;00:18:0a:41:f2:be&quot;,
+            &quot;model&quot;: &quot;MX60&quot;,
+            &quot;name&quot;: &quot;mr26&quot;,
+            &quot;network_id&quot;: &quot;N_624874448297684981&quot;,
+            &quot;notes&quot;: &quot;Test device notes&quot;,
+            &quot;serial&quot;: &quot;Q2BN-MCH8-VEL5&quot;,
+            &quot;tags&quot;: &quot; recently-added &quot;,
+            &quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/IYeD2bUb/manage/nodes/new_list/4321982&quot;,
+            &quot;wan1_ip&quot;: &quot;192.168.15.186&quot;,
+            &quot;wan2_ip&quot;: null
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-9olst9ty-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:53" name="[localhost] meraki: meraki_device : assert that=['claim_device.changed == true']" time="0.658091">
+			<failure message="Assertion failed" type="failure">{
+    &quot;assertion&quot;: &quot;claim_device.changed == true&quot;,
+    &quot;changed&quot;: false,
+    &quot;evaluated_to&quot;: false,
+    &quot;msg&quot;: &quot;Assertion failed&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,65 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="6" time="18.702372550964355">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_config_template-vzdl5jj3" skipped="1" tests="6" time="18.702372550964355">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_config_template-wnoji32n-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_config_template/tasks/main.yml:7" name="[localhost] meraki: meraki_config_template : Test an API key is provided msg=Please define an API key" time="0.103872">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_config_template-wnoji32n-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_config_template/tasks/main.yml:12" name="[localhost] meraki: meraki_config_template : Query all configuration templates auth_key={{auth_key}}, state=query, org_name={{test_org_name}}" time="5.581165">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: false,
+&quot;data&quot;: [
+{
+&quot;id&quot;: &quot;L_624874448297661409&quot;,
+&quot;name&quot;: &quot;AnsibleTemplate&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;,
+&quot;switch&quot;,
+&quot;wireless&quot;
+],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;
+}
+],
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_config_template-wnoji32n-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_config_template/tasks/main.yml:19" name="[localhost] meraki: meraki_config_template : Delete non-existant configuration template auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, config_template=FakeConfigTemplate" time="4.479324">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;msg&quot;: &quot;No configuration template named FakeConfigTemplate found&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_config_template-wnoji32n-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_config_template/tasks/main.yml:28" name="[localhost] meraki: meraki_config_template : assert that=['&quot;No configuration template named&quot; in deleted.msg']" time="0.091951">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_config_template-wnoji32n-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_config_template/tasks/main.yml:32" name="[localhost] meraki: meraki_config_template : Create a network auth_key={{auth_key}}, state=present, org_name={{ test_org_name }}, net_name={{ test_net_name }}, type=appliance" time="4.858411">
+			<failure message="HTTP request to https://api.meraki.com/api/v1/organizations/133277/networks failed with error code 400" type="failure">{
+&quot;changed&quot;: false,
+&quot;msg&quot;: &quot;HTTP request to https://api.meraki.com/api/v1/organizations/133277/networks failed with error code 400&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 400
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_config_template-wnoji32n-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_config_template/tasks/main.yml:190" name="[localhost] meraki: meraki_config_template : Delete network auth_key={{auth_key}}, state=absent, org_name={{ test_org_name }}, net_name={{ test_net_name }}" time="3.587650">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="1.010610580444336">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_ms_static_route-xtam1pm0" skipped="0" tests="1" time="1.010610580444336">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_static_route-45xq78ks-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_static_route/tasks/main.yml:124" name="[localhost] meraki: meraki_ms_static_route : Enable OSPF auth_key=abc123, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, state=present, enabled=True, hello_timer=20, dead_timer=60, areas=[{'area_id': 0, 'area_name': 'Backbone', 'area_type': 'normal'}], md5_authentication_enabled=False" time="1.010611">
+			<failure message="401" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: 401,
+&quot;response&quot;: null,
+&quot;status&quot;: 401,
+&quot;url&quot;: &quot;https://api.meraki.com/api/v1/organizations&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

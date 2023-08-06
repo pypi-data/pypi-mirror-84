@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="0" tests="5" time="10.064942836761475">
+	<testsuite disabled="0" errors="1" failures="0" name="meraki_ms_l3_interface-57w114vt" skipped="0" tests="5" time="10.064942836761475">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_l3_interface-j05e0ty1-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_l3_interface/tasks/main.yml:7" name="[localhost] meraki: meraki_ms_l3_interface : Create network with type switch auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, type=switch, timezone=America/Chicago" time="3.306187">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685887&quot;,
+&quot;name&quot;: &quot;IntTestNetworkSwitch&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;switch&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkSw/n/pqmb_bUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_l3_interface-j05e0ty1-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_l3_interface/tasks/main.yml:18" name="[localhost] meraki: meraki_ms_l3_interface : Claim a device into a network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name=IntTestNetworkSwitch, serial=QBSB-VLNE-E299, state=present" time="4.639637">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;address&quot;: &quot;&quot;,
+&quot;firmware&quot;: &quot;Not running configured version&quot;,
+&quot;floor_plan_id&quot;: null,
+&quot;lan_ip&quot;: null,
+&quot;lat&quot;: 37.4180951010362,
+&quot;lng&quot;: -122.098531723022,
+&quot;mac&quot;: &quot;4c:c8:a1:09:00:63&quot;,
+&quot;model&quot;: &quot;MS425-32&quot;,
+&quot;network_id&quot;: &quot;N_624874448297685887&quot;,
+&quot;serial&quot;: &quot;QBSB-VLNE-E299&quot;,
+&quot;switch_profile_id&quot;: null,
+&quot;tags&quot;: [],
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkSw/n/pqmb_bUb/manage/nodes/new_list/84424578891875&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_l3_interface-j05e0ty1-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_l3_interface/tasks/main.yml:27" name="[localhost] meraki: meraki_ms_l3_interface : Query all l3 interfaces auth_key={{ auth_key }}, state=query, serial=QBSB-VLNE-E299" time="1.544535">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: [],
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_l3_interface-j05e0ty1-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_l3_interface/tasks/main.yml:35" name="[localhost] meraki: meraki_ms_l3_interface : debug var=query_all" time="0.099097">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;query_all&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: [],
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_l3_interface-j05e0ty1-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_l3_interface/tasks/main.yml:38" name="[localhost] meraki: meraki_ms_l3_interface : Create l3 interface auth_key={{ auth_key }}, state=present, serial=QBSB-VLNE-E299, name=Test L3 interface, subnet=192.168.1.2, multicast_routing=disabled, vlan_id=10, default_gateway=192.168.1.1, ospf_settings={'area': 0, 'cost': 1, 'is_passive_enabled': True}" time="0.475487">
+			<error message="KeyError: 'ospfSettings'" type="error">Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1596308069.7396708-218-169082579732786/AnsiballZ_meraki_ms_l3_interface.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1596308069.7396708-218-169082579732786/AnsiballZ_meraki_ms_l3_interface.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1596308069.7396708-218-169082579732786/AnsiballZ_meraki_ms_l3_interface.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_ms_l3_interface', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_ms_l3_interface_payload_i4hll5r8/ansible_meraki_ms_l3_interface_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_ms_l3_interface.py&quot;, line 220, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_ms_l3_interface_payload_i4hll5r8/ansible_meraki_ms_l3_interface_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_ms_l3_interface.py&quot;, line 207, in main
+  File &quot;/tmp/ansible_meraki_ms_l3_interface_payload_i4hll5r8/ansible_meraki_ms_l3_interface_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_ms_l3_interface.py&quot;, line 147, in construct_payload
+KeyError: 'ospfSettings'
+</error>
+		</testcase>
+	</testsuite>
+</testsuites>

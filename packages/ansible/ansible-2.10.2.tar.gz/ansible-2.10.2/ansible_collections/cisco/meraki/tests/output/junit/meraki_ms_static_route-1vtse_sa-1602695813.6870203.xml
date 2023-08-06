@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="4" time="2.8886878490448">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_ms_static_route-1vtse_sa" skipped="0" tests="4" time="2.8886878490448">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_static_route-ckmg09jh-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_static_route/tasks/main.yml:74" name="[localhost] meraki: meraki_ms_static_route : Create static route auth_key={{auth_key}}, state=present, serial={{ serial_switch_l3 }}, name=Test Route, subnet=192.168.18.0/24, next_hop_ip=192.168.17.1" time="1.477240">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;advertise_via_ospf_enabled&quot;: false,
+&quot;name&quot;: &quot;Test Route&quot;,
+&quot;next_hop_ip&quot;: &quot;192.168.17.1&quot;,
+&quot;prefer_over_ospf_routes_enabled&quot;: true,
+&quot;static_route_id&quot;: &quot;624874448297661472&quot;,
+&quot;subnet&quot;: &quot;192.168.18.0/24&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_static_route-ckmg09jh-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_static_route/tasks/main.yml:85" name="[localhost] meraki: meraki_ms_static_route : debug var=create" time="0.092601">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;create&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;advertise_via_ospf_enabled&quot;: false,
+            &quot;name&quot;: &quot;Test Route&quot;,
+            &quot;next_hop_ip&quot;: &quot;192.168.17.1&quot;,
+            &quot;prefer_over_ospf_routes_enabled&quot;: true,
+            &quot;static_route_id&quot;: &quot;624874448297661472&quot;,
+            &quot;subnet&quot;: &quot;192.168.18.0/24&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_static_route-ckmg09jh-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_static_route/tasks/main.yml:88" name="[localhost] meraki: meraki_ms_static_route : set_fact static_route_id={{ create.data.static_route_id }}" time="0.091213">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;static_route_id&quot;: &quot;624874448297661472&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_static_route-ckmg09jh-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_static_route/tasks/main.yml:139" name="[localhost] meraki: meraki_ms_static_route : Update static route auth_key={{auth_key}}, state=present, serial={{ serial_switch_l3 }}, static_route_id={{static_route_id}}, name=Test Route to 1.1.1.1, subnet=192.168.17.0/24, next_hop_ip=192.168.17.1, advertise_via_ospf_enabled=True" time="1.227634">
+			<failure message="{'name': 'Test Route to 1.1.1.1', 'subnet': '192.168.17.0/24', 'nextHopIp': '192.168.17.1', 'advertiseViaOspfEnabled': True}" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: {
+&quot;advertiseViaOspfEnabled&quot;: true,
+&quot;name&quot;: &quot;Test Route to 1.1.1.1&quot;,
+&quot;nextHopIp&quot;: &quot;192.168.17.1&quot;,
+&quot;subnet&quot;: &quot;192.168.17.0/24&quot;
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

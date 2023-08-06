@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="2.056272268295288">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_switchport-vs699wyc" skipped="0" tests="1" time="2.056272268295288">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-mybb28lo-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:53" name="[localhost] meraki: meraki_switchport : Enable switchport auth_key={{auth_key}}, state=present, serial={{ serial_switch }}, number=7, enabled=True" time="2.056272">
+			<failure message="{'number': '7', 'enabled': True, 'type': 'access', 'allowedVlans': 'all', 'poeEnabled': True, 'isolationEnabled': False, 'rstpEnabled': True, 'stpGuard': 'disabled', 'linkNegotiation': 'Auto negotiate', 'name': None, 'tags': None, 'vlan': 1, 'voiceVlan': None, 'accessPolicyNumber': None}" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: {
+&quot;accessPolicyNumber&quot;: null,
+&quot;allowedVlans&quot;: &quot;all&quot;,
+&quot;enabled&quot;: true,
+&quot;isolationEnabled&quot;: false,
+&quot;linkNegotiation&quot;: &quot;Auto negotiate&quot;,
+&quot;name&quot;: null,
+&quot;number&quot;: &quot;7&quot;,
+&quot;poeEnabled&quot;: true,
+&quot;rstpEnabled&quot;: true,
+&quot;stpGuard&quot;: &quot;disabled&quot;,
+&quot;tags&quot;: null,
+&quot;type&quot;: &quot;access&quot;,
+&quot;vlan&quot;: 1,
+&quot;voiceVlan&quot;: null
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 7\&quot; (type int) was converted to \&quot;auth_key: '7'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

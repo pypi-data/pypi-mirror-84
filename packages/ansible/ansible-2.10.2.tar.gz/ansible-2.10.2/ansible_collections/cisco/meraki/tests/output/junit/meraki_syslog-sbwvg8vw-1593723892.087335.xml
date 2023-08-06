@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="3.9771571159362793">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_syslog-sbwvg8vw" skipped="0" tests="1" time="3.9771571159362793">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_syslog-w_0etboa-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_syslog/tasks/main.yml:61" name="[localhost] meraki: meraki_syslog : Set syslog server with idempotency auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, state=present, servers=[{'host': '192.0.1.2', 'port': 514, 'roles': ['Appliance event log']}]" time="3.977157">
+			<failure message="Compare" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;Compare&quot;,
+&quot;original&quot;: {},
+&quot;payload&quot;: {
+&quot;servers&quot;: [
+{
+&quot;host&quot;: &quot;192.0.1.2&quot;,
+&quot;port&quot;: &quot;514&quot;,
+&quot;roles&quot;: [
+&quot;Appliance event log&quot;
+]
+}
+]
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,31 @@
+{
+    "targets": {
+        "meraki_mx_l2_interface": {
+            "aliases": [
+                "meraki_mx_l2_interface", 
+                "module/", 
+                "module/meraki_mx_l2_interface/", 
+                "module/meraki_mx_l2_interface/meraki_mx_l2_interface", 
+                "network/", 
+                "network/meraki/", 
+                "network/meraki/meraki_mx_l2_interface", 
+                "non_destructive/", 
+                "non_destructive/meraki_mx_l2_interface", 
+                "role/", 
+                "role/meraki_mx_l2_interface"
+            ], 
+            "coverage": true, 
+            "coverage_label": "docker-default", 
+            "modules": [
+                "meraki_mx_l2_interface"
+            ], 
+            "name": "meraki_mx_l2_interface", 
+            "python_version": "3.7", 
+            "run_time_seconds": 69, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }
+    }
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="3" time="8.361056089401245">
+	<testsuite disabled="0" errors="0" failures="0" name="meraki_device-s2wvy_8p" skipped="0" tests="3" time="8.361056089401245">
+		<testcase classname="/root/ansible/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-16r_5i2o-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:163" name="[localhost] meraki: meraki_device : Update a device auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_wireless_net_name}}, serial={{serial}}, name=mr26, address=1060 W. Addison St., Chicago, IL, lat=41.948038, lng=-87.65568, tags=recently-added, state=present, move_map_marker=True, note=Test device notes" time="7.058137">
+			<system-out>{
+&quot;ansible_facts&quot;: {},
+&quot;changed&quot;: true,
+&quot;data&quot;: [
+{
+&quot;address&quot;: &quot;1060 W. Addison St., Chicago, IL&quot;,
+&quot;firmware&quot;: &quot;Not running configured version&quot;,
+&quot;floor_plan_id&quot;: null,
+&quot;lan_ip&quot;: null,
+&quot;lat&quot;: 41.948038,
+&quot;lng&quot;: -87.65568,
+&quot;mac&quot;: &quot;4c:c8:a1:0c:00:02&quot;,
+&quot;model&quot;: &quot;MR52&quot;,
+&quot;name&quot;: &quot;mr26&quot;,
+&quot;network_id&quot;: &quot;N_624874448297662962&quot;,
+&quot;notes&quot;: &quot;Test device notes&quot;,
+&quot;serial&quot;: &quot;QBSC-HJSL-A64F&quot;,
+&quot;tags&quot;: &quot; recently-added &quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Wireless/n/kO2E_dUb/manage/nodes/new_list/84424579088386&quot;
+}
+],
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-16r_5i2o-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:180" name="[localhost] meraki: meraki_device : debug var=update_device" time="0.647315">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;update_device&quot;: {
+        &quot;ansible_facts&quot;: {
+            &quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+        },
+        &quot;changed&quot;: true,
+        &quot;data&quot;: [
+            {
+                &quot;address&quot;: &quot;1060 W. Addison St., Chicago, IL&quot;,
+                &quot;firmware&quot;: &quot;Not running configured version&quot;,
+                &quot;floor_plan_id&quot;: null,
+                &quot;lan_ip&quot;: null,
+                &quot;lat&quot;: 41.948038,
+                &quot;lng&quot;: -87.65568,
+                &quot;mac&quot;: &quot;4c:c8:a1:0c:00:02&quot;,
+                &quot;model&quot;: &quot;MR52&quot;,
+                &quot;name&quot;: &quot;mr26&quot;,
+                &quot;network_id&quot;: &quot;N_624874448297662962&quot;,
+                &quot;notes&quot;: &quot;Test device notes&quot;,
+                &quot;serial&quot;: &quot;QBSC-HJSL-A64F&quot;,
+                &quot;tags&quot;: &quot; recently-added &quot;,
+                &quot;url&quot;: &quot;https://n110.meraki.com/Home-Wireless/n/kO2E_dUb/manage/nodes/new_list/84424579088386&quot;
+            }
+        ],
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_device-16r_5i2o-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_device/tasks/main.yml:183" name="[localhost] meraki: meraki_device : assert that=['update_device.changed == true', 'update_device.data.0.notes == &quot;Test device notes&quot;', '&quot;1060 W. Addison St., Chicago, IL&quot; in update_device.data.0.address']" time="0.655604">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

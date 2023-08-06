@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="0" tests="6" time="7.082722425460815">
+	<testsuite disabled="0" errors="1" failures="0" name="meraki_management_interface-y4x34j82" skipped="1" tests="6" time="7.082722425460815">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-p1ccvb1u-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:7" name="[localhost] meraki: meraki_management_interface : Test an API key is provided msg=Please define an API key" time="0.103608">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-p1ccvb1u-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:12" name="[localhost] meraki: meraki_management_interface : set_fact net_name=TestNet - Appliance" time="0.077859">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_name&quot;: &quot;TestNet - Appliance&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-p1ccvb1u-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:15" name="[localhost] meraki: meraki_management_interface : Create test network TestNet - Appliance auth_key={{auth_key}}, state=present, org_id={{test_org_id}}, net_name={{net_name}}, type=appliance" time="2.252001">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297679182&quot;,
+&quot;name&quot;: &quot;TestNet - Appliance&quot;,
+&quot;notes&quot;: &quot;&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/TestNet-Applianc/n/9TIYVdUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-p1ccvb1u-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:25" name="[localhost] meraki: meraki_management_interface : set_fact net_id={{net.data.id}}" time="0.084020">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_id&quot;: &quot;N_624874448297679182&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-p1ccvb1u-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:28" name="[localhost] meraki: meraki_management_interface : Set management interface on switch to not configured auth_key={{auth_key}}, state=present, org_id={{test_org_id}}, net_id={{test_switch_net_name}}, serial={{serial_switch}}, wan1={'wan_enabled': 'not configured', 'using_static_ip': False}" time="2.239507">
+			<error message="TypeError: 'NoneType' object is not subscriptable" type="error">Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1604334409.1491382-151-278408456092502/AnsiballZ_meraki_management_interface.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1604334409.1491382-151-278408456092502/AnsiballZ_meraki_management_interface.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1604334409.1491382-151-278408456092502/AnsiballZ_meraki_management_interface.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_management_interface', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_management_interface_payload_2qq2aimu/ansible_meraki_management_interface_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_management_interface.py&quot;, line 380, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_management_interface_payload_2qq2aimu/ansible_meraki_management_interface_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_management_interface.py&quot;, line 367, in main
+TypeError: 'NoneType' object is not subscriptable
+</error>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-p1ccvb1u-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:256" name="[localhost] meraki: meraki_management_interface : Reset settings for all interfaces auth_key={{auth_key}}, state=present, org_id={{test_org_id}}, net_id={{net_id}}, serial={{serial}}, wan1={'wan_enabled': 'disabled', 'using_static_ip': False}, wan2={'wan_enabled': 'enabled', 'using_static_ip': False}" time="2.325727">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;module_stderr&quot;: &quot;Traceback (most recent call last):\n  File \&quot;/root/.ansible/tmp/ansible-tmp-1604334411.4035368-186-275275327332103/AnsiballZ_meraki_management_interface.py\&quot;, line 143, in &lt;module&gt;\n    _ansiballz_main()\n  File \&quot;/root/.ansible/tmp/ansible-tmp-1604334411.4035368-186-275275327332103/AnsiballZ_meraki_management_interface.py\&quot;, line 135, in _ansiballz_main\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\n  File \&quot;/root/.ansible/tmp/ansible-tmp-1604334411.4035368-186-275275327332103/AnsiballZ_meraki_management_interface.py\&quot;, line 81, in invoke_module\n    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_management_interface', init_globals=None, run_name='__main__', alter_sys=True)\n  File \&quot;/usr/lib/python3.6/runpy.py\&quot;, line 205, in run_module\n    return _run_module_code(code, init_globals, run_name, mod_spec)\n  File \&quot;/usr/lib/python3.6/runpy.py\&quot;, line 96, in _run_module_code\n    mod_name, mod_spec, pkg_name, script_name)\n  File \&quot;/usr/lib/python3.6/runpy.py\&quot;, line 85, in _run_code\n    exec(code, run_globals)\n  File \&quot;/tmp/ansible_meraki_management_interface_payload_torcz4ix/ansible_meraki_management_interface_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_management_interface.py\&quot;, line 380, in &lt;module&gt;\n  File \&quot;/tmp/ansible_meraki_management_interface_payload_torcz4ix/ansible_meraki_management_interface_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_management_interface.py\&quot;, line 367, in main\nTypeError: 'NoneType' object is not subscriptable\n&quot;,
+&quot;module_stdout&quot;: &quot;&quot;,
+&quot;msg&quot;: &quot;MODULE FAILURE\nSee stdout/stderr for the exact error&quot;,
+&quot;rc&quot;: 1
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

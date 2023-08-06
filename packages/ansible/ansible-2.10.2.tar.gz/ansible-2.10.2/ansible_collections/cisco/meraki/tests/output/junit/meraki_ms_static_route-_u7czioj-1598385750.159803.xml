@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="0" tests="1" time="5.57662296295166">
+	<testsuite disabled="0" errors="1" failures="0" name="meraki_ms_static_route-_u7czioj" skipped="0" tests="1" time="5.57662296295166">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ms_static_route-tosznbc0-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ms_static_route/tasks/main.yml:124" name="[localhost] meraki: meraki_ms_static_route : Update static route auth_key={{auth_key}}, state=present, serial={{ serial_switch_l3 }}, name=Test Route, subnet=192.168.17.0/24, next_hop_ip=192.168.17.3" time="5.576623">
+			<error message="AttributeError: 'MerakiModule' object has no attribute 'meraki'" type="error">Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1598385744.5829294-108-31742789346856/AnsiballZ_meraki_ms_static_route.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1598385744.5829294-108-31742789346856/AnsiballZ_meraki_ms_static_route.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1598385744.5829294-108-31742789346856/AnsiballZ_meraki_ms_static_route.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_ms_static_route', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_ms_static_route_payload_ech36b5g/ansible_meraki_ms_static_route_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_ms_static_route.py&quot;, line 254, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_ms_static_route_payload_ech36b5g/ansible_meraki_ms_static_route_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_ms_static_route.py&quot;, line 215, in main
+AttributeError: 'MerakiModule' object has no attribute 'meraki'
+</error>
+		</testcase>
+	</testsuite>
+</testsuites>

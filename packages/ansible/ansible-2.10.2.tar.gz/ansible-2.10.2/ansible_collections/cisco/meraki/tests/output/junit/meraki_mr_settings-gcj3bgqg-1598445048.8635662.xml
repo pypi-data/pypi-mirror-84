@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="0" tests="6" time="21.340128660202026">
+	<testsuite disabled="0" errors="1" failures="0" name="meraki_mr_settings-gcj3bgqg" skipped="0" tests="6" time="21.340128660202026">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_settings-x3uhf4mm-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_settings/tasks/main.yml:7" name="[localhost] meraki: meraki_mr_settings : Create network with type wireless auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, type=wireless, timezone=America/Chicago" time="5.331606">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297686280&quot;,
+&quot;name&quot;: &quot;IntTestNetworkWireless&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;wireless&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Chicago&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/IntTestNetworkWi/n/6oCgWaUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_settings-x3uhf4mm-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_settings/tasks/main.yml:17" name="[localhost] meraki: meraki_mr_settings : Query all settings auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=query" time="4.132969">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;ipv6_bridge_enabled&quot;: true,
+&quot;led_lights_on&quot;: true,
+&quot;location_analytics_enabled&quot;: true,
+&quot;meshing_enabled&quot;: true,
+&quot;upgrade_strategy&quot;: &quot;minimizeUpgradeTime&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_settings-x3uhf4mm-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_settings/tasks/main.yml:26" name="[localhost] meraki: meraki_mr_settings : debug var=query_all" time="0.095606">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;query_all&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;ipv6_bridge_enabled&quot;: true,
+            &quot;led_lights_on&quot;: true,
+            &quot;location_analytics_enabled&quot;: true,
+            &quot;meshing_enabled&quot;: true,
+            &quot;upgrade_strategy&quot;: &quot;minimizeUpgradeTime&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_settings-x3uhf4mm-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_settings/tasks/main.yml:29" name="[localhost] meraki: meraki_mr_settings : assert that=['query_all.data is defined']" time="0.097612">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_settings-x3uhf4mm-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_settings/tasks/main.yml:33" name="[localhost] meraki: meraki_mr_settings : Configure settings auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=present, upgrade_strategy=minimize_upgrade_time, ipv6_bridge_enabled=False, led_lights_on=True, location_analytics_enabled=True, meshing_enabled=True" time="4.207561">
+			<error message="KeyError: 'upgradeStrategy'" type="error">Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1598445037.1604114-183-169120449432608/AnsiballZ_meraki_mr_settings.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1598445037.1604114-183-169120449432608/AnsiballZ_meraki_mr_settings.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1598445037.1604114-183-169120449432608/AnsiballZ_meraki_mr_settings.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_mr_settings', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_mr_settings_payload_abprdg04/ansible_meraki_mr_settings_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_mr_settings.py&quot;, line 189, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_mr_settings_payload_abprdg04/ansible_meraki_mr_settings_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_mr_settings.py&quot;, line 180, in main
+  File &quot;/tmp/ansible_meraki_mr_settings_payload_abprdg04/ansible_meraki_mr_settings_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_mr_settings.py&quot;, line 115, in construct_payload
+KeyError: 'upgradeStrategy'
+</error>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_mr_settings-x3uhf4mm-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_mr_settings/tasks/main.yml:52" name="[localhost] meraki: meraki_mr_settings : Delete network auth_key={{ auth_key }}, state=absent, org_name={{test_org_name}}, net_name=IntTestNetworkWireless" time="7.474775">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

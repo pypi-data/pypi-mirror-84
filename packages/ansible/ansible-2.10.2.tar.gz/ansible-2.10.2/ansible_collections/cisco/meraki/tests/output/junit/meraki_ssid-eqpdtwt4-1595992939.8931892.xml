@@ -1,0 +1,425 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="7" time="17.247239112854004">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_ssid-eqpdtwt4" skipped="1" tests="7" time="17.247239112854004">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-qy1zr0ku-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:7" name="[localhost] meraki: meraki_ssid : Test an API key is provided msg=Please define an API key" time="0.142968">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-qy1zr0ku-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:12" name="[localhost] meraki: meraki_ssid : Create test network auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=TestNetSSID, type=wireless" time="3.406941">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685809&quot;,
+&quot;name&quot;: &quot;TestNetSSID&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;wireless&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/TestNetSSID/n/TE7NfdUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-qy1zr0ku-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:21" name="[localhost] meraki: meraki_ssid : debug msg={{test_net}}" time="0.165475">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;ansible_facts&quot;: {
+            &quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+        },
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;enrollment_string&quot;: null,
+            &quot;id&quot;: &quot;N_624874448297685809&quot;,
+            &quot;name&quot;: &quot;TestNetSSID&quot;,
+            &quot;organization_id&quot;: &quot;133277&quot;,
+            &quot;product_types&quot;: [
+                &quot;wireless&quot;
+            ],
+            &quot;tags&quot;: [],
+            &quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+            &quot;url&quot;: &quot;https://n110.meraki.com/TestNetSSID/n/TE7NfdUb/manage/usage/list&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-qy1zr0ku-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:24" name="[localhost] meraki: meraki_ssid : Add access points to network auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=TestNetSSID, serial={{serial_wireless}}" time="5.455817">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;address&quot;: &quot;&quot;,
+&quot;firmware&quot;: &quot;Not running configured version&quot;,
+&quot;floor_plan_id&quot;: null,
+&quot;lan_ip&quot;: &quot;192.168.128.4&quot;,
+&quot;lat&quot;: 37.4180951010362,
+&quot;lng&quot;: -122.098531723022,
+&quot;mac&quot;: &quot;e0:cb:bc:90:1e:06&quot;,
+&quot;model&quot;: &quot;MR42&quot;,
+&quot;network_id&quot;: &quot;N_624874448297685809&quot;,
+&quot;serial&quot;: &quot;Q2KD-83UG-JL8X&quot;,
+&quot;tags&quot;: [],
+&quot;url&quot;: &quot;https://n110.meraki.com/TestNetSSID/n/TE7NfdUb/manage/nodes/new_list/247165646544390&quot;
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-qy1zr0ku-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:33" name="[localhost] meraki: meraki_ssid : Query all SSIDs auth_key={{auth_key}}, state=query, org_name={{test_org_name}}, net_name=TestNetSSID" time="4.095104">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: [
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: true,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;TestNetSSID WiFi&quot;,
+&quot;number&quot;: 0,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;ap_tags_and_vlan_ids&quot;: [
+{
+&quot;tags&quot;: &quot;wifi&quot;,
+&quot;vlan_id&quot;: 2
+}
+],
+&quot;auth_mode&quot;: &quot;psk&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;default_vlan_id&quot;: 1,
+&quot;enabled&quot;: true,
+&quot;encryption_mode&quot;: &quot;wpa&quot;,
+&quot;ip_assignment_mode&quot;: &quot;Bridge mode&quot;,
+&quot;lan_isolation_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;AnsibleSSID&quot;,
+&quot;number&quot;: 1,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;psk&quot;: &quot;abc1234567890&quot;,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;use_vlan_tagging&quot;: true,
+&quot;visible&quot;: true,
+&quot;wpa_encryption_mode&quot;: &quot;WPA2 only&quot;
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 3&quot;,
+&quot;number&quot;: 2,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 4&quot;,
+&quot;number&quot;: 3,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 5&quot;,
+&quot;number&quot;: 4,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 6&quot;,
+&quot;number&quot;: 5,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 7&quot;,
+&quot;number&quot;: 6,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 8&quot;,
+&quot;number&quot;: 7,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 9&quot;,
+&quot;number&quot;: 8,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 10&quot;,
+&quot;number&quot;: 9,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 11&quot;,
+&quot;number&quot;: 10,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 12&quot;,
+&quot;number&quot;: 11,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 13&quot;,
+&quot;number&quot;: 12,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 14&quot;,
+&quot;number&quot;: 13,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+},
+{
+&quot;auth_mode&quot;: &quot;open&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;enabled&quot;: false,
+&quot;ip_assignment_mode&quot;: &quot;NAT mode&quot;,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;Unconfigured SSID 15&quot;,
+&quot;number&quot;: 14,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;visible&quot;: true
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-qy1zr0ku-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:42" name="[localhost] meraki: meraki_ssid : Enable and name SSID with check mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name=TestNetSSID, name=AnsibleSSID, enabled=True" time="3.875721">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;ap_tags_and_vlan_ids&quot;: [
+{
+&quot;tags&quot;: &quot;wifi&quot;,
+&quot;vlan_id&quot;: 2
+}
+],
+&quot;auth_mode&quot;: &quot;psk&quot;,
+&quot;availability_tags&quot;: [],
+&quot;available_on_all_aps&quot;: true,
+&quot;band_selection&quot;: &quot;Dual band operation&quot;,
+&quot;default_vlan_id&quot;: 1,
+&quot;enabled&quot;: true,
+&quot;encryption_mode&quot;: &quot;wpa&quot;,
+&quot;ip_assignment_mode&quot;: &quot;Bridge mode&quot;,
+&quot;lan_isolation_enabled&quot;: false,
+&quot;min_bitrate&quot;: 11,
+&quot;name&quot;: &quot;AnsibleSSID&quot;,
+&quot;number&quot;: 1,
+&quot;per_client_bandwidth_limit_down&quot;: 0,
+&quot;per_client_bandwidth_limit_up&quot;: 0,
+&quot;per_ssid_bandwidth_limit_down&quot;: 0,
+&quot;per_ssid_bandwidth_limit_up&quot;: 0,
+&quot;psk&quot;: &quot;abc1234567890&quot;,
+&quot;splash_page&quot;: &quot;None&quot;,
+&quot;ssid_admin_accessible&quot;: false,
+&quot;use_vlan_tagging&quot;: true,
+&quot;visible&quot;: true,
+&quot;wpa_encryption_mode&quot;: &quot;WPA2 only&quot;
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_ssid-qy1zr0ku-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_ssid/tasks/main.yml:54" name="[localhost] meraki: meraki_ssid : assert that=['enable_name_ssid_check is changed', 'enable_name_ssid_check.data is defined']" time="0.105211">
+			<failure message="Assertion failed" type="failure">{
+    &quot;assertion&quot;: &quot;enable_name_ssid_check is changed&quot;,
+    &quot;changed&quot;: false,
+    &quot;evaluated_to&quot;: false,
+    &quot;msg&quot;: &quot;Assertion failed&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

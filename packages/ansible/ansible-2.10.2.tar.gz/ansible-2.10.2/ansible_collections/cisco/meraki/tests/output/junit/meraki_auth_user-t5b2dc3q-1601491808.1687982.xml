@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="0" tests="5" time="22.707189798355103">
+	<testsuite disabled="0" errors="1" failures="0" name="meraki_auth_user-t5b2dc3q" skipped="1" tests="5" time="22.707189798355103">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_auth_user-eibcnjre-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_auth_user/tasks/main.yml:7" name="[localhost] meraki: meraki_auth_user : Test an API key is provided msg=Please define an API key" time="0.110386">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_auth_user-eibcnjre-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_auth_user/tasks/main.yml:12" name="[localhost] meraki: meraki_auth_user : Create a network auth_key={{auth_key}}, state=present, org_name={{ test_org_name }}, net_name={{ test_net_name }}, type=switch" time="5.533134">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297686874&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;switch&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/I-aplcUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_auth_user-eibcnjre-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_auth_user/tasks/main.yml:22" name="[localhost] meraki: meraki_auth_user : set_fact net_id={{net_info.data.id}}" time="0.101193">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_id&quot;: &quot;N_624874448297686874&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_auth_user-eibcnjre-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_auth_user/tasks/main.yml:25" name="[localhost] meraki: meraki_auth_user : Query all authenticated users auth_key={{auth_key}}, state=query, org_name={{ test_org_name }}, net_name={{ test_net_name }}" time="7.356790">
+			<error message="AttributeError: 'MerakiModule' object has no attribute 'status_code'" type="error">Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1601491791.194834-148-261744128310568/AnsiballZ_meraki_auth_user.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1601491791.194834-148-261744128310568/AnsiballZ_meraki_auth_user.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1601491791.194834-148-261744128310568/AnsiballZ_meraki_auth_user.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_auth_user', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_auth_user_payload_2rhcp5ub/ansible_meraki_auth_user_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_auth_user.py&quot;, line 183, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_auth_user_payload_2rhcp5ub/ansible_meraki_auth_user_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_auth_user.py&quot;, line 173, in main
+AttributeError: 'MerakiModule' object has no attribute 'status_code'
+</error>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_auth_user-eibcnjre-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_auth_user/tasks/main.yml:38" name="[localhost] meraki: meraki_auth_user : Delete network auth_key={{auth_key}}, state=absent, org_name={{ test_org_name }}, net_name={{ test_net_name }}" time="9.605687">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,390 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="35" time="55.33127403259277">
+	<testsuite disabled="0" errors="0" failures="0" name="meraki_intrusion_prevention-lv9j9u1d" skipped="1" tests="35" time="55.33127403259277">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:7" name="[localhost] meraki: meraki_intrusion_prevention : Test an API key is provided msg=Please define an API key" time="0.161541">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:12" name="[localhost] meraki: meraki_intrusion_prevention : Create test network auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}} - IPS, type=appliance" time="4.876593">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685375&quot;,
+&quot;name&quot;: &quot;Home - Appliance - IPS&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance-I/n/m_vnnbUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:21" name="[localhost] meraki: meraki_intrusion_prevention : debug var=net" time="0.144427">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;net&quot;: {
+        &quot;ansible_facts&quot;: {
+            &quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+        },
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;enrollment_string&quot;: null,
+            &quot;id&quot;: &quot;N_624874448297685375&quot;,
+            &quot;name&quot;: &quot;Home - Appliance - IPS&quot;,
+            &quot;organization_id&quot;: &quot;133277&quot;,
+            &quot;product_types&quot;: [
+                &quot;appliance&quot;
+            ],
+            &quot;tags&quot;: [],
+            &quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+            &quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance-I/n/m_vnnbUb/manage/usage/list&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 201
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:24" name="[localhost] meraki: meraki_intrusion_prevention : Set whitelist for organization in check mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, whitelisted_rules=[{'rule_id': 'meraki:intrusion/snort/GID/01/SID/5805', 'message': 'Test rule'}]" time="2.676075">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;whitelisted_rules&quot;: [
+{
+&quot;message&quot;: &quot;Test rule&quot;,
+&quot;rule_id&quot;: &quot;meraki:intrusion/snort/GID/01/SID/5805&quot;
+}
+]
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:35" name="[localhost] meraki: meraki_intrusion_prevention : assert that=['create_org_check is changed', 'create_org_check.data is defined']" time="0.134372">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:40" name="[localhost] meraki: meraki_intrusion_prevention : Set whitelist for organization auth_key={{auth_key}}, state=present, org_id={{test_org_id}}, whitelisted_rules=[{'rule_id': 'meraki:intrusion/snort/GID/01/SID/5805', 'message': 'Test rule'}]" time="2.881633">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;whitelisted_rules&quot;: [
+{
+&quot;message&quot;: &quot;MALWARE-OTHER Trackware myway speedbar runtime detection - switch engines&quot;,
+&quot;rule_id&quot;: &quot;meraki:intrusion/snort/GID/01/SID/5805&quot;
+}
+]
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 133277\&quot; (type int) was converted to \&quot;auth_key: '133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:50" name="[localhost] meraki: meraki_intrusion_prevention : assert that=['create_org is changed', 'create_org.data is defined', 'create_org.data.whitelisted_rules | length == 1']" time="0.138352">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:56" name="[localhost] meraki: meraki_intrusion_prevention : Set whitelist for organization with idempotency auth_key={{auth_key}}, state=present, org_id={{test_org_id}}, whitelisted_rules=[{'rule_id': 'meraki:intrusion/snort/GID/01/SID/5805', 'message': 'Test rule'}]" time="1.499206">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;whitelisted_rules&quot;: [
+{
+&quot;message&quot;: &quot;MALWARE-OTHER Trackware myway speedbar runtime detection - switch engines&quot;,
+&quot;rule_id&quot;: &quot;meraki:intrusion/snort/GID/01/SID/5805&quot;
+}
+]
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 133277\&quot; (type int) was converted to \&quot;auth_key: '133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:66" name="[localhost] meraki: meraki_intrusion_prevention : assert that=['create_org_idempotent is not changed', 'create_org_idempotent.data is defined']" time="0.155358">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:71" name="[localhost] meraki: meraki_intrusion_prevention : Query IPS info for organization auth_key={{auth_key}}, state=query, org_name={{test_org_name}}" time="2.164821">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;whitelisted_rules&quot;: [
+{
+&quot;message&quot;: &quot;MALWARE-OTHER Trackware myway speedbar runtime detection - switch engines&quot;,
+&quot;rule_id&quot;: &quot;meraki:intrusion/snort/GID/01/SID/5805&quot;
+}
+]
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:78" name="[localhost] meraki: meraki_intrusion_prevention : assert that=['query_org.data.whitelisted_rules is defined']" time="0.140437">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:82" name="[localhost] meraki: meraki_intrusion_prevention : Set mode to prevention with check mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}} - IPS, mode=prevention" time="4.556011">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;mode&quot;: &quot;disabled&quot;
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:92" name="[localhost] meraki: meraki_intrusion_prevention : assert that=['mode_check is changed', 'mode_check.data is defined']" time="0.095512">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:97" name="[localhost] meraki: meraki_intrusion_prevention : Set mode to prevention auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}} - IPS, mode=prevention" time="5.651253">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;ids_rulesets&quot;: &quot;balanced&quot;,
+&quot;mode&quot;: &quot;prevention&quot;
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:106" name="[localhost] meraki: meraki_intrusion_prevention : debug var=mode" time="0.111841">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;mode&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;ids_rulesets&quot;: &quot;balanced&quot;,
+            &quot;mode&quot;: &quot;prevention&quot;
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:109" name="[localhost] meraki: meraki_intrusion_prevention : assert that=['mode is changed', 'mode.data.mode is defined']" time="0.120237">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:114" name="[localhost] meraki: meraki_intrusion_prevention : Set mode to prevention with idempotency auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}} - IPS, mode=prevention" time="4.445396">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;ids_rulesets&quot;: &quot;balanced&quot;,
+&quot;mode&quot;: &quot;prevention&quot;
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:123" name="[localhost] meraki: meraki_intrusion_prevention : debug var=mode_idempotent" time="0.165833">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;mode_idempotent&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;ids_rulesets&quot;: &quot;balanced&quot;,
+            &quot;mode&quot;: &quot;prevention&quot;
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:126" name="[localhost] meraki: meraki_intrusion_prevention : assert that=['mode_idempotent is not changed', 'mode_idempotent.data.mode is defined']" time="0.115116">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:131" name="[localhost] meraki: meraki_intrusion_prevention : Set full ruleset with check mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}} - IPS, mode=prevention, ids_rulesets=security, protected_networks={'use_default': True, 'included_cidr': ['192.0.1.0/24'], 'excluded_cidr': ['10.0.1.0/24']}" time="4.760308">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;ids_rulesets&quot;: &quot;balanced&quot;,
+&quot;mode&quot;: &quot;prevention&quot;,
+&quot;protected_networks&quot;: {
+&quot;excluded_cidr&quot;: [
+&quot;10.0.1.0/24&quot;
+],
+&quot;included_cidr&quot;: [
+&quot;192.0.1.0/24&quot;
+],
+&quot;use_default&quot;: true
+}
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:148" name="[localhost] meraki: meraki_intrusion_prevention : debug var=full_check" time="0.113159">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;full_check&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;ids_rulesets&quot;: &quot;balanced&quot;,
+            &quot;mode&quot;: &quot;prevention&quot;,
+            &quot;protected_networks&quot;: {
+                &quot;excluded_cidr&quot;: [
+                    &quot;10.0.1.0/24&quot;
+                ],
+                &quot;included_cidr&quot;: [
+                    &quot;192.0.1.0/24&quot;
+                ],
+                &quot;use_default&quot;: true
+            }
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:151" name="[localhost] meraki: meraki_intrusion_prevention : assert that=['full_check is changed', 'full_check.data.mode is defined']" time="0.115686">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:210" name="[localhost] meraki: meraki_intrusion_prevention : Query IPS info for network auth_key={{auth_key}}, state=query, org_name={{test_org_name}}, net_name={{test_net_name}} - IPS" time="3.634853">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:218" name="[localhost] meraki: meraki_intrusion_prevention : assert that=['query_net is defined']" time="0.141247">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:222" name="[localhost] meraki: meraki_intrusion_prevention : Test use_default error with included_cidr auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}} - IPS, mode=prevention, ids_rulesets=security, protected_networks={'use_default': False, 'excluded_cidr': ['10.0.1.0/24']}" time="0.564659">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;msg&quot;: &quot;included_cidr is required when use_default is False.&quot;,
+&quot;response&quot;: null,
+&quot;status&quot;: null
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:238" name="[localhost] meraki: meraki_intrusion_prevention : assert that=['included_missing.msg == &quot;included_cidr is required when use_default is False.&quot;']" time="0.101923">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:242" name="[localhost] meraki: meraki_intrusion_prevention : Test use_default error with included_cidr auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}} - IPS, mode=prevention, ids_rulesets=security, protected_networks={'use_default': False, 'included_cidr': ['10.0.1.0/24']}" time="0.525176">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;msg&quot;: &quot;excluded_cidr is required when use_default is False.&quot;,
+&quot;response&quot;: null,
+&quot;status&quot;: null
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:258" name="[localhost] meraki: meraki_intrusion_prevention : assert that=['excluded_missing.msg == &quot;excluded_cidr is required when use_default is False.&quot;']" time="0.104512">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:266" name="[localhost] meraki: meraki_intrusion_prevention : Delete network auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, net_name={{test_net_name}} - IPS" time="4.609389">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:274" name="[localhost] meraki: meraki_intrusion_prevention : Clear rules from organization with check mode auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, whitelisted_rules=[]" time="2.024294">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;whitelisted_rules&quot;: [
+{
+&quot;message&quot;: &quot;MALWARE-OTHER Trackware myway speedbar runtime detection - switch engines&quot;,
+&quot;rule_id&quot;: &quot;meraki:intrusion/snort/GID/01/SID/5805&quot;
+}
+]
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:283" name="[localhost] meraki: meraki_intrusion_prevention : assert that=['cleared is changed', 'cleared.data is defined']" time="0.140323">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:288" name="[localhost] meraki: meraki_intrusion_prevention : Clear rules from organization auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, whitelisted_rules=[]" time="3.090443">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;whitelisted_rules&quot;: []
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:294" name="[localhost] meraki: meraki_intrusion_prevention : Clear rules from organization with idempotency auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, whitelisted_rules=[]" time="2.149033">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;whitelisted_rules&quot;: []
+},
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:302" name="[localhost] meraki: meraki_intrusion_prevention : assert that=['del_idempotent is not changed', 'del_idempotent.data is defined']" time="0.139310">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_intrusion_prevention-oqvm6di9-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_intrusion_prevention/tasks/tests.yml:307" name="[localhost] meraki: meraki_intrusion_prevention : Delete test network auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, net_name={{test_net_name}} - IPS" time="2.882948">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="2" tests="2" time="0.648679256439209">
+	<testsuite disabled="0" errors="0" failures="2" name="meraki_alert-jvkvm9lw" skipped="0" tests="2" time="0.648679256439209">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-m32j_m5j-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:7" name="[localhost] meraki: meraki_alert : Create network with type wireless auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, type=wireless, timezone=America/Chicago" time="0.351918">
+			<failure message="Unable to import ('ansible_collections', 'cisco', 'meraki', 'plugins', 'module_utils', 'network', 'meraki', 'meraki') due to expected an indented block" type="failure">{
+&quot;msg&quot;: &quot;Unable to import ('ansible_collections', 'cisco', 'meraki', 'plugins', 'module_utils', 'network', 'meraki', 'meraki') due to expected an indented block&quot;
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-m32j_m5j-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:124" name="[localhost] meraki: meraki_alert : Delete network auth_key={{ auth_key }}, state=absent, org_name={{test_org_name}}, net_name=IntTestNetworkWireless" time="0.296762">
+			<failure message="Unable to import ('ansible_collections', 'cisco', 'meraki', 'plugins', 'module_utils', 'network', 'meraki', 'meraki') due to expected an indented block" type="failure">{
+&quot;msg&quot;: &quot;Unable to import ('ansible_collections', 'cisco', 'meraki', 'plugins', 'module_utils', 'network', 'meraki', 'meraki') due to expected an indented block&quot;
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

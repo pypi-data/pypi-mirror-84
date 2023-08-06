@@ -1,0 +1,143 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="10" time="19.146922826766968">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_syslog-l9fkw_54" skipped="1" tests="10" time="19.146922826766968">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_syslog-bugyryeq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_syslog/tasks/main.yml:7" name="[localhost] meraki: meraki_syslog : Test an API key is provided msg=Please define an API key" time="0.155569">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_syslog-bugyryeq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_syslog/tasks/main.yml:12" name="[localhost] meraki: meraki_syslog : set_fact syslog_test_net_name=syslog_{{test_net_name}}" time="0.128392">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;syslog_test_net_name&quot;: &quot;syslog_Home - Appliance&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_syslog-bugyryeq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_syslog/tasks/main.yml:15" name="[localhost] meraki: meraki_syslog : Create network with type appliance and no timezone auth_key={{ auth_key }}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, type=appliance" time="3.273735">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685329&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/chq45aUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_syslog-bugyryeq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_syslog/tasks/main.yml:25" name="[localhost] meraki: meraki_syslog : set_fact net_id={{new_net.data.id}}" time="0.104627">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_id&quot;: &quot;N_624874448297685329&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_syslog-bugyryeq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_syslog/tasks/main.yml:28" name="[localhost] meraki: meraki_syslog : Query syslog settings auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, state=query" time="4.119243">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;servers&quot;: []
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_syslog-bugyryeq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_syslog/tasks/main.yml:37" name="[localhost] meraki: meraki_syslog : debug msg={{query_all}}" time="0.148258">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;servers&quot;: []
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_syslog-bugyryeq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_syslog/tasks/main.yml:40" name="[localhost] meraki: meraki_syslog : Set syslog server auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, state=present, servers=[{'host': '192.0.1.2', 'port': 514, 'roles': ['Appliance event log']}]" time="5.362488">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;servers&quot;: [
+{
+&quot;host&quot;: &quot;192.0.1.2&quot;,
+&quot;port&quot;: &quot;514&quot;,
+&quot;roles&quot;: [
+&quot;Appliance event log&quot;
+]
+}
+]
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_syslog-bugyryeq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_syslog/tasks/main.yml:54" name="[localhost] meraki: meraki_syslog : debug msg={{create_server.data}}" time="0.134714">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;servers&quot;: [
+            {
+                &quot;host&quot;: &quot;192.0.1.2&quot;,
+                &quot;port&quot;: &quot;514&quot;,
+                &quot;roles&quot;: [
+                    &quot;Appliance event log&quot;
+                ]
+            }
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_syslog-bugyryeq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_syslog/tasks/main.yml:57" name="[localhost] meraki: meraki_syslog : assert that=['create_server[\'data\'][0][\'host\'] == &quot;192.0.1.2&quot;']" time="0.118916">
+			<failure message="The conditional check 'create_server['data'][0]['host'] == &quot;192.0.1.2&quot;' failed. The error was: error while evaluating conditional (create_server['data'][0]['host'] == &quot;192.0.1.2&quot;): dict object has no element 0" type="failure">{
+&quot;msg&quot;: &quot;The conditional check 'create_server['data'][0]['host'] == \&quot;192.0.1.2\&quot;' failed. The error was: error while evaluating conditional (create_server['data'][0]['host'] == \&quot;192.0.1.2\&quot;): dict object has no element 0&quot;
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_syslog-bugyryeq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_syslog/tasks/main.yml:161" name="[localhost] meraki: meraki_syslog : Delete syslog test network auth_key={{ auth_key }}, state=absent, org_name={{test_org_name}}, net_name={{test_net_name}}" time="5.600980">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

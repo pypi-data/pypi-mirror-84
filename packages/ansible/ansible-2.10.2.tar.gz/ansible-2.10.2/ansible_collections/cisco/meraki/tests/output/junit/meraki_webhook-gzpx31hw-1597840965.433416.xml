@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="4" time="12.866662502288818">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_webhook-gzpx31hw" skipped="1" tests="4" time="12.866662502288818">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-rck517gj-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:7" name="[localhost] meraki: meraki_webhook : Test an API key is provided msg=Please define an API key" time="0.097724">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-rck517gj-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:12" name="[localhost] meraki: meraki_webhook : Create test network auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, type=appliance" time="6.909775">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;disable_my_meraki_com&quot;: false,
+&quot;disable_remote_status_page&quot;: true,
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297686112&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: &quot;&quot;,
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;type&quot;: &quot;appliance&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/b708DbUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-rck517gj-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:20" name="[localhost] meraki: meraki_webhook : Create webhook with check mode auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_name={{test_net_name}}, name=Test_Hook, url=https://webhook.site/8eb5b76f-b167-4cb8-9fc4-42621b724244, shared_secret=shhhdonttellanyone" time="0.114017">
+			<failure message="Unable to import meraki_webhook due to invalid syntax" type="failure">{
+&quot;msg&quot;: &quot;Unable to import meraki_webhook due to invalid syntax&quot;
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_webhook-rck517gj-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_webhook/tasks/tests.yml:272" name="[localhost] meraki: meraki_webhook : Delete test network auth_key={{auth_key}}, state=absent, org_name={{test_org_name}}, net_name={{test_net_name}}" time="5.745147">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

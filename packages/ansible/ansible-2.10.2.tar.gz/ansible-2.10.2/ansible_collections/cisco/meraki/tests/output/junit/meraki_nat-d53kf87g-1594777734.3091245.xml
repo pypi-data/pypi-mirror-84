@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="3" time="17.099056005477905">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_nat-d53kf87g" skipped="0" tests="3" time="17.099056005477905">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_nat-8g5c8z2a-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_nat/tasks/tests.yml:7" name="[localhost] meraki: meraki_nat : Create test network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, state=present, type=appliance" time="6.996309">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;
+},
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685532&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/CQiK2dUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_nat-8g5c8z2a-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_nat/tasks/tests.yml:15" name="[localhost] meraki: meraki_nat : Create 1:1 rule with check mode auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, state=present, one_to_one=[{'name': 'Service behind NAT', 'public_ip': '1.2.1.2', 'lan_ip': '192.168.128.1', 'uplink': 'internet1', 'allowed_inbound': [{'protocol': 'tcp', 'destination_ports': [80], 'allowed_ips': ['10.10.10.10']}]}]" time="3.422260">
+			<failure message="404" type="failure">{
+&quot;changed&quot;: false,
+&quot;data&quot;: {},
+&quot;msg&quot;: 404,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 404,
+&quot;url&quot;: &quot;https://api.meraki.com/api/v1/networks/N_624874448297685532/oneToOneNatRules&quot;,
+&quot;warnings&quot;: [
+&quot;The value \&quot;destination_ports: 80\&quot; (type int) was converted to \&quot;destination_ports: '80'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_nat-8g5c8z2a-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_nat/tasks/tests.yml:357" name="[localhost] meraki: meraki_nat : Delete test network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, state=absent" time="6.680487">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

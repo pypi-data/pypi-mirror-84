@@ -1,0 +1,508 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="27" time="45.679521322250366">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_snmp-dsmkez0l" skipped="1" tests="27" time="45.679521322250366">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:7" name="[localhost] meraki: meraki_snmp : Test an API key is provided msg=Please define an API key" time="0.096943">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:12" name="[localhost] meraki: meraki_snmp : Create SNMP network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, state=present, type=appliance" time="5.114796">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297685379&quot;,
+&quot;name&quot;: &quot;Home - Appliance&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/Home-Appliance/n/XJGWZaUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 201
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:22" name="[localhost] meraki: meraki_snmp : set_fact net_id=new_net.data.id" time="0.073785">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_id&quot;: &quot;new_net.data.id&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:25" name="[localhost] meraki: meraki_snmp : Query all SNMP settings auth_key={{auth_key}}, org_name={{test_org_name}}, state=query" time="2.507372">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;hostname&quot;: &quot;snmp.meraki.com&quot;,
+&quot;peer_ips&quot;: [
+&quot;1.1.1.1&quot;,
+&quot;2.2.2.2&quot;
+],
+&quot;port&quot;: 16100,
+&quot;v2c_enabled&quot;: false,
+&quot;v3_auth_mode&quot;: &quot;SHA&quot;,
+&quot;v3_enabled&quot;: false,
+&quot;v3_priv_mode&quot;: &quot;AES128&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:33" name="[localhost] meraki: meraki_snmp : debug msg={{snmp_query}}" time="0.093534">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;hostname&quot;: &quot;snmp.meraki.com&quot;,
+            &quot;peer_ips&quot;: [
+                &quot;1.1.1.1&quot;,
+                &quot;2.2.2.2&quot;
+            ],
+            &quot;port&quot;: 16100,
+            &quot;v2c_enabled&quot;: false,
+            &quot;v3_auth_mode&quot;: &quot;SHA&quot;,
+            &quot;v3_enabled&quot;: false,
+            &quot;v3_priv_mode&quot;: &quot;AES128&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:36" name="[localhost] meraki: meraki_snmp : Enable SNMPv2c auth_key={{auth_key}}, org_name={{test_org_name}}, state=present, v2c_enabled=True" time="3.726678">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;hostname&quot;: &quot;snmp.meraki.com&quot;,
+&quot;peer_ips&quot;: [
+&quot;1.1.1.1&quot;,
+&quot;2.2.2.2&quot;
+],
+&quot;port&quot;: 16100,
+&quot;v2_community_string&quot;: &quot;o/yjVHMb&quot;,
+&quot;v2c_enabled&quot;: true,
+&quot;v3_auth_mode&quot;: &quot;SHA&quot;,
+&quot;v3_enabled&quot;: false,
+&quot;v3_priv_mode&quot;: &quot;AES128&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:45" name="[localhost] meraki: meraki_snmp : debug msg={{snmp_v2_enable}}" time="0.092772">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;hostname&quot;: &quot;snmp.meraki.com&quot;,
+            &quot;peer_ips&quot;: [
+                &quot;1.1.1.1&quot;,
+                &quot;2.2.2.2&quot;
+            ],
+            &quot;port&quot;: 16100,
+            &quot;v2_community_string&quot;: &quot;o/yjVHMb&quot;,
+            &quot;v2c_enabled&quot;: true,
+            &quot;v3_auth_mode&quot;: &quot;SHA&quot;,
+            &quot;v3_enabled&quot;: false,
+            &quot;v3_priv_mode&quot;: &quot;AES128&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;diff&quot;: {
+            &quot;after&quot;: {
+                &quot;v2_community_string&quot;: &quot;o/yjVHMb&quot;,
+                &quot;v2c_enabled&quot;: true
+            },
+            &quot;before&quot;: {
+                &quot;v2c_enabled&quot;: false
+            }
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:48" name="[localhost] meraki: meraki_snmp : assert that=['snmp_v2_enable.data.v2_community_string is defined', 'snmp_v2_enable.data.v2c_enabled == true']" time="0.114514">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:53" name="[localhost] meraki: meraki_snmp : Disable SNMPv2c auth_key={{auth_key}}, org_name={{test_org_name}}, state=present, v2c_enabled=False" time="3.598709">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;hostname&quot;: &quot;snmp.meraki.com&quot;,
+&quot;peer_ips&quot;: [
+&quot;1.1.1.1&quot;,
+&quot;2.2.2.2&quot;
+],
+&quot;port&quot;: 16100,
+&quot;v2c_enabled&quot;: false,
+&quot;v3_auth_mode&quot;: &quot;SHA&quot;,
+&quot;v3_enabled&quot;: false,
+&quot;v3_priv_mode&quot;: &quot;AES128&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:62" name="[localhost] meraki: meraki_snmp : assert that=['snmp_v2_disable.data.v2_community_string is not defined', 'snmp_v2_disable.data.v2c_enabled == False']" time="0.099667">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:67" name="[localhost] meraki: meraki_snmp : Enable SNMPv2c with org_id auth_key={{auth_key}}, org_id={{test_org_id}}, state=present, v2c_enabled=True" time="2.224664">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;hostname&quot;: &quot;snmp.meraki.com&quot;,
+&quot;peer_ips&quot;: [
+&quot;1.1.1.1&quot;,
+&quot;2.2.2.2&quot;
+],
+&quot;port&quot;: 16100,
+&quot;v2_community_string&quot;: &quot;o/yjVHMb&quot;,
+&quot;v2c_enabled&quot;: true,
+&quot;v3_auth_mode&quot;: &quot;SHA&quot;,
+&quot;v3_enabled&quot;: false,
+&quot;v3_priv_mode&quot;: &quot;AES128&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 133277\&quot; (type int) was converted to \&quot;auth_key: '133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:76" name="[localhost] meraki: meraki_snmp : debug msg={{snmp_v2_enable_id}}" time="0.095199">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;hostname&quot;: &quot;snmp.meraki.com&quot;,
+            &quot;peer_ips&quot;: [
+                &quot;1.1.1.1&quot;,
+                &quot;2.2.2.2&quot;
+            ],
+            &quot;port&quot;: 16100,
+            &quot;v2_community_string&quot;: &quot;o/yjVHMb&quot;,
+            &quot;v2c_enabled&quot;: true,
+            &quot;v3_auth_mode&quot;: &quot;SHA&quot;,
+            &quot;v3_enabled&quot;: false,
+            &quot;v3_priv_mode&quot;: &quot;AES128&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;diff&quot;: {
+            &quot;after&quot;: {
+                &quot;v2_community_string&quot;: &quot;o/yjVHMb&quot;,
+                &quot;v2c_enabled&quot;: true
+            },
+            &quot;before&quot;: {
+                &quot;v2c_enabled&quot;: false
+            }
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;auth_key: 133277\&quot; (type int) was converted to \&quot;auth_key: '133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:79" name="[localhost] meraki: meraki_snmp : assert that=['snmp_v2_enable_id.data.v2_community_string is defined', 'snmp_v2_enable_id.data.v2c_enabled == true']" time="0.098508">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:84" name="[localhost] meraki: meraki_snmp : Disable SNMPv2c with org_id auth_key={{auth_key}}, org_id={{test_org_id}}, state=present, v2c_enabled=False" time="2.406333">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;hostname&quot;: &quot;snmp.meraki.com&quot;,
+&quot;peer_ips&quot;: [
+&quot;1.1.1.1&quot;,
+&quot;2.2.2.2&quot;
+],
+&quot;port&quot;: 16100,
+&quot;v2c_enabled&quot;: false,
+&quot;v3_auth_mode&quot;: &quot;SHA&quot;,
+&quot;v3_enabled&quot;: false,
+&quot;v3_priv_mode&quot;: &quot;AES128&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 133277\&quot; (type int) was converted to \&quot;auth_key: '133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:93" name="[localhost] meraki: meraki_snmp : assert that=['snmp_v2_disable_id.data.v2_community_string is not defined', 'snmp_v2_disable_id.data.v2c_enabled == False']" time="0.096225">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:98" name="[localhost] meraki: meraki_snmp : Enable SNMPv3 with check mode auth_key={{auth_key}}, org_name={{test_org_name}}, state=present, v3_enabled=True, v3_auth_mode=SHA, v3_auth_pass=ansiblepass, v3_priv_mode=AES128, v3_priv_pass=ansiblepass" time="2.158864">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;hostname&quot;: &quot;snmp.meraki.com&quot;,
+&quot;peer_ips&quot;: [
+&quot;1.1.1.1&quot;,
+&quot;2.2.2.2&quot;
+],
+&quot;port&quot;: 16100,
+&quot;v2c_enabled&quot;: false,
+&quot;v3_auth_mode&quot;: &quot;SHA&quot;,
+&quot;v3_auth_pass&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+&quot;v3_enabled&quot;: true,
+&quot;v3_priv_mode&quot;: &quot;AES128&quot;,
+&quot;v3_priv_pass&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:112" name="[localhost] meraki: meraki_snmp : assert that=['snmp_v3_enable_check.data.v3_enabled == True', 'snmp_v3_enable_check.changed == True']" time="0.113675">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:117" name="[localhost] meraki: meraki_snmp : Enable SNMPv3 auth_key={{auth_key}}, org_name={{test_org_name}}, state=present, v3_enabled=True, v3_auth_mode=SHA, v3_auth_pass=ansiblepass, v3_priv_mode=AES128, v3_priv_pass=ansiblepass" time="3.336913">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;hostname&quot;: &quot;snmp.meraki.com&quot;,
+&quot;peer_ips&quot;: [
+&quot;1.1.1.1&quot;,
+&quot;2.2.2.2&quot;
+],
+&quot;port&quot;: 16100,
+&quot;v2c_enabled&quot;: false,
+&quot;v3_auth_mode&quot;: &quot;SHA&quot;,
+&quot;v3_enabled&quot;: true,
+&quot;v3_priv_mode&quot;: &quot;AES128&quot;,
+&quot;v3_user&quot;: &quot;o/yjVHMb&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:130" name="[localhost] meraki: meraki_snmp : assert that=['snmp_v3_enable.data.v3_enabled == True', 'snmp_v3_enable.changed == True']" time="0.099197">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:135" name="[localhost] meraki: meraki_snmp : Check for idempotency auth_key={{auth_key}}, org_name={{test_org_name}}, state=present, v3_enabled=True, v3_auth_mode=SHA, v3_auth_pass=ansiblepass, v3_priv_mode=AES128, v3_priv_pass=ansiblepass" time="2.822797">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;hostname&quot;: &quot;snmp.meraki.com&quot;,
+&quot;peer_ips&quot;: [
+&quot;1.1.1.1&quot;,
+&quot;2.2.2.2&quot;
+],
+&quot;port&quot;: 16100,
+&quot;v2c_enabled&quot;: false,
+&quot;v3_auth_mode&quot;: &quot;SHA&quot;,
+&quot;v3_enabled&quot;: true,
+&quot;v3_priv_mode&quot;: &quot;AES128&quot;,
+&quot;v3_user&quot;: &quot;o/yjVHMb&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:148" name="[localhost] meraki: meraki_snmp : debug msg={{snmp_idempotent}}" time="0.110348">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;hostname&quot;: &quot;snmp.meraki.com&quot;,
+            &quot;peer_ips&quot;: [
+                &quot;1.1.1.1&quot;,
+                &quot;2.2.2.2&quot;
+            ],
+            &quot;port&quot;: 16100,
+            &quot;v2c_enabled&quot;: false,
+            &quot;v3_auth_mode&quot;: &quot;SHA&quot;,
+            &quot;v3_enabled&quot;: true,
+            &quot;v3_priv_mode&quot;: &quot;AES128&quot;,
+            &quot;v3_user&quot;: &quot;o/yjVHMb&quot;
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:151" name="[localhost] meraki: meraki_snmp : assert that=['snmp_idempotent.changed == False', 'snmp_idempotent.data is defined']" time="0.104160">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:191" name="[localhost] meraki: meraki_snmp : Set short password auth_key={{auth_key}}, org_name={{test_org_name}}, state=present, v3_enabled=True, v3_auth_mode=SHA, v3_auth_pass=ansible, v3_priv_mode=AES128, v3_priv_pass=ansible" time="1.417603">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;v3_auth_pass and v3_priv_pass must both be at least 8 characters long.&quot;,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:205" name="[localhost] meraki: meraki_snmp : assert that=['&quot;at least 8&quot; in short_password.msg']" time="0.095499">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:209" name="[localhost] meraki: meraki_snmp : Set network access type to community string auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, state=present, access=community, community_string=abc123" time="4.402885">
+			<failure message="404" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: 404,
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 404,
+&quot;url&quot;: &quot;https://api.meraki.com/api/v1/networks/N_624874448297685379/snmpSettings&quot;
+}</failure>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:284" name="[localhost] meraki: meraki_snmp : Disable SNMPv3 auth_key={{auth_key}}, org_name={{test_org_name}}, state=present, v3_enabled=False, v3_auth_mode=SHA, v3_auth_pass=ansiblepass, v3_priv_mode=AES128, v3_priv_pass=ansiblepass" time="3.440751">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;hostname&quot;: &quot;snmp.meraki.com&quot;,
+&quot;peer_ips&quot;: [
+&quot;1.1.1.1&quot;,
+&quot;2.2.2.2&quot;
+],
+&quot;port&quot;: 16100,
+&quot;v2c_enabled&quot;: false,
+&quot;v3_auth_mode&quot;: &quot;SHA&quot;,
+&quot;v3_enabled&quot;: false,
+&quot;v3_priv_mode&quot;: &quot;AES128&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_snmp-0d8jl_hq-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_snmp/tasks/main.yml:296" name="[localhost] meraki: meraki_snmp : Delete SNMP network auth_key={{auth_key}}, org_name={{test_org_name}}, net_name={{test_net_name}}, state=absent" time="7.137129">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 204
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

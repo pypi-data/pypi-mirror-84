@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="0.6578619480133057">
+	<testsuite disabled="0" errors="0" failures="1" name="meraki_switchport-bpe4gj_w" skipped="0" tests="1" time="0.6578619480133057">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_switchport-sqr4wtna-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_switchport/tasks/main.yml:53" name="[localhost] meraki: meraki_switchport : Enable switchport auth_key={{auth_key}}, state=present, serial={{ serial_switch }}, number=7, enabled=True" time="0.657862">
+			<failure message="VALUE_SPECIFIED_IN_NO_LOG_PARAMETER" type="failure">{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/devel/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;,
+&quot;response&quot;: null,
+&quot;status&quot;: null,
+&quot;warnings&quot;: [
+&quot;The value \&quot;auth_key: 7\&quot; (type int) was converted to \&quot;auth_key: '7'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

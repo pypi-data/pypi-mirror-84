@@ -1,0 +1,33 @@
+{
+    "targets": {
+        "meraki_mr_ssid": {
+            "aliases": [
+                "meraki_mr_ssid", 
+                "module/", 
+                "module/meraki_mr_ssid/", 
+                "module/meraki_mr_ssid/meraki_mr_ssid", 
+                "network/", 
+                "network/meraki/", 
+                "network/meraki/meraki_mr_ssid", 
+                "non_destructive/", 
+                "non_destructive/meraki_mr_ssid", 
+                "role/", 
+                "role/meraki_mr_ssid", 
+                "unsupported/", 
+                "unsupported/meraki_mr_ssid"
+            ], 
+            "coverage": true, 
+            "coverage_label": "docker-default", 
+            "modules": [
+                "meraki_mr_ssid"
+            ], 
+            "name": "meraki_mr_ssid", 
+            "python_version": "3.7", 
+            "run_time_seconds": 131, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }
+    }
+}

@@ -1,0 +1,816 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="35" time="24.413177967071533">
+	<testsuite disabled="0" errors="0" failures="0" name="meraki_management_interface-s6hhrbuv" skipped="1" tests="35" time="24.413177967071533">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:7" name="[localhost] meraki: meraki_management_interface : Test an API key is provided msg=Please define an API key" time="0.104607">
+			<skipped message="Conditional result was False" type="skipped"/>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:12" name="[localhost] meraki: meraki_management_interface : set_fact net_name=TestNet - Appliance" time="0.076854">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_name&quot;: &quot;TestNet - Appliance&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:15" name="[localhost] meraki: meraki_management_interface : Create test network TestNet - Appliance auth_key={{auth_key}}, state=present, org_id={{test_org_id}}, net_name={{net_name}}, type=appliance" time="2.466606">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;enrollment_string&quot;: null,
+&quot;id&quot;: &quot;N_624874448297679182&quot;,
+&quot;name&quot;: &quot;TestNet - Appliance&quot;,
+&quot;notes&quot;: &quot;&quot;,
+&quot;organization_id&quot;: &quot;133277&quot;,
+&quot;product_types&quot;: [
+&quot;appliance&quot;
+],
+&quot;tags&quot;: [],
+&quot;time_zone&quot;: &quot;America/Los_Angeles&quot;,
+&quot;url&quot;: &quot;https://n110.meraki.com/TestNet-Applianc/n/9TIYVdUb/manage/usage/list&quot;
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:25" name="[localhost] meraki: meraki_management_interface : set_fact net_id={{net.data.id}}" time="0.077842">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;net_id&quot;: &quot;N_624874448297679182&quot;
+},
+&quot;changed&quot;: false
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:28" name="[localhost] meraki: meraki_management_interface : Test providing wan_enabled to an MS network auth_key={{auth_key}}, state=present, org_id={{test_org_id}}, net_id={{test_switch_net_name}}, serial={{serial_switch}}, wan1={'wan_enabled': 'enabled', 'using_static_ip': False}" time="1.455297">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;wan1&quot;: {
+&quot;using_static_ip&quot;: false,
+&quot;vlan&quot;: 1
+}
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:42" name="[localhost] meraki: meraki_management_interface : debug var=ms_not_configured" time="0.081416">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;ms_not_configured&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;wan1&quot;: {
+                &quot;using_static_ip&quot;: false,
+                &quot;vlan&quot;: 1
+            }
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:45" name="[localhost] meraki: meraki_management_interface : assert that=['ms_not_configured.data is defined']" time="0.080995">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:49" name="[localhost] meraki: meraki_management_interface : Set management interface on switch auth_key={{auth_key}}, state=present, org_id={{test_org_id}}, net_id={{test_switch_net_name}}, serial={{serial_switch}}, wan1={'using_static_ip': False, 'vlan': 3}" time="2.095621">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;wan1&quot;: {
+&quot;using_static_ip&quot;: false,
+&quot;vlan&quot;: 3
+}
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:63" name="[localhost] meraki: meraki_management_interface : debug var=set_switch_mgmt" time="0.083372">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;set_switch_mgmt&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;wan1&quot;: {
+                &quot;using_static_ip&quot;: false,
+                &quot;vlan&quot;: 3
+            }
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;diff&quot;: {
+            &quot;after&quot;: {
+                &quot;wan1&quot;: {
+                    &quot;vlan&quot;: 3
+                }
+            },
+            &quot;before&quot;: {
+                &quot;wan1&quot;: {
+                    &quot;vlan&quot;: 1
+                }
+            }
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:66" name="[localhost] meraki: meraki_management_interface : assert that=['set_switch_mgmt.data is defined']" time="0.082058">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:70" name="[localhost] meraki: meraki_management_interface : Query non-MX network auth_key={{auth_key}}, state=query, org_id={{test_org_id}}, net_id={{test_switch_net_name}}, serial={{serial_switch}}" time="1.292213">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;wan1&quot;: {
+&quot;using_static_ip&quot;: false,
+&quot;vlan&quot;: 3
+}
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:80" name="[localhost] meraki: meraki_management_interface : debug var=non_mx_network" time="0.080814">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;non_mx_network&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;wan1&quot;: {
+                &quot;using_static_ip&quot;: false,
+                &quot;vlan&quot;: 3
+            }
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:83" name="[localhost] meraki: meraki_management_interface : assert that=['non_mx_network.data is defined']" time="0.083292">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:87" name="[localhost] meraki: meraki_management_interface : Reset management interface on switch auth_key={{auth_key}}, state=present, org_id={{test_org_id}}, net_id={{test_switch_net_name}}, serial={{serial_switch}}, wan1={'using_static_ip': False, 'vlan': 1}" time="2.203261">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;wan1&quot;: {
+&quot;using_static_ip&quot;: false,
+&quot;vlan&quot;: 1
+}
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:101" name="[localhost] meraki: meraki_management_interface : debug var=reset_switch_mgmt" time="0.083697">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;reset_switch_mgmt&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;wan1&quot;: {
+                &quot;using_static_ip&quot;: false,
+                &quot;vlan&quot;: 1
+            }
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;diff&quot;: {
+            &quot;after&quot;: {
+                &quot;wan1&quot;: {
+                    &quot;vlan&quot;: 1
+                }
+            },
+            &quot;before&quot;: {
+                &quot;wan1&quot;: {
+                    &quot;vlan&quot;: 3
+                }
+            }
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:104" name="[localhost] meraki: meraki_management_interface : assert that=['reset_switch_mgmt.data is defined']" time="0.083278">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:108" name="[localhost] meraki: meraki_management_interface : Set WAN1 as DHCP in check mode auth_key={{auth_key}}, state=present, org_id={{test_org_id}}, net_id={{net_id}}, serial={{serial}}, wan1={'wan_enabled': 'enabled', 'using_static_ip': False, 'vlan': 1}" time="1.249621">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;ddns_hostnames&quot;: {
+&quot;active_ddns_hostname&quot;: &quot;testnet-appliance-vmrdqtzwwk.dynamic-m.com&quot;,
+&quot;ddns_hostname_wan1&quot;: &quot;testnet-appliance-vmrdqtzwwk-1.dynamic-m.com&quot;,
+&quot;ddns_hostname_wan2&quot;: &quot;testnet-appliance-vmrdqtzwwk-2.dynamic-m.com&quot;
+},
+&quot;wan1&quot;: {
+&quot;using_static_ip&quot;: false,
+&quot;vlan&quot;: 1,
+&quot;wan_enabled&quot;: &quot;enabled&quot;
+},
+&quot;wan2&quot;: {
+&quot;using_static_ip&quot;: false,
+&quot;vlan&quot;: null,
+&quot;wan_enabled&quot;: &quot;enabled&quot;
+}
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:123" name="[localhost] meraki: meraki_management_interface : debug var=set_wan1_check" time="0.084767">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;set_wan1_check&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;ddns_hostnames&quot;: {
+                &quot;active_ddns_hostname&quot;: &quot;testnet-appliance-vmrdqtzwwk.dynamic-m.com&quot;,
+                &quot;ddns_hostname_wan1&quot;: &quot;testnet-appliance-vmrdqtzwwk-1.dynamic-m.com&quot;,
+                &quot;ddns_hostname_wan2&quot;: &quot;testnet-appliance-vmrdqtzwwk-2.dynamic-m.com&quot;
+            },
+            &quot;wan1&quot;: {
+                &quot;using_static_ip&quot;: false,
+                &quot;vlan&quot;: 1,
+                &quot;wan_enabled&quot;: &quot;enabled&quot;
+            },
+            &quot;wan2&quot;: {
+                &quot;using_static_ip&quot;: false,
+                &quot;vlan&quot;: null,
+                &quot;wan_enabled&quot;: &quot;enabled&quot;
+            }
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;diff&quot;: {
+            &quot;after&quot;: {
+                &quot;wan1&quot;: {
+                    &quot;wan_enabled&quot;: &quot;enabled&quot;
+                }
+            },
+            &quot;before&quot;: {
+                &quot;ddns_hostnames&quot;: {
+                    &quot;active_ddns_hostname&quot;: &quot;testnet-appliance-vmrdqtzwwk.dynamic-m.com&quot;,
+                    &quot;ddns_hostname_wan1&quot;: &quot;testnet-appliance-vmrdqtzwwk-1.dynamic-m.com&quot;,
+                    &quot;ddns_hostname_wan2&quot;: &quot;testnet-appliance-vmrdqtzwwk-2.dynamic-m.com&quot;
+                },
+                &quot;wan1&quot;: {
+                    &quot;wan_enabled&quot;: &quot;disabled&quot;
+                },
+                &quot;wan2&quot;: {
+                    &quot;using_static_ip&quot;: false,
+                    &quot;vlan&quot;: null,
+                    &quot;wan_enabled&quot;: &quot;enabled&quot;
+                }
+            }
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:126" name="[localhost] meraki: meraki_management_interface : assert that=['set_wan1_check is changed', 'set_wan1_check.data is defined']" time="0.087994">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:131" name="[localhost] meraki: meraki_management_interface : Set WAN1 as DHCP auth_key={{auth_key}}, state=present, org_id={{test_org_id}}, net_id={{net_id}}, serial={{serial}}, wan1={'wan_enabled': 'enabled', 'using_static_ip': False, 'vlan': 1}" time="2.304506">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;ddns_hostnames&quot;: {
+&quot;active_ddns_hostname&quot;: &quot;testnet-appliance-vmrdqtzwwk.dynamic-m.com&quot;,
+&quot;ddns_hostname_wan1&quot;: &quot;testnet-appliance-vmrdqtzwwk-1.dynamic-m.com&quot;,
+&quot;ddns_hostname_wan2&quot;: &quot;testnet-appliance-vmrdqtzwwk-2.dynamic-m.com&quot;
+},
+&quot;wan1&quot;: {
+&quot;using_static_ip&quot;: false,
+&quot;vlan&quot;: 1,
+&quot;wan_enabled&quot;: &quot;enabled&quot;
+},
+&quot;wan2&quot;: {
+&quot;using_static_ip&quot;: false,
+&quot;vlan&quot;: null,
+&quot;wan_enabled&quot;: &quot;enabled&quot;
+}
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:145" name="[localhost] meraki: meraki_management_interface : debug var=set_wan1" time="0.090885">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;set_wan1&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;ddns_hostnames&quot;: {
+                &quot;active_ddns_hostname&quot;: &quot;testnet-appliance-vmrdqtzwwk.dynamic-m.com&quot;,
+                &quot;ddns_hostname_wan1&quot;: &quot;testnet-appliance-vmrdqtzwwk-1.dynamic-m.com&quot;,
+                &quot;ddns_hostname_wan2&quot;: &quot;testnet-appliance-vmrdqtzwwk-2.dynamic-m.com&quot;
+            },
+            &quot;wan1&quot;: {
+                &quot;using_static_ip&quot;: false,
+                &quot;vlan&quot;: 1,
+                &quot;wan_enabled&quot;: &quot;enabled&quot;
+            },
+            &quot;wan2&quot;: {
+                &quot;using_static_ip&quot;: false,
+                &quot;vlan&quot;: null,
+                &quot;wan_enabled&quot;: &quot;enabled&quot;
+            }
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;diff&quot;: {
+            &quot;after&quot;: {
+                &quot;wan1&quot;: {
+                    &quot;wan_enabled&quot;: &quot;enabled&quot;
+                }
+            },
+            &quot;before&quot;: {
+                &quot;wan1&quot;: {
+                    &quot;wan_enabled&quot;: &quot;disabled&quot;
+                }
+            }
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:148" name="[localhost] meraki: meraki_management_interface : assert that=['set_wan1 is changed', 'set_wan1.data is defined']" time="0.086065">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:153" name="[localhost] meraki: meraki_management_interface : Set WAN1 as DHCP with idempotency auth_key={{auth_key}}, state=present, org_id={{test_org_id}}, net_id={{net_id}}, serial={{serial}}, wan1={'wan_enabled': 'enabled', 'using_static_ip': False, 'vlan': 1}" time="1.286708">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;ddns_hostnames&quot;: {
+&quot;active_ddns_hostname&quot;: &quot;testnet-appliance-vmrdqtzwwk.dynamic-m.com&quot;,
+&quot;ddns_hostname_wan1&quot;: &quot;testnet-appliance-vmrdqtzwwk-1.dynamic-m.com&quot;,
+&quot;ddns_hostname_wan2&quot;: &quot;testnet-appliance-vmrdqtzwwk-2.dynamic-m.com&quot;
+},
+&quot;wan1&quot;: {
+&quot;using_static_ip&quot;: false,
+&quot;vlan&quot;: 1,
+&quot;wan_enabled&quot;: &quot;enabled&quot;
+},
+&quot;wan2&quot;: {
+&quot;using_static_ip&quot;: false,
+&quot;vlan&quot;: null,
+&quot;wan_enabled&quot;: &quot;enabled&quot;
+}
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:167" name="[localhost] meraki: meraki_management_interface : debug var=set_wan1_idempotent" time="0.093666">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;set_wan1_idempotent&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;ddns_hostnames&quot;: {
+                &quot;active_ddns_hostname&quot;: &quot;testnet-appliance-vmrdqtzwwk.dynamic-m.com&quot;,
+                &quot;ddns_hostname_wan1&quot;: &quot;testnet-appliance-vmrdqtzwwk-1.dynamic-m.com&quot;,
+                &quot;ddns_hostname_wan2&quot;: &quot;testnet-appliance-vmrdqtzwwk-2.dynamic-m.com&quot;
+            },
+            &quot;wan1&quot;: {
+                &quot;using_static_ip&quot;: false,
+                &quot;vlan&quot;: 1,
+                &quot;wan_enabled&quot;: &quot;enabled&quot;
+            },
+            &quot;wan2&quot;: {
+                &quot;using_static_ip&quot;: false,
+                &quot;vlan&quot;: null,
+                &quot;wan_enabled&quot;: &quot;enabled&quot;
+            }
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:170" name="[localhost] meraki: meraki_management_interface : assert that=['set_wan1_idempotent is not changed', 'set_wan1_idempotent.data is defined']" time="0.094321">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:175" name="[localhost] meraki: meraki_management_interface : Set WAN2 as static IP auth_key={{auth_key}}, state=present, org_name={{test_org_name}}, net_id={{net_id}}, serial={{serial}}, wan2={'wan_enabled': 'enabled', 'using_static_ip': True, 'static_ip': '192.168.16.195', 'static_gateway_ip': '192.168.16.1', 'static_subnet_mask': '255.255.255.0', 'static_dns': ['1.1.1.1'], 'vlan': 1}" time="3.328958">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;ddns_hostnames&quot;: {
+&quot;active_ddns_hostname&quot;: &quot;testnet-appliance-vmrdqtzwwk.dynamic-m.com&quot;,
+&quot;ddns_hostname_wan1&quot;: &quot;testnet-appliance-vmrdqtzwwk-1.dynamic-m.com&quot;,
+&quot;ddns_hostname_wan2&quot;: &quot;testnet-appliance-vmrdqtzwwk-2.dynamic-m.com&quot;
+},
+&quot;wan1&quot;: {
+&quot;using_static_ip&quot;: false,
+&quot;vlan&quot;: 1,
+&quot;wan_enabled&quot;: &quot;enabled&quot;
+},
+&quot;wan2&quot;: {
+&quot;static_dns&quot;: [
+&quot;1.1.1.1&quot;
+],
+&quot;static_gateway_ip&quot;: &quot;192.168.16.1&quot;,
+&quot;static_ip&quot;: &quot;192.168.16.195&quot;,
+&quot;static_subnet_mask&quot;: &quot;255.255.255.0&quot;,
+&quot;using_static_ip&quot;: true,
+&quot;vlan&quot;: 1,
+&quot;wan_enabled&quot;: &quot;enabled&quot;
+}
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:194" name="[localhost] meraki: meraki_management_interface : debug var=set_wan2" time="0.085061">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;set_wan2&quot;: {
+        &quot;changed&quot;: true,
+        &quot;data&quot;: {
+            &quot;ddns_hostnames&quot;: {
+                &quot;active_ddns_hostname&quot;: &quot;testnet-appliance-vmrdqtzwwk.dynamic-m.com&quot;,
+                &quot;ddns_hostname_wan1&quot;: &quot;testnet-appliance-vmrdqtzwwk-1.dynamic-m.com&quot;,
+                &quot;ddns_hostname_wan2&quot;: &quot;testnet-appliance-vmrdqtzwwk-2.dynamic-m.com&quot;
+            },
+            &quot;wan1&quot;: {
+                &quot;using_static_ip&quot;: false,
+                &quot;vlan&quot;: 1,
+                &quot;wan_enabled&quot;: &quot;enabled&quot;
+            },
+            &quot;wan2&quot;: {
+                &quot;static_dns&quot;: [
+                    &quot;1.1.1.1&quot;
+                ],
+                &quot;static_gateway_ip&quot;: &quot;192.168.16.1&quot;,
+                &quot;static_ip&quot;: &quot;192.168.16.195&quot;,
+                &quot;static_subnet_mask&quot;: &quot;255.255.255.0&quot;,
+                &quot;using_static_ip&quot;: true,
+                &quot;vlan&quot;: 1,
+                &quot;wan_enabled&quot;: &quot;enabled&quot;
+            }
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;diff&quot;: {
+            &quot;after&quot;: {
+                &quot;wan2&quot;: {
+                    &quot;static_dns&quot;: [
+                        &quot;1.1.1.1&quot;
+                    ],
+                    &quot;static_gateway_ip&quot;: &quot;192.168.16.1&quot;,
+                    &quot;static_ip&quot;: &quot;192.168.16.195&quot;,
+                    &quot;static_subnet_mask&quot;: &quot;255.255.255.0&quot;,
+                    &quot;using_static_ip&quot;: true,
+                    &quot;vlan&quot;: 1
+                }
+            },
+            &quot;before&quot;: {
+                &quot;wan2&quot;: {
+                    &quot;using_static_ip&quot;: false,
+                    &quot;vlan&quot;: null
+                }
+            }
+        },
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:197" name="[localhost] meraki: meraki_management_interface : assert that=['set_wan2 is changed', 'set_wan2.data is defined']" time="0.091544">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:202" name="[localhost] meraki: meraki_management_interface : Test too many DNS servers auth_key={{auth_key}}, state=present, org_id={{test_org_id}}, net_id={{net_id}}, serial={{serial}}, wan1={'wan_enabled': 'enabled', 'using_static_ip': True, 'static_ip': '192.0.1.2', 'static_gateway_ip': '192.0.1.1', 'static_subnet_mask': '255.255.255.0', 'static_dns': ['1.1.1.1', '8.8.8.8', '4.4.4.4'], 'vlan': 1}" time="0.553053">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;msg&quot;: &quot;Maximum number of static DNS addresses is 2.&quot;,
+&quot;response&quot;: null,
+&quot;status&quot;: null,
+&quot;warnings&quot;: [
+&quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:224" name="[localhost] meraki: meraki_management_interface : debug var=too_many_dns" time="0.097709">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;too_many_dns&quot;: {
+        &quot;changed&quot;: false,
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: true,
+        &quot;msg&quot;: &quot;Maximum number of static DNS addresses is 2.&quot;,
+        &quot;response&quot;: null,
+        &quot;status&quot;: null,
+        &quot;warnings&quot;: [
+            &quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+        ]
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:227" name="[localhost] meraki: meraki_management_interface : assert that=['too_many_dns.msg == &quot;Maximum number of static DNS addresses is 2.&quot;']" time="0.083093">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:231" name="[localhost] meraki: meraki_management_interface : Query management information auth_key={{auth_key}}, state=query, org_name={{test_org_name}}, net_id={{net_id}}, serial={{serial}}" time="2.081803">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;data&quot;: {
+&quot;ddns_hostnames&quot;: {
+&quot;active_ddns_hostname&quot;: &quot;testnet-appliance-vmrdqtzwwk.dynamic-m.com&quot;,
+&quot;ddns_hostname_wan1&quot;: &quot;testnet-appliance-vmrdqtzwwk-1.dynamic-m.com&quot;,
+&quot;ddns_hostname_wan2&quot;: &quot;testnet-appliance-vmrdqtzwwk-2.dynamic-m.com&quot;
+},
+&quot;wan1&quot;: {
+&quot;using_static_ip&quot;: false,
+&quot;vlan&quot;: 1,
+&quot;wan_enabled&quot;: &quot;enabled&quot;
+},
+&quot;wan2&quot;: {
+&quot;static_dns&quot;: [
+&quot;1.1.1.1&quot;
+],
+&quot;static_gateway_ip&quot;: &quot;192.168.16.1&quot;,
+&quot;static_ip&quot;: &quot;192.168.16.195&quot;,
+&quot;static_subnet_mask&quot;: &quot;255.255.255.0&quot;,
+&quot;using_static_ip&quot;: true,
+&quot;vlan&quot;: 1,
+&quot;wan_enabled&quot;: &quot;enabled&quot;
+}
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:241" name="[localhost] meraki: meraki_management_interface : debug var=query_mx" time="0.082639">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;query_mx&quot;: {
+        &quot;changed&quot;: false,
+        &quot;data&quot;: {
+            &quot;ddns_hostnames&quot;: {
+                &quot;active_ddns_hostname&quot;: &quot;testnet-appliance-vmrdqtzwwk.dynamic-m.com&quot;,
+                &quot;ddns_hostname_wan1&quot;: &quot;testnet-appliance-vmrdqtzwwk-1.dynamic-m.com&quot;,
+                &quot;ddns_hostname_wan2&quot;: &quot;testnet-appliance-vmrdqtzwwk-2.dynamic-m.com&quot;
+            },
+            &quot;wan1&quot;: {
+                &quot;using_static_ip&quot;: false,
+                &quot;vlan&quot;: 1,
+                &quot;wan_enabled&quot;: &quot;enabled&quot;
+            },
+            &quot;wan2&quot;: {
+                &quot;static_dns&quot;: [
+                    &quot;1.1.1.1&quot;
+                ],
+                &quot;static_gateway_ip&quot;: &quot;192.168.16.1&quot;,
+                &quot;static_ip&quot;: &quot;192.168.16.195&quot;,
+                &quot;static_subnet_mask&quot;: &quot;255.255.255.0&quot;,
+                &quot;using_static_ip&quot;: true,
+                &quot;vlan&quot;: 1,
+                &quot;wan_enabled&quot;: &quot;enabled&quot;
+            }
+        },
+        &quot;deprecations&quot;: [
+            {
+                &quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+                &quot;version&quot;: &quot;2.12&quot;
+            }
+        ],
+        &quot;failed&quot;: false,
+        &quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+        &quot;status&quot;: 200
+    }
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:244" name="[localhost] meraki: meraki_management_interface : assert that=['query_mx.data is defined']" time="0.083244">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_management_interface-xq2rgx3w-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_management_interface/tasks/main.yml:252" name="[localhost] meraki: meraki_management_interface : Reset settings for all interfaces auth_key={{auth_key}}, state=present, org_id={{test_org_id}}, net_id={{net_id}}, serial={{serial}}, wan1={'wan_enabled': 'disabled', 'using_static_ip': False}, wan2={'wan_enabled': 'enabled', 'using_static_ip': False}" time="2.116320">
+			<system-out>{
+&quot;changed&quot;: true,
+&quot;data&quot;: {
+&quot;ddns_hostnames&quot;: {
+&quot;active_ddns_hostname&quot;: &quot;testnet-appliance-vmrdqtzwwk.dynamic-m.com&quot;,
+&quot;ddns_hostname_wan1&quot;: &quot;testnet-appliance-vmrdqtzwwk-1.dynamic-m.com&quot;,
+&quot;ddns_hostname_wan2&quot;: &quot;testnet-appliance-vmrdqtzwwk-2.dynamic-m.com&quot;
+},
+&quot;wan1&quot;: {
+&quot;using_static_ip&quot;: false,
+&quot;vlan&quot;: 1,
+&quot;wan_enabled&quot;: &quot;disabled&quot;
+},
+&quot;wan2&quot;: {
+&quot;using_static_ip&quot;: false,
+&quot;vlan&quot;: null,
+&quot;wan_enabled&quot;: &quot;enabled&quot;
+}
+},
+&quot;deprecations&quot;: [
+{
+&quot;msg&quot;: &quot;Distribution Ubuntu 18.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.10/reference_appendices/interpreter_discovery.html for more information&quot;,
+&quot;version&quot;: &quot;2.12&quot;
+}
+],
+&quot;response&quot;: &quot;OK (unknown bytes)&quot;,
+&quot;status&quot;: 200,
+&quot;warnings&quot;: [
+&quot;The value \&quot;133277\&quot; (type int) was converted to \&quot;'133277'\&quot; (type string). If this does not look like what you expect, quote the entire value to ensure it does not change.&quot;
+]
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="0" tests="1" time="3.8915085792541504">
+	<testsuite disabled="0" errors="1" failures="0" name="meraki_alert-6__70sc7" skipped="0" tests="1" time="3.8915085792541504">
+		<testcase classname="/root/ansible_collections/cisco/meraki/tests/output/.tmp/integration/meraki_alert-varyflhu-ÅÑŚÌβŁÈ/tests/integration/targets/meraki_alert/tasks/main.yml:74" name="[localhost] meraki: meraki_alert : Update settings idempotent auth_key={{ auth_key }}, org_name={{test_org_name}}, net_name=IntTestNetworkWireless, state=present, default_destinations={'emails': ['{{ email_prefix }}@{{ email_domain }}', '{{ email_prefix }}2@{{ email_domain }}'], 'all_admins': True, 'snmp': False}, alerts=[{'type': 'gatewayDown', 'enabled': True, 'filters': {'timeout': 60}, 'alert_destinations': {'emails': ['{{ email_prefix }}@{{ email_domain }}', '{{ email_prefix }}2@{{ email_domain }}'], 'all_admins': True, 'snmp': False}}]" time="3.891509">
+			<error message="AttributeError: 'list' object has no attribute 'update'" type="error">Traceback (most recent call last):
+  File &quot;/root/.ansible/tmp/ansible-tmp-1602182606.9407218-107-145643489732254/AnsiballZ_meraki_alert.py&quot;, line 143, in &lt;module&gt;
+    _ansiballz_main()
+  File &quot;/root/.ansible/tmp/ansible-tmp-1602182606.9407218-107-145643489732254/AnsiballZ_meraki_alert.py&quot;, line 135, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File &quot;/root/.ansible/tmp/ansible-tmp-1602182606.9407218-107-145643489732254/AnsiballZ_meraki_alert.py&quot;, line 81, in invoke_module
+    runpy.run_module(mod_name='ansible_collections.cisco.meraki.plugins.modules.meraki_alert', init_globals=None, run_name='__main__', alter_sys=True)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File &quot;/usr/lib/python3.6/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+  File &quot;/tmp/ansible_meraki_alert_payload_zl9h5taf/ansible_meraki_alert_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_alert.py&quot;, line 237, in &lt;module&gt;
+  File &quot;/tmp/ansible_meraki_alert_payload_zl9h5taf/ansible_meraki_alert_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_alert.py&quot;, line 219, in main
+  File &quot;/tmp/ansible_meraki_alert_payload_zl9h5taf/ansible_meraki_alert_payload.zip/ansible_collections/cisco/meraki/plugins/modules/meraki_alert.py&quot;, line 148, in construct_payload
+AttributeError: 'list' object has no attribute 'update'
+</error>
+		</testcase>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,31 @@
+{
+    "targets": {
+        "meraki_mr_rf_profile": {
+            "aliases": [
+                "meraki_mr_rf_profile", 
+                "module/", 
+                "module/meraki_mr_rf_profile/", 
+                "module/meraki_mr_rf_profile/meraki_mr_rf_profile", 
+                "network/", 
+                "network/meraki/", 
+                "network/meraki/meraki_mr_rf_profile", 
+                "non_destructive/", 
+                "non_destructive/meraki_mr_rf_profile", 
+                "role/", 
+                "role/meraki_mr_rf_profile"
+            ], 
+            "coverage": true, 
+            "coverage_label": "docker-default", 
+            "modules": [
+                "meraki_mr_rf_profile"
+            ], 
+            "name": "meraki_mr_rf_profile", 
+            "python_version": "3.7", 
+            "run_time_seconds": 32, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }
+    }
+}

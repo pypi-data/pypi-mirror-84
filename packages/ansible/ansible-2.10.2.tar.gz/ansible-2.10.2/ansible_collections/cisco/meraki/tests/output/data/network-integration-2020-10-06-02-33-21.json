@@ -1,0 +1,31 @@
+{
+    "targets": {
+        "meraki_alert": {
+            "aliases": [
+                "meraki_alert", 
+                "module/", 
+                "module/meraki_alert/", 
+                "module/meraki_alert/meraki_alert", 
+                "network/", 
+                "network/meraki/", 
+                "network/meraki/meraki_alert", 
+                "non_destructive/", 
+                "non_destructive/meraki_alert", 
+                "role/", 
+                "role/meraki_alert"
+            ], 
+            "coverage": true, 
+            "coverage_label": "docker-default", 
+            "modules": [
+                "meraki_alert"
+            ], 
+            "name": "meraki_alert", 
+            "python_version": "3.7", 
+            "run_time_seconds": 24, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role", 
+            "validation_seconds": 0
+        }
+    }
+}
