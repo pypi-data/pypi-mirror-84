@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: osm2gmns
+Version: 0.0.1
+Summary: build network with gmns format using .osm file from openstreetmap
+Home-page: https://github.com/jiawei92/OSM2GMNS
+Author: Jiawei Lu, Xuesong Zhou
+Author-email: jiaweil9@asu.edu, xzhou74@asu.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
