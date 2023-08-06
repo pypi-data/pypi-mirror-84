@@ -1,0 +1,11 @@
+vro_package_diff/__init__.py,sha256=ADUtUh2uLl0WNWjze0OSTrfIRjt6RQv_Je2NWgeOyEU,399
+vro_package_diff/__main__.py,sha256=3A4L8TtD7gBXjUjOjWJzAwYV-1aq5SMk-6ZFtAdqI6M,14924
+vro_package_diff/config.py,sha256=Y_86yJC6nJTosw4VwK1dQ46UyoVAPjEz0P45aGcSEeQ,1595
+vro_package_diff/vro_element.py,sha256=AiHAZ-_b_E93U4L0kHXqffuo6ZGhuUQ-SQPw5k7jhDg,5717
+vro_package_diff-2.2.1.dist-info/AUTHORS.rst,sha256=3oyfX4kb2OUNl2oDaHh4MIgwwf1berhPhcaur-9aKRI,199
+vro_package_diff-2.2.1.dist-info/LICENSE.md,sha256=hq9pvFqXcQaUGEyN_HKTGhV6Czr3cBhpjn_q5NscmZ4,1074
+vro_package_diff-2.2.1.dist-info/METADATA,sha256=mg4gPfMHjI3Vii4opPZeYa-_qMQSA_61VuEVxBVymas,7329
+vro_package_diff-2.2.1.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+vro_package_diff-2.2.1.dist-info/entry_points.txt,sha256=S2zPw2MIeEpImZmOfl7KTtICo9zrhOn4194YQP7Z4LE,61
+vro_package_diff-2.2.1.dist-info/top_level.txt,sha256=_GV1emVKkWZOUvJ-t2mtNzdbuOCtGGScpC55W1Vg_iQ,17
+vro_package_diff-2.2.1.dist-info/RECORD,,
