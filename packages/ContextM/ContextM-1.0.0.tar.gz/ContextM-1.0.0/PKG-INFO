@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: ContextM
+Version: 1.0.0
+Summary: Helps in the process of creating a context manager
+Home-page: https://www.beyonce.com
+Author: hunterg
+Author-email: redissuslolol@gmail.com
+License: UNKNOWN
+Description: 
+        # ContextM
+        ##### *My package does this*
+        
+        ### Instillation
+            python -m pip install contextM
+        
+        ### Usage
+            import contextM
+            
+            class my_context_manager(contextM.ContextManager):
+                def __init__(self, var):
+                    self.var = var
+                def __enter__(self):
+                    print('Enter!')
+                    return self
+                def __exit__(self, *args, **kwargs):
+                    print('Exit!')
+        
+        ### Features
+            ContextManager class:
+            * See Implementation Above
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

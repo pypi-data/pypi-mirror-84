@@ -1,0 +1,8 @@
+README.md
+setup.py
+ContextM.egg-info/PKG-INFO
+ContextM.egg-info/SOURCES.txt
+ContextM.egg-info/dependency_links.txt
+ContextM.egg-info/requires.txt
+ContextM.egg-info/top_level.txt
+contextM/__init__.py
