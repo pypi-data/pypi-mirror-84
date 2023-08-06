@@ -1,0 +1,3 @@
+[console_scripts]
+wiki = seckerwiki.wiki:main
+
