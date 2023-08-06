@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+coherence_ua/__init__.py
+coherence_ua/transformer_coherence.py
+coherence_ua.egg-info/PKG-INFO
+coherence_ua.egg-info/SOURCES.txt
+coherence_ua.egg-info/dependency_links.txt
+coherence_ua.egg-info/requires.txt
+coherence_ua.egg-info/top_level.txt
+coherence_ua/models/ukrainian-iu-ud-2.3-181115.udpipe
+coherence_ua/models/utils.py
+coherence_ua/models/vocab.subwords
+coherence_ua/models/weights/chk-2-0.0917-0.8678.data-00000-of-00002
+coherence_ua/models/weights/chk-2-0.0917-0.8678.data-00001-of-00002
+coherence_ua/models/weights/chk-2-0.0917-0.8678.index

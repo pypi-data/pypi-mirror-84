@@ -1,0 +1,4 @@
+ufal.udpipe
+tensorflow
+tensorflow-datasets
+numpy
