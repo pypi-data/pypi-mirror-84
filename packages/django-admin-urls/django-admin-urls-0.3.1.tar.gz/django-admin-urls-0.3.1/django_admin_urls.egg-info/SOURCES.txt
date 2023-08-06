@@ -1,0 +1,6 @@
+README.md
+README.rst
+setup.py
+dj_admin_urls/urls.py
+dj_admin_urls/utils.py
+dj_admin_urls/__init__.py
