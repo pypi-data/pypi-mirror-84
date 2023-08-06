@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/v1/admin/static/js/main.2c63efee.chunk.js",
+    "main.js.map": "/v1/admin/static/js/main.2c63efee.chunk.js.map",
+    "runtime-main.js": "/v1/admin/static/js/runtime-main.6c5c2596.js",
+    "runtime-main.js.map": "/v1/admin/static/js/runtime-main.6c5c2596.js.map",
+    "static/css/2.439435b7.chunk.css": "/v1/admin/static/css/2.439435b7.chunk.css",
+    "static/js/2.4eb9f794.chunk.js": "/v1/admin/static/js/2.4eb9f794.chunk.js",
+    "static/js/2.4eb9f794.chunk.js.map": "/v1/admin/static/js/2.4eb9f794.chunk.js.map",
+    "index.html": "/v1/admin/index.html",
+    "precache-manifest.25653e23c66e22b6eba72cfd144a8378.js": "/v1/admin/precache-manifest.25653e23c66e22b6eba72cfd144a8378.js",
+    "service-worker.js": "/v1/admin/service-worker.js",
+    "static/css/2.439435b7.chunk.css.map": "/v1/admin/static/css/2.439435b7.chunk.css.map",
+    "static/js/2.4eb9f794.chunk.js.LICENSE.txt": "/v1/admin/static/js/2.4eb9f794.chunk.js.LICENSE.txt",
+    "static/media/styles.css": "/v1/admin/static/media/info-circle-fill.cb248b18.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6c5c2596.js",
+    "static/css/2.439435b7.chunk.css",
+    "static/js/2.4eb9f794.chunk.js",
+    "static/js/main.2c63efee.chunk.js"
+  ]
+}
