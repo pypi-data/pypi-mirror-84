@@ -1,0 +1,6 @@
+python-vlc
+pafy
+beautifulsoup4
+youtube-dl
+pypresence
+requests

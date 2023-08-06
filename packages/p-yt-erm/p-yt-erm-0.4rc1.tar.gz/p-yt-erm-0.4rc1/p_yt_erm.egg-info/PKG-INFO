@@ -1,0 +1,179 @@
+Metadata-Version: 2.1
+Name: p-yt-erm
+Version: 0.4rc1
+Summary: Easy to use youtube music streamer command line tool written in python3
+Home-page: https://gitlab.com/mocchapi/pyterminal/
+Author: Anne & Lynice
+Maintainer: Alex Technically
+Maintainer-email: alexa@nicolor.tech
+License: UNKNOWN
+Description:                                    ------------------------------------
+                                           pYTerminal    r0.1 by  anne & lynice
+                                           ------------------------------------
+        
+        =============================================================================================================
+        
+        youtube music player in the command line
+        
+        
+        This program requires python3, the libraries in requirements.txt & vlc media player to be installed to work
+        
+        =============================================================================================================
+        
+        
+        
+        
+        
+        
+         THIS DOCUMENT IS OUT OF DATE AND APPLIES TO THE PREVIOUS, MAIN BRANCH VERSION. NOTE THAT LIKELY NONE OF
+         			THE THINGS DESCRIBED HERE WILL WORK WITH THIS VERSION OF pYTerminal REWRITE
+        
+        
+        
+        
+        
+        
+        =============================================================================================================
+        
+        Input actions:
+        >	[p/s/m/e/v]: p
+        // pauses playback
+        
+        >	[p/s/m/e/v]: s
+        // skips the current song
+        
+        >	[p/s/m/e/v]: m +20
+        // moves the playback cursor 20 seconds forwards
+        
+        >	[p/s/m/e/v]: m -14
+        // moves the playback cursor 14 seconds backwards
+        
+        >	[p/s/m/e/v]: e
+        // stops playback & exits
+        
+        >	[p/s/m/e/v]: v 20
+        // sets volume level to 20
+        
+        =============================================================================================================
+        
+        commandline options for main.py
+        
+        
+        USAGE: python3 main.py [-p][-r][-v][-s] "Song1" "Song2"
+        
+        -p <filename>     // specify a file that contains a list of song names, one on each line
+        -r <True/False>   // specify if you want to enable Discord Rich Presence
+        -i <True/False>   // specify if you want to enable input
+        -v <int>          // specify the volume level
+        -s                // enabled playlist shuffling
+        -a                // enable forcing ytplayer to use audiostreams* 
+        -d                // enables debug logging
+        -l                // enables infinite playlist looping
+        
+        
+        *this can cause playback issues on some videos but might offer better audio quality
+        
+        =============================================================================================================
+        
+        examples:
+        
+        
+        python3 main.py -p playlist.txt 
+        // plays all the songs in playlist.txt in descending order
+        
+        python3 main.py -v 50 "foals spanish sahara"
+        // plays the song "spaish sahara" at volume level 50
+        
+        python3 main.py -s -p playlist.txt
+        // plays the songs in playlist.txt in random order
+        
+        pythhon3 main.py -p playlist.txt "foals spanish sahara" "icicles the scary jokes"
+        // plays the songs "spanish sahara" & "icicles" before playing everything in playlist.txt
+        
+        
+        ============================================================================================================
+        
+        ytplayer can be used on its own in different scripts by importing it
+        
+        view the source code to get a vague idea how it works
+        
+        =============================================================================================================
+        
+        jk heres a quick rundown
+        
+        
+        
+        ---- initial setup ----
+        
+        first step is to import it (obv)
+        
+        >	import ytplayer
+        
+        now make a new instance of the player by creating the object variable. Decide if you want to supress output or enable debug info.
+        Enabling debug will always disable quiet mode too
+        
+        >	player = ytplayer.YtPlayer(quiet=False,debug=False,vlclogs=False,forceaudiostream=False)
+        // quiet determines if it prints song info when a song gets played
+        // debug determines if some debug prints get printed
+        // vlclogs enabled/disables vlclib logging
+        // forceaudiostream determines if playing a song will always use the audiostream [See note in commandline options up above]
+        
+        thats all the setup you need.
+        
+        
+        ---- playing songs ----
+        
+        There are several ways of playing songs:
+        
+        >	YtPlayer.play(query,wait=True)
+        // this will search for the 'query' search terms and immediatly play the top result. Enabling 'wait' means it will sleep until the song is finished.
+        
+        
+        >	YtPlayer.playPlaylist(songlist,shuffle=False) 
+        // very similar to play, but for multiple song. it will play every song in the list 'songlist'. Enable shuffle to randomise the order of songs.
+        
+        
+        >	YtPlayer._vlcPlay(url)
+        // this is more backend-ish but if you really want to play an audio file from the web directly and for some reason dont want to use python-vlc on it's own, use this.
+        
+        
+        >	YtPlayer.search(query)
+        // this doesnt actually play anything, but it returns the highest quality youtube audio url for the top search result of the query. Could be useful if you want to use a different audio library instead of vlc i suppose.
+        
+        
+        ---- controlling playback ----
+        
+        >	YtPlayer.pause():
+        // pauses playback
+        
+        >	YtPlayer.unpause():
+        // resumes playback
+        
+        >	YtPlayer.stop():
+        // stops playback entirely
+        
+        >	YtPlayer.setVolume(volumenum):
+        // this will set the volume to the int given as long as it is between 0-200
+        There are two other ways to change the volume, both applicable to niche uses
+        The fist would be to overwrite 'YtPlayer._volumeLvl'. This would change the volume level to the one specified when the next song in the playlist starts playing.
+        The other option is to call 'YtPlayer.vlcPlayer.audio_set_volume(volumenum)'. This changes the vlc volume for the *current song only* and will be changed back to the _volumeLvl value when the next song plays.
+        
+        
+        ---- finer playback controls ----
+        
+        i decided not to wrap the entire python-vlc library needlessly, because it is still acessible.
+        You can access any vlc function by calling the 'YtPlayer.vlcPlayer' or 'YtPlayer.vlcInstance' objects
+        
+        
+        ---- getting playback info ----
+        
+        both 'YtPlayer.YtInfo' & 'YtPlayer._ydl_info' are exposed. You may use either to get pretty much any info about the youtube video.
+        
+        >	YtPlayer.getTimeStamp()
+        if you happen to need a nicely formatted current timestamp + the complete length of the current video, use this. It will return a tuple like this '(MM:SS,MM:SS)' where [0] is current time and [1] is total lenght
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Multimedia :: Sound/Audio :: Players
+Classifier: Development Status :: 4 - Beta
+Description-Content-Type: text/plain
