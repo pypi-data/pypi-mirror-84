@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+botocove/__init__.py
+botocove/cove_decorator.py
+botocove.egg-info/PKG-INFO
+botocove.egg-info/SOURCES.txt
+botocove.egg-info/dependency_links.txt
+botocove.egg-info/requires.txt
+botocove.egg-info/top_level.txt
