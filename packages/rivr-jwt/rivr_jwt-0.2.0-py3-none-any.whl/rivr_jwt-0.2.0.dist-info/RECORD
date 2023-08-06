@@ -1,0 +1,10 @@
+rivr_jwt/__init__.py,sha256=n09JtN1zj_3yp5Ic_2XqaMHXiTOi9j8n4-v6Oq7ssuU,46
+rivr_jwt/middleware.py,sha256=OJv_6XwMPJoM__YBjzcsyLQ9mkB6F0oGIy8bxQlb1Ec,2640
+rivr_jwt/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_middleware.py,sha256=6XkjQnuk40FicelhUOFOPix5KV0s_b_LZagH5LWunZw,4701
+rivr_jwt-0.2.0.dist-info/LICENSE,sha256=oUrG7RvNIVcEO8LdVFM99JAxrcC70XdBTAMv2rjzZ-M,1483
+rivr_jwt-0.2.0.dist-info/METADATA,sha256=ENvYA--mx6tbMrcJEvfRNS7lpqbM_ORQT_3sdzpdZGw,618
+rivr_jwt-0.2.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+rivr_jwt-0.2.0.dist-info/top_level.txt,sha256=LmY_pyTxBx07CTK4fjjk-cKvQHwijCGxZqU87MkjA1M,15
+rivr_jwt-0.2.0.dist-info/RECORD,,
