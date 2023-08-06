@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bronkhorst-propar
+Version: 0.5.5
+Summary: Communicate to Bronkhorst Instruments using the propar protocol over RS232 or RS485.
+Home-page: https://github.com/bronkhorst-developer/bronkhorst-propar
+Author: Bronkhorst
+Author-email: support@bronkhorst.com
+License: UNKNOWN
+Description: 
+        The bronkhorst-propar module provides communication with Bronkhorst (Mass) Flow Meters and Controllers using the default RS232/RS485 interface.
+        
+        Documentation: https://bronkhorst-propar.readthedocs.io/en/latest/introduction.html
+        
+        Download Page: https://pypi.org/project/bronkhorst-propar
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
