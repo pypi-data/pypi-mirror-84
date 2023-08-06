@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: webdriver-extended
+Version: 1.0.0
+Summary: webdriver with more features
+Home-page: https://github.com/zmarffy/webdriver-extended
+Author: Zeke Marffy
+Author-email: zmarffy@yahoo.com
+License: MIT
+Description: # `webdriver-chrome-extended`
+        
+        `webdriver-chrome-extended` is a `webdriver.Chrome` with more features.
+        
+        Read the dosctrings. Actual docs to come later.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
