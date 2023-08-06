@@ -1,0 +1,9 @@
+README.md
+setup.py
+costra/__init__.py
+costra/costra.py
+costra.egg-info/PKG-INFO
+costra.egg-info/SOURCES.txt
+costra.egg-info/dependency_links.txt
+costra.egg-info/requires.txt
+costra.egg-info/top_level.txt
