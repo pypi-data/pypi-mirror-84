@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: abstract-ip-geolocation-api
+Version: 1.5.1
+Summary: IP Geolocation API from Abstract to geolocate any IP
+Home-page: UNKNOWN
+Author: Eric Barns
+Author-email: eric@abstractapi.com
+License: MIT
+Download-URL: https://pypi.org/project/abstract-ip-geolocation-api/
+Project-URL: Documentation, https://www.abstractapi.com/ip-geolocation-api
+Project-URL: Source, https://github.com/geolocation-api/ip-geolocation-api-python/
+Keywords: IP geolocation,IP address,IP geolocation API,geolocation,ip location,geocoding
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# IP Geolocation for Python (geolocation-api-python)
+
+Python library for Abstract free IP Geolocation API.
+
+Full documentation can be found on Abstract [IP Geolocation API](https://www.abstractapi.com/ip-geolocation-api) page.
+
+## Getting started
+
+Getting started with Abstract IP Geolocation API is very simple, you just need to install the library into your project as follow:
+
+```python
+pip install abstract-ip-geolocation-api
+```
+
+From there you can then call the geolocationapi as follow:
+
+```python
+# Import abstract ip geolocation api module
+import importlib
+abstract_ip_geolocation_api = importlib.import_module("abstract-ip-geolocation-api")
+
+# Initiate the geolocation api with a free API key retrieved on https://www.abstractapi.com/ip-geolocation-api
+geolocation_api = abstract_ip_geolocation_api.v1('YOUR_API_KEY')
+
+# Fetch location data for a given IP
+# Note: If you don't provide an ip_address value, then the requester IP will be used
+location_data = geolocation_api.geolocate(ip_address="ANY_IP_ADDRESS")
+
+# Process location data and potential errors
+if 'ip_address' in location_data:
+    # Location data has been successfully retrieved
+    country = location_data['country']
+    city = location_data['city']
+    print(country)
+elif 'error' in location_data:
+    # Handle Abstract related errors
+    error = location_data['error']
+    print(error)
+else:
+    # No location data available for this IP
+    print('No location data available for this IP')
+```
+
+
