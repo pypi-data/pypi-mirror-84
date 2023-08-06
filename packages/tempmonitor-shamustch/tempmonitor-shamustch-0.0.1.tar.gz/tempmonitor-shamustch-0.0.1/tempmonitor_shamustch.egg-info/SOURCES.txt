@@ -1,0 +1,6 @@
+README.md
+setup.py
+tempmonitor_shamustch.egg-info/PKG-INFO
+tempmonitor_shamustch.egg-info/SOURCES.txt
+tempmonitor_shamustch.egg-info/dependency_links.txt
+tempmonitor_shamustch.egg-info/top_level.txt
