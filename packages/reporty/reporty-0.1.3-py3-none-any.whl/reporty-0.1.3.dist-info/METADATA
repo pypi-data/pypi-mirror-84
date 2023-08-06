@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: reporty
+Version: 0.1.3
+Summary: 
+Requires-Dist: pyaml
+
+Reporty is a python library that contains useful 
+functions for organizing and distributing visual data
+
+Home-page: https://github.com/asboyer2/reporty
+Author: Andrew Boyer
+Author-email: reportylib@gmail.com
+License: BSD
+Description: UNKNOWN
+Keywords: report,email,plot,graph,embed
+Platform: UNKNOWN
