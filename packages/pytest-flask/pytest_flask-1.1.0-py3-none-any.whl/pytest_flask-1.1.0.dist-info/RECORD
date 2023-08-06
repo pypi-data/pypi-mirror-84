@@ -1,0 +1,11 @@
+pytest_flask/__init__.py,sha256=lTUGHWtVXVM3q703jRo9HeEYxwj2BtW8vx63DhHhQ3o,67
+pytest_flask/_version.py,sha256=fAa9AexT0q3l47SRpuq7MaNbiAmRbysEdi5-Mmbe9lw,116
+pytest_flask/fixtures.py,sha256=MEGCjUXpWEbsv5Y2SxIIOSLTTuMVzpCggzpgxENgY84,7367
+pytest_flask/plugin.py,sha256=xGRhw8a0vRIwMQtVDZVWBoikkfdZCsNAZ199_jepuko,6447
+pytest_flask/pytest_compat.py,sha256=pFqJgP8RrhoZnk-0ifnhcPWfn32vzAL-k9uzV5PzlGg,170
+pytest_flask-1.1.0.dist-info/LICENSE,sha256=r9auNgr_e1303T-H3FWwrbyY0DIiPQY76iluisdfaBU,1113
+pytest_flask-1.1.0.dist-info/METADATA,sha256=IAqGOehFgab4KNfB2J9BN9lFb80nbUpFON3j2WxsWm0,3924
+pytest_flask-1.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pytest_flask-1.1.0.dist-info/entry_points.txt,sha256=_eXVY3gUliBW4bI_LbpZloIPMIOzS9ikPelszbbNwZc,40
+pytest_flask-1.1.0.dist-info/top_level.txt,sha256=yeE__Gwz33LJsDKySHqBWBBP8XCcauq1cQN5YvJ_zaU,13
+pytest_flask-1.1.0.dist-info/RECORD,,
