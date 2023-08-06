@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+AnimeBot/__init__.py
+AnimeBotPackages.egg-info/PKG-INFO
+AnimeBotPackages.egg-info/SOURCES.txt
+AnimeBotPackages.egg-info/dependency_links.txt
+AnimeBotPackages.egg-info/requires.txt
+AnimeBotPackages.egg-info/top_level.txt
