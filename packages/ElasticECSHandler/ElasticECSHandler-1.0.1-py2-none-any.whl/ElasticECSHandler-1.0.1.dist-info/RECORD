@@ -1,0 +1,11 @@
+elasticecslogging/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+elasticecslogging/handlers.py,sha256=1kW6lDmXh0BH2sBHte-IFhiGaIcNNMdycNYhKoZvSgY,22377
+elasticecslogging/serializers.py,sha256=NLwEE-2GPk-PzXpxWdlXa_9N76t_HcOy6yx2PtbyZV8,718
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_elasticecshandler.py,sha256=OU77RF-QjXyPxQwYGcT132KAZAmrkWwIPvJ9_hmse3c,11982
+tests/test_elasticecsserializer.py,sha256=Hw5eFod5P9pimRvB0S2XbyW8m1c0f9n2tZzRIdsc6MY,3556
+ElasticECSHandler-1.0.1.dist-info/LICENSE.md,sha256=55iUwZK7b8deTDXoVjU_eFbiNQxRii5bMnz2P-2ap-Q,668
+ElasticECSHandler-1.0.1.dist-info/METADATA,sha256=1Q_ixpUWf7GItlJnWu_q3ppRFf_ZwUge7ljYb3PBTVs,11051
+ElasticECSHandler-1.0.1.dist-info/WHEEL,sha256=DgcoKJDfsYFbFLUrngH-aDjJZvn8UqGD3gZyEvGv0dg,92
+ElasticECSHandler-1.0.1.dist-info/top_level.txt,sha256=mZ6duwb8T2hn48dwr7ILfMl2QPIlhDoxAtozXpKyMUQ,24
+ElasticECSHandler-1.0.1.dist-info/RECORD,,
