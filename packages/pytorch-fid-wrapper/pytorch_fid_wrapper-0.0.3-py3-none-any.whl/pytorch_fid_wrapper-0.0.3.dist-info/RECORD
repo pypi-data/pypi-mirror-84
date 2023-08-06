@@ -1,0 +1,9 @@
+pytorch_fid_wrapper/__init__.py,sha256=MWb3uAGJ9NUvCq4kUi8cKUg8p2B9rlzEZTc54EY2Kz4,1346
+pytorch_fid_wrapper/fid_score.py,sha256=MPrzKU3wemEGq_eVByELz6h3ossIgL8nNkXyWKy04bw,11869
+pytorch_fid_wrapper/inception.py,sha256=Ig7mVB7USBVv_g02CrctDw42BYME7zskm6OXi0HQ8yE,12164
+pytorch_fid_wrapper/params.py,sha256=HWjVsqxn-PMO4uKTI-T8R1C4RSz7PXTvEsnqEd6jAaQ,448
+pytorch_fid_wrapper-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pytorch_fid_wrapper-0.0.3.dist-info/METADATA,sha256=w9W787em9PBVWEg9lVuoyc2oRvSM78j23uxbjGPSp7s,3764
+pytorch_fid_wrapper-0.0.3.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pytorch_fid_wrapper-0.0.3.dist-info/top_level.txt,sha256=0ZzVUUnZRRW_iWFUd2xxjl4esA-AKKO1a2ugZanLnrk,20
+pytorch_fid_wrapper-0.0.3.dist-info/RECORD,,
