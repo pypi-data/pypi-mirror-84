@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: libgastosluxu
+Version: 0.1
+Summary: Módulo para exemplificar construção de projetos Python no curso PyTools
+Home-page: https://github.com/luxu/libgastosluxu
+Author: Luciano Martins
+Author-email: contato@luxu.com.br
+License: GNU AFFERO GENERAL PUBLIC LICENSE
+Description: # libgastosluxu
+        
+        MÃ³dulo para exemplificar construÃ§Ã£o de projetos Python no curso PyTools
+        
+        [![Build Status](https://travis-ci.com/luxu/libgastosluxu.svg?branch=main)](https://travis-ci.com/luxu/libgastosluxu)
+        [![Updates](https://pyup.io/repos/github/luxu/libgastosluxu/shield.svg)](https://pyup.io/repos/github/luxu/libgastosluxu/)
+        [![Python 3](https://pyup.io/repos/github/luxu/libgastosluxu/python-3-shield.svg)](https://pyup.io/repos/github/luxu/libgastosluxu/)
+        
+        Para instalar:
+        ```console
+        python -m venv .venv
+        .\.venv\Scripts\activate
+        pip install -r requeriments
+        ```
+        
+        Para conferir qualidade ao cÃ³digo:
+        ```console
+        flake8
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Framework :: Pytest
+Description-Content-Type: text/markdown
