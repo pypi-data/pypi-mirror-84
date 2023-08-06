@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: cloudwatch_alarm_to_slack
+Version: 1.0.0
+Summary: A python library to send cloudwatch alarm events from sns to slack
+Home-page: https://github.com/jpdhas/cloudwatch_alarm_to_slack
+Author: Jermila Paul Dhas
+Author-email: dhas.jermila@gmail.com
+License: MIT license
+Description: ## Cloudwatch Alarm to Slack Notifier
+        
+        A python library to send cloudwatch alarm notifications to Slack.
+        
+        
+        ## Usage
+        
+        * Install the package.
+        
+        ```
+        pip install cloudwatch_alarm_to_slack
+        ```
+        
+        * It is expected this will be used as a part of a lambda.
+        
+        ```
+        from cloudwatch_alarm_to_slack.entrypoint import CloudwatchAlarmNotifier
+        
+        def lambda_handler(event, context):
+            CloudwatchAlarmNotifier.handle_event(event)
+        ```
+        
+        * It is required the following environment variable be set:
+            
+            - `SLACK_BOT_TOKEN`: Bot token of the slack app which should have the `chat:write` permissions.
+            - `SLACK_CHANNEL`: ID of the Slack channel to which notification should be sent to.
+        
+        
+        ------
+        
+        If there is another usecase, please open an issue and let me know :) 
+        
+Keywords: cloudwatch_alarm_to_slack,cloudwatchalarm,sns,slack,lambda
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
