@@ -1,0 +1,8 @@
+README.md
+setup.py
+cdmaoapi/__init__.py
+cdmaoapi.egg-info/PKG-INFO
+cdmaoapi.egg-info/SOURCES.txt
+cdmaoapi.egg-info/dependency_links.txt
+cdmaoapi.egg-info/requires.txt
+cdmaoapi.egg-info/top_level.txt
