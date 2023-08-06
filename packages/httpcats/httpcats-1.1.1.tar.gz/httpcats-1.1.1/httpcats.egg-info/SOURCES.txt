@@ -1,0 +1,7 @@
+README.md
+setup.py
+httpcats/__init__.py
+httpcats.egg-info/PKG-INFO
+httpcats.egg-info/SOURCES.txt
+httpcats.egg-info/dependency_links.txt
+httpcats.egg-info/top_level.txt
