@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: pygame-frame
+Version: 0.0.6
+Summary: A lib to simplify the use of pygame
+Home-page: https://github.com/paulnbrd/PyFrame/
+Author: PØL1
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: 
+        # PyFrame
+        By paulnbrd.
+        
+         A python written pygame utilities, based on classes and simplicity
+        
+        # Examples
+        see "examples/" for examples.
+        
+        # License
+        See https://github.com/paulnbrd/pyframe/blob/master/LICENSE for the license
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 1 - Planning
+Classifier: Natural Language :: French
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
