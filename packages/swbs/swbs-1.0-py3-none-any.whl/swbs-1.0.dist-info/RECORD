@@ -1,0 +1,10 @@
+swbs/__init__.py,sha256=uVR_puk_ayQkeEd2FprKWRSfeLe7FxGhOmYnvmENYKw,136
+swbs/configure.py,sha256=EVm-pQcKEZ3aDzvlktBplpAy6eaSD1NwofDpU5jZpJY,2505
+swbs/errors.py,sha256=ZQNuEOPAy2tBAIcqRYqxg7g8i83-qxLCTENNrw90ff8,1118
+swbs/interface.py,sha256=kzreeKGV0oI9mFe4-S3QVrinkFN0Kk4KMENY0I2dW68,9176
+swbs/objects.py,sha256=RIj7xFTtoWhPSSl1v4awF7XNKjHM-zxgB-Zl5mpdOhM,2117
+swbs-1.0.dist-info/LICENSE,sha256=GwKIMs4BwgmFW3mwTLXhI4EadmqLkx5L3Ai1m3neYcM,1096
+swbs-1.0.dist-info/METADATA,sha256=dlHbxa4_T8cjuJ5PD7j76WrdJzZJYA2x4Bev-j4AzqI,9047
+swbs-1.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+swbs-1.0.dist-info/top_level.txt,sha256=PyZdViawJ0WJ9R1KaJ6xjuaQv5gBMgrhSXIzhETVhlU,5
+swbs-1.0.dist-info/RECORD,,
