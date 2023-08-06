@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+skeptic.egg-info/PKG-INFO
+skeptic.egg-info/SOURCES.txt
+skeptic.egg-info/dependency_links.txt
+skeptic.egg-info/requires.txt
+skeptic.egg-info/top_level.txt
