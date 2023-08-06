@@ -1,0 +1,7 @@
+README.md
+setup.py
+example_pkg/__init__.py
+zzhfourth.egg-info/PKG-INFO
+zzhfourth.egg-info/SOURCES.txt
+zzhfourth.egg-info/dependency_links.txt
+zzhfourth.egg-info/top_level.txt
