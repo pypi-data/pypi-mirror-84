@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+geodist/__init__.py
+geodist/geo.py
+geodist.egg-info/PKG-INFO
+geodist.egg-info/SOURCES.txt
+geodist.egg-info/dependency_links.txt
+geodist.egg-info/requires.txt
+geodist.egg-info/top_level.txt
