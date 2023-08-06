@@ -1,0 +1,4 @@
+dataclasses>=0.7
+tensorflow<3,>=2
+toml>=0.10
+scikit-learn>=0.22
