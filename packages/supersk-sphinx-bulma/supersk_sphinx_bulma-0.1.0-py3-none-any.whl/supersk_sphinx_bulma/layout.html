@@ -1,0 +1,44 @@
+{% extends "basic/layout.html" %}
+
+{# removed existing top+bottom related nav #}
+{%- block relbar1 %}{% endblock %}
+{%- block relbar2 %}{% endblock %}
+
+{%- block extrahead %}
+    {{ super() }}
+    <script type="text/javascript" src="{{ pathto('_static/custom.js', 1) }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% endblock %}
+{% block content %}
+{%- include "navbar.html" %}
+<button id="scroll-top-btn" class="button is-hidden is-link" onclick="goToTop()">Top</button>
+<section class="section">
+    <div class="columns top-margin">
+        <aside class="menu column is-2 is-fullheight is-hidden-mobile">
+            {{ toctree() }}
+        </aside>
+        <div class="column is-10-tablet is-8-desktop is-6-widescreen" role="main">
+            <div class="content">
+                {% block body %}
+                    {{ super() }}
+                {% endblock %}
+            </div>
+        </div>
+        <div class="column is-hidden-mobile is-1-tablet"></div>
+    </div>
+</section>
+{%- block footer %}{%- endblock %}
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+        {% if author %}Authored by {{ author }} | {% endif %}
+        Powered by <a href="http://sphinx-doc.org/">Sphinx {{ sphinx_version }}.</a>
+        </p>
+        <p>
+        <a href="https://bulma.io">
+            <img src="{{ pathto('_static/' + 'made-with-bulma.png', 1) }}" alt="Made with Bulma" width="128" height="24">
+        </a>
+        </p>
+    </div>
+</footer>
+{% endblock %}

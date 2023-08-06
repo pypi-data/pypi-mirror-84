@@ -1,0 +1,203 @@
+@import 'bulma.css';
+
+/*
+ * custom
+ */
+
+.top-margin {
+    margin-top: 0.75rem;
+}
+
+/* Floating button to scroll top */
+#scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+}
+
+/*
+    Custom generated class
+    from note,attention,warning RST directives
+ */
+.admonition {
+    font-size: 1rem;
+    border-color: #dbdbdb;
+    border-style: solid;
+    border-width: 0 0 0 4px;
+    color: #4a4a4a;
+    padding: 1.25em 1.5em;
+}
+
+.admonition:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.admonition .admonition-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.admonition-title {
+    text-transform: uppercase;
+}
+
+/* don't display note title */
+
+.admonition .first {
+    display: none;
+}
+
+.admonition.note {
+    background-color: #eef6fc;
+    border-color: #3298dc;
+    color: #1d72aa;
+}
+
+.admonition.attention {
+    background-color: #feecf0;
+    border-color: #f14668;
+    color: #cc0f35;
+}
+
+.admonition.warning {
+    background-color: #fffbeb;
+    border-color: #ffdd57;
+    color: #947600;
+}
+
+div.admonition code.literal {
+    background-color: unset;
+    padding-left: unset;
+    padding-right: unset;
+}
+
+/*
+ * Figure and caption
+ */
+div.figure {
+    text-align: center;
+}
+
+div.figure .caption {
+    font-style: italic;
+    font-family: monospace;
+    margin-bottom: 1rem;
+}
+
+/*
+ * footnote
+ */
+p.rubric {
+    font-weight: bold;
+}
+
+dl.footnote dd {
+    margin-left: 1em;
+}
+
+dl.footnote dt {
+    margin-bottom: unset !important;
+}
+
+/*
+ * search result
+ */
+div.context span.highlighted {
+    background-color: #fbe54e;
+}
+
+/* 
+ * override 
+ */
+
+/* section */
+div[role=main] div.section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+}
+
+div.section > div.section {
+    padding-left: 0px;
+    margin-top: 1rem;
+}
+
+/* title */
+.content h1, h2, h3, h4 {
+    word-break:break-word;
+}
+
+.content h1:not(:first-child) {
+    margin-top: 0px;
+}
+
+/* code block */
+div[class*="highlight-"] {
+    margin-bottom: 1rem;
+}
+
+table.highlighttable td {
+    padding: 0px;
+}
+
+table.highlighttable pre {
+    padding: 0.75rem;
+}
+
+td.linenos pre {
+    background-color: #dbdbdb;
+    color: #4a4a4a;
+    font-weight: bold;
+}
+
+div.code-block-caption {
+    font-family: monospace;
+    font-style: italic;
+    color: gray;
+}
+
+/* menu-label */
+aside > p.caption {
+  color: #7a7a7a;
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+aside > p.caption:not(:first-child) {
+    margin-top: 1em;
+}
+
+aside > p.caption:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+/* menu-list */
+aside.menu > ul {
+    line-height: 1.25;
+}
+
+aside.menu > ul a {
+    border-radius: 2px;
+    color: #4a4a4a;
+    display: block;
+    padding: 0.5em 0.75em;
+}
+ 
+aside.menu > ul a:hover {
+    background-color: whitesmoke;
+    color: #4a4a4a;
+}
+
+aside.menu > ul li.current.toctree-l1 > a {
+    background-color: #3273dc;
+    color: #fff;
+}
+
+aside.menu > ul li ul {
+    border-left: 1px solid #dbdbdb;
+    margin: 0.75em;
+    padding-left: 0.75em;
+}
+

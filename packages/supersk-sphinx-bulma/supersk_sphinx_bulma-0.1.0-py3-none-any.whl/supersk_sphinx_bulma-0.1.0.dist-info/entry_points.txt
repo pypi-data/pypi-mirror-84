@@ -1,0 +1,3 @@
+[sphinx.html_themes]
+supersk-sphinx-bulma = supersk_sphinx_bulma
+

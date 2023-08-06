@@ -1,0 +1,35 @@
+<!-- navbar -->
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navMenu" class="navbar-menu">
+        <div class="navbar-start is-hidden-desktop">
+            <a class="navbar-item" href="{{ pathto(master_doc) }}">Home</a>
+            {%- for parent in parents %}
+            <a class="navbar-item" href="{{ parent.link|e }}">{{ parent.title }}</a>
+            {%- endfor %}
+        </div>
+        <div class="navbar-start is-hidden-touch">
+            <div class="navbar-item breadcrumb">
+                <ul>
+                    <li class="nav-item-0"><a href="{{ pathto(master_doc) }}">Home</a></li>
+                    {%- for parent in parents %}
+                    <li class="nav-item-{{ loop.index }}"><a href="{{ parent.link|e }}">{{ parent.title }}</a></li>
+                    {%- endfor %}
+                    <li class="is-active"><a href="#" aria-current="page">{{ title }}</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                {%- include "searchbox.html" %}
+            </div>
+        </div>
+    </div>
+</nav>
