@@ -1,0 +1,10 @@
+dask_saturn/__init__.py,sha256=SVAwE8YAbUImsJQBimc4FkvALu15nS9kYWJIBOLvE3M,284
+dask_saturn/_version.py,sha256=jkpoPEzpDEqcfMIMmGzgG0BdPcA7A6WCwJBx6ARhE2A,497
+dask_saturn/backoff.py,sha256=Y5qLI-vs4JAn83Rlymr2w33YXyRA9ljNsx7rj4sg5Cs,2514
+dask_saturn/core.py,sha256=ZF6nqwq9ZxHuVONW5sAKi14jLh-Ma-G588KRcZej3XY,14393
+dask_saturn/plugins.py,sha256=yNzo5mXFEtrAKLVo32JbvObSl88hqpAB2MnXXkTjq-s,442
+dask_saturn-0.1.3.dist-info/LICENSE,sha256=Ks4QGMh0OTbQa8CVujg4fxKaeuqNFsQ2XAPO1K0fFIc,1506
+dask_saturn-0.1.3.dist-info/METADATA,sha256=2Z0xJjJQC6utis58YkHz6XFpHyMRBWWFy8cT93XkTUo,3245
+dask_saturn-0.1.3.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+dask_saturn-0.1.3.dist-info/top_level.txt,sha256=1m0QuyjYmxnflZ8WmeYoe_Uh9Sa73eUbmFSv7cJZB_s,12
+dask_saturn-0.1.3.dist-info/RECORD,,
