@@ -1,0 +1,19 @@
+[package]
+name = "py"
+version = "0.2.0"
+authors = ["RustyBamboo <d@volya.xyz>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "alkompy"
+crate-type = ["cdylib"]
+
+[dependencies]
+numpy = "*"
+ndarray = "*"
+pyo3 = {version = "*", features = ["extension-module"]}
+alkomp = {git = "https://github.com/RustyBamboo/alkomp", branch="main", features = ["shaderc"]}
+futures = "*"
+bytemuck = "*"

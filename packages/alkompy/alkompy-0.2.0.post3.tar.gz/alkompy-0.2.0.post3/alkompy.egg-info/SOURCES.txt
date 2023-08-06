@@ -1,0 +1,11 @@
+Cargo.toml
+MANIFEST.in
+README.md
+setup.py
+alkompy.egg-info/PKG-INFO
+alkompy.egg-info/SOURCES.txt
+alkompy.egg-info/dependency_links.txt
+alkompy.egg-info/not-zip-safe
+alkompy.egg-info/requires.txt
+alkompy.egg-info/top_level.txt
+src/lib.rs
