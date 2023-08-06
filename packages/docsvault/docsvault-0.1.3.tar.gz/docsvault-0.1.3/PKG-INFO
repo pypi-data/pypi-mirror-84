@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: docsvault
+Version: 0.1.3
+Summary: Web app used to securely version your documents on git
+Home-page: UNKNOWN
+Author: Sylvan Le Deunff
+Author-email: sledeunf@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/sylvan-le-deunff/docsvault/issues
+Project-URL: Source, https://github.com/sylvan-le-deunff/docsvault
+Description: # DocsVault
+        
+        > DocsVault is a python webapp that allow you to easily and reliably store importants documents in a ciphered vault.
+        
+        For more informations, take a look at [full documentation](https://docsvault.sylvan.ovh)!
+        
+        ## Installation
+        
+        DocsVault is available [on pypi](https://pypi.org/project/docsvault/).
+        You can install it using pip, or any pip-based tool like [pipenv](https://pipenv.pypa.io/en/latest/).
+        
+        ```bash
+        pip install docsvault
+        ```
+        
+        ## Usage
+        
+        Launch application server
+        ```bash
+        docsvault server
+        ```
+        
+        Open web UI to interract with docsvault service.
+        ```bash
+        docsvault webui
+        ```
+        
+        *Note: if server is not started, `docsvault webui` will run the server daemon automatically*
+        
+        ## Contribute
+        
+        ### Requirements
+        
+        To contribute, you must have installed the following tools
+        
+        - vue.js (version 2)
+        - python (version >= 3.6)
+        - pipenv (optional)
+        
+        
+        Then simply run 
+        ```bash
+        make install
+        ```
+        
+        To automatically install python and npm dev. dependencies.
+        
+        ### Develop
+        
+        You can start development server for backend by running
+        Idem for backend
+        ```bash
+        pipenv run serve
+        ```
+        
+        Idem for frontend
+        ```bash
+        npm run serve
+        ```
+        
+Keywords: docsvault,documents,store,vault
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown

@@ -1,0 +1,3 @@
+[console_scripts]
+dvault = docsvault.__main__:main
+
