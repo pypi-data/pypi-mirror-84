@@ -1,0 +1,12 @@
+README.md
+setup.py
+kemampo/__err_type.py
+kemampo/__init__.py
+kemampo/__kemampo.py
+kemampo.egg-info/PKG-INFO
+kemampo.egg-info/SOURCES.txt
+kemampo.egg-info/dependency_links.txt
+kemampo.egg-info/top_level.txt
+tests/__init__.py
+tests/test_crud.py
+tests/test_kemampo.py
