@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+pfluent/__init__.py
+pfluent.egg-info/PKG-INFO
+pfluent.egg-info/SOURCES.txt
+pfluent.egg-info/dependency_links.txt
+pfluent.egg-info/top_level.txt

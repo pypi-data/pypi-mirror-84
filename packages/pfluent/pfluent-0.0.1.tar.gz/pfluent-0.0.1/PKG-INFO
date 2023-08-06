@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: pfluent
+Version: 0.0.1
+Summary: Thin wrapper around subprocess to make use of fluent syntax
+Home-page: https://github.com/meyer1994/pfluent
+Author: João Vicente Meyer
+License: Unlicense
+Download-URL: https://github.com/meyer1994/pfluent/archive/v0.0.1.tar.gz
+Description: UNKNOWN
+Keywords: subprocess run popen bash fluent
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
