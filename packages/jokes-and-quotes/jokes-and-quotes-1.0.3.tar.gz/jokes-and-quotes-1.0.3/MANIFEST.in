@@ -1,0 +1,3 @@
+include README.md LICENSE
+include jokes_and_quotes/jokes.json
+include jokes_and_quotes/quotes.json

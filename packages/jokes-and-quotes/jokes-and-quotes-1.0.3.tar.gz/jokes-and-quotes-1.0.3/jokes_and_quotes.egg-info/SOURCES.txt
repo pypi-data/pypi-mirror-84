@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+jokes_and_quotes/cli.py
+jokes_and_quotes/jokes.json
+jokes_and_quotes/quotes.json
+jokes_and_quotes.egg-info/PKG-INFO
+jokes_and_quotes.egg-info/SOURCES.txt
+jokes_and_quotes.egg-info/dependency_links.txt
+jokes_and_quotes.egg-info/entry_points.txt
+jokes_and_quotes.egg-info/top_level.txt
