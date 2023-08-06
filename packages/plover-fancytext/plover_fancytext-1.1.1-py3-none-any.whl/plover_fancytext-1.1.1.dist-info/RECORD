@@ -1,0 +1,16 @@
+plover_fancytext/__init__.py,sha256=1oLL20yLB1GL9IbFiZD8OReDqiCpFr-yetIR6x1cNkI,23
+plover_fancytext/character_helpers.py,sha256=i7bKSiFWCIxlrrVgnp9uWbFaTbg4nWNMvnJ3IsoCWyw,10263
+plover_fancytext/crytyping.py,sha256=KzWSbHDs6UX62bcyxjWOyd2mUMqW9flTVXvuizXrVlw,1615
+plover_fancytext/fancytext.py,sha256=ivwgjMXJYxc0gHSPppJTkCTc8Pwgw2bfXxcDOdDOveE,2056
+plover_fancytext/sarcasm.py,sha256=FTSu-9o4EindYWSPYWEWFT72daIt8pMUhkNLwOObPIQ,1471
+plover_fancytext/substitute.py,sha256=h9TyCMmdE_ASaqgTEvxfzHQm2gTJVvjoU7GLg82M_e4,376
+plover_fancytext/testSarcasm.py,sha256=uNuNsNnb6Sb8kizsTNEZknBSUQWYVl1Yyy4Yo5FDdiw,1091
+plover_fancytext/testZalgo.py,sha256=WRVWraSoER874n_P10dm9pVf79i1RPEGz2mruKJ_NPE,283
+plover_fancytext/zalgo.py,sha256=2M9guoe5kNQtdXJLPhs3za_eEtCVP1NPF7a4AMBIKp8,877
+plover_fancytext-1.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+plover_fancytext-1.1.1.dist-info/METADATA,sha256=3ZclrlGEA8dDH14GPkkbtPog_ziKkY7u0vBmLfk9gmc,3857
+plover_fancytext-1.1.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+plover_fancytext-1.1.1.dist-info/entry_points.txt,sha256=BTGp3sZO0E-aTQpxpONbfiNiZ9fJOkTUdKlVj-6PBZw,79
+plover_fancytext-1.1.1.dist-info/top_level.txt,sha256=hY_x1-z_9fjolkGj1-ghAEv4lpBsZVzmORf2Isi5LlE,17
+plover_fancytext-1.1.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+plover_fancytext-1.1.1.dist-info/RECORD,,
