@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: odoo_score
+Version: 1.0.0.1
+Summary: Odoo 10.0 super core
+Home-page: http://wiki.zeroincombenze.org/
+Author: Antonio Maria Vigliotti
+Author-email: antoniomaria.vigliotti@gmail.com
+License: Affero GPL
+Description: 
+        Odoo super core by Zeroincombenze(R) 
+        
+Keywords: odoo
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Intended Audience :: Developers
