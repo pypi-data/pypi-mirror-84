@@ -1,0 +1,9 @@
+README.md
+setup.py
+genyal/core.py
+genyal/genotype.py
+genyal.egg-info/PKG-INFO
+genyal.egg-info/SOURCES.txt
+genyal.egg-info/dependency_links.txt
+genyal.egg-info/top_level.txt
+test/test_individuals.py
