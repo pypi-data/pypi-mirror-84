@@ -1,0 +1,22 @@
+Change Log
+===========
+
+0.0.0 (11/5/2020)
+------------------
+- Test Release will be removed
+
+0.0.1 (11/5/2020)
+------------------
+- Test Release will be removed
+
+0.0.2 (11/5/2020)
+------------------
+- Test Release will be removed
+- 'quickcalc' has been renamed to 'Calculator'
+- THIS IS AN UNSTABLE VERSION (DONT USE)
+
+0.0.3 (11/5/2020)
+------------------
+- Test Release will be removed
+- 'quickcalc' has been renamed to 'Calculator'
+- THIS IS AN UNSTABLE VERSION (DONT USE) BUT IS INSTALLABLE
