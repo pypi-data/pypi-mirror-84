@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+pytest_aiohttp_client/__init__.py
+pytest_aiohttp_client/plugin.py
+pytest_aiohttp_client/py.typed
+pytest_aiohttp_client.egg-info/PKG-INFO
+pytest_aiohttp_client.egg-info/SOURCES.txt
+pytest_aiohttp_client.egg-info/dependency_links.txt
+pytest_aiohttp_client.egg-info/entry_points.txt
+pytest_aiohttp_client.egg-info/not-zip-safe
+pytest_aiohttp_client.egg-info/requires.txt
+pytest_aiohttp_client.egg-info/top_level.txt
