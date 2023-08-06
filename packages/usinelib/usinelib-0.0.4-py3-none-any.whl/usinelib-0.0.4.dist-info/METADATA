@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: usinelib
+Version: 0.0.4
+Summary: Fetch menu from usine.se
+Home-page: https://github.com/misse/usinelib
+Author: Martin Bergman
+Author-email: martin@devsed.se
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# usinelib
+
+## Usage
+``` 
+import usinelib
+
+users = [
+    {
+        "username": "test",
+        "friendlyname": "Test Testsson",
+        "number": "46123123123"
+    }
+]
+
+
+def main():
+    usine_menu = usinelib.UsineMenu()
+    debug = True
+    weekly_menu, weekly_veg_menu, classic_menu = usine_menu.get_menus()
+    if debug:
+        for day in weekly_menu:
+            print(day['dish'])
+        for classic in classic_menu:
+            print(classic['dish'])
+        for veg in weekly_veg_menu:
+            print(veg['dish'])
+    usineMenu.notify_users(users, debug)
+
+
+if __name__ == '__main__':
+    main()
+```
+
+
