@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: pyenvar
+Version: 1.0.6
+Summary: .env loader for python
+Home-page: https://github.com/wuriyanto48/pyenvar
+Author: wuriyanto
+Author-email: wuriyanto48@yahoo.co.id
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/wuriyanto48/pyenvar/issues
+Project-URL: Source, https://github.com/wuriyanto48/pyenvar/
+Keywords: env variable,.env,config,dotenv
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+## pyenvar
+
+[![Build Status](https://travis-ci.org/wuriyanto48/pyenvar.svg?branch=master)](https://travis-ci.org/wuriyanto48/pyenvar)
+
+
+Python's `.env` is a loader based on https://github.com/motdotla/dotenv (`dotenv` module for `nodejs`) with zero dependency
+
+### Install
+```shell
+$ pip install pyenvar
+```
+
+### Unit test
+Make sure to running `unit tests` before pushing
+```shell
+$ make test
+```
+
+### Usage
+
+Make sure the `.env` file is in your project's `root` folder
+```
+myproject
+   - src/
+     - __init__.py
+   - main.py
+   - .env
+```
+
+Assumed the `.env` file looks like this
+```.env
+USERNAME=admin
+PASSWORD='12345'
+```
+
+#### Basic usage
+```python
+import os
+import pyenvar
+
+pyenvar.load()
+print(os.environ.keys())
+username = os.environ.get('USERNAME')
+print(username)
+```
+
+#### Custom .env path
+
+```python
+import os
+import pyenvar
+
+pyenvar.load(path='./config/.env', encoding='utf-8')
+print(os.environ.keys())
+username = os.environ.get('USERNAME')
+print(username)
+```
+
+#### Pyenvar CLI
+```shell
+$ pyenvar-cli /path/to/.env
+```
+
