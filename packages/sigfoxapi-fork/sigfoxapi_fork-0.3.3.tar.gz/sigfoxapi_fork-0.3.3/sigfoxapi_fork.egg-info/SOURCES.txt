@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+sigfoxapi_fork.egg-info/PKG-INFO
+sigfoxapi_fork.egg-info/SOURCES.txt
+sigfoxapi_fork.egg-info/dependency_links.txt
+sigfoxapi_fork.egg-info/requires.txt
+sigfoxapi_fork.egg-info/top_level.txt
+src/__init__.py
+src/requesthandler.py
