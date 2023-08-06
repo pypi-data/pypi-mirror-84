@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: compas-triangle
+Version: 1.0.1
+Summary: COMPAS-firendly wrappers for the tTriangle library.
+Home-page: https://github.com/compas-dev/compas_triangle
+Author: tom van mele
+Author-email: van.mele@arch.ethz.ch
+License: MIT license
+Description: # COMPAS Triangle
+        
+        COMPAS-firendly wrappers for the Triangle library.
+        
+        ## Getting Started
+        
+        `compas_triangle` can be installed from local source using pip.
+        
+        ```bash
+        pip install path/to/compas_triangle
+        ```
+        
+        or directly from the github repo
+        
+        ```bash
+        pip install git+https://github.com/blockresearchgroup/compas_triangle.git#egg=compas_triangle
+        ```
+        
+        ## Examples
+        
+        Four examples are available:
+        
+        * examples/delaunay1.py
+        * examples/delaunay2.py
+        * examples/delaunay3.py
+        * examples/delaunay4_rhino.py
+        
+        Note that the Rhino example uses `compas.rpc` to provide a proxy for the package.
+        
+        ## License
+        
+        `compas_triangle` uses the Cython wrapper for Jonathan Richard Shewchuk's Triangle library.
+        The Cython wrapper is available here: https://github.com/drufat/triangle
+        
+        Use of the Triangle library is restricted to personal or academic purposes.
+        The license of the library is included in this repo: [LICENSE.Triangle](LICENSE.Triangle)
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown

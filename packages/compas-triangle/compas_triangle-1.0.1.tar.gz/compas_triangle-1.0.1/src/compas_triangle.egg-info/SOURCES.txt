@@ -1,0 +1,17 @@
+AUTHORS.md
+CHANGELOG.md
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+src/compas_triangle/__init__.py
+src/compas_triangle/delaunay.py
+src/compas_triangle/rhino.py
+src/compas_triangle.egg-info/PKG-INFO
+src/compas_triangle.egg-info/SOURCES.txt
+src/compas_triangle.egg-info/dependency_links.txt
+src/compas_triangle.egg-info/entry_points.txt
+src/compas_triangle.egg-info/not-zip-safe
+src/compas_triangle.egg-info/requires.txt
+src/compas_triangle.egg-info/top_level.txt
