@@ -1,0 +1,12 @@
+README.md
+setup.py
+scfgvypr/__init__.py
+scfgvypr/builder.py
+scfgvypr/comparison.py
+scfgvypr/scfg.py
+scfgvypr/test_module.py
+scfgvypr/tests.py
+scfgvypr.egg-info/PKG-INFO
+scfgvypr.egg-info/SOURCES.txt
+scfgvypr.egg-info/dependency_links.txt
+scfgvypr.egg-info/top_level.txt
