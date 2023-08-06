@@ -1,0 +1,3 @@
+[console_scripts]
+pyqaserver = pyqaserver.pyqaserver:main
+
