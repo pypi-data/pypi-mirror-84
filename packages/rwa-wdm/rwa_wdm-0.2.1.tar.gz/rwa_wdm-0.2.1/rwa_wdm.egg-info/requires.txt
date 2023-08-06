@@ -1,0 +1,4 @@
+argcomplete
+networkx
+numpy
+matplotlib
