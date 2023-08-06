@@ -1,0 +1,7 @@
+pytz
+astral
+
+[dev]
+tox
+pre-commit
+sphinx
