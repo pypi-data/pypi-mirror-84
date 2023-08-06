@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: pythonml
+Version: 1.02
+Summary: This hands-on Library is practical for AI and ML which facilitates viewing Dataset Integrity Reports, Viewing Accuracy Scores of Regressive and Classification algorithms, Instant and graphical comparison of ML Regressive and Classifier models of ML, Cleaning and Encoding of Dataset fitting custom ML models, visualizations of metrics, estimating goodness of fit etc. 
+Home-page: https://github.com/hammeroflight/hammeroflight
+Author: Aru Raghuvanshi
+Author-email: arusingh@gmail.com
+License: MIT
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: data cleaning,accuracy scores,goodness of fit,dataset quality report,ML algo comparison
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
