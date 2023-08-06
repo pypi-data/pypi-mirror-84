@@ -1,0 +1,12 @@
+README.md
+setup.py
+locomotion/__init__.py
+locomotion/animal.py
+locomotion/heatmap.py
+locomotion/trajectory.py
+locomotion/write.py
+locomotion.egg-info/PKG-INFO
+locomotion.egg-info/SOURCES.txt
+locomotion.egg-info/dependency_links.txt
+locomotion.egg-info/requires.txt
+locomotion.egg-info/top_level.txt
