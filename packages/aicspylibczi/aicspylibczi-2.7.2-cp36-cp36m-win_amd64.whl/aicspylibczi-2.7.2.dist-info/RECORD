@@ -1,0 +1,12 @@
+_aicspylibczi.cp36-win_amd64.iobj,sha256=Ji6JByNkjeF4Fu8yvLO8GsiWHft_wqx1OYdkfHJeV40,7674290
+_aicspylibczi.cp36-win_amd64.ipdb,sha256=yaIjm6jVz_om0G2wiSkOcYl0sJDuAUI5xnAbw3uhZO8,7690272
+_aicspylibczi.cp36-win_amd64.pyd,sha256=zMAigKCuLgpEbWnief9vhMOg4X8cpS-OGTvNCkpciTI,980480
+aicspylibczi/CziFile.py,sha256=2168ze13x2vq9o1a1SXu0uuV6rdTdesyJ7e07IVULPE,18921
+aicspylibczi/__init__.py,sha256=hkMXk5C25CmIa3FZIq0-kUe7PEa4B6qmTbbOg5m6NSw,101
+aicspylibczi/_version.py,sha256=in2mm5li-4jp7smvbQyOTIo-j9bcuKy_iidwcwkW3ds,131
+aicspylibczi/types.py,sha256=_CftPKd4J_WHRnkFBVYDwqaP-UfoNshYNaNnh_pmOBA,269
+aicspylibczi-2.7.2.dist-info/LICENSE,sha256=qyGgx4vX1EDkZUDxbU0oBigEeG9bCFITr_8hNvON5L4,37348
+aicspylibczi-2.7.2.dist-info/METADATA,sha256=MVTCSgy3tVYbedb6ORVRv-vK8E_D3WJqtw3oHK0s2Y8,10716
+aicspylibczi-2.7.2.dist-info/WHEEL,sha256=SktxJNdVgf2GQ0Rnj47KhGrFXFhp4j6ROtWy0UXB1eM,106
+aicspylibczi-2.7.2.dist-info/top_level.txt,sha256=qzO3h1O6S8r4HudOEuJyrG17Gv9i_Lkptu_SPXqBuSg,27
+aicspylibczi-2.7.2.dist-info/RECORD,,
