@@ -1,0 +1,12 @@
+magnet/__init__.py,sha256=B0fO5d8Myd7gLNmyQNWcYCUdCJWNP3xsSwWItFbRCOc,255
+magnet/download.py,sha256=n6MThpD0ppOCArIqa-rThFCc-rN6Nhsgd2z5MkSdank,2794
+magnet/pytorch_dataset.py,sha256=CTRoqGED9OkRTgb8zDuC5swqJaSltrD8LmhbOfk3bGs,1069
+magnet/tensorflow_dataset.py,sha256=ry90ME1cTAO49-y-54VJagA4ZrdVPscCCAbvcfFsXZI,1225
+magnet/models/__init__.py,sha256=iw0c_jNfhnqzLiL8iaSLBMbvw9uROTAQK3Bjf5kpRWo,59
+magnet/models/pytorch/__init__.py,sha256=scHXnu8q9ur7HgkH3seBgOtACHASoalzwOEcmQ6GSxU,56
+magnet/models/pytorch/lstm.py,sha256=tXCs9Py5U1AcDWkiA3hZN0oat4APNKzOi4upUeXwIXA,892
+magnet/models/pytorch/pretrained_weights/MiniLSTM.pt,sha256=vxd_UjIGjgkaX1A_eVb_krVyj9mbf2S_JPQpPD0H_z0,142825
+mag_net-0.0.3.dist-info/METADATA,sha256=WRgrNG4b95kMxtBCERmQlwg-5-iz8A9__GdZ4M6d-O0,3267
+mag_net-0.0.3.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+mag_net-0.0.3.dist-info/top_level.txt,sha256=F5kcjBfJG8Hb1EOsAZQvWd2_J3trC4Ux8YTcfj3s9N4,7
+mag_net-0.0.3.dist-info/RECORD,,
