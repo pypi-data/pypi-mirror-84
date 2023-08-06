@@ -1,0 +1,16 @@
+gdascore/__init__.py,sha256=lS0OrWgBKmOpcPeWHXgZc4IELJwEZ3oF3IJGUWhbwYg,608
+gdascore/cli.py,sha256=fw1QqHRlJhmsamfgXG3n8WGVGGhplrHt8IwFDIgD96U,6760
+gdascore/dupCheck.py,sha256=tBVxWtPLxStKCjvWjU5U5EuUufiHz6o2fummO4aUPko,5628
+gdascore/gdaAttack.py,sha256=dBZWqHj5-q8i8Y3P-klR5vdVKTo-WWBYiaodwluznas,83070
+gdascore/gdaQuery.py,sha256=IBkbnQq-ybJXzNgfYNIqj_7GMV2fmbkwv6nD984E4AU,25961
+gdascore/gdaScore.py,sha256=IpS5k1_XdOP7TtXpVCUYDAMEKpw2Ak9_ESCKh9LBx5A,12029
+gdascore/gdaTools.py,sha256=DNEdMskqA9JjWSzL89E3FoSupYqiCjer-E-cAhDQIB0,23543
+gdascore/sampleConfig.py,sha256=5M-9yGNiAbVwehFIy7wrJ80y27cexncxgV2ArHqo17I,414
+gdascore/global_config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gdascore/global_config/master.json,sha256=ZZ-Ke4F1iA4vCZ5vCUp-W0SsQce3g6VU7PD03y5hWgs,6755
+gda_score_code_test-2.5.10.dist-info/LICENSE,sha256=PUA7nYWiYHmZFwOIaHWY4ewEEinkJn5g3cBc83tJLok,1087
+gda_score_code_test-2.5.10.dist-info/METADATA,sha256=Y09GpQ4h_mSEUMb-Ecr295z7wh6_r6wvaX8l9oRnhxc,6570
+gda_score_code_test-2.5.10.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+gda_score_code_test-2.5.10.dist-info/entry_points.txt,sha256=oibKTBlWKiz2Q1PNy9zlPidWq1-EBkWOzxDBS6laCgI,53
+gda_score_code_test-2.5.10.dist-info/top_level.txt,sha256=3x5xwEHpA83oqHvod_GfVFQIXkhiNSOB8m3L9PMOnYg,9
+gda_score_code_test-2.5.10.dist-info/RECORD,,
