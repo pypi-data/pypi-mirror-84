@@ -1,0 +1,10 @@
+json_api_doc/__init__.py,sha256=RkNnrNkQoJ2eZKHObnfPWhjgyCeiRtd63qkaUpGgPLg,371
+json_api_doc/__main__.py,sha256=z4nZT75CxxnQ4_uDxHHA4imlZd9G1zy5lTOm_wmRGl8,786
+json_api_doc/deserialization.py,sha256=kSSR1c-YScVFYuF1ATkI0GMQ1ypnk7EJKzsK3qSRdE0,2510
+json_api_doc/serialization.py,sha256=Ym3WrU9QpV9BUjynDipzPDZz0oXwYSbMBJCzsBQX0sw,2834
+json_api_doc-0.15.0.dist-info/LICENSE,sha256=bVgp0jibLP2ORRn12U4frn2OqJXkawG6A0fE_B-CnCY,590
+json_api_doc-0.15.0.dist-info/METADATA,sha256=CMnT6F-R9XC2Y0JRv-u3YSFToVx7Elga0f6ytUcgUOU,5400
+json_api_doc-0.15.0.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+json_api_doc-0.15.0.dist-info/entry_points.txt,sha256=Hs50YZTBIUlWcctx_mX6FtuNVCi5i46EodFONhjZVa4,59
+json_api_doc-0.15.0.dist-info/top_level.txt,sha256=cSJrTjW6Cz8ruRJsfZ2o6GLgpKLNF0tSXG0nfVnZnqg,13
+json_api_doc-0.15.0.dist-info/RECORD,,
