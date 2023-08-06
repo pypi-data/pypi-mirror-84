@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: myscop
+Version: 0.0.1
+Summary: SCOP is Solver for COnstraint Programing.
+Home-page: https://github.com/SaitoTsutomu/myscop
+Author: Saito Tsutomu
+Author-email: tsutomu7@hotmail.co.jp
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Requires-Dist: more-itertools (>=8.6.0,<9.0.0)
+Description-Content-Type: text/markdown
+
+The myscop is wrapper of SCOP.
+
+SCOP is Solver for COnstraint Programing.
+
+Need scop and scop.py.
+
+https://logopt.com/scop2/
+
+## Example(bin packing)
+
+```
+from myscop import MyLinear as L
+from myscop import MyModel
+
+items = [6, 5, 4, 3, 1, 2]  # item size
+num_bins = 3  # bin size
+
+m = MyModel()
+vv = m.addvars(len(items), range(num_bins))
+for b in range(num_bins):
+    m.addcons(1, L(items, vv, b) <= 7)
+
+m.optimize()
+print([v.value for v in vv])
+```
+
