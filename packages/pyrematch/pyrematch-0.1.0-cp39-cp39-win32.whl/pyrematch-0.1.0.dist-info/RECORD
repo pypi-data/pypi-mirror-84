@@ -1,0 +1,10 @@
+pyrematch-0.1.0.data/purelib/pyrematch/__init__.py,sha256=3LMcVW60xCvvZoFV-FZEo0BLL0HcEtCnQxFn7FiUiUw,45
+pyrematch-0.1.0.data/purelib/pyrematch/_rematch.pyd,sha256=bw_ZUrozverLu40DYlNkIR7ebqdGxz_vze0G0w_kCCs,364544
+pyrematch-0.1.0.data/purelib/pyrematch/rematch.py,sha256=OvadGCKCYvzJupDLiaJMBMUs-QzgMNPi_rWhL6jAHXo,11949
+pyrematch-0.1.0.data/purelib/pyrematch/rematchlib.py,sha256=x1XA6wnKfL-sPVOjokB4aArBnYb0oMzW-R2-7jEDc6Q,3345
+pyrematch-0.1.0.data/purelib/pyrematch/simple-test.py,sha256=coxqbouuJxh_Gv3q8LiEBH1fFqwjwnd6braut7Piptw,377
+pyrematch-0.1.0.data/purelib/pyrematch/test_basic_operation.py,sha256=Eb-5aQDYJ_D2fvUTMN4Gn_oFsJeOSG9bhhIKy54Hz3E,5543
+pyrematch-0.1.0.dist-info/METADATA,sha256=O2fC6V0GNGUOu3M1So7eG177E4yPVf9hB4V5hle8_a4,2550
+pyrematch-0.1.0.dist-info/WHEEL,sha256=lcspivZQS1dFTcDXXp8y2E13an7N4W7xLvllc3Am81g,101
+pyrematch-0.1.0.dist-info/top_level.txt,sha256=rTJm-7OnJ6VppwGTJPU63K-992LTj_Fdis5KTQxU-ew,10
+pyrematch-0.1.0.dist-info/RECORD,,
