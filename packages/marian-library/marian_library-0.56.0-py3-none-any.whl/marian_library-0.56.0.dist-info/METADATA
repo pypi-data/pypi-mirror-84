@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: marian-library
+Version: 0.56.0
+Summary: Python wrapper for Marian NMT for Neural Grammar Correction with Error Types
+Home-page: https://github.com/Qordobacode/library.marian
+Author: Qordoba
+Author-email: melisa@qordoba.com
+License: unlicensed
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Typing :: Typed
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: marian-client (==0.16.0)
+Requires-Dist: nltk (==3.4.5)
+Requires-Dist: PyFunctional (==1.2.0)
+Requires-Dist: pytest (==6.1.2)
+Requires-Dist: spacy (==2.3.2)
+Requires-Dist: quote-manager (>=0.3.0)
+
+UNKNOWN
+
+
