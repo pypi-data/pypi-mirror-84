@@ -1,0 +1,11 @@
+apps/__init__.py,sha256=WLeD8sQZ5WvNhjzhx30DkgBEucveJWVGg_JLCh2Wla8,259
+apps/demo.py,sha256=tbXGEiPrHQIyi31dnYEESyEBw_rOYfAIJr6vWNmR8f4,1488
+apps/display_data.py,sha256=HMvsVX3qwDItEBnOz_obu6HO3KEoksMIjyYJt0KRgKU,554
+appzoo/__init__.py,sha256=6CmwDk1OqshIQ640JCwySyBZECDQDAdCbxurC0LrLPs,259
+appzoo/apps.py,sha256=9MbKVxHSdHoRQ6Mh95oCZQ_63rdvxOymcFsED-KWp_8,321
+appzoo/utils.py,sha256=ctZnPoTm7AVarBWt1nQvLrvn5_rNXJ_BLH-Bnq42PJA,398
+appzoo-2020.11.3.12.30.10.dist-info/METADATA,sha256=b6X7zRfLr3dqcrehRryJDp-OJgu5ETO0iLlwW6Jrlh0,628
+appzoo-2020.11.3.12.30.10.dist-info/RECORD,,
+appzoo-2020.11.3.12.30.10.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+appzoo-2020.11.3.12.30.10.dist-info/entry_points.txt,sha256=2IdGZK1NmftNtHm_zLTVOunMuFbJ_B1guQeEy-JeHTQ,47
+appzoo-2020.11.3.12.30.10.dist-info/top_level.txt,sha256=OWm55CgWA1nW9lqlRROcMs5ATru9SBm-sXW6dHp3tRc,12
