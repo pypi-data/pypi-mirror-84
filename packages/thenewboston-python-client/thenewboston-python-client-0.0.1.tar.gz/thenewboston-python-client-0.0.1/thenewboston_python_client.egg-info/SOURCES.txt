@@ -1,0 +1,7 @@
+README.md
+setup.py
+thenewboston_python_client.egg-info/PKG-INFO
+thenewboston_python_client.egg-info/SOURCES.txt
+thenewboston_python_client.egg-info/dependency_links.txt
+thenewboston_python_client.egg-info/requires.txt
+thenewboston_python_client.egg-info/top_level.txt
