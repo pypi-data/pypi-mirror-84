@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: cutevariant
+Version: 0.2.0
+Summary: GUI to visualize and process variant data
+Home-page: https://github.com/labsquare/cutevariant
+Author: Sacha Schutz, Pierre Vignet
+Author-email: sacha@labsquare.org
+License: UNKNOWN
+Keywords: GUI,health
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Description-Content-Type: text/markdown
+Requires-Dist: PyVCF (==0.6.8)
+Requires-Dist: textX (==1.8.0)
+Requires-Dist: memoization (>=0.3.1)
+Requires-Dist: progressbar2
+Requires-Dist: columnar (==1.1.0)
+Requires-Dist: PySide2 (!=5.12.0,>=5.11) ; python_version < "3.8"
+Requires-Dist: PySide2 (>=5.14) ; python_version >= "3.8"
+Provides-Extra: dev
+Requires-Dist: pytest-cov (>=2.6.1) ; extra == 'dev'
+Requires-Dist: pytest-qt (>=3.2.2) ; extra == 'dev'
+Requires-Dist: pytest (>=5.2.0) ; extra == 'dev'
+Requires-Dist: schema (==0.7.0) ; extra == 'dev'
+Requires-Dist: pytest-runner ; extra == 'dev'
+Requires-Dist: zest.releaser[recommended] ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Requires-Dist: sphinx-argparse ; extra == 'doc'
+Requires-Dist: recommonmark (>=0.6) ; extra == 'doc'
+
+# Cutevariant
+
+cutevariant is a light standalone viewer of genetic variation written in Python for Qt. It allows you to view and filter VCF and other format files.
+
+![Cutevariant example](https://raw.githubusercontent.com/labsquare/CuteVariant-cpp/master/screencast.gif)
+
+# Installation
+
+    pip install cutevariant # install
+    cutevariant             # run
+.
+
+# To get tests running
+
+    git clone git@github.com:labsquare/cutevariant.git
+    cd cutevariant
+    virtualenv -p /usr/bin/python3 venv
+    source venv/bin/activate
+    make install_deps # install
+    make install # pip install -e . 
+    make run     # start application
+    make test    # start tests
+
+
