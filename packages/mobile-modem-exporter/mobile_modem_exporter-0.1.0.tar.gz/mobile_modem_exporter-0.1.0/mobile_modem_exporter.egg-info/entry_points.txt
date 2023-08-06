@@ -1,0 +1,3 @@
+[console_scripts]
+mobile_modem_exporter = mobile_modem_exporter.mobile_modem_exporter:main
+

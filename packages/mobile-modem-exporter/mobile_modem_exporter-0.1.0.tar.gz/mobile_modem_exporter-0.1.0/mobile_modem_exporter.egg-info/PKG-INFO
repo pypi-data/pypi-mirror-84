@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: mobile-modem-exporter
+Version: 0.1.0
+Summary: mobile_modem_exporter is a Prometheus exporter for mobile modems. It uses pySerial and pexpect to speak to the modems and prometheus_client to write to node_exporter textfile_collector path.
+Home-page: https://github.com/tykling/mobile_modem_exporter
+Author: Thomas Steen Rasmussen
+Author-email: thomas@gibfest.dk
+License: BSD License
+Description: # mobile_modem_exporter
+        Prometheus exporter for mobile modems (LTE/GSM) written in Python
+        
+        [![Build Status](https://api.travis-ci.com/tykling/mobile_modem_exporter.svg?branch=main)](https://travis-ci.com/github/tykling/mobile_modem_exporter)
+        [![codecov](https://codecov.io/gh/tykling/mobile_modem_exporter/branch/master/graph/badge.svg)](https://codecov.io/gh/tykling/mobile_modem_exporter)
+        [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/tykling/mobile_modem_exporter.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/tykling/mobile_modem_exporter/context:python)
+        [![Checked with mypy](docs/badges/mypy_badge.svg)](http://mypy-lang.org/)
+        [![Checked with flake8](docs/badges/flake8-OK-green.svg)](http://flake8.pycqa.org/en/latest/)
+        [![Codestyle black](docs/badges/black.svg)](https://github.com/psf/black/)
+        [![PyPI](https://img.shields.io/pypi/v/mobile_modem_exporter.svg)](https://pypi.org/project/mobile_modem_exporter/)
+        [![PyPI downloads](https://img.shields.io/pypi/dm/mobile_modem_exporter.svg)](https://pypi.org/project/mobile_modem_exporter/)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
