@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: yadism
+Version: 0.3.3
+Summary: Deep Inelastic Scattering
+Home-page: https://github.com/N3PDF/dis
+Author: A.Candido, S.Carrazza, F. Hekhorn
+Author-email: stefano.carrazza@cern.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.7
+Requires-Dist: eko
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: rich
+
+UNKNOWN
+
+
