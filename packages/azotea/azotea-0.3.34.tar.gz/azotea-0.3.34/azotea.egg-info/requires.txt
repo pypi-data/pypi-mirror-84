@@ -1,0 +1,7 @@
+exifread
+jdcal
+matplotlib
+numpy
+opencv-python
+rawpy
+tabulate
