@@ -1,0 +1,12 @@
+README.md
+setup.py
+seckerwiki/__init__.py
+seckerwiki/install.py
+seckerwiki/lecture_gen.py
+seckerwiki/wiki.py
+seckerwiki.egg-info/PKG-INFO
+seckerwiki.egg-info/SOURCES.txt
+seckerwiki.egg-info/dependency_links.txt
+seckerwiki.egg-info/entry_points.txt
+seckerwiki.egg-info/requires.txt
+seckerwiki.egg-info/top_level.txt
