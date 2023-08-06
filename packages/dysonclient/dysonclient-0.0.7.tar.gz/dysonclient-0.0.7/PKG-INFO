@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: dysonclient
+Version: 0.0.7
+Summary: UNKNOWN
+Home-page: https://github.com/smore-inc/dyson-client
+Author: Smore
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Requires-Python: >2.7,<3
