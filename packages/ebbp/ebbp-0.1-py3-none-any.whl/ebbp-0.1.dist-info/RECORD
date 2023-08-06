@@ -1,0 +1,10 @@
+ebbp/__init__.py,sha256=AGMZu47b2vb-3lEKbnHGurYpT-eHYaw2Eoo03PUHDDg,98
+ebbp/add_ebb_estimate.py,sha256=nnNkq9McISz71Mv-RwMB3LsRNbEHlUP-jIpjPCAM2bE,642
+ebbp/ebb_fit_estimate.py,sha256=UODYEXHRweUPksvgX7Usfge_qP_-Gzj545WOJnPUnjw,34
+ebbp/ebb_fit_mixture.py,sha256=MuGjLOCKCzCl-xbR7tqhpfRxYKiGSYqf62ye-Dt3WvE,35
+ebbp/ebb_fit_prior.py,sha256=25XfPeiLSOGCBftlDrObffDODyitPk-VmWanxgQ0vnc,3498
+ebbp-0.1.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+ebbp-0.1.dist-info/METADATA,sha256=fKlAVEmgFgYGJJgPgeGK7JR579d2pKHnQMeccdwlPmI,411
+ebbp-0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+ebbp-0.1.dist-info/top_level.txt,sha256=UAdxbUumN0a5OtSaX2Eq7Y3MPaSKcig7yw3YU27m7-I,5
+ebbp-0.1.dist-info/RECORD,,
