@@ -1,0 +1,13 @@
+coherence_ua/__init__.py,sha256=ZyUDBx2le7-M-OWA3i4C13meqiVJ8mp7nx_Pg8gSifc,76
+coherence_ua/transformer_coherence.py,sha256=rglSr1BKYiX8Gz0_kHXgtkv9oZlcI2EvY4WmNibLzVc,12407
+coherence_ua/models/ukrainian-iu-ud-2.3-181115.udpipe,sha256=ZuX3llqHbNtnfxscC5RDBLf6yfcK5jp_zaukr7w7QZA,16544214
+coherence_ua/models/utils.py,sha256=JDWHP5j51Kz60vgaFJj_yb3CSQXyF6o1zWxQ-uGW-Ik,2722
+coherence_ua/models/vocab.subwords,sha256=EVOeG9jlj4IQSnl6eW2Z3XyzK7BUC4mfr2FID1vgK-k,112178
+coherence_ua/models/weights/chk-2-0.0917-0.8678.data-00000-of-00002,sha256=gBiTVAjcuD3sogaIwAx-_BsGSG3cFkqQoxXXli4qQEo,16949155
+coherence_ua/models/weights/chk-2-0.0917-0.8678.data-00001-of-00002,sha256=mVCjhior_bFLHoCRlxWQtU1G_JpPoeJ5fIZzabCxkJU,36270084
+coherence_ua/models/weights/chk-2-0.0917-0.8678.index,sha256=J4rLuAGES-5BkHIi7GxAsCSj0wPnvNE72zsL8S3X8kE,5126
+coherence_ua-0.0.4.dist-info/LICENSE,sha256=VERRXT0XPZ4kAzr1nngrRVLqMQ_WorOQ4EZ23ctUdN0,1073
+coherence_ua-0.0.4.dist-info/METADATA,sha256=nwnqj_-8zkMaWSm5EMgQJU73359EDXSadnFWt7qbSlE,7897
+coherence_ua-0.0.4.dist-info/WHEEL,sha256=sI-vBbJF_F_l-R6JrPzLJ9vhJk6PcAXoAkIfwXdMgLI,97
+coherence_ua-0.0.4.dist-info/top_level.txt,sha256=XpK0ODwa3UEYjw0PNeVnSziyGHDwu5_5ooRQna-Wq5I,13
+coherence_ua-0.0.4.dist-info/RECORD,,
