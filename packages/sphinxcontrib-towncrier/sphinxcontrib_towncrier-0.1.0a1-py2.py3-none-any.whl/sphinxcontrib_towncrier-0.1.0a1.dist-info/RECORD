@@ -1,0 +1,10 @@
+sphinxcontrib/towncrier/__init__.py,sha256=4twfcdPq7RX78cr7GodH2G_E7K6dYSWFlCR7CL1S9ek,13930
+sphinxcontrib/towncrier/_scm_version.py,sha256=DQd3r1RZqsQDZGLBfDA3MrFSyWwOsTsnwAzVFI0B2sU,118
+sphinxcontrib/towncrier/_scm_version.pyi,sha256=UwfFHrNq6VmZE8d1qRk9xsPfI5mBt11FPQUOBaMqlgk,125
+sphinxcontrib/towncrier/_version.py,sha256=vdk3FVAilnghukVg1_W4Ya3Lu8dkvZP77Jgj6w77SQw,320
+sphinxcontrib_towncrier-0.1.0a1.dist-info/LICENSE,sha256=_-hcq02whjz_blmD8Z6jZC-uN8blxdB9CcjjxDKmQ7g,1522
+sphinxcontrib_towncrier-0.1.0a1.dist-info/METADATA,sha256=r-bvASJqB0j7PvwZGr1A9eyNl3osD8p2kRiwvUFyFDw,1588
+sphinxcontrib_towncrier-0.1.0a1.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+sphinxcontrib_towncrier-0.1.0a1.dist-info/top_level.txt,sha256=VJrV3_vaiKQVgVpR0I1iecxoO0drzGu-M0j40PVP2QQ,14
+sphinxcontrib_towncrier-0.1.0a1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sphinxcontrib_towncrier-0.1.0a1.dist-info/RECORD,,
