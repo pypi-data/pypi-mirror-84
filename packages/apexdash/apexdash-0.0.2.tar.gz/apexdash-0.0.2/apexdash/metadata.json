@@ -1,0 +1,82 @@
+{
+  "src/lib/components/Apexdash.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
+    "displayName": "Apexdash",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks.",
+        "defaultValue": {
+          "value": "'defaultid'",
+          "computed": false
+        }
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "The value displayed in the input.",
+        "defaultValue": {
+          "value": "{\nchart: {\n  id: 'sparkline1',\n  group: 'sparklines',\n  type: 'area',\n  height: 160,\n  sparkline: {\n    enabled: true\n  },\n},\nstroke: {\n  curve: 'straight'\n},\nfill: {\n  opacity: 1,\n},\nseries: [{\n  name: 'Sales',\n  data: [30, 40, 45, 50, 49, 60, 70, 91]\n}],\nlabels: [...Array(8).keys()].map(n => `2018-09-0${n+1}`),\nyaxis: {\n  min: 0\n},\nxaxis: {\n  type: 'datetime',\n},\ncolors: ['#008FFB'],\ntitle: {\n  text: '$424,652',\n  offsetX: 30,\n  style: {\n    fontSize: '24px',\n    cssClass: 'apexcharts-yaxis-title'\n  }\n},\nsubtitle: {\n  text: 'Sales',\n  offsetX: 30,\n  style: {\n    fontSize: '14px',\n    cssClass: 'apexcharts-yaxis-title'\n  }\n}\n}",
+          "computed": false
+        }
+      },
+      "type": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "'area'",
+          "computed": false
+        }
+      },
+      "series": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "[\n  {\n    name: \"series-1\",\n    data: [30, 40, 45, 50, 49, 60, 70, 91]\n  }\n]",
+          "computed": false
+        }
+      },
+      "width": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "'200'",
+          "computed": false
+        }
+      },
+      "height": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "'200'",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+apexdash/Apexdash.py
+apexdash/__init__.py
+apexdash/_imports_.py
+apexdash/apexdash.min.js
+apexdash/apexdash.min.js.map
+apexdash/metadata.json
+apexdash/package-info.json
+apexdash.egg-info/PKG-INFO
+apexdash.egg-info/SOURCES.txt
+apexdash.egg-info/dependency_links.txt
+apexdash.egg-info/top_level.txt
