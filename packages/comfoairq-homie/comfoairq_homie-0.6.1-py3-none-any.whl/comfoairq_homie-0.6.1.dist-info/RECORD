@@ -1,0 +1,16 @@
+comfoairq_homie/__init__.py,sha256=HoNnNBcFrl5Vj_RUgxNa5fMnfzbCXbw0aTZscnM1H9c,45
+comfoairq_homie/__main__.py,sha256=gCW0uxR25PFJLkVgodwa8K15U7_FbRWdUglXJIJexGk,2454
+comfoairq_homie/comfoairq_homie.py,sha256=GHJSZ5d7bmgTqptZvHFOvIbr6IQ2uW9HDQsTVhyJRZE,1897
+comfoairq_homie/comfoairq/__init__.py,sha256=pd-h3AqVN6uR9-6HXW9qprcAavYQcSCVZQBr-jYv16Y,39
+comfoairq_homie/comfoairq/comfoairq.py,sha256=k8EMu0XVba9ScGaneK8LUAaQrJ1WM6Z2fU9GjvGqn_A,8683
+comfoairq_homie/comfoairq/comfoairq_const.py,sha256=4-CDrhL6wUB7He5XsUfBnLAnocb5_UWU7O4c2GNPPJE,713
+comfoairq_homie/homie_device/__init__.py,sha256=sxQnZDrDJT6VNrk5joqcVO8fsqGbnHcdR-DoWUIGG-A,19
+comfoairq_homie/homie_device/comfoairq_transformations.py,sha256=FCYMAat9USqFbMlhyE4AM3rzXar-ubueSJRLsM-okcE,1244
+comfoairq_homie/homie_device/device_comfoairq.py,sha256=fYP6UosmjEQ69u0YxRQRCMDfmqqs2E5jFeI2Pndgbdo,37042
+comfoairq_homie/homie_device/device_comfoairq_gateway.py,sha256=6C7wbcX2Z6SsBfko-bOAWShp2upjXFGxBOqZpLH6sYc,4441
+comfoairq_homie-0.6.1.dist-info/LICENSE,sha256=KBBoemSvZ6OLSaHs2quWJJRa0r_WHL_c4UOQojQwqF4,1088
+comfoairq_homie-0.6.1.dist-info/METADATA,sha256=r4JjzZ9UCsZ-kc0ZvFouO4p5IUBUw41z6iD6j-34jtQ,2879
+comfoairq_homie-0.6.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+comfoairq_homie-0.6.1.dist-info/entry_points.txt,sha256=sXkRgHXwsC_M-RLToErnVMQZSZ3cV65a0bK03IckWEs,67
+comfoairq_homie-0.6.1.dist-info/top_level.txt,sha256=cut2cFvykWx8jCeHdVFAfOJ4LLhSIPjA_76KvEo94YE,16
+comfoairq_homie-0.6.1.dist-info/RECORD,,
