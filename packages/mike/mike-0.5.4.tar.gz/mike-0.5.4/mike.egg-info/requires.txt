@@ -1,0 +1,13 @@
+jinja2
+mkdocs>=1.0
+packaging
+ruamel.yaml
+
+[dev]
+coverage
+flake8>=3.0
+pypandoc>=1.4
+
+[test]
+coverage
+flake8>=3.0
