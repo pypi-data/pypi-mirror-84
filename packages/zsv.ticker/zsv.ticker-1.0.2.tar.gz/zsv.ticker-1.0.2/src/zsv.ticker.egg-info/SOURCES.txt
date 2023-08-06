@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements-dev.txt
+requirements-test.txt
+requirements.txt
+setup.cfg
+setup.py
+src/zsv.ticker.egg-info/PKG-INFO
+src/zsv.ticker.egg-info/SOURCES.txt
+src/zsv.ticker.egg-info/dependency_links.txt
+src/zsv.ticker.egg-info/namespace_packages.txt
+src/zsv.ticker.egg-info/requires.txt
+src/zsv.ticker.egg-info/top_level.txt
+src/zsv/ticker/__init__.py
+src/zsv/ticker/ticker.py

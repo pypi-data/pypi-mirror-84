@@ -1,0 +1,15 @@
+
+[dev]
+pytest
+pytest-timeout
+tox
+sphinx
+sphinx_autodoc_typehints
+sphinx_rtd_theme
+
+[test]
+pytest
+pytest-cov
+pytest-timeout
+coverage
+tox
