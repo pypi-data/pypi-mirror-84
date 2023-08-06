@@ -1,0 +1,10 @@
+kg_traefik2/__init__.py,sha256=mJJcBkVS5i73ENJVpKugMfTfWqN5xUhckZii7xk90mg,242
+kg_traefik2/builder.py,sha256=qjqEoSPXUcayZsRxj6f5Me8c2R1mjseO_VUofKOilUA,14736
+kg_traefik2/option.py,sha256=MzUOrFN8Mm2jLwky2hOyjDYwg8JLqL7u3Z9XcUeVF_k,5582
+kg_traefik2/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kg_traefik2/tests/test_builder.py,sha256=ZSH7POOJQuMADOKk_FzZiPAXfu1OB7MD-GVFFQVag8s,1425
+kg_traefik2-0.7.3.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+kg_traefik2-0.7.3.dist-info/METADATA,sha256=LD3Gim7f4IP0P3TerJ5DI7Vms-BnCPMyN0YAoiOTTtI,5685
+kg_traefik2-0.7.3.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+kg_traefik2-0.7.3.dist-info/top_level.txt,sha256=_ty1fgkChe8vlyDfpZ3oe_F1R-WoSckJEVYYb4Ogg7g,12
+kg_traefik2-0.7.3.dist-info/RECORD,,
