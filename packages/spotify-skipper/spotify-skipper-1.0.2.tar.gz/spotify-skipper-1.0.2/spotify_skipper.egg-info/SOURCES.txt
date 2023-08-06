@@ -1,0 +1,14 @@
+.gitignore
+README.md
+__init__.py
+setup.py
+autoskip/__init__.py
+autoskip/__version__.py
+autoskip/autoskipper.py
+autoskip/cli.py
+spotify_skipper.egg-info/PKG-INFO
+spotify_skipper.egg-info/SOURCES.txt
+spotify_skipper.egg-info/dependency_links.txt
+spotify_skipper.egg-info/entry_points.txt
+spotify_skipper.egg-info/requires.txt
+spotify_skipper.egg-info/top_level.txt
