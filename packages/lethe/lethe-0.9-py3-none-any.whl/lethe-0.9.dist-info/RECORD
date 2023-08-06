@@ -1,0 +1,11 @@
+lethe/VERSION.py,sha256=YCLcDR8d8Tf_ayo1QnjBMm0j1ddXNIQPnUOMexo6eC8,125
+lethe/__init__.py,sha256=TbgdIZD960Itjwm7IgisFxiy2kK8rPEqQfGOUsgJFu0,298
+lethe/__main__.py,sha256=ln7sm2vH4GzWC94ITHXnKMYYvUvj55K5TiG6Dwit8k0,63
+lethe/lethe.py,sha256=J9KfiOF6iytj1UdcVJUzIOPprgjrF_U_DzF9kRxjso0,7226
+lethe/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lethe-0.9.dist-info/LICENSE.md,sha256=WF4l749ZRqUr8q7WjVvs_Di-lKhmOqAcGzHYiqV_HeM,34904
+lethe-0.9.dist-info/METADATA,sha256=WcCdStVq-iyD6Mp3r7XpBs0tSFPwrdl4XjU19QNkg5c,3479
+lethe-0.9.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+lethe-0.9.dist-info/entry_points.txt,sha256=OPIScT6HPhV6JK0SYJ4rSvULX4DNLIAdfNlmRUicsG4,38
+lethe-0.9.dist-info/top_level.txt,sha256=b2fLwsg7H7XOWXOeQUVJiTFMcJUTfkVu1A32jprSwWM,6
+lethe-0.9.dist-info/RECORD,,
