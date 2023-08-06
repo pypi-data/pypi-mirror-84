@@ -1,0 +1,7 @@
+README.md
+setup.py
+attribmanager/__init__.py
+attribmanager.egg-info/PKG-INFO
+attribmanager.egg-info/SOURCES.txt
+attribmanager.egg-info/dependency_links.txt
+attribmanager.egg-info/top_level.txt
