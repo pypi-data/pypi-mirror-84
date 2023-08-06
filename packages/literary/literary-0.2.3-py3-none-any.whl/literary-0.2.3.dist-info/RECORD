@@ -1,0 +1,15 @@
+literary/__init__.py,sha256=5M02VfEpaRi558TX-Db9VVCZ6OwjHPyJesKf43Vm3bs,162
+literary/build.py,sha256=CdsC8e83uO1CuAAr735Kg6rkWrcwXyxkELqQTuk-K58,2705
+literary/exporter.py,sha256=HKPMvaqswSS02ZhjKmlUVf1-B61wr5xst5mswrKupsA,3185
+literary/notebook/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+literary/notebook/__main__.py,sha256=gG14APBO8UWGyq8Bvztz7dGnvGpJBUUPhJgHvDGWR0o,479
+literary/notebook/importer.py,sha256=nhREXJJbx-WFXMJ4avgUCOkDfaoLyy733jMhZ9H8sCs,3377
+literary/notebook/patch.py,sha256=A0vFnalmB9BbisMQ2pj0SL5jMskEMm1Xdo2w3tscA8E,487
+literary/notebook/paths.py,sha256=aFu9H0kRDY1g3ONyCvBVA1Xp5YqnvxyN1qCSexRDnRc,711
+literary/preprocessor.py,sha256=yYghJw1dDASKQvJ_JvEckPFVYGdxJ2tqt8gRI5AhUf0,593
+literary/transformers.py,sha256=sxG92zo4znasrXpPIZcaWQI9tLEG7mUt09hVquwObWA,2756
+literary/utils.py,sha256=oPaIq4ngDrQaAby44tJzjbwJ_Z_gJ1dhozMXxHufJXE,505
+literary-0.2.3.dist-info/entry_points.txt,sha256=S9dLcUYo2GDPkC_TrNW4cVOQ29i4UOrKhdf1ha_oiVI,53
+literary-0.2.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+literary-0.2.3.dist-info/METADATA,sha256=qDpYHSD0qvyvFO5XfP-C_7fDD3zs0bEhg0dadBf_OgI,3091
+literary-0.2.3.dist-info/RECORD,,
