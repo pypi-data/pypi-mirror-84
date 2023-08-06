@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: py-event
+Version: 0.0.0
+Summary: A single threaded and a run-to-completion event controller
+Home-page: https://github.com/SetBased/py-event
+Author: Set Based IT Consultancy
+Author-email: info@setbased.nl
+License: MIT
+Description: py-event
+        ========
+        
+        A single threaded and a run-to-completion event controller. That is, each event is processed completely before any other event is processed. Hence, an event listener will run entirely before any other code runs (which can potentially modify the data the event listener invokes).
+        
+        License
+        =======
+        
+        This project is licensed under the terms of the MIT license.
+        
+Keywords: event
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
