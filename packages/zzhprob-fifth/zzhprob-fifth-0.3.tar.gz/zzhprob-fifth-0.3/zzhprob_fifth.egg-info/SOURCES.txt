@@ -1,0 +1,10 @@
+setup.py
+zzhprob-fifth/Binomialdistribution.py
+zzhprob-fifth/Gaussiandistribution.py
+zzhprob-fifth/Generaldistribution.py
+zzhprob-fifth/__init__.py
+zzhprob_fifth.egg-info/PKG-INFO
+zzhprob_fifth.egg-info/SOURCES.txt
+zzhprob_fifth.egg-info/dependency_links.txt
+zzhprob_fifth.egg-info/not-zip-safe
+zzhprob_fifth.egg-info/top_level.txt
