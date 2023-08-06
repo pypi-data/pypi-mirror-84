@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: chitboxes
+Version: 0.0.1
+Summary: Chitbox Generation for Board- and Cardgames
+Home-page: http://domtabs.sandflea.org
+Author: Peter Gorniak
+Author-email: sumpfork@mailmight.net
+License: UNKNOWN
+Description: # Boardgame Chit/Bit Box Generator
+        
+        A script to generate foldable boxes with lids for bits of boardgames. See it in action at https://domdiv.bgtools.net/chitboxes.
+        
+Keywords: boardgame,cardgame,chitboxes
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

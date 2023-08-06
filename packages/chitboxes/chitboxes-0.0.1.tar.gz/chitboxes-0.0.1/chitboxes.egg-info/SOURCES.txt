@@ -1,0 +1,12 @@
+.gitignore
+LICENSE.md
+README.md
+setup.py
+chitboxes/__init__.py
+chitboxes/chitboxes.py
+chitboxes.egg-info/PKG-INFO
+chitboxes.egg-info/SOURCES.txt
+chitboxes.egg-info/dependency_links.txt
+chitboxes.egg-info/entry_points.txt
+chitboxes.egg-info/requires.txt
+chitboxes.egg-info/top_level.txt
