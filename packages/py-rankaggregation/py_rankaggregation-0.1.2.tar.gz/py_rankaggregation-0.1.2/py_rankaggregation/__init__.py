@@ -1,0 +1,9 @@
+
+__version__ = '0.1.0'
+
+from py_rankaggregation.utils.generic_helper import get_install_path
+
+from py_rankaggregation.rankaggregator import RankAggregator
+from py_rankaggregation.meanrankaggregator import MeanRankAggregator
+from py_rankaggregation.geomeanrankaggregator import GeometricMeanRankAggregator
+from py_rankaggregation.medianrankaggregator import MedianRankAggregator
