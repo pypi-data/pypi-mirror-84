@@ -1,0 +1,6 @@
+DBHOST = ''
+DBPORT = 3306
+DBUSER = ''
+DBPWD = ''
+DBNAME = ''
+DBCHAR = 'utf8'
