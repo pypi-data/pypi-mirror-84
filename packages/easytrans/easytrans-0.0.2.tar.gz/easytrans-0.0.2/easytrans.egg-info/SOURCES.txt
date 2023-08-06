@@ -1,0 +1,12 @@
+setup.py
+easytrans/LICENSE
+easytrans/README.md
+easytrans/__init__.py
+easytrans/file_to_doc.py
+easytrans/file_to_pdf.py
+easytrans/file_to_png.py
+easytrans.egg-info/PKG-INFO
+easytrans.egg-info/SOURCES.txt
+easytrans.egg-info/dependency_links.txt
+easytrans.egg-info/requires.txt
+easytrans.egg-info/top_level.txt
