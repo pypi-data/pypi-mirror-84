@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: attribmanager
+Version: 1.0
+Summary: A simple pythonic module to lock (make read-only) and hide class attributes
+Home-page: https://github.com/judev1/attribmanager
+Author: Jude BC
+Author-email: jude.version1.0@gmail.com
+License: BSD 2-clause
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# attribmanager
+
+##### A simple pythonic module to lock (make read-only) and hide class attributes
+
+
+## Installation
+
+`pip install attribmanager`
+
+## Usage
+
+```
+import attribmanger
+
+class example(attribmanger.manage):
+
+	def __init__(self):
+
+		self.mylist = ["item 1", "item2"]
+		self.lock("mylist")
+		# mylist is read only and cannot be edited now, changing it
+		# will raise an error, 
+
+		self.myvar = "foo"
+		self.hide("myvar")
+		# myvar will not show up anywhere, and cannot be edited
+
+		self.unhide("myvar")
+		# Hiding an object without being able to unhide it would be
+		# the same as deleting it, that's why you can unhide it
+```
+
