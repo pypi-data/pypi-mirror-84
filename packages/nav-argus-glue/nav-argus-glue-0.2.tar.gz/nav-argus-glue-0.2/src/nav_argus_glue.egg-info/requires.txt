@@ -1,0 +1,3 @@
+argus-api-client>=0.2
+pyaml
+simple_rest_client==1.0.8
