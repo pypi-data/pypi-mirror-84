@@ -1,0 +1,10 @@
+README.md
+setup.py
+fuzzy_logic/__init__.py
+fuzzy_logic/fuzzynumeric.py
+fuzzy_logic/fuzzystring.py
+fuzzy_logics.egg-info/PKG-INFO
+fuzzy_logics.egg-info/SOURCES.txt
+fuzzy_logics.egg-info/dependency_links.txt
+fuzzy_logics.egg-info/requires.txt
+fuzzy_logics.egg-info/top_level.txt
