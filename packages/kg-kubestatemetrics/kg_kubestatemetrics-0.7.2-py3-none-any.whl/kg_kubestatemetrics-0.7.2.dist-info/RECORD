@@ -1,0 +1,10 @@
+kg_kubestatemetrics/__init__.py,sha256=a4o7kpUXky1PhKDrz5K0vwI02lr0qd3zpDbnkAwGeSw,218
+kg_kubestatemetrics/builder.py,sha256=sJQz7YrIS4wV1s80F6lXYAcLiDV4NgZUQdEGrVtccOs,15677
+kg_kubestatemetrics/option.py,sha256=b6XpJCXAX0GKIi1FCfWCJoOYZWlfdp4uBn-In1cPbYM,3346
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_builder.py,sha256=wL_Fv7B8F-Wdguhx80vdlX8JGxjSwfiF4aqdDfFabXg,1428
+kg_kubestatemetrics-0.7.2.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+kg_kubestatemetrics-0.7.2.dist-info/METADATA,sha256=Enqs3_gO2jvOGgpZJGadN5KPKbzNTIKZbKd2wo511Ow,5293
+kg_kubestatemetrics-0.7.2.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+kg_kubestatemetrics-0.7.2.dist-info/top_level.txt,sha256=0cvyr1gNMowJGOOHhqFcW8RtZjvxyear1mdP5D01yig,26
+kg_kubestatemetrics-0.7.2.dist-info/RECORD,,
