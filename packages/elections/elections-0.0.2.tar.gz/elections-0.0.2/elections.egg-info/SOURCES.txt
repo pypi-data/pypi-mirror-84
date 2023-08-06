@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+elections/__init__.py
+elections.egg-info/PKG-INFO
+elections.egg-info/SOURCES.txt
+elections.egg-info/dependency_links.txt
+elections.egg-info/top_level.txt
