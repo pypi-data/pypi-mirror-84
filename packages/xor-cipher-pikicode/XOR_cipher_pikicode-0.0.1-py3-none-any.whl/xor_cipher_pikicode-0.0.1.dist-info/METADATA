@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: xor-cipher-pikicode
+Version: 0.0.1
+Summary: Simple XOR cipher
+Home-page: https://github.com/Pikicode/XOR-cipher
+Author: pikicode
+Author-email: info@pikicode.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.2
+Description-Content-Type: text/markdown
+
+# XOR-cipher
+Simple XOR cipher.
+
+
