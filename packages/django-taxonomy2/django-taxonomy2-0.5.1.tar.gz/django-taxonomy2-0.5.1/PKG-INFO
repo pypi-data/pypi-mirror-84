@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: django-taxonomy2
+Version: 0.5.1
+Summary: Category tree for Django. Replicable and customizable. Includes Admin. Low on features, easy setup.
+Home-page: https://github.com/rcrowther/django-taxonomy
+Author: robert crowther
+Author-email: rw.crowther@gmail.com
