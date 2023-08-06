@@ -1,0 +1,7 @@
+README.md
+setup.py
+kommit.egg-info/PKG-INFO
+kommit.egg-info/SOURCES.txt
+kommit.egg-info/dependency_links.txt
+kommit.egg-info/entry_points.txt
+kommit.egg-info/top_level.txt
