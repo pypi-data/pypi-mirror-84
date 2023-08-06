@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+src/varsubst/__init__.py
+src/varsubst/exceptions.py
+src/varsubst/interpolators.py
+src/varsubst/resolvers.py
+src/varsubst.egg-info/PKG-INFO
+src/varsubst.egg-info/SOURCES.txt
+src/varsubst.egg-info/dependency_links.txt
+src/varsubst.egg-info/not-zip-safe
+src/varsubst.egg-info/requires.txt
+src/varsubst.egg-info/top_level.txt
