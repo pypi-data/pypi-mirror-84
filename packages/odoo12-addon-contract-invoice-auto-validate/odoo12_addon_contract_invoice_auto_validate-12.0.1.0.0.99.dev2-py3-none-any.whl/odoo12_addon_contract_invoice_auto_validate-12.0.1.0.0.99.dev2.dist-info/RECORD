@@ -1,0 +1,17 @@
+odoo/addons/contract_invoice_auto_validate/README.rst,sha256=weMvXuK5pgE-HMpo8NZkoBL0dsWs1MIBujYeumtzeLs,3251
+odoo/addons/contract_invoice_auto_validate/__init__.py,sha256=soE498wxV3zjEpDltWKfvJuweli2yygYkOhQadzOIl4,41
+odoo/addons/contract_invoice_auto_validate/__manifest__.py,sha256=MvDzd486Nbr9QTDPzvZVQiId5IBlGPPGorSpqo8jGjI,496
+odoo/addons/contract_invoice_auto_validate/i18n/contract_invoice_auto_validate.pot,sha256=NgDeprBhdeifvU-c_R8N0U2GWpOisVidkTodZ_pmb_E,527
+odoo/addons/contract_invoice_auto_validate/models/__init__.py,sha256=PILt-kFuWsxj_joOgJ3sk9_HDV0vDmkLxjJqgyP0e80,32
+odoo/addons/contract_invoice_auto_validate/models/contract_contract.py,sha256=i4ZKbaffJ4xcr8fi4DnN6Cd-KIE43fkLv3fNbypN2mw,424
+odoo/addons/contract_invoice_auto_validate/readme/CONTRIBUTORS.rst,sha256=eg-pNPuCPWTyvQk7v-s8EauE_ev7JyxExZStt6tLNfI,46
+odoo/addons/contract_invoice_auto_validate/readme/DESCRIPTION.rst,sha256=DQOokzdmc4Hz64HAUF3IRoOxVK0uqhP-R4zrKj0xwLQ,69
+odoo/addons/contract_invoice_auto_validate/readme/USAGE.rst,sha256=3eU_vRPxT4O-zQN7ToyLFGsS__5ZelW8l5G0RAHk_rQ,290
+odoo/addons/contract_invoice_auto_validate/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/contract_invoice_auto_validate/static/description/index.html,sha256=aV84IsA7S08wwEtya4IxdOTYpYsicZqQbICTvSmq2DA,12569
+odoo/addons/contract_invoice_auto_validate/tests/__init__.py,sha256=Bxe5IcK6-U5BdN6tCqwdGXRNnkQxRlvROyfctPxJrGQ,50
+odoo/addons/contract_invoice_auto_validate/tests/test_contract_invoice_auto_validate.py,sha256=xb8MfVk1xx80zG9KHpY1uJHAD_wa2lFNgLvOTj8yI-8,1029
+odoo12_addon_contract_invoice_auto_validate-12.0.1.0.0.99.dev2.dist-info/METADATA,sha256=A9-QVwH_aE9j_mkeirpFx3flwkg--_5YtSl7ujEXfjw,3862
+odoo12_addon_contract_invoice_auto_validate-12.0.1.0.0.99.dev2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+odoo12_addon_contract_invoice_auto_validate-12.0.1.0.0.99.dev2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_contract_invoice_auto_validate-12.0.1.0.0.99.dev2.dist-info/RECORD,,
