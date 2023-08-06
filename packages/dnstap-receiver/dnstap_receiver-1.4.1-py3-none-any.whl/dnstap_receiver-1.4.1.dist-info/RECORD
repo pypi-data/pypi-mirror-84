@@ -1,0 +1,16 @@
+dnstap_receiver/__init__.py,sha256=DyAeC0OUwCwkUveKFyWtf6oMy3M0IVXPXM0Xxyvyq0I,74
+dnstap_receiver/dnstap.conf,sha256=Mq5AjleRNj0aWFCtnNVBRpV8LYDNq8KRWlp_utIUcSc,1989
+dnstap_receiver/dnstap_pb2.py,sha256=sg1ICvYAsQrcGpCS6WLQ-rAlMFib_107rRX4f4t4eFg,14687
+dnstap_receiver/fstrm.py,sha256=g0U8UlOXoSKueFkN2Lftq0io09CivAhc1mv-uD0pM5s,5347
+dnstap_receiver/output_metrics.py,sha256=FZ5lDehx9wTy66ye_oB54D9pM9pRUIbJmYF7flfiruE,1408
+dnstap_receiver/output_stdout.py,sha256=k_oNjwUQGKKdOAojkKvDaeO6BASxABCMFqo21NT0uPc,465
+dnstap_receiver/output_syslog.py,sha256=t41TDlriDGD0uVlSUtUR27JEAVdLTZQgwD1NEgQ3CPs,2605
+dnstap_receiver/output_tcp.py,sha256=n_y8e4k89UWnG6a7lljBn8ain7FHLefXSDYd-VI9lBw,1767
+dnstap_receiver/receiver.py,sha256=QBM8tKBNC2FJHtmivcCkobBxZYzIsmP7KBagM24V7W4,15779
+dnstap_receiver/transform.py,sha256=-zQ2nJr9VJBdQD0_eWxcXteudv_OsQIzZ8aYOtSdcIE,1021
+dnstap_receiver-1.4.1.dist-info/LICENSE,sha256=XBHyIx1N2_ffyQwo_AjEalytAHWSGQpMkUxnvlJ20AM,1070
+dnstap_receiver-1.4.1.dist-info/METADATA,sha256=C6b6NJMloneC9sC6Om4M9VBEIsrZbFr1EPNZnqz6ZeU,15082
+dnstap_receiver-1.4.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+dnstap_receiver-1.4.1.dist-info/entry_points.txt,sha256=bzPt7OoA-VPMJyB-V46kkqM7mDAZnH1KyCNfWBxMjKc,77
+dnstap_receiver-1.4.1.dist-info/top_level.txt,sha256=K003aukVsNJ-FPjDLNtL1eAbNscTdkWepuWlXIlO_GI,16
+dnstap_receiver-1.4.1.dist-info/RECORD,,
