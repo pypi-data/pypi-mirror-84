@@ -1,0 +1,17 @@
+monitoring_plugins/__init__.py,sha256=RDmzOkUKbkrfRLVFwUb2rM6myHeOPIUHTCWOyctVGDk,1172
+monitoring_plugins/check_deny_tls_version.sh,sha256=Q5tScu9PzSixzoSrljQNRncHx_Iz5udJT89v_3g-voY,2684
+monitoring_plugins/check_docker_login.sh,sha256=p7C_qFRqUY0qDA6Y-pgmNKzy_s9Fi41izuSgKRWdmVk,3190
+monitoring_plugins/check_existing_users.py,sha256=zyLkh65nDagtzcaewGhTDJj6GlzfEYnJrHpaS0xNo68,1385
+monitoring_plugins/check_group_members.py,sha256=78vHUbAFiwJ8x8HAcfKP9-IPjdXJdrjzvn8mNx4OZZs,1385
+monitoring_plugins/check_page_content.py,sha256=dS6FbBgWi-Iu6j47xggA2Xd-qZBkPkBIimD9pfX6G70,1183
+monitoring_plugins/check_path_exists.sh,sha256=CboV7f6XP22KzRa3dLxbpGmfuuHY5Or92fKvBkZtfmY,2378
+monitoring_plugins/check_sshd_security.py,sha256=s8424lVsevudZk3vl4ku049zV1nVm-uJ3oTwlQR0CM8,1383
+monitoring_plugins/check_ufw_status.py,sha256=Qze6DaJ0zD-Hpgf9ABbjMgGLrwtKM3CAlQNiOMBxL84,1379
+monitoring_plugins-2.0.0.data/data/monitoring_plugins_doc/CHANGELOG.md,sha256=6gueH4hhxfcmkgO64CS2RAsUtPfNjuP1Q3zP4hWWPPw,83
+monitoring_plugins-2.0.0.data/data/monitoring_plugins_doc/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+monitoring_plugins-2.0.0.data/data/monitoring_plugins_doc/README.md,sha256=YZ-RryFiO71u4cnczlwCZ1UX9LQHZRBpCwGGL9MaM-Q,2455
+monitoring_plugins-2.0.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+monitoring_plugins-2.0.0.dist-info/METADATA,sha256=ana5HDHmg4Eu57NuRa2uAzeirwBw4tZsFX6SMtSlykE,3060
+monitoring_plugins-2.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+monitoring_plugins-2.0.0.dist-info/top_level.txt,sha256=hIOS7a51WRI5NxakNxA_sFlDLVh2StDXOE0oqED_7C4,19
+monitoring_plugins-2.0.0.dist-info/RECORD,,
