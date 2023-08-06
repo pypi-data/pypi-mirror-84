@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: tsanalysis
+Version: 0.1.2
+Summary: Machine Learning library for time series analysis
+Home-page: https://github.com/etiennedemontalivet/time-series-analysis
+Author: Etienne de Montalivet
+Author-email: etienne.demontalivet@gmail.com
+License: UNKNOWN
+Keywords: ml datascience timeseries dataanalysis
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: lightgbm (>=2.3.0)
+Requires-Dist: numpy (>=1.17.3)
+Requires-Dist: pandas (>=0.25.2)
+Requires-Dist: pyentrp (>=0.5.0)
+Requires-Dist: PyWavelets (>=1.0.6)
+Requires-Dist: pyyaml (>=5.1.2)
+Requires-Dist: seaborn (>=0.9.0)
+Requires-Dist: matplotlib (>=3.1.2)
+Requires-Dist: scikit-optimize
+Requires-Dist: umap-learn (==0.3.10)
+Requires-Dist: plotly (==4.3.0)
+Requires-Dist: imbalanced-learn (==0.5.0)
+Requires-Dist: imblearn (==0.0)
+Requires-Dist: autopep8 (==1.5)
+Requires-Dist: PyAstronomy (==0.14.0)
+Requires-Dist: jupytext (==1.5.0)
+Requires-Dist: jupyterlab
+Provides-Extra: dev
+Requires-Dist: flake8 (>=3.7) ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: sphinx (>=2.2) ; extra == 'dev'
+Requires-Dist: invoke (>=1.3) ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-coverage ; extra == 'dev'
+
+# Time Series Analysis
+
+A framework for time-series analysis and features extraction / visualization.
+
+## Installation
+
+### From Github
+Download or clone the sources from the [github page](https://github.com/etiennedemontalivet/time-series-analysis/) and run:
+```
+python steup.py install
+```
+
+### Release
+```
+pip install tsanalysis
+```
+
+## Documentation
+
+This is **Work In Progress**
+
+
