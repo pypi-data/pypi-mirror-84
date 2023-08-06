@@ -1,0 +1,13 @@
+README.md
+setup.py
+ComPora.egg-info/PKG-INFO
+ComPora.egg-info/SOURCES.txt
+ComPora.egg-info/dependency_links.txt
+ComPora.egg-info/entry_points.txt
+ComPora.egg-info/requires.txt
+ComPora.egg-info/top_level.txt
+compora/__init__.py
+compora/nb_prefix.py
+compora/special_process.py
+compora/standardize.py
+compora/tokenize.py
