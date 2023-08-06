@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: famapy
+Version: 0.0.1
+Summary: FaMaPy is a Python-based AAFM framework that takes into consideration previous AAFM tool designs and enables multi-solver and multi-metamodel support for the integration of AAFM tooling on the Python ecosystem.
+Home-page: https://github.com/FaMaPy/core
+Author: Víctor Ramírez de la Corte
+Author-email: me@virako.es
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# core
+
+FaMaPy is a Python-based AAFM framework that takes into consideration previous AAFM tool designs and enables multi-solver and multi-metamodel support for the integration of AAFM tooling on the Python ecosystem.
+
+The main features of the framework are:
+* Easy to extend by enabling the creation of new plugins following a semi-automatic generator approach.
+* Support multiple variability models. Currently, it provides support for cardinality-based feature models. However, it is easy to integrate others such as attributed feature models
+* Support multiple solvers. Currently, it provides support for the PySAT metasolver, which enables more than ten different solvers.
+* Support multiple operations. It is developed, having in mind multi-model operations such as those depicted by Familiar  and single-model operations.
+
+
+## Install development
+
+Create virtualenv and install setup.py:
+
+```
+python3 -m venv env .
+source env/bin/activate
+pip install -e .  # Install package in development mode
+```
+
+IMPORTANT NOTE: this repository not work without metamodels, you need to install some metamodels
+
+
+## Execute tests
+
+After you install the module, you can execute:
+
+
+```
+pytest
+```
+
+
+## Install metamodels
+
+There is at the moment two separate metamodels repository:
+
+```
+git clone git@github.com:diverso-lab/fm_metamodel.git
+git clone git@github.com:diverso-lab/pysat_metamodel.git
+```
+
+You can install it inside the same virtualenv environment with:
+
+```
+pip install -e .
+```
+
+
+## Review code quality and styles error
+
+```
+prospector
+```
+
+
