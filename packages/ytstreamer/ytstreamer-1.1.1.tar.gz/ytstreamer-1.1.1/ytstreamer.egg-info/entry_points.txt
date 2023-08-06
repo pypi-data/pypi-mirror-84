@@ -1,0 +1,3 @@
+[console_scripts]
+ytstream = src.streamer:main
+
