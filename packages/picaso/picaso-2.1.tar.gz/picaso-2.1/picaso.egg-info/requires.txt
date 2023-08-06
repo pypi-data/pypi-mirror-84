@@ -1,0 +1,13 @@
+numpy
+bokeh
+holoviews
+numba
+pandas
+joblib
+photutils
+astropy>=3.2.3
+matplotlib
+pysynphot
+sphinx
+scipy
+virga-exo
