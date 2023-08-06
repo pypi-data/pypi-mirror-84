@@ -1,0 +1,3 @@
+[console_scripts]
+k2r=keep2roam:k2r
+
