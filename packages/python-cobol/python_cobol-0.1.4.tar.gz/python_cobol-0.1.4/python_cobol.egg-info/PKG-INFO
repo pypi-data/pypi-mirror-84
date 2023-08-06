@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: python-cobol
+Version: 0.1.4
+Summary: Python code to parse and denormalize COBOL Copybooks
+Home-page: https://github.com/royopa/python-cobol
+Author: Paulus Schoutsen
+Author-email: paulus@paulusschoutsen.nl
+License: GPLv3
+Description: UNKNOWN
+Keywords: cobol mainframe copybook
+Platform: UNKNOWN

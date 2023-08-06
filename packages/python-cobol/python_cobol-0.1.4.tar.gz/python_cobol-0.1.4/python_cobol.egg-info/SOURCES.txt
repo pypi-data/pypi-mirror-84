@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+python_cobol/__init__.py
+python_cobol/python_cobol.py
+python_cobol.egg-info/PKG-INFO
+python_cobol.egg-info/SOURCES.txt
+python_cobol.egg-info/dependency_links.txt
+python_cobol.egg-info/top_level.txt
