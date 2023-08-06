@@ -1,0 +1,13 @@
+p/__init__.py,sha256=3TO6y5msDQc1rG5PBpbSp0-3nZ1O43H6bTqz0rlkosE,40
+p/m1.py,sha256=QT-PQmFDQQu271juISwm4PGlcUdBk8aw1WVdMFw2T0w,7
+p/m2.py,sha256=v_vv9_lccNP9qJcjknIUOeB7597lAITHU1aVAZjbkr4,34
+traceback_with_variables/__init__.py,sha256=o9LnExj224SrruIgGME4sEs6D1aXDzZ9thtiU7EKUWU,152
+traceback_with_variables/activate_by_import.py,sha256=6vLrqAViQTm9RKZuQFx0kSxvYgjAb8Rx2UfbhI7t9nU,151
+traceback_with_variables/core.py,sha256=X1d9iylbmB4SPAWmiQ6IuLiVAsnIxNdxrOpDzQiMfE0,2264
+traceback_with_variables/override.py,sha256=OuHqDFPbRL_Dt3O4F-SV97l2g-frdoXmK4lznbjic-4,949
+traceback_with_variables/print.py,sha256=J8jGh0VpJaR0Tn26v_m4JbmefcBPmhhryxqRpiViW7g,2430
+traceback_with_variables-1.1.1.dist-info/LICENSE,sha256=NfFkZrSLGwBV7zSsIfdoe4V06BC1050knXQB2epYub8,1092
+traceback_with_variables-1.1.1.dist-info/METADATA,sha256=2cwXkNExP_tYsvOAigmdEN6N6KK3qU3qgGlYDp20KbU,9393
+traceback_with_variables-1.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+traceback_with_variables-1.1.1.dist-info/top_level.txt,sha256=SM8brzaUJovfdH4AHOCtVQYhR_zNvasZdur_rug8yHQ,25
+traceback_with_variables-1.1.1.dist-info/RECORD,,
