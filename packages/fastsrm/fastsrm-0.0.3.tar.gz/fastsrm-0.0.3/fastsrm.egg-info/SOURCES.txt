@@ -1,0 +1,11 @@
+README.md
+setup.py
+fastsrm/__init__.py
+fastsrm/fastsrm.py
+fastsrm/identifiable_srm.py
+fastsrm/utils.py
+fastsrm.egg-info/PKG-INFO
+fastsrm.egg-info/SOURCES.txt
+fastsrm.egg-info/dependency_links.txt
+fastsrm.egg-info/requires.txt
+fastsrm.egg-info/top_level.txt
