@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ChadBot4
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://github.com/captanlevi/FAQ-QnA-matching.git
+Author: Rushi Babaria
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: sentence-transformers (==0.3.8)
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: regex
+Requires-Dist: nlpaug
+Requires-Dist: spacy
+Requires-Dist: en-core-web-md
+Requires-Dist: tqdm
+
+UNKNOWN
+
+
