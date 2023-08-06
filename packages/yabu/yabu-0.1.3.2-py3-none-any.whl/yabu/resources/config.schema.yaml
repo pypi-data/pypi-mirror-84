@@ -1,0 +1,15 @@
+stop_on_failed_task: bool(required=False)
+tasks: map(include("task"), key=str())
+---
+task:
+  remote_base_path: str()
+  local_path: str()
+  delete_old: bool(required=False)
+  identity_file: str(required=False)
+  stop_on_failed_target: bool(required=False)
+  snapshot: include("snapshot", required=False)
+  targets: list(str())
+snapshot:
+  type: enum("btrfs")
+  path: str()
+  name_template: str(required=False)
