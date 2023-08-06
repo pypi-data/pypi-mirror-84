@@ -1,0 +1,10 @@
+slicer/__init__.py,sha256=KAk_knpDPfIOfojiHGvPbFpQ5IacPovPFZa7ntybCVo,99
+slicer/slicer.py,sha256=n52YEbQPMm9tN-GAUg68huGY36GtmziJ6B1qlMS4LB0,7952
+slicer/slicer_internal.py,sha256=PbN3UHohnjKWLMzOtsd9emJoYXKok5SkgZVqxkvdgDI,20350
+slicer/test_slicer.py,sha256=4eSqM8y2KirAlz2_E9QeSxO0VAAz5FCVZFtjbQqmFc4,12958
+slicer/utils_testing.py,sha256=Ph4Dq8Hv0PE-6wXwy1gfRmXVf5rDeI3do4nj3ZI2Fj4,1694
+slicer-0.0.5.dist-info/LICENSE,sha256=3dPe7JVsvMhLnAMUkwRFHTp4jKViyVmQ-JOYh4FJVhk,1089
+slicer-0.0.5.dist-info/METADATA,sha256=KODFN9HxfMIQoslD8t_19RntzI5lSzNeyYP7_MY-7mo,3683
+slicer-0.0.5.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+slicer-0.0.5.dist-info/top_level.txt,sha256=tnLR59Ifbh7q7B_DawkHkPsLcN2UGQul7BssQUMR-5Q,7
+slicer-0.0.5.dist-info/RECORD,,
