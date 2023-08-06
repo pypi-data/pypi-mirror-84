@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: geo-tools-py
+Version: 1.0.0
+Summary: Geo SDK for python
+Home-page: http://datahub.wtf
+Author: caidong
+Author-email: zhucaidong@aliyun.com
+License: Apache License 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=2.7
