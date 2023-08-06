@@ -1,0 +1,12 @@
+CHANGELOG.md
+LICENSE
+README.md
+setup.py
+monitoring_scripts/__init__.py
+monitoring_scripts/telegram_notification_host.py
+monitoring_scripts/telegram_notification_service.py
+monitoring_scripts.egg-info/PKG-INFO
+monitoring_scripts.egg-info/SOURCES.txt
+monitoring_scripts.egg-info/dependency_links.txt
+monitoring_scripts.egg-info/requires.txt
+monitoring_scripts.egg-info/top_level.txt
