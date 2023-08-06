@@ -1,0 +1,9 @@
+chreader/__init__.py,sha256=oqeXmuCWn9epndeHVMIIdjdFKnyR6YhZiRXg9h0moXE,134
+chreader/core.py,sha256=4jvayyenG2kY-t4kqi68NxrBdrZRvwJQg6cohdXZQwk,3033
+chreader/version.py,sha256=VulMh6tA5y9azIgu4UelrUqy7-SwAcisWcBvTK_27aQ,486
+chreader-0.2.0.dist-info/LICENSE,sha256=cqJhYhqff6sfGLyhGUwGYd42qwpOPVWgTN_hdYbfWk8,1067
+chreader-0.2.0.dist-info/METADATA,sha256=4Bi0hCFm3nFNwyNIKaIhOy4ZS_tp3tiRG0kOfSLoyxY,2328
+chreader-0.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+chreader-0.2.0.dist-info/entry_points.txt,sha256=U3BdL6ooSTyhsM-HOh9dCHMLPziYKbIHlkhG5ec9AbU,73
+chreader-0.2.0.dist-info/top_level.txt,sha256=hhRIMu8hDaGaaBt9q42T9HbtWaStxr7zweWGYn2SjeU,9
+chreader-0.2.0.dist-info/RECORD,,
