@@ -1,0 +1,4 @@
+[console_scripts]
+http2api = httpfaker.http2yml:main
+httpfaker = httpfaker.cli:main
+

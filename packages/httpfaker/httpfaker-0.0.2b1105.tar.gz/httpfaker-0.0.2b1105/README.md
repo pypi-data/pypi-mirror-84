@@ -1,0 +1,97 @@
+# http-faker
+
+#### 介绍
+一个无需编写代码的后台服务（mock）
+
+#### 软件架构
+本工具可通过编写yaml/json文件来描述接口数据返回，除了传统的mock数据外，还支持自定义的逻辑处理。比如实现一个真正的用户登录：
+
+>通过yaml文件描述用户登录时的处理逻辑: 接收到前端请求的用户名和密码之后，在数据库中验证账号是否存在，
+存在的话在redis中存入用户token并返回用户token。这个流程需要用到两个方法，一是数据库验证，二是redis token创建，这两个逻辑通过自定义方法实现，
+其他配置通过yaml文件描述即可。具体可参考示例。
+
+
+#### 安装教程
+
+```
+# 源码安装
+git clone https://gitee.com/guojongg/http-faker.git
+cd http-faker
+python setup.py install
+
+# pip安装
+pip install httpfaker
+```
+
+#### 使用说明
+
+##### 一、生成模板
+可使用http2api可直接生成模板，后续完善模板中的返回数据配置即可。
+
+**http2api使用说明**
+
+通过`http2api`命令启动`http2api`服务，使用前端浏览器或postman等接口调用工具调用相关需要mock的接口。
+调用成功后将在指定目录生成接口描述文件。后续编辑此文件，完善response部分内容即可。
+```shell script
+(venv) guolong@guolong-PC:~/01Work/07MyProject/http-faker$ http2api -h
+usage: http2api [-h] [--default-body [DEFAULT_BODY]]
+                [--default-status [DEFAULT_STATUS]] [--path [PATH]]
+                [--hide-data] [--out-format [OUT_FORMAT]] [--listen [LISTEN]]
+                [--port [PORT]]
+
+调用接口生成mock描述文件
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --default-body [DEFAULT_BODY]
+                        Response默认的返回体，指定后生成的Response中的body字段将按照此定义来生成。用法：指定文件
+                        路径，文件内容格式可以是json或者yaml！
+  --default-status [DEFAULT_STATUS]
+                        Response中status_code返回值，默认为200
+  --path [PATH]         输出的配置文件存放路径, 默认当前目录下的apis目录
+  --hide-data           不转换Request中的请求体和请求参数数据（请求参数和请求体数据仅做参考，不参与实际逻辑）
+  --out-format [OUT_FORMAT]
+                        转换的配置文件的格式；可选yml和json，默认yml格式
+  --listen [LISTEN]     启动服务默认监听地址，默认0.0.0.0
+  --port [PORT]         启动服务默认监听端口，默认9000
+
+(venv) guolong@guolong-PC:~/01Work/07MyProject/http-faker$ http2api 
+ * Serving Flask app "httpfaker.http2yml" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:9000/ (Press CTRL+C to quit)
+
+```
+
+##### 二、开始mock
+当接口模板文件编辑好后，可使用`httpfaker`命令来启动mock服务；启动后前端访问指定的接口即可按照模板文件中描述的内容进行接口返回。
+
+**httpfaker使用说明**
+```shell script
+(venv) guolong@guolong-PC:~/01Work/07MyProject/http-faker$ httpfaker -h
+usage: httpfaker [-h] [--api_path [API_PATH]] [--script_path [SCRIPT_PATH]]
+                 [--listen [LISTEN]] [--port [PORT]]
+
+启动一个mock服务
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --api_path [API_PATH]
+                        api描述文件所在路径， 默认apis
+  --script_path [SCRIPT_PATH]
+                        自定义方法脚本所在目录, 默认script
+  --listen [LISTEN]     启动服务默认监听地址，默认0.0.0.0
+  --port [PORT]         启动服务默认监听端口，默认9001
+
+
+(venv) guolong@guolong-PC:~/01Work/07MyProject/http-faker$ httpfaker 
+ * Serving Flask app "httpfaker.utils.http_mock" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:9001/ (Press CTRL+C to quit)
+
+```
