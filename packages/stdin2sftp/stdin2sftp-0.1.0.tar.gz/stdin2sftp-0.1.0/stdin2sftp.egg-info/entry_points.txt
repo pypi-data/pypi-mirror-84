@@ -1,0 +1,3 @@
+[console_scripts]
+stdin2sftp = stdin2sftp:main
+
