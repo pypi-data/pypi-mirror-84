@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+git_monorepo/__init__.py
+git_monorepo/mainapp.py
+git_monorepo/py.typed
+git_monorepo.egg-info/PKG-INFO
+git_monorepo.egg-info/SOURCES.txt
+git_monorepo.egg-info/dependency_links.txt
+git_monorepo.egg-info/entry_points.txt
+git_monorepo.egg-info/requires.txt
+git_monorepo.egg-info/top_level.txt

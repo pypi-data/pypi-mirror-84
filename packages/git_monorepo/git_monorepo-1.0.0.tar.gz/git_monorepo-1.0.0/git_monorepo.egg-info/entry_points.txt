@@ -1,0 +1,3 @@
+[console_scripts]
+git-mono = git_monorepo.mainapp:main
+
