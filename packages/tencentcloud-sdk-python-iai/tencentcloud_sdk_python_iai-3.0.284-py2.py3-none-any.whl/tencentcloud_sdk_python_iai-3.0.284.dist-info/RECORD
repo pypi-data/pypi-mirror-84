@@ -1,0 +1,12 @@
+tencentcloud/__init__.py,sha256=tzPaD9J6AzZVzbDkztpjohpShbtoWqVkCqdoOq7SCq8,630
+tencentcloud/iai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/iai/v20180301/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/iai/v20180301/iai_client.py,sha256=OjimZXXF4mD-JxaEVKNfhi13EG8Uq52XsAsf5KhujbA,60889
+tencentcloud/iai/v20180301/models.py,sha256=Xj9eCzQgi0Hsa73-bmGme9zJCDvu3gJXqCUT3jPCtw0,151657
+tencentcloud/iai/v20200303/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/iai/v20200303/iai_client.py,sha256=5HuVfPtWLfgdNS8lyTJTajxpyR3NCKAxcGSwIqtk_9U,62744
+tencentcloud/iai/v20200303/models.py,sha256=2jlZU1XcyasczOCP5_zPvEdHGtIVuEc_3wYsqV1rGHQ,158105
+tencentcloud_sdk_python_iai-3.0.284.dist-info/METADATA,sha256=t1XmdA1ukTx2Yym9UfVomTuLNksRFL_SDQa8_mk1_qI,1432
+tencentcloud_sdk_python_iai-3.0.284.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+tencentcloud_sdk_python_iai-3.0.284.dist-info/top_level.txt,sha256=g-8OyzoqI6O6LiS85zkeNzhB-osEnRIPZMdyRd_0eL0,13
+tencentcloud_sdk_python_iai-3.0.284.dist-info/RECORD,,
