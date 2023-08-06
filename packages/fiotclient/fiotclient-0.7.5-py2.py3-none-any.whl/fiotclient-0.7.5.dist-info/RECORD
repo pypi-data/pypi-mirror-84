@@ -1,0 +1,13 @@
+fiotclient/__init__.py,sha256=vkPKwPYDlraAX2DKaEIWlAOxBJ2WNwM4TmGrowz7RzU,6305
+fiotclient/config.py,sha256=XW0L2O8OqdGJfPWR5c2RVkIuSXWfUMwFdvsYwy21XYk,1935
+fiotclient/context.py,sha256=q-Dc054U0Koct_x-wd-YyIdrxZObQahBnjIOSq9Rjv8,12573
+fiotclient/iot.py,sha256=IwTL-mdo42JvOsv2lxuGC-uk9RIcPe9YjfYyz_Ifo0k,17136
+fiotclient/utils.py,sha256=aCD_mflgDCIlzVQnwCA7vTe2JtOKQsZSbnoekvvpWFM,966
+tests/__init__.py,sha256=UuhZhZyth61OUTl_jK8j5O5bxVazF2ydfV6UOxS3edg,1888
+tests/test_context.py,sha256=if17ITyMSg4bCgBb4E6jPRlnBgPfYXDeKMVmaFXs8yA,7695
+tests/test_iot.py,sha256=PXy8nn7fAL2fAoNuu-TTUjgyUsVyY5J1VVAkOGkBBtI,9431
+fiotclient-0.7.5.dist-info/LICENSE,sha256=uyb2LME5t7qn85QSALZL7fMJK2TJT_SQdSzFOfKPl9Q,1087
+fiotclient-0.7.5.dist-info/METADATA,sha256=u_4uQSSthepM_nUnT9-BH6i9OYr3wszBV8Gcn0KYAPg,4187
+fiotclient-0.7.5.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+fiotclient-0.7.5.dist-info/top_level.txt,sha256=yEG6o0xzGgqvm8hb_Pp54PJC_0vgGEWvNUf6JaePM-g,17
+fiotclient-0.7.5.dist-info/RECORD,,
