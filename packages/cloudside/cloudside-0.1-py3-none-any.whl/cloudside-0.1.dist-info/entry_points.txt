@@ -1,0 +1,3 @@
+[console_scripts]
+cloudside = cloudside.cli:main
+

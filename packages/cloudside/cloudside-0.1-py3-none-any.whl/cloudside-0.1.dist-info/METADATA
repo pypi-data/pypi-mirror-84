@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cloudside
+Version: 0.1
+Summary: cloudside - download, assess, and visualize weather data
+Home-page: http://python-metar.sourceforge.net/
+Author: Paul Hobson
+Author-email: pmhobson@gmail.com
+License: BSD 3-Clause
+Download-URL: http://sourceforge.net/project/platformdownload.php?group_id=134052
+Platform: Python 3.6 and later.
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Topic :: Scientific/Engineering :: Visualization
+
+cloudside - download, assess, and visualize weather data
+
+
