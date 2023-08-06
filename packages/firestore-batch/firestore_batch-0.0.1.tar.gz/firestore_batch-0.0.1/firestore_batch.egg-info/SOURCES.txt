@@ -1,0 +1,7 @@
+README.md
+setup.py
+firestore_batch/__init__.py
+firestore_batch.egg-info/PKG-INFO
+firestore_batch.egg-info/SOURCES.txt
+firestore_batch.egg-info/dependency_links.txt
+firestore_batch.egg-info/top_level.txt
