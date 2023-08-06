@@ -1,0 +1,3 @@
+[console_scripts]
+Konjugier = Deutschconjugation.cli_scripts:main
+
