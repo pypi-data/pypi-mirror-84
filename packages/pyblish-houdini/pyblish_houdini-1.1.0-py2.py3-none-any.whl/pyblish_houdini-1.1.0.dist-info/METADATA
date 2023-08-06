@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyblish-houdini
+Version: 1.1.0
+Summary: Houdini Pyblish package
+Home-page: https://github.com/pyblish/pyblish-houdini
+Author: Abstract Factory and Contributors
+Author-email: marcus@abstractfactory.io
+License: LGPL
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Dist: pyblish-base (>=1.4)
+
+UNKNOWN
+
+
