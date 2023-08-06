@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: polygonation
+Version: 0.1.1
+Summary: Python package to tessellate a set of points in the plane with polygons.
+Home-page: https://github.com/rwijtvliet/polygonation
+Author: rwijtvliet
+Author-email: rwijtvliet@gmail.com
+License: BSD (3-clause)
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+============
+polygonation
+============
+
+.. image:: https://img.shields.io/travis/rwijtvliet/polygonation.svg
+        :target: https://travis-ci.org/rwijtvliet/polygonation
+
+.. image:: https://img.shields.io/pypi/v/polygonation.svg
+        :target: https://pypi.python.org/pypi/polygonation
+
+
+Python package to tessellate a set of points in the plane with polygons.
+
+Done by identifying the removable edges, and then removing one of them by some selection criterion. Rinse-repeat until no further edges can be removed.
+
+For documentation, see https://rwijtvliet.github.io/polygonation
+
+
