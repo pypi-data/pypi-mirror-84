@@ -1,0 +1,10 @@
+pyami_asterisk/__init__.py,sha256=QbIpm79Psf_MJVc8ns_IVKtdFGWZuiYG5ilnhUeEl64,30
+pyami_asterisk/action.py,sha256=kaN_t9Gx09PPbY3xaxa_xBSsHWcx2BVSbtTOJBF26OI,1868
+pyami_asterisk/client.py,sha256=9JUdD29pHNVro3FSiGhyc6OVBMTp0nrxBQ9k8CPmMgU,5831
+pyami_asterisk/event.py,sha256=HGtTBPwhtnHWIPUMl93Nw8qsyxEXscYkxnXNg1pT3mk,469
+pyami_asterisk/utils.py,sha256=3UwDl3VwAaIAIFB6p_9sLuoyvvwQTfNcUqOXl_pLey8,1319
+pyami_asterisk-1.1.dist-info/LICENSE,sha256=p2HmeYf6bpqkRGv-xLBu58W69Kpkiv2AdyLHK4VkRHE,1081
+pyami_asterisk-1.1.dist-info/METADATA,sha256=UYPux6NrjreO1Ef-3BGC6Syi7kYjyrU23OTZrVb6yUM,4618
+pyami_asterisk-1.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pyami_asterisk-1.1.dist-info/top_level.txt,sha256=tsdup6w4q8T3qjZUBeYpUzCzWGh2QapNzLlI82NzStg,15
+pyami_asterisk-1.1.dist-info/RECORD,,
