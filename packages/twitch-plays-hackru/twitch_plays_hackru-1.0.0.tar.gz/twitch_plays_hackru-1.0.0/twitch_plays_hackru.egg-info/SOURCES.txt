@@ -1,0 +1,8 @@
+README.md
+setup.py
+twitch_plays_hackru/__init__.py
+twitch_plays_hackru.egg-info/PKG-INFO
+twitch_plays_hackru.egg-info/SOURCES.txt
+twitch_plays_hackru.egg-info/dependency_links.txt
+twitch_plays_hackru.egg-info/requires.txt
+twitch_plays_hackru.egg-info/top_level.txt
