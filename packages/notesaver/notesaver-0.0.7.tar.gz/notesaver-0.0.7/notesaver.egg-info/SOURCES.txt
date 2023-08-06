@@ -1,0 +1,9 @@
+README.md
+setup.py
+notesaver/cli.py
+notesaver/main.py
+notesaver.egg-info/PKG-INFO
+notesaver.egg-info/SOURCES.txt
+notesaver.egg-info/dependency_links.txt
+notesaver.egg-info/entry_points.txt
+notesaver.egg-info/top_level.txt
