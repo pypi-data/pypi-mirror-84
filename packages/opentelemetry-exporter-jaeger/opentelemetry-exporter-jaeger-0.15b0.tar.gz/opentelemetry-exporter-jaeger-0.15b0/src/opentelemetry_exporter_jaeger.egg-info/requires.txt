@@ -1,0 +1,5 @@
+thrift>=0.10.0
+opentelemetry-api==0.15b0
+opentelemetry-sdk==0.15b0
+
+[test]
