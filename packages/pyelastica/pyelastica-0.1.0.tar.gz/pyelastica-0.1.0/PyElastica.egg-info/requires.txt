@@ -1,0 +1,10 @@
+numpy
+matplotlib
+scipy
+tqdm
+
+[Kernel acceleration]
+numba
+
+[Optimization and Inverse Design]
+cma
