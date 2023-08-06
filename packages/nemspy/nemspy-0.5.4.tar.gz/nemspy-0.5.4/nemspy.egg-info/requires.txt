@@ -1,0 +1,6 @@
+
+[development]
+coverage
+flake8
+nose
+oitnb
