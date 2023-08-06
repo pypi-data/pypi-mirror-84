@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: metahopt
+Version: 0.1.0a1
+Summary: Metaheuristics optimization framework
+Home-page: https://gitlab.com/alex-marty/metahopt
+Author: Alexandre Marty
+Author-email: alexandre@marty.in
+License: MIT
+Description: # metahopt
+        
+        
+Keywords: optimization metaheuristic computing combinatorial tabu genetic particle swarm algorithm
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test

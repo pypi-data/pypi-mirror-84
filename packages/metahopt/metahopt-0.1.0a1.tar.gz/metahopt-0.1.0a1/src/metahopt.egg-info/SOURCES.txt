@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+src/metahopt/__init__.py
+src/metahopt.egg-info/PKG-INFO
+src/metahopt.egg-info/SOURCES.txt
+src/metahopt.egg-info/dependency_links.txt
+src/metahopt.egg-info/requires.txt
+src/metahopt.egg-info/top_level.txt
