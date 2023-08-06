@@ -1,0 +1,7 @@
+[console_scripts]
+stepwise=stepwise.cli.main:main
+sw=stepwise.cli.main:main
+
+[stepwise.protocols]
+builtins=stepwise:Builtins
+
