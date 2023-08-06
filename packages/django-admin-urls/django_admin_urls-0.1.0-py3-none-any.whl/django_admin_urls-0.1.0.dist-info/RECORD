@@ -1,0 +1,6 @@
+dj_admin_urls/__init__.py,sha256=YAUqY2a0EZfRDeMv9io-g2VczuUXkTKMjoB0-bL9q7I,20
+dj_admin_urls/urls.py,sha256=xFSYh6EnuZeddNxp-qRBkyP5GPufRL_Foh_zcqPN5u0,839
+dj_admin_urls/utils.py,sha256=bund3XIdt-RFSo7fBeGa_52iCQjaYxhaCR26RUqw9xM,265
+django_admin_urls-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+django_admin_urls-0.1.0.dist-info/METADATA,sha256=DBXn4iXg_jA5MWVjpLQ8LzN2GL0z5uSzfqiRN6lujiw,429
+django_admin_urls-0.1.0.dist-info/RECORD,,
