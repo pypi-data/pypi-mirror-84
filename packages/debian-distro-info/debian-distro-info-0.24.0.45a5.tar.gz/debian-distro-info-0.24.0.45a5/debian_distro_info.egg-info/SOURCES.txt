@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+debian_distro_info.egg-info/PKG-INFO
+debian_distro_info.egg-info/SOURCES.txt
+debian_distro_info.egg-info/dependency_links.txt
+debian_distro_info.egg-info/entry_points.txt
+debian_distro_info.egg-info/not-zip-safe
+debian_distro_info.egg-info/top_level.txt
+distro_info/__init__.py
+distro_info/debian.csv
+distro_info/debian_distro_info.py
+distro_info/ubuntu.csv
+distro_info/ubuntu_distro_info.py
