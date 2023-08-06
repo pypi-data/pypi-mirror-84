@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: py-fy
+Version: 2.0.1
+Summary: An Word-translation software simple-Chinese ⇆ English
+Home-page: https://github.com/zwlyn/pyfy
+Author: zwlyn
+Author-email: 1666013677@qq.com
+License: MIT Licence
+Description: An Word-translation software simple-Chinese ⇆ English
+Keywords: pip,py-fy,translate,fy
+Platform: any
