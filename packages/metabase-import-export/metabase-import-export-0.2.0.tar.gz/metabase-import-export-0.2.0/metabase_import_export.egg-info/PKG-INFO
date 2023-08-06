@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: metabase-import-export
+Version: 0.2.0
+Summary: Export/Import Metabase collections to JSON files.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: BSD 3-Clause License
+Description: README.md
+Keywords: metabase
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3

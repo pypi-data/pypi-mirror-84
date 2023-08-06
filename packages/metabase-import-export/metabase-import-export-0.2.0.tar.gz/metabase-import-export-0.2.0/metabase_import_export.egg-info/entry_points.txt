@@ -1,0 +1,3 @@
+[console_scripts]
+metabase-import-export = metabase_import_export.cli:main
+
