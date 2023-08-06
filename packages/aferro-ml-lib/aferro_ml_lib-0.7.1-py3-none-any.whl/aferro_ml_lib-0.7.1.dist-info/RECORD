@@ -1,0 +1,16 @@
+LICENSE,sha256=_SYP8bP4yjjyJqEqcfinznoUttRZoUSUmJ0dCTBsEW8,1073
+ml_lib/__init__.py,sha256=kPUm1MnOYX9uLWkvWyQpUg_ec7yi477Zmm52ZSxyUbs,3524
+ml_lib/_metadata.py,sha256=WAxXVOOIs-uiovuh3mEEFtQor-vhJV8KC_sZtHBLvKU,892
+ml_lib/bar_module.py,sha256=eLcuuYWcIqF6YF5F3p5Q6h3SKxg_4TKAp22lQUpkT6U,786
+ml_lib/foo_module.py,sha256=P64Zur5vjJ14N8A2qkj0TQatS0wOTBr2IkycktvipgE,1258
+ml_lib/data/test.yaml,sha256=lTG7Lv6dbNL4_cghptoGq5u0Nq-mNpBNG7dGLu33iyI,241
+ml_lib/data/nested_data/more_data.txt,sha256=cLf1S8MegPucmfD1K0db6BPRl0KzjC7eWQgiVXRxIy0,60
+ml_lib/data/nested_data/more_nested/even_more_data.txt,sha256=qAnL90W6ATMV_RdOAxnXFZuFbRoJczz9RXY2vziY1YE,15
+ml_lib/data/nested_data/more_nested/labels/red_label.txt,sha256=xbETsgsGu7Nw0KT2fh69dCBfnaQMO1WCTXGJtwxCa7U,13
+ml_lib/nested/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ml_lib/nested/baz_module.py,sha256=ZlLI808q3HjfQ8WBZqqymS7PrCfk_fPvZkri5ygiP4g,520
+aferro_ml_lib-0.7.1.dist-info/LICENSE,sha256=_SYP8bP4yjjyJqEqcfinznoUttRZoUSUmJ0dCTBsEW8,1073
+aferro_ml_lib-0.7.1.dist-info/METADATA,sha256=oP6NkMJ0hmF1MVF13-ssG6SBGkSoPkeL-O3YUkBOgmE,2994
+aferro_ml_lib-0.7.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+aferro_ml_lib-0.7.1.dist-info/top_level.txt,sha256=qJ4yqWipmmKslODgW8I9ga0oinXJ_EUPWLxr2G5Kd94,7
+aferro_ml_lib-0.7.1.dist-info/RECORD,,
