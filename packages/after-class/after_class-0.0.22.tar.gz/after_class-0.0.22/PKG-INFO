@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: after_class
+Version: 0.0.22
+Summary: Tool to analyze multiclassification ML models.
+Home-page: https://github.com/streetbee/dv_after_class
+Author: Moiseev Arseniy
+Author-email: arseniy.moiseyev@phystech.edu
+License: UNKNOWN
+Description: # dv_after_class
+        Tool to analyze multi-class classification models.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
