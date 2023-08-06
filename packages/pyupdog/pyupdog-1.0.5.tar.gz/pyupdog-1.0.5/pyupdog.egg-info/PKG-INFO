@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyupdog
+Version: 1.0.5
+Summary: Python program for calculating UPD
+Home-page: https://github.com/josephhalstead/pyvariantfilter
+Author: Joseph Halstead
+Author-email: josephhalstead89@gmail.com
+License: UNKNOWN
+Description: test
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
