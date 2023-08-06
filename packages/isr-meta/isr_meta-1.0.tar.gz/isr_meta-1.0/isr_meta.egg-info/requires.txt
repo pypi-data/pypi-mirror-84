@@ -1,0 +1,8 @@
+argcomplete
+colorama
+treep
+lightargs
+fyplot
+PySide2
+roboball2d
+matplotlib

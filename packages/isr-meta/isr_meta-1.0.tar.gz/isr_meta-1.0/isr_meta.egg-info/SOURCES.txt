@@ -1,0 +1,7 @@
+setup.py
+isr_meta.egg-info/PKG-INFO
+isr_meta.egg-info/SOURCES.txt
+isr_meta.egg-info/dependency_links.txt
+isr_meta.egg-info/requires.txt
+isr_meta.egg-info/top_level.txt
+isr_meta.egg-info/zip-safe

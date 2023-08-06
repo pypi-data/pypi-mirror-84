@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: isr-meta
+Version: 1.0
+Summary: python meta package of the intelligent soft robotics laboratory
+Home-page: https://github.com/vincentberenz/lightargs.git
+Author: Vincent Berenz
+Author-email: vberenz@tuebingen.mpg.de
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
