@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: youtube-series-downloader
+Version: 1.0.0
+Summary: Downloads YouTube series and optionally speeds them up to be watched on TVs
+Home-page: https://github.com/Senth/youtube-series-downloader
+Author: Matteus Magnusson
+Author-email: senth.wallace@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: apscheduler
+Requires-Dist: youtube-dl
+
+# youtube-series-downloader
+
+[![Latest PyPI version](https://img.shields.io/pypi/v/youtube-series-downloader.svg)](https://pypi.python.org/pypi/youtube-series-downloader)
+
+Downloads YouTube series and optionally speeds them up to be watched on TVs
+
+## Usage
+
+## Installation
+
+### Requirements
+
+## Compatibility
+
+## Licence
+
+## Authors
+
+`youtube-series-downloader` was written by `Matteus Magnusson <senth.wallace@gmail.com>`\_.
+
+
