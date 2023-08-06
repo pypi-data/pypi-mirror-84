@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/shambolic/__init__.py
+src/shambolic.egg-info/PKG-INFO
+src/shambolic.egg-info/SOURCES.txt
+src/shambolic.egg-info/dependency_links.txt
+src/shambolic.egg-info/not-zip-safe
+src/shambolic.egg-info/top_level.txt

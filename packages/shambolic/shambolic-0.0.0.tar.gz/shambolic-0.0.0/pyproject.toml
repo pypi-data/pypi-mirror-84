@@ -1,0 +1,9 @@
+[build-system]
+# These are the build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = [
+    # avoid self install on Python 2;
+    "setuptools >= 49.3; python_version > '3'",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"

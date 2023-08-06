@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: shambolic
+Version: 0.0.0
+Summary: A shambolic package
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: Apache Software License
+Description: # shambolic
+Keywords: shambolic
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
