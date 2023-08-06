@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: sphinxcontrib-towncrier
+Version: 0.1.0a1
+Summary: An RST directive for injecting a Towncrier-generated changelog draft containing fragments for the unreleased (next) project version
+Home-page: https://github.com/sphinx-contrib/sphinxcontrib-towncrier
+Author: Sviatoslav Sydorenko
+Author-email: wk+pypi/sphinxcontrib-towncrier@sydorenko.org.ua
+Maintainer: Oleksiy Vasylyshyn
+Maintainer-email: slsh1o-git@protonmail.com
+License: BSD 3-Clause License
+Project-URL: GitHub: repo, https://github.com/sphinx-contrib/sphinxcontrib-towncrier
+Project-URL: GitHub: issues, https://github.com/sphinx-contrib/sphinxcontrib-towncrier/issues
+Description: towncrier
+        =========
+        
+        An RST directive for injecting a Towncrier-generated changelog draft containting fragments for the unreleased (next) project version
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: System :: Software Distribution
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
