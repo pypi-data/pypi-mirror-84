@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+sshdjup/__init__.py
+sshdjup/__main__.py
+sshdjup/abstractclasses.py
+sshdjup/analizer.py
+sshdjup/core.py
+sshdjup/exceptions.py
+sshdjup/extensions.py
+sshdjup/settings.py
+sshdjup/sshdjup_.py
+sshdjup.egg-info/PKG-INFO
+sshdjup.egg-info/SOURCES.txt
+sshdjup.egg-info/dependency_links.txt
+sshdjup.egg-info/not-zip-safe
+sshdjup.egg-info/top_level.txt
