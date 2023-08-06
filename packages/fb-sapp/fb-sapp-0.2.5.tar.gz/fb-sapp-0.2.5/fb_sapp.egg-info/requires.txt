@@ -1,0 +1,13 @@
+click
+click-log
+flask
+flask_graphql
+graphene
+graphene_sqlalchemy
+ipython
+munch
+pygments
+SQLAlchemy
+ujson
+xxhash
+prompt-toolkit
