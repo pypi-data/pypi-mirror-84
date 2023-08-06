@@ -1,0 +1,6 @@
+[console_scripts]
+thunar-plugins = thunar_plugins.__main__:main
+
+[thunar_plugin]
+image-menu = thunar_plugins.menus.image:ImageSubmenu
+
