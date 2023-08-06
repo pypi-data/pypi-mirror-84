@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: aiohttp_remotes
+Version: 1.0.0
+Summary: Control remote side information.
+Home-page: https://github.com/aio-libs/aiohttp-remotes
+Author: Andrew Svetlov
+Author-email: andrew.svetlov@gmail.com
