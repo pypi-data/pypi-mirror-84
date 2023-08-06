@@ -1,0 +1,7 @@
+include *.ini
+include *.md
+include *.rst
+include LICENSE
+include MANIFEST.in
+recursive-include extenum *.py
+recursive-include tests *.py
