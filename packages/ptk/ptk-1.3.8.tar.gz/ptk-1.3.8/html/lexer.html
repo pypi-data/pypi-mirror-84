@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lexical analysis &#8212; ptk 1.3.8 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Syntactic analysis" href="parser.html" />
+    <link rel="prev" title="Welcome to ptk’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="lexical-analysis">
+<h1>Lexical analysis<a class="headerlink" href="#lexical-analysis" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="token">
+<code class="sig-prename descclassname">&#64;</code><code class="sig-name descname">token</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">regex</span></em>, <em class="sig-param"><span class="n">types</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator for token definitions in classes derived from <code class="xref py py-class docutils literal notranslate"><span class="pre">LexerBase</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rx</strong> (<em>str</em>) – A regular expression defining the possible token values</p></li>
+<li><p><strong>types</strong> (<em>List of strings</em>) – A list of token types that this method can recognize. If omitted, the token type is assumed to be the method’s name.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Basic usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ptk.lexer</span> <span class="kn">import</span> <span class="n">ReLexer</span><span class="p">,</span> <span class="n">token</span>
+
+<span class="k">class</span> <span class="nc">MyLexer</span><span class="p">(</span><span class="n">ReLexer</span><span class="p">):</span>
+    <span class="nd">@token</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;[a-zA-Z_][a-zA-Z0-9_]*&#39;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">identifier</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tok</span><span class="p">):</span>
+        <span class="k">pass</span>
+</pre></div>
+</div>
+<p>This will define an <em>identifier</em> token type, which value is the
+recognized string. The <em>tok</em> parameter holds two attributes,
+<em>type</em> and <em>value</em>. You can modify the value in place:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ptk.lexer</span> <span class="kn">import</span> <span class="n">ReLexer</span><span class="p">,</span> <span class="n">token</span>
+
+<span class="k">class</span> <span class="nc">MyLexer</span><span class="p">(</span><span class="n">ReLexer</span><span class="p">):</span>
+    <span class="nd">@token</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;[1-9][0-9]*&#39;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">number</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tok</span><span class="p">):</span>
+        <span class="n">tok</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">tok</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In some cases it may be necessary to change the token’s type as
+well; for instance to disambiguate between identifiers that
+are builtins and other ones. In order for the lexer to know which
+token types can be generated, you should pass a list of strings as the
+<em>types</em> parameter:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ptk.lexer</span> <span class="kn">import</span> <span class="n">ReLexer</span><span class="p">,</span> <span class="n">token</span>
+
+<span class="k">class</span> <span class="nc">MyLexer</span><span class="p">(</span><span class="n">ReLexer</span><span class="p">):</span>
+    <span class="nd">@token</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;[a-zA-Z_][a-zA-Z0-9_]*&#39;</span><span class="p">,</span> <span class="n">types</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;builtin&#39;</span><span class="p">,</span> <span class="s1">&#39;identifier&#39;</span><span class="p">])</span>
+    <span class="k">def</span> <span class="nf">identifier_or_builtin</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tok</span><span class="p">):</span>
+        <span class="n">tok</span><span class="o">.</span><span class="n">type</span> <span class="o">=</span> <span class="s1">&#39;builtin&#39;</span> <span class="k">if</span> <span class="n">tok</span><span class="o">.</span><span class="n">value</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;len&#39;</span><span class="p">,</span> <span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="k">else</span> <span class="s1">&#39;identifier&#39;</span>
+</pre></div>
+</div>
+<p>In this case the default value of the <em>type</em> attribute is <em>None</em>
+and you <strong>must</strong> set it. Letting None as token type (or setting it
+to None) will cause the token to be ignored.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The type of token values depends on the type of the strings
+used to define the regular expressions. Unicode expressions
+will hold Unicode values, and bytes expressions will hold
+bytes values.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Disambiguation is done the regular way: if several regular
+expressions match the input, the longest match is choosen. If
+the matches are of equal length, the first (in source code
+order) declaration wins.</p>
+</div>
+</dd></dl>
+
+<span class="target" id="module-ptk.lexer"></span><dl class="py exception">
+<dt id="ptk.lexer.SkipToken">
+<em class="property">exception </em><code class="sig-prename descclassname">ptk.lexer.</code><code class="sig-name descname">SkipToken</code><a class="reference internal" href="_modules/ptk/lexer.html#SkipToken"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ptk.lexer.SkipToken" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raise this from your consumer to ignore the token.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="ptk.lexer.LexerError">
+<em class="property">exception </em><code class="sig-prename descclassname">ptk.lexer.</code><code class="sig-name descname">LexerError</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">char</span></em>, <em class="sig-param"><span class="n">pos</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ptk/lexer.html#LexerError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ptk.lexer.LexerError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unrecognized token in input</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lineno</strong> – Line in input</p></li>
+<li><p><strong>colno</strong> – Column in input</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt id="ptk.lexer.LexerBase">
+<em class="property">class </em><code class="sig-prename descclassname">ptk.lexer.</code><code class="sig-name descname">LexerBase</code><a class="reference internal" href="_modules/ptk/lexer.html#LexerBase"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ptk.lexer.LexerBase" title="Permalink to this definition">¶</a></dt>
+<dd><p>This defines the interface for lexer classes. For concrete
+implementations, see <a class="reference internal" href="#ptk.lexer.ProgressiveLexer" title="ptk.lexer.ProgressiveLexer"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProgressiveLexer</span></code></a> and
+<a class="reference internal" href="#ptk.lexer.ReLexer" title="ptk.lexer.ReLexer"><code class="xref py py-class docutils literal notranslate"><span class="pre">ReLexer</span></code></a>.</p>
+<dl class="py class">
+<dt id="ptk.lexer.LexerBase.Token">
+<em class="property">class </em><code class="sig-name descname">Token</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">type</span></em>, <em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">position</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ptk.lexer.LexerBase.Token" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py attribute">
+<dt id="ptk.lexer.LexerBase.Token.position">
+<code class="sig-name descname">position</code><a class="headerlink" href="#ptk.lexer.LexerBase.Token.position" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ptk.lexer.LexerBase.Token.type">
+<code class="sig-name descname">type</code><a class="headerlink" href="#ptk.lexer.LexerBase.Token.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ptk.lexer.LexerBase.Token.value">
+<code class="sig-name descname">value</code><a class="headerlink" href="#ptk.lexer.LexerBase.Token.value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py method">
+<dt id="ptk.lexer.LexerBase.position">
+<code class="sig-name descname">position</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ptk/lexer.html#LexerBase.position"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ptk.lexer.LexerBase.position" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The current position in stream as a 2-tuple (column, line).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ptk.lexer.LexerBase.advanceColumn">
+<code class="sig-name descname">advanceColumn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">count</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ptk/lexer.html#LexerBase.advanceColumn"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ptk.lexer.LexerBase.advanceColumn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Advances the current position by <em>count</em> columns.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ptk.lexer.LexerBase.advanceLine">
+<code class="sig-name descname">advanceLine</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">count</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ptk/lexer.html#LexerBase.advanceLine"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ptk.lexer.LexerBase.advanceLine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Advances the current position by <em>count</em> lines.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ptk.lexer.LexerBase.ignore">
+<em class="property">static </em><code class="sig-name descname">ignore</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">char</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ptk/lexer.html#LexerBase.ignore"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ptk.lexer.LexerBase.ignore" title="Permalink to this definition">¶</a></dt>
+<dd><p>Override this to ignore characters in input stream. The
+default is to ignore spaces and tabs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>char</strong> – The character to test</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>True if <em>char</em> should be ignored</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ptk.lexer.LexerBase.setConsumer">
+<code class="sig-name descname">setConsumer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">consumer</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ptk/lexer.html#LexerBase.setConsumer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ptk.lexer.LexerBase.setConsumer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the current consumer. A consumer is an object with a
+<em>feed</em> method; all characters seen on the input stream after
+the consumer is set are passed directly to it. When the <em>feed</em>
+method returns a 2-tuple (type, value), the corresponding
+token is generated and the consumer reset to None. This may be
+handy to parse tokens that are not easily recognized by a
+regular expression but easily by code; for instance the
+following lexer recognizes C strings without having to use
+negative lookahead:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyLexer</span><span class="p">(</span><span class="n">ReLexer</span><span class="p">):</span>
+    <span class="nd">@token</span><span class="p">(</span><span class="s1">&#39;&quot;&#39;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">cstring</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tok</span><span class="p">):</span>
+        <span class="k">class</span> <span class="nc">CString</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+            <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">state</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">StringIO</span><span class="o">.</span><span class="n">StringIO</span><span class="p">()</span>
+            <span class="k">def</span> <span class="nf">feed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">char</span><span class="p">):</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">:</span>
+                        <span class="k">return</span> <span class="s1">&#39;cstring&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span>
+                    <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">:</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">state</span> <span class="o">=</span> <span class="mi">1</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+                <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">state</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setConsumer</span><span class="p">(</span><span class="n">CString</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>You can also raise SkipToken instead of returning a token if it
+is to be ignored (comments).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ptk.lexer.LexerBase.parse">
+<code class="sig-name descname">parse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">string</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ptk/lexer.html#LexerBase.parse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ptk.lexer.LexerBase.parse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses the whole <em>string</em></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ptk.lexer.LexerBase.newToken">
+<code class="sig-name descname">newToken</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tok</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ptk/lexer.html#LexerBase.newToken"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ptk.lexer.LexerBase.newToken" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method will be invoked as soon as a token is recognized on input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tok</strong> – The token. This is a named tuple with <em>type</em> and <em>value</em> attributes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ptk.lexer.LexerBase.tokenTypes">
+<em class="property">classmethod </em><code class="sig-name descname">tokenTypes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ptk/lexer.html#LexerBase.tokenTypes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ptk.lexer.LexerBase.tokenTypes" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the set of all token names, as strings.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ptk.lexer.ReLexer">
+<em class="property">class </em><code class="sig-prename descclassname">ptk.lexer.</code><code class="sig-name descname">ReLexer</code><a class="reference internal" href="_modules/ptk/lexer.html#ReLexer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ptk.lexer.ReLexer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Concrete lexer based on Python regular expressions. this is
+<strong>way</strong> faster than <a class="reference internal" href="#ptk.lexer.ProgressiveLexer" title="ptk.lexer.ProgressiveLexer"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProgressiveLexer</span></code></a> but it can only
+tokenize whole strings.</p>
+<dl class="py method">
+<dt id="ptk.lexer.ReLexer.parse">
+<code class="sig-name descname">parse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">string</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ptk/lexer.html#ReLexer.parse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ptk.lexer.ReLexer.parse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses the whole <em>string</em></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ptk.lexer.ProgressiveLexer">
+<em class="property">class </em><code class="sig-prename descclassname">ptk.lexer.</code><code class="sig-name descname">ProgressiveLexer</code><a class="reference internal" href="_modules/ptk/lexer.html#ProgressiveLexer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ptk.lexer.ProgressiveLexer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Concrete lexer based on a simple pure-Python regular expression
+engine. This lexer is able to tokenize an input stream in a
+progressive fashion; just call the
+<a class="reference internal" href="#ptk.lexer.ProgressiveLexer.feed" title="ptk.lexer.ProgressiveLexer.feed"><code class="xref py py-func docutils literal notranslate"><span class="pre">ProgressiveLexer.feed()</span></code></a> method with whatever bytes are
+available when they’re available. Useful for asynchronous
+contexts. Starting with Python 3.5 there is also an asynchronous
+version, see <code class="xref py py-class docutils literal notranslate"><span class="pre">AsyncLexer</span></code>.</p>
+<p>This is <strong>slow as hell</strong>.</p>
+<dl class="py method">
+<dt id="ptk.lexer.ProgressiveLexer.parse">
+<code class="sig-name descname">parse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">string</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ptk/lexer.html#ProgressiveLexer.parse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ptk.lexer.ProgressiveLexer.parse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses the whole <em>string</em></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ptk.lexer.ProgressiveLexer.feed">
+<code class="sig-name descname">feed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">char</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ptk/lexer.html#ProgressiveLexer.feed"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ptk.lexer.ProgressiveLexer.feed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle a single input character. When you’re finished, call
+this with EOF as argument.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="ptk.async_lexer.AsyncLexer">
+<em class="property">class </em><code class="sig-prename descclassname">ptk.async_lexer.</code><code class="sig-name descname">AsyncLexer</code><a class="reference internal" href="_modules/ptk/async_lexer.html#AsyncLexer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ptk.async_lexer.AsyncLexer" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class works like <code class="xref py py-class docutils literal notranslate"><span class="pre">ProgressiveLexer</span></code> but can be feed
+the input asynchronously via <code class="xref py py-func docutils literal notranslate"><span class="pre">asyncFeed()</span></code>. It works with
+<code class="xref py py-class docutils literal notranslate"><span class="pre">AsyncLRParser</span></code>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="ptk.lexer.EOF">
+<code class="sig-prename descclassname">ptk.lexer.</code><code class="sig-name descname">EOF</code><a class="reference internal" href="_modules/ptk/lexer.html#EOF"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ptk.lexer.EOF" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a singleton used to indicate end of stream. It may be used
+as a token, a token type and a token value. In the first case it is
+its own type and value.</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">ptk</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Lexical analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="parser.html">Syntactic analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="parser.html#conflict-resolution-rules">Conflict resolution rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="parser.html#asynchronous-lexer-parser">Asynchronous lexer/parser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="parser.html#asynchronous-lexer-parser-using-deferreds">Asynchronous lexer/parser using Deferreds</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to ptk’s documentation!</a></li>
+      <li>Next: <a href="parser.html" title="next chapter">Syntactic analysis</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Jérôme Laheurte.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/lexer.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
