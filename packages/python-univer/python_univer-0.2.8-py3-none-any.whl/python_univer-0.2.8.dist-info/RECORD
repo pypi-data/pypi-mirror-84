@@ -1,0 +1,14 @@
+univer_db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+univer_db/config.py,sha256=hmSk89bA8bK59Z7DpZcOeJbfRF4i6kgaCT1AvNbtYwc,361
+univer_db/models.py,sha256=vuNjxre2GtAOLJt9kEEtDdPj8TA3HAJ-ku54xXKNf3s,27601
+univer_db/orm.py,sha256=0dDdLdZsFv4pMcgNsSVK0aK9bYcmtS5E6PprSn3dVD8,476
+univer_db/models/__init__.py,sha256=G2Gy-dXikbgaRGNl-IJSrC52_CC-gC0Vy7lqcg0IZDM,84
+univer_db/models/base.py,sha256=ZfDVdir7AW-wnTVv7kQBDRocXSKuRg6aQxdESx0rym4,3162
+univer_db/models/models.py,sha256=0fDZy0l9plgo9PQ5NTnG8rAhIH_zIsw6rwCOUkLJYgA,20746
+univer_db/models/orders.py,sha256=0bDQ8tmDEHriedZ72UHMmh01Sodc5XjXlkI5Wke0YFE,3203
+univer_db/models/roles.py,sha256=yWa9N9mX3lKKlE7EVTv8iXUCvx6luneg17Wltx7muw4,5917
+python_univer-0.2.8.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_univer-0.2.8.dist-info/METADATA,sha256=M5_z8Go4yGAPbw6Y6DrXmSXQ0VHUS-_TaBYm-hNrn8A,597
+python_univer-0.2.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+python_univer-0.2.8.dist-info/top_level.txt,sha256=XHxebhF99bfqbqjaSbybfA8pq_0ckP4Dh2xl_xtNi7o,10
+python_univer-0.2.8.dist-info/RECORD,,
