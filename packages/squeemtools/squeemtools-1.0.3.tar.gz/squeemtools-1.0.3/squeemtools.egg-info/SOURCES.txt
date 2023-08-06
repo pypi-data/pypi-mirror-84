@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+squeemtools/BetterMap.py
+squeemtools/FCM.py
+squeemtools/Graphing.py
+squeemtools/LoadGLMData.py
+squeemtools/MultiProcessGLMData.py
+squeemtools.egg-info/PKG-INFO
+squeemtools.egg-info/SOURCES.txt
+squeemtools.egg-info/dependency_links.txt
+squeemtools.egg-info/requires.txt
+squeemtools.egg-info/top_level.txt
