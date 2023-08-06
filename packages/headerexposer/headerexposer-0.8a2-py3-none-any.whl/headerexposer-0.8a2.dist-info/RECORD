@@ -1,0 +1,12 @@
+headerexposer/__init__.py,sha256=OwqIhYJMehZVDJ28adiprL4gxbAHgL3hXLkawTgXhvo,22519
+headerexposer/__main__.py,sha256=DwvzkJZfM28jcC2lzjYzuqpKHUkc4Wwxxt4m0fMSFrs,7346
+headerexposer/baseline.json,sha256=RrQ-mALCKHN1GzFeLTrSDZXyvYAs2cayGJJWLga3CQc,7905
+headerexposer/baseline_demo.py,sha256=I4TG0TmgLbxXP0i9xHeCv_FjyL7xujqthaBVxnZVqac,1657
+headerexposer/baseline_schema.json,sha256=kMBGxotZ-rq5SAfprVLOoqB-0jZK_PXjzXkA3iIrjXI,6794
+headerexposer/old.py,sha256=QD42xnadAenX7CSS6bCzlNRb7UPPwJWZD6e5Kzg8fbc,2170
+headerexposer-0.8a2.dist-info/LICENSE.txt,sha256=jVa0BUaKrRH4erV2P5AeJ24I2WRv9chIGxditreJ6e0,34524
+headerexposer-0.8a2.dist-info/METADATA,sha256=ZzTvF0BZ2LcbU0WR2G3V574XyD4NL6MmQHG5HA4ht_w,5742
+headerexposer-0.8a2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+headerexposer-0.8a2.dist-info/entry_points.txt,sha256=IMUQ6FfQ0_dldYiAexjAqLAuDRMEmG0176vTuP_GtfA,63
+headerexposer-0.8a2.dist-info/top_level.txt,sha256=qy0PeKISRvoDPI9hMhSDz8nSmNEoixOsODAOM-Lg5kE,14
+headerexposer-0.8a2.dist-info/RECORD,,
