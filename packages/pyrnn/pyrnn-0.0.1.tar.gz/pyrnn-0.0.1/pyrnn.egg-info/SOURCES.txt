@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+pyrnn/__init__.py
+pyrnn/_plot.py
+pyrnn/_progress.py
+pyrnn/plot.py
+pyrnn/rnn.py
+pyrnn.egg-info/PKG-INFO
+pyrnn.egg-info/SOURCES.txt
+pyrnn.egg-info/dependency_links.txt
+pyrnn.egg-info/not-zip-safe
+pyrnn.egg-info/requires.txt
+pyrnn.egg-info/top_level.txt

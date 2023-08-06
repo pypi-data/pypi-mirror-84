@@ -1,0 +1,9 @@
+rich>=9.0.0
+pyinspect
+matplotlib
+seaborn
+pytorch
+numpy
+
+[dev]
+coverage-badge
