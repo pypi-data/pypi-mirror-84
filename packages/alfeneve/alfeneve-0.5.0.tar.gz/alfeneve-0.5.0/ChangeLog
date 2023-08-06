@@ -1,0 +1,35 @@
+CHANGES
+=======
+
+0.5.0
+-----
+
+* Add ChangeLog
+* Update public repository location
+* Move tests out of package and unmark universal wheel
+* Add README
+* Filter out empty categories
+* Move omniconf dependency to extras
+* Allow comma separated property ids
+* Automatically try to login once on Forbidden error
+* Work around issues with malformed NaN values
+* Do not assert expected cound of properties
+* Remove dependency pinning, we're a library
+* Fix flake8 error
+* Add logs follow mode
+* Add logs support
+* Add transactions support
+* Add whitelist support
+* Add CLI modes for printing categories and properties
+* Fix Flake8 errors
+* Replace tests with placeholder
+* Parse properties into objects
+* Add API client for reading categories and properties
+* Add dependency on requests
+* Apply MIT license to project
+
+0.0.1
+-----
+
+* Initial commit
+* Initial cookiecutter import

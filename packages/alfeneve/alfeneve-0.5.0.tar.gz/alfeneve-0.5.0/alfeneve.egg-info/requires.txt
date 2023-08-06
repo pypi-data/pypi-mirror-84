@@ -1,0 +1,9 @@
+pbr>=1.9
+setuptools>=17.1
+requests
+tabulate
+iso8601
+tzlocal
+
+[cli]
+omniconf[yaml]
