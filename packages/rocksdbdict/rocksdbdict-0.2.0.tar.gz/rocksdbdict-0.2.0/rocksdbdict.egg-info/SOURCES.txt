@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+rocksdbdict.egg-info/PKG-INFO
+rocksdbdict.egg-info/SOURCES.txt
+rocksdbdict.egg-info/dependency_links.txt
+rocksdbdict.egg-info/requires.txt
+rocksdbdict.egg-info/top_level.txt
