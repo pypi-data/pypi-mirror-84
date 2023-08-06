@@ -1,0 +1,9 @@
+README.md
+apereocla.py
+setup.py
+apereocla.egg-info/PKG-INFO
+apereocla.egg-info/SOURCES.txt
+apereocla.egg-info/dependency_links.txt
+apereocla.egg-info/entry_points.txt
+apereocla.egg-info/requires.txt
+apereocla.egg-info/top_level.txt
