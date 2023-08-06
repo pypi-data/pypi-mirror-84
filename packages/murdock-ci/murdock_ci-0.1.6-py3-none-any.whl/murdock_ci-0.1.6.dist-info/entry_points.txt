@@ -1,0 +1,3 @@
+[console_scripts]
+murdock=murdock_ci:main
+
