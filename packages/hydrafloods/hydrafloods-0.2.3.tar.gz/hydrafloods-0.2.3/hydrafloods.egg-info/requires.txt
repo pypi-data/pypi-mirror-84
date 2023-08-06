@@ -1,0 +1,2 @@
+simplecmr
+earthengine-api
