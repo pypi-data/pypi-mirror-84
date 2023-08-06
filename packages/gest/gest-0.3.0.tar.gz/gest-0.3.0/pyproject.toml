@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "gest"
+version = "0.3.0"
+description = "Hand gestures as an input device"
+authors = ["Bartosz Marcinkowski <b.marcinkowski@leomail.pl>"]
+readme = "README.md"
+repository = "https://github.com/bm371613/gest/"
+license = "GPL-3.0"
+include = ["CHANGELOG.md", "gest/GES-131.onnx"]
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+numpy = "*"
+onnxruntime = "^1.4.0"
+opencv-python = "^4.4.0"
+pynput = "*"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
