@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+sinterp/__init__.py
+sinterp/sinterp.py
+sinterp.egg-info/PKG-INFO
+sinterp.egg-info/SOURCES.txt
+sinterp.egg-info/dependency_links.txt
+sinterp.egg-info/requires.txt
+sinterp.egg-info/top_level.txt
