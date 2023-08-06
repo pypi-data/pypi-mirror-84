@@ -1,0 +1,9 @@
+setup.py
+cgtk/CodeGen.py
+cgtk/Context.py
+cgtk/__init__.py
+cgtk/__main__.py
+cgtk.egg-info/PKG-INFO
+cgtk.egg-info/SOURCES.txt
+cgtk.egg-info/dependency_links.txt
+cgtk.egg-info/top_level.txt

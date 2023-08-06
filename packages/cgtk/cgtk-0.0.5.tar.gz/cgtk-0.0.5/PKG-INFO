@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cgtk
+Version: 0.0.5
+Summary: generate code with python in source file comment
+Home-page: https://github.com/xchern/cgtk
+Author: Xiaosong Chen
+Author-email: xiaosong0911@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
