@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[155],{zLLA:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),s=n("Afmz");t.default=({text:e})=>a.createElement(s.a,{text:e,language:"sql",theme:s.b,showLineNumbers:!1,wrapLines:!0,codeBlock:!0})}}]);
+//# sourceMappingURL=155.e0ac3d183579930556c6.js.map
