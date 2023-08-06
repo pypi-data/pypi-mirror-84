@@ -1,0 +1,10 @@
+README.md
+setup.py
+nalibs/__init__.py
+nalibs/addfunc.py
+nalibs.egg-info/PKG-INFO
+nalibs.egg-info/SOURCES.txt
+nalibs.egg-info/dependency_links.txt
+nalibs.egg-info/entry_points.txt
+nalibs.egg-info/requires.txt
+nalibs.egg-info/top_level.txt
