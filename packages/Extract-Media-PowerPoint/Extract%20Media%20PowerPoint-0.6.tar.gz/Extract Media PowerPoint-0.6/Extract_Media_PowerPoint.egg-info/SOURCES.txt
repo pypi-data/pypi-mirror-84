@@ -1,0 +1,8 @@
+setup.py
+Extract_Media_PowerPoint.egg-info/PKG-INFO
+Extract_Media_PowerPoint.egg-info/SOURCES.txt
+Extract_Media_PowerPoint.egg-info/dependency_links.txt
+Extract_Media_PowerPoint.egg-info/requires.txt
+Extract_Media_PowerPoint.egg-info/top_level.txt
+extract/__init__.py
+extract/service.py

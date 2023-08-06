@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: Extract Media PowerPoint
+Version: 0.6
+Summary: Extract video PowerPoint
+Home-page: https://github.com/madyel/extract_media_ppt
+Author: MaDyEl
+Author-email: madyel@tutanota.com
+License: MIT
+Description: # Extract Media PowerPoint
+        
+        
+        
+        Example:
+        
+        ```python
+        from extract import PowerPoint
+        '''
+        DEFAULT:
+        
+        default_permission_video = ['mp4', 'avi', 'mpg', 'mpeg', 'wmv']
+        default_permission_image = ['png', 'jpeg', 'jpg', 'bmp', 'svg']
+        output_directory = 'temp'
+        '''
+        
+        if __name__ == '__main__':
+            ppt = PowerPoint(pptx, 'video', 'temp, 'wmv','mp4','avi')
+        #or
+            #ppt = PowerPoint(pptx, 'video')
+        #or
+            #ppt = PowerPoint(pptx, 'image', 'temp, 'svg','png','jpg')
+        #or
+            #ppt = PowerPoint(pptx, 'image')
+        #extract all media audio,video and image
+            ppt.extractAllMedia() 
+            ppt.extract()
+        ```
+        
+        ### Install Requires
+        
+        ```shell script
+        pip install python-pptx
+        ```
+        
+        ```python
+                      .:.               
+                     .::::.             
+        ..         ..::::::''::         
+        ::::..  .::''''':::    ''.      
+        ':::::::'         '.  ..  '.    
+         ::::::'            : '::   :   
+          :::::     .        : ':'   :  
+          :::::    :::       :.     .'. 
+         .::::::    ':'     .' '.:::: : 
+         ::::::::.         .    ::::: : 
+        :::::    '':.... ''      '''' : 
+        ':::: .:'              ...'' :  
+         ..::.   '.........:::::'   :   
+          '':::.   '::'':'':::'   .'    
+                '..  ''.....'  ..'      
+                   ''........''
+        
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
