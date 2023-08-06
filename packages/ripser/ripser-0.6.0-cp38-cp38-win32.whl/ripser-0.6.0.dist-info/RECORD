@@ -1,0 +1,9 @@
+pyRipser.cp38-win32.pyd,sha256=8UiaCboOe2Q4FV3oqxkQeNcLSVfxpX7YlyMxfwSSPI8,107008
+ripser/__init__.py,sha256=aFjkKd9G_oZYT0KStxm_hed1bhxnQufc-NurT7Rx-Ys,60
+ripser/_version.py,sha256=yDhynioOeFS0wJPjIbEQ3_mbI5gyi_oD_GG_6nU_yQY,23
+ripser/ripser.py,sha256=ELgvioIsDCKNIppAzik04V9IlP9xkS1fkPnHFWjooV8,24096
+ripser-0.6.0.dist-info/LICENSE.txt,sha256=x3YcyvlCg-9NMKJJxQ6Fqd9w7w2w0yUjJ2g79F3iwE0,1215
+ripser-0.6.0.dist-info/METADATA,sha256=oqY9mG6xDzrRHT2AobLPXsM99klAqHGDoYzjmdIgKso,6420
+ripser-0.6.0.dist-info/WHEEL,sha256=bx0Vq62qOi-YRF86BWiyntJBxQpiwFnIQtYYsMU2Xg4,101
+ripser-0.6.0.dist-info/top_level.txt,sha256=KyXYJan1pYokhD9K-usZAnF6T8ApuC0xM3MtMU83LSo,16
+ripser-0.6.0.dist-info/RECORD,,
