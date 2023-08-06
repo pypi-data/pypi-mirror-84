@@ -1,0 +1,8 @@
+pymunk~=5.6.0
+pyglet==1.5.*
+gym==0.17.*
+Click>=7.0
+numpy>=1.17.4
+cloudpickle>=1.2.2
+statsmodels>=0.10.2
+requests==2.*,>=2.20.0
