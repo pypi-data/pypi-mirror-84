@@ -1,0 +1,10 @@
+keep2roam/__init__.py,sha256=RGC9yYzgnDWERkX3QtZbDiE-knJpYiLisH7ghLGL1s8,199
+keep2roam/cli.py,sha256=9Y_slRbsPE55jLKtdZ9pDA693r9vxKwfgWJ4rloQm7U,1009
+keep2roam/convert.py,sha256=rMRMS9vvv4MPhddRB8T2pxUwI2fFAz-VzQarWQDKisc,2591
+keep2roam/models.py,sha256=ytzNeNHjat8TgXUbGqLUWrBo4CSwCC7_oOduCTbx0aw,8015
+keep2roam/version.py,sha256=1XdgYff8fTZiQ0LGLdCwnFUIEScxC1u42POd7VB5g_M,333
+keep2roam-1.0.dist-info/entry_points.txt,sha256=nzekmzs-f7fetAxLirJIx8NIyNjKrHhtb86S5nw7mEA,37
+keep2roam-1.0.dist-info/LICENSE,sha256=Aj7rz1cLGcqI2v2jPFufZ7HbSWDcUpyGXa1pLD1cq4A,1071
+keep2roam-1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+keep2roam-1.0.dist-info/METADATA,sha256=Uz__jksCs01VETnMKKfvoxgzBMRba836WoAGrZSc1Xg,2429
+keep2roam-1.0.dist-info/RECORD,,
