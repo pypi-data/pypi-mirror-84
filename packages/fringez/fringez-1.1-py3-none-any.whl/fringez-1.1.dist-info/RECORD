@@ -1,0 +1,14 @@
+fringez/__init__.py,sha256=KxvSavWgvRQdtBP2JtoDE6K6zjUVugV57dW38uIttYY,43
+fringez/fringe.py,sha256=x9J_T8e2fAsuEcyR-O2oXGpbiSAsAS1H8uXXW32KHgI,8219
+fringez/metric.py,sha256=iUzNUUN8wc0LXgjoJthu_pnjraf81SxRQJl1EhT7YXQ,724
+fringez/model.py,sha256=R4A-XmkAMusvEYh26KIWEe6f86sDJtPo8rSeMokshoI,6581
+fringez/plot.py,sha256=c9HcmFGF-1--phLygk5wWHQmuPtOIDgRA2GmA-SnHsU,2464
+fringez/utils.py,sha256=CdPZ1mBrZ_lDzqZSJoDST4Yp_M71QqB4annpt_KZbGQ,1807
+fringez-1.1.data/scripts/fringez-clean,sha256=vkmlG_7OhKxJp_DlMdFViXVpSvxXFxfxSkTK1chFW00,5784
+fringez-1.1.data/scripts/fringez-download,sha256=b8TK9ANSRH8LGlgr0TmDHGmFHZ8PME6HCwf-KspZCr8,3751
+fringez-1.1.data/scripts/fringez-generate,sha256=XBm5nOQAPjQGhiXPeZVml_6x0ugi7e_wytm_dZuQ8Yg,4271
+fringez-1.1.dist-info/LICENSE,sha256=neTPhi-NcyIa85mq6eKYFHqKi73dsdoBgmYyx-rx7Vc,1072
+fringez-1.1.dist-info/METADATA,sha256=kSHa7o-t_DEOHULMmBM_ZAW-2Gysjj24es3B0hPwoRE,7507
+fringez-1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+fringez-1.1.dist-info/top_level.txt,sha256=iFZDL0SYuPMvvqolwalbtK4zT4D_ZgUBJY8i-o9k9fI,8
+fringez-1.1.dist-info/RECORD,,
