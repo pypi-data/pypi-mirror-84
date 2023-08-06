@@ -1,0 +1,16 @@
+fsc/hdf5_io/__init__.py,sha256=rndzbsesGnSs6venVAPZGttdjLd1k-K4T0frIH9A_Gw,478
+fsc/hdf5_io/_base_classes.py,sha256=fCy_Czs3BZbYqp-aE0jSDP2aQ_ybFxgxVS4azoO79Ec,1569
+fsc/hdf5_io/_save_load.py,sha256=nIJhx-OHQVVgjDDU8KYJb_zFYA5nEVgQAuQ08V8QD9w,5707
+fsc/hdf5_io/_simple_mapping.py,sha256=qR1IBoJINvUQ-pZaDXMR0dqzFsIHZDx2stOOu_3OWqg,3007
+fsc/hdf5_io/_special_types.py,sha256=aeJlfSVqYQC99uh3eCSisisYAwiPUXXelX0hOBLa9VA,5548
+fsc/hdf5_io/_subscribe.py,sha256=Y0l8hkNK4MKQfWY4SDuSUDg3b6JPpOQdru59OmC9FIk,2301
+fsc/hdf5_io/_sympy_load.py,sha256=ZIb5YbjeH9JeDdEH4uYfkke1y9z2nvJ-d2KGbdxSBXM,455
+fsc/hdf5_io/_sympy_save.py,sha256=x9ndyUKnF02eaadOKeXzqRrhtzh_3jvNC_lPWkoZRiE,408
+fsc/hdf5_io/_version.py,sha256=a0Z6OZaVCNPqfy1p0YdKJoliloJDNrQnnbj-D6O2I4g,200
+fsc/hdf5_io/version.txt,sha256=ROFh5ElcrCz3hYBD6eZBjpV58N3ProJvmjcmIpaM4GY,6
+fsc.hdf5_io-1.0.1.dist-info/AUTHORS,sha256=UWbXNOp6wPiUy4eNE6QrChjG32PqS-nXTvoVeNhXLmM,597
+fsc.hdf5_io-1.0.1.dist-info/METADATA,sha256=nYOvWqlKKw1fpGZfZgGMvnuxy5rBoP3xXULj1LPv3iA,1213
+fsc.hdf5_io-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fsc.hdf5_io-1.0.1.dist-info/entry_points.txt,sha256=9YbDn4t_YV3vowX0xTaktX8GtzTh7m6x-oYx9PlohOU,111
+fsc.hdf5_io-1.0.1.dist-info/top_level.txt,sha256=ZdVGy5ZmBeVX7qpBMkc66APR0Gv4G_-FRizu2XkZOwk,4
+fsc.hdf5_io-1.0.1.dist-info/RECORD,,

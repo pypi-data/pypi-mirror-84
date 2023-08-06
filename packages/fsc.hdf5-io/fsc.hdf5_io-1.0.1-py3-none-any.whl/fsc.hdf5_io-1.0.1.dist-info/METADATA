@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: fsc.hdf5-io
+Version: 1.0.1
+Summary: A tool for managing HDF5 serialization of complex objects across projects.
+Requires-Dist: numpy (>=1.17.5)
+Requires-Dist: decorator
+Requires-Dist: h5py (~=3.0)
+Requires-Dist: fsc.export
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: yapf (==0.28.0) ; extra == 'dev'
+Requires-Dist: prospector (==1.1.7) ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pylint (==2.3.1) ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: ipython (>=6.2) ; extra == 'dev'
+Requires-Dist: matplotlib ; extra == 'dev'
+Requires-Dist: sympy ; extra == 'dev'
+
+Home-page: http://frescolinogroup.github.io/frescolino/pyhdf5io/1.0
+Author: C. Frescolino
+Author-email: frescolino@lists.phys.ethz.ch
+License: Apache
+Description: A tool for managing HDF5 serialization of complex objects across projects.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Provides-Extra: dev
