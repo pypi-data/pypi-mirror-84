@@ -1,0 +1,3 @@
+[console_scripts]
+crypt4ghfs = crypt4ghfs.__main__:main
+
