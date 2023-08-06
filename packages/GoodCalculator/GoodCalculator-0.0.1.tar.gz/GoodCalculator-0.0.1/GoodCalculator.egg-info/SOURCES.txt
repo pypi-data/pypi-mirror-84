@@ -1,0 +1,9 @@
+README.md
+setup.py
+GoodCalculator/__init__.py
+GoodCalculator/calculator.py
+GoodCalculator/goodOperator.py
+GoodCalculator.egg-info/PKG-INFO
+GoodCalculator.egg-info/SOURCES.txt
+GoodCalculator.egg-info/dependency_links.txt
+GoodCalculator.egg-info/top_level.txt
