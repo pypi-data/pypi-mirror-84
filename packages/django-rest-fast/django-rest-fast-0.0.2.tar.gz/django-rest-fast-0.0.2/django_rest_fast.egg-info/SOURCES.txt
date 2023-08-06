@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+django_rest_fast/__init__.py
+django_rest_fast/apps.py
+django_rest_fast/conf.py
+django_rest_fast/decorators.py
+django_rest_fast/tests.py
+django_rest_fast/urls.py
+django_rest_fast/utils.py
+django_rest_fast/views.py
+django_rest_fast.egg-info/PKG-INFO
+django_rest_fast.egg-info/SOURCES.txt
+django_rest_fast.egg-info/dependency_links.txt
+django_rest_fast.egg-info/top_level.txt
