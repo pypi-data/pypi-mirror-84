@@ -1,0 +1,6 @@
+README.md
+setup.py
+bracket.egg-info/PKG-INFO
+bracket.egg-info/SOURCES.txt
+bracket.egg-info/dependency_links.txt
+bracket.egg-info/top_level.txt
