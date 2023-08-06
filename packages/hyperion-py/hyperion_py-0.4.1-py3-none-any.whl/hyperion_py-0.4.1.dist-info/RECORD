@@ -1,0 +1,11 @@
+hyperion/__init__.py,sha256=UkHM73rFpq83wVQMQ1IgZo8hbBU6gAeVg6_rTf88Eds,31
+hyperion/client.py,sha256=5k7ngCZumQtUC84klroBJignnHQePARbpyGjgi3eYEQ,57789
+hyperion/const.py,sha256=FQIr0enmYHyz3Z-afmrlS1rwrXjSoJ3WHaeHRgzi2kY,2938
+tests/__init__.py,sha256=lqpVeNjTjC6HlrybZHmICR26OaLqJYIaa2AwNLRu0-g,29
+tests/client_test.py,sha256=NOUneLgQhLEk7ygx_nmg-qKCzMzir0uXPnZ3c1hV-U0,67398
+hyperion_py-0.4.1.dist-info/LICENSE,sha256=fHaELdkuj2psT1KjW1d20C1eF8aRpgeQ40h-8F98Rr0,1069
+hyperion_py-0.4.1.dist-info/METADATA,sha256=bNjZbMAQrqJL2jGebkrUAShkf-ZragWy2ylMPoXNXts,16833
+hyperion_py-0.4.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+hyperion_py-0.4.1.dist-info/top_level.txt,sha256=NE47VZVid5NilTsfzFcGWRLoe_k9ltOev9lLmktA9x0,15
+hyperion_py-0.4.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+hyperion_py-0.4.1.dist-info/RECORD,,
