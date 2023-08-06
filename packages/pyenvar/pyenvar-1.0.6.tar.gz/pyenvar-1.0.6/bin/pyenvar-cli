@@ -1,0 +1,23 @@
+#!/usr/bin/env python
+
+import os
+import sys
+import pathlib
+import pyenvar
+
+def main():
+    argv = sys.argv
+    if len(argv) < 2:
+        print('required .env path')
+        sys.exit(-1)
+    dotenv_path = argv[1]
+    file = pathlib.Path(dotenv_path)
+    if not file.is_file():
+        print('invalid .env path')
+        sys.exit(-1)
+
+    pyenvar.load(path=dotenv_path)
+    print('setting env variables succeed')
+
+if __name__ == '__main__':
+    main()
