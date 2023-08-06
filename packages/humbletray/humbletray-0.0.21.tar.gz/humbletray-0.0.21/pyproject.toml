@@ -1,0 +1,17 @@
+[metadata]
+name = 'humbletray'
+version = '0.0.1'
+description = 'JustPy as a systray app.'
+author = 'Kevin Smith'
+author_email = 'ksmith@99hats.com'
+license = 'MIT/Apache-2.0'
+url = 'https://github.com/_/humbletray'
+
+[requires]
+python_version = ['3.5', '3.6', 'pypy3']
+
+[build-system]
+requires = ['setuptools', 'wheel', 'schedule']
+
+[tool.hatch.commands]
+prerelease = 'hatch build'
