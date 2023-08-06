@@ -1,0 +1,9 @@
+README.md
+setup.py
+comic_list.egg-info/PKG-INFO
+comic_list.egg-info/SOURCES.txt
+comic_list.egg-info/dependency_links.txt
+comic_list.egg-info/entry_points.txt
+comic_list.egg-info/top_level.txt
+scripts/__init__.py
+scripts/main.py
