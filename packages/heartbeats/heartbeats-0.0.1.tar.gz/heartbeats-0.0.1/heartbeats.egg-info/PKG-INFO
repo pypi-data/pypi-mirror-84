@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: heartbeats
+Version: 0.0.1
+Summary: Check heartbeats by method called.
+Home-page: https://github.com/zhyipeng/heartbeats
+Author: zhyipeng
+Author-email: zhyipeng@outlook.com
+License: UNKNOWN
+Description: # heartbeats
+        Check heartbeats by method called.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
