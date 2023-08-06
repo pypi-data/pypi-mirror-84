@@ -1,0 +1,3 @@
+[console_scripts]
+biscot = biscot.biscot:run
+
