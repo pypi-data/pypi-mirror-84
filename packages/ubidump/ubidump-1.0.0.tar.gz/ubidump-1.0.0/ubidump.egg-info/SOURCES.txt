@@ -1,0 +1,9 @@
+README.md
+setup.py
+ubidump.py
+ubidump.egg-info/PKG-INFO
+ubidump.egg-info/SOURCES.txt
+ubidump.egg-info/dependency_links.txt
+ubidump.egg-info/entry_points.txt
+ubidump.egg-info/requires.txt
+ubidump.egg-info/top_level.txt
