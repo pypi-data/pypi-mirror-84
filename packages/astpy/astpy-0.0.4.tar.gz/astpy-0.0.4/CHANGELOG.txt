@@ -1,0 +1,30 @@
+Change Log
+==========
+
+
+0.0.4 (04/11/2020)
+--------------------
+- Add function : pdf/render_to_pdf
+
+0.0.3 (04/11/2020)
+--------------------
+- Add function : first_day_of_this_month
+- Add function : first_day_of_this_year
+- Add function : last_day_of_this_month
+- Add function : generateYears
+- Add function : namedtuplefetchall
+- Add function : oneCursorResult
+- Add function : previousMonth
+- Add function : previousMonthWithFirstDate
+- Add function : toNumber
+- Add function : userMenuFilter
+
+0.0.2 (04/11/2020)
+--------------------
+- Add function : convertDateToSQL
+- Add function : dictfetchall
+
+
+0.0.1 (04/11/2020)
+--------------------
+- First Release
