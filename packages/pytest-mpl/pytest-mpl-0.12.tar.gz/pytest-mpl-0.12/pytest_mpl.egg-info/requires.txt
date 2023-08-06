@@ -1,0 +1,5 @@
+pytest
+matplotlib
+
+[test]
+pytest-cov
