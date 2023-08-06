@@ -1,0 +1,7 @@
+setup.py
+src/demo_print_test/__init__.py
+src/demo_print_test/test.py
+src/demo_print_test.egg-info/PKG-INFO
+src/demo_print_test.egg-info/SOURCES.txt
+src/demo_print_test.egg-info/dependency_links.txt
+src/demo_print_test.egg-info/top_level.txt
