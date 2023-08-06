@@ -1,0 +1,17 @@
+MANIFEST.in
+requirements.txt
+setup.py
+test_requirements.txt
+version.txt
+cloudshell/__init__.py
+cloudshell/email/__init__.py
+cloudshell/email/email.py
+cloudshell/email/email_config.py
+cloudshell_email.egg-info/PKG-INFO
+cloudshell_email.egg-info/SOURCES.txt
+cloudshell_email.egg-info/dependency_links.txt
+cloudshell_email.egg-info/requires.txt
+cloudshell_email.egg-info/top_level.txt
+test/__init__.py
+test/test_email_config.py
+test/test_email_service.py
