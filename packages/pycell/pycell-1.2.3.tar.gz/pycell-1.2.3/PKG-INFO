@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: pycell
+Version: 1.2.3
+Summary: A complex library containing multiple c-ell (cell) functions
+Home-page: UNKNOWN
+Author: James Nortinski
+Author-email: james@j2k.pl
+License: MIT
+Description: Cell
+        
+        Changes:
+        
+        1.2.2
+        - Redirection update
+        
+        1.2.3
+        - Py2 added
+Keywords: pycell
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
