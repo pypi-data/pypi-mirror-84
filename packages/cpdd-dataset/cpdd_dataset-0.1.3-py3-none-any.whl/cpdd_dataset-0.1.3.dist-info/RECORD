@@ -1,0 +1,16 @@
+LICENSE,sha256=w46edhOecZKrLhcPTyfovIkOKq8a-l-hfp5uQ4M6GyI,1066
+cpdd_dataset/__init__.py,sha256=VE2ekX0VEy08Mb-m11MzBGzcyqwDhzIDz5En4t7PRZI,65
+cpdd_dataset/config/__init__.py,sha256=f5AY9yCAvQcAbSCcAH2y9D0zPmWc1NcehK13QQnEDow,182
+cpdd_dataset/config/_config.py,sha256=FYPGH9MBMOkVjVE-m1spjeWWBLZY840rxJpuLNrGINQ,3468
+cpdd_dataset/config/_loader.py,sha256=hB1Ou-sRNeOJmHEGKt-leiIY6g675LG77zp16PHTjPA,5703
+cpdd_dataset/data/__init__.py,sha256=-LU-_T8pTgWzFzMIcc61k97x3XOPnTB-gj2fr-ZnlCw,280
+cpdd_dataset/data/_crop.py,sha256=AJsxg8qZdYxvoX0l01M3IUGN1HNEFlhSMumHSZWoRLI,433
+cpdd_dataset/data/_location.py,sha256=5VvQXOW-H9QO6S7tkzgZfrmJxzoI-AW88Db-vX14kUA,518
+cpdd_dataset/data/_run_data.py,sha256=m8xTFjQNnFUB7jgLUQ-qKCrSKw9Fh6tmbiIkfbGg9UA,9872
+cpdd_dataset/data/_side.py,sha256=reYNNJ45tSPvrcZSlDwMS8RkkP7EnVndvrMvpDO-4qU,129
+cpdd_dataset/intrinsics/__init__.py,sha256=Fdf6rPDl84opSjPBUcJt-pu07hELS_o4729MUoUhKQQ,120
+cpdd_dataset/intrinsics/_intrinsics.py,sha256=4YkQSEpAmBnYMz-L8ZPPDBLlRH3coU_vc6to5xE9geE,3164
+cpdd_dataset-0.1.3.dist-info/LICENSE,sha256=w46edhOecZKrLhcPTyfovIkOKq8a-l-hfp5uQ4M6GyI,1066
+cpdd_dataset-0.1.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+cpdd_dataset-0.1.3.dist-info/METADATA,sha256=UAIId6TCJiW1T79jPSh1qgtSEOAZG0YBH3kP-n4NDDU,5630
+cpdd_dataset-0.1.3.dist-info/RECORD,,
