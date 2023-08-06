@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ts-deepscan
+Version: 0.1
+Summary: Repository scanner for the identification of effective licenses and copyright information.
+Home-page: https://github.com/TrustSource/ts-deepscan.git
+Author: EACG GmbH
+License: Apache 2.0
+Keywords: DeepScan,TrustSource
+Platform: UNKNOWN
+Requires-Python: >3.8
+Requires-Dist: six
+Requires-Dist: spacy (<3.0.0,>=2.2.0)
+Requires-Dist: nltk
+Requires-Dist: text-unidecode
+
+UNKNOWN
+
+
