@@ -1,0 +1,17 @@
+numpy
+scipy
+matplotlib
+xarray
+psutil
+sphinx_rtd_theme
+tqdm
+Sphinx
+ecmwf_api_client
+cdsapi
+pyFFTW
+h5py
+basemap
+
+[docs]
+Sphinx==3.2.1
+sphinx_rtd_theme
