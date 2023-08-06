@@ -1,0 +1,8 @@
+pandas
+sklearn
+scikit-learn
+numpy
+IlluminaBeadArrayFiles
+python-docx
+tabulate
+json_tricks
