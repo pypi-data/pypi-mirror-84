@@ -1,0 +1,15 @@
+redis_cooker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redis_cooker/adapters.py,sha256=xjWQa_f2GlXswnycTlrmfTGe7dm8xV4BEdFeMqFhxXk,1159
+redis_cooker/atomic.py,sha256=bRIEoaTiyD9zWzT8esila0QLF28XWkVEAHsDzHowx9w,717
+redis_cooker/clients.py,sha256=GRd6wLhJeXS4FZAWLxprn28m63hlHIp8hLgYWWEK7_8,713
+redis_cooker/collections.py,sha256=ZqqMt1Qz5ptcanG8kUix5xgjD5U8PahA2IrA08smX_M,10855
+redis_cooker/mixins.py,sha256=ncQ7FDAbHsMghg09TrVNAhie-bEuyDv2N19tirios4U,2182
+redis_cooker/utils.py,sha256=_t92MMQ5ww34_tzwIFUuknUxo-H1-iCtMjLqFNBWIeo,93
+redis_cooker/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redis_cooker/tests/test_adapters.py,sha256=fqJR7cYQpYloiNnduqp84M2KQl3XZxHPzEwe9WcM--o,3785
+redis_cooker/tests/test_collections.py,sha256=nHOkL2VkZp2OGtyBlXh__386gLM9XrXk0497911DTvc,15845
+redis_cooker-2020.10rc12.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+redis_cooker-2020.10rc12.dist-info/METADATA,sha256=bCcZ55U-n4BQZC3jqvCCEF2iqgfaeLUALMs-6H3OQdw,1332
+redis_cooker-2020.10rc12.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+redis_cooker-2020.10rc12.dist-info/top_level.txt,sha256=vyFrS6T1fo6FfJYkM6Oh3lyEXI1o0BrVeoiHMQAED-E,13
+redis_cooker-2020.10rc12.dist-info/RECORD,,
