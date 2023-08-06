@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+example/entry.py
+example/consumer/__init__.py
+example/provider/__init__.py
+example/provider/impl.py
+example/provider/interface.py
+pluginable/__init__.py
+pluginable.egg-info/PKG-INFO
+pluginable.egg-info/SOURCES.txt
+pluginable.egg-info/dependency_links.txt
+pluginable.egg-info/top_level.txt
