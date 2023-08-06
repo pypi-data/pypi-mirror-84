@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: list2group
+Version: 0.0.1
+Summary: Generates a list with enumerated groups taking into account a change in consecutive values.
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+##Usage
+
+'''python
+from list2group import grouper
+
+grouper(list)
+
+'''
+
