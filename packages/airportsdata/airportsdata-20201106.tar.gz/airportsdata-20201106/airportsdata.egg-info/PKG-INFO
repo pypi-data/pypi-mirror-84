@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: airportsdata
+Version: 20201106
+Summary: 
+Global airport data
+
+Home-page: https://github.com/mborsetti/airportsdata
+Author: Mike Borsetti
+Author-email: mike@borsetti.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/mborsetti/airportsdata/issues
+Project-URL: Source Code, https://github.com/mborsetti/airportsdata
+Project-URL: Documentation, https://airportsdata.readthedocs.io
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Topic :: Utilities
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Provides-Extra: testing
