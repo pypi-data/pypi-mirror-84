@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "asahi-extras"
+version = "0.1.1"
+description = "Optional installer utility and companion package to 'asahi'"
+authors = ["Carl Oscar Aaro <hello@carloscar.com>"]
+homepage = "https://github.com/kalaspuff/asahi"
+repository = "https://github.com/kalaspuff/asahi"
+keywords = ["asahi", "extras", "optional installs", "extras requires", "extra packages", "optional packages", "lazy import"]
+readme = "README.md"
+license = "MIT"
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Intended Audience :: Developers",
+    "Typing :: Typed",
+    "License :: OSI Approved :: MIT License",
+]
+
+packages = [
+    { include = "asahi/extras" },
+]
+
+include = [
+    "asahi/extras/**/*.py",
+    "asahi/extras/**/*.pyi",
+]
+
+exclude = [
+    "**/.DS_Store",
+    "**/.gitignore",
+    "**/poetry.lock",
+    "**/*.pyc",
+    "**/__pycache__",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+asahi = "^0.1.0"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
