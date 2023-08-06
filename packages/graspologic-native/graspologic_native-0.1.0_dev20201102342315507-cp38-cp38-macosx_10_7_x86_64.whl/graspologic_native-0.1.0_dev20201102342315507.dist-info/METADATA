@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: graspologic_native
+Version: 0.1.0-dev20201102342315507
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Project-Url: Github, https://github.com/microsoft/graspologic-native
+Project-Url: Graspologic, https://github.com/microsoft/graspologic
+Summary: This module exists to provide a python interface to native code for Windows, MacOS, and Linux from Python 3.6 to 3.9. Currently, it provides a  native implementation of the Leiden global partitioning algorithm. It is advised you use the API through graspologic, as pythonic syntactic sugar has been added to make it more ergonomic for use.
+Author: dwpryce@microsoft.com
+Author-Email: dwpryce@microsoft.com
+Maintainer: Dwayne Pryce
+Maintainer-Email: dwpryce@microsoft.com
+License: MIT
+Requires-Python: >=3.6,<=3.9
