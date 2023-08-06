@@ -1,0 +1,16 @@
+dbt/__init__.py,sha256=jv2YF__bseklT3OWEzlqJ5qE24c4aWd5F4r0TTjOrWQ,65
+dbt/adapters/__init__.py,sha256=jv2YF__bseklT3OWEzlqJ5qE24c4aWd5F4r0TTjOrWQ,65
+dbt/adapters/duckdb/__init__.py,sha256=FFdVOorqI8jjFaSQ9UhgveoJ8FagZ4Hkyo-CjSrd8LU,383
+dbt/adapters/duckdb/connections.py,sha256=WVoQIAqm2KLR4fo4gvBy8dap8-ZvSB8jZPIhSsXnMuI,2598
+dbt/adapters/duckdb/impl.py,sha256=MrO1H3m3AcICt6VNzdKYJ71FfC-0YewX6OUiJMtF9QM,314
+dbt/include/__init__.py,sha256=jv2YF__bseklT3OWEzlqJ5qE24c4aWd5F4r0TTjOrWQ,65
+dbt/include/duckdb/__init__.py,sha256=MPQnGccFsedAruDmH7jUXQ4DyS19z-jk8Sty9zdMXVc,51
+dbt/include/duckdb/dbt_project.yml,sha256=45qXOG73aOyIz_fBWsnad8Gs0423PgtZbLvoetjGHy4,74
+dbt/include/duckdb/macros/adapters.sql,sha256=Z_2pvqaUsHttkC8AXCyFsJj_3hSl5sjBg2V3JXvdlEc,4230
+dbt/include/duckdb/macros/catalog.sql,sha256=xfaCYuv7TDDU3Hu5jCAZ6pe9_rKq-SB5s4aydrA-6Oc,944
+dbt/include/duckdb/macros/seed.sql,sha256=tEix5CC72Bn_67db4UoZ5qUHRXBFNOHvGKumoV3Y-kM,1247
+dbt/include/duckdb/macros/snapshot_merge.sql,sha256=K8PeWg0KK3mt-PG-XQsc3vyVQyq7xhpp8rh6woNqNUw,862
+dbt_duckdb-0.18.1.dist-info/METADATA,sha256=r7eJB8eTSWKI1TB5QJRHYe0V92OYJRH551d5FqWkUB4,2326
+dbt_duckdb-0.18.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+dbt_duckdb-0.18.1.dist-info/top_level.txt,sha256=B2YH4he17ajilEWOGCKHbRcEJlCuZKwCcgFcLPntLsE,4
+dbt_duckdb-0.18.1.dist-info/RECORD,,
