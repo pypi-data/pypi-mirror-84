@@ -1,0 +1,2 @@
+recursive-include pyhiveapi *
+include requirements.txt
