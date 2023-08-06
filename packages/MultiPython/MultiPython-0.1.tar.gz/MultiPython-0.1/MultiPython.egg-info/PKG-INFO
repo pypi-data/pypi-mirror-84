@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: MultiPython
+Version: 0.1
+Summary: MultiPy library for Python.
+Home-page: https://github.com/mad-cs/multipy
+Author-email: 
+License: PSL
+Description:  MultiPy
+        =========
+        
+         Python library for making multi file
+        projects more easy! There is already keyword
+        for importing other files but this is for
+        files from even more down or up files.
+        
+         Contributing
+        ==============
+        
+         Currently @mad-cs is working on this project, but according to DSF general
+        public software license's terms of contributing, everyone can contribute this project.
+Keywords: file
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

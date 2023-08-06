@@ -1,0 +1,8 @@
+MANIFEST.in
+README
+setup.py
+MultiPython.egg-info/PKG-INFO
+MultiPython.egg-info/SOURCES.txt
+MultiPython.egg-info/dependency_links.txt
+MultiPython.egg-info/top_level.txt
+multipy/__init__.py
