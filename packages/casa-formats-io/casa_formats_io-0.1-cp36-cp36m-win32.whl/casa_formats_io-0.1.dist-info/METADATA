@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: casa-formats-io
+Version: 0.1
+Summary: Dask-based reader for CASA data
+Home-page: http://casa-formats-io.readthedocs.org
+Author: Thomas Robitaille, Adam Ginsburg, and Eric Koch
+Author-email: thomas.robitaille@gmail.com
+License: BSD
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: astropy (>=4.0)
+Requires-Dist: numpy (>=1.17)
+Requires-Dist: dask[array] (>=1.0)
+Provides-Extra: docs
+Requires-Dist: numpydoc ; extra == 'docs'
+Requires-Dist: sphinx-automodapi ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-openfiles ; extra == 'test'
+
+casa-formats-io
+---------------
+
+A small package implementing I/O for CASA data formats - see https://casa-formats-io.readthedocs.io for more details.
+
+
