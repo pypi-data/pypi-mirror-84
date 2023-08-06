@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+SpiderSDK.egg-info/PKG-INFO
+SpiderSDK.egg-info/SOURCES.txt
+SpiderSDK.egg-info/dependency_links.txt
+SpiderSDK.egg-info/top_level.txt
