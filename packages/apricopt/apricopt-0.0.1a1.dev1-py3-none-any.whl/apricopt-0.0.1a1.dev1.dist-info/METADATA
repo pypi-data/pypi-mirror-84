@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: apricopt
+Version: 0.0.1a1.dev1
+Summary: A library for simulation-based parameter optimization
+Home-page: http://mclab.di.uniroma1.it
+Author: Marco Esposito
+Author-email: esposito@di.uniroma1.it
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Apricopt is a library for simulation-based parameter optimization.
+    Copyright (C) 2020  Marco Esposito, Leonardo Picchiami
+
+Authors:
+
+- Marco Esposito: esposito@di.uniroma1.it
+- Leonardo Picchiami
+
+Distributed under GNU Lesser General Public License 
+
+
