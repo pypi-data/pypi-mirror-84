@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: isr-debian
+Version: 0.2
+Summary: creating a debian for isr code base
+Home-page: https://github.com/intelligent-soft-robots
+Author: Vincent Berenz
+Author-email: vberenz@tuebingen.mpg.de
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: lightargs
+
+UNKNOWN
+
+
