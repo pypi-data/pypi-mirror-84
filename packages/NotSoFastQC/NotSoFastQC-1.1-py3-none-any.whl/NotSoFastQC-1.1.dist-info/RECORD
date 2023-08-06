@@ -1,0 +1,11 @@
+NotSoFastQC/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+NotSoFastQC/__main__.py,sha256=2F77y7qBnjCkzFBHK_7QHb9TDlNOjl69wLdLmvj2B4g,3637
+NotSoFastQC/fastqc_manager.py,sha256=cysL-VAOO9mYECnACuiTu4cONYqZXRMQpUup6rxCwxg,20938
+NotSoFastQC/modules.py,sha256=oncuP7SBdKfuGkik_YB8J7nxBxIxO2i61qpJfYmJJWA,732
+NotSoFastQC/utils.py,sha256=I15zg4WDeeJq39l9LDlNOrU6uL5A6jeyXlPsXZMJ_x4,1945
+NotSoFastQC-1.1.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+NotSoFastQC-1.1.dist-info/METADATA,sha256=HRN-83-e5Z5KTpa6faeeESaOMaYMjcS7Myn-A5UQ064,2810
+NotSoFastQC-1.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+NotSoFastQC-1.1.dist-info/entry_points.txt,sha256=Bpx-gcLoKzAsHjNy2o-JBGeBDlQt4wfv1kw6emdsFU0,59
+NotSoFastQC-1.1.dist-info/top_level.txt,sha256=V829BipPgdmRx0YfQHSED9qJXbBWexrYWcf5axvIIVA,12
+NotSoFastQC-1.1.dist-info/RECORD,,
