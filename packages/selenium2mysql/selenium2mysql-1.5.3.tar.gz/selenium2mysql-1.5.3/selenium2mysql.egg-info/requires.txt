@@ -1,0 +1,9 @@
+csv2sqllike
+selenium
+dict
+validators
+bs4
+tqdm
+pyautogui
+pyperclip
+pillow
