@@ -1,0 +1,8 @@
+README.md
+setup.py
+changer/__init__.py
+changer/allnumbers.py
+changer.egg-info/PKG-INFO
+changer.egg-info/SOURCES.txt
+changer.egg-info/dependency_links.txt
+changer.egg-info/top_level.txt
