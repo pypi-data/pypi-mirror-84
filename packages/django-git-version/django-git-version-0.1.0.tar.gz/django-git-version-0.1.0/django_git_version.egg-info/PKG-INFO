@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: django-git-version
+Version: 0.1.0
+Summary: django 
+Home-page: https://github.com/d120/django-git-version
+Author: Daniel Seiler
+Author-email: daniel.seiler@fachschaft.informatik.tu-darmstadt.de
+License: MIT
+Description: # django-git-version
+        
+        A simple django app that uses [gitpython](https://gitpython.readthedocs.io/) to provide
+        templatetag(s) to display git version info from the current repo.
+        
+        ## Installation
+        
+        First, install this package using `pip`
+        
+        ```
+        $ pip install django-git-version
+        ```
+        
+        then add `git_version` to `INSTALLED_APPS` in your Django `settings.py`:
+        
+        ```python
+        INSTALLED_APPS = (
+            ...
+            'git_version'
+            ...
+        )
+        ```
+        
+        ## Usage
+        
+        Load the templatetag with
+        
+        ```django
+        {% load git_tags %}
+        ```
+        
+        and then use one of
+        
+        ```django
+        {% current_commit_short '.' %}
+        {% current_commit '.' %}
+        ```
+        
+        Where `'.'` is the path to the git repo
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
