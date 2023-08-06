@@ -1,0 +1,8 @@
+PyInstaller>=3.4
+PyYAML>=3.13
+nose2>=0.8.0
+nose2[coverage_plugin]>=0.6.5
+pylint>=2.3.1
+requests>=2.21.0
+twine>=1.13.0
+urllib3>=1.25.9
