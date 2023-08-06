@@ -1,0 +1,16 @@
+report/__init__.py,sha256=HT2HH2BJUeRk33gi1qSq2Cf4Zi1uPSPRfMLTX6j5uvE,1053
+report/__main__.py,sha256=0VnOJ1O1s-7fkADOj7L4GyeD6yL7wqr2niTJRhfmJrw,667
+report/plugin.py,sha256=ud-nj6a73Ft9kyYcZMJUwwPfLMp1J19lbgJzsSJ1BO8,1465
+report/workflow/__init__.py,sha256=KN9yXVdQ8pMAF7G2rICZyTM9XhmW1EYduWcVcNoDB6A,48
+report/workflow/build.py,sha256=z71RXGtZhNAPaS9NCJdxJH_h4JhzDA4vdgCH30lEQXg,1086
+report/workflow/confluence.py,sha256=kYur6p6DjQE348_RyBzbawBbsLaTS746398f4AdpEx8,4548
+report/workflow/html.py,sha256=Ac_Hc2m9txQao_G8tDa-p1Q79vPhWqPxeR_Uww1lX3o,4109
+report/workflow/settings.py,sha256=YZ3FKCn520xjyLV8HbeHYsbsfyvlPs0BHGIUVzL3ItA,5254
+report/workflow/xml.py,sha256=zWYLGIhbcuk3jn-Gna2J0ml0C4bXhaHBqfPYpOnJVKo,4616
+pytest_confluence_report-0.0.3.dist-info/AUTHORS.md,sha256=Ev8HITj0xQ6p_E43SdEZP5jXFtRRRzk9faydiN3oWVY,123
+pytest_confluence_report-0.0.3.dist-info/LICENSE.md,sha256=KgaoDqVjojZxEWeZs-NUWRn9bC1RRcGrJiTMn3O5QW0,1075
+pytest_confluence_report-0.0.3.dist-info/METADATA,sha256=6fU46NR1h6JRJzrL1FOLmi6dLBNpJR1MkEub0AO8JQY,6060
+pytest_confluence_report-0.0.3.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pytest_confluence_report-0.0.3.dist-info/entry_points.txt,sha256=RcYfCEhoQO_xcG4r5TDSiatsWQ8dZ3CPgCZwZ0hyTlo,36
+pytest_confluence_report-0.0.3.dist-info/top_level.txt,sha256=Mx0m1tj4YuRrqQCBG-inoeTbqiKbFMmb7P1eUVFJDZU,7
+pytest_confluence_report-0.0.3.dist-info/RECORD,,
