@@ -1,0 +1,9 @@
+git_version/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_version/apps.py,sha256=fMVsTx1suCT43Cy4VxB7yQGahdQ6G9EZeGbNZwbgyys,96
+git_version/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+git_version/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_version/templatetags/git_tags.py,sha256=IlUw3MOB7BpJDwwYer50-OcLaPjnOHTFKRgIi30jQRU,329
+django_git_version-0.1.0.dist-info/METADATA,sha256=u0GpvEzHSljT9kKu50eQcrUBSJ5WcMRWW2mRE5KhYIo,1185
+django_git_version-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+django_git_version-0.1.0.dist-info/top_level.txt,sha256=_hyQiw_cyVY7fib2CnK3DefVjlztlTRXHVTH5j0P_1Y,12
+django_git_version-0.1.0.dist-info/RECORD,,
