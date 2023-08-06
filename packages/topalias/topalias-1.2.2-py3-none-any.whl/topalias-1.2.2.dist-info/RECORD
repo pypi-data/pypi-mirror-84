@@ -1,0 +1,12 @@
+topalias/__init__.py,sha256=Z8wiE98Qh8s6fF0DO7nMB2tXl1zpMdiQFljdCeJ3ASQ,149
+topalias/__main__.py,sha256=7e_LwL3o23GZYqkyZfsprhI_LKZ2ndnUObMhVeWHZYQ,364
+topalias/aliascore.py,sha256=q8mL5LIAV9itK7QfQ_VRcnR7wt0emHdJzho8KwzXf4c,4352
+topalias/cli.py,sha256=UzSDGEZELWt61dCFfj_74qCW2RPYR9VubcMhVMH_rE8,1599
+topalias/data/.bash_aliases,sha256=0C2K3GAQg5BK02foCfJCrweVUgx3q2pvj9zZ8Svo8Hs,1367
+topalias/data/.bash_history,sha256=B-s7gv7xwjWOW6ZsQR2ndmIY0RGrUxwmlV8BT946Rgk,13580
+topalias/data/.zsh_history,sha256=2aOdeeD2L5pIVNUmohUObBgWEJL_0hfNmrGkovYDMXw,4001
+topalias/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+topalias-1.2.2.dist-info/LICENSE,sha256=4tAVDIdLrliaOjAsVj_yxyT6VEdbnRzeYkWaU1CQOuw,1605
+topalias-1.2.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+topalias-1.2.2.dist-info/METADATA,sha256=C6Qtb8P-YfQ8hqlAOOHrQJjlro3e63VWvBDUrBz0zVk,4733
+topalias-1.2.2.dist-info/RECORD,,
