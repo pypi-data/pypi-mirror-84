@@ -1,0 +1,6 @@
+aiohttp
+aiojobs
+attrs
+backoff
+aiosqlite
+uvloop
