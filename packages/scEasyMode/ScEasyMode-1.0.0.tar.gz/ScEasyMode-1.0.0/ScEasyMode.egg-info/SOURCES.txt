@@ -1,0 +1,13 @@
+README.md
+setup.py
+ScEasyMode.egg-info/PKG-INFO
+ScEasyMode.egg-info/SOURCES.txt
+ScEasyMode.egg-info/dependency_links.txt
+ScEasyMode.egg-info/requires.txt
+ScEasyMode.egg-info/top_level.txt
+scEasyMode/__init__.py
+scEasyMode/clusterplot.py
+scEasyMode/genotyping.py
+scEasyMode/mousefilter.py
+scEasyMode/pymulti.py
+scEasyMode/sceasy.py
