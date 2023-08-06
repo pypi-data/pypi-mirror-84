@@ -1,0 +1,6 @@
+setup.py
+packageamit/__init__.py
+packageamit.egg-info/PKG-INFO
+packageamit.egg-info/SOURCES.txt
+packageamit.egg-info/dependency_links.txt
+packageamit.egg-info/top_level.txt
