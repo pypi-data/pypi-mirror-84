@@ -1,0 +1,85 @@
+[![GitHub tag](https://img.shields.io/github/tag/vmdude/kouyierr.svg)](https://github.com/vmdude/kouyierr/tags/)
+[![GitHub license](https://img.shields.io/github/license/vmdude/kouyierr.svg)](https://github.com/vmdude/kouyierr/blob/main/LICENSE)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/kouyierr.svg)](https://pypi.org/project/kouyierr/)
+[![CircleCI](https://circleci.com/gh/vmdude/kouyierr.svg?style=shield&circle-token=bb402d38d6d34114914609699878802d86235c9a)](https://circleci.com/gh/vmdude/kouyierr)
+
+
+![Kouyierr](https://raw.githubusercontent.com/vmdude/kouyierr/main/logo.jpg)
+
+This project is basically a document generator (Doc As Code) focused on a few targets like invoices, timesheet, resume or documentation.
+
+The initial goal was to avoid using Microsoft Wo@#$ and Ex@#$ to generate these recurrent documents, and to be able to add a little automation (of course we're lazy ^^).
+
+
+## Usage
+
+This python module use `click` to facilitate cli calls, help is self-explanatory:
+
+```
+kouyierr --help
+Usage: kouyierr [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  invoice
+  version
+```
+
+## Scope
+
+With `click` module, we bundled several scope to make life easier
+
+### invoice
+
+blabla invoice
+
+### resume
+
+blabla resume
+
+### timesheet
+
+blabla timesheet
+
+## How to build
+
+```bash
+# create a virtual env
+virtualenv venv
+
+# activate virtual env 
+source venv/bin/activate 
+
+# run test and package
+pip3 install .[test] --user --upgrade
+python3 setup.py test
+
+# install snapshot build
+pip3 install . --user --upgrade
+```
+
+
+## Releases
+
+After a commit or merge on master [circleci](https://circleci.com/vmdude/kouyierr) deploys kouyierr automatically on [pypi](https://pypi.org/project/kouyierr/)
+
+To install the release version from PyPi:
+
+```bash
+pip3 install kouyierr --upgrade --user
+```
+
+Or you can install local version as well:
+
+```bash
+git clone git@github.com:vmdude/kouyierr.git && cd kouyierr
+pip3 install . --upgrade --user
+```
+
+
+## License
+
+This project is licensed under the MIT License (see the
+`LICENSE` file for details).
