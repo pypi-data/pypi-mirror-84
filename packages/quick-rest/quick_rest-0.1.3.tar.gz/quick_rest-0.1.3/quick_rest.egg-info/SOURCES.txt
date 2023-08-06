@@ -1,0 +1,12 @@
+README.md
+setup.py
+quick_rest/__init__.py
+quick_rest/auth.py
+quick_rest/client.py
+quick_rest/exceptions.py
+quick_rest/resources.py
+quick_rest.egg-info/PKG-INFO
+quick_rest.egg-info/SOURCES.txt
+quick_rest.egg-info/dependency_links.txt
+quick_rest.egg-info/requires.txt
+quick_rest.egg-info/top_level.txt
