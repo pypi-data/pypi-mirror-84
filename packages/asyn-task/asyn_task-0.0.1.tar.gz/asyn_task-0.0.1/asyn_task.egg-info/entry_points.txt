@@ -1,0 +1,3 @@
+[console_scripts]
+asyn_task = asyn_task.__init__:main
+

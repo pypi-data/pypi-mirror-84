@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: asyn-task
+Version: 0.0.1
+Summary: this project is asyn_task
+Home-page: https://github.com/zhaoheng12/asyn_task/
+Author: zhaohengping
+Author-email: 18438697706@163.com
+Maintainer: zhoukunpeng
+Maintainer-email: 18749679769@163.com
+License: GPL-2.0
+Description: # asyn_task
+        # 批量上传或者下载异步处理任务的工具
+        # 运行命令 pip install asyn_task
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=2.6, <=3.9
+Description-Content-Type: text/markdown
