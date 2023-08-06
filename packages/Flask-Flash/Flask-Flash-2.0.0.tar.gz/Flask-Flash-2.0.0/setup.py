@@ -1,0 +1,35 @@
+from setuptools import setup
+
+setup(name='Flask-Flash',
+      version='2.0.0',
+      description='Flask API framework (API + Client) to create simple APIs from database models.',
+      author='Olivier Cervello',
+      author_email='olivier.cervello@gmail.com',
+      url='https://github.com/ocervell/flask_flash',
+      install_requires=[
+        'alembic>=0.7'
+        'SQLAlchemy==1.3.20',
+        'marshmallow<2.15.1',
+        'marshmallow-sqlalchemy<0.14',
+        'six<2',
+        'Werkzeug==0.16',
+        'Flask<2',
+        'Flask-Restful<1',
+        'Flask-Script<3',
+        'Flask-Migrate<3',
+	      'Flask-Caching<2',
+        'Flask-HTTPAuth<5',
+        'Flask-SQLAlchemy<2.3.3',
+        'Flask-Marshmallow<0.10.1',
+        'Flask-SSLify<1',
+        'requests',
+        'numpy',
+        'pyyaml',
+        'faker',
+        'inflect',
+      ],
+      packages=[
+        'flask_flash',
+        'flask_flash/client',
+      ],
+      zip_safe=False)
