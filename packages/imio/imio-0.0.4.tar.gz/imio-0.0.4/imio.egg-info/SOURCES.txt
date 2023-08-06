@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+imio/__init__.py
+imio/load.py
+imio/save.py
+imio/utils.py
+imio.egg-info/PKG-INFO
+imio.egg-info/SOURCES.txt
+imio.egg-info/dependency_links.txt
+imio.egg-info/not-zip-safe
+imio.egg-info/requires.txt
+imio.egg-info/top_level.txt
