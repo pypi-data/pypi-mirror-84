@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: b-stage-deployment
+Version: 0.0.1
+Summary: AWS CDK resource that creates a stage deployment. Original one has too many bugs.
+Home-page: https://github.com/biomapas/B.StageDeployment.git
+Author: Laimonas Sutkus
+Author-email: laimonas.sutkus@biomapas.com
+License: Apache License 2.0
+Description: # TODO
+        
+        # Release history
+        
+        ### 0.0.1
+        * Initial build.
+        
+Keywords: AWS API Gateway Stage Deployment
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
