@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+consolebar/__init__.py
+consolebar/consolebar.py
+consolebar.egg-info/PKG-INFO
+consolebar.egg-info/SOURCES.txt
+consolebar.egg-info/dependency_links.txt
+consolebar.egg-info/top_level.txt
