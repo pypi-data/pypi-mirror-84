@@ -1,0 +1,8 @@
+README.md
+setup.py
+kakaotalk_msg_preprocessor/__init__.py
+kakaotalk_msg_preprocessor/kakaotalk_msg_preprocessor.py
+kakaotalk_msg_preprocessor.egg-info/PKG-INFO
+kakaotalk_msg_preprocessor.egg-info/SOURCES.txt
+kakaotalk_msg_preprocessor.egg-info/dependency_links.txt
+kakaotalk_msg_preprocessor.egg-info/top_level.txt
