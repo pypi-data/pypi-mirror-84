@@ -1,0 +1,3 @@
+[console_scripts]
+gitown = gitown.gitown:main
+
