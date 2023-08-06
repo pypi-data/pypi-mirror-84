@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+pyNutrient.egg-info/PKG-INFO
+pyNutrient.egg-info/SOURCES.txt
+pyNutrient.egg-info/dependency_links.txt
+pyNutrient.egg-info/requires.txt
+pyNutrient.egg-info/top_level.txt
