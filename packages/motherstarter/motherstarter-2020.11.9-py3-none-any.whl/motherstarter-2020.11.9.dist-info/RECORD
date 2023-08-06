@@ -1,0 +1,12 @@
+motherstarter/__init__.py,sha256=TTmtXiUeu5iPXN38eub5HwNCTDmDEcNczqRQ8fwxLk8,88
+motherstarter/motherstarter.py,sha256=H0NfEPIl8R3-KDkojOTwueVQT66IYcaUOP3t_sjPy4I,29469
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/e2e/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/e2e/test_click_inputs.py,sha256=qzNn0EKIx_IkTtuNcIpQX0MWvQhZxjs7xIUMTvRKcBg,13894
+tests/e2e/test_click_outputs.py,sha256=6ye00_Ah99pDeauxUkrOa_qSIhS4JotdxNn58mpfg2Y,5327
+motherstarter-2020.11.9.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+motherstarter-2020.11.9.dist-info/METADATA,sha256=uIr0km9hGmsJKmce7ZXl9D4XtFO48CoMxC5BjO-fvi8,9839
+motherstarter-2020.11.9.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+motherstarter-2020.11.9.dist-info/entry_points.txt,sha256=Rviyf8GyRgqQl4hoC8PDejuAT7FeQ6KUnNREXxMZQZg,85
+motherstarter-2020.11.9.dist-info/top_level.txt,sha256=_ZLz8TBNDsdw0TlH19uGzwe3pM6q1npCqDGwt5nMpB4,20
+motherstarter-2020.11.9.dist-info/RECORD,,
