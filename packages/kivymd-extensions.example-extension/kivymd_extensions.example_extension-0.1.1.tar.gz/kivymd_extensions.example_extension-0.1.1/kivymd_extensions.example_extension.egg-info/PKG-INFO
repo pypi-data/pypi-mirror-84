@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: kivymd-extensions.example-extension
+Version: 0.1.1
+Summary: Example extension that adds beautiful button
+Home-page: https://github.com/kivymd-extensions/extension_template
+Author: KivyMD Team and other contributors
+Author-email: kivydevelopment@gmail.com
+License: MIT
+Project-URL: Tracker, https://github.com/kivymd-extensions/extension_template/issues
+Description: # Example Extension
+        
+        This extension adds beautiful button to your app.
+        
+        See [KivyMD_Extensions](https://github.com/kivymd-extensions/KivyMD_Extensions).
+        
+        ## Installation
+        
+        ```bash
+        pip install kivymd_extensions.example_extension
+        ```
+        
+        ### Dependencies:
+        
+        - [KivyMD](https://github.com/kivymd/KivyMD) >= 0.104.1
+        - [Kivy](https://github.com/kivy/kivy) >= 1.10.1 ([Installation](https://kivy.org/doc/stable/gettingstarted/installation.html))
+        - [Python 3.6+](https://www.python.org/)
+        
+        ## Documentation
+        
+        See source files.
+        
+        ## Examples
+        
+        ```bash
+        git clone https://github.com/kivymd-extensions/extension_template.git
+        cd extension_template
+        cd examples/full_example
+        python main.py
+        ```
+        
+        ### Support
+        
+        If you need assistance or you have a question, you can ask for help on our mailing list:
+        
+        - **Discord server:** https://discord.gg/wu3qBST
+        - _Email:_ kivydevelopment@gmail.com
+        
+Keywords: kivymd_extensions,kivymd,kivy,material,ui
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: Android
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: POSIX :: BSD :: FreeBSD
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: iOS
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown; charset=UTF-8
+Provides-Extra: dev
+Provides-Extra: docs
