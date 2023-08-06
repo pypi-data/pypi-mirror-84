@@ -1,0 +1,3 @@
+[plover.macro]
+retro_everything = plover_retro_everything:retro_everything
+
