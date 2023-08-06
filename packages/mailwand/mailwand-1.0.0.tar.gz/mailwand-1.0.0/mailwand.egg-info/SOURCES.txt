@@ -1,0 +1,9 @@
+README.md
+setup.py
+mailwand/__init__.py
+mailwand/mailwand.py
+mailwand.egg-info/PKG-INFO
+mailwand.egg-info/SOURCES.txt
+mailwand.egg-info/dependency_links.txt
+mailwand.egg-info/requires.txt
+mailwand.egg-info/top_level.txt
