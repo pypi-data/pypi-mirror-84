@@ -1,0 +1,12 @@
+Change Log
+==========
+
+0.0.2 (04/11/2020)
+--------------------
+- Add function : convertDateToSQL
+- Add function : dictfetchall
+
+
+0.0.1 (04/11/2020)
+--------------------
+- First Release
