@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: pypigeonhole-config
+Version: 0.0.2
+Summary: Python YAML based Configuration
+Home-page: https://github.com/psilons/pypigeonhole-config
+Author: psilons
+Author-email: psilons.quanta@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pycryptodome (==3.9.8)
+Requires-Dist: pyyaml (==5.3.1)
+Requires-Dist: pypigeonhole-simple-utils
+
+# Python Application Configuration
+
+This is a configuration tool for application configurations, similar to 
+[Spring Framework Core](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/core.html).
+
+
+## Application Settings
+
+Nontrivial applications have external settings, such as properties, ini,
+xml, yaml, or others(e.g., config server). we are going to use YAML files since
+it is the current popular way to configure applications. One of the advantages
+with YAML is that it supports tree structure to avoid duplicated key paths.
+XML is a good option too for complex settings, but it's out of favor because of 
+open/close tags.
+
+All different formats of settings eventually resolves to key-value pairs.
+The keys are tree paths for grouping. The values are simple data types, such as 
+string, boolean, int, float, date time, etc. 
+
+Besides these setting files, we want to overwrite some settings via command 
+line parameters or environment variables. To coordinate settings from different
+sources, we adapt the following:
+- yaml settings is the baseline
+- may refer environment variables through ${env_var_name:default_value}
+- may pass in from command line like -Ekey=value. This could overwrite yaml or
+  environment variable values.
+
+However, currently environment variables and command line overwrites treat
+all values as string. One way to get around is to use separate YAML files for
+different cases.
+
+Sample YAML file, test.yaml:
+```
+db:
+    url: 'go://disney'
+    user: 'mickey mouse'
+    server_port: 8080
+    price: 3.1415925
+    begin_date: !!timestamp '2010-11-17 13:12:11'
+    ext_var: ${my_env}
+```
+
+Sample Python code:
+```
+# load settings
+app_ctx = IocContext('test')  # It looks for test.yaml
+app_ctx.load_conf_file(current_path) ## need to tell where test.yaml is, current_path
+
+# run with command parameter: -Edb.url=magic_kingdom, os env: set/export my_var=my_value
+# we can get settings:
+app_ctx.get_conf('db.user')        # mickey mouse
+app_ctx.get_conf('db.url')         # magic_kingdom, overwritten by command line
+app_ctx.get_conf('db.server_port') # 8080, int
+app_ctx.get_conf('db.price')       # 3.1415925, float
+app_ctx.get_conf('db.begin_date')  # datetime object for 2010-11-17 13:12:11
+app_ctx.get_conf('db.ext_var')     # my_value, set by environment variable
+```  
+
+## Application Configuration
+
+Applications consist of components, which could consist of other components. So
+we end up with a component tree where the application is at the top. To assembly
+these components, we could hardwire them together. A better approach is 
+[IoC](https://en.wikipedia.org/wiki/Inversion_of_control) or
+[DIP](https://en.wikipedia.org/wiki/Dependency_injection).
+
+
+Our IoC container has 3 layers:
+- a key-value pair store to work with tree paths, illustrated above.
+- an object container to manage object life cycles and set dependencies.
+- a context to load YAML configurations and inject them to objects.
+
+There are 2 ways to utilize the lib:
+- use context as a configuration tool. Once the context is loaded with YAML
+files, it can be referred elsewhere.
+- use context as an IoC container. Register objects in the container, then
+we can retrieve objects with dependencies and configurations fully populated.
+
+The configuration has 3 precedences, from high to low:
+- after loading the configuration, there is a chance to override it because
+initializing objects. So we can get overrides from command line and overwrite
+settings.
+- set environment variables and retrieve them in YAML files. This is a more
+restrictive way than where we blindly overwrite all possible settings in the
+environment.
+- YAML files.
+
+There is an encryption feature for passwords.
+
+##
+Python is a functional language, but there are cases where we need classes.
+Passing all parameters to functions can pollute function interfaces and create
+information leaks. For example, passing a database connection around to 
+retrieve data results changes to all functions if we switch from database 
+storage to others, e.g., elastic search server. So hiding the connection in
+a class (through constructor) and keep the data retrieval interface clean 
+would be a better solution. 
+
+Due to the nature of Python, singletons are not as bad as in Java. Especially
+during application start up, if we can guaranty single threaded, there are 
+more playroom than the Java case.
+
+
+## TODOs
+- Do we need multiple YAML files? If so, here is the way to do it.
+https://stackoverflow.com/questions/528281/how-can-i-include-a-yaml-file-inside-another
+- Need performance testing.
+
+
+
