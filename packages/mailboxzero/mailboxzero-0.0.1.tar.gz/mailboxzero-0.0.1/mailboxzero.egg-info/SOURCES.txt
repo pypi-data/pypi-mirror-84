@@ -1,0 +1,9 @@
+README.md
+setup.py
+mailboxzero/__init__.py
+mailboxzero.egg-info/PKG-INFO
+mailboxzero.egg-info/SOURCES.txt
+mailboxzero.egg-info/dependency_links.txt
+mailboxzero.egg-info/entry_points.txt
+mailboxzero.egg-info/requires.txt
+mailboxzero.egg-info/top_level.txt
