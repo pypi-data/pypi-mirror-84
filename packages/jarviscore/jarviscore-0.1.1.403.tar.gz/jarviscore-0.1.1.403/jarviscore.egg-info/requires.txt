@@ -1,0 +1,4 @@
+PyMySQL
+PyYAML
+requests
+simplejson
