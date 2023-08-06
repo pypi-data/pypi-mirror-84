@@ -1,0 +1,62 @@
+# **MacroPad**
+\
+\
+\
+_**Simple Example**_
+```python
+import macropad
+
+
+# Create Pad Instance
+lp = macropad.MacroPad()
+
+
+# Bind function btn_up to Button X0 Y0 with color red and on press color green
+@lp.bind(x=0, y=0, colorcode=5, color_on_activate=21)
+def btn_up():
+    print("X-0 Y-0 PRESSED!")
+
+# Start the Button Listener Thread
+lp.start_binding_execution_thread()
+
+
+# Wait forever
+while True: continue
+
+
+# Only needed if the programm is ending and not killed, without you get some MIDI errors
+lp.close()
+```
+\
+\
+\
+_**Stop Button Listener Thread**_
+```python
+lp.stop_binding_execution_thread()
+```
+\
+\
+\
+_**Unbind Keys**_
+```python
+# Unbind Button X0 Y0
+lp.unbind(x=0, y=0)
+
+# Unbind Every Button
+lp.unbind_all()
+```
+\
+\
+\
+_**Coltrol Led's**_
+
+```python
+# Turn Led X0 Y0 red
+lp.enable_led(x=0, y=0, colorcode=5)
+
+# Turn Led X0 Y0 off
+lp.disable_led(x=0, y=0)
+
+# Turn all Led´s off
+lp.disable_all_leds()
+```
