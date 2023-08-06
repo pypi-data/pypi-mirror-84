@@ -1,0 +1,8 @@
+pygdcm/__init__.py,sha256=h5Z31ygkxNzsmK7Dyg32mu14B5FzNUYgyJ1V3OSg6lI,23
+pygdcm/_gdcmswig.so,sha256=GveV8RXcJ3DYD8h7lKTZv5-t-yFRnwZdVGCqeBGJLSM,6691224
+pygdcm/gdcm.py,sha256=GkFJWPjjna5ryazw6R3pEf3_6AwErMOBZAk0c7GcA6k,3136
+pygdcm/gdcmswig.py,sha256=yfXtdDBFn1Cw1B6A3L1twmPzXrrWBQKwCFQgYXrcruw,678182
+pygdcm-1.0.dist-info/METADATA,sha256=zLv7TzWVxDCDLhwcTdV3vxxeQsWvCo1NICI7l0c7kmI,168
+pygdcm-1.0.dist-info/WHEEL,sha256=S41Xt_NPinFlETCGZ6mouDfiyXoDhXXPpls4-8AXFm0,111
+pygdcm-1.0.dist-info/top_level.txt,sha256=hJdsV_V6aqFcdQfCyFh_5gYIEAtnOAdMrLhXsGn1jZI,7
+pygdcm-1.0.dist-info/RECORD,,
