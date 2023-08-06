@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/__init__.py
+src/langSetup.py
+src/setproj.py
+src/setproj.egg-info/PKG-INFO
+src/setproj.egg-info/SOURCES.txt
+src/setproj.egg-info/dependency_links.txt
+src/setproj.egg-info/entry_points.txt
+src/setproj.egg-info/requires.txt
+src/setproj.egg-info/top_level.txt
