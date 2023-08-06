@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: django-solar
+Version: 0.0.5
+Summary: Django Email Automation
+Home-page: https://github.com/Aleksi44/django-solar/
+Author: Alexis Le Baron
+Author-email: hello@snoweb.fr
+License: GPL-3.0
+Keywords: django email automation
+Platform: linux
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Requires-Dist: django (>=2.2.17)
+
+************
+Django Solar
+************
+
+.. image:: https://img.shields.io/pypi/v/django_solar
+    :target: https://pypi.org/project/django_solar/
+
+.. image:: https://img.shields.io/pypi/pyversions/django_solar
+    :target: https://pypi.org/project/django_solar/
+
+Django email automation with cron.
+
+Work in Process...
+
+
