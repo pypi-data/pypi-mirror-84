@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: easyMNIST
+Version: 0.0.1
+Summary: This package contains classes of pre-written Tensorflow models and functions to interact with them for students to play with and learn about the core high level concepts of AI.
+Home-page: https://github.com/VincentQuirion/easyai
+Author: Vincent Quirion
+Author-email: vincent.quirion@icloud.com
+License: MIT License
+Download-URL: https://github.com/VincentQuirion/easyai/archive/v0.0.1.tar.gz
+Description: UNKNOWN
+Keywords: ai,student,beginner,tensorflow,highschool,mnist
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
