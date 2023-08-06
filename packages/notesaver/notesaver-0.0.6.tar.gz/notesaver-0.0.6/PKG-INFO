@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: notesaver
+Version: 0.0.6
+Summary: A CLI for saving notes, both locally and online
+Home-page: https://github.com/boyuan12/NoteSaver
+Author: Boyuan Liu
+Author-email: boyuanliu6@yahoo.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Requires-Python: >= 3.6
