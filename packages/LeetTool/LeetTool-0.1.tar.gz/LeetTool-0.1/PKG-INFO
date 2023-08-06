@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: LeetTool
+Version: 0.1
+Summary: Selenium for Researcher
+Home-page: https://github.com/ChangxingJiang/LeetCode-Toolkit-Py
+Author: ChangXing
+Author-email: 1278729001@qq.com
+License: UNKNOWN
+Description: # LeetCode-Toolkit-Py
+        仿写版LeetCode官方工具类(Python)
+        
+Keywords: LeetCode
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
