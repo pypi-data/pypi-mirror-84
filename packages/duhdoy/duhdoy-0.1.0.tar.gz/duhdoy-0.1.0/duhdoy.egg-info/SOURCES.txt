@@ -1,0 +1,6 @@
+README.md
+setup.py
+duhdoy.egg-info/PKG-INFO
+duhdoy.egg-info/SOURCES.txt
+duhdoy.egg-info/dependency_links.txt
+duhdoy.egg-info/top_level.txt
