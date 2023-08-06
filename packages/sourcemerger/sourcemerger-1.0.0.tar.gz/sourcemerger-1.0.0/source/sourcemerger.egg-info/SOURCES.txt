@@ -1,0 +1,12 @@
+MANIFEST.in
+license.txt
+readme.md
+setup.py
+source/sourcemerger/__init__.py
+source/sourcemerger/__main__.py
+source/sourcemerger/sourcemerger.py
+source/sourcemerger.egg-info/PKG-INFO
+source/sourcemerger.egg-info/SOURCES.txt
+source/sourcemerger.egg-info/dependency_links.txt
+source/sourcemerger.egg-info/entry_points.txt
+source/sourcemerger.egg-info/top_level.txt

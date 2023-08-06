@@ -1,0 +1,3 @@
+[console_scripts]
+sourcemerger = sourcemerger:_cmdline_tool_main
+
