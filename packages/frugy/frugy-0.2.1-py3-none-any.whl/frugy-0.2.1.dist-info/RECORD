@@ -1,0 +1,17 @@
+frugy/__init__.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+frugy/__main__.py,sha256=Eg4foyGtng1wYO1dVo5jFf70X_p0SydJf7hDOiyUDQQ,35
+frugy/areas.py,sha256=qCCpQam73tLMBR_YaidZeOwtqZj5moJq-VUKfUsXNEA,3318
+frugy/cli.py,sha256=uU8jpgkxxfs7-1YVB3FjO9XFZzdr4iQQ8kxwZsDUZfM,7506
+frugy/fru.py,sha256=yri6gZxTr8_GwsTKZ6h4CGaV55P9PdyK1Jitp6gatuM,5267
+frugy/fru_registry.py,sha256=5jAsAivMp3VXWew9C6ezz9PjOEIaebXrVv8dy1RvUrA,2078
+frugy/multirecords.py,sha256=T0ZZ_kQvfVUfiqxjNbm7oTgGswIb7Lf0LfG31gqPFjY,6504
+frugy/multirecords_fmc.py,sha256=RT-sL2j5QlOmNCkOyxx6MhNn9-eBbMLDLHnjiYB0pqY,3040
+frugy/multirecords_ipmi.py,sha256=m_KNKmwdZO6GiCE6HJd8sajAFEVSaIzwC9nH-hMpw-w,2685
+frugy/multirecords_picmg.py,sha256=BFdFXQ-R0JRAASKYi4nHx650_zxLaHN19hir1QnLzBw,17964
+frugy/types.py,sha256=sQQlvUaAV0LCzRvgTItdmhY-NZAYIqizMvRaZKW61rI,22378
+frugy-0.2.1.dist-info/LICENSE.txt,sha256=STw3HP0Di5blwnidRJrEH6lpjj-n_FNVnEFRNb8W3KE,1515
+frugy-0.2.1.dist-info/METADATA,sha256=PzeSXywYkXxLCCxuG1nI-bRcIFJggchPY4OaElYgRH8,4670
+frugy-0.2.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+frugy-0.2.1.dist-info/entry_points.txt,sha256=geIB4fUcYhz54HOyauV37TKsXhzyAkeq11kPw78DRDA,42
+frugy-0.2.1.dist-info/top_level.txt,sha256=FpPv57lUCugMATNEJ_VpEZIGxJ-P-7mDrIsZ07GgaUE,6
+frugy-0.2.1.dist-info/RECORD,,
