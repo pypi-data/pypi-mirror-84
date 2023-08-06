@@ -1,0 +1,5 @@
+#!/opt/conda/bin/python
+
+import haven_cli, sys
+print(sys.argv)
+haven_cli.joke()
