@@ -1,0 +1,10 @@
+dotli/__init__.py,sha256=X-hpsSHX53TkVpUz8Eqmxf_9E6jBJkEBrkvxyjaIjDs,84
+dotli/__version__.py,sha256=WMSWQEkyw-aqz2w038gdxy-fcHiOoPgZRA_-HXseS8E,21
+dotli/ambiguous_obj.py,sha256=JDZjvEnxVVCvmbdYa2KfaHbg2N8D8xI8iGXqNBJNIcg,2385
+dotli/dotli.py,sha256=O9rbNi4GW4r9AZ67lyYJwzcOgxpLGa8dW5fmoWql1CQ,3383
+dotli/errors.py,sha256=TGMRhUsrnpS5qtuMs1debjg6VX46Jfj2mUkxZqqGoD0,1038
+dotli-1.1.dist-info/LICENSE,sha256=fTqV5eBpeAZO0_jit8j4Ref9ikBSlHJ8xwj5TLg7gFk,7817
+dotli-1.1.dist-info/METADATA,sha256=3Kg-2AyOvepYjUZ3Ix3NEJ_mGMqBlfVmyBF0XReNsHc,3884
+dotli-1.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+dotli-1.1.dist-info/top_level.txt,sha256=q7iIchfoUZt8ehHyS7LIb_OQtxtdiX3GLO3i7EPt2p0,6
+dotli-1.1.dist-info/RECORD,,
