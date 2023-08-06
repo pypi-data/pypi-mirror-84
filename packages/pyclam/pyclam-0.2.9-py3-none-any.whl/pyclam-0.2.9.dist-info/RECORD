@@ -1,0 +1,11 @@
+pyclam/__init__.py,sha256=X6yPImklmqH3uhehuVQbQW0q_rVl_gqu9g4VIHipDhs,120
+pyclam/chaoda.py,sha256=eOwE3WEoXD7iCJgsZlJkvuCOQbPbrAvEtxjFWch7tIg,10576
+pyclam/criterion.py,sha256=4jjxcQVqmK6CbVfOOdH_3-N5AWlxVi_EHWX7dqWnBIg,13489
+pyclam/datasets.py,sha256=U7jRRTjeXW8EHEK5N8fbTjPU3thzgeGg72iKDcKQ3O8,4606
+pyclam/manifold.py,sha256=KFoQ3WR3uZ9AJDbI53TiTfPrKgxg7rBfqNygTNLCQB4,42220
+pyclam/types.py,sha256=iCMFIhCX9Grl8llUyiKjPwg03vM4-F3ufXYDli-vf_s,271
+pyclam-0.2.9.dist-info/LICENSE,sha256=Wh2Ark3jPaCPr_j20drSpsnQnySEfbwrjElt6t7zqV4,1064
+pyclam-0.2.9.dist-info/METADATA,sha256=Pka9tWXAXLvz6yewYH58VNIZHQPO176TKRx0ul9ipVE,2675
+pyclam-0.2.9.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pyclam-0.2.9.dist-info/top_level.txt,sha256=WUN9DS5b9FgsfHV-nqT4vFZuvWBJw05fiHA_In7lgZY,7
+pyclam-0.2.9.dist-info/RECORD,,
