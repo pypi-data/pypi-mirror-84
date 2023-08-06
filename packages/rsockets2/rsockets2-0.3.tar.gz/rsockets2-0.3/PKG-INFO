@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: rsockets2
+Version: 0.3
+Summary: Not sophisticated implementation of the RSockets protcol as Client
+Home-page: https://github.com/freelancer1845/rsockets2-try
+Author: Jascha Riedel
+Author-email: jaschelite@googlemail.com
+License: apache-2.0
+Description: UNKNOWN
+Keywords: RSockets,Client,ReactiveX
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
