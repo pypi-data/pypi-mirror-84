@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: exoscene
+Version: 1.0
+Summary: Library for simulating direct images of exoplanetary systems.
+Home-page: UNKNOWN
+Author: Neil T. Zimmerman
+Author-email: neil.t.zimmerman@nasa.gov
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: astropy (>=4.0)
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-image
+Requires-Dist: pandas
+
+UNKNOWN
+
+
