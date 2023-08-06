@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+plover_retro_stringop/__init__.py
+plover_retro_stringop.egg-info/PKG-INFO
+plover_retro_stringop.egg-info/SOURCES.txt
+plover_retro_stringop.egg-info/dependency_links.txt
+plover_retro_stringop.egg-info/entry_points.txt
+plover_retro_stringop.egg-info/requires.txt
+plover_retro_stringop.egg-info/top_level.txt
+plover_retro_stringop.egg-info/zip-safe
