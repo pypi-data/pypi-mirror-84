@@ -1,0 +1,11 @@
+pydub-stubs/__init__.pyi,sha256=huiLmzVkOfoZqIaQjnV7UGOBimmqkCpTpyRdLqpraAA,84
+pydub-stubs/audio_segment.pyi,sha256=p3xyRhK2qFj8wFUGNyL95vvXj3DN4X8j6dqTTRj-4to,6451
+pydub-stubs/effects.pyi,sha256=bjQ7NlUN-yUFbTk1v7Er0zkOQQCh-BmSeBOebJ9jJG8,1294
+pydub-stubs/exceptions.pyi,sha256=Nq7R1ui4ivzZYBBwN9E6KOqKO8adPRryPybV5BOAmNo,402
+pydub-stubs/generators.pyi,sha256=wKgy9piq5jkHIS4WvLxueCndGUnecSnjej0YhYh13HE,1323
+pydub-stubs/playback.pyi,sha256=yVmORTltIjf94T-zP7uDm_jnS1PKntv-tvFjNLTDLbU,128
+pydub-stubs/scipy_effects.pyi,sha256=RkyKhp5AqT5v1fFc8uRm94ep3qyqaYLwxAQT8wluZEE,402
+pydub_stubs-0.24.1.5.dist-info/LICENSE,sha256=uDE21wlJ4tesS3-tQYvrLVURRTJYLSPkKamDL6kUJeQ,745
+pydub_stubs-0.24.1.5.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pydub_stubs-0.24.1.5.dist-info/METADATA,sha256=8TU4t97b4j54oJVUH0iokHVMVcAQseNcDMo02EHDgnQ,3001
+pydub_stubs-0.24.1.5.dist-info/RECORD,,
