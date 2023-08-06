@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyregedit/__init__.py
+pyregedit/pyregedit.py
+pyregedit.egg-info/PKG-INFO
+pyregedit.egg-info/SOURCES.txt
+pyregedit.egg-info/dependency_links.txt
+pyregedit.egg-info/requires.txt
+pyregedit.egg-info/top_level.txt
