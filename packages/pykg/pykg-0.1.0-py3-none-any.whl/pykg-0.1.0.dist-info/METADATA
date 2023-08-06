@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pykg
+Version: 0.1.0
+Summary: 
+Author: Agung Setiaji
+Author-email: mragungsetiaji@gmail.com
+Requires-Python: >=3.8,<3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: google-cloud-dataproc (==2.0.2)
+Requires-Dist: google-cloud-storage (==1.32.0)
+Requires-Dist: loguru (==0.5.3)
