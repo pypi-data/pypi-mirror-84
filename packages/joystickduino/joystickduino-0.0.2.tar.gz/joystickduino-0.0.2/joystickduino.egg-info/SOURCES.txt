@@ -1,0 +1,8 @@
+README.md
+setup.py
+joystickduino/__init__.py
+joystickduino.egg-info/PKG-INFO
+joystickduino.egg-info/SOURCES.txt
+joystickduino.egg-info/dependency_links.txt
+joystickduino.egg-info/requires.txt
+joystickduino.egg-info/top_level.txt
