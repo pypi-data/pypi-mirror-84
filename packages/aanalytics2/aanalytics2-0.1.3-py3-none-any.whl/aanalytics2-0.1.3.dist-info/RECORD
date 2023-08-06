@@ -1,0 +1,15 @@
+aanalytics2/CSV_Column_and_Query_String_Reference.pickle,sha256=Aocvb3Nryk256q7bLOxT6QUHSc9OQjSoX7Zbk6dAdAE,5205
+aanalytics2/__init__.py,sha256=y7xdWDKEdTMuMPOGJ0ZMN_gCnzWPKpGzJ1sqhLNCSEs,77
+aanalytics2/aanalytics2.py,sha256=w8-q7WCLimMoQN3mPeC5jfA_SXv7gcvOK78RxgWOllY,67917
+aanalytics2/config.py,sha256=VrMHQ0bWALZTkg9vAmNxzniwUmQCI6A1hjD-nL_GxNM,618
+aanalytics2/configs.py,sha256=u6tfRkt4rWtPPQ7xY3CKuS98Ib6_4Azu735iWhRtXKs,4081
+aanalytics2/connector.py,sha256=WMTSTp9F0tMvppvPUCaIi1-UfKk6ni3uvAt6M-ekYCY,8945
+aanalytics2/ingestion.py,sha256=hIrTfuB6HUkuuJO5Cgi8rn_VHbatPR62vqbDgiwaUes,12078
+aanalytics2/modules.py,sha256=kLoeyeWvN33OzYAWVr_2kjwwwx4TGvSDSrP_LF0ZJNw,244
+aanalytics2/paths.py,sha256=ihfj6tjMQQbbFmnNcfc_cifG82164HGLKVhIxxY40CE,813
+aanalytics2/supported_tags.pickle,sha256=b6qx1a9A6kK_5OHh-CmSIvGll1JiCm40a_7-EH7rA1k,6765
+aanalytics2-0.1.3.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+aanalytics2-0.1.3.dist-info/METADATA,sha256=Zv3WB3bCx6_AqQJOyOxrThDTU_ZGlRi7-lR6Y4WxaKY,3079
+aanalytics2-0.1.3.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+aanalytics2-0.1.3.dist-info/top_level.txt,sha256=-l_Vj_DDDgBsuOZMgnwXqSbYjbQ1rLntr8vgt616x_M,12
+aanalytics2-0.1.3.dist-info/RECORD,,
