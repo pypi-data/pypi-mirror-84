@@ -1,0 +1,16 @@
+nbsearch/__init__.py,sha256=u0oqUaQvR--UWPIHI414K1BOscgrlxy6aMUW6s5iYmc,2288
+nbsearch/cli.py,sha256=S7jkHpgft8Y8BJMn6jB8SDQaWvPteV6ZtGlCG3qHdQQ,2129
+nbsearch/nbsearch.py,sha256=-kP_bH2EYuECP---q1WnHLG0Nu2VtQuRhHH7XOEdIjc,10039
+nbsearch/nbwatchdog.py,sha256=4gG5mg-E8BqDdGsxCDddntk5bs8-ApBqzQs39uO5ypk,1621
+nbsearch/static/clipboard.min.js,sha256=inc5kl9MA1hkeYUt-EC3BhlIgyp_2jDIyBLS6k3UxPI,10453
+nbsearch/static/marked.min.js,sha256=6cFgC8n0ki350xdGvJQBX0xbbCmAjpR8ZSqR5jruuYs,35530
+nbsearch/static/nbsearch.css,sha256=Ad5POh-XlFhJaVBiG8p671Py9JP8ArVrqddMeMaiQsc,64
+nbsearch/static/prism.css,sha256=gHEmdM9ZMQo4-YPSfYzVELGaSRYnC2I54kacQv4_Ksg,8168
+nbsearch/static/prism.js,sha256=V1pJPlOO5ZJeW3bMXiwGMyT_IiUMWniS5xe5Ghsr2sE,37906
+nbsearch/templates/index.html,sha256=DYiIB2oCZgPzPkmBYP9Yi9wTQGpvB48938kioffH8tY,9078
+nbsearch-0.0.4.dist-info/LICENSE,sha256=buC40PUoohtzlAE_i6NjC_kpk1_Duf5GLCdu1V2iuEc,1067
+nbsearch-0.0.4.dist-info/METADATA,sha256=q5mIwK9OgGfYLq3fVxYc_zt03DvQCIY5aGn3s6_94oY,4112
+nbsearch-0.0.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+nbsearch-0.0.4.dist-info/entry_points.txt,sha256=hG8cbediuNsTmA-iYsM5gjOJtHjMjF14CNbvSfipBlM,146
+nbsearch-0.0.4.dist-info/top_level.txt,sha256=VKWPMkrCocoBnZRv7pP45tcf16NW00RZteiV7tz6n60,9
+nbsearch-0.0.4.dist-info/RECORD,,

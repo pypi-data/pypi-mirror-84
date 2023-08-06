@@ -1,0 +1,9 @@
+[console_scripts]
+nbsearch = nbsearch.cli:cli
+
+[datasette]
+nbsearch = nbsearch
+
+[jupyter_serverproxy_servers]
+nbsearch = nbsearch:setup_nbsearch
+
