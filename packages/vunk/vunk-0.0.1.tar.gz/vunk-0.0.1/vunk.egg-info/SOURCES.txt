@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+vunk/__init__.py
+vunk.egg-info/PKG-INFO
+vunk.egg-info/SOURCES.txt
+vunk.egg-info/dependency_links.txt
+vunk.egg-info/top_level.txt
