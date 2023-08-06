@@ -1,0 +1,12 @@
+curibio.sdk-0.7.3-py3.8-nspkg.pth,sha256=JLSrfX25zh3iqoZDRaxD-l3njwJZyRe9EcM2CX4BUh4,544
+curibio/sdk/__init__.py,sha256=67WwYALVvr4c6JvpiWMQ5sOiLDCqioqNBFnoU_AkyIM,2501
+curibio/sdk/constants.py,sha256=LSaCXRAW1tDYtRsGhujAGd0UCzTNkkclXoREDa7NZKI,3785
+curibio/sdk/excel_well_file.py,sha256=dOVNbUIjuBsP53JxH8zRDxDCHfPXAVyIT6W6xtjq8Gc,7059
+curibio/sdk/exceptions.py,sha256=Tvt9gwLHS49Floxa1dKwQeQ3aW56muUuF1WTurbycic,92
+curibio/sdk/plate_recording.py,sha256=KuABKDW47YQNI4Ggqc0rmZUAIueP7ADDZe-PQPxeCrs,31782
+curibio.sdk-0.7.3.dist-info/LICENSE,sha256=dRvw8RqoD0To6-52uMxrdIxe6mgSUiLVSaENxvdHY8M,1065
+curibio.sdk-0.7.3.dist-info/METADATA,sha256=Ul9p2LbGK1onxIApE_l2qsTN1fpzFrbj7ErA_qs-3t8,1175
+curibio.sdk-0.7.3.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+curibio.sdk-0.7.3.dist-info/namespace_packages.txt,sha256=2S3sL--yFEruNQm_N5uXN1SrTfRtrTCoOTOsR2TUnQk,8
+curibio.sdk-0.7.3.dist-info/top_level.txt,sha256=2S3sL--yFEruNQm_N5uXN1SrTfRtrTCoOTOsR2TUnQk,8
+curibio.sdk-0.7.3.dist-info/RECORD,,
