@@ -1,0 +1,12 @@
+convclasses/__init__.py,sha256=BTheAQUcSDXaArBQSMkxdzONVskUFK5I84aRJGkJtus,864
+convclasses/_compat.py,sha256=C3sg_Gr9aaE6ByvediYKM1LMd6K8lveilRv_KcxCADk,3918
+convclasses/converters.py,sha256=G55VVhAhf-hlZV_5czdnlP8e1zuX33NzLZ74KFTYfRk,15405
+convclasses/disambiguators.py,sha256=HrTpP9gLVumL-d64DUU8rDfoAqDF4ijzYZJZlRGKX9o,1863
+convclasses/function_dispatch.py,sha256=CnfZULy3w8vWYUdjHTfcDJ7RhX9x4P_gCWgvwyL2iTc,1197
+convclasses/gen.py,sha256=3GJOczAYtu3RQcUng06MAAEMsLFYqz3Qb3g1rIbPtBQ,6438
+convclasses/multistrategy_dispatch.py,sha256=A9ii6sCIP-spZEqO9iQ-owuzCEFPv0udi7Fqq99GHBk,1734
+convclasses-1.1.0.dist-info/LICENSE,sha256=9fudHt43qIykf0IMSZ3KD0oFvJk-Esd9I1IKrSkcAb8,1074
+convclasses-1.1.0.dist-info/METADATA,sha256=6COTRA9chUjeSoJbIaBHvnaI9iLqBVdbf98wURlUPWA,11758
+convclasses-1.1.0.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+convclasses-1.1.0.dist-info/top_level.txt,sha256=ikb75vpGFsKbwTWut4P34OgQUWgNSDTfcWrDIwKaZIs,12
+convclasses-1.1.0.dist-info/RECORD,,
