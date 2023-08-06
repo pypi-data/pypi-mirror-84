@@ -1,0 +1,9 @@
+README.md
+setup.py
+./bin/schoology
+schoology/__init__.py
+schoology.egg-info/PKG-INFO
+schoology.egg-info/SOURCES.txt
+schoology.egg-info/dependency_links.txt
+schoology.egg-info/requires.txt
+schoology.egg-info/top_level.txt

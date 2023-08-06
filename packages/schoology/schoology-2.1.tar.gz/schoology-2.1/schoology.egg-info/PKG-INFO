@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: schoology
+Version: 2.1
+Summary: The Ultimate Schoology CLI
+Home-page: https://gadhagod.github.io/schoology
+Author: Aarav Borthakur
+Author-email: gadhaguy13@gmail.com
+License: UNKNOWN
+Description: # Schoology
+        The Ultimate Schoology CLI 
+        ### Installation
+        
+            pip3 install schoology
+        
+        ### Usage
+        
+        [Read the docs](https://gadhagod.github.io/schoology) for a complete guide.
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
