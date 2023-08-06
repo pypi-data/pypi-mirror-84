@@ -1,0 +1,23 @@
+farm==0.5.0
+fastapi
+uvicorn
+gunicorn
+pandas
+sklearn
+elasticsearch
+elastic-apm
+tox
+coverage
+langdetect
+python-multipart
+python-docx
+sqlalchemy_utils
+tika
+httptools
+nltk
+more_itertools
+
+[:sys_platform != "win32" and sys_platform != "cygwin"]
+psycopg2-binary
+faiss-cpu==1.6.3
+uvloop
