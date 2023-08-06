@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: literotica-dl
+Version: 0.0.1
+Summary: A tool to download stories from Literotica
+Home-page: https://github.com/fuzzyfiend/literotica_dl
+License: MIT
+Author: FuzzyFiend
+Author-email: 50032576+fuzzyfiend@users.noreply.github.com
+Requires-Python: >=3.6.9,<4.0.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: System :: Archiving :: Mirroring
+Requires-Dist: beautifulsoup4 (>=4.9.3,<5.0.0)
+Requires-Dist: requests (>=2.24.0,<3.0.0)
+Project-URL: Repository, https://github.com/fuzzyfiend/literotica_dl
+Description-Content-Type: text/markdown
+
+# literotica_dl
+
+# Credits
+
+This package was created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter) and the [fuzzyfiend/pythoncookie](https://github.com/fuzzyfiend/pythoncookie) project template.
+
