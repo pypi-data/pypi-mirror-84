@@ -1,0 +1,15 @@
+openpack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openpack/basepack.py,sha256=ydinDimT082ZmT25xleKB25JgM2IgFfhNlpR1CdRb18,21443
+openpack/editor.py,sha256=jaw4bVh35zlGOdF9E_AgpQQ7VWK6WRQGWFW5uUg0gGY,5076
+openpack/officepack.py,sha256=7Y9UD0X91ubpu0txiF84IoWOr6Lbb305hbYFy2d5EXg,336
+openpack/part-edit.py,sha256=RfnsrtCVLhUqNtGBfsPj2U4MZpewc4XKQW9hHdUYKDc,84
+openpack/test.py,sha256=zq819hiR2qgLSZElErvxSmGhUxydGoNXbZ7oF_j-Q_g,356
+openpack/util.py,sha256=Peh3N5HDP-TzDDYFyvJlmAL5VlZr2So2NNPNQaveO_A,802
+openpack/zip-listdir.py,sha256=IzON6-O7SjG51hQk8R9ixl3fFxN29kYzkRJRAM5BRvY,83
+openpack/zippack.py,sha256=p8vH86VfnztYPun5xgD-8xwcGBGvsdhZziZH_kws5U8,4607
+openpack-2.2.0.dist-info/LICENSE,sha256=2z8CRrH5J48VhFuZ_sR4uLUG63ZIeZNyL4xuJUKF-vg,1050
+openpack-2.2.0.dist-info/METADATA,sha256=OBnuGaKiJ18RilkKNh4asJvi9f824KymsTnevG7jziE,4067
+openpack-2.2.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+openpack-2.2.0.dist-info/entry_points.txt,sha256=x1OyPaEwQRJ9wAARCf6Zp2H9n9ppZHKyb8Z4oYznnhk,104
+openpack-2.2.0.dist-info/top_level.txt,sha256=Edfzb5ygzS5YFvsrq38DFcfO_VTO4agPnPmRkicxDws,9
+openpack-2.2.0.dist-info/RECORD,,
