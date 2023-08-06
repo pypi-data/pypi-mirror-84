@@ -1,0 +1,9 @@
+synr/__init__.py,sha256=j-8Nvx2A9C6t-DhTc74N-_whzPTc7Kfa7oUuErnW-ms,442
+synr/ast.py,sha256=Kju7dp97VDcxFkJxq9nPugzsanDHfmDN6fB37KbEHro,16403
+synr/compiler.py,sha256=oy0zEbiTC1Xd6QFkIp1vYGwP3ffRCzcpwa69PJ-utpo,25515
+synr/diagnostic_context.py,sha256=02F4yKqjKHYxwQZfbSucRfC9R5XqUq5iLdRJvxSerZY,2197
+synr/transformer.py,sha256=YHrVPYs1ASg8CAIRMp9Fu3qekHvWfKIzQ_5MtkkuNdM,2377
+synr-0.2.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+synr-0.2.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+synr-0.2.1.dist-info/METADATA,sha256=Lat7yxUU8DuKu9J_Wu7sjD2gWCRGUvR7D1M4p5iC0RQ,1173
+synr-0.2.1.dist-info/RECORD,,
