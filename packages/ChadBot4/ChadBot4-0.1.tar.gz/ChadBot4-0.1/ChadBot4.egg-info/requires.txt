@@ -1,0 +1,8 @@
+sentence_transformers==0.3.8
+pandas
+numpy
+regex
+nlpaug
+spacy
+en_core_web_md
+tqdm
