@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+main/__init__.py
+pycellsewew.egg-info/PKG-INFO
+pycellsewew.egg-info/SOURCES.txt
+pycellsewew.egg-info/dependency_links.txt
+pycellsewew.egg-info/top_level.txt

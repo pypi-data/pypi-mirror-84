@@ -1,0 +1,2 @@
+def term():
+    print('hi!')
