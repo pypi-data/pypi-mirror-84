@@ -1,0 +1,15 @@
+pixi/__init__.py,sha256=EZYEy9BjG7NvZN2fh-GkiWLNOKtOlzQvxYY879b5QyU,577
+pixi/__main__.py,sha256=dBh4DSKls9bbzDj3Sldf6-OvkDG5HIh4OD5olWk96Lc,915
+pixi/client.py,sha256=OzoNk-lbolDPbRm-mTKHAwruPaiSrs7-eXkqFUONmRA,1796
+pixi/commands.py,sha256=ll89y6NomKACJ0FZHJ0s9QScrnI1uszcZMrdnkYQ-Vc,6875
+pixi/config.py,sha256=5YaQUJfn_3fku-bzrmKZDSJvLArASOzb5DZzFNouVcs,1435
+pixi/database.py,sha256=tW42hyAu2NePJgVH3f-WpocAYC70ckpeQHEoMVLd2wM,2068
+pixi/errors.py,sha256=HM0Fyg80kI_0XsDcXQSSa1SVFkNXeTTIYfJtCGcIfJw,252
+pixi/migrations/0001.sql,sha256=24VbQ8AipjmvrHpTcgWJuS8q2chBArgBcJSolFZVZUU,296
+pixi/options.py,sha256=F0PNIM1z9v7MeVKWKofVmOIAn6nMLKXMMPTzqIl_eeI,1475
+pixi/util.py,sha256=6kezRWnsG7A3CV2vBP6TUow-rwMC6AdQCe-sV3UmPVA,5173
+pixi-1.0.1.dist-info/entry_points.txt,sha256=Q1qZJy-c_EwTF3pZ3G3KlZnUsDBlCIOMktKzpg2lsLM,42
+pixi-1.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pixi-1.0.1.dist-info/WHEEL,sha256=Q99itqWYDhV793oHzqzi24q7L7Kdiz6cb55YDfTXphE,84
+pixi-1.0.1.dist-info/METADATA,sha256=xfwCy77hAnU1FEzhK9ALFjOIu8IxxQxq0kVUxqIMIAI,4686
+pixi-1.0.1.dist-info/RECORD,,
