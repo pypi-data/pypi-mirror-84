@@ -1,0 +1,3 @@
+[flask.commands]
+run = aioflask.cli:run
+
