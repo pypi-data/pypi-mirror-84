@@ -1,0 +1,9 @@
+pkgs/Utilities.py,sha256=o53uD75swd3_HDPa4ckDfzkynTT0iWZoUtTiXDM_zxs,12000
+pkgs/__init__.py,sha256=l7LVQlvJRLFc6FkzhffWQgBTQkuP5yzhfty8s-VTdYA,24
+pytorch_vision_utils/Utilities.py,sha256=o53uD75swd3_HDPa4ckDfzkynTT0iWZoUtTiXDM_zxs,12000
+pytorch_vision_utils/__init__.py,sha256=0sSYJOApbsbsCeky8oeBRqyS3wP9td5l7G77TUEnIE0,99
+pytorch_vision_utils-0.1.0.dist-info/LICENSE,sha256=Gv1EP5bPhHZlBlwnQuHVej1YGmiprCSA6ydIyghmpM0,1091
+pytorch_vision_utils-0.1.0.dist-info/METADATA,sha256=7-dENl-2Dc59cysDodVKoD-CW4xfMFgXoOSXmZB37Gk,938
+pytorch_vision_utils-0.1.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+pytorch_vision_utils-0.1.0.dist-info/top_level.txt,sha256=bln7cI0x6kdAZYUwyZkzo1UQwvQgnS6O9St4FC3k2aI,21
+pytorch_vision_utils-0.1.0.dist-info/RECORD,,
