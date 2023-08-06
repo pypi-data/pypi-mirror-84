@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: linuxvoice
+Version: 1.3.1
+Summary: A small package for downloading LINUXVOICE issues
+Home-page: https://github.com/ahiliation/DOLLECT
+Author: Jeffrin Jose T
+Author-email: jeffrin@rajagiritech.edu.in
+License: UNKNOWN
+Description: <ins>__DOLLECT__</ins>
+        
+        * collecting free magazine/journal from internet
+        
+        <ins>__USAGE :__</ins>
+        
+        
+        * To download 32 free issues of LINUXVOICE
+        > python3 -m linuxvoice.linuxvoice lv
+        
+        * To select and download  1 free  issue 
+        > python3 linuxvoice.linuxvoice lv \<issue number\>
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
