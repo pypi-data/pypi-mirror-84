@@ -1,0 +1,10 @@
+Deutschconjugation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Deutschconjugation/cli.py,sha256=ZLm2MBLr_aXkh4_NvcsHx65FJdVhqYSG-C7Ne55-zNc,998
+Deutschconjugation/conjugator.py,sha256=2jpAN7pHwMfvPSPHy6NEPdrfcZngD3AO6wwF9jcf8Dw,4061
+Deutschconjugation/verbs.csv,sha256=upy_nFpx-HI55XXgWQX5qtnFcBPwFEw2DNTX5BaC1Eo,792394
+Deutschconjugation/version.py,sha256=g1uaClbMzU8nLPR7SuCYkmxjvbMAvsVHfZrNKHDT1ZQ,73
+console_conjugator-0.0.5.dist-info/LICENSE,sha256=B7gh9yrcQo8BiC28JLvB7s1RKVzIB-vwqBdL6aAAr-A,35178
+console_conjugator-0.0.5.dist-info/METADATA,sha256=ZDcENZhnE8PKgp4xR2oFZLnQ4WvW0WeueYjkabiWy7E,1755
+console_conjugator-0.0.5.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+console_conjugator-0.0.5.dist-info/top_level.txt,sha256=oiq6A9CV0yXSPdrWqQoML3bSZmTsBSApsSMoGiHpiBw,19
+console_conjugator-0.0.5.dist-info/RECORD,,
