@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+api_testing.egg-info/PKG-INFO
+api_testing.egg-info/SOURCES.txt
+api_testing.egg-info/dependency_links.txt
+api_testing.egg-info/requires.txt
+api_testing.egg-info/top_level.txt
+helper/__init__.py
+helper/authentication.py
+utils/__init__.py
+utils/configuration.py
+utils/http.py
