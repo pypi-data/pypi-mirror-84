@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: isr-meta
+Version: 1.0
+Summary: python meta package of the intelligent soft robotics laboratory
+Home-page: https://github.com/vincentberenz/lightargs.git
+Author: Vincent Berenz
+Author-email: vberenz@tuebingen.mpg.de
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: argcomplete
+Requires-Dist: colorama
+Requires-Dist: treep
+Requires-Dist: lightargs
+Requires-Dist: fyplot
+Requires-Dist: PySide2
+Requires-Dist: roboball2d
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+
