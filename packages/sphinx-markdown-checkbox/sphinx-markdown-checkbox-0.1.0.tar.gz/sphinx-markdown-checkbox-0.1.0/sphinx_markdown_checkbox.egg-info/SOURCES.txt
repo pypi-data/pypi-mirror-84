@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+sphinx_markdown_checkbox/__init__.py
+sphinx_markdown_checkbox.egg-info/PKG-INFO
+sphinx_markdown_checkbox.egg-info/SOURCES.txt
+sphinx_markdown_checkbox.egg-info/dependency_links.txt
+sphinx_markdown_checkbox.egg-info/requires.txt
+sphinx_markdown_checkbox.egg-info/top_level.txt
