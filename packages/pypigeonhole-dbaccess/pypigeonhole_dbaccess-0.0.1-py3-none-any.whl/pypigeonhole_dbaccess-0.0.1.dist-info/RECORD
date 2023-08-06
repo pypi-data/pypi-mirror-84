@@ -1,0 +1,10 @@
+pypigeonhole_dbaccess/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypigeonhole_dbaccess/app_setup.py,sha256=cERTfDP7zCbPRAbrINccCctAWxoiRonPIgHjrrCBu28,2635
+pypigeonhole_dbaccess/bulk_uploader.py,sha256=M0KwnMllrYv0smHSmMh3bTOctwCm1yGJtx121ACegsk,5842
+pypigeonhole_dbaccess/obj_mapper.py,sha256=IxIyphycqUMy4ST0Gkk5T2AbEukYADRs-FPYzjDZC_4,2241
+pypigeonhole_dbaccess/tx_manager.py,sha256=mDbPa1FBI4bKnfYWNYk9xhqvWN-iiFHsUZFjqUkYQmM,1917
+pypigeonhole_dbaccess-0.0.1.dist-info/LICENSE.md,sha256=FiM9IiFfOaaliabwKyEyvrJE0GuR-v2x0GQKDZoy4vM,1089
+pypigeonhole_dbaccess-0.0.1.dist-info/METADATA,sha256=4s0SMRzpp0aYYxLbVzD6LSqES6F5LWFZfpsUh2TkeFQ,1336
+pypigeonhole_dbaccess-0.0.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+pypigeonhole_dbaccess-0.0.1.dist-info/top_level.txt,sha256=Ti-1EZy2rKHQIYNtRuWDdXmKkLYtQW2nLZj24yGvUzA,22
+pypigeonhole_dbaccess-0.0.1.dist-info/RECORD,,
