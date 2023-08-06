@@ -1,0 +1,9 @@
+bavard_ml_common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bavard_ml_common/mlops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bavard_ml_common/mlops/web_service.py,sha256=N_nGPhimFYXR-ZwZLw4lwnpy4-YtONDXn3SQCbobMas,4461
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_webservice.py,sha256=9Tu0vxlr5WcKS4lafs-97dVDBP1AsOHssVK1ccE0BRo,5079
+bavard_ml_common-0.0.1.dist-info/METADATA,sha256=lp8pzw03nWT7gM-8GODgTzk3oyQrnLwgK8VnQjgphLE,2658
+bavard_ml_common-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+bavard_ml_common-0.0.1.dist-info/top_level.txt,sha256=7vxYGdDoJ5-CPIvBCGLGn6Kp1X1SglORcR9FFeiu1kw,22
+bavard_ml_common-0.0.1.dist-info/RECORD,,
