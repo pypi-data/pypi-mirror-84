@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: macprefs
+Version: 0.0.4
+Summary: Command and library to export macOS preferences.
+Home-page: https://github.com/Tatsh/macprefs
+Author: Andrew Udvare
+Author-email: audvare@gmail.com
+License: LICENSE.txt
+Description: # macprefs
+        
+        Not documented yet.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
