@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Hey-World
+Version: 0.0.6
+Summary: Simple hi world pip package
+Home-page: https://github.com/RahulnKumar/Hi-World
+Author: Rahul Kumar
+Author-email: rahulbits2015@gmail.com
+License: MIT
+Download-URL: https://pypi.org/project/heyworld/
+Keywords: Hey world
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# hello-world
+A sample repo for creating a python pip package
+
+
+
+
