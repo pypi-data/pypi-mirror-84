@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "gnome-extension-uploader"
+version = "0.1.6"
+description = ""
+readme = "README.md"
+repository = "https://github.com/SebastianLuebke/gnome-extension-uploader"
+authors = ["Sebastian Noel Lübke <sebastian@luebke.io>"]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.24.0"
+typer = "^0.3.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0.2"
+
+[tool.poetry.scripts]
+geu = "gnome_extension_uploader.cli:app"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
