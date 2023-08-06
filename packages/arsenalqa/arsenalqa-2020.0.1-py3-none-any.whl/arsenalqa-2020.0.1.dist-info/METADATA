@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: arsenalqa
+Version: 2020.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/wgnet/arsenalqa
+Author: Wargaming.net QA group
+License: Apache License 2.0
+Keywords: TESTING,MICROSERVICES
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Testing
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Requires-Dist: python-dateutil (==2.8.1)
+Provides-Extra: amqp
+Requires-Dist: arsenalqa-amqp (>=2020.0.1) ; extra == 'amqp'
+Provides-Extra: db
+Requires-Dist: arsenalqa-db (>=2020.0.1) ; extra == 'db'
+Provides-Extra: http
+Requires-Dist: arsenalqa-http (>=2020.0.1) ; extra == 'http'
+Provides-Extra: websocket
+Requires-Dist: arsenalqa-websocket (>=2020.0.1) ; extra == 'websocket'
+
+UNKNOWN
+
+
