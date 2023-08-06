@@ -1,0 +1,13 @@
+README.md
+setup.py
+./litex/__init__.py
+./litex/regon/__init__.py
+./litex/regon/envelopes.py
+./tests/test_regon_api.py
+litex.regon.egg-info/PKG-INFO
+litex.regon.egg-info/SOURCES.txt
+litex.regon.egg-info/dependency_links.txt
+litex.regon.egg-info/namespace_packages.txt
+litex.regon.egg-info/not-zip-safe
+litex.regon.egg-info/requires.txt
+litex.regon.egg-info/top_level.txt
