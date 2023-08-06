@@ -1,0 +1,9 @@
+build/
+dist/
+*~
+*.pyc
+.DS_Store
+.coverage
+.idea/
+tools_barebone.egg-info/
+.vscode/
