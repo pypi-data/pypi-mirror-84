@@ -1,0 +1,11 @@
+qdsl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qdsl/__main__.py,sha256=ISishCiJsrURF163IgBJyzopWnY4UWdvlTW0blgIG4I,2180
+qdsl/boolean.py,sha256=a8VmWXmKFdyAkd1VU0lvK4sCmhzRrmxxPHIXHrRkGEo,3993
+qdsl/queryable.py,sha256=EEpL7oZOsGE9VS55dcCgMdbpPQikVI5g48DcOTwVcGw,16810
+qdsl/tree.py,sha256=uPjVAbZFqfPImCCULXnx5mTPb3BNeECmYjqXv2-fxEw,2717
+qdsl-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+qdsl-0.1.0.dist-info/METADATA,sha256=_vQictK9evHBN4zm7PufG2hj85ded0vPdMTJxbsn-ao,2105
+qdsl-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+qdsl-0.1.0.dist-info/entry_points.txt,sha256=v2i7iDAdycTLRFHu3Y9d8wh0GEYZKJ_P6mr9RFzpCAE,44
+qdsl-0.1.0.dist-info/top_level.txt,sha256=NGwS8_ZxH-sUXQqNdJUaiY6KLtbA3wtYvIyPZ2fBxrk,5
+qdsl-0.1.0.dist-info/RECORD,,
