@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pyboss
+Version: 0.0.6
+Summary: Manage your app's configurations from multiple sources, e.g. Env, File, Redis, MongoDB, ...
+Home-page: https://github.com/ehsundar/pyboss
+Author: Amir Ehsandar
+Author-email: ehsandaramir@gmail.com
+License: GPL-3.0-only
+Platform: UNKNOWN
+Requires-Dist: attrs (==20.1.0)
+Requires-Dist: jsonmerge (==1.7.0)
+Requires-Dist: jsonschema (==3.2.0)
+Requires-Dist: pymongo (==3.11.0)
+Requires-Dist: pyrsistent (==0.16.0)
+Requires-Dist: PyYAML (==5.3.1)
+Requires-Dist: redis (==3.5.3)
+Requires-Dist: six (==1.15.0)
+
+UNKNOWN
+
+
