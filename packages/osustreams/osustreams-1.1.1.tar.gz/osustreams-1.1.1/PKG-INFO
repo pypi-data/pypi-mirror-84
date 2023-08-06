@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: osustreams
+Version: 1.1.1
+Summary: find stream maps in your osu library
+Home-page: https://github.com/upgradeQ/OSU-STREAM-DETECTOR
+License: MPL-2.0
+Keywords: osu,stream,export,beatmap,search
+Author: upgradeq
+Author-email: noreply@example.com
+Requires-Python: >=3.6,<4.0
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Project-URL: Documentation, https://github.com/upgradeQ/OSU-STREAM-DETECTOR/blob/master/README.md
+Project-URL: Repository, https://github.com/upgradeQ/OSU-STREAM-DETECTOR
+Description-Content-Type: text/markdown
+
+# OSU-STREAM-DETECTOR
+- An osu tool for finding stream maps in your map library
+- Try online : https://osufiles.github.io/stream-map/ 
+
+# Install 
+- python - Python 3.6+
+- download is_it_stream.py or `pip install osustreams`
+
+# Usage
+As a single is_it_stream.py file
+- run from console , `python is_it_stream.py`  with optional arguments
+- check output file with name `Stream maps[{min_bpm}-{max_bpm}] {timestamp}.txt`
+
+As a pip package 
+```
+usage: osustreams [-h] [--collection] [-a A] [-b B]
+optional arguments:
+  -h, --help        show this help message and exit
+  --collection, -c  export to in-game collection
+  -a A              Min bpm
+  -b B              Max bpm
+  --ignore, -i      ignore bad unicode
+```
+- example :`osustreams -a 110 -b 170 -c` 
+- this will create in-game collection with beatmaps where a = min BPM , b = max BPM
+
+stream_detector.ini - should be located in Lib/site-packages (if you wish to edit path to osu/songs) 
+Note: As of current, this tool can only scan maps from around 2016-present due to differences in file formatting
+
+# This is a fork
+https://github.com/iMeisa/OSMF
+
