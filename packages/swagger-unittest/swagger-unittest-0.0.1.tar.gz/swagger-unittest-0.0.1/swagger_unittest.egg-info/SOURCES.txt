@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+swagger_unittest/__init__.py
+swagger_unittest.egg-info/PKG-INFO
+swagger_unittest.egg-info/SOURCES.txt
+swagger_unittest.egg-info/dependency_links.txt
+swagger_unittest.egg-info/requires.txt
+swagger_unittest.egg-info/top_level.txt
