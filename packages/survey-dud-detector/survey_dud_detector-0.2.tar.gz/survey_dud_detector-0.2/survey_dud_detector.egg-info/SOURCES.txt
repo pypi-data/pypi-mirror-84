@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+survey_dud_detector/__init__.py
+survey_dud_detector/dud_detector.py
+survey_dud_detector.egg-info/PKG-INFO
+survey_dud_detector.egg-info/SOURCES.txt
+survey_dud_detector.egg-info/dependency_links.txt
+survey_dud_detector.egg-info/top_level.txt
