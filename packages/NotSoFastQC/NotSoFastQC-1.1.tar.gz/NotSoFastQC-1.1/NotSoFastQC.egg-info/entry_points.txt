@@ -1,0 +1,3 @@
+[console_scripts]
+NotSoFastQC = NotSoFastQC.__main__:main
+
