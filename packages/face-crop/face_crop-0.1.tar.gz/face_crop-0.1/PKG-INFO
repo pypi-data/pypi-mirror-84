@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: face_crop
+Version: 0.1
+Summary: This will automatically identify faces from image and crop faces region in image
+Home-page: https://github.com/dulangaheshan/python_face_crop
+Author: dulanga jayarathne
+Author-email: dulangah2@gmail.com
+License: MIT
+Download-URL: https://github.com/dulangaheshan/python_face_crop/releases/tag/0.1
+Description: UNKNOWN
+Keywords: face detection,python,machine learning,face crop,auto_crop
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
