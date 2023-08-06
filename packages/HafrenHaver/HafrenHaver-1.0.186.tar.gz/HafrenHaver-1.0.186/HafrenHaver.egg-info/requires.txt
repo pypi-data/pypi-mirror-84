@@ -1,0 +1,11 @@
+
+[dev]
+setuptools
+wheel
+twine
+
+[doc]
+sphinx
+
+[test]
+pytest
