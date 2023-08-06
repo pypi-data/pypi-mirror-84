@@ -1,0 +1,11 @@
+shipdataprocess/__init__.py,sha256=LKfc52fXrT_UZLasoO9979azSTnRAxKUkzm0Gq1PGoo,844
+shipdataprocess/collapse.py,sha256=INeRPp784i1cu8kleqpgJYJz-NinyxRCZ1chzJFhC-4,3645
+shipdataprocess/normalize.py,sha256=eLznexng7hrn1_DANG0apiUOa_n8VXiFoNM_UCed3-k,7287
+shipdataprocess/shiptype.py,sha256=_eQxh1EgmPMf395UxB63jVu-gyckGFqnaE90oxqe6PA,14554
+shipdataprocess/standardize.py,sha256=wu16kLBi2Xcf2zIpbYeoBKeyWu1ZUNCCU-jh2_KZjfE,14706
+shipdataprocess-0.6.15.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+shipdataprocess-0.6.15.dist-info/METADATA,sha256=ZggOdWrutl3XHvpwT1biuFOFVkrVgw1k7OOjfWm8Yck,1751
+shipdataprocess-0.6.15.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+shipdataprocess-0.6.15.dist-info/top_level.txt,sha256=Isy-K71G02UFtQTCwq7OC9BisnG9j8fcde2SughEZY8,16
+shipdataprocess-0.6.15.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+shipdataprocess-0.6.15.dist-info/RECORD,,
