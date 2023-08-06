@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: wagtail-localize
+Version: 0.9.1
+Summary: Translation plugin for Wagtail CMS
+Home-page: UNKNOWN
+Author: Karl Hobley
+Author-email: karl@kaed.uk
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: testing
