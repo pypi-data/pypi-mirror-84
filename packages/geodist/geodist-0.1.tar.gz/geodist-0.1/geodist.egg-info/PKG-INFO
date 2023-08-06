@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: geodist
+Version: 0.1
+Summary: GeoDist Package
+Home-page: https://github.com/dorhay/geodist
+Author: Dor Hay
+Author-email: dorhay@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.7
