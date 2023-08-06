@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tai64converter
+Version: 0.0.1
+Summary: Encode and decode tai64 values to datetime
+Home-page: https://github.com/MikkoFinellEdupower/tai64converter/tree/master/
+Author: Mikko Finell
+Author-email: mikko.finell@edupower.fi
+License: Apache Software License 2.0
+Description: # tai64converter
+        
+        Functions to encode / decode tai64 values to / from datetime objects.
+        
+        The functions are licenced from [Itamar Turner-Trauring](https://github.com/itamarst). For more information, see the licence information in the notebook.
+        
+Keywords: tai64
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

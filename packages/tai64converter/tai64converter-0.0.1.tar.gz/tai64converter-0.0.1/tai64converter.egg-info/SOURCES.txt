@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+tai64converter/__init__.py
+tai64converter/_nbdev.py
+tai64converter/core.py
+tai64converter.egg-info/PKG-INFO
+tai64converter.egg-info/SOURCES.txt
+tai64converter.egg-info/dependency_links.txt
+tai64converter.egg-info/entry_points.txt
+tai64converter.egg-info/not-zip-safe
+tai64converter.egg-info/requires.txt
+tai64converter.egg-info/top_level.txt
