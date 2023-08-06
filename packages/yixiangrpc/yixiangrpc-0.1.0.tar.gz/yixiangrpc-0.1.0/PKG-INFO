@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: yixiangrpc
+Version: 0.1.0
+Summary: Generate protobuf and grpc stub python files to a package.
+Author: duyixian
+Author-email: duyixian@meideng.net
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: grpcio (>=1.33.2,<2.0.0)
+Requires-Dist: grpcio-tools (>=1.33.2,<2.0.0)
