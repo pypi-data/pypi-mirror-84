@@ -1,0 +1,12 @@
+molstruct/__init__.py,sha256=FKCONVlVUSq0rIQdWaNO2Mt0aC9sH0WIoRaBD88DkKo,313
+molstruct/__main__.py,sha256=JnyZw-UU6yuNkfbo7DlI89Ov6H2sbVP4-iLxWzVHaq0,6785
+molstruct/names.py,sha256=p3soiB_auIvxyOMUkWFTORERgcNHn4RVECR-Bo2FDuA,927
+molstruct/outputs.py,sha256=XHASIdtEFnUMKu4Vk0te2VIy-cnMf_mP7FkgLKqR8vM,10578
+tests/__init__.py,sha256=Lwo_Gw9W2mj7Ubka6uW2Fi6gApneMFMwuU3yV7HgJ90,39
+tests/test_outputs.py,sha256=lWpEtG985AuygcsCLnbIhjUgI9d2i2ctDFxRYpWwB9A,3811
+molstruct-2.0.1.dist-info/LICENSE,sha256=I-Z2ElOtgtskGiiqu923TBU53suc3mTT9IACDOSS2fc,1079
+molstruct-2.0.1.dist-info/METADATA,sha256=iZ8qLIquE1TjxsfwwxiO543J1SKI6-JaimKXKIeX6Bw,12303
+molstruct-2.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+molstruct-2.0.1.dist-info/entry_points.txt,sha256=vu-TbQiCnnqvsoKNg5CKA74Gnk-xTKgRJppuMHeurbQ,55
+molstruct-2.0.1.dist-info/top_level.txt,sha256=-Fy7bXKctKMcrIO2wOerOdFLRv28FPFLRMEp7y68gNE,16
+molstruct-2.0.1.dist-info/RECORD,,
