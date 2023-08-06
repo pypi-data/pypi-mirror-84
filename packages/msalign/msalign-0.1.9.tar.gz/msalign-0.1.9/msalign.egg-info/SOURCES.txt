@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+msalign/__init__.py
+msalign/_version.py
+msalign/align.py
+msalign/utilities.py
+msalign.egg-info/PKG-INFO
+msalign.egg-info/SOURCES.txt
+msalign.egg-info/dependency_links.txt
+msalign.egg-info/requires.txt
+msalign.egg-info/top_level.txt
