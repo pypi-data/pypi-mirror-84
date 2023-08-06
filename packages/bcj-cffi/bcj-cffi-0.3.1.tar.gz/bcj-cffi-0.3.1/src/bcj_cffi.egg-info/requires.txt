@@ -1,0 +1,9 @@
+cffi>=1.14.0
+
+[:python_version < "3.8"]
+importlib_metadata
+
+[test]
+pytest
+pytest-cov
+coverage[toml]>=5.2
