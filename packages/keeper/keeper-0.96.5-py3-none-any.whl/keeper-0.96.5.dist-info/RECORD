@@ -1,0 +1,10 @@
+keeper/__init__.py,sha256=fjFd5F6LJdudIkxrnt6MHmd7p1nPSQswnC6i0ATd42U,106
+keeper/keeper.py,sha256=gN2v8F53y6iOKwF9yDT2c4dytpBaqLBENlVzjC8Jf2Q,11225
+keeper/version.py,sha256=cqLhdIZt6WKtxPBMwMnjyeqP8lzPkFJf4qRXtAoXJxw,73
+keeper/storage/__init__.py,sha256=KGpw_7ESm2eGWtJxeBrJNHcOJx3eVRlDQ8Uqo8QU-7U,19
+keeper/storage/filestorage.py,sha256=1mFenOFeMhE42aMQqbE_4LkSqHjZ5E2PrsfhJTrcLMA,6916
+keeper-0.96.5.dist-info/LICENSE.txt,sha256=YOn28H0-fx6yUL5QjJep5rfZp-FQtAd27ZR_QjOC8d8,1061
+keeper-0.96.5.dist-info/METADATA,sha256=pFi4P5Aw8QoID9Vq9C-atksqrAiJBKfzN7MQa80iORw,1851
+keeper-0.96.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+keeper-0.96.5.dist-info/top_level.txt,sha256=i-Q5rFtmVzg2zk6y-MchwfeBmkVhxI0gt5283ttVCdU,7
+keeper-0.96.5.dist-info/RECORD,,
