@@ -1,0 +1,3 @@
+[console_scripts]
+xls2xlsx = xls2xlsx.cli:main
+
