@@ -1,0 +1,17 @@
+aiida_orca/__init__.py,sha256=WiMfu61SO2XCfgGBGVRQVJf-PQIcyGZ0MwMkzvuQpmA,47
+aiida_orca/calculations/__init__.py,sha256=FikQNi-s87MgZqipFaqQ5X9ajztn0RWdtszDr0NWEAo,104
+aiida_orca/calculations/orca_asa.py,sha256=7kdiXHRe6CA-rZjE0EuohSnRUZWfDyrWL1LS8yZjpQo,1414
+aiida_orca/calculations/orca_main.py,sha256=v0fCZAqjq6awl_o7K0VqwQHvdmC-EmvSbhv6j5_ifls,5087
+aiida_orca/parsers/__init__.py,sha256=c5vaVe1TYn9onbNhaA1txC0PGwxYA2zjOY3C3D5TsEI,3661
+aiida_orca/utils/__init__.py,sha256=DscYet9WFPSBC0PFSgrOIjQYwceD5jC59QghZHYjzRg,70
+aiida_orca/utils/input_generator.py,sha256=jnnDFoOkAe7p8uZBFEfnEE_bjOGSWIryKgfplqYRkZ4,1908
+aiida_orca/workchains/__init__.py,sha256=oEhqWLfq1GSSlYsjTY9kPQrRalDuFBceRPoXtym_TxI,71
+aiida_orca/workchains/base.py,sha256=GptH74Ben2_JcMZdM2MuZPaUZhiGDM81T-j1ZsSO0ig,1850
+aiida_orca/workchains/relax.py,sha256=_go9QdCVIr-6eqrojr9by0WCLvWcQO2qzRa5WevitEY,1058
+aiida_orca-0.5.0.data/data/setup.json,sha256=lgBdWGjBxlpq3IptqxNtoXheWPVsqTmcWbKuALp31Ik,1725
+aiida_orca-0.5.0.dist-info/LICENSE,sha256=5AabXi8O_Vxi9fmv4iqkgT-gkv67zlUzj_9DndOKJsU,1078
+aiida_orca-0.5.0.dist-info/METADATA,sha256=hyBgUGzukUp6juQrYBjFKhO6SQcU8i3hbM-xyW7xP78,5418
+aiida_orca-0.5.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+aiida_orca-0.5.0.dist-info/entry_points.txt,sha256=HRsz6neQT26Omnpn8TcGWPoZlT9E3QIz9WITtszqNFE,269
+aiida_orca-0.5.0.dist-info/top_level.txt,sha256=VJWOKvOeFjn57zwdMfaeNYOe_zojpLXQoidHkChP0Bc,11
+aiida_orca-0.5.0.dist-info/RECORD,,
