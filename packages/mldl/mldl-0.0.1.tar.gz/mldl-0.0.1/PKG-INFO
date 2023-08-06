@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mldl
+Version: 0.0.1
+Summary: Machine Learning Data Lineage tool (MLDL)
+License: MIT
+Author: Vlad Kolesnikov
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=5.3,<6.0)
+Requires-Dist: azure-storage-blob (>=12.5,<13.0)
+Requires-Dist: pytest (>=6.1,<7.0)
