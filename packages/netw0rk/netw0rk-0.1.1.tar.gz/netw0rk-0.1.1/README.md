@@ -1,0 +1,40 @@
+# Netw0rk
+Author(s):  Daan van den Bergh<br>
+Copyright:  © 2020 Daan van den Bergh All Rights Reserved<br>
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/vandenberghinc/storage/blob/master/images/logo.png?raw=true" alt="Bergh-Encryption" width="50"/>
+</p>
+
+## Installation
+	pip3 install netw0rk --upgrade
+
+## Python Examples.
+
+### The FireWall object class
+The FireWall() object class.
+```python
+
+# import the package.
+import netw0rk
+
+# retrieve the firewall information.
+response = netw0rk.firewall.info()
+
+# disable the firewall.
+response = netw0rk.firewall.disable()
+
+# enable the firewall.
+response = netw0rk.firewall.enable()
+
+# set the default port action.
+response = netw0rk.firewall.set_default(deny=True)
+
+# allow a port.
+response = netw0rk.firewall.allow(2200)
+
+# deny a port.
+response = netw0rk.firewall.deny(2200)
+
+```
