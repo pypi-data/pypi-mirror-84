@@ -1,0 +1,10 @@
+mentaws/__init__.py,sha256=6G_giX6Ucuweo7w5OiftoXmbNLoqiU_soXJoU8aiLmY,22
+mentaws/aws_operations.py,sha256=DYA7e5HhvrD1kSfteHl2rce5k8Ba4x-3JALgr2FlkNw,2843
+mentaws/config.py,sha256=AmS8k9vHkwtCo66ZyovcsSVKMG2pSRIcOuKxvS7Xqu8,2222
+mentaws/cryptographic_operations.py,sha256=IQND_hTS9djBfJVqpeN3qTtvcOj_zwKVNdaEH-NEK38,1765
+mentaws/main.py,sha256=6epEIqXnBE5LtEOfIYjOF4NvId610-i3_u91DwIJGt8,6119
+mentaws/operations.py,sha256=oxFx8_OnEx4ZaYSyPLhsqsitddiatBf6urmd0Qb6dvQ,7478
+mentaws-0.4.4.dist-info/entry_points.txt,sha256=3TqKpXnvi6gr2YfJGS5AWQ1jdPwGTXbAqWI-aJEOaY0,67
+mentaws-0.4.4.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+mentaws-0.4.4.dist-info/METADATA,sha256=KvUJhT1rnz3-TmO2UIqKW1DQk6-ytdI9wg_bmB7lm3o,580
+mentaws-0.4.4.dist-info/RECORD,,
