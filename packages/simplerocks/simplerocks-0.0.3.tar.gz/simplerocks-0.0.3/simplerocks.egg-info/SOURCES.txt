@@ -1,0 +1,9 @@
+README.md
+setup.py
+simplerocks/__init__.py
+simplerocks/rocks.py
+simplerocks.egg-info/PKG-INFO
+simplerocks.egg-info/SOURCES.txt
+simplerocks.egg-info/dependency_links.txt
+simplerocks.egg-info/requires.txt
+simplerocks.egg-info/top_level.txt
