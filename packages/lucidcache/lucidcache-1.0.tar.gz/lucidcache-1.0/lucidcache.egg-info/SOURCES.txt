@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+lucidcache/__init__.py
+lucidcache.egg-info/PKG-INFO
+lucidcache.egg-info/SOURCES.txt
+lucidcache.egg-info/dependency_links.txt
+lucidcache.egg-info/not-zip-safe
+lucidcache.egg-info/top_level.txt
