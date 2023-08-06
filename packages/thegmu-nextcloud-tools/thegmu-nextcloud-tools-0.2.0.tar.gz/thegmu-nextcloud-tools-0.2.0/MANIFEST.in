@@ -1,0 +1,4 @@
+include Makefile LICENSE.txt README.rst VERSION data/thegmu_nextcloud_git_sync.template.yaml
+global-exclude __pycache__
+global-exclude *.py[co]
+global-exclude .git
