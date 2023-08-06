@@ -1,0 +1,10 @@
+keras_lmu/__init__.py,sha256=DOdT_bpAY6V6pcmqOAVJEkUKRilDJS6rAKsSvbXHDSg,298
+keras_lmu/layers.py,sha256=u9wESyLIMfJx8oj7Z_ElLG7apAi9YAGIyF5-oCKI-60,25283
+keras_lmu/version.py,sha256=g3yDLxPVvEGTCcJMsSBb5lhay1YJOm4Sr_qbYBXAmzc,485
+keras_lmu/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+keras_lmu/tests/test_layers.py,sha256=dLBhqjydbEZIQbX3nzT8OHC-vHRDqnGUbFip--gaU6k,10755
+keras_lmu-0.3.0.dist-info/LICENSE.rst,sha256=X5sHqqbZu5VjJ6IUEP_Ku8QFngDw1SYJhmAoNtvJWS8,1128
+keras_lmu-0.3.0.dist-info/METADATA,sha256=R8KoLwz10z5hZ7oOfP3fedN6OMSru8cRdvtsgGW2Gas,9600
+keras_lmu-0.3.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+keras_lmu-0.3.0.dist-info/top_level.txt,sha256=MFwLxiUcq7vokVeNJbrq4BsEKvXP80-pqGfRiicrtZ8,10
+keras_lmu-0.3.0.dist-info/RECORD,,
