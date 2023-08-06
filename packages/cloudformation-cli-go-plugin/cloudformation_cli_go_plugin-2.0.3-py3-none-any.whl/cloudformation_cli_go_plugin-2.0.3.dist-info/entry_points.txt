@@ -1,0 +1,6 @@
+[rpdk.v1.languages]
+go = rpdk.go.codegen:GoLanguagePlugin
+
+[rpdk.v1.parsers]
+go = rpdk.go.parser:setup_subparser
+
