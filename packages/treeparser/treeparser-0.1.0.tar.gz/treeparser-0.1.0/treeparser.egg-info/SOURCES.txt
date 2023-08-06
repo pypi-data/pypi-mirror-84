@@ -1,0 +1,6 @@
+README.md
+setup.py
+treeparser.egg-info/PKG-INFO
+treeparser.egg-info/SOURCES.txt
+treeparser.egg-info/dependency_links.txt
+treeparser.egg-info/top_level.txt
