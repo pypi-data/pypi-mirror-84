@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: cat-reporting-specs
+Version: 0.0.3
+Summary: Consolidated Audit Trail specs defined in Python code
+Home-page: https://github.com/kamikaze/cat-reporting-specs/
+Author: Oleg Korsak
+Author-email: kamikaze.is.waiting.you@gmail.com
+License: gpl3
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst; charset=UTF-8
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+===================
+cat-reporting-specs
+===================
+
+
+Consolidated Audit Trail specs defined in Python code
+
+
+Description
+===========
+
+Helper stuff
+
+
