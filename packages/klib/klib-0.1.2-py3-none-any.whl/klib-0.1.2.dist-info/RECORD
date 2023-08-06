@@ -1,0 +1,17 @@
+klib/__init__.py,sha256=HQC0IgqXrPW_4q0-DPI--RWOoahuXBlPrgt8JFWwbek,1268
+klib/_version.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+klib/clean.py,sha256=yqSNwHgCwUuoJdOqKEHtpzjbQoryhnXeKXuWJIUjFUE,28394
+klib/describe.py,sha256=_P5LtwAVfeu7aPF12NOZuwi0u2JuTWcUV6zQQcoSqFA,26756
+klib/ingest.py,sha256=z0hJc9OKuneoYK5z46O0x5cniNeMT5vMlqnZ6PUa14Q,79
+klib/preprocess.py,sha256=p6hEhB7ccZwmhT4cUwRFuL5kVE4fzz5pZCXhVkPhqiE,8699
+klib/utils.py,sha256=KgyUe4KJs6MLB2aC66KDA6AoeSBp0YWGcYgBZkQ4u5g,9511
+klib/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+klib/tests/test_clean.py,sha256=N2eXL7zcRykq1BNYGxr4O-_OevBj1Pjbalx-GKwK5Hk,8666
+klib/tests/test_describe.py,sha256=i2lRe9XvP9idgiZv-cpVzs0uaKExDwMIMDNlTau2qkA,3822
+klib/tests/test_preprocess.py,sha256=-P5ws24OTegbT4wwPlu_ogf6tWXpLQHqB7vRzthHkTY,3054
+klib/tests/test_util.py,sha256=2HTo_ZE-O8YCycrQLnhT4slS1HWJ5O-D6S2AvzYU-Gc,8827
+klib-0.1.2.dist-info/LICENSE,sha256=D2FkqMKafLW4lAmTPWlnOYv5hiF8Amckc9F_35v2HRg,1069
+klib-0.1.2.dist-info/METADATA,sha256=OMIxoGgPkTaHgJV7u6U3Mmcc8KxvxKGHEiWPL6VpiYk,6677
+klib-0.1.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+klib-0.1.2.dist-info/top_level.txt,sha256=ZXKe6h32JAmSvgTWYG6L_iN1mbq7c6lnOEsz-5PoiAo,5
+klib-0.1.2.dist-info/RECORD,,
