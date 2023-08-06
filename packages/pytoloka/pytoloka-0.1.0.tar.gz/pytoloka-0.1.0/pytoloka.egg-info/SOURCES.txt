@@ -1,0 +1,10 @@
+setup.py
+pytoloka/__init__.py
+pytoloka/exceptions.py
+pytoloka/toloka.py
+pytoloka/yandex.py
+pytoloka.egg-info/PKG-INFO
+pytoloka.egg-info/SOURCES.txt
+pytoloka.egg-info/dependency_links.txt
+pytoloka.egg-info/requires.txt
+pytoloka.egg-info/top_level.txt
