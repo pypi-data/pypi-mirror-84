@@ -1,0 +1,3 @@
+[console_scripts]
+sebae = sebae.core.console.main:main
+
