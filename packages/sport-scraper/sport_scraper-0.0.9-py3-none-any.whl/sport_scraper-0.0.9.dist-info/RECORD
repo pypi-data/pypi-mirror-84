@@ -1,0 +1,12 @@
+.DS_Store,sha256=2m-M8mIgomNksf22hl7THDrpviPlqVpMeY8YWaTIg0g,6148
+sport_scraper/.DS_Store,sha256=y6DVd9oFlAfFG5dEd-w2Z9dC7OUIWujD1sMHtbHTvQM,6148
+sport_scraper/VERSION,sha256=8FnrHOC_APq3TqYxmKhYhiUrt0ws9oGS8F-Zd6kADbQ,5
+sport_scraper/__init__.py,sha256=emy7JUaNBPtx915pSlXNuZAryv-dD5HNlwgFtf0-Zkg,649
+sport_scraper/base/__init__.py,sha256=wq6TefsB65E2vWg-Iv8Z6gknQXsYAb2-363hCFs9j_8,15086
+sport_scraper/base/config.py,sha256=ev9EOzD0mR-tE3FO5ONCtEzlJ4z85margG0Qmo1f0Bw,704
+sport_scraper/base/utils.py,sha256=dfyRdPJXyRQwH2q7KO4ueAVz8W80K7slUk4oBQkCRYg,407
+sport_scraper-0.0.9.dist-info/LICENSE,sha256=xXCMH4j9RXldroQ3pvCf245W5IGJZBrTK7mvjoxIMFI,1074
+sport_scraper-0.0.9.dist-info/METADATA,sha256=bsIhDwffybk2Ok7uk4Z-nWcLA9dltQaoPhQRxZw1rOY,1802
+sport_scraper-0.0.9.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+sport_scraper-0.0.9.dist-info/top_level.txt,sha256=3I25wU8SpaClkz_o3e5qaUmQSwRUZAnBnBloFACvYEc,14
+sport_scraper-0.0.9.dist-info/RECORD,,
