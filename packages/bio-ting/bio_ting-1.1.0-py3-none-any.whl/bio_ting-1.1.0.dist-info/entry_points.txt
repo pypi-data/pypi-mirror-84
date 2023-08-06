@@ -1,0 +1,4 @@
+[console_scripts]
+imseq2ting = scripts.imseq2ting:main
+ting = ting.ting:main
+

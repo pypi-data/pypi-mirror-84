@@ -1,0 +1,10 @@
+scripts/__init__.py,sha256=q5OpfEhD7RMg3Djl7Z5LB-C95kXdeFlO6SqCX9JKQOg,20
+scripts/imseq2ting.py,sha256=RFOMql89rJuc2ckZVfVNUwVLUr3RJqN1iJZEf7l6XVw,1394
+ting/__init__.py,sha256=W6nmF0v_pG_xpvp3tLSJWSPqXZc-qPSZHaKotazGvqQ,14
+ting/ting.py,sha256=9L8rl--pmD7GrejRzvjCNYZjpFqnOqguwiy3D1wETic,16991
+bio_ting-1.1.0.dist-info/LICENSE,sha256=FsydKdiVLARqg0UeNQBJEvYaLkQ9NYZy9iKc1oA1H_U,1070
+bio_ting-1.1.0.dist-info/METADATA,sha256=tdFlB69qvX0ZhaEIwx4jKyU57BjTpIgT4bN6oiLP3Co,4713
+bio_ting-1.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+bio_ting-1.1.0.dist-info/entry_points.txt,sha256=c_SNhLw5O6wDega3Wi0ZU9dDg3QUZaMW8S4QR7cj6l0,78
+bio_ting-1.1.0.dist-info/top_level.txt,sha256=skitFSVp0bbtkCvN7QRa74MeNq97p5OvDxsTJAQfnZw,13
+bio_ting-1.1.0.dist-info/RECORD,,
