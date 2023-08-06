@@ -1,0 +1,10 @@
+proxy_pool_redis/XunProxyPool.py,sha256=dhOf6jTkG40A-MbcCQ3m3JUZ_c9HMHN3bM0gdh5dpXc,3964
+proxy_pool_redis/__init__.py,sha256=WcmNk-FHD_t90mnFksAEuCj2NvJ1ijwKtxzN6AMNFec,91
+proxy_pool_redis/config.py,sha256=NiVj-We73K6lVV5NrmN1uCNwPZn3_8WlcstLOz-xNKA,479
+proxy_pool_redis/log_config.yml,sha256=HfV6xSqpvhTRD4-vr0tZNJkd5PMxERFWDbhRNnKlCsE,427
+proxy_pool_redis/pool.py,sha256=qVRVVbv4DGZlL5nAWxlpDQyYoO6Urgy4TLDuf-NFkpg,11298
+proxy_pool_redis-0.0.7.dist-info/LICENSE,sha256=WbUnrvExscik5M0vq5tOMvX3C0GQOiYLhwa7wZ8CwPA,1075
+proxy_pool_redis-0.0.7.dist-info/METADATA,sha256=q6nSCQRQWnXYdmfi2hU1eaAQktssIHNiyC5Yf79OnMk,1225
+proxy_pool_redis-0.0.7.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+proxy_pool_redis-0.0.7.dist-info/top_level.txt,sha256=7I6MI5jhLZWT606Q20LhJRDfW7hY8dn4IXYEr1qCiKA,17
+proxy_pool_redis-0.0.7.dist-info/RECORD,,
