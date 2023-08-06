@@ -1,0 +1,11 @@
+famapy/metamodels/fm_metamodel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+famapy/metamodels/fm_metamodel/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+famapy/metamodels/fm_metamodel/models/feature_model.py,sha256=UveLW-mYidutzpkv_NtxEtrpw8Y0egVIeEYuRYOw2Fc,2506
+famapy/metamodels/fm_metamodel/transformations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+famapy/metamodels/fm_metamodel/transformations/json_writter.py,sha256=Tj8S3Ky2BbQIj02hYRI2XDxgtITF7noFZP6Yl7U229w,1361
+famapy/metamodels/fm_metamodel/transformations/xml_transformation.py,sha256=PKK-qYaoa5aRb9KHHYm1JytWGOn1s8TLx8FFziuGAT4,3234
+famapy_fm-0.0.2.dist-info/METADATA,sha256=jH1gCCahhbEzBA_wYFppLEJB9LrcfcOFn7PDQJtqaxc,651
+famapy_fm-0.0.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+famapy_fm-0.0.2.dist-info/dependency_links.txt,sha256=Ll0mXABtAq4SOUC7Iv7Wa0xSDSexNw-tYtu70FAt8EA,14
+famapy_fm-0.0.2.dist-info/top_level.txt,sha256=-yevkAgRSt2viwATTBynxVuwX00hqtrz42P2mzU6IZA,7
+famapy_fm-0.0.2.dist-info/RECORD,,
