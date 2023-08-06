@@ -1,0 +1,7 @@
+Change Log
+==============
+
+0.0.1 (04/11/2020)
+-----------------------
+- First release
+- Placeholder Entry and Tooltip

@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: CustomTkWidgets
+Version: 0.0.1
+Summary: Custom widgets to make tkinter look better
+Home-page: UNKNOWN
+Author: Nihaal Nz
+Author-email: nihaalnz@gmail.com
+License: MIT
+Description: Custom widgets for python and tkinter
+        
+        Change Log
+        ==============
+        
+        0.0.1 (04/11/2020)
+        -----------------------
+        - First release
+        - Placeholder Entry and Tooltip
+Keywords: tkinter
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/x-rst

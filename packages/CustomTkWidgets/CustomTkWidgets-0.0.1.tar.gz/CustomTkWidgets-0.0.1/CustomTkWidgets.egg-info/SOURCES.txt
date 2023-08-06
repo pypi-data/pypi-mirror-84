@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+CustomTkWidgets.egg-info/PKG-INFO
+CustomTkWidgets.egg-info/SOURCES.txt
+CustomTkWidgets.egg-info/dependency_links.txt
+CustomTkWidgets.egg-info/top_level.txt
+CustomWidgets/__init__.py
