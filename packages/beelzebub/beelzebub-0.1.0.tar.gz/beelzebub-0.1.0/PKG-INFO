@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: beelzebub
+Version: 0.1.0
+Summary: Lightweight framework for transforming input to output
+Author: Paul Breen
+Author-email: paul.breen6@btinternet.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Jinja2 (>=2.11.2,<3.0.0)
+Requires-Dist: logging-config (>=1.0.4,<2.0.0)
