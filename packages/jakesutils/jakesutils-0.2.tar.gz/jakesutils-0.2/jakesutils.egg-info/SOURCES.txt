@@ -1,0 +1,10 @@
+README.md
+setup.py
+jakesutils/config.py
+jakesutils/database.py
+jakesutils/download.py
+jakesutils.egg-info/PKG-INFO
+jakesutils.egg-info/SOURCES.txt
+jakesutils.egg-info/dependency_links.txt
+jakesutils.egg-info/not-zip-safe
+jakesutils.egg-info/top_level.txt
