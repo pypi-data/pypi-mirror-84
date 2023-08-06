@@ -1,0 +1,15 @@
+pywget/__init__.py,sha256=k3N7hx2Vmo2WMmTneJYrXdcESTAreWeGtcHl3NiYiDM,174
+pywget/__main__.py,sha256=4CRoN4Bfuz1v2r0cgDWa62GXbITSIN4i2lSb39rISio,25
+pywget/__version__.py,sha256=BVLJBnmrx1S9QV4VUAHFJLlf_ryl-7Blsbpq9LIus9c,14
+pywget/wget.py,sha256=BlJYHMuAMlbAljysQ-8PqFg4znJGHttEhHATEnnU-6s,23579
+pywget-0.3.data/data/LICENSE.rst,sha256=mffI6YNl07tQ0MHyudQVBnnSbTxh5Wn_uTSZviGRwDA,1888
+pywget-0.3.data/data/README.rst,sha256=3j3VKVmYwnoGKjzIzzdOvdHsqok0ehv1bIUvjgSQ5J4,1021
+pywget-0.3.data/data/__version__.py,sha256=BVLJBnmrx1S9QV4VUAHFJLlf_ryl-7Blsbpq9LIus9c,14
+pywget-0.3.dist-info/DESCRIPTION.rst,sha256=N2ZVjTnqbvEuhgSs-9eV41eYyrIyATW2H75T3-HQEvU,969
+pywget-0.3.dist-info/LICENSE.txt,sha256=mffI6YNl07tQ0MHyudQVBnnSbTxh5Wn_uTSZviGRwDA,1888
+pywget-0.3.dist-info/METADATA,sha256=xoXE5lDnzoR1zJV1n4P7-J5Gpz8wno1d1DCoUAy2xkE,1994
+pywget-0.3.dist-info/RECORD,,
+pywget-0.3.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+pywget-0.3.dist-info/entry_points.txt,sha256=URAGcAMy8SEYOPaw-8K-FQby6WRp6rym6AZuxw4VN3s,46
+pywget-0.3.dist-info/metadata.json,sha256=GelPonvZomXa2otYcPn8_N1N0UgS6u1d4xcghF6w5g4,1222
+pywget-0.3.dist-info/top_level.txt,sha256=rtm6fsOkgF6RJ6-wbxVC57xFmz0qf0qN052KBImA-0k,7
