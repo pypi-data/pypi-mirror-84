@@ -1,0 +1,13 @@
+setuptools>=39.2
+numpy
+astropy
+scipy
+matplotlib
+lmfit
+numina
+megaradrp
+Shapely
+descartes
+
+[hypercube]
+pysynphot
