@@ -1,0 +1,8 @@
+README.md
+setup.py
+psi-calc/__init__.py
+psi-calc/psi-calc.py
+psicalc.egg-info/PKG-INFO
+psicalc.egg-info/SOURCES.txt
+psicalc.egg-info/dependency_links.txt
+psicalc.egg-info/top_level.txt
