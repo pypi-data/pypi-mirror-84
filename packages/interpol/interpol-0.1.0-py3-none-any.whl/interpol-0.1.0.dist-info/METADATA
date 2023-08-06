@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: interpol
+Version: 0.1.0
+Summary: Python package for doing interpolation in the plane.
+Home-page: https://github.com/rwijtvliet/interpol
+Author: rwijtvliet
+Author-email: rwijtvliet@gmail.com
+License: BSD (3-clause)
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: polygonation
+Requires-Dist: numpy
+
+========
+interpol
+========
+
+.. image:: https://img.shields.io/travis/rwijtvliet/interpol.svg
+        :target: https://travis-ci.org/rwijtvliet/interpol
+
+.. image:: https://img.shields.io/pypi/v/interpol.svg
+        :target: https://pypi.python.org/pypi/interpol
+
+
+Python package for interpolation in the plane.
+
+* Free software: 3-clause BSD license
+* Documentation: https://rwijtvliet.github.io/interpol
+
+
+

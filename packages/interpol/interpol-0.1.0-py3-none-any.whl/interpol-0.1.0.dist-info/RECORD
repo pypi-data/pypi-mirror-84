@@ -1,0 +1,12 @@
+interpol/__init__.py,sha256=ot3XAGFCUP3YBNsLTmXp1rd3h04FGeRrN57VsB2sVWc,149
+interpol/_core.py,sha256=UO8k0FaTcX-oBPk00ZBAjg8F-UI9gnES8FnSy-d3qOs,9584
+interpol/_version.py,sha256=wOLZuYG-M3kk43wVA6_ADRyHuMn_gXc2Xha45ePw27o,497
+interpol/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+interpol/tests/test_interpol.py,sha256=bQAtop22JSOeIKBKzalIj3ImY10X2SDrKSxt3nZ0X3g,3458
+interpol-0.1.0.dist-info/AUTHORS.rst,sha256=O7zO_0uGKtRqe7siWIKWQmu0e31a19d94F5-wXiZrcI,166
+interpol-0.1.0.dist-info/LICENSE,sha256=BpWaD1HNPnRVIw0FAqIJGFhND9Oj24xDqzJSsmaSnyY,1518
+interpol-0.1.0.dist-info/METADATA,sha256=NKAmIZZWwbuV9NH7oZgmWpGhk3BGzWzODSy5Wyif0RE,877
+interpol-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+interpol-0.1.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+interpol-0.1.0.dist-info/top_level.txt,sha256=pY4weJrDiaSheeLB-yrDbQZtAM0wqGgWpU_DF-zMGTA,9
+interpol-0.1.0.dist-info/RECORD,,
