@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: nbdev-whatsapp
+Version: 0.0.1
+Summary: Tutorial nbdev
+Home-page: https://github.com/arlingva/nbdev_whatsapp/tree/master/
+Author: Arling Vázquez
+Author-email: arling.vazquez@gmail.com
+License: Apache Software License 2.0
+Description: # Análisis de texto 
+        > Análisis de un grupo de WhatsApp basado en el artículo <a href="https://medium.com/towards-artificial-intelligence/whatsapp-group-chat-analysis-using-python-and-plotly-89bade2bc382"> Whatsapp Group Chat Analysis using Python and Plotly </a> publicado por <a href= "https://medium.com/@kurasaiteja"> Saiteja Kura </a>
+        
+        
+        ```
+        %load_ext autoreload
+        %autoreload 2
+        ```
+        
+            The autoreload extension is already loaded. To reload it, use:
+              %reload_ext autoreload
+        
+        
+        This file will become your README and also the index of your documentation.
+        
+        ## Install
+        
+        `pip install hola_nbdev2`
+        
+        ## How to use
+        
+        ### Algunos ejemplos
+        
+        #### startsWithDateAndTime
+        Verifica si la el texto inicia con fecha y hora
+        
+        ```
+        x = '01/10/18 19:18 - Señora 5: Claudia, puedes reenviar los paquetes, por favor? 🙏🏼 Aún no estaba en el grupo'
+        startsWithDateAndTime(x)
+        ```
+        
+        
+        
+        
+            True
+        
+        
+        
+        #### startsWithDateAndTime
+        Encuentra al autor del mensaje si está en alguno de estos formatos
+        - Nombre
+        - Nombre y apellido
+        - Nombre + 2 apellidos
+        - Número telefónico (México)
+        - Nombre y emoji
+        - Nombre genérico
+        
+        ```
+        y = x.split(' - ')
+        y
+        print(FindAuthor(y[1]))
+        ```
+        
+            True
+        
+        
+Keywords: tutorial nbdev
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
