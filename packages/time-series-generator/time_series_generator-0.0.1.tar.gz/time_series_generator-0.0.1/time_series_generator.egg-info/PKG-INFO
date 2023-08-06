@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: time-series-generator
+Version: 0.0.1
+Summary: Time Series Generator
+Home-page: UNKNOWN
+Author: Daniel Kaminski de Souza
+Author-email: daniel@kryptonunite.com
+License: UNKNOWN
+Description: # Time Series Generator
+        
+        ## Description
+        Emulates Teras Tensorflow TimeSeriesGenerator functionality
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev

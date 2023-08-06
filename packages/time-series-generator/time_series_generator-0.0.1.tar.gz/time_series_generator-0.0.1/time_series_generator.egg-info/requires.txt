@@ -1,0 +1,12 @@
+
+[dev]
+wheel
+pylint
+autopep8
+bumpversion
+twine
+
+[test]
+pytest>=4.6
+pytest-cov
+tensorflow
