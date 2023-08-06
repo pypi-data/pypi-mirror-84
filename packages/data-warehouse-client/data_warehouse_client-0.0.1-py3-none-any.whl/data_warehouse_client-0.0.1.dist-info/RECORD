@@ -1,0 +1,17 @@
+data_warehouse_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data_warehouse_client/clone_study_metadata.py,sha256=TTp-krdVfk9gTWcCACD91hVgmDuR83iEx_dULeafnLg,1354
+data_warehouse_client/data_warehouse.py,sha256=ovTeSHneC-WrgGny0uVXXLD7XV1LQQPO7r5jVVS1rJI,53520
+data_warehouse_client/delete_study_contents.py,sha256=4NiCOeM_IfjN_QmZ2xPBR2hqU7yTrcSefbwdfNcXSyM,2522
+data_warehouse_client/json_loader.py,sha256=VwX4hLtQAVJ1X_gY9o2XZHRFZYmhQai1rt6LBR-zLtY,8412
+data_warehouse_client/load_warehouse_helpers.py,sha256=iTGGNH6IaGLwIPJQAkuGIfzw95VJpySZNloHZjC2tbo,12937
+data_warehouse_client/study_summary.py,sha256=hCmEQrdVc3zX1BMzm_N9OGQJffVobT9JVRrOBau7uWw,3063
+data_warehouse_client/table_reader.py,sha256=Ghnu1yPwFMSsa9TMtgvDGHuiYGijZpn5_WTLS-TMAgs,1050
+data_warehouse_client/table_writer.py,sha256=_FmP-oj0VF0h7Cyod7tlqvfMf12airUg5jxMSjKcQAs,4356
+data_warehouse_client/warehouse_checker.py,sha256=pkpiiL8PNvHeyK6XpkvP90feZixqztlnQmM3NXsX-R4,6770
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_json_loader.py,sha256=ujv08_r1UjXq6H_6oNkgMgzgh6sQiDz7L9t5GE0M7jU,852
+data_warehouse_client-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+data_warehouse_client-0.0.1.dist-info/METADATA,sha256=MTxKDiCY10AcHlKv_lhra0lN9tvKigQ_k9TGf7u9ZAw,3876
+data_warehouse_client-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+data_warehouse_client-0.0.1.dist-info/top_level.txt,sha256=_-43-w9l3R9oGTvDBW3Qv8dWdNyFJglSmVFzLwZM8oc,27
+data_warehouse_client-0.0.1.dist-info/RECORD,,
