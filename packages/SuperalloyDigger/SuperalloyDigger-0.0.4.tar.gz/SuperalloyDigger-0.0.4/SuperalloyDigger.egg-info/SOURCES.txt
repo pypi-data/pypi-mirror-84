@@ -1,0 +1,24 @@
+README.md
+setup.py
+SuperalloyDigger.egg-info/PKG-INFO
+SuperalloyDigger.egg-info/SOURCES.txt
+SuperalloyDigger.egg-info/dependency_links.txt
+SuperalloyDigger.egg-info/top_level.txt
+superalloydataextractor/__init__.py
+superalloydataextractor/Elsevier articles archive/__init__.py
+superalloydataextractor/Elsevier articles archive/article_dois.py
+superalloydataextractor/Elsevier articles archive/main.py
+superalloydataextractor/data extraction/Phrase_parse.py
+superalloydataextractor/data extraction/Relation_extraciton.py
+superalloydataextractor/data extraction/T_pre_processor.py
+superalloydataextractor/data extraction/__init__.py
+superalloydataextractor/data extraction/dictionary.py
+superalloydataextractor/data extraction/file_io.py
+superalloydataextractor/data extraction/get_all_attributes.py
+superalloydataextractor/data extraction/get_full_text.py
+superalloydataextractor/data extraction/main.py
+superalloydataextractor/data extraction/pre_processor.py
+superalloydataextractor/data extraction/sentence_positioner.py
+superalloydataextractor/word_embedding/__init__.py
+superalloydataextractor/word_embedding/load_word2vec.py
+superalloydataextractor/word_embedding/main.py
