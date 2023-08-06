@@ -1,0 +1,11 @@
+docsvault/__init__.py,sha256=m61MFFNKlj3sOwWWVpc-LmwF_bDzgXVkTRxgc3MeYs8,129
+docsvault/api.py,sha256=6JmiPWmEk6R7DTUNhX7eLZRcpDiB-KnrNZV5am6bQdA,947
+docsvault/funcs.py,sha256=sUJrBwU4hHZNpqoJsejrrDuuc3mHrV1bPtfacWSojCs,885
+docsvault/settings.py,sha256=6PjIXLgQXTctfKuoq1Aj2GKSXCo1KKnHfQ5oKEik_-U,1108
+docsvault/vault.py,sha256=pFtqGpA8qiiLja0WnoKzj-dzUdK40Mv-q2T82YHVMpg,2747
+docsvault/webui.py,sha256=Idiua342iBu6Czjf7-e05be8TUbET4CLMtcbs-zSyos,395
+docsvault/wsgi.py,sha256=p1d06JDRLVa492M-_Fzl38qMsiWJUnLisSsDWOEYCaI,378
+docsvault-0.0.3.dist-info/METADATA,sha256=wGfMyywdbvPb_3z2NYPNNhNmr4OVwocQxDf-u0W4Cds,220
+docsvault-0.0.3.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+docsvault-0.0.3.dist-info/top_level.txt,sha256=-YHc1PT0X-b1IlqxSZbyXv80Cq63yI9ZhtgIN-l7dQ8,10
+docsvault-0.0.3.dist-info/RECORD,,
