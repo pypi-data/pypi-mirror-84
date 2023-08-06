@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: pydevtoolkit
+Version: 0.0.0
+Summary: A python toolkit for developers
+Home-page: UNKNOWN
+Author: Snowflake
+Author-email: snowflake@fake.com
+License: MIT
+Description: This is a set of tools made for python developer's for their python development.
+        
+        Change Log
+        ===========
+        
+        0.0.0 (11/5/2020)
+        ------------------
+        - Test Release will be removed
+Keywords: py_tk
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8.1
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
