@@ -1,0 +1,14 @@
+imageio
+keras
+matplotlib
+matplotlib
+nibabel
+numba
+numpy
+opencv-python-headless
+pandas
+pfmisc
+pillow
+scikit-image
+tensorflow
+tensorflow-gpu

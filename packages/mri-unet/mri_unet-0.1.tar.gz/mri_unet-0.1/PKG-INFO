@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: mri_unet
+Version: 0.1
+Summary: (Python) utility to train an unet model to do brain mri segmentation
+Home-page: https://github.com/FNNDSC/mri_unet
+Author: FNNDSC
+Author-email: dev@babymri.org
+License: MIT
+Description: # mri_unet
+        An application to train an U-net model on brain MRI images to perform semantic segmentation
+        
+Platform: UNKNOWN
