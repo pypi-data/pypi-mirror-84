@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}
+Pathfinder Reports
+{% endblock %}
+
+{% block header %}
+Pathfinder
+{% endblock %}
+
+{% block description %}
+View Report
+{% endblock %}
+{% block content %}
+<div class="box box-primary">
+    <div class="box-header">
+        <h3>Character Statistics</h3>
+    </div>
+    <div class="box-body">
+        <table class="datatable table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Character</th>
+                    <th>Corporation</th>
+                    <th>Signatures</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for character,value in characters.items %}
+                <tr>
+                    <td>
+                        {{character}}
+                    </td>
+                    <td>
+                        {{value.corporation}}
+                    </td>
+                    <td>
+                        {{value.signatures}}
+                    </td>
+                </tr>
+                {% endfor %}
+                <!-- Bottom Divider -->
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="box box-primary">
+    <div class="box-header">
+        <h3>Corporation Statistics</h3>
+    </div>
+    <div class="box-body">
+        <table class="datatable table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Corporation</th>
+                    <th>Signatures per Player</th>
+                    <th>Signatures</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for corporation,value in corporations.items %}
+                <tr>
+                    <td>
+                        {{corporation}}
+                    </td>
+                    <td>
+                        {{value.signatures_per_capita |floatformat}}
+                    </td>
+                    <td>
+                        {{value.signatures}}
+                    </td>
+                </tr>
+                {% endfor %}
+                <!-- Bottom Divider -->
+
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    $(function () {
+        $('table').DataTable({
+            'paging': true,
+            'lengthChange': false,
+            'searching': true,
+            'ordering': true,
+            'info': true,
+            'autoWidth': false,
+            "order": [[2, "desc"]]
+        })
+    })
+</script>
+{% endblock %}
