@@ -1,0 +1,3 @@
+[console_scripts]
+dingz = dingz.cli:main
+
