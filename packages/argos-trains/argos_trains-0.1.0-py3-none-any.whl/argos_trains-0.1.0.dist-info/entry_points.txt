@@ -1,0 +1,5 @@
+[console_scripts]
+resume = argos_trains.resume:resume
+train = argos_trains.train:train
+tune = argos_trains.tune:tune
+

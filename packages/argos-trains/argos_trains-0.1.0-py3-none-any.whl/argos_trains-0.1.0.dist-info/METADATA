@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: argos-trains
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Yigit Ozen
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: pytorch-lightning (~=1.0.4)
+Requires-Dist: pyyaml
+Requires-Dist: yacs
+Requires-Dist: ray (~=1.0.0)
+
+UNKNOWN
+
+
