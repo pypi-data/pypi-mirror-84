@@ -1,0 +1,7 @@
+README.md
+setup.py
+quicksilver/__init__.py
+quicksilver.egg-info/PKG-INFO
+quicksilver.egg-info/SOURCES.txt
+quicksilver.egg-info/dependency_links.txt
+quicksilver.egg-info/top_level.txt
