@@ -1,0 +1,79 @@
+CHANGES
+=======
+
+0.0.2
+-----
+
+* version 0.0.2
+
+0.0.1
+-----
+
+* version 0.0.1
+* release files
+* add release management
+* document bulk import
+* \_get parameters as kwargs
+* draft mbox import
+* implement message load
+* mailman uses logging instead of print
+* add settings to the importer
+* fix disconnect
+* implement retry
+* refactore settings set/get
+* reminder to stop the container
+* allow imports
+* settings get/set
+* do not throttle the API when testing
+* create users and owners
+* implement group\_member get/create/delete
+* implement idempotence with before/after
+* delete importer test resources
+* get/create/delete user
+* do not rate limit
+* create the managers group
+* get/create/delete groups
+* add tests for importer
+* move mailman test helpers in a separate file
+* add --debug
+* compare the id, not the whole category description
+* discourse category creation and deletion
+* set logging level according to --verbose & --debug
+* fixture to connect to the discourse test instance
+* add realistic config.pck from mailman test fixtures
+* development instructions
+* instructions on how to build discourse for tests
+* move building discourse to a script
+* show backups
+* fix volume names
+* fix argument order
+* dont check prerequistes
+* fix syntax
+* try to run discourse
+* is there python3 ?
+* is there python3 ?
+* try docker
+* do not git pycache
+* do not hacked\_sys\_modules
+* implement mailman loading of config.pck
+* unify presentation
+* add missing info field
+* document incoming email settings
+* document the conversion strategy
+* update requirements
+* remove hack
+* load with sqlite instead of mysql
+* switch to mailman from the master branch instead of the release
+* buster has 3.7 by default
+* add tox
+* reorganize sources
+* --list in argument
+* the api key must be an argument
+* get users from discourse
+* connect to discourse
+* comment the fields of the database
+* print lang
+* query the user list for spip-dev
+* python code somewhat documenting the structure of dump-mailman-subs.sql
+* mysql table
+* init

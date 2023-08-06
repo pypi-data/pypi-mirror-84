@@ -1,0 +1,14 @@
+import logging
+from mailman2discourse.cmd import Cmd
+import pytest
+
+
+@pytest.mark.parametrize("args,level", [([], logging.WARNING),
+                                        (['--verbose'], logging.INFO),
+                                        (['--debug'], logging.DEBUG)])
+def test_logging(args, level):
+    args += [
+        '--api-key=KEY', '--url=URL', '--list=LIST', '--mailman-dir=DIR', '--mailman-archive=DIR'
+    ]
+    cmd = Cmd(*args)
+    assert cmd.configure_logging() == level

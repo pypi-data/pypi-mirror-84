@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -x
+sudo apt install -y git curl
+if ! test -d discourse_docker ; then
+   git clone https://github.com/discourse/discourse_docker
+fi
+cd discourse_docker
+sed -e "s|SHARED|$(pwd)|" < ../app.yml > containers/app.yml
+./launcher rebuild app --skip-prereqs
+docker exec app rake 'api_key:create_master[TESTKEY]' | tee apikey
+pass='BefShnygs33SwowCifViwag' ; ( echo api@example.com ; echo $pass ; echo $pass ; echo ) | docker exec -i app rake 'admin:create'
+docker inspect -f "{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}" app | tee ip
+test $(curl --silent -X GET http://$(cat ip)/admin/backups -H "Accept: application/json" -H "Api-Key: $(cat apikey)" -H "Api-Username: api" -o /dev/null -w "%{http_code}") = 200
