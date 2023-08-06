@@ -1,0 +1,15 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+nbdev_guilhermemt21.egg-info/PKG-INFO
+nbdev_guilhermemt21.egg-info/SOURCES.txt
+nbdev_guilhermemt21.egg-info/dependency_links.txt
+nbdev_guilhermemt21.egg-info/entry_points.txt
+nbdev_guilhermemt21.egg-info/not-zip-safe
+nbdev_guilhermemt21.egg-info/top_level.txt
+nbdev_template/__init__.py
+nbdev_template/_nbdev.py
+nbdev_template/core.py
