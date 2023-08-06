@@ -1,0 +1,11 @@
+xmltodict
+DataModelDict
+unidecode
+numpy
+matplotlib
+pandas
+requests
+habanero
+bibtexparser
+cdcs==0.1.4
+ipywidgets
