@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+aiorobot/__init__.py
+aiorobot/driver.py
+aiorobot/protocol.py
+aiorobot/robot.py
+aiorobot.egg-info/PKG-INFO
+aiorobot.egg-info/SOURCES.txt
+aiorobot.egg-info/dependency_links.txt
+aiorobot.egg-info/requires.txt
+aiorobot.egg-info/top_level.txt
