@@ -1,0 +1,11 @@
+README.md
+setup.py
+pytorch_fid_wrapper/__init__.py
+pytorch_fid_wrapper/fid_score.py
+pytorch_fid_wrapper/inception.py
+pytorch_fid_wrapper/params.py
+pytorch_fid_wrapper.egg-info/PKG-INFO
+pytorch_fid_wrapper.egg-info/SOURCES.txt
+pytorch_fid_wrapper.egg-info/dependency_links.txt
+pytorch_fid_wrapper.egg-info/requires.txt
+pytorch_fid_wrapper.egg-info/top_level.txt
