@@ -1,0 +1,3 @@
+[pymodaq.plugins]
+orsay = pymodaq_plugins_orsay
+
