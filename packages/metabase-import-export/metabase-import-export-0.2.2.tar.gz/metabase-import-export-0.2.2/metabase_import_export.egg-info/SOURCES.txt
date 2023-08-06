@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+metabase_import_export/__init__.py
+metabase_import_export/cli.py
+metabase_import_export.egg-info/PKG-INFO
+metabase_import_export.egg-info/SOURCES.txt
+metabase_import_export.egg-info/dependency_links.txt
+metabase_import_export.egg-info/entry_points.txt
+metabase_import_export.egg-info/not-zip-safe
+metabase_import_export.egg-info/requires.txt
+metabase_import_export.egg-info/top_level.txt

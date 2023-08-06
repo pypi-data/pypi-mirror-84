@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: metabase-import-export
+Version: 0.2.2
+Summary: Export/Import Metabase collections to JSON files.
+Home-page: UNKNOWN
+License: BSD 3-Clause License
+Description: # Metabase Import/Export
+        
+        Export/Import metabase collection to JSON file.
+        
+        Supports SQL native questions and dashboards. Snippets and non-SQL questions are currently not supported.
+        
+        ## Install
+        
+        * `pip install metabase-import-export`
+        
+        ## Usage
+        
+        * See `metabase-import-export --help` for usage information.
+        
+        ## License
+        
+        This project is release under BSD license. See LICENSE.txt file for more information.
+        
+Keywords: metabase
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
