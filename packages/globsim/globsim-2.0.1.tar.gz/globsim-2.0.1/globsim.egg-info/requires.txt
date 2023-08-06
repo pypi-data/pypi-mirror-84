@@ -1,0 +1,8 @@
+pandas
+netCDF4
+scipy
+pydap
+numpy
+tomlkit
+ecmwf-api-client
+cdsapi

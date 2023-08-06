@@ -1,0 +1,3 @@
+[console_scripts]
+globsim = globsim.globsim_cli:main
+
