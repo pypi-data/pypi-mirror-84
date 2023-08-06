@@ -1,0 +1,3 @@
+[console_scripts]
+tekdatamuse = tekdatamuse.commands:main
+
