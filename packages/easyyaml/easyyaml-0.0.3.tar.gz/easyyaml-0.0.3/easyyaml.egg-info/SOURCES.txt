@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+easyyaml/__init__.py
+easyyaml/test.yaml
+easyyaml.egg-info/PKG-INFO
+easyyaml.egg-info/SOURCES.txt
+easyyaml.egg-info/dependency_links.txt
+easyyaml.egg-info/requires.txt
+easyyaml.egg-info/top_level.txt
