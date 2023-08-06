@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: subbot
+Version: 0.1.7
+Summary: Automating subtitles management for lazy subbers.
+Home-page: https://www.gitlab.com/Rubo/subbot
+Author: Marco Rubin
+Author-email: marco.rubin@protonmail.com
+License: UNKNOWN
+Description: # Subbot
+        
+        Subbot is a simple command-line tool which helps you automating the last part of
+        subtitles management, leveraging you from the burden of merging them into their MKVs with
+        the right parameters and distributing them.
+        
+        ## License
+        This software is free and open-source and distributed under the MIT License.
+        
+Keywords: subtitles,mkv,ass
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
