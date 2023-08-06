@@ -1,0 +1,41 @@
+{% extends "base.html"%}
+
+{% block pagebody %}
+<div class="row login-page" style="flex-direction: row">
+    <div class="col m3"></div>
+    <div class="col s12 m6 center-align login-container">
+        <div class="card">
+            <div class="card-image">
+                <img src="{{ url_for('static', filename='img/cinema.jpg') }}">
+            </div>
+            <div class="card-content">
+                <div class="content">
+                    <span class="card-title">Cinema Pitone</span>
+                    {% with messages = get_flashed_messages() %}
+                        {% if messages[0] %}
+                            <p class="red-text">{{messages[0]}}</p>
+                        {% endif %}
+                    {% endwith %}
+                    <form action="/login" method="POST">
+                        <div class="input-field">
+                            <input id="email" name="email" type="text" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="password" name="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="card-action center-align">
+                            <button class="btn waves-effect waves-light" type="submit">Accedi</button>
+                        </div>
+                        <div class="card-action center-align">
+                            <a href="/registration">Non possiedi un account? Registrati</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col m3"></div>
+</div>
+{% endblock %}
