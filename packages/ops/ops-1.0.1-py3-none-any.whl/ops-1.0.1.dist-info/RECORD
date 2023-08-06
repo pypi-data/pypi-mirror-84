@@ -1,0 +1,16 @@
+ops/__init__.py,sha256=WaHb0dfp1KEe6jFV8Pm_mcdJ3ModiWujnQ6xLjNzPNQ,819
+ops/charm.py,sha256=i6dsuWAyJ5DpLmcRpkcMy0r7RuepSuUlZeVYis3KS-I,32748
+ops/framework.py,sha256=kZtZHgUqyrvlKOG9mAYHxfSKSKUkd078SGLAkmqfL88,41255
+ops/jujuversion.py,sha256=9wMlUmngcAENV9RkgVVLWtZsyRQaf6XNrQQqUeY_fHA,4139
+ops/log.py,sha256=JVpt_Vkf_lWO2cucUcJfXjAWVTattk4xBscSs65Sn3I,2155
+ops/main.py,sha256=PTmvrVPjwfenH9HcpYqiexhgMLaD81yiiHI6ME_eMto,15459
+ops/model.py,sha256=YFV1uamPDV1EMsY1hxua1SJYSo5iyo3ud-WdXP9TmFQ,47924
+ops/storage.py,sha256=jEfszzQGYDrl5wa03I6txvea-7lI661Yq6n7sIPa0fU,14192
+ops/testing.py,sha256=sH8PoNzGmfPdVWM1lBjStxHcNfQHsasFjF-WzHfDhFA,34898
+ops/version.py,sha256=cx1mM2x1Hs9OKr5kdhAdpS0Rfn0IQDMpLjSE3bJ-TY8,46
+ops/lib/__init__.py,sha256=QizPpuRWXjqbH5Gv7mnH8CcPR9BX7q2YNFnxyoSsA0g,9213
+ops-1.0.1.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+ops-1.0.1.dist-info/METADATA,sha256=M6iCFyean4T6_hZyvxDJpfOBOFHyGDiRG4LN8sjRE_I,5531
+ops-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ops-1.0.1.dist-info/top_level.txt,sha256=enC05wWafSg8iDKIvj3gvtAtEP2kYCyN5Gmd689q-_I,4
+ops-1.0.1.dist-info/RECORD,,
