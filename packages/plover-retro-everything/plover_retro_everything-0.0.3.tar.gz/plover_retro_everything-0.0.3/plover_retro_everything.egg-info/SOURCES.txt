@@ -1,0 +1,12 @@
+.gitignore
+Readme.md
+setup.cfg
+setup.py
+plover_retro_everything/__init__.py
+plover_retro_everything.egg-info/PKG-INFO
+plover_retro_everything.egg-info/SOURCES.txt
+plover_retro_everything.egg-info/dependency_links.txt
+plover_retro_everything.egg-info/entry_points.txt
+plover_retro_everything.egg-info/requires.txt
+plover_retro_everything.egg-info/top_level.txt
+plover_retro_everything.egg-info/zip-safe
