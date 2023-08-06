@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: purge
+Version: 1.0
+Summary: Delete temp file as per patthen
+Home-page: https://github.com/aleem75321/purgebypattern.git
+Author: Abdul Aleem Qureshi
+Author-email: aleem75321@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Purge
+ Purge file as per patthen
+Expample:-purge('c:\temp','.jpg')
+

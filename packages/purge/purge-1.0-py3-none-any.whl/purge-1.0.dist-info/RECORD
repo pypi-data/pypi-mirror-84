@@ -1,0 +1,5 @@
+purge-1.0.data/scripts/purge,sha256=xVeLJD1Ps-LqoBBNwxhNYD6lCOR_zxbXRuHPS0HOf8c,152
+purge-1.0.dist-info/METADATA,sha256=Mqilq8mp1ACu95uwzwCMs3ARuL8-UZLPWUXhl-51Z3g,503
+purge-1.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+purge-1.0.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+purge-1.0.dist-info/RECORD,,
