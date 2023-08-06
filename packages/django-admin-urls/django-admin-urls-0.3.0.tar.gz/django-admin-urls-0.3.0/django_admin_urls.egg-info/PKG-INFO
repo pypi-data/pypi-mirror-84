@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: django-admin-urls
+Version: 0.3.0
+Project-URL: Repository, https://gitlab.com/cyberbudy/django-admin-urls/
+Author: Alex Uzjakov
+Author-email: cyberbudy@gmail.com
+License: MIT
+Requires-Python: >=3.6
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+
+django-admin-urls
+=================
+
+Set of shortcuts to get admin urls for objects/models
+
+Available shortcuts
+^^^^^^^^^^^^^^^^^^^
+
+
+#. ``admin_add_url`` - Returns admin add url for a given model.
+#. ``admin_change_url`` - Returns admin change url for a given model instance.
+#. ``admin_delete_url`` - Returns admin delete url for a given model instance.
+#. ``admin_index_url`` - Returns admin dashboard url.
