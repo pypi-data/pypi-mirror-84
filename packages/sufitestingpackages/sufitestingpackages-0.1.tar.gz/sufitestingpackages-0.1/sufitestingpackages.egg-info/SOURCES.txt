@@ -1,0 +1,8 @@
+setup.py
+src/__init__.py
+src/about.py
+sufitestingpackages.egg-info/PKG-INFO
+sufitestingpackages.egg-info/SOURCES.txt
+sufitestingpackages.egg-info/dependency_links.txt
+sufitestingpackages.egg-info/not-zip-safe
+sufitestingpackages.egg-info/top_level.txt
