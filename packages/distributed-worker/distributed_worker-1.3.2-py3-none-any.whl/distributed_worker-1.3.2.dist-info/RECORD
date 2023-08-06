@@ -1,0 +1,8 @@
+distributed_worker/__init__.py,sha256=uJ6cXJYQ-JLqvOWb6gsBMIhZhZrKnpAzHPq7TU5ouRI,109
+distributed_worker/manager.py,sha256=Bu42Zgnl5uwTnJk-RLGOX7HMtATnTLesOFgl5ji2waM,5421
+distributed_worker/worker.py,sha256=pMIDhUmzboBSnKJ5hda-Rr7pHotJQ6Z6knk37TZaFGQ,1403
+distributed_worker-1.3.2.dist-info/LICENSE,sha256=oWv9ciJs0HWmIwtbkHmJm9pnfZzgRyCzrFESPv89TpQ,1317
+distributed_worker-1.3.2.dist-info/METADATA,sha256=HH07EzRdaiA5qGbX4omPRYMNUsu5qJH8mJrx5uhYK5w,5297
+distributed_worker-1.3.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+distributed_worker-1.3.2.dist-info/top_level.txt,sha256=JfX5EXmoHFUvbE8zoTPNXMAJmsgRIsm-ikKV_PXXimI,19
+distributed_worker-1.3.2.dist-info/RECORD,,
