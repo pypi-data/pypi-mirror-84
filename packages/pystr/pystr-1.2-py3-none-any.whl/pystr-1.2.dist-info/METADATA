@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pystr
+Version: 1.2
+Summary: 可以自动输入字符（包括汉字）
+Home-page: UNKNOWN
+License: 许可证
+Keywords: 输入,汉字
+Platform: any
+Description-Content-Type: text/markdown
+Requires-Dist: PyAutoGUI
+Requires-Dist: pyperclip
+
+首先你需要导入模块pystr,然后再用函数typewrite
+
+  import pystr.pystr as pystr
+
+  pystr.typewrite(str,interval=?)
+
+其中str为你需要输入的汉字（当然字母也可以），？为每个字符输入的时间间隔，最小为0.11
+
+
