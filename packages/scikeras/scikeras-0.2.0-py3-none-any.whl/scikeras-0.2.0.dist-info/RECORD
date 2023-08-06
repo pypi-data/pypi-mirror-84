@@ -1,0 +1,10 @@
+LICENSE,sha256=LVE_pK7Rv7EeawytZiJI-tHp6ZZOFKx4Q70k1HEhwOE,1082
+scikeras/__init__.py,sha256=FiqYEAS_HYyu7Oh2QLOeWWpI_G8C_Rra2mJLGa1iIOE,395
+scikeras/_utils.py,sha256=07Lzz5367mqzFZhytLnk9T77ULzAGCHS40lez_fs530,8771
+scikeras/utils/__init__.py,sha256=rmGs_IKTn5bgjV20b1_fuveiZvIiKCAIhDBxstNSRac,3407
+scikeras/utils/transformers.py,sha256=9Hwky2wjO7Nc1BSnbgjcDnMQ2K3j73kHrZuBH2qtOPc,9029
+scikeras/wrappers.py,sha256=3xs4wIwwSlC9V6OnoRB7PSohTKpG63i7mobtuK9vuwE,40102
+scikeras-0.2.0.dist-info/LICENSE,sha256=LVE_pK7Rv7EeawytZiJI-tHp6ZZOFKx4Q70k1HEhwOE,1082
+scikeras-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+scikeras-0.2.0.dist-info/METADATA,sha256=fBY8au3OMQgv3HqKMtpw8nOg_RdnoyYRcEv3fZVL4T8,2068
+scikeras-0.2.0.dist-info/RECORD,,

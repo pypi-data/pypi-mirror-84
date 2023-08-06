@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: scikeras
+Version: 0.2.0
+Summary: Scikit-Learn API wrapper for Keras.
+Home-page: https://github.com/adriangb/scikeras
+License: MIT
+Keywords: keras,tensorflow,scikit-learn,deep-learning,python
+Author: Adrian Garcia Badaracco
+Author-email: 1755071+adriangb@users.noreply.github.com
+Requires-Python: >=3.6.7,<3.9
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: docs
+Requires-Dist: scikit-learn (>=0.22.0)
+Requires-Dist: tensorflow (>=2.2.0)
+Project-URL: Documentation, https://scikeras.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/adriangb/scikeras
+Description-Content-Type: text/markdown
+
+# Scikit-Learn Wrapper for Keras
+
+[![Build Status](https://secure.travis-ci.org/adriangb/scikeras.png?branch=master)](https://travis-ci.org/github/adriangb/scikeras)
+[![Coverage Status](https://codecov.io/gh/adriangb/scikeras/branch/master/graph/badge.svg)](https://codecov.io/gh/adriangb/scikeras)
+[![Docs Status](https://readthedocs.org/projects/docs/badge/?version=latest)](https://scikeras.readthedocs.io/en/latest/?badge=latest)
+
+Scikit-Learn compatible wrappers for Keras Models.
+
+## Installation
+
+This package is available on PyPi:
+
+```bash
+pip install scikeras
+```
+
+The only dependencies are `scikit-learn>=0.22` and `TensorFlow>=2.1.0`.
+
+## Documentation
+
+Documentation is available on [ReadTheDocs](https://scikeras.readthedocs.io/en/latest/).
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md)
+
