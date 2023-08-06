@@ -1,0 +1,10 @@
+msal
+aiofiles
+jinja2
+fastapi
+authlib
+cryptography
+python-multipart
+requests
+pydantic[dotenv]
+itsdangerous
