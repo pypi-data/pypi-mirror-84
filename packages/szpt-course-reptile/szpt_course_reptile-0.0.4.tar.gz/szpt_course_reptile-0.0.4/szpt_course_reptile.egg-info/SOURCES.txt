@@ -1,0 +1,12 @@
+README.md
+setup.py
+szpt_course_base/ClassQuery.py
+szpt_course_base/__init__.py
+szpt_course_option/CourseOption.py
+szpt_course_option/__init__.py
+szpt_course_option/verifyCode.py
+szpt_course_reptile.egg-info/PKG-INFO
+szpt_course_reptile.egg-info/SOURCES.txt
+szpt_course_reptile.egg-info/dependency_links.txt
+szpt_course_reptile.egg-info/requires.txt
+szpt_course_reptile.egg-info/top_level.txt
