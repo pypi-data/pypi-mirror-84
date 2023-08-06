@@ -1,0 +1,44 @@
+dist: bionic
+language: python
+python: 3.8
+os: linux
+
+jobs:
+  fast_finish: true
+  include:
+    # Python 3.6
+    - python: 3.6
+      env: TESTENV=py36
+
+    # python 3.7
+    - python: 3.7
+      env: TESTENV=py37
+
+    # Python 3.8
+    - env: TESTENV=py38
+
+    # PyPy3
+    - python: pypy3
+      env: TESTENV=pypy3
+
+    # mypy
+    - env: TESTENV=mypy
+
+    # flake8
+    - env: TESTENV=flake8
+
+    # pylint
+    - env: TESTENV=pylint
+
+    # coverage
+    - env: TESTENV=coverage
+
+    # vulture
+    - env: TESTENV=vulture
+
+install:
+  - pip install tox
+
+script: tox -e "$TESTENV"
+
+
