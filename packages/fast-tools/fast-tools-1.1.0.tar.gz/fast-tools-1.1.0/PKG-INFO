@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fast-tools
+Version: 1.1.0
+Summary: fast-tools is a FastApi/Starlette toolset, Most of the tools can be used in FastApi/Starlette, a few tools only support FastApi which is divided into the lack of compatibility with FastApi
+Home-page: https://github.com/so1n/fast-tools
+License: MIT
+Author: So1n
+Author-email: qaz6803609@163.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/so1n/fast-tools
