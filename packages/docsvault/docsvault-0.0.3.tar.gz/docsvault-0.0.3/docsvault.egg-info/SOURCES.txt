@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+docsvault/__init__.py
+docsvault/api.py
+docsvault/funcs.py
+docsvault/settings.py
+docsvault/vault.py
+docsvault/webui.py
+docsvault/wsgi.py
+docsvault.egg-info/PKG-INFO
+docsvault.egg-info/SOURCES.txt
+docsvault.egg-info/dependency_links.txt
+docsvault.egg-info/top_level.txt
