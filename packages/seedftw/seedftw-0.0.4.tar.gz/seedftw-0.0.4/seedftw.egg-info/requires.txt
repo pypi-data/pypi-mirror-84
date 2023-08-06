@@ -1,0 +1,6 @@
+dash
+datetime
+numpy
+pandas
+plotly
+xlrd
