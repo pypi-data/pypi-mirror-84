@@ -1,0 +1,11 @@
+magic/__init__.py,sha256=V1YtzLaGTjsqyIjSW08uTxF52TnUrdoF7UVK_JwoJjQ,160
+magic/io.py,sha256=iUnXVhv10jaAok2YKH_2Qzk1d3zQwug_kUFAWCAZrss,3087
+magic/magic.py,sha256=VSo2Mi7rG9lTpoheJ8v_0AnCfgGNawZJY3rp6jK-75o,34050
+magic/plot.py,sha256=uyQBcRqeA-ct63ygIupu7JQvCzd7nqHLe8GgavnQz6A,5936
+magic/preprocessing.py,sha256=WHsKkW0C6DW38WIt3yELMfaZAxgwRTppC9lZ-Iy7k18,542
+magic/utils.py,sha256=iCKemWn3AXJhiC5QztXyd_XyRrpDwFU4Nqpbam29gC0,5378
+magic/version.py,sha256=ZOg41aCgKEuObK5WhegikXektFWPJaeZ-TMDh0Ke95M,22
+magic_impute-2.0.4.dist-info/METADATA,sha256=gro-Yde80ft439dwCO6ndECAguGpFyzhC3laTD3HqAg,5584
+magic_impute-2.0.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+magic_impute-2.0.4.dist-info/top_level.txt,sha256=MDDOZCPmPBiPXW10LHC6RzAJaGX08WaDj_oOOo7sQRc,6
+magic_impute-2.0.4.dist-info/RECORD,,
