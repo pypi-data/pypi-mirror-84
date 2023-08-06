@@ -1,0 +1,9 @@
+hacksaws/__init__.py,sha256=O7b4yr9kq9Gxq-W9tUzIXagAQxym7s6_ITSJqWtwaT0,555
+hacksaws/_aws.py,sha256=QAXakYrM2aHQRKCWrK6B2g8HRhW5p5AgUJlvo29mf34,1707
+hacksaws/_cli.py,sha256=cqmnw70ENLJyoZlZbROGlQ0ElYDrFQ2EBBOmj6Yt5kg,3481
+hacksaws/_configs.py,sha256=rhqjUUsySML_-FXqPj9eiMopn24rSO12mxfwEGX4VR4,2728
+hacksaws/_ecr.py,sha256=SJc8HKZIEayru9bb5CyjNCdmIpH_oJhlnuKT1pv5Wgo,1321
+hacksaws-0.1.2.dist-info/entry_points.txt,sha256=_TpjmK6isijhu-g03uI80BYAjVJ0MGJGcI-6GcJQoGg,50
+hacksaws-0.1.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+hacksaws-0.1.2.dist-info/METADATA,sha256=eUe5CyN_BVI3lk5u12MaXZxEwO5gFX0y7Dp4K3Ba9_M,5609
+hacksaws-0.1.2.dist-info/RECORD,,
