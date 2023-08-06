@@ -1,0 +1,3 @@
+[console_scripts]
+AnDOviewer = AnDO_Viewer:main
+
