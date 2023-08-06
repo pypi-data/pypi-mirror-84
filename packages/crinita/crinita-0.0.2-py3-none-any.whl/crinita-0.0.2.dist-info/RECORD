@@ -1,0 +1,13 @@
+crinita/__init__.py,sha256=ybvhTSj1b1FGYTOSG7DJNCeGPAlD-c-KwuAKRY7uJWQ,278
+crinita/article.py,sha256=VqFQqiR6J_2u7ninyUp7ys0sPX8bu7CK2UvkBo2KGqQ,3820
+crinita/config.py,sha256=eJiYkiA6Z_UX10XZZYKWN-cPSGTfFbi_nLk1QLlzVic,5623
+crinita/entity.py,sha256=q4r1fBOz_jaqDmf5WJBccAGalQX-TG53I237wuRek24,3082
+crinita/list_of_articles.py,sha256=0kO_1mcl6y4FJ_OFzyYIT43aAITjg2F_RwPXbqMSS48,5668
+crinita/page.py,sha256=IXAmDzZk8_6tELTZHF17wCC4pLreHuhceCDW04cW2YY,2697
+crinita/sites.py,sha256=987aQRqpGpdaE-xc1otxZe2iVvhnhVkk39E9d1PKab8,17699
+crinita/utils.py,sha256=MCpvjVla884_v4lZaqJ8Bx8WePdvXEPkX_d_31YIItg,353
+crinita-0.0.2.dist-info/LICENSE,sha256=qAPYDQzehtU8m8NOOsGVRyn8tfG6mYE9kFfFZp_Co-0,1067
+crinita-0.0.2.dist-info/METADATA,sha256=5SNnTZiNmOmFq_hbudo-JAPUx67km2fQRySFjb3ogrw,878
+crinita-0.0.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+crinita-0.0.2.dist-info/top_level.txt,sha256=d3yp4kQ0N0HT7iIs8bIN706rqwa4PTgt1xO7-o9SC2U,8
+crinita-0.0.2.dist-info/RECORD,,
