@@ -1,0 +1,5 @@
+requests
+msal
+
+[NTLMAuthentication]
+requests_ntlm
