@@ -1,0 +1,9 @@
+fastapi_profiler/__init__.py,sha256=sKjl7njE_yLJ4n5QXVbppsKxwKDyByDHGDlEj_HnOq4,111
+fastapi_profiler/_version.py,sha256=vfF3bddrAg8PhS0e1AuCzD9Py795NvjJ7X910B9TKr0,51
+fastapi_profiler/profiler_middleware/__init__.py,sha256=Ly6PAL4tlMG4w5VRTBlMP4gJGgWZdGGW1CKtDobBAgM,74
+fastapi_profiler/profiler_middleware/profiler.py,sha256=Nt0ac8ZCZVnUcHSKFlY0rYRRrRrGjJzwmwmNSpM-kQE,3807
+fastapi_profiler-1.0.0.dist-info/LICENSE,sha256=9x4J2bEgmXsamZK9tAG6aemAayZ4_lO1yp_SmkMJaok,1063
+fastapi_profiler-1.0.0.dist-info/METADATA,sha256=7J0DumWnmZ-X6ukXu2P9CvjYsO15eDEcokEcz2gboEc,919
+fastapi_profiler-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fastapi_profiler-1.0.0.dist-info/top_level.txt,sha256=Fl6oDoUFczZcfTe1C3SM-pLoHP_hgTZGFe0yXvc6jgE,17
+fastapi_profiler-1.0.0.dist-info/RECORD,,
