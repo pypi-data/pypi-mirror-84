@@ -1,0 +1,9 @@
+README.md
+setup.py
+django_graphviz_templates/__init__.py
+django_graphviz_templates/viz.py
+django_graphviz_templates.egg-info/PKG-INFO
+django_graphviz_templates.egg-info/SOURCES.txt
+django_graphviz_templates.egg-info/dependency_links.txt
+django_graphviz_templates.egg-info/requires.txt
+django_graphviz_templates.egg-info/top_level.txt
