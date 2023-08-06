@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+rus2latin_date/__init__.py
+rus2latin_date/rus2latin.py
+rus2latin_date.egg-info/PKG-INFO
+rus2latin_date.egg-info/SOURCES.txt
+rus2latin_date.egg-info/dependency_links.txt
+rus2latin_date.egg-info/not-zip-safe
+rus2latin_date.egg-info/requires.txt
+rus2latin_date.egg-info/top_level.txt
