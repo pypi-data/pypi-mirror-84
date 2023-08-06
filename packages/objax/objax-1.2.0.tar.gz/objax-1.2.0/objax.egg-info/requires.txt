@@ -1,0 +1,7 @@
+jax
+jaxlib
+numpy>=1.18.0
+parameterized
+pillow
+scipy
+tensorboard>=2.3.0
