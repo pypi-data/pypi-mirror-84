@@ -1,0 +1,9 @@
+README.md
+setup.py
+lhereader/__init__.py
+lhereader.egg-info/PKG-INFO
+lhereader.egg-info/SOURCES.txt
+lhereader.egg-info/dependency_links.txt
+lhereader.egg-info/not-zip-safe
+lhereader.egg-info/requires.txt
+lhereader.egg-info/top_level.txt
