@@ -1,0 +1,12 @@
+azutils/__init__.py,sha256=ZzYh-oJlrKlyJ2zrrjJlzrVHobWWW9VB809CLD6au1M,121
+azutils/databricks/__init__.py,sha256=2BzClQeZSQ-dP5z8LC_WhttyhcoDLUDLCBxiTzNlc5M,39
+azutils/databricks/_client.py,sha256=_An-tdODMSVpDerlrxYcjnqu16945Njars79mPzrKH8,5905
+azutils/databricks/_databricks.py,sha256=kCby67w5osJv-tqiFMlq_tDiZT1_hM9w9sZd8kodGOE,9323
+azutils/databricks/utils.py,sha256=_y4oI79q0cLn-4WRBaLsHmcLVF0dKTJrmqNaQVGmbJM,558
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/conftest.py,sha256=XcJiXqD3rHXn_xljrNYahi8HG2yvaBBhcyG_TXwzpAU,256
+test/test_databricks.py,sha256=GsJ2XpNzMX9Kk-zPn1T02gLYugOWi5nMbUxpUu2MuCo,117
+azutils-0.1.0.dist-info/METADATA,sha256=8YriyEq399E3kIMQR459E6E1COf4Kxw9RlYAzQkbVXQ,1494
+azutils-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+azutils-0.1.0.dist-info/top_level.txt,sha256=sBGjkpwzGScBcG7M2cj69pOzdrufYzCfrtVI5xqZZjo,13
+azutils-0.1.0.dist-info/RECORD,,
