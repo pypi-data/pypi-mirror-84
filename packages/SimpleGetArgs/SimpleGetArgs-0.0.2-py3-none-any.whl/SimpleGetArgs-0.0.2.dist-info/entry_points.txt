@@ -1,0 +1,3 @@
+[console_scripts]
+GetArgs = GetArgs.__main__:main
+

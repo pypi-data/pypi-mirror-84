@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: SimpleGetArgs
+Version: 0.0.2
+Summary: Test to Publish the Command Line
+Home-page: https://github.com/MSBeni/PublishArgparse
+Author: MSBeni
+Author-email: andrei.sokurov.bitco@gmail.com
+License: UNKNOWN
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Software Development :: Bug Tracking
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7) ; extra == 'dev'
+
+# A project to simply check the publishing of the command Line
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![GitHub](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://raw.githubusercontent.com/mkfeuhrer/richest/master/LICENSE.txt)
+[![PyPI version fury.io](https://badge.fury.io/py/richest.svg)](https://pypi.python.org/pypi/richest/)
+
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
+This repository teach my students to learn how to simply publish a python package with command line.
+A Python package for getting list of numbers from 1 to 100 or saying hello to anyone, 
+
+## Installation Instruction
+
+- Chef-CLI is available as a python package.
+
+- Open terminal and run ```pip install SimpleGetArgs```
+
+- This installs the CLI app.
+
+- Now run richest --help to know the available commands
+
+- Enjoy !!
+
+### Example
+
+**To Print the numbers from 0 to 100**
+
+```
+GetArgs --counttill100
+```
+
+**To extract Top 20 Youngest Richest People**
+
+```
+GetArgs --print1 --name "NazGol"
+```
+
+**Complete option list**
+
+```
+richest -h
+usage: richest [-h] [--current] [--youngest] [--oldest] [--male] [--female]
+
+optional arguments:
+  -h, --help      show this help message and exit
+  --counttill100  Print count till 100
+  --print1        Let you to Print Hello to any name
+  --name NAME     Print Name
+```
+
+## Contributors
+
+- [MSBeni](https://github.com/MSBeni)
+
+
+
