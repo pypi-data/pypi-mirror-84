@@ -1,0 +1,9 @@
+README.md
+setup.py
+pydantic_env/__init__.py
+pydantic_env/models.py
+pydantic_env.egg-info/PKG-INFO
+pydantic_env.egg-info/SOURCES.txt
+pydantic_env.egg-info/dependency_links.txt
+pydantic_env.egg-info/requires.txt
+pydantic_env.egg-info/top_level.txt
