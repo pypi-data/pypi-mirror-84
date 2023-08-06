@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: kivyhost
+Version: 0.1
+Summary: Helps you view kivy app logs on android platform without adb
+Home-page: https://github.com/davidoluwafemi
+Author: Oluwafemi David
+Author-email: 1inventordavid@gmail.com
+License: MIT
+Download-URL: https://github.com/davidoluwafemi/kivyhost/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: Logs,Kivy,adb
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
