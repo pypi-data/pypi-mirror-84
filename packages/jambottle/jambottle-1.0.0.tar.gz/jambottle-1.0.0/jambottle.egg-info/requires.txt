@@ -1,0 +1,8 @@
+appdirs==1.4.4
+arrow==0.17.0
+discord.py==1.5.1
+requests==2.24.0
+
+[dev]
+autopep8==1.5.4
+flake8==3.8.4

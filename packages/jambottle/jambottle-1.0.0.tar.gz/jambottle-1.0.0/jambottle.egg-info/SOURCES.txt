@@ -1,0 +1,14 @@
+LICENSE
+pyproject.toml
+setup.cfg
+setup.py
+jambottle/__init__.py
+jambottle/__main__.py
+jambottle/jambottle.py
+jambottle.egg-info/PKG-INFO
+jambottle.egg-info/SOURCES.txt
+jambottle.egg-info/dependency_links.txt
+jambottle.egg-info/entry_points.txt
+jambottle.egg-info/requires.txt
+jambottle.egg-info/top_level.txt
+jambottle.egg-info/zip-safe
