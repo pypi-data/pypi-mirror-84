@@ -1,0 +1,7 @@
+[console_scripts]
+u-cat=u_coreutils.cat:run
+u-echo=u_coreutils.echo:run
+u-false=u_coreutils.false:run
+u-head=u_coreutils.head:run
+u-mkdir=u_coreutils.mkdir:run
+
