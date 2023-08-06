@@ -1,0 +1,3 @@
+[console_scripts]
+abcd = autoskip.cli:main
+
