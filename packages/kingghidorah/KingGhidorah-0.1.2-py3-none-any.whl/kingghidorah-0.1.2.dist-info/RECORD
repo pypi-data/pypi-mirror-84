@@ -1,0 +1,9 @@
+kingghidorah/__init__.py,sha256=KUaag7m3fi_A3if-hyzaHdGYpcTlvkmAxPGbTuLvJGw,219
+kingghidorah/api.py,sha256=h-Pr70nm6xAHWQz4iCQkfOCaiBz5e3Zp2Vo7c6Kx5vY,15828
+kingghidorah/calls.py,sha256=KFm9tHLt3hsiLN_kEJDTvXBAk9OOH19sN3fMOtyq_bs,4492
+kingghidorah/exceptions.py,sha256=jgaJfK8VWdBhA3Lfy5hUrrwylCG4w-lO_TFlQS218kM,594
+kingghidorah/sanitizers.py,sha256=1sZ5fZdg74HWIEuNV7EwJ12sFbAeBNQA49Qrx1zDvJU,308
+kingghidorah/utils.py,sha256=A6JLi_v-64MqjmVIg2guD7f6JB5oGwsPTkQanbLPK0M,2364
+kingghidorah-0.1.2.dist-info/WHEEL,sha256=G_NFpzHmv_dUXgCUSAWL0-bLL-eMzYU6DzDeGXbRXUk,83
+kingghidorah-0.1.2.dist-info/METADATA,sha256=CUVX9lhxnMxmcXaWm7aNYNJaNQgrgf6da4BKWoCPxR8,411
+kingghidorah-0.1.2.dist-info/RECORD,,

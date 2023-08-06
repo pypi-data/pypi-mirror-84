@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: kingghidorah
+Version: 0.1.2
+Summary: 
+Author: deepio
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: docs
+Requires-Dist: attrs (>=19.1,<20.0)
+Requires-Dist: prettyprinter (>=0.18.0,<0.19.0)
+Requires-Dist: requests[socks] (>=2.23.0,<3.0.0)
