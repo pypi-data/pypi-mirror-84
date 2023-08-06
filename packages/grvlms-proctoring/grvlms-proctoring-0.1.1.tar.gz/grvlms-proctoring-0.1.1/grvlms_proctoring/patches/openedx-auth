@@ -1,0 +1,12 @@
+"PROCTORING_BACKENDS": {
+    "software_secure": {
+        "crypto_key": "{{ PROCTORING_CRYPTO_KEY }}",
+        "exam_register_endpoint": "{{ PROCTORING_EXAM_REGISTER_ENDPOINT }}",
+        "exam_sponsor": "{{ PROCTORING_EXAM_SPONSOR }}",
+        "organization": "{{ PROCTORING_ORGANIZATION }}",
+        "secret_key": "{{ PROCTORING_SECRET_KEY }}",
+        "secret_key_id": "{{ PROCTORING_SECRET_KEY_ID }}",
+        "software_download_url": "{{ PROCTORING_SOFTWARE_DOWNLOAD_URL }}"
+    },
+    "DEFAULT": "software_secure"
+}
