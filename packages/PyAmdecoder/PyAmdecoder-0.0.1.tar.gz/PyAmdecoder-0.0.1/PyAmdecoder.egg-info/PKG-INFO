@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: PyAmdecoder
+Version: 0.0.1
+Summary: AndroidManifest.xml PyDecoder
+Home-page: https://github.com/harry595/Py_Amdecoder
+Author: harry595
+Author-email: harry919@ajou.ac.kr
+License: MIT
+Description: # PyAmdecoder
+        
+        Decode AndroidManifest.xml with python 3.7
+        
+Platform: UNKNOWN

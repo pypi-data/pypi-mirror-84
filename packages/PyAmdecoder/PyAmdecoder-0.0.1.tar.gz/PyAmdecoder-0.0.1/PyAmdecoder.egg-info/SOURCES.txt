@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+ConfigHelper/__init__.py
+PyAmdecoder.egg-info/PKG-INFO
+PyAmdecoder.egg-info/SOURCES.txt
+PyAmdecoder.egg-info/dependency_links.txt
+PyAmdecoder.egg-info/top_level.txt
+tests/__init__.py
