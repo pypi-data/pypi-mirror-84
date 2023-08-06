@@ -1,0 +1,9 @@
+CHANGELOG.txt
+MANIFEST.in
+README.md
+setup.py
+astpy/__init__.py
+astpy.egg-info/PKG-INFO
+astpy.egg-info/SOURCES.txt
+astpy.egg-info/dependency_links.txt
+astpy.egg-info/top_level.txt
