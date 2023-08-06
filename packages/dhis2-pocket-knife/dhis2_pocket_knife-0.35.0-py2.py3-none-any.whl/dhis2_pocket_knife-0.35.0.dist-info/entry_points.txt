@@ -1,0 +1,10 @@
+[console_scripts]
+dhis2-src = src.main:pocketknife_run
+dhis2-src-attribute-setter = src.main:pocketknife_run
+dhis2-src-data-integrity = src.main:pocketknife_run
+dhis2-src-indicator-definitions = src.main:pocketknife_run
+dhis2-src-post-css = src.main:pocketknife_run
+dhis2-src-share = src.main:pocketknife_run
+dhis2-src-userinfo = src.main:pocketknife_run
+dhis2-src-validation-rules = src.main:pocketknife_run
+
