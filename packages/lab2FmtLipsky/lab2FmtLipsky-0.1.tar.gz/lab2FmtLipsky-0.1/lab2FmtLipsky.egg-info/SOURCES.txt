@@ -1,0 +1,6 @@
+setup.py
+lab2FmtLipsky.egg-info/PKG-INFO
+lab2FmtLipsky.egg-info/SOURCES.txt
+lab2FmtLipsky.egg-info/dependency_links.txt
+lab2FmtLipsky.egg-info/not-zip-safe
+lab2FmtLipsky.egg-info/top_level.txt
