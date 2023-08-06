@@ -1,0 +1,14 @@
+leidenmark/__init__.py,sha256=ZvyzQxfM65kmAPITBlNkBRM80DDW1uW7-4A2Eds8kfI,3154
+leidenmark/divisions.py,sha256=sa6MCfOnoWPSIWpb8cVrEwZ-5kkkPl1PX9A8HKeu5t8,6080
+leidenmark/exceptions.py,sha256=oZ-3FuiZNmOAt_Hscn9r6vL2N1a22q20xt27rDVrOM8,49
+leidenmark/foreign.py,sha256=Kuuo2Pqrb5Bugv9PO5oUObnLznKz5oEwH6hANHYBaTE,361
+leidenmark/gaps_spaces.py,sha256=Y-ebYrqc4ifgc0yCwkoa7gUy8HValed--Y7TvrTv2cU,2600
+leidenmark/line_nums.py,sha256=Ssfq5fBsEKlwQ9y-MnlQG-9PkuO5xF0YPBTw-rlxxII,1783
+leidenmark/milestones.py,sha256=UaCgF1CpzOAToj2lL9QhLdn92tGX1BKpu66EeQPN0tg,2086
+leidenmark/misc.py,sha256=_YoVLS8nEMr7zwcNmFQHbFFbHpm756aah-4EZSJTKdU,327
+leidenmark/to_xml.py,sha256=v67dAqmiMHcKTn3pMDdAkLjfQ7N41usISvAM7m5qo-A,3032
+leidenmark-0.1.17.dist-info/LICENSE,sha256=IIx1gN6AJtk7EuXZNUleMG6XezCha8uQrivlrWVcRT4,1073
+leidenmark-0.1.17.dist-info/METADATA,sha256=ymyvLDOvhG3YAGh6O5K0s61AGeIz4zy8IA05AwC8_Ew,2575
+leidenmark-0.1.17.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+leidenmark-0.1.17.dist-info/top_level.txt,sha256=YM89k68zQ0h4t6ObEOwszvXyAfIzeL2kB5c0XI8TCCY,11
+leidenmark-0.1.17.dist-info/RECORD,,
