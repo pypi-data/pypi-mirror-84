@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+jp_flowchartjs/__init__.py
+jp_flowchartjs/jp_flowchartjs.py
+jp_flowchartjs.egg-info/PKG-INFO
+jp_flowchartjs.egg-info/SOURCES.txt
+jp_flowchartjs.egg-info/dependency_links.txt
+jp_flowchartjs.egg-info/not-zip-safe
+jp_flowchartjs.egg-info/requires.txt
+jp_flowchartjs.egg-info/top_level.txt
