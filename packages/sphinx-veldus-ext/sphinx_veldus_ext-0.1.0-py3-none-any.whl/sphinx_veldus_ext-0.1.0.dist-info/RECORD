@@ -1,0 +1,11 @@
+veldus_ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+veldus_ext/helloworld.py,sha256=NYAdQ0BeDnkx1n_4Ze6bQzHg4w3iGGXkAwCQdvtW1Vs,447
+veldus_ext/statblock.py,sha256=coYzVBQEeSlXIMMI9al1qSHMz3eMmhRvf7Cau2waEco,17269
+veldus_ext/todo.py,sha256=Dj7DOH3IuEMC531zPUkjzCLp9-7J6Ie1CMgdtxEKgZI,12635
+veldus_ext/templates/statblock.html,sha256=F1RqOFQknE_WWMDIiRVCuM0bS4Xn-DTeZM-M7kNZatw,427
+veldus_ext/templates/summary-table.html,sha256=0s4TWj5ZB6GPIgaL9t0hEPdm-ipQ6DawvO6wfEksMm4,901
+sphinx_veldus_ext-0.1.0.dist-info/LICENSE,sha256=ib9uHB88wuedIVOqBy8qQvQpSUGVaxjJ6sfAF1YIwCU,1104
+sphinx_veldus_ext-0.1.0.dist-info/METADATA,sha256=S-iJOks62T4vJkrhqcYGh4GIcta8-PYI95xdDA8ah38,732
+sphinx_veldus_ext-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+sphinx_veldus_ext-0.1.0.dist-info/top_level.txt,sha256=mAa5_geWUwiPePZEgrJsSfYXdZxSNvEd-8CiLL0gy0E,11
+sphinx_veldus_ext-0.1.0.dist-info/RECORD,,
