@@ -1,0 +1,3 @@
+[console_scripts]
+filesizeview = filesizeview.filesizeview:main
+
