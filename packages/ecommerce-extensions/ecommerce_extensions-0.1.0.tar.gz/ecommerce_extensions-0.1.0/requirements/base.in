@@ -1,0 +1,5 @@
+# Main requirements of your application.
+-c constraints.txt
+
+Django
+jsonfield2
