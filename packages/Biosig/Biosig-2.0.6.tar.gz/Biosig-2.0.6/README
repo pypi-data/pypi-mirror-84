@@ -1,0 +1,58 @@
+About Biosig's Python interfaces. 
+======================================
+
+Biosig is toolbox for processing biomedical signals
+like ECG, EEG etc. It can read about 50 different
+data formats including EDF, CFS, Heka, BDF, BrainVision,
+and many more. The heavy lifting is done in "libbbiosig"
+the biosig library implemented in C/C++. The
+Python module of Biosig provides an interface between
+libbiosig and Python. Currently, two functions are
+provided, one for reading the data samples, and one
+for extracting the meta information, like event
+table, scaling factors, sampling rates, etc.
+
+
+Installation:
+--------------------------------------------------
+Prerequisite:
+  libbiosig (for your platform)
+
+  make release
+  pip install dist/Biosig-1.9.tar.gz
+
+
+Usage:
+--------------------------------------------------
+  - start python and run
+  import biosig
+  import json
+
+  HDR=biosig.header("filename.gdf")
+  HDR=json.JSONDecoder(HDR)
+  print(HDR)
+
+  Data=biosig.data("filename.gdf")
+
+
+
+History: 
+-------------------------------------------------
+  In the past there were several attempts
+  of providing Python support. A first attempt 
+  using pure python should to be very slow and a 
+  lot of implementation effort, only some early 
+  version of GDF has been supported. 
+  Later, Swig was used for providing a python binding. 
+  This was reasonable flexible, and the libbiosig 
+  implementation could be mostly used. Disadvantages 
+  were the effort to maintin swig.i interface file, 
+  which is currently most likely broken. Known issues 
+  are string support, lack of Python3 support. Also this
+  attempt is considered deprecated. 
+
+  The third attempt is using "module extensions". 
+  Currently, two functions, one for reading the header
+  information (in JSON format) and one for reading the 
+  data samples is provided.
+
