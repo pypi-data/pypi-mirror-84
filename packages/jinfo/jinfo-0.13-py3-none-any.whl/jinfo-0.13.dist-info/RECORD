@@ -1,0 +1,11 @@
+jinfo/__init__.py,sha256=uCv4X5x5z9aIAdNOmFvwELEG2npfEbDOdVC3iqk8AAY,410
+jinfo/alignment.py,sha256=7BMAW3ql58F8arR1FxkAy_sVwHXEGc5ifWsQmpB-tUA,1520
+jinfo/phylogenetics.py,sha256=n-TEw2AalKXiB83X5gP9soS8XdDCBsj7wpAQLUvVLGE,330
+jinfo/sequence.py,sha256=jK1Xu0_OI3zbLiFDu6apfYLRu0xXJnD8XLNEbyjnAus,5900
+jinfo/tables.py,sha256=8fWIhlfxGMADIyu14Vwxoe-M_orGzZuGEyCsNG2xtfY,1802
+jinfo/utils.py,sha256=9WjrdVaoy2tNZOVr9zVOzKjJYk_TJ7rFU8E5iip7G0c,5898
+jinfo-0.13.dist-info/LICENSE,sha256=Nq4izyhB3gOi_gMWOi0OJsHoK0ECXv5oyTOyzu2rl2E,1068
+jinfo-0.13.dist-info/METADATA,sha256=i7LpxqdCajaRF2AL7eDe-CRyeO9d2GkdzbzsE529JSI,207
+jinfo-0.13.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+jinfo-0.13.dist-info/top_level.txt,sha256=dKm9G1e2kxS_pbpHL3egzx3gxUAUz0gyNKfrdxCJxWg,6
+jinfo-0.13.dist-info/RECORD,,
