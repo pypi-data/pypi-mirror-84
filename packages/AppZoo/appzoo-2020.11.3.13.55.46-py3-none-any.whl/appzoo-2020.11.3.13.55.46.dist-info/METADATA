@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: appzoo
+Version: 2020.11.3.13.55.46
+Summary: description
+Home-page: https://github.com/Jie-Yuan/StreamlitApp
+Author: JieYuan
+Author-email: 313303303@qq.com
+Maintainer: JieYuan
+Maintainer-email: 313303303@qq.com
+License: MIT
+Keywords: tool wheel,yuanjie,utils
+Platform: all
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: wget
+Requires-Dist: paddleocr
+
+# AppZoo
+
+
