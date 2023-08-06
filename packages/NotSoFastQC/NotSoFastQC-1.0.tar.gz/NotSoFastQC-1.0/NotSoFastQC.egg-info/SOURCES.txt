@@ -1,0 +1,13 @@
+README.md
+setup.py
+NotSoFastQC/__init__.py
+NotSoFastQC/__main__.py
+NotSoFastQC/fastqc_manager.py
+NotSoFastQC/modules.py
+NotSoFastQC/utils.py
+NotSoFastQC.egg-info/PKG-INFO
+NotSoFastQC.egg-info/SOURCES.txt
+NotSoFastQC.egg-info/dependency_links.txt
+NotSoFastQC.egg-info/entry_points.txt
+NotSoFastQC.egg-info/requires.txt
+NotSoFastQC.egg-info/top_level.txt
