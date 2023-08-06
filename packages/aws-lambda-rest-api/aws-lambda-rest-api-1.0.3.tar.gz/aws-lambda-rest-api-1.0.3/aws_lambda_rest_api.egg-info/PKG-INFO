@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: aws-lambda-rest-api
+Version: 1.0.3
+Summary: Generate rest api for lambda like django view.
+Home-page: https://github.com/Cohey0727/aws-lambda-rest-api
+Author: Kohei Okamoto
+Author-email: ohayousagi.ac.kook0727@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: aws lambda rest
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
