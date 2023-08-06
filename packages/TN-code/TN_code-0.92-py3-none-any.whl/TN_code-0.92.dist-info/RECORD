@@ -1,0 +1,15 @@
+TN_code/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TN_code/fourier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TN_code/fourier/fourier_coeff.py,sha256=yyaQ73IZiRcrCo7_6mt02hZBMVbbMkoWHBNMSW78fkQ,2303
+TN_code/fourier/fourier_complex.py,sha256=na7rihSAkmY9jOa6xaaJZAcjgbau8BVMg2WxfrYI5WU,2048
+TN_code/hardware/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TN_code/hardware/get_data.py,sha256=zANEZM6yp2tjlIrHoQE8w3kZcuh2m7nXbby9raY5XoY,6224
+TN_code/hardware/lees_data_numpy.py,sha256=DDf2ty3pKF1C9falx1gz1aSWo3J393-AyRob82Bt2Zg,519
+TN_code/hardware/write_data.py,sha256=sEx2fYEbsos1mwFI6iy2CS_VRlhzNa1kxfwshXArJdY,282
+TN_code/plotten/TISTNplot.py,sha256=jRr6k1yJDFncMpaNjySmUKpti5RW9y1MaWqYQlrsWu8,5851
+TN_code/plotten/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TN_code-0.92.dist-info/LICENSE,sha256=uDQ8e3QCiwPxQwnzLxcXYFIc6AvLrGws9msIBUGXPHE,1054
+TN_code-0.92.dist-info/METADATA,sha256=cLW2Se-0Dtx1aWJRYCWynp6pdCsfgPnOO-Sm7oxzVe8,1570
+TN_code-0.92.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+TN_code-0.92.dist-info/top_level.txt,sha256=rj756dHdNkgmWblYzDk7djcmvRMxOg3DY0nV2LVA6Xk,8
+TN_code-0.92.dist-info/RECORD,,
