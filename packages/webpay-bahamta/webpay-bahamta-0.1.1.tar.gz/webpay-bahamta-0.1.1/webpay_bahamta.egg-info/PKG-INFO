@@ -1,0 +1,146 @@
+Metadata-Version: 2.1
+Name: webpay-bahamta
+Version: 0.1.1
+Summary: Python package for Webpay gateway API.
+Home-page: https://github.com/amirho3inf/python-webpay
+Author: AmirHossein Falahati
+Author-email: mramirho3inf@gmail.com
+License: MIT
+Description: Python package for `Webpay <https://webpay.bahamta.ir>`__ gateway API
+        =====================================================================
+        
+        Installation
+        ------------
+        
+        Install from PyPI:
+        
+        .. code:: bash
+        
+            pip install webpay-bahamta
+        
+        For async support:
+        
+        .. code:: bash
+        
+            pip install webpay-bahamta[async]
+        
+        Usage
+        -----
+        
+        Simple example:
+        
+        .. code:: python
+        
+            from webpay import WebpayAPI
+        
+            API_KEY = "webpay:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx:zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz"
+            webpay = WebpayAPI(API_KEY)
+        
+            # Make a payment
+            payment_url = webpay.payment(
+                reference='payment#1',
+                amount_irr=100000,
+                callback_url='https://example.com',
+                payer_mobile='+989111111111',  # Optional
+                trusted_pan=None  # Optional
+            )
+        
+            # Verify payment
+            try:
+                payment_data = webpay.verify(
+                    reference='payment#1',
+                    amount_irr=100000
+                )
+                if payment_data.get("status") == "paid":
+                    print("Payment confirmed")
+                else:
+                    print("Payment not confirmed")
+            except Exception as exc:
+                if exc.error_key == 'NOT_CONFIRMED':
+                    print("Payment not confirmed")
+                else:
+                    raise exc
+        
+        Async example:
+        
+        .. code:: python
+        
+            import asyncio
+            from webpay import AsyncWebpayAPI
+        
+            API_KEY = "webpay:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx:zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz"
+            webpay = AsyncWebpayAPI(API_KEY)
+        
+        
+            async def main():
+                # Make a payment
+                payment_url = await webpay.payment(
+                    reference='payment#1',
+                    amount_irr=100000,
+                    callback_url='https://example.com',
+                    payer_mobile='+989111111111',  # Optional
+                    trusted_pan=None  # Optional
+                )
+        
+                # Verify payment
+                try:
+                    payment_data = await webpay.verify(
+                        reference='payment#1',
+                        amount_irr=100000
+                    )
+                    if payment_data.get("status") == "paid":
+                        print("Payment confirmed")
+                    else:
+                        print("Payment not confirmed")
+                except Exception as exc:
+                    if exc.error_key == 'NOT_CONFIRMED':
+                        print("Payment not confirmed")
+                    else:
+                        raise exc
+        
+            loop = asyncio.get_event_loop()
+            loop.run_until_complete(main())
+        
+        payment\_url will be like:
+        
+        ::
+        
+            https://webpay.bahamta.com/api/…
+        
+        payment\_data will be like:
+        
+        .. code:: json
+        
+            {
+                "state": "paid",
+                "total": 1000000,
+                "wage": 5000,
+                "gateway": "sep",
+                "terminal": "11223344",
+                "pay_ref": "GmshtyjwKSu5lKOLquYrzO9BqjUMb/TPUK0qak/iVs",
+                "pay_trace": "935041",
+                "pay_pan": "123456******1234",
+                "pay_cid": "77CB1B455FB5F60415A7A02E4502134CFD72DBF6D1EC8FA2B48467DFB124AA75A",
+                "pay_time": "2019-11-12T16:39:57.686436+03:30"
+            }
+        
+        API Documentation
+        -----------------
+        
+        https://webpay.bahamta.com/doc/api
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: async
