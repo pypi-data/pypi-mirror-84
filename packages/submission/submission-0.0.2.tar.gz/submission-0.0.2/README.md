@@ -1,0 +1,25 @@
+# 'Submission' Package for various online competitions.
+
+This package helps the user to make submission file in '.csv' format (viz the criterion for most competitions) in a simple way.
+
+Installation:
+
+Run the following to install,
+#Python
+pip install submission
+
+How it works?
+
+It takes the algorithm, training dataset, test dataset, X variables, Y variables, column names (particular columns required for submission) and name of submission file (desired by the user) as input and produces an outputs the accuracy , RMSE and Cross-Validation score of that model and in .csv for submitting in the competition.
+
+How to use:
+
+from sklearn.tree import DecisionTreeRegressor
+DT = DecisionTreeRegressor(max_depth=15, min_samples_leaf=100)
+submission.modelfit(DT, train_df, test_df, predictors, target, IDcol, 'DT.csv')
+
+Output:
+Model Report
+Accuracy : 84%
+RMSE : 2914
+CV Score : Mean - 2941 | Std - 20.86 | Min - 2907 | Max - 2975

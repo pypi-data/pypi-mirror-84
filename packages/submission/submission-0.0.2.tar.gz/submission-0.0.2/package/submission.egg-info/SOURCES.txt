@@ -1,0 +1,7 @@
+README.md
+setup.py
+package/submission.py
+package/submission.egg-info/PKG-INFO
+package/submission.egg-info/SOURCES.txt
+package/submission.egg-info/dependency_links.txt
+package/submission.egg-info/top_level.txt
