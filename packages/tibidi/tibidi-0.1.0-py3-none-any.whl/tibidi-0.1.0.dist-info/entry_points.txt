@@ -1,0 +1,5 @@
+[console_scripts]
+tbdump=tbdump.__main__:tbdump
+tbload=tbdump.__main__:tbload
+tbpeep=tbdump.__main__:tbpeep
+
