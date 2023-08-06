@@ -1,0 +1,15 @@
+numpy
+torch
+torchvision
+pytorch-ignite
+comet_ml
+pyyaml>=5.1
+scikit-learn
+fastapi
+uvicorn
+joblib
+tensorboardX
+tensorboard
+imageio
+loguru
+editdistance
