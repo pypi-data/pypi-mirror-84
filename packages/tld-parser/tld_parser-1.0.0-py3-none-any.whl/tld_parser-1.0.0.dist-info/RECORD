@@ -1,0 +1,7 @@
+tld_parser/__init__.py,sha256=3lNgVK0MjoXLo-67ExKn850in_2GLN14gFT5GJq4pZg,69
+tld_parser/parser.py,sha256=bwcu6OwGDf64XS_jShiYlbIoCDU7vSWqhZvHF86cTPg,2317
+tld_parser/the_list.dat,sha256=uYGVP5ECGOT_aJW-Stv7OYkhl6Rb43z7D9UqQzlX7NI,227133
+tld_parser-1.0.0.dist-info/LICENSE,sha256=RlwSY3Kgw8LmAGeVXqAy00Nm2AxV_aBAC4EzinSG-EA,1052
+tld_parser-1.0.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+tld_parser-1.0.0.dist-info/METADATA,sha256=melGZNHGYFD5VMRGjUyJnmX3J2sttGzDSQsRO0vhHmw,386
+tld_parser-1.0.0.dist-info/RECORD,,
