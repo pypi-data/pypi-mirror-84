@@ -1,0 +1,15 @@
+ca_taxes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ca_taxes/admin.py,sha256=yznNcPTq9AW7rlfB-x8Eu7vQUCxSd0NgHMqZ6dhxXwc,416
+ca_taxes/models.py,sha256=M-yrpAX3dLHPCnNkaaoWxPK2zAZiq_Aup_1Gpur-zqw,2440
+ca_taxes/tests.py,sha256=UPFoxTthgba7S5hu873xrvlpDrK7m5a00t_EZpVTgH0,1297
+ca_taxes/management/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ca_taxes/management/commands/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ca_taxes/management/commands/cataxes.py,sha256=sjyIdMBUbw6-fwwW3J4gfrihRaNzYI5DhH_Q_QhKFdg,706
+ca_taxes/migrations/0001_initial.py,sha256=FHYfH_kwE1ean4O5q9ktIpy_78JQ0GveLdbo4Yk4mDg,727
+ca_taxes/migrations/0002_auto_20150825_0119.py,sha256=QOM0_8wcYUrHQFUtlhQ4QUZaTrrJkTiTEZgRdSyazoo,411
+ca_taxes/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ca_taxes-1.0.dist-info/LICENSE,sha256=Q2ptU2E48gOsMzhYz_kqVovmJ5d1KzrblLyqD2_-fvY,1235
+ca_taxes-1.0.dist-info/METADATA,sha256=L-A5FJ8dPVbURWVDK0mEvTdWw48uMDUn9J7Oj8wxSPs,1205
+ca_taxes-1.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+ca_taxes-1.0.dist-info/top_level.txt,sha256=cbqWyYFBtqK0pPZ26YhGwzW7SybE_A7OPGrHPkseifw,9
+ca_taxes-1.0.dist-info/RECORD,,
