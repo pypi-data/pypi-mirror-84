@@ -1,0 +1,13 @@
+
+[cli]
+
+[cli:python_version <= "2.7"]
+click<7.1
+
+[cli:python_version > "2.7"]
+click
+
+[test]
+
+[test:python_version <= "2.7"]
+unittest2
