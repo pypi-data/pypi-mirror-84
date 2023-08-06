@@ -1,0 +1,462 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Reference &mdash; Django Google Mailer 0.2.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Changelog" href="change.html" />
+    <link rel="prev" title="Quick start" href="quick-start.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Django Google Mailer
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Home</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quick-start.html">Quick start</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-gmailer.gmail">Gmail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-gmailer.views">Views</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#settings">Settings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gmail-user">GMAIL_USER</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gmail-secret">GMAIL_SECRET</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gmail-scopes">GMAIL_SCOPES</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gmail-redirect">GMAIL_REDIRECT</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="change.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Django Google Mailer</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Reference</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/modules.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="reference">
+<h1>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-gmailer.gmail">
+<span id="gmail"></span><h2>Gmail<a class="headerlink" href="#module-gmailer.gmail" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="gmailer.gmail.Gmail">
+<em class="property">class </em><code class="sig-prename descclassname">gmailer.gmail.</code><code class="sig-name descname">Gmail</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em>, <em class="sig-param"><span class="n">client_secrets_file</span></em>, <em class="sig-param"><span class="n">scopes</span></em>, <em class="sig-param"><span class="n">redirect_uri</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gmailer.gmail.Gmail" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class defines all the core functional methods of Gmailer</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>user</strong> (<em>str</em>) – Admin user’s name which should appear to the end user who receive email</p></li>
+<li><p><strong>client_secrets_file</strong> (<em>str</em>) – Current state to be in</p></li>
+<li><p><strong>scopes</strong> (<em>str</em>) – Scopes which allow user to fetch data</p></li>
+<li><p><strong>redirect_uri</strong> (<em>str</em>) – Redirection URL for Google to use after verification</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You need to add GMAIL variables inside <code class="xref py py-mod docutils literal notranslate"><span class="pre">settings.py</span></code> for proper
+initialisation of this class</p>
+</div>
+<dl class="py exception">
+<dt id="gmailer.gmail.Gmail.SettingError">
+<em class="property">exception </em><code class="sig-name descname">SettingError</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span></em>, <em class="sig-param"><span class="n">error</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gmailer.gmail.Gmail.SettingError" title="Permalink to this definition">¶</a></dt>
+<dd><p>When settings are not properly configured, this exception is raised</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>message</strong> (<em>str</em>) – Subject of the email send</p></li>
+<li><p><strong>error</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code>) – Body of the email send</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="gmailer.gmail.Gmail.StateError">
+<em class="property">exception </em><code class="sig-name descname">StateError</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span></em>, <em class="sig-param"><span class="n">error</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gmailer.gmail.Gmail.StateError" title="Permalink to this definition">¶</a></dt>
+<dd><p>When state of the request is not matched with state from request, this exception is raised</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>message</strong> (<em>str</em>) – Subject of the email send</p></li>
+<li><p><strong>error</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code>) – Body of the email send</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="gmailer.gmail.Gmail.UnauthorizedAPIError">
+<em class="property">exception </em><code class="sig-name descname">UnauthorizedAPIError</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span></em>, <em class="sig-param"><span class="n">error</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gmailer.gmail.Gmail.UnauthorizedAPIError" title="Permalink to this definition">¶</a></dt>
+<dd><p>When app try to access API without proper authorization, this exception is raised</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>message</strong> (<em>str</em>) – Subject of the email send</p></li>
+<li><p><strong>error</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code>) – Body of the email send</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="gmailer.gmail.Gmail.activated">
+<code class="sig-name descname">activated</code><a class="headerlink" href="#gmailer.gmail.Gmail.activated" title="Permalink to this definition">¶</a></dt>
+<dd><p>A flag which indicate if Gmail API is authorized to be used</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gmailer.gmail.Gmail.authorize">
+<code class="sig-name descname">authorize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gmailer.gmail.Gmail.authorize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate authorization url and state from <code class="xref py py-class docutils literal notranslate"><span class="pre">Flow</span></code> instance</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A tuple of authorizationurl and state</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="gmailer.gmail.Gmail.flow">
+<code class="sig-name descname">flow</code><a class="headerlink" href="#gmailer.gmail.Gmail.flow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Store a <code class="xref py py-class docutils literal notranslate"><span class="pre">Flow</span></code> instance using client secret and scope list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gmailer.gmail.Gmail.revoke">
+<code class="sig-name descname">revoke</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gmailer.gmail.Gmail.revoke" title="Permalink to this definition">¶</a></dt>
+<dd><p>Revoke the data which is used by Gmail API to work</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gmailer.gmail.Gmail.send_mail">
+<code class="sig-name descname">send_mail</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">subject</span></em>, <em class="sig-param"><span class="n">message</span></em>, <em class="sig-param"><span class="n">recipient_list</span></em>, <em class="sig-param"><span class="n">html</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gmailer.gmail.Gmail.send_mail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send email using Gmail API service</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>subject</strong> (<em>str</em>) – Subject of the email send</p></li>
+<li><p><strong>message</strong> (<em>str</em>) – Body of the email send</p></li>
+<li><p><strong>recipient_list</strong> (<em>list</em>) – A list of email addresses to send this email</p></li>
+<li><p><strong>html</strong> (<em>bool</em>) – If <code class="xref py py-mod docutils literal notranslate"><span class="pre">True</span></code>, message created will be in HTML formate. Otherwise this message created will be plain text. Default is <code class="xref py py-mod docutils literal notranslate"><span class="pre">False</span></code></p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gmailer.gmail.Gmail.test_mail">
+<code class="sig-name descname">test_mail</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">subject</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">message</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">recipient_list</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gmailer.gmail.Gmail.test_mail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send a test email using Gmail API service. If <code class="xref py py-mod docutils literal notranslate"><span class="pre">recipient_list</span> <span class="pre">is</span></code> parameter not provided, mail is sent to sender itself.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>subject</strong> (<em>str</em>) – Subject of the email send</p></li>
+<li><p><strong>message</strong> (<em>str</em>) – Body of the email send</p></li>
+<li><p><strong>recipient_list</strong> (<em>list</em>) – A list of email addresses to send this email</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="gmailer.gmail.Gmail.verify">
+<code class="sig-name descname">verify</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gmailer.gmail.Gmail.verify" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method verify authorizated data and generate access token. It also
+generate a gmail api service as class property. It returns a dictionary
+of name, email id and credentials from <code class="xref py py-class docutils literal notranslate"><span class="pre">Flow</span></code> instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>request</strong> – A request object received from requested view</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-gmailer.views">
+<span id="views"></span><h2>Views<a class="headerlink" href="#module-gmailer.views" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="gmailer.views.auth">
+<code class="sig-prename descclassname">gmailer.views.</code><code class="sig-name descname">auth</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gmailer.views.auth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate Google OAuth authorization url and state. State is stored inside session and view is redirected to the authorization url.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>request</strong> – A request object received from requested view</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Redirection to authorization url</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gmailer.views.revoke">
+<code class="sig-prename descclassname">gmailer.views.</code><code class="sig-name descname">revoke</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gmailer.views.revoke" title="Permalink to this definition">¶</a></dt>
+<dd><p>Revoke the Google OAuth authorization.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>request</strong> – A request object received from requested view</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">JsonResponse</span></code> instance</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gmailer.views.test_send_mail">
+<code class="sig-prename descclassname">gmailer.views.</code><code class="sig-name descname">test_send_mail</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gmailer.views.test_send_mail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test the Gmail API by sending an email to self.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>request</strong> – A request object received from requested view</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">JsonResponse</span></code> instance</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="gmailer.views.verify">
+<code class="sig-prename descclassname">gmailer.views.</code><code class="sig-name descname">verify</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gmailer.views.verify" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify code and state received from request.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>request</strong> – A request object received from requested view</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">JsonResponse</span></code> instance</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="settings">
+<h2>Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="gmail-user">
+<h3>GMAIL_USER<a class="headerlink" href="#gmail-user" title="Permalink to this headline">¶</a></h3>
+<p><cite>Default:</cite> <strong>Django Mail Admin</strong></p>
+<p>This settings is the name of admin which shows up inside mail received by user</p>
+</div>
+<div class="section" id="gmail-secret">
+<h3>GMAIL_SECRET<a class="headerlink" href="#gmail-secret" title="Permalink to this headline">¶</a></h3>
+<p><cite>Default:</cite> <strong>google_client_secret.json</strong></p>
+<p>This settings is the name of admin which shows up inside mail received by user</p>
+</div>
+<div class="section" id="gmail-scopes">
+<h3>GMAIL_SCOPES<a class="headerlink" href="#gmail-scopes" title="Permalink to this headline">¶</a></h3>
+<p><cite>Default:</cite> <strong>[ https://www.googleapis.com/auth/gmail.metadata, https://www.googleapis.com/auth/gmail.send ]</strong></p>
+<p>This settings is the name of admin which shows up inside mail received by user</p>
+</div>
+<div class="section" id="gmail-redirect">
+<h3>GMAIL_REDIRECT<a class="headerlink" href="#gmail-redirect" title="Permalink to this headline">¶</a></h3>
+<p><cite>Default:</cite> <strong>http://localhost:8000/gmailer/verify</strong></p>
+<p>This settings is the name of admin which shows up inside mail received by user</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="change.html" class="btn btn-neutral float-right" title="Changelog" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="quick-start.html" class="btn btn-neutral float-left" title="Quick start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Nikhil John
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
