@@ -1,0 +1,10 @@
+kg_keycloak/__init__.py,sha256=Yq9m-LcLOTy6qo05coQCh_w2gjsv-ZFzlEqms_-XjKE,186
+kg_keycloak/builder.py,sha256=NPW13Jb3NuN1g9UINJkB23q-y9r2dh-8T3C2rVPvPk0,14130
+kg_keycloak/option.py,sha256=k4pURYYxUS1TwrfG1ybanLemcLoVH51rt670LE4Wl5I,5264
+kg_keycloak/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kg_keycloak/tests/test_builder.py,sha256=u6Kz95Dm3eIUDf3GODlf2T6w4Jbk-RnqeM6IIFVxwyM,1465
+kg_keycloak-0.7.5.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+kg_keycloak-0.7.5.dist-info/METADATA,sha256=43uvm65XkPf0cDhdBzMrFLSN8sA8-I0v1CM5ri_Ke_Q,5225
+kg_keycloak-0.7.5.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+kg_keycloak-0.7.5.dist-info/top_level.txt,sha256=bGj3WCdxxpxu0w9PitEz-etaW8SLcuWvcKjoOz7_6Og,12
+kg_keycloak-0.7.5.dist-info/RECORD,,
