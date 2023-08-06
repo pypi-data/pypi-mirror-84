@@ -1,0 +1,57 @@
+  
+find(       '.',  #re.compile(".*.txt$"), 
+			basedir=None, files_list = ['./',[e.strip() for e in os.popen('git ls-files --recurse-submodules').readlines()]],
+			#fcall=_fcall, 
+			is_read_fcall = 1,
+			wcall = _wcall, 
+			debug=1,  
+			#words=re.compile("PNG"),
+			#words=re.compile(b"[\x40-\x4F]"),
+			#words=u"\u8d26\u53f7",
+			#words=re.compile(u"\u8d26\u53f7"),   
+			words="python", 
+			fcase=1,  wcase=1, #bsize='2K', 
+			isdeep=1, isbox=1); 
+exit(0)
+
+find(       'txt',  #re.compile(".*.txt$"), 
+			basedir=[r'./'],
+			#fcall=_fcall, 
+			is_read_fcall = 1,
+			wcall = _wcall, 
+			debug=1,  
+			#words=re.compile("PNG"),
+			#words=re.compile(b"[\x40-\x4F]"),
+			#words=u"\u8d26\u53f7",
+			words=re.compile(u"\u8d26\u53f7"),   
+			#words=u"OpenSSH", 
+			fcase=1,  wcase=1, bsize='2K', 
+			isdeep=1, isbox=1); 
+exit(0)
+
+find('.*.html', basedir=[r'C:\Program Files (x86)\Windows Kits',
+						r'C:\Program Files (x86)\Microsoft Visual Studio',
+						r'C:\Program Files (x86)\Microsoft Visual Studio 8',
+						r'C:\Program Files (x86)\Microsoft Visual Studio 14.0',
+						r'C:\Users\dfxt0426\Downloads',
+						r'D:\tmp'
+				], 
+	fcase=1, isdeep=1, isbox=1, #mtime='+10',
+	#fsize='-10M', 
+	#fuser=0, fmode='+666',
+	fcall=_fcall, 
+	is_read_fcall = 1,
+	ignores = [#'*/bin/ssh.exe',#'*.gz',
+			   #r'D:\tmp/',r'C:\Users/*/*', r'C:\Program Files (x86)/',
+			   #'*/tmp/','*/Users/', #'*/*/'
+			  ],
+	debug=1)
+#main('windows.h', basedir=r'C:\Program Files (x86)\Windows Kits')
+#main('apache_probes.d', basedir=r'C:\Program Files (x86)\Microsoft Visual Studio')
+#main('snapshot.png', basedir=r'C:\Program Files (x86)\Microsoft Visual Studio 8')
+#main('windows.h', basedir=r'C:\Program Files (x86)\Microsoft Visual Studio 14.0')
+#main('pem.h', basedir=r'C:\Program Files (x86)\Windows Kits')
+#main('vcruntime.h')
+print('done.') 
+time.sleep(10)
+    

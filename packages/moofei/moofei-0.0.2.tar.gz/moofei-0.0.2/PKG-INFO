@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: moofei
+Version: 0.0.2
+Summary: find,valid,tree,date,db,waf By mufei
+Home-page: http://www.mufei.ltd
+Author: mufei
+Author-email: ypdh@qq.com
+License: BSD
+Description: find,valid,tree,date,db,waf By mufei
+Keywords: moofei mufei find valid tree date db waf
+Platform: UNKNOWN
+Requires: chardet
