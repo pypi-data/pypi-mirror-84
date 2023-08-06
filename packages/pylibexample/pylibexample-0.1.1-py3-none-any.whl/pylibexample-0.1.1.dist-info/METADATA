@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pylibexample
+Version: 0.1.1
+Summary: 
+Author: Brendan
+Author-email: bshizzle1234@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/x-rst
+
+pylibexample
+============
+
+A python tester library to get familiar with poetry and Pypi.
+
+Example
+_______
+
+.. code-block:: python
+
+    from pylibexample import testfunc
+
+    testfunc()
