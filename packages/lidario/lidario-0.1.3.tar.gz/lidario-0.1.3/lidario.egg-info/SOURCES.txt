@@ -1,0 +1,9 @@
+README.md
+setup.py
+lidario/__init__.py
+lidario/translator.py
+lidario.egg-info/PKG-INFO
+lidario.egg-info/SOURCES.txt
+lidario.egg-info/dependency_links.txt
+lidario.egg-info/requires.txt
+lidario.egg-info/top_level.txt
