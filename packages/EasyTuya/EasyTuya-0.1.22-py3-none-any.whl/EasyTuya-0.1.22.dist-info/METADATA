@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: EasyTuya
+Version: 0.1.22
+Summary: Interact with devices connected to the Tuya IOT platform through Python
+Home-page: https://github.com/ASchoe311/EasyTuya
+Author: Adam Schoenfeld
+Author-email: aschoe@umich.edu
+License: GNU GPLv3
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: pycryptodome
+
+Interact with devices connected to the Tuya IOT platform through Python
+
+
