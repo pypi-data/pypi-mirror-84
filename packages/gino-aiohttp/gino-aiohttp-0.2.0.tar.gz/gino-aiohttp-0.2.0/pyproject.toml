@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "gino-aiohttp"
+version = "0.2.0"
+description = "An extension for GINO to integrate with aiohttp"
+license = "BSD-3-Clause"
+authors = ["Fantix King <fantix.king@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/python-gino/gino-aiohttp"
+repository = "https://github.com/python-gino/gino-aiohttp"
+documentation = "https://python-gino.org/docs/"
+keywords = ["sqlalchemy", "python3", "aiohttp", "gino"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+aiohttp = "^3.7.2"
+gino = "^1.0.1"
+
+[tool.poetry.dev-dependencies]
+click = "^7.1"
+async_generator = "^1.10"
+black = "^20.8b1"
+
+# tests
+pytest = "^6.1.2"
+pytest-asyncio = "^0.14.0"
+pytest-cov = "^2.8.1"
+pytest-mock = "^3.3.1"
+pytest-virtualenv = "^1.7.0"
+requests = "^2.22.0"
+
+[tool.poetry.plugins."gino.extensions"]
+"aiohttp" = "gino_aiohttp"
+
+[build-system]
+requires = ["poetry>=1.0.0"]
+build-backend = "poetry.masonry.api"
