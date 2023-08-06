@@ -1,0 +1,3 @@
+webthing
+python-smbus
+RPLCD
