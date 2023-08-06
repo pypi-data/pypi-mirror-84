@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: sport-scraper
+Version: 0.0.4
+Summary: Simple web scraper package for gathering sports data from ESPN.com
+Home-page: https://github.com/cristobalmitchell/sports-data-web-scraper
+Author: Cristobal Mitchell
+Author-email: cristobalmitchell@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# SportScraper
+
+ESPN.com is a great site for gathering statistics about sports teams at both the college and major league level. This repository provides an easy to use interface for pulling data from the ESPN website. 
+
+
+## Disclaimer
+This library is for educational purposes only. Webscraping of publicly available data was ruled legal by The Ninth Circuit Court of Appeals (http://cdn.ca9.uscourts.gov/datastore/opinions/2019/09/09/17-16783.pdf).
+
+## Development
+
+## Contributors
+
+
