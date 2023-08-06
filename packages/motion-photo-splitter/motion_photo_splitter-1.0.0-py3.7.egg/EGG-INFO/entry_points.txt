@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        motion_photo_splitter=motion_photo_splitter.__main__:split_the_motion_files
+    
