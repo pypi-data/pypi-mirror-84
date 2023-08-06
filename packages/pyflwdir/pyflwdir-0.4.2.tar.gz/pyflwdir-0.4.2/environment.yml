@@ -1,0 +1,27 @@
+name: pyflwdir
+
+channels:
+  - conda-forge
+
+# note that these are the developer dependencies,
+# if you only want the user dependencies, see
+# install_requires in setup.py
+dependencies:
+  - affine
+  - black
+  - cartopy
+  - geopandas
+  - ipython
+  - matplotlib
+  - numba>=0.48
+  - numpy
+  - pandas
+  - pytest
+  - pytest-cov
+  - pytest-benchmark
+  - python>=3.6
+  - rasterio
+  - scipy
+  - setuptools_scm
+  - sphinx
+  - sphinx_rtd_theme
