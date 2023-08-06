@@ -1,0 +1,10 @@
+streaming_form_data/__init__.py,sha256=Vdf5aPNYo49JI8WSVlGkQE6_PgrkVGJ6-RQWIW8eZYY,106
+streaming_form_data/_parser.cpython-36m-darwin.so,sha256=_apPXv5WwBRRm8_rtcKyDFYQcKZPoPLO0Y6o0_If00Q,208648
+streaming_form_data/parser.py,sha256=uN80nLibAVx1GQdkEfNSkp-_eArK2Ejj-7L109ko-rw,2175
+streaming_form_data/targets.py,sha256=5dlSqMjRFrdKZDjiSQDJI3dLfZFov4nWIdqKa1M2ROo,3216
+streaming_form_data/validators.py,sha256=jfXWpKkdsA8yprSjexhUOm-5uSCV1JUg9pF8HQIYY8U,401
+streaming_form_data-1.8.0.dist-info/LICENSE.txt,sha256=r-vN_eWm0dIM8oBdJlGwYh8o4_cGXIEkkyrRRB3I73w,1077
+streaming_form_data-1.8.0.dist-info/METADATA,sha256=H2EsnRhr360DFPhLjL6YCpSWzUe-zHUKidapiJgYG4E,3815
+streaming_form_data-1.8.0.dist-info/WHEEL,sha256=qDU9vkT0HYrDFbbK1y5h1LOv2WPLB5v9Y7007MOuefg,110
+streaming_form_data-1.8.0.dist-info/top_level.txt,sha256=lTgAZgYvLH3LLe_DILwXtizVMs-Tb9GgpCgUBbRFRfo,20
+streaming_form_data-1.8.0.dist-info/RECORD,,
