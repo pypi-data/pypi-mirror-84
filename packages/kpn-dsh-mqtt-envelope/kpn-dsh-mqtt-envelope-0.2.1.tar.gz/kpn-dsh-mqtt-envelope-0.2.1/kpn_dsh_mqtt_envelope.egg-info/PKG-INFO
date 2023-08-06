@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: kpn-dsh-mqtt-envelope
+Version: 0.2.1
+Summary: Envelope wrapper/unwrap for kpn-dsh-mqtt-envelopes
+Home-page: https://github.com/bkasap/kpn-dsh-mqtt-envelope
+Author: Bahadir Kasap
+Author-email: bkasap@gmail.com
+License: UNKNOWN
+Description: # kpn-dsh-mqtt-envelope
+        
+        Requirements:
+        Installation:
+        
+        ```
+        pip install kpn-dsh-mqtt-envelope
+        ```
+        
+        Usage:
+        
+        import dsh-envelope
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
