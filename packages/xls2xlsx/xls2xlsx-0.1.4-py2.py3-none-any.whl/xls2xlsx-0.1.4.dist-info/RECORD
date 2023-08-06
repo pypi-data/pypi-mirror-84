@@ -1,0 +1,12 @@
+xls2xlsx/__init__.py,sha256=NcftxYYY-CUeYoJcSdK3hRB8lu-iSo1VP_LrrGobhcA,199
+xls2xlsx/cli.py,sha256=26tdkx17gz5JZsn7jlwjI-M3cIQ7Y_Vm3xcaQzqCmvg,1031
+xls2xlsx/htmlxls2xlsx.py,sha256=kDvj89NwSh15gKsWmhsMyw7Gor0fbQNIfpBlXsMNAls,116028
+xls2xlsx/utils.py,sha256=VsnLWEKdeTkLM7WkTz7_2iqVHzjDPCtrSz5evvzJLuw,8541
+xls2xlsx/xls2xlsx.py,sha256=MYvNMklN0PS9H9xtKRs0oicseb69sZqqAELhLLIhACw,15541
+xls2xlsx-0.1.4.dist-info/AUTHORS.rst,sha256=mGj1Vq88r5ceb2niTDuxkIoLs7trLx1ypbUr_WCJyws,165
+xls2xlsx-0.1.4.dist-info/LICENSE,sha256=V7JMMAYY40hLFn-cwbZ-w7RvVD6m1OkP1UExfJHXtUg,1089
+xls2xlsx-0.1.4.dist-info/METADATA,sha256=Qj7t-__i-vtAFM1RsNz5WomRRKTGWaP3niAug69xOLw,6452
+xls2xlsx-0.1.4.dist-info/WHEEL,sha256=gxPaqcqKPLUXaSAKwmfHO7_iAOlVvmp33DewnUluBB8,116
+xls2xlsx-0.1.4.dist-info/entry_points.txt,sha256=myP90cZh_b9wNzb3lRw0z7ow9dO1iLdJLR59PGzZj-Y,48
+xls2xlsx-0.1.4.dist-info/top_level.txt,sha256=P4ghNal7HU4LLEw4UlR2ogq7bByRacUdCojMi-MHNT0,9
+xls2xlsx-0.1.4.dist-info/RECORD,,
