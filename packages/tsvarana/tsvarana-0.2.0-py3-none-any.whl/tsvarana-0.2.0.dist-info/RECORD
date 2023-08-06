@@ -1,0 +1,12 @@
+tsvarana/__init__.py,sha256=6dVCrgzQN6P3t-7mwQIrGGy8o7g19-p7uDSibbRyeJ0,247
+tsvarana/__main__.py,sha256=yJ1e4f1DnYKeuyhXoEXsDT8ekLyRkZHpcEp-cm_rt_w,1999
+tsvarana/classes.py,sha256=3rqmt0684AxfFfyGvK9a3Tg2Go5535nex5ILFPkRXmI,4345
+tsvarana/command.py,sha256=iWhzTrNjPvn8ZL3e-T1WHyfMR0miA_8Zcn11L_A6Gw4,2312
+tsvarana/core.py,sha256=aZwei36R_-a1izqbqS70EZ5l4Xkn8n8QuvSNFj0FaJk,6334
+tsvarana/plot.py,sha256=RZw6A4sM5f_O6C_18orV9EOTzvtyJigmOe-uQUIGCv8,7491
+tsvarana/utils.py,sha256=-Jn8QZGUisvoTQQEmKYOlvGiJqP07T9qgURX47QOS10,1775
+tsvarana-0.2.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+tsvarana-0.2.0.dist-info/METADATA,sha256=MR57qoM7BqsdjikWuqBHhLyFEAnH85C-W9s4REiFXE4,6213
+tsvarana-0.2.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+tsvarana-0.2.0.dist-info/top_level.txt,sha256=uOVTD6eIxvJgp0i8Qg3og7AkDAQTjKMRJY3RGvTan-o,9
+tsvarana-0.2.0.dist-info/RECORD,,
