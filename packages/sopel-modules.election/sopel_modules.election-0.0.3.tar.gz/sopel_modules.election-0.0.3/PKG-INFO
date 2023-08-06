@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: sopel_modules.election
+Version: 0.0.3
+Summary: Plugin for 2020 Presidential election results
+Home-page: https://github.com/RustyBower/sopel-election
+Author: Rusty Bower
+Author-email: rusty@rustybower.com
+License: Eiffel Forum License, version 2
+Description: # sopel-election
+        
+        Plugin for 2020 Presidential election results
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Eiffel Forum License (EFL)
+Classifier: License :: OSI Approved :: Eiffel Forum License
+Classifier: Topic :: Communications :: Chat :: Internet Relay Chat
+Description-Content-Type: text/markdown
