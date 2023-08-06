@@ -1,0 +1,7 @@
+README.md
+setup.py
+layersdk/__init__.py
+layersdk.egg-info/PKG-INFO
+layersdk.egg-info/SOURCES.txt
+layersdk.egg-info/dependency_links.txt
+layersdk.egg-info/top_level.txt
