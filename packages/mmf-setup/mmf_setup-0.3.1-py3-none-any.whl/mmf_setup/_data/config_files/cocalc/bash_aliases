@@ -1,0 +1,31 @@
+# Bash Aliases etc.; -*-Shell-script-*-
+# dest=~/.bash_aliases     # Keep this as the 2nd line for mmf_init_setup
+
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+# This content inserted by mmf_setup
+# Add my mercurial commands like hg ccom for removing output from .ipynb files
+. mmf_setup
+
+# Bash Command History
+# https://www.digitalocean.com/community/tutorials/how-to-use-bash-history-commands-and-expansions-on-a-linux-vps
+export INPUTRC=~/.inputrc
+export HISTSIZE=5000           # Commands in memory.
+export HISTFILESIZE=100000     # Should keep file <~1MB
+export HISTIGNORE='&:ls:[bf]g:exit:pwd:rm *;'
+export HISTCONTROL=ignoreboth
+shopt -s histappend            # Ensure we keep history
+
+# pip bash completion start
+_pip_completion()
+{
+    COMPREPLY=( $( COMP_WORDS="${COMP_WORDS[*]}" \
+                   COMP_CWORD=$COMP_CWORD \
+                   PIP_AUTO_COMPLETE=1 $1 ) )
+}
+complete -o default -F _pip_completion pip
+# pip bash completion end
