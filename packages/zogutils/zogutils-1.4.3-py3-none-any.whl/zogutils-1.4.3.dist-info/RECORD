@@ -1,0 +1,11 @@
+zogutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zogutils/middlewares/__init__.py,sha256=URmWPCmq2Pi082ctOERNHkSYxnbdHTN7mjceptUCFj0,294
+zogutils/middlewares/exceptions.py,sha256=p0rirgJw--GHN77Y8iTMfvjoRMU_yIo6kBImUOIimT4,2278
+zogutils/middlewares/logger.py,sha256=HokYM1MbFzqKdWZAre-QGHHYX5CGJq-0y50sEzJukbQ,1175
+zogutils/middlewares/monitoring.py,sha256=sKKNunp0rZlH3SdF8F8JPwjSoSgBVmlHaFNreFWYwyg,1158
+zogutils/middlewares/securities.py,sha256=wslLB8FUMTOq6DtRhcngGAwUUdW409r_ZFYtWw_xky8,835
+zogutils/package_name.py,sha256=bmd0-WtR6LBdLBMuvAhRhx9kZTkpxZOXbn7zhCePYko,1145
+zogutils/secret.py,sha256=nJIX59FjKBNp4055dgnUBbRs3zDPwC6Z4gP6ybMLtj4,235
+zogutils-1.4.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+zogutils-1.4.3.dist-info/METADATA,sha256=1D1VCPOpfzc5TEglX59tJDqOPi9pHcPM4H0tOquHl2c,1931
+zogutils-1.4.3.dist-info/RECORD,,
