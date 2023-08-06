@@ -1,0 +1,9 @@
+README.rst
+requirements.txt
+setup.py
+pickling_decorator/__init__.py
+pickling_decorator.egg-info/PKG-INFO
+pickling_decorator.egg-info/SOURCES.txt
+pickling_decorator.egg-info/dependency_links.txt
+pickling_decorator.egg-info/requires.txt
+pickling_decorator.egg-info/top_level.txt
