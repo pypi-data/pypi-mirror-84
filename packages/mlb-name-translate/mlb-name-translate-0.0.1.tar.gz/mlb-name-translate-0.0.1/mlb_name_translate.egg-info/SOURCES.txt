@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+mlb_name_translate.egg-info/PKG-INFO
+mlb_name_translate.egg-info/SOURCES.txt
+mlb_name_translate.egg-info/dependency_links.txt
+mlb_name_translate.egg-info/requires.txt
+mlb_name_translate.egg-info/top_level.txt
