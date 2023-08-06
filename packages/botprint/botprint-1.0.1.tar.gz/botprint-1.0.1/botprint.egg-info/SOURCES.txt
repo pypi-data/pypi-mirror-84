@@ -1,0 +1,8 @@
+README.md
+setup.py
+botprint/BotPrint.py
+botprint/__init__.py
+botprint.egg-info/PKG-INFO
+botprint.egg-info/SOURCES.txt
+botprint.egg-info/dependency_links.txt
+botprint.egg-info/top_level.txt
