@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+NiketShindebasiccalculator.egg-info/PKG-INFO
+NiketShindebasiccalculator.egg-info/SOURCES.txt
+NiketShindebasiccalculator.egg-info/dependency_links.txt
+NiketShindebasiccalculator.egg-info/top_level.txt
+joshbasiccalculator/__init__.py
