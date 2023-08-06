@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: robot-mongodb-library
+Version: 0.0.1
+Summary: robotframework extension lib for test mongodb
+Home-page: https://github.com/tarathep/robot-mongodb-library
+Author: tarathep
+Author-email: bokie.tarathep@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
