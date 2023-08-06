@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+README.rst
+setup.cfg
+setup.py
+bin/rssarchive
+rssarchive/__init__.py
+rssarchive.egg-info/PKG-INFO
+rssarchive.egg-info/SOURCES.txt
+rssarchive.egg-info/dependency_links.txt
+rssarchive.egg-info/not-zip-safe
+rssarchive.egg-info/requires.txt
+rssarchive.egg-info/top_level.txt
