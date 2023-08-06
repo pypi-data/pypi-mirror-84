@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: py-msyh
+Version: 0.0.0.1
+Summary: python utils to use font msyh.ttf in a minute.
+Home-page: http://github.com/Peiiii/py_msyh
+Author: Peiiii
+Author-email: 1535376447@qq.com
+License: UNKNOWN
+Description: # py-msyh
+        python utils to use font msyh.ttf in a minute.
+        
+        # install
+        `pip install py-msyh`
+        
+        # usage
+        ```python
+        import 
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
