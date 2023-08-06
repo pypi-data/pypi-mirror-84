@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+loyverse/__init__.py
+loyverse/api.py
+loyverse/client.py
+loyverse/exceptions.py
+loyverse.egg-info/PKG-INFO
+loyverse.egg-info/SOURCES.txt
+loyverse.egg-info/dependency_links.txt
+loyverse.egg-info/not-zip-safe
+loyverse.egg-info/requires.txt
+loyverse.egg-info/top_level.txt
