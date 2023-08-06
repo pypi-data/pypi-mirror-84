@@ -1,0 +1,11 @@
+blanc/__init__.py,sha256=NZYz6cYJZqzJwWYkVylGVxE8gldTqsAMTwWDZBkYWQs,77
+blanc/__main__.py,sha256=wvKba0ZQCdI-cQMM0E3BMBpZ6wNsuZgNLi0B1bK9Ca4,9942
+blanc/__version__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+blanc/blanc.py,sha256=7PHCFiA3SNNl9CRNVg5F-2XwgRx-TweKtuzunrTcKEI,30046
+blanc/utils.py,sha256=QEGP9b0P41O7M8BixBenAdHKal5JywhFEveyOgMjXJc,15272
+blanc-0.1.1.dist-info/LICENSE,sha256=GogzZrDTvchltgglawQHrIg08mzf9L9oqO1K_rnMgno,1049
+blanc-0.1.1.dist-info/METADATA,sha256=5usmrlcnygh2Q603Mvkmu1chqX1Hj8eTcQ7c-JBQrgo,9523
+blanc-0.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+blanc-0.1.1.dist-info/entry_points.txt,sha256=LZV5QB9xJOsH9sddZxl-MYERBxlJXxlIHHssqQB1u9Q,47
+blanc-0.1.1.dist-info/top_level.txt,sha256=abMmENzwDISYNwRi9ERBrcsw-_VkjQsuQfteLjCVaHw,6
+blanc-0.1.1.dist-info/RECORD,,
