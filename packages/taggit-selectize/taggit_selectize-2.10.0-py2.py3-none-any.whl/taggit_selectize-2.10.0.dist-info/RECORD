@@ -1,0 +1,15 @@
+taggit_selectize/__init__.py,sha256=RoxKlQv_fXjPg70sjhNiwkiZ3hutCpz90e-QeqJuPhw,23
+taggit_selectize/conf.py,sha256=VzVEC9qlhKxibdQk9tdprpnbHeJNScEKyhvuEuxG12s,757
+taggit_selectize/managers.py,sha256=9YporyAkgSqxZBs17aaPsBt7uSWQLYdchp7oCTwY9nk,534
+taggit_selectize/urls.py,sha256=PpGsRCxpuii2T33PO1zmQcZTGFo9otcXhf0kLnrQd3U,163
+taggit_selectize/utils.py,sha256=KNWIyHNlos-mcoh05HAJP06WCxVuePcw5TZWzeXAoqc,2569
+taggit_selectize/views.py,sha256=JiItHQfkz3xgpyeJMnBO4gDIQ2dTdUliUVRLWKPHyQ8,898
+taggit_selectize/widgets.py,sha256=Fh71qnXyhCRsbXiuS7yV3wu4_YURyJxi4anuMWR5874,5513
+taggit_selectize/static/taggit_selectize/css/selectize.django.css,sha256=kqQIGTSiLVeTbMqg3SSkZzvnNbTcejlRNJlOI0gj7K0,10928
+taggit_selectize/static/taggit_selectize/js/selectize.js,sha256=pNhujkunMXEAkAH83i8wR7hzZ-kFMVe3Y9qcG-1Mqyw,101951
+taggit_selectize-2.10.0.dist-info/AUTHORS.rst,sha256=P8q8uebpDu4ORgIo8NHePGZTxtsW9y51BrFpDIeFHyo,162
+taggit_selectize-2.10.0.dist-info/LICENSE,sha256=xDjIpt7OBV8Y4gfJcjFtqUMpNYnyxR-CqN1BkJy6Q-M,1476
+taggit_selectize-2.10.0.dist-info/METADATA,sha256=o-s1oyxDDt1ZXxHa6Q1hJDjNZ_8mtiKtagWPJoTQWvE,635
+taggit_selectize-2.10.0.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+taggit_selectize-2.10.0.dist-info/top_level.txt,sha256=IqdtBZpyOCKqRUwoE_enw0H_hunavkwNHEDuVBQZP2E,17
+taggit_selectize-2.10.0.dist-info/RECORD,,
