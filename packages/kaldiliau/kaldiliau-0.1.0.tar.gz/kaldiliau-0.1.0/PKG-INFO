@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: kaldiliau
+Version: 0.1.0
+Summary: Kaldi ê liāu.
+Home-page: https://ithuan.tw
+Author: ÌTHUÂNKHOKI
+Author-email: ithuan@ithuan.tw
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Gí-im Piān-sik
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
