@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+TOPSIS-Manmeet-101803095/topsis.py
+TOPSIS-Manmeet-101803095/TOPSIS_Manmeet_101803095.egg-info/PKG-INFO
+TOPSIS-Manmeet-101803095/TOPSIS_Manmeet_101803095.egg-info/SOURCES.txt
+TOPSIS-Manmeet-101803095/TOPSIS_Manmeet_101803095.egg-info/dependency_links.txt
+TOPSIS-Manmeet-101803095/TOPSIS_Manmeet_101803095.egg-info/requires.txt
+TOPSIS-Manmeet-101803095/TOPSIS_Manmeet_101803095.egg-info/top_level.txt
