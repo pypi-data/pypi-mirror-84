@@ -1,0 +1,3 @@
+[console_scripts]
+free-torrents = free_torrents:main
+
