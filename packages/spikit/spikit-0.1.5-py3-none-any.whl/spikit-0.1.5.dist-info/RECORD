@@ -1,0 +1,10 @@
+spikit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spikit/cli.py,sha256=L4pwradFwKgdZSL6hXorMCL7EwXcxUUMzAQ6MO_pC0I,3439
+spikit/config.ini,sha256=1lzrfQ64l_q64CE2kXw2xja9qJRUG4mVah_aGqyHvSk,258
+spikit/core.py,sha256=zy9Zw-i-bwlJT_ue7qZidY1vpZ51oTcrkDUIuQdWus4,3261
+spikit/core_example.py,sha256=i_OnX6v16Qp1PVKiQJkgIOvMQJhnLwVhw-qletAGAOk,431
+spikit/setup.py,sha256=GemMD6bYe-ZG5G50ve2BwFwYz_jce43_iKzGMQHLAwc,383
+spikit-0.1.5.dist-info/entry_points.txt,sha256=itH4sGUfo7H_NEA36emFhcErPmahvN_eu8ECzXbaK6s,42
+spikit-0.1.5.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+spikit-0.1.5.dist-info/METADATA,sha256=yde15dXqzGyMQghAtXXYhCHylj6pH1pAn3GQjlW5DNM,532
+spikit-0.1.5.dist-info/RECORD,,
