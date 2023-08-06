@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: SoftDB
+Version: 0.0.1
+Summary: DB that can be manipulated as if they were objects in memory
+Home-page: https://github.co.jp/
+Author: le latelle
+Author-email: g.tiger.ml@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: relpath
+Requires-Dist: sout
+Requires-Dist: tqdm
+
+
+(under construction)
+
+## 概要
+- メモリ上のオブジェクトのように操作できるDB
+	- しかし、永続性は保証される
+- ACID特性は、SQL関連の既存技術を利用して担保する
+
+
