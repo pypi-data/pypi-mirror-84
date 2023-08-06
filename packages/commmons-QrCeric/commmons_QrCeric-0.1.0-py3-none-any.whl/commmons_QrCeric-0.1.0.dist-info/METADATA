@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: commmons-QrCeric
+Version: 0.1.0
+Summary: Common utils for python.
+Home-page: https://github.com/QrCer/qrcer_commons
+Author: Dong Qirui
+Author-email: QrCeric@Gmail.com
+License: UNKNOWN
+Keywords: common utils python base
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: redis
+
+# qrcer_commons
+Common utils for python.
+
+
