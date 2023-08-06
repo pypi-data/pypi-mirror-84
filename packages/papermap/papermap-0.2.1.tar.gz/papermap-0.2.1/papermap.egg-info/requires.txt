@@ -1,0 +1,4 @@
+CacheControl>=0.12.6
+lxml>=4.6.1
+Pillow>=8.0.1
+requests>=2.24.0
