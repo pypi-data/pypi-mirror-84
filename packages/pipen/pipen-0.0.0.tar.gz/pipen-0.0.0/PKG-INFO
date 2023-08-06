@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pipen
+Version: 0.0.0
+Summary: A pipeline framework for python
+Home-page: https://github.com/pwwang/pipen
+License: MIT
+Author: pwwang
+Author-email: pwwang@pwwang.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: cached-property (>=1.0.0,<2.0.0)
+Requires-Dist: diot
+Requires-Dist: enlighten (>=1.0.0,<2.0.0)
+Requires-Dist: liquidpy
+Requires-Dist: more-itertools (>=8.0.0,<9.0.0)
+Requires-Dist: pandas (>=1.0.0,<2.0.0)
+Requires-Dist: pyparam
+Requires-Dist: python-simpleconf
+Requires-Dist: python-slugify (>=4.0.0,<5.0.0)
+Requires-Dist: rich (>=9.0.0,<10.0.0)
+Requires-Dist: simplug
+Requires-Dist: siuba (<1.0.0)
+Requires-Dist: toml (>=0.10,<0.11)
+Requires-Dist: uvloop (<1.0.0)
+Requires-Dist: varname
+Requires-Dist: xqute
+Project-URL: Repository, https://github.com/pwwang/pipen
+Description-Content-Type: text/markdown
+
+# pipen - A pipeline framework for python
+
+[![Pypi][1]][2] [![Github][3]][4] [![PythonVers][5]][2] [![docs][6]][7] [![building][8]][7] [![Codacy][9]][10] [![Codacy coverage][11]][10]
+
+[Documentation][7] | [API][11] | [Change log][12]
+
+## Installation
+```bash
+pip install -U pipen
+```
+
+
+
