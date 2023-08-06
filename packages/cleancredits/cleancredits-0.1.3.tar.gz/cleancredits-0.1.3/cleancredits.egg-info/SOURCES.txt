@@ -1,0 +1,8 @@
+README.txt
+setup.py
+cleancredits/__init__.py
+cleancredits/__main__.py
+cleancredits.egg-info/PKG-INFO
+cleancredits.egg-info/SOURCES.txt
+cleancredits.egg-info/dependency_links.txt
+cleancredits.egg-info/top_level.txt
