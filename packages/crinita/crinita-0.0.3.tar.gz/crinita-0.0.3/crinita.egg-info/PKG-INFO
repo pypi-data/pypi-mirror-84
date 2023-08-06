@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: crinita
+Version: 0.0.3
+Summary: Python application for generating static websites like a blog or simple static pages. Creates HTML files based on inputs (without requiring to run any script languages on the server-side).
+Home-page: https://github.com/david-salac/crinita
+Author: David Salac
+Author-email: info@davidsalac.eu
+License: UNKNOWN
+Description: # Crinita: static website generator
+        Author: David Salac <https://www.github.com/david-salac>
+        
+        Python application for generating static websites like a blog or
+        simple static pages. Creates HTML files based on inputs (without
+        requiring to run any script languages on the server-side).
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
