@@ -1,0 +1,7 @@
+setup.py
+container/TruSuggest.py
+container/__init__.py
+trusuggest.egg-info/PKG-INFO
+trusuggest.egg-info/SOURCES.txt
+trusuggest.egg-info/dependency_links.txt
+trusuggest.egg-info/top_level.txt
