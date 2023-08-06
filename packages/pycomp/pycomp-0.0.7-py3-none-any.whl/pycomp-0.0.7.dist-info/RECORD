@@ -1,0 +1,14 @@
+pycomp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycomp/fs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycomp/fs/arquivos.py,sha256=ERkiP5G2ywV2jD61CthmZ7f6QgkOuvQKiSXzMHDh3zw,10717
+pycomp/log/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycomp/log/log_config.py,sha256=_gLzpRzoN-Y0BKjqcyvNtebKq6GOuBgriMyLAIrLSDA,2275
+pycomp/ml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycomp/ml/ml_utils.py,sha256=GKi99uVjFrRdbZKueQ1DvBrAisge52HdLFniINs8c2k,44494
+pycomp/ml/trainer.py,sha256=7p6uuYkh-kDZAbr-Um4KQTYJXW71nd4SJ77vOfAnpXw,23282
+pycomp/ml/trainer_test.py,sha256=ZLDhHVXS3Jidq8DpWxphhEjg35xDyfhltZ4zO1S_Aps,1648
+pycomp/ml/transformers.py,sha256=_EM-OnGe88qc3ZTx0_azyTOT-COU0Ar0GRCG5-WqS4A,11918
+pycomp-0.0.7.dist-info/METADATA,sha256=4BlzCGqVBshg3LWbaetGjwNYloB10eqfUX6Yr636YrU,4033
+pycomp-0.0.7.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pycomp-0.0.7.dist-info/top_level.txt,sha256=IHRLHnbqHXIeOI03NVK5KcnQmzlvq4eR5Na_f6Law7s,7
+pycomp-0.0.7.dist-info/RECORD,,
