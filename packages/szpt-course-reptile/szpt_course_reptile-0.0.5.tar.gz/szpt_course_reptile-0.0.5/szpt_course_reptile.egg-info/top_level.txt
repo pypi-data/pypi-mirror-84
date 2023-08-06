@@ -1,0 +1,2 @@
+szpt_course_base
+szpt_course_option
