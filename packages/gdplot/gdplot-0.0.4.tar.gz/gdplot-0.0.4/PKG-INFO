@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gdplot
+Version: 0.0.4
+Summary: Plot Chart from your Google Sheets
+Home-page: https://github.com/sumankumar0091/gdplot
+Author: Suman Kumar
+Author-email: sumankumar0091@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Chart,gsheet,plot
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

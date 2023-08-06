@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+gdplot.egg-info/PKG-INFO
+gdplot.egg-info/SOURCES.txt
+gdplot.egg-info/dependency_links.txt
+gdplot.egg-info/requires.txt
+gdplot.egg-info/top_level.txt
