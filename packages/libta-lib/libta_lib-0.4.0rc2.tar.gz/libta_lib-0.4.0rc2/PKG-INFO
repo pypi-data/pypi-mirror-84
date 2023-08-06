@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: libta_lib
+Version: 0.4.0rc2
+Summary: TA-lib C++ builder
+Home-page: https://github.com/timkpaine/ta-lib
+Author: Tim Paine
+Author-email: t.paine154@gmail.com
+License: BSD 3-clause
+Description: TA-lib C++ builder from source
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
