@@ -1,0 +1,25 @@
+{{ field }}
+
+<div class="card mb-2">
+    <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs" id="editor-list-{{ field_id }}" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" href="#editor-{{ field_id }}" role="tab" id="editor-tab-{{ field_id }}"><i
+                        class="far fa-edit"></i> Editor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#md-preview-{{ field_id }}" role="tab" id="preview-tab-{{ field_id }}"><i
+                        class="far fa-eye"></i> Preview</a>
+            </li>
+        </ul>
+    </div>
+    <div class="card-body">
+        <div class="tab-content">
+            <div class="tab-pane active" id="editor-{{ field_id }}" role="tabpanel">
+                {% include 'mdeditor/toolbar.html' %}
+                <div id="markdown-editor-{{ field_id }}"> </div>
+            </div>
+            <div class="tab-pane" id="md-preview-{{ field_id }}" role="tabpanel" aria-labelledby="preview-tab"></div>
+        </div>
+    </div>
+</div>
