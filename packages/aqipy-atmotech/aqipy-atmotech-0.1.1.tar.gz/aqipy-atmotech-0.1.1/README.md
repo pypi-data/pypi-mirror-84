@@ -1,0 +1,41 @@
+# AQI calculation library (python)
+The library calculates the following indexes:
+- AQI (US)
+- AQHI (Canada)
+- CAQI (Europe)
+- DAQI (UK)
+- AQI (Australia)
+- CAI (South Korea)
+- PSI (Singapore)
+- AQHI (Hong Kong)
+- AQI (Mainland China)
+- AQI (India)
+
+## Installation
+
+From source:
+
+```
+git clone --recursive https://github.com/atmotube/aqipy.git
+cd python
+python setup.py install
+```
+
+From [PyPI](https://pypi.python.org/pypi/aqipy-atmotech/) directly:
+
+```
+pip install aqipy-atmotech
+```
+
+## Examples
+
+calculate US AQI:
+
+```python
+from aqipy import aqi_us
+
+aqi, aqi_data = aqi_us.get_aqi(o3_8h=0.07853333)
+print('aqi', aqi)
+print('effects', aqi_data['o3_8h'][1])
+print('cauntions', aqi_data['o3_8h'][2])
+```
