@@ -1,0 +1,3 @@
+[console_scripts]
+argreplay = argrecord.argreplay:main
+
