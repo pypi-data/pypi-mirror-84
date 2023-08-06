@@ -1,0 +1,9 @@
+finufft/__init__.py,sha256=Cxl299-y2e554HS-kVByhmufH-gyGo_ArTKYsL5xC9o,887
+finufft/_finufft.cp38-win_amd64.pyd,sha256=Y_sWT_jtcvABmzfZNKeT6vkavn1B7g1H63GhF0dre7M,609280
+finufft/_interfaces.py,sha256=LJa2ED0ZI1zSz3-IyefJJkWdYUxE60EFLAGYWHeBSvE,29003
+finufft/libfftw3-3.dll,sha256=ABqDXS8lrAZhWA1n21YiFXwoSBwGp_PvRa2TmDm_VKE,2712765
+finufft/libfftw3f-3.dll,sha256=QsoY__Nd0SiQ4ER4vJkABbOWnLdE9oQ5dr1DbM1_Ckw,2772692
+finufft-2.0.0.dist-info/METADATA,sha256=l6uZNhC1NCq0gRoGlYdsWe8efFEsL26OPG-4rhTK850,475
+finufft-2.0.0.dist-info/WHEEL,sha256=9MdUI0OzwjYaHl3jWlKFDIJ5MFBPjwppNgWNtexntqg,105
+finufft-2.0.0.dist-info/top_level.txt,sha256=ad5NTT1JZwZ0C796YFJysnelEZTKz2fkNKRJ9_wVqUs,8
+finufft-2.0.0.dist-info/RECORD,,
