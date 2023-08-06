@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+nbcelldiff/__init__.py
+nbcelldiff/diff_match_patch.py
+nbcelldiff/magics.py
+nbcelldiff.egg-info/PKG-INFO
+nbcelldiff.egg-info/SOURCES.txt
+nbcelldiff.egg-info/dependency_links.txt
+nbcelldiff.egg-info/top_level.txt
