@@ -1,0 +1,8 @@
+README.md
+setup.py
+SqlDataApi/SqlDataApi.py
+SqlDataApi/__init__.py
+sqldataapi.egg-info/PKG-INFO
+sqldataapi.egg-info/SOURCES.txt
+sqldataapi.egg-info/dependency_links.txt
+sqldataapi.egg-info/top_level.txt
