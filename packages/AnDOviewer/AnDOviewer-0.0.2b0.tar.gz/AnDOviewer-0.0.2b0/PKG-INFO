@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: AnDOviewer
+Version: 0.0.2b0
+Summary: Little tools for ANimal Data Organization (ANDO) specifications 
+Home-page: UNKNOWN
+Author: Jeremy Garcia, Sylvain Takerkart
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6

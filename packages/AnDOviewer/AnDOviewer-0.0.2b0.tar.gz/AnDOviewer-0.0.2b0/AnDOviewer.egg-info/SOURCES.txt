@@ -1,0 +1,7 @@
+setup.py
+AnDOviewer.egg-info/PKG-INFO
+AnDOviewer.egg-info/SOURCES.txt
+AnDOviewer.egg-info/dependency_links.txt
+AnDOviewer.egg-info/entry_points.txt
+AnDOviewer.egg-info/requires.txt
+AnDOviewer.egg-info/top_level.txt
