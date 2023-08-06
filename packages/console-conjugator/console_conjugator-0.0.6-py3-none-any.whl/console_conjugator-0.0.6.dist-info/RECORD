@@ -1,0 +1,11 @@
+Deutschconjugation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Deutschconjugation/cli_scripts.py,sha256=dQPbSqvL3Y3T0-9DC1lwR-ztxSjAenbu7DC6v2Tdyjk,1446
+Deutschconjugation/conjugator.py,sha256=cIlmFQC1uG2E-5KR7ZajdTJZvOcI7UkrgyLFjWM64lY,4062
+Deutschconjugation/verbs.csv,sha256=upy_nFpx-HI55XXgWQX5qtnFcBPwFEw2DNTX5BaC1Eo,792394
+Deutschconjugation/version.py,sha256=ucFh0qy9UVVBBjqwIxVqvcgZF9wu4FR-TitZPj6Lf_M,74
+console_conjugator-0.0.6.dist-info/LICENSE,sha256=B7gh9yrcQo8BiC28JLvB7s1RKVzIB-vwqBdL6aAAr-A,35178
+console_conjugator-0.0.6.dist-info/METADATA,sha256=aU7mHIBwDywSjSbF9mKyViN20i-JjsY-dztgNSQEeEg,1768
+console_conjugator-0.0.6.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+console_conjugator-0.0.6.dist-info/entry_points.txt,sha256=RSxWEHnAiMq-_Idm3AhdUwK6Zm-B7V01Zf7onc8W7h4,67
+console_conjugator-0.0.6.dist-info/top_level.txt,sha256=oiq6A9CV0yXSPdrWqQoML3bSZmTsBSApsSMoGiHpiBw,19
+console_conjugator-0.0.6.dist-info/RECORD,,
