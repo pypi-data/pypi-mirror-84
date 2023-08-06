@@ -1,0 +1,4 @@
+memory-profiler
+pandas
+plotly
+pandas
