@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: message_boxes
+Version: 0.2.1
+Summary: Create easy windows message boxes with python!
+Home-page: UNKNOWN
+Author: Cy4
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: Message,Boxes,MessageBoxes
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
