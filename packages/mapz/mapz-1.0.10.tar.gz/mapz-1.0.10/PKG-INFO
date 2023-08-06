@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mapz
+Version: 1.0.10
+Summary: Extension of dict features
+License: MIT
+Author: vduseev
+Author-email: vagiz@duseev.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
