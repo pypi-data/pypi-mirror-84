@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pyulib
+Version: 0.1.0
+Summary: python utility functions
+Home-page: https://github.com/robert-lieck/pyulib
+Author: Robert Lieck
+Author-email: robert.lieck@epfl.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# python-util
+A utility module that provides all sorts of helper functionality
+
+## Installation
+
+Clone the git repo
+
+```git clone git@github.com:robert-lieck/python-util.git```
+
+and install locally from source with pip
+
+```pip install -e <path/to/python-util>```
+
+the `-e` installs in _editable_ mode so you can `git pull` without reinstalling the package to get updates.
+
+
