@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: pimkl
+Version: 0.1.1
+Summary: pathway induced multiple kernel learning for computational biology
+Home-page: https://github.com/PhosphorylatedRabbits/pimkl
+Author: Joris Cadow and Matteo Manica
+Author-email: joriscadow@gmail.com, drugilsberg@gmail.com
+License: MIT license
+Keywords: pimkl
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
+Requires-Dist: numpy (>=1.14.0)
+Requires-Dist: scipy (>=1.0.0)
+Requires-Dist: pandas (>=0.22.0)
+Requires-Dist: scikit-learn (>=0.18.1)
+Requires-Dist: networkx (>=2.1)
+Requires-Dist: statsmodels (>=0.8.0)
+Requires-Dist: seaborn (>=0.8.1)
+Requires-Dist: Click (>=7.0)
+Requires-Dist: tqdm (>=4.36.1)
+
+=====
+pimkl
+=====
+
+
+.. .. image:: https://travis-ci.org/PhosphorylatedRabbits/pimkl.svg
+    :target: https://travis-ci.org/PhosphorylatedRabbits/pimkl
+
+.. .. image:: https://readthedocs.org/projects/pimkl/badge/?version=latest
+        :target: https://pimkl.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+.. .. image:: https://pyup.io/repos/github/PhosphorylatedRabbits/pimkl/shield.svg
+     :target: https://pyup.io/repos/github/PhosphorylatedRabbits/pimkl/
+     :alt: Updates
+
+
+
+pathway induced multiple kernel learning for computational biology
+
+
+* Free software: MIT license
+* Documentation: https://pimkl.readthedocs.io.
+
+
+Features
+--------
+
+The pimkl command:
+
+.. code-block:: console
+
+    Usage: pimkl [OPTIONS] NETWORK_CSV_FILE NETWORK_NAME GENE_SETS_GMT_FILE
+             GENE_SETS_NAME PREPROCESS_DIR OUTPUT_DIR CLASS_LABEL_FILE [LAM]
+             [K] [NUMBER_OF_FOLDS] [MAX_PER_CLASS] [SEED] [MAX_PROCESSES]
+             [FOLD]
+
+    Console script for a complete pimkl pipeline, including preprocessing and
+    analysis. For more details consult the following console scripts, which
+    are here executed in this order. `pimkl-preprocess --help` `pimkl-analyse
+    run-performance-analysis --help`
+
+    Options:
+    -fd, --data_csv_file PATH       [required]
+    -nd, --data_name TEXT           [required]
+    --model_name [EasyMKL|UMKLKNN|AverageMKL]
+    --help                          Show this message and exit.
+
+Requirements
+-------------
+
+* C++14 capable C++ compiler
+* cmake (>3.0.2)
+* Python
+
+
+Installation
+-------------
+
+Install the dependencies
+
+.. code-block:: bash
+
+    pip install -r requirements.txt
+
+Install the package
+
+.. code-block:: bash
+
+    pip install .
+
+
+Tutorial
+---------
+
+You can find a brief tutorial in the dedicated folder.
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2020-11-05)
+------------------
+
+* First release on PyPI.
+
+0.1.0 (2019-10-01)
+------------------
+
+* First release.
+
+

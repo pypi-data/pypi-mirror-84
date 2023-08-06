@@ -1,0 +1,5 @@
+[console_scripts]
+pimkl = pimkl.cli:main
+pimkl-analyse = pimkl.cli.analyse:main
+pimkl-preprocess = pimkl.cli.preprocess:main
+
