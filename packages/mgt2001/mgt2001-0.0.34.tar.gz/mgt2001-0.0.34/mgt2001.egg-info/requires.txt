@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+adjustText
+scipy
+ete3
+seaborn
+stemgraphic
+statsmodels
+plotly
