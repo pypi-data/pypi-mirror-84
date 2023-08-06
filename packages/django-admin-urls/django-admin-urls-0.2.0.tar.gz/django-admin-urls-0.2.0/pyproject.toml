@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "django-admin-urls"
+version = "0.2.0"
+authors = ["Alex Uzjakov <cyberbudy@gmail.com>"]
+description = ""
+packages = [
+    { include = "dj_admin_urls/" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+Django = ">=3.0.0"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.dephell.main]
+from = {format = "poetry", path = "pyproject.toml"}
