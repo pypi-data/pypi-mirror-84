@@ -1,0 +1,12 @@
+kerasncp/__init__.py,sha256=RlZqaOWOn3vR34d9xO2r9X4OyzwpHixOKiWg0pLV97w,778
+kerasncp/ltc_cell.py,sha256=ndNraGnmo_Q-Abp2Mb1_p7YQmS5IWYsWOeYD5SMm7-U,15489
+kerasncp/utils.py,sha256=AnKknCfOfVEXkFHaBHb9A_m7lTZehbRhigWaNmzvlag,1313
+kerasncp/datasets/__init__.py,sha256=qPVdhNg4XipW5rKaHk7Yg2hJab6pFWaA9uN3WWdKIS8,671
+kerasncp/datasets/icra2020_lidar_collision_avoidance.py,sha256=3N8o-Y8Rck_fK1Fry-ifxyAUZV2DrNWKRHzU8RPsqsA,2807
+kerasncp/wirings/__init__.py,sha256=E35eigFlKYKSFOB7IFdrNGV589xaHvEAxYrCJLSHm7w,679
+kerasncp/wirings/wirings.py,sha256=1C0bIg36fBOT1MhEOt_hybsTcmSdfQWuI5Nr8hs8tJE,13508
+keras_ncp-1.0.1.dist-info/LICENSE,sha256=rt_3LGoZnRRPNCXJLicnKSeFYJQy0kM0e1rKygRQ_zE,11355
+keras_ncp-1.0.1.dist-info/METADATA,sha256=PM52boNk0kYUdnVXNKRriBw_AREL95mjo_eEsXfZOJY,743
+keras_ncp-1.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+keras_ncp-1.0.1.dist-info/top_level.txt,sha256=Hq3PnDCwr54nVii2N2271791WIVPxhK9W9NoFg4l0NU,9
+keras_ncp-1.0.1.dist-info/RECORD,,
