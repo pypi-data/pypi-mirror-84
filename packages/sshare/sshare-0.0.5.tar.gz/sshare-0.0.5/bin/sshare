@@ -1,0 +1,189 @@
+#!/usr/bin/env python3
+
+import sys
+import argparse
+import os
+from io import BytesIO
+from textwrap import dedent
+from types import SimpleNamespace
+from functools import partial
+
+import requests
+import yaml
+
+from requests_toolbelt import MultipartEncoder, MultipartEncoderMonitor
+from tqdm import tqdm
+from neotermcolor import colored
+
+_d = SimpleNamespace()
+
+
+def safe_request(rfn, on_except=None):
+    try:
+        r = rfn()
+        if not r.ok:
+            raise RuntimeError(
+                f'Server response code: {r.status_code} {r.reason}')
+        return r
+    except Exception as e:
+        if on_except:
+            on_except()
+        print(colored(e, color='red', attrs='bold'))
+        exit(1)
+
+
+def ok():
+    print(colored('OK', color='green', attrs='bold'))
+
+
+try:
+    with open(f'{os.path.expanduser("~")}/.sshare.yml') as fh:
+        config = yaml.safe_load(fh)['sshare']
+except FileNotFoundError:
+    config = {}
+
+ap = argparse.ArgumentParser()
+
+ap.add_argument('FILE',
+                help='File to share ("-" for stdin [text]) or command (c:)',
+                nargs='?')
+
+ap.add_argument('-u',
+                '--url',
+                help='Service URL',
+                default=config.get('url', 'http://localhost:8008'))
+
+ap.add_argument('-k',
+                '--key',
+                help='upload key',
+                default=config.get('upload-key'))
+
+ap.add_argument('-T',
+                '--timeout',
+                help='timeout',
+                default=config.get('timeout', 5),
+                type=int)
+
+ap.add_argument('-s',
+                '--one-shot',
+                help='One-shot sharing',
+                action='store_true')
+
+ap.add_argument('-x', '--expires', help='Expiration (in seconds)', type=int)
+
+a = ap.parse_args()
+
+headers = {}
+if a.key:
+    headers['X-Auth-Key'] = a.key
+
+data = {}
+
+if a.one_shot:
+    data['oneshot'] = '1'
+
+if a.expires:
+    data['expires'] = str(a.expires)
+
+print(a.FILE)
+
+if a.FILE is not None and a.FILE.startswith('c:'):
+    if a.FILE == 'c:token':
+        r = safe_request(
+            partial(requests.post,
+                    f'{a.url}/api/v1/token',
+                    data=data,
+                    headers=headers,
+                    timeout=a.timeout))
+        print(f'One-time token created, expires: {r.headers["Expires"]}')
+        print()
+        print(colored(r.json()['token'], color='white', attrs='bold'))
+    elif a.FILE.startswith('c:delete:token:'):
+        safe_request(
+            partial(requests.delete,
+                    f'{a.url}/api/v1/token/{a.FILE[9:]}',
+                    headers=headers,
+                    timeout=a.timeout))
+        ok()
+    elif a.FILE.startswith('c:delete'):
+        safe_request(
+            partial(requests.delete,
+                    f'{a.FILE[9:]}',
+                    headers=headers,
+                    timeout=a.timeout))
+        ok()
+    else:
+        print(colored('Command unsupported', color='red', attrs='bold'))
+        exit(2)
+    exit(0)
+
+if a.FILE == '-':
+    a.FILE = None
+
+if not a.FILE:
+    b = BytesIO()
+    s = sys.stdin.buffer.read()
+    try:
+        s.decode()
+        ctype = 'text/plain'
+        ext = 'txt'
+    except:
+        ctype = 'application/octet-stream'
+        ext = 'dat'
+    b.write(s)
+    b.seek(0)
+    size = len(s)
+    if size == 0:
+        exit(0)
+    files = {
+        'file': (
+            f'paste.{ext}',
+            b,
+        )
+    }
+else:
+    size = os.path.getsize(a.FILE)
+    files = {'file': (a.FILE, open(a.FILE, 'rb'))}
+
+fname = 'STDIN' if not a.FILE else os.path.basename(a.FILE)
+
+print(f'>> {colored(a.url, color="grey")}')
+
+_d.prev = 0
+
+
+def progress(mon):
+    b = int(mon.bytes_read / 1000)
+    pbar.update(b - _d.prev)
+    _d.prev = b
+
+
+data.update(files)
+
+e = MultipartEncoder(fields=data)
+m = MultipartEncoderMonitor(e, progress)
+
+headers['Content-Type'] = m.content_type
+
+pbar = tqdm(total=int(size / 1000), unit="KB", desc=fname)
+
+r = safe_request(partial(requests.post,
+                         f'{a.url}/u',
+                         data=m,
+                         headers=headers,
+                         timeout=a.timeout),
+                 on_except=pbar.close)
+
+pbar.clear()
+pbar.close()
+print(
+    dedent(f"""
+        {colored(fname + " uploaded", color="green")}
+
+        Access URL: {colored(r.headers["Location"], color="cyan", attrs="bold")}
+        Expires: {r.headers["Expires"]}
+        """))
+
+if a.one_shot:
+    print(colored('(Single access attempt allowed)', color='yellow'))
+    print()
