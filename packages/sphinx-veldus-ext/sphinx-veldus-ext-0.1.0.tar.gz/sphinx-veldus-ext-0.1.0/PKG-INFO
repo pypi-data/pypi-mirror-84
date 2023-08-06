@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: sphinx-veldus-ext
+Version: 0.1.0
+Summary: A Sphinx Extension built for Veldus
+Home-page: https://github.com/dukeofetiquette/sphinx-veldus-ext
+Author: Adam DuQuette
+Author-email: duquetteadam@gmail.com
+License: UNKNOWN
+Description: # Sphinx Veldus Extension v0.1.0
+        
+        This is a Sphinx Extension built for Veldus.
+        
+        ## Bump version
+        
+        In there files:
+        
+        - `setup.py`
+        - `README.md`
+        
+        ## Package
+        
+        `$ rm -rf dist/* && python3 setup.py sdist bdist_wheel`
+        
+        ## Upload
+        
+        `$ python3 -m twine upload dist/*`
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

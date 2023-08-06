@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+sphinx_veldus_ext.egg-info/PKG-INFO
+sphinx_veldus_ext.egg-info/SOURCES.txt
+sphinx_veldus_ext.egg-info/dependency_links.txt
+sphinx_veldus_ext.egg-info/top_level.txt
+veldus_ext/__init__.py
+veldus_ext/helloworld.py
+veldus_ext/statblock.py
+veldus_ext/todo.py
+veldus_ext/templates/statblock.html
+veldus_ext/templates/summary-table.html
