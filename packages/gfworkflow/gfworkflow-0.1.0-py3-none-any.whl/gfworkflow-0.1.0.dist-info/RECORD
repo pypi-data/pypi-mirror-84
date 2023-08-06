@@ -1,0 +1,16 @@
+gfworkflow/R.py,sha256=eR4ss6StNvA9ylY4ApCUt5xpJPT_Nq1lswFaOdcyU-U,524
+gfworkflow/__init__.py,sha256=DNVTy0Dr2YCiZuIi6_r4vxNSJSmY3IIUm7cmc_wI-Wc,989
+gfworkflow/__main__.py,sha256=TVkDpZ2CJLqem7hvE-6AexRblUA_r9-5QJiWt-ZN56g,815
+gfworkflow/base_resources.py,sha256=KmpO2FGdTEMrJr-CwDRGzKFis8M64BGxP9RIRvzq1HQ,873
+gfworkflow/core.py,sha256=yuKLmSLYiET6YeaduxmWD9bf2ao6wnZ7SR1-L0uu9Jo,1013
+gfworkflow/exceptions.py,sha256=asdHVh8HuMtYL4ITrR49MAYaTqLo02WSLXuGf2s86dQ,502
+gfworkflow/cli/__init__.py,sha256=x57G4smwpgn6i4QyfowHiPyjFDf_zz5y6AeP1adAzRc,1361
+gfworkflow/cli/_arg_parse.py,sha256=-f7cTkA7am7ll3pk1OgJXpvJzFCsWaOl3JJGdrOush8,2338
+gfworkflow/cli/api.py,sha256=kdkxnN3dtNVCIvVqyGqxrUmHQtefutBGKLnTosYM-jo,892
+gfworkflow/res/VERSION,sha256=atlhOkVXmNbZLl9fOQq0uqcFlryGntaxf1zdKyhjXwY,5
+gfworkflow-0.1.0.dist-info/LICENSE,sha256=6dojCtnq3QAzQ_99DNV5LUBqlntBPkgxfAS4O0gM8VA,1073
+gfworkflow-0.1.0.dist-info/METADATA,sha256=UVnC_HeP4CPWdq4FdxuHCTc3lYRUdrAyMO6oWOEGq2c,2024
+gfworkflow-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+gfworkflow-0.1.0.dist-info/entry_points.txt,sha256=7Eqf4J4wv9SP5K0bh4wVFBaP-_BJbwsV62SVZSLOz0Y,121
+gfworkflow-0.1.0.dist-info/top_level.txt,sha256=3Qa6Sy5eXNxVVDAuy_-kXA42_CyW55SFOU2BMRKXzsw,11
+gfworkflow-0.1.0.dist-info/RECORD,,
