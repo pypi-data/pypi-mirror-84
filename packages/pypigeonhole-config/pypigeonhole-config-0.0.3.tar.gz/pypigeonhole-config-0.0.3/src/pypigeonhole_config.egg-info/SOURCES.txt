@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/pypigeonhole_config/__init__.py
+src/pypigeonhole_config/app_setup.py
+src/pypigeonhole_config/ioc_conf.py
+src/pypigeonhole_config/ioc_container.py
+src/pypigeonhole_config/ioc_context.py
+src/pypigeonhole_config.egg-info/PKG-INFO
+src/pypigeonhole_config.egg-info/SOURCES.txt
+src/pypigeonhole_config.egg-info/dependency_links.txt
+src/pypigeonhole_config.egg-info/requires.txt
+src/pypigeonhole_config.egg-info/top_level.txt
