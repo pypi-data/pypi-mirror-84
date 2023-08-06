@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/list2group.py
+src/list2group.egg-info/PKG-INFO
+src/list2group.egg-info/SOURCES.txt
+src/list2group.egg-info/dependency_links.txt
+src/list2group.egg-info/requires.txt
+src/list2group.egg-info/top_level.txt
