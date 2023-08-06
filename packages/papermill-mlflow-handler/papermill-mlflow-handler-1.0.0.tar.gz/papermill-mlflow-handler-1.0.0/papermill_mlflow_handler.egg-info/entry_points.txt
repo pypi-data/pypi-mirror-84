@@ -1,0 +1,3 @@
+[papermill.io]
+mlflow:// = papermill_mlflow_handler:MLFlowHandler
+
