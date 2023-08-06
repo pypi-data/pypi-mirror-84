@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: sshare
+Version: 0.0.8
+Summary: Secure share client
+Home-page: https://github.com/alttch/sshare
+Author: Altertech
+Author-email: pr@altertech.com
+License: Apache License 2.0
+Description: # sshare
+        secure share client
+        
+        https://github.com/alttch/secureshare
+        
+        ## Commands
+        
+        * c:token - create new one-time token
+        * c:delete:[token/url] - delete file/token
+        
+        ## Default values
+        
+        Put the following into ~/.sshare.yml:
+        
+        ```ymal
+        sshare:
+          url: https://YOURDOMAIN
+          upload-key: YOURKEY
+          timeout: 3600
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Communications
+Description-Content-Type: text/markdown
