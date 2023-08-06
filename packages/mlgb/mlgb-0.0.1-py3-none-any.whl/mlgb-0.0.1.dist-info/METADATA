@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: mlgb
+Version: 0.0.1
+Summary: mlgb
+Home-page: https://github.com/uliontse/mlgb
+Author: UlionTse
+Author-email: shinalone@outlook.com
+License: MIT
+Keywords: mlgb
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.19.4)
+
+UNKNOWN
+
+
