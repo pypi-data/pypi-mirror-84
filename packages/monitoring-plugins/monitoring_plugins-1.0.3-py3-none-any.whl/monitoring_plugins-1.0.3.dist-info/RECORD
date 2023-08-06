@@ -1,0 +1,16 @@
+monitoring_plugins/__init__.py,sha256=Vjv7666WzXhnAeOrvNQLmi9tSyxxELrZvN7OS_aM5EI,975
+monitoring_plugins/check_deny_tls_version.sh,sha256=IeCxscO3fjF-aZ0AGK4kCrq5KaASc_CRGrI5r8Luszo,2471
+monitoring_plugins/check_docker_login.sh,sha256=zDmNcWBxTAb6x7jLgQq2nF0aE2C2RQwmUWwFIVLNK-M,2976
+monitoring_plugins/check_existing_users.py,sha256=dbX406Efkp-ZmoT2YTLGVG0ajiSSU_r6Za9pYtg_Skw,1907
+monitoring_plugins/check_group_members.py,sha256=UxY_lEGkr8IMTMla5AsWfSn9LwT3CI1KiuD_K3vBxJw,1513
+monitoring_plugins/check_page_content.py,sha256=324ipaAIqPOCqcRjTQskPjEUbP6Y4EN0DWC1Vjjt_7s,2984
+monitoring_plugins/check_path_exists.sh,sha256=VbDYcT0KGPrMEiUHescW9_d9KdSMIGdZQcpCec3F7Nk,2164
+monitoring_plugins/check_sshd_security.py,sha256=MdFVc_9HQ8B56pm6BIQUK2i1dK3jWIgIsVv0USL3_QE,2774
+monitoring_plugins/check_ufw_status.py,sha256=1BBpd6NJRsBYhpgZ9yfLkgxaHDEI6IIRV4Km0MZi2_0,2503
+usr/local/monitoring/plugins/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+usr/local/monitoring/plugins/README.md,sha256=zxco8mxWTHinLFmSUo90U09pcR_gn3jj9dAHTzTLd1U,2424
+monitoring_plugins-1.0.3.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+monitoring_plugins-1.0.3.dist-info/METADATA,sha256=CxHqae398kiTewh2Ahl4BwRO3Kt3Wsx42rNnZe8JXV0,2941
+monitoring_plugins-1.0.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+monitoring_plugins-1.0.3.dist-info/top_level.txt,sha256=hIOS7a51WRI5NxakNxA_sFlDLVh2StDXOE0oqED_7C4,19
+monitoring_plugins-1.0.3.dist-info/RECORD,,
