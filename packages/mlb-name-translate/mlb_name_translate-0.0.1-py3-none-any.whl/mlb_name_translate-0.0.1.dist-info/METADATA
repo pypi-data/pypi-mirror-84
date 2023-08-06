@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mlb-name-translate
+Version: 0.0.1
+Summary: Translate MLB player name into Japanse.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: lxml
+
+UNKNOWN
+
+
