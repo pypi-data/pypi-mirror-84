@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+fcrypt/__init__.py
+fcrypt/fcryptor.py
+fcryptor.egg-info/PKG-INFO
+fcryptor.egg-info/SOURCES.txt
+fcryptor.egg-info/dependency_links.txt
+fcryptor.egg-info/requires.txt
+fcryptor.egg-info/top_level.txt
