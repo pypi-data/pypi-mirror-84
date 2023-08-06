@@ -1,0 +1,12 @@
+icondetection/__init__.py,sha256=jJ4M1ZLrwrpvgfN7Js6oCVqpFdeVfA-1L9nhgPcNyzw,60
+icondetection/box.py,sha256=wpCQ2ckq-J8V99kH8HX95wF5nnte67V8IFIq41X2sFc,5653
+icondetection/helpers.py,sha256=3o2X0sNsPy0NYbIFdAuKbHeezNt9tIB7SLjSVzXMlYY,539
+icondetection/manual_test.py,sha256=RaA57JkVOUcVphou1m_-PdOIStUa9mPZdFxOPAjzAPU,1152
+icondetection/rectangle.py,sha256=HUSM23MVxyRbUThLKzp65Wu6jrZXKf-GJWN_H4ykDx0,2565
+icondetection/weighted_quick_unionUF.py,sha256=Qi0APbLAltA8W6w6Znxl79veYZlXo6cFNcv0D6Nrd-U,3519
+icondetection-0.0.1.dist-info/LICENSE.txt,sha256=W8dic_MavVx8ck6mvRAyNOvoocjxXulFkoCAFWPX68w,1068
+icondetection-0.0.1.dist-info/METADATA,sha256=eNXm1q4xKz0JVexI8BKIE6huyjRYfPUYkAoQP_SE_ds,3457
+icondetection-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+icondetection-0.0.1.dist-info/entry_points.txt,sha256=mDtq5fbYTdTDXA-CdbL8J4uUGDm5_js9Ys2qp_8k3q4,53
+icondetection-0.0.1.dist-info/top_level.txt,sha256=Acw-Qb4VcTJEW05_wGMPsBCp-YJotm5rDZOD6l0kEo8,14
+icondetection-0.0.1.dist-info/RECORD,,
