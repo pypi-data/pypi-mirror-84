@@ -1,0 +1,3 @@
+[console_scripts]
+pkp=pkp:cli_main
+
