@@ -1,0 +1,9 @@
+cython
+extension-helpers
+numdifftools
+multiprocess
+matplotlib
+numpy>=1.17
+scikit-learn
+scipy
+threadpoolctl
