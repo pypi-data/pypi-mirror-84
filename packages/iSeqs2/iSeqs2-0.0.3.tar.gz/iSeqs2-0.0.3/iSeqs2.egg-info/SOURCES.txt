@@ -1,0 +1,16 @@
+README.md
+setup.py
+iSeqs2.egg-info/PKG-INFO
+iSeqs2.egg-info/SOURCES.txt
+iSeqs2.egg-info/dependency_links.txt
+iSeqs2.egg-info/top_level.txt
+iseqs2/__init__.py
+scripts/build_leukemia_genes_list/build_leukemia_genes_list.py
+scripts/filter_by_normal_expression/filter_by_normal_expression.py
+scripts/filter_strelka2/filter_strelka2.py
+scripts/filter_varscan2_vcfs/filter_varscan2_vcfs.py
+scripts/filter_vcf_by_gene_names/filter_vcf_by_gene_names.py
+scripts/join_tables_from_snpsift_extractFields/join_tables_from_snpsift_extractFields.py
+scripts/nucleotides_frequency_from_bam_positions/nucleotides_frequency_from_bam_positions.py
+scripts/remove_germline_variants_from_varscan/remove_germline_variants_from_varscan.py
+scripts/remove_snps_from_cosmic/remove_snps_from_cosmic.py
