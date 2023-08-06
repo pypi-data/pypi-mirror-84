@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: data-lineage
+Version: 0.3.0
+Summary: Open Source Data Lineage Tool For AWS and GCP
+Home-page: https://tokern.io/lineage
+Author: Tokern
+Author-email: info@tokern.io
+License: MIT
+Download-URL: https://github.com/tokern/data-lineage/tarball/0.3.0
+Keywords: data-lineage databases postgres snowflake graphs plotly
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: brotli (==1.0.9)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: dash-core-components (==1.13.0)
+Requires-Dist: dash-html-components (==1.1.1)
+Requires-Dist: dash-renderer (==1.8.3)
+Requires-Dist: dash-table (==4.11.0)
+Requires-Dist: dash (==1.17.0)
+Requires-Dist: decorator (==4.4.2)
+Requires-Dist: flask-compress (==1.8.0)
+Requires-Dist: flask (==1.1.2)
+Requires-Dist: future (==0.18.2)
+Requires-Dist: inflection (==0.5.1)
+Requires-Dist: itsdangerous (==1.1.0)
+Requires-Dist: jinja2 (==2.11.2)
+Requires-Dist: markupsafe (==1.1.1)
+Requires-Dist: networkx (==2.5)
+Requires-Dist: pglast (==1.14)
+Requires-Dist: plotly (==4.12.0)
+Requires-Dist: pyyaml (==5.3.1)
+Requires-Dist: retrying (==1.3.3)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: werkzeug (==1.0.1)
+
+[![CircleCI](https://circleci.com/gh/tokern/data-lineage.svg?style=svg)](https://circleci.com/gh/tokern/data-lineage)
+[![codecov](https://codecov.io/gh/tokern/data-lineage/branch/master/graph/badge.svg)](https://codecov.io/gh/tokern/data-lineage)
+[![PyPI](https://img.shields.io/pypi/v/data-lineage.svg)](https://pypi.python.org/pypi/data-lineage)
+[![image](https://img.shields.io/pypi/l/data-lineage.svg)](https://pypi.org/project/data-lineage/)
+[![image](https://img.shields.io/pypi/pyversions/data-lineage.svg)](https://pypi.org/project/data-lineage/)
+
+# Data Lineage for Databases and Data Lakes
+
+data-lineage is an open source application to query and visualize data lineage in databases, 
+data warehouses and data lakes in AWS and GCP.
+
+data-lineage's goal is to be _fast_, _simple setup_ and _allow analysis_ of the lineage. To achieve these goals, data lineage has the following features :
+
+1. **Generate data lineage from query history.** Most databases maintain query history for a few days. Therefore the setup costs of an infrastructure to capture and store metadata is minimal. 
+2. **Use networkx graph library to create a DAG of the lineage.** Networkx graphs provide programmatic access to data lineage providing rich opportunities to analyze data lineage.
+3. **Integrate with Jupyter Notebooks.** Jupyter Notebooks provide an excellent IDE to generate, manipulate and analyze data lineage graphs. 
+4. **Use Plotly to visualize the graph with rich annotations.** Plotly provides a number of features to provide rich graphs with tool tips, color coding and weights based on different attributes of the graph.
+
+Checkout an [example data lineage notebook](http://tokern.io/docs/data-lineage/example/).
+
+## Use Cases
+
+Data Lineage enables the following use cases:
+
+* Business Rules Verification
+* Change Impact Analysis
+* Data Quality Verification
+
+Check out [the post on using data lineage for cost control](https://tokern.io/blog/data-lineage-on-redshift/) for an 
+example of how data lineage can be used in production.
+
+## Quick Start
+```shell script
+# Install packages
+pip install data-lineage
+pip install jupyter
+
+jupyter notebook
+
+# Checkout example notebook: http://tokern.io/docs/data-lineage/example/ 
+
+```
+
+## Supported Technologies
+
+* Postgres
+* AWS Redshift
+* Snowflake
+
+### Coming Soon
+
+* MySQL
+* SparkSQL
+* Presto
+
+## Documentation
+
+For advanced usage, please refer to [data-lineage documentation](https://tokern.io/docs/data-lineage/index.html)
+## Survey
+
+Please take this [survey](https://forms.gle/p2oEQBJnpEguhrp3A) if you are a user or considering using data-lineage. Responses will help us prioritize features better. 
+
+## Developer Setup
+```shell script
+# Install dependencies
+pipenv install --dev
+
+# Setup pre-commit and pre-push hooks
+pipenv run pre-commit install -t pre-commit
+pipenv run pre-commit install -t pre-push
+```
+
+
+
