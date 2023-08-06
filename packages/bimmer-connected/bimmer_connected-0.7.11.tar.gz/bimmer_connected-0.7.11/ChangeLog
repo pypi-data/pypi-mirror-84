@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+0.7.11
+------
+
+* Fix automatic merge issues of #225 for china login (#228)
