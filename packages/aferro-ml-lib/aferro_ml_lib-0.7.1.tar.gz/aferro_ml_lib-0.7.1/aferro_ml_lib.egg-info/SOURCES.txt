@@ -1,0 +1,12 @@
+README.md
+setup.py
+aferro_ml_lib.egg-info/PKG-INFO
+aferro_ml_lib.egg-info/SOURCES.txt
+aferro_ml_lib.egg-info/dependency_links.txt
+aferro_ml_lib.egg-info/top_level.txt
+ml_lib/__init__.py
+ml_lib/_metadata.py
+ml_lib/bar_module.py
+ml_lib/foo_module.py
+ml_lib/nested/__init__.py
+ml_lib/nested/baz_module.py
