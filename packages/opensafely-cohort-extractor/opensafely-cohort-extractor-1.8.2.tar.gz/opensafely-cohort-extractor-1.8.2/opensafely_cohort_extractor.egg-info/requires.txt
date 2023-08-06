@@ -1,0 +1,9 @@
+opensafely-jobrunner>=1.7.0
+pandas
+prettytable
+pyyaml
+requests
+seaborn
+sqlalchemy
+sqlparse
+tinynetrc
