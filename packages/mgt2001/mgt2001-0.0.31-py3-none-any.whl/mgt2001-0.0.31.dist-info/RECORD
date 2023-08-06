@@ -1,0 +1,12 @@
+mgt2001/__init__.py,sha256=DeB7DF6jCudQ3LoFNsUomOblfrqcKVogCYFDijyrvy4,4105
+mgt2001/_version.py,sha256=YRrMDApG1V6fNZdI4BA631DmsqtamSXgI1yu0tnt4h0,23
+mgt2001/des.py,sha256=vy6NsoFucCrQCIqYjYgHm6N7AapOEELqW4zflmdruU0,2821
+mgt2001/notes.py,sha256=i7_zrEYNJwUQtPYzdy5Gzdufuri2Y6nTG8FtyHXBxvI,6186
+mgt2001/per.py,sha256=P8FhtDtOuCbCQP1Wk7zK3U79OO3qL_5MfhEJoO2b2ZU,1126
+mgt2001/prob.py,sha256=L2R88d-1hDHzMFpbpmZF-oNLS63ytq8LzXnu6DKzvAc,4065
+mgt2001/tree.py,sha256=gBgJIPAJ2X5s0Q8v5HW3uCQ4WfltdBsoeBioVo_BPdM,1485
+mgt2001-0.0.31.dist-info/LICENSE,sha256=JplT5enJvs2scVJYSEFTIEdP40j1HgOUThBOiK7Glsc,1056
+mgt2001-0.0.31.dist-info/METADATA,sha256=Mz06xqfDs5Fz-P3vi7QPVJbxa1u1sz5l5kvO1fTmhwE,701
+mgt2001-0.0.31.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+mgt2001-0.0.31.dist-info/top_level.txt,sha256=6dPBHcGngHaaA8GvOQ-jySAvKx3zxkFughy7s3Xn2Lk,8
+mgt2001-0.0.31.dist-info/RECORD,,
