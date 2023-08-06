@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pyuac/__init__.py
+pyuac/__version__.py
+pyuac/admin.py
+pyuac/decorator.py
+pyuac.egg-info/PKG-INFO
+pyuac.egg-info/SOURCES.txt
+pyuac.egg-info/dependency_links.txt
+pyuac.egg-info/requires.txt
+pyuac.egg-info/top_level.txt
