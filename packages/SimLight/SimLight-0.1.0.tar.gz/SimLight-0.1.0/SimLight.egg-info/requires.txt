@@ -1,0 +1,7 @@
+numpy
+matplotlib
+julia
+scipy
+scikit-image
+pillow
+pyfftw
