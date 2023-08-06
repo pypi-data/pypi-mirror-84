@@ -1,0 +1,14 @@
+README.md
+setup.py
+mapdump/__init__.py
+mapdump/__main__.py
+mapdump/definitions.py
+mapdump/memory.py
+mapdump/parser.py
+mapdump/symbol.py
+mapdump.egg-info/PKG-INFO
+mapdump.egg-info/SOURCES.txt
+mapdump.egg-info/dependency_links.txt
+mapdump.egg-info/entry_points.txt
+mapdump.egg-info/requires.txt
+mapdump.egg-info/top_level.txt
