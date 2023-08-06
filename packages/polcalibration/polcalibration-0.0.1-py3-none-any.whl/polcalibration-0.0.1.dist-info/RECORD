@@ -1,0 +1,10 @@
+polcalibration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polcalibration/function.py,sha256=-PSbB1wp3TWzuvkerUclGSdFX1wq39Zk6bzAiDRhf48,2659
+polcalibration/polarizedsource.py,sha256=1jmlCR0mWGMZ_D1m_NWgBt0gbJHuuKmEnWMzOtwM7NE,8722
+polcalibration/polcalibration.py,sha256=-DsUjfi8Yhfg5w4K1fuEMQsoG5gTQDwIz-AQRv93FSA,4027
+polcalibration/utils.py,sha256=P_STBChPGujEPe9ldq2owMQTHSq0M1kUmmOj3ksD3VY,263
+polcalibration-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+polcalibration-0.0.1.dist-info/METADATA,sha256=foeJBnaqNeWKB6R0cAN-Qnv0fwBJCz_yo6oPUUiB8xI,557
+polcalibration-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+polcalibration-0.0.1.dist-info/top_level.txt,sha256=T8I4eFY5JhmoFB-S6zyvbJBBQUcoX9JM3U7Bif-iplw,15
+polcalibration-0.0.1.dist-info/RECORD,,
