@@ -1,0 +1,7 @@
+setup.py
+dbr_example_yy.egg-info/PKG-INFO
+dbr_example_yy.egg-info/SOURCES.txt
+dbr_example_yy.egg-info/dependency_links.txt
+dbr_example_yy.egg-info/top_level.txt
+package/__init__.py
+package/package_main.py
