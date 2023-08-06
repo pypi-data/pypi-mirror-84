@@ -1,0 +1,2 @@
+blessings<2.0,>=1.7
+datefinder<1.0,>=0.7.1

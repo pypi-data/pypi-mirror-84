@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pylogview/__init__.py
+pylogview/__main__.py
+pylogview/__version__.py
+pylogview.egg-info/PKG-INFO
+pylogview.egg-info/SOURCES.txt
+pylogview.egg-info/dependency_links.txt
+pylogview.egg-info/entry_points.txt
+pylogview.egg-info/not-zip-safe
+pylogview.egg-info/requires.txt
+pylogview.egg-info/top_level.txt
