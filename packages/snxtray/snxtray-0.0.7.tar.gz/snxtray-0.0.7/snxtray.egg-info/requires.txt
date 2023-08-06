@@ -1,0 +1,5 @@
+psutil==5.7.0
+wxPython
+
+[dev]
+pytest
