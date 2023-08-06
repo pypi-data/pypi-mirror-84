@@ -1,0 +1,3 @@
+[console_scripts]
+literary-build=literary.build:run
+
