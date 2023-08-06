@@ -1,0 +1,12 @@
+legistream_backend/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+legistream_backend/act.py,sha256=abU0MjJnQGAnixs7zeSrZWXcEs3UOgQxs7luIzLECh8,687
+legistream_backend/federal.py,sha256=hNhXxsW4GYDRWfqVtBNo18tZupyGnzGtLLnYg2hal7k,2363
+legistream_backend/nsw.py,sha256=6910c3KcApnJmEdsxnLpNQoacQGWL27EnnYAwqRvHxA,2154
+legistream_backend/sa.py,sha256=6XwSLOIwBp1ftq5AJRRfvo234lpQR0FyK71TcvvXYd8,2121
+legistream_backend/tas.py,sha256=f0i381vtop0dr3IdH_ZCj0SHV-NkDSQaLOmQTx3EV_E,2588
+legistream_backend/vic.py,sha256=89XQLdK2igwW8WBUKMMp6eNeXki7qY5kIYxVD6xNTes,1349
+legistream_backend-0.7.0.dist-info/LICENSE,sha256=GJsa-V1mEVHgVM6hDJGz11Tk3k0_7PsHTB-ylHb3Fns,18431
+legistream_backend-0.7.0.dist-info/METADATA,sha256=GKI8_gMbiZfhb-lruXCitknNN-Ysgs2WVfHvCOwDr1Q,2057
+legistream_backend-0.7.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+legistream_backend-0.7.0.dist-info/top_level.txt,sha256=AiFUV-g1wyLm4U_nkOyVQmptP0aQLbOBDCmn_XvtjZ4,19
+legistream_backend-0.7.0.dist-info/RECORD,,
