@@ -1,0 +1,5 @@
+include LICENSE
+include README.rst
+include CHANGELOG.rst
+recursive-include supersk_sphinx_bulma *.*
+recursive-exclude supersk_sphinx_bulma *.pyc

@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: supersk_sphinx_bulma
+Version: 0.1.0
+Summary: Simple theme for sphinx-doc using Bulma CSS
+Home-page: https://gitlab.com/supersk-docs/supersk-sphinx-bulma
+Author: super-sk
+Author-email: 1206305-super-sk@users.noreply.gitlab.com
+License: MIT
+Project-URL: Code, https://gitlab.com/supersk-docs/supersk-sphinx-bulma
+Project-URL: Issues, https://gitlab.com/supersk-docs/supersk-sphinx-bulma/-/issues
+Description: ==================
+        Sphinx Bulma Theme
+        ==================
+        
+        A simple `sphinx-doc <https://www.sphinx-doc.org/en/master/index.html>`_ theme
+        using `Bulma CSS <https://bulma.io/>`_.
+        
+        
+        =========
+        CHANGELOG
+        =========
+        
+        0.1.0
+        =====
+        
+        * Kinda responsive
+        * Scroll top button
+        * Minimal layout structure (sidebar, navbar, footer, search and main content)
+        
+        0.0.0
+        =====
+        
+        * Minimal config to override basic/layout.html
+        * Init project
+        
+        
+Keywords: docs,sphinx,theme
+Platform: UNKNOWN
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Theme
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
+Description-Content-Type: text/x-rst
