@@ -1,0 +1,4 @@
+#!python
+
+from csv_split import run
+run()
