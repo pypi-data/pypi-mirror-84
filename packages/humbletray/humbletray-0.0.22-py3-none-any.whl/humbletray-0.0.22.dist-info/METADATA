@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: humbletray
+Version: 0.0.22
+Summary: UNKNOWN
+Home-page: https://github.com/_/humbletray
+Author: Kevin Smith
+Author-email: ksmith@99hats.com
+Maintainer: Kevin Smith
+Maintainer-email: ksmith@99hats.com
+License: MIT/Apache-2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: schedule
+Requires-Dist: justpy
+Requires-Dist: pystray
+Requires-Dist: loguru
+
+humbletray
+==========
+
+.. contents:: **Table of Contents**
+    :backlinks: none
+
+Installation
+------------
+
+humbletray is distributed on `PyPI <https://pypi.org>`_ as a universal
+wheel and is a WIP.
+
+These are helper methods to install justpy as a systray app as a python-all-the-way alternative to Electron.
+
+Also a basic Quasar wrapping layout and the ability to launch as a chrome app if installed.
+
+.. code-block:: bash
+
+    $ pip install humbletray
+
+License
+-------
+
+humbletray is distributed under the terms of both
+
+- `MIT License <https://choosealicense.com/licenses/mit>`_
+- `Apache License, Version 2.0 <https://choosealicense.com/licenses/apache-2.0>`_
+
+at your option.
+
+
