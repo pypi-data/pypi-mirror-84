@@ -1,0 +1,4 @@
+graphql-core>=3
+unicodecsv>=0.14.1
+requests>=2.22.0
+dataclasses-json==0.3.2
