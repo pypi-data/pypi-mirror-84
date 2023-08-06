@@ -1,0 +1,50 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python/3.7.3 (Windows-10-10.0.19041-SP0) msrest/0.6.19 msrest_azure/0.6.4
+        azure-mgmt-network/13.0.0 Azure-SDK-For-Python
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/locations/westus/CheckDnsNameAvailability?domainNameLabel=pydomain&api-version=2020-07-01
+  response:
+    body:
+      string: "{\r\n  \"available\": true\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '25'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Tue, 03 Nov 2020 05:42:26 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-arm-service-request-id:
+      - 04f2003a-0c93-41a3-b873-c0a2fd5ef5b4
+    status:
+      code: 200
+      message: OK
+version: 1
