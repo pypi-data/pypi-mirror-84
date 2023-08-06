@@ -1,0 +1,3 @@
+[console_scripts]
+osustreams=is_it_stream:main
+
