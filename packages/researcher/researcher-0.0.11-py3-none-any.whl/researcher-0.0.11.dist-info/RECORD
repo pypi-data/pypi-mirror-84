@@ -1,0 +1,13 @@
+researcher/__init__.py,sha256=Tp_H_FdBV3DdcuiPl1ijQ-dbwUaQEZbsgCdrxPBW5oY,182
+researcher/dashboard.py,sha256=07xkbB983QTPZYljOtujymbCT8wuRQhRI1Pj-v-g6M0,2425
+researcher/experiment.py,sha256=SAw5V22G2ViQQr_5pojLYVa7He0JZuNqVmSVmp901RI,795
+researcher/fileutils.py,sha256=2W_FY1teC308UYTnK8hUpsBjOYjCcTn2X9IdlhHFcIs,2075
+researcher/globals.py,sha256=XtFhFVnqEVPpGOVSCa6CwUUQEbH-5iCE4xWKDlLxMnU,58
+researcher/records.py,sha256=r0V434dZ5fwxTIvmccIAhG4b2YL4lB3dtmjYP0YWxdk,5638
+researcher/results.py,sha256=pJ5j8B_HZNgrC1Jw5LNyZXV2mUI87osLh3YgfO7kh3g,2697
+researcher/run.py,sha256=TtYY5T-vmyYpCt3MNGreMGJSIt0ZEwToo8MJi_Bhhn0,1238
+researcher-0.0.11.dist-info/LICENSE.md,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+researcher-0.0.11.dist-info/METADATA,sha256=FIKH8qziNuyCoZ2xhEUUIxqvicOjCaQIgE1tYnxdRx4,499
+researcher-0.0.11.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+researcher-0.0.11.dist-info/top_level.txt,sha256=TmJaCu9mixeNV2-dY6TUn2lA0x6fZljiwGquqfRZyfg,11
+researcher-0.0.11.dist-info/RECORD,,
