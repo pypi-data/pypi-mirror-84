@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+AriBasicCalculator/__init__.py
+aribasiccalculator.egg-info/PKG-INFO
+aribasiccalculator.egg-info/SOURCES.txt
+aribasiccalculator.egg-info/dependency_links.txt
+aribasiccalculator.egg-info/top_level.txt
