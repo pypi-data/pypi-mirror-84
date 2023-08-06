@@ -1,0 +1,10 @@
+lmu/__init__.py,sha256=DJ7T1F9MRpvjhjOR4WxKppv2nNHtTpvjs0VTLpfJNMQ,293
+lmu/layers.py,sha256=IVVgkmft6fwgQUsbhDU0cPMsB8bdkklzig3EGXNaGdc,25278
+lmu/version.py,sha256=MWg4Xd6mUqJBbXpewaHCzyc9c-kUGNSHteFDY99ilSo,474
+lmu/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lmu/tests/test_layers.py,sha256=M65soLPtDksUpgduBW2bPPPkabkh-TLTb6FPOTiZ_Zg,10749
+lmu-0.2.0.dist-info/LICENSE.rst,sha256=rxtzpRfX6UwxTxHZj2NrbAHZgH1_IHkqyK6VEWYn1TE,1128
+lmu-0.2.0.dist-info/METADATA,sha256=VUe5TkjOYcLoyzFwlromciL1CnINWc7miu4VzW7nRZw,9087
+lmu-0.2.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+lmu-0.2.0.dist-info/top_level.txt,sha256=7VPIuN-I04bNwTIFhAOpNMB_J2atsfG1vfESMTTwOxk,4
+lmu-0.2.0.dist-info/RECORD,,
