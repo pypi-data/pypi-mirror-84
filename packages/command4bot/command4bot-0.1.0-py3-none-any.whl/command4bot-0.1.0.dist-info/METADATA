@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: command4bot
+Version: 0.1.0
+Summary: A general purpose library for command-based iteraction made for bots
+License: MIT
+Author: Allan Chain
+Author-email: allanchain@pku.edu.cn
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: typing_extensions (>=3.7.4,<4.0.0); python_version < "3.8"
