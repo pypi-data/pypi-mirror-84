@@ -1,0 +1,3 @@
+[console_scripts]
+agro_kit = agro_kit.__main__:main
+
