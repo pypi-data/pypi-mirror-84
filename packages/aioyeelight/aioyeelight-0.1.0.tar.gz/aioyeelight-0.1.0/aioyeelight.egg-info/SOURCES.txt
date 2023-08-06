@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+aioyeelight/__init__.py
+aioyeelight/__main__.py
+aioyeelight/aioyeelight.py
+aioyeelight/discover.py
+aioyeelight.egg-info/PKG-INFO
+aioyeelight.egg-info/SOURCES.txt
+aioyeelight.egg-info/dependency_links.txt
+aioyeelight.egg-info/entry_points.txt
+aioyeelight.egg-info/not-zip-safe
+aioyeelight.egg-info/requires.txt
+aioyeelight.egg-info/top_level.txt
