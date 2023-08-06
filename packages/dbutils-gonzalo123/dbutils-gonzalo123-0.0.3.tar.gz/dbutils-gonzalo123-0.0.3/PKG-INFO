@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dbutils-gonzalo123
+Version: 0.0.3
+Summary: psycopg2 db utils
+Home-page: https://github.com/gonzalo123/dbutils
+Author: Gonzalo Ayuso
+Author-email: gonzalo123@gmail.com
+License: MIT
+Description: # psycopg2 database utils
+        
+        [dbutils](https://github.com/gonzalo123/dbutils)
+        
+        
+Keywords: psycopg2
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
