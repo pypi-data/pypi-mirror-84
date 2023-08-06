@@ -1,0 +1,11 @@
+wasmpy/__init__.py,sha256=prYQLhH3UhBxfRe0t7lFYIq9IGJoKSVAoN0aWY-0_4Y,200
+wasmpy/instructions.py,sha256=4ObhDEKtxag-uV9dyIwyWFesDdJOcUvh0jQvTOtUayY,12727
+wasmpy/module.py,sha256=mdfuCrPXV10EdkHMHrDg9m7STKq70uK3UVIlwrkhH_Y,2239
+wasmpy/sections.py,sha256=erxPllKU1jEwK-oz-umoo4gkVKkJexwSF0p99LcWpkM,5335
+wasmpy/types.py,sha256=NgxGIjEQFFxXByDGHvdHrpDf-meuZiH4N7ndkcm56E0,2440
+wasmpy/values.py,sha256=58FVr5bwA3n49vc8oxmbRgSSytK4UcManWwARiYkkPk,2017
+wasmpy-0.1.0a1.dist-info/LICENSE,sha256=T8dgd3SPxsT1CmPeTedfAmFQN0MsCI97np11S9X2kzs,1088
+wasmpy-0.1.0a1.dist-info/METADATA,sha256=iKMYmeA81nKsP3_EwkHW0bGrMtBy0lMfRkufspSFqJY,750
+wasmpy-0.1.0a1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+wasmpy-0.1.0a1.dist-info/top_level.txt,sha256=stKOyr4rDr_7Lh9NkBBGW5NFkXMSsqXxwBc6P24s8w0,7
+wasmpy-0.1.0a1.dist-info/RECORD,,

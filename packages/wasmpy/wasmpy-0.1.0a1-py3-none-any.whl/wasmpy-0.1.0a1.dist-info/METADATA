@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: wasmpy
+Version: 0.1.0a1
+Summary: Interactions between WebAssembly and Python
+Home-page: https://github.com/r-james-dev/wasmpy
+Author: James Ryan
+Author-email: r.james.dev@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Assembly
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# wasmpy
+Interacting with WebAssembly code from python.
+
+
