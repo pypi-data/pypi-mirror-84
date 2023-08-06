@@ -1,0 +1,4 @@
+[plover.meta]
+retro_stringop = plover_retro_stringop:retro_stringop
+retro_stringop_sh = plover_retro_stringop:retro_stringop_sh
+
