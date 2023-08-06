@@ -1,0 +1,9 @@
+README.md
+setup.py
+bin/githubcollaborators
+githubcollaborators/__init__.py
+githubcollaborators.egg-info/PKG-INFO
+githubcollaborators.egg-info/SOURCES.txt
+githubcollaborators.egg-info/dependency_links.txt
+githubcollaborators.egg-info/requires.txt
+githubcollaborators.egg-info/top_level.txt
