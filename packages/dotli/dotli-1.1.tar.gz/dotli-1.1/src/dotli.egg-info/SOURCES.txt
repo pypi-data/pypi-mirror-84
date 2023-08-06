@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/dotli/__init__.py
+src/dotli/__version__.py
+src/dotli/ambiguous_obj.py
+src/dotli/dotli.py
+src/dotli/errors.py
+src/dotli.egg-info/PKG-INFO
+src/dotli.egg-info/SOURCES.txt
+src/dotli.egg-info/dependency_links.txt
+src/dotli.egg-info/top_level.txt
