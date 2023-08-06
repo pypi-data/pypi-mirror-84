@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: toit-api
+Version: 0.10.18
+Summary: Toitware
+Home-page: https://github.com/toitware/api
+Author: Toitware
+Author-email: developers@toitware.com
+License: UNKNOWN
+Description: # Toitware
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
