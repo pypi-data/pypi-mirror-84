@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+admin_confirm/__init__.py
+admin_confirm/admin.py
+django_admin_confirm.egg-info/PKG-INFO
+django_admin_confirm.egg-info/SOURCES.txt
+django_admin_confirm.egg-info/dependency_links.txt
+django_admin_confirm.egg-info/requires.txt
+django_admin_confirm.egg-info/top_level.txt
