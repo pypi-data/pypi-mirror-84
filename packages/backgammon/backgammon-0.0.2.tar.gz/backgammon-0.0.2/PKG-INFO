@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: backgammon
+Version: 0.0.2
+Summary: Backgammon engine for the Backgammon Network.
+Home-page: https://github.com/softwerks/backgammon
+Author: Softwerks
+Author-email: info@softwerks.com
+License: UNKNOWN
+Description: # Backgammon
+        
+        Backgammon engine for the [Backgammon Network](https://www.bkgmn.net).
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
