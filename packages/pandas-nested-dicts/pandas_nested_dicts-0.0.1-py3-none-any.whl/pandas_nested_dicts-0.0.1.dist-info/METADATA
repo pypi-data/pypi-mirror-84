@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pandas-nested-dicts
+Version: 0.0.1
+Summary: A small package to make easy to convert nested dicts to DataFrames and the vice versa
+Home-page: https://github.com/gianfa/pandas_dict_converter
+Author: Gianfrancesco Angelini
+Author-email: gian.angelini@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# pandas_nested_dicts
+Package for converting flat DataFrames into nested dict.
+
+
+
+

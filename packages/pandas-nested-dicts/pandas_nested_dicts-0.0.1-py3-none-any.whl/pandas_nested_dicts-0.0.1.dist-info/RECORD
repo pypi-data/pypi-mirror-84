@@ -1,0 +1,9 @@
+pandas_nested_dicts/__init__.py,sha256=x8goipeaIMSp8v9hFeykGYK-qDirNhcyeoXQitxefCY,63
+pandas_nested_dicts/dict_conversion.py,sha256=G6cVBuKOQSLhOqMB898-qUT5BDS5xCoU5Qnd4FRIK40,4659
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_dict_conversion.py,sha256=bUsqO5x0k5KxHC5mrOo1eOF6ZoJZ_4OvuNZwIZO8FYQ,1857
+pandas_nested_dicts-0.0.1.dist-info/LICENSE,sha256=ro80IIL3leCrDqxExbubmCyDPNpmO1LEIcVAohHHE8A,1079
+pandas_nested_dicts-0.0.1.dist-info/METADATA,sha256=2bF0drUroVKooVjkzBm3w9E98s6JMa3kMs8pITPhzf0,616
+pandas_nested_dicts-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pandas_nested_dicts-0.0.1.dist-info/top_level.txt,sha256=SbGFQw1I_yeE3_0UQ1ZPjmssRn9mhGmPtL9ppJyh--k,26
+pandas_nested_dicts-0.0.1.dist-info/RECORD,,
