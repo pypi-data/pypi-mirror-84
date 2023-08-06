@@ -1,0 +1,17 @@
+click
+requests
+PyInquirer
+pythonping
+pyyaml
+certifi
+cerberus
+psutil
+aiodns
+cchardet
+dnspython
+pysnmp
+aioping
+httpx
+python-daemon
+backoff
+aioboto3
