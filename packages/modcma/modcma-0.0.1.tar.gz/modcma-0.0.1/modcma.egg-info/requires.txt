@@ -1,0 +1,4 @@
+numpy
+scipy
+ghalton
+sobol_seq
