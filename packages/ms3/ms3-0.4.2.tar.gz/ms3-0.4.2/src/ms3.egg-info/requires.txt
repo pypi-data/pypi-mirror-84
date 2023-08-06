@@ -1,0 +1,8 @@
+beautifulsoup4
+lxml
+pandas
+pathos
+
+[testing]
+pytest
+pytest-cov
