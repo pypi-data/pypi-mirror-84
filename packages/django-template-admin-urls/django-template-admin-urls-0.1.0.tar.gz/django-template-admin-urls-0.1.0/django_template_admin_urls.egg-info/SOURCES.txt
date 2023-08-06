@@ -1,0 +1,7 @@
+README.md
+README.rst
+setup.py
+dj_template_admin_urls/__init__.py
+dj_template_admin_urls/templatetags/admin_links.py
+dj_template_admin_urls/templatetags/__init__.py
+dj_template_admin_urls/templates/admin_links.jinja

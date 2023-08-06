@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: django-template-admin-urls
+Version: 0.1.0
+Summary: Django template admin url helping utilities.
+Author: Alex Uzjakov
+Author-email: cyberbudy@gmail.com
+License: MIT
+Requires-Python: >=3.6
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+
+django-template-admin-urls
+==========================
+
+Micro-package that provides a helping utility for manual tesing. Like for example template block with links for editing current page instance in admin.
+
+Template blocks
+---------------
+
+``admin_links.jinja`` - provides header block with links such as:
+
+
+* admin dashboard url
+* admin's url of object page
+
+Template tags
+-------------
+
+
+* ``object_admin_url`` - returns object's url in admin
+* ``admin_url`` - admin dashboard url
