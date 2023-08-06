@@ -1,0 +1,3 @@
+[console_scripts]
+cctek = cctek.commands:main
+
