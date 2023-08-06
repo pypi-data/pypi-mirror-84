@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: gisinfo-c
+Version: 0.0.5
+Summary: Short Time Fourier Transform
+Home-page: UNKNOWN
+Author: yzy
+Author-email: yangzy@datall.cn
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: numpy

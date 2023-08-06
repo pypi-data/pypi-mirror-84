@@ -1,0 +1,7 @@
+setup.py
+gisinfo_c/__init__.py
+gisinfo_c.egg-info/PKG-INFO
+gisinfo_c.egg-info/SOURCES.txt
+gisinfo_c.egg-info/dependency_links.txt
+gisinfo_c.egg-info/top_level.txt
+gisinfo_c/tool/__init__.py
