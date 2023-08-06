@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+qcmd/core.py
+qcmd/exceptions.py
+qcmd.egg-info/PKG-INFO
+qcmd.egg-info/SOURCES.txt
+qcmd.egg-info/dependency_links.txt
+qcmd.egg-info/top_level.txt
+qcmd/processors/executor.py
