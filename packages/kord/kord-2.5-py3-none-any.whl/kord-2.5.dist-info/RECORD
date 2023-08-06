@@ -1,0 +1,17 @@
+kord/__init__.py,sha256=tXeFFq80grmHdrs0UFhyMW-qsdZuvb2Lkh04jC3osYc,27
+kord/errors.py,sha256=P4DoDvUyBmSbawaZ9e0PydxeVIDBptzW6kWSyL0amPw,255
+kord/instruments.py,sha256=e0uqCcMZxVjjCsm62v0ii9w6scWgJRpm87xR49EBVGo,5552
+kord/keys.py,sha256=qJxpXK-eS6qipjRfY8vHeaDsTyZI2itpXd6kFVnfimc,12240
+kord/notes.py,sha256=OAFJcqTOEN3ntqlhGhB2qzSgVj-uCkRzu2xFQ5XIooc,8185
+kord/tests.py,sha256=G0aFwokXs4Z-to1ePs_Ft5YRGuozw6FCYC4NJ2sPERY,35034
+kord-2.5.data/data/fretboard/fretboard.py,sha256=taAKW3nWJ02qcsYCoIg_ioL18RnDBFAWt_dDFBIs5bw,5467
+kord-2.5.data/data/fretboard/tuner.py,sha256=-FZ2EfnJEw3KvPeB0TyneEbvyh_4o76sJtqYBkJspVQ,1445
+kord-2.5.data/data/fretboard/tunings/banjo.json,sha256=09C7SikE67XHIVSmHlWWwAZJYkThFPcbn2eAzo8seIk,83
+kord-2.5.data/data/fretboard/tunings/bass.json,sha256=NJA5Jl-cqF_Fr4NlzYgFVg3aaMREYFy6oTJcZdhVlNg,283
+kord-2.5.data/data/fretboard/tunings/guitar.json,sha256=E7XP04mJJVeq85-0L41uYYh281qnJtKSO8FVr8BXhRM,766
+kord-2.5.data/data/fretboard/tunings/ukulele.json,sha256=pOcpwN25bJjIkiiXxA3iuqvbPr25rcw_LSggVOXhWXg,159
+kord-2.5.dist-info/LICENSE,sha256=sw5R9x7YiaESz--wct2pp-gEY_aBiJlnEMnoPHzU0m4,1075
+kord-2.5.dist-info/METADATA,sha256=bejYIRbhkv161osDYar32D771EDyOxN1siV5nybcvEU,8396
+kord-2.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+kord-2.5.dist-info/top_level.txt,sha256=Qn-4Y1Y9psypeBduyHh4iCdk7rHBmoGRRu2N8hwBsik,5
+kord-2.5.dist-info/RECORD,,
