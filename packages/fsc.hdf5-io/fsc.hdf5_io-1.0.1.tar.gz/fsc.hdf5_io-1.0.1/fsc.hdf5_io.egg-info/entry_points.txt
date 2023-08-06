@@ -1,0 +1,6 @@
+[fsc.hdf5_io.load]
+sympy.object = fsc.hdf5_io._sympy_load
+
+[fsc.hdf5_io.save]
+sympy = fsc.hdf5_io._sympy_save
+
