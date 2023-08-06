@@ -1,0 +1,12 @@
+anews/__init__.py,sha256=1Lx6ybVHPzu6OByZb9Fju70Fr4eO8ZDsnNJoO9GP6Io,2077
+anews/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anews/common/drawhelper.py,sha256=4Zzl-1ffgv2Yr2H8RK2qXdQXesf_NTdo6TzXs__s5Po,5690
+anews/common/utils.py,sha256=hCMqVA5u8dpMh-XZunjxKQvI0FDimJRQrUA9ToZgsBA,4491
+anews/dao/__init__.py,sha256=pVzmAkEAGDwX6K-P-C-mmIF4h4NAgGpixudgMGUg7-k,3121
+anews/dao/texthelper.py,sha256=LmJEBtA2tpb8Ias8MS2d5eqmTKI1y-Z8KlnIf6020Ys,3310
+anews/dao/msn/__init__.py,sha256=FD8tIP0GNnCjpteKgxiNrQNb0tXIpQzl2ZKzIF5ShPA,1518
+anews/dao/sound/__init__.py,sha256=auCljXTKvgMQ_dmeEHeZJSNkzXsRpqf58V6D-6oeiDo,1592
+anews-0.5.dist-info/METADATA,sha256=d2VOeE2kSxCmFEaZXDpBGhJoVIRQ0nuZt6r70pLmQ2o,490
+anews-0.5.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+anews-0.5.dist-info/top_level.txt,sha256=nnP2Vck2hNb4DDMbX4kHnyz7fS0LencmIMs7trNR58Y,6
+anews-0.5.dist-info/RECORD,,
