@@ -1,0 +1,109 @@
+CHANGES
+=======
+
+v2.0
+----
+
+* [Doc] Update README
+* Update main description
+* Remove reference to remove general page
+* Move installation instructions to main page
+* Move installation instructions to main page
+* Add macOS Catalina as one of development systems
+* Remove unused imports
+* [Doc] Don't provide release/version information
+* [Dist] Provide developer install
+* [Doc] Update high-level interface
+* [Prof] Fix import error
+* [Code] Move reference czt/ffs implementations outside test modules
+* [Prof] store plots under profile/
+* [Prof] Format module imports
+* [Doc] Formatting
+* [Doc] Rename notes/ to theory/
+* [Test] move to test/ folder
+* General repository cleanup
+* [Doc] LaTeX fix
+* Refactor Phi to x
+* Task/multidim cleanup
+* Only plot filling in comparison\_plot
+* Refactor Phi from script not in other PR
+* Refactor Phi to x
+* [Test] Automate execution using pytest + test runner
+* Refactor plotting
+* [Code] Formatting
+* [Doc] Formatting
+* [Doc] Fix wording and reformulate some sentences for clarity
+* [Style] Homogenize codestyle
+* [Legacy] Drop unused files
+* [Info] Add Eric as author. (Visible in PyPI)
+* [Doc] Fix formatting
+* Make shell scripts portable
+* Add scripts to profile speedup for real fs\_interp
+* Update docs
+* Raise error for fs\_interpn when real\_Phi set for D > 2
+* Move CZT and FFS composition functions out of module, and into test scripts
+* Remove 2D functions
+* Update docs
+* Raise error for fs\_interpn when real\_Phi set for D > 2
+* Move CZT and FFS composition functions out of module, and into test scripts
+* Remove 2D functions
+* Remove unused import
+* Have 1D CZT call CZTn
+* Refactor tuple casting
+* Add general interp and real version for 2D
+* Start multi-dimensional interpolation with FS coef
+* Refactor tuple casting
+* Have 1D and 2D FFS call FFSn, refactor Tx and Ty
+* Fix email
+* Fix docstrings, and small fixes
+* Update docs for CZT
+* Fix FFT call in cztn
+* Update docstrings
+* Add multi-dimensional CZT
+* Use next\_fast\_len
+* Incorporate Sepand suggestions, add function for input values checks
+* Add profiling script for FFSN
+* Add submodule for closed-form of functions and FS coefficients
+* Add FFSN with D-dimension FFT and iFFT
+* Add FFSN and iFFSN
+* Check that N\_FS is odd
+* Add ffsn\_sample
+* Reformat doc strings to 100 char
+* Remove squeeze
+* Add TODO for odd N\_FS
+* Switch to reformat method
+* Implement axes option for 2D FFS
+* Update gitignore
+* Fix internal doc links to functions
+* Refactor interpolation to interp
+* Fix doctests
+* Return sparse array with ffs2\_sample
+* Use conjugate method rather than function
+* Remove print
+* Format code to 100 character width
+* Refactor utils to util
+* Add 2D FFS methods to docs
+* Add script to format according to black
+* Add unit tests for pytest
+* Add 2D iFFS
+* Add 2D FFS method
+* Add function for computing modulation vectors
+* Reformat doctest script
+* Update docs
+* Breakup code into separate files
+* Refactor and add ffs2\_sample
+* Rename util file
+
+v1.0.1
+------
+
+* [Dist] Make pip-installable (/w --editable flag)
+* [Doc] Add Matthieu SIMEONI and Paul HURLEY as authors
+
+v1.0
+----
+
+* [Doc] Provide conda installation instructions
+* [License] Standardize license with other ImoT projects
+* Add documentation, code files, configuration files
+* Initial commit
