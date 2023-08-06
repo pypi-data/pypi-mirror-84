@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: b-delete-cf-stacks
+Version: 0.0.2
+Summary: Script library to brutally delete CloudFormation stacks.
+Home-page: UNKNOWN
+Author: Laimonas Sutkus
+Author-email: laimonas.sutkus@biomapas.com
+License: Apache License 2.0
+Description: # TODO
+Keywords: AWS CloudFormation Boto Delete Cf
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

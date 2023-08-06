@@ -1,0 +1,16 @@
+HISTORY.md
+MANIFEST.in
+README.md
+VERSION
+setup.py
+b_delete_cf_stacks/__init__.py
+b_delete_cf_stacks/delete_stacks.py
+b_delete_cf_stacks/get_all_stacks.py
+b_delete_cf_stacks/stack.py
+b_delete_cf_stacks.egg-info/PKG-INFO
+b_delete_cf_stacks.egg-info/SOURCES.txt
+b_delete_cf_stacks.egg-info/dependency_links.txt
+b_delete_cf_stacks.egg-info/requires.txt
+b_delete_cf_stacks.egg-info/top_level.txt
+b_delete_cf_stacks/commands/__init__.py
+b_delete_cf_stacks/commands/delcfall.py
