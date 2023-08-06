@@ -1,0 +1,14 @@
+COPYING
+MANIFEST.in
+NEWS
+README.md
+setup.cfg
+setup.py
+sopel_election/__init__.py
+sopel_modules.election.egg-info/PKG-INFO
+sopel_modules.election.egg-info/SOURCES.txt
+sopel_modules.election.egg-info/dependency_links.txt
+sopel_modules.election.egg-info/entry_points.txt
+sopel_modules.election.egg-info/not-zip-safe
+sopel_modules.election.egg-info/requires.txt
+sopel_modules.election.egg-info/top_level.txt

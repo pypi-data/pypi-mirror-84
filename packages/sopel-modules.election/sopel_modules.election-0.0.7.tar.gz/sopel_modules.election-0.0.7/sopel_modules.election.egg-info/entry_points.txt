@@ -1,0 +1,3 @@
+[sopel.plugins]
+election = sopel_election
+
