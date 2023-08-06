@@ -1,0 +1,9 @@
+setuptools
+zpretty
+
+[test]
+PyQuery
+plone.app.contenttypes
+plone.app.robotframework[debug]
+plone.app.testing
+plone.testing>=5.0.0
