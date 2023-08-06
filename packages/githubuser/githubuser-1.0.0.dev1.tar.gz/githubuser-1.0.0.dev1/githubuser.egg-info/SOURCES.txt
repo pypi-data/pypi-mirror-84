@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+githubuser/__init__.py
+githubuser/get_github_user.py
+githubuser.egg-info/PKG-INFO
+githubuser.egg-info/SOURCES.txt
+githubuser.egg-info/dependency_links.txt
+githubuser.egg-info/top_level.txt
