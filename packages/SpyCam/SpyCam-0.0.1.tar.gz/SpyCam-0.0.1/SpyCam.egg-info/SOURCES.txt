@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+objcenter.py
+pantilt.py
+pid.py
+setup.py
+SpyCam.egg-info/PKG-INFO
+SpyCam.egg-info/SOURCES.txt
+SpyCam.egg-info/dependency_links.txt
+SpyCam.egg-info/top_level.txt
