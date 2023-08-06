@@ -1,0 +1,15 @@
+torchcomplex/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torchcomplex/nn/__init__.py,sha256=5M8F890jIlmF3mXemq0yXuLz3vPGnO2omPFWpSj4PzE,22
+torchcomplex/nn/functional.py,sha256=I4EAuIPpOOej7M11wtNNp6QNcOURLlxaVgUpKQxGeg0,13921
+torchcomplex/nn/modules/__init__.py,sha256=tB1D2mu2WgedfKX4U3zNZs2uzU6w4xDKhbUbxsgkGMU,720
+torchcomplex/nn/modules/activation.py,sha256=ImuwqIsm69DWzZ8IN8p7jtxUtgNc6mMmxjHoT3yIgqA,5658
+torchcomplex/nn/modules/batchnorm.py,sha256=xW0Xyn4BIH2dASbD7FLrH_2tAnVmKu_SoNw2YFmdZPc,18784
+torchcomplex/nn/modules/conv.py,sha256=tQso7Mu2iKoSky5cIdUd1rKrSka2asUAHBeHUzVYyEI,48125
+torchcomplex/nn/modules/dropout.py,sha256=p_ogblJmAmd4XpkSZWp9TApn_I_XeStBtjmAGxrSjcw,8963
+torchcomplex/nn/modules/linear.py,sha256=IyXlPCxOcJ-i8OSfeIovNMbn69Jp-y-7CSqqXrjqDcE,8576
+torchcomplex/nn/modules/pooling.py,sha256=OcKUZ3bKb-cYLPq09_l9QVtomVPEo9agy1SK2xM1A8g,49935
+pytorch_complex-0.0.5.dist-info/LICENSE,sha256=utTXJdvxYeZn3LYtNnd706Gjk4_RcbnSB8ZOCUxJycc,1076
+pytorch_complex-0.0.5.dist-info/METADATA,sha256=G_7hlU-91Op28IMLS6iDrmBZuWI6CaLoyUZ3PfKqauI,1307
+pytorch_complex-0.0.5.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+pytorch_complex-0.0.5.dist-info/top_level.txt,sha256=hlFXXW_dUEOUEDNyU5bAQnV8DpzPg549g7jxmTvA8XQ,13
+pytorch_complex-0.0.5.dist-info/RECORD,,
