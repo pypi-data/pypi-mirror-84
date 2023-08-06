@@ -1,0 +1,4 @@
+imageio
+niondata>=0.13.1
+nionutils
+numpy
