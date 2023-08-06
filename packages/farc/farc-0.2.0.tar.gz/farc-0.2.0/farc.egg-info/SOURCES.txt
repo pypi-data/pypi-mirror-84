@@ -1,0 +1,9 @@
+README.md
+setup.py
+farc/SimpleSpy.py
+farc/VcdSpy.py
+farc/__init__.py
+farc.egg-info/PKG-INFO
+farc.egg-info/SOURCES.txt
+farc.egg-info/dependency_links.txt
+farc.egg-info/top_level.txt
