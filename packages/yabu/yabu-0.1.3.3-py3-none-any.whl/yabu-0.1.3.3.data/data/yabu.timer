@@ -1,0 +1,9 @@
+[Unit]
+Requires=yabu.service
+
+[Timer]
+Unit=yabu.service
+OnCalendar=weekly
+
+[Install]
+WantedBy=timers.target
