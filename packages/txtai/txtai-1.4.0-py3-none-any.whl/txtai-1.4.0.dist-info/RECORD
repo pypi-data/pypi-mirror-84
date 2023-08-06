@@ -1,0 +1,15 @@
+txtai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+txtai/ann.py,sha256=rNbuciK93LeRnbc3Hk3T2M5jHMaf_FuwXkdx0fVCoKM,5166
+txtai/api.py,sha256=jpwZs6Hrn0zlbXoDLq_Z3_o-YwboA15Eq1rN_K2Msc0,3854
+txtai/embeddings.py,sha256=rYUabUV1d6QqEGAUcuQUDsDZmW4K41-63wxVFTsYERY,9254
+txtai/extractor.py,sha256=WGg9FYWxhqFqghumtTpCTJHhaDDSr6efJWKtUvOSbKc,5326
+txtai/labels.py,sha256=4iZonlcXWYO2_CAiriX_j7aeeEdO1wJpzmrLbD8zHQo,954
+txtai/pipeline.py,sha256=LjoqwOr-yXXvCA3IllKk98HUV0NItM6bidDQAZlQdmw,4801
+txtai/scoring.py,sha256=rUbG7tYlre1ES79GSa64IHbjJqaWUAMhVi3HVIOkDig,6136
+txtai/tokenizer.py,sha256=kU2TRGXhi7QgR-8Rm-bbQzpAe-pwBZipIq3eEpXhc-M,1219
+txtai/vectors.py,sha256=ubLKrl1riDljEhej_0czIAknHR4pnClWSH9Q0mZEVIw,9242
+txtai-1.4.0.dist-info/LICENSE,sha256=zpm-bykwkbrlhUqZFJiDR2OpctVBM1mu2E8wMRIEMIU,10753
+txtai-1.4.0.dist-info/METADATA,sha256=ANt7vUFEiei7JvdAgdTVyFGEN9EdruC2w7idLK-vjX8,9255
+txtai-1.4.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+txtai-1.4.0.dist-info/top_level.txt,sha256=swfGEb1n0U79Qk0Kmu1_c96NOKNqV2t-y_zL2IHJfec,6
+txtai-1.4.0.dist-info/RECORD,,
