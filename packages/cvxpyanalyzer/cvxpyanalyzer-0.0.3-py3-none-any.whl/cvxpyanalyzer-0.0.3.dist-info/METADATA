@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: cvxpyanalyzer
+Version: 0.0.3
+Summary: Analyzer for CVXPY problems
+Home-page: https://github.com/cvxgrp/cvxpy-analyzer
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: cvxpy (>=1.1.0a1)
+Requires-Dist: requests
+Requires-Dist: setuptools
+
+A toolkit for analyzing CVXPY problems.
+
+Install via ``pip install cvxpyanalyzer``.
+
+Example usage:
+```
+from analyzer import tech_support
+
+# Construct CVXPY problem.
+...
+
+# Analyze the problem.
+tech_support(problem)
+```
+
+
