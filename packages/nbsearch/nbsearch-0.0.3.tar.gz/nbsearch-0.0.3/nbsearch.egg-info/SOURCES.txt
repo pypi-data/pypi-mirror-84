@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nbsearch/__init__.py
+nbsearch/cli.py
+nbsearch/nbsearch.py
+nbsearch/nbwatchdog.py
+nbsearch.egg-info/PKG-INFO
+nbsearch.egg-info/SOURCES.txt
+nbsearch.egg-info/dependency_links.txt
+nbsearch.egg-info/entry_points.txt
+nbsearch.egg-info/not-zip-safe
+nbsearch.egg-info/requires.txt
+nbsearch.egg-info/top_level.txt
