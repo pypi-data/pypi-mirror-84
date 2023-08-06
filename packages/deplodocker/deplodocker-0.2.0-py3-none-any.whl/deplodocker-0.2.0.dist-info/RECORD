@@ -1,0 +1,10 @@
+deplodocker/__init__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+deplodocker/cli.py,sha256=rQxizImUcTyGQCEMLVvS8WtXP_gOpHzhjHOOEVrRgWE,1217
+deplodocker/formatter.py,sha256=BXDV4P5tJ5cFcvf1UnnA2r_uCbCBRj-5sTqVMamLcoY,826
+deplodocker/loader.py,sha256=_TpffXwdLSSqdcCyzqoFMfj7uyx4wTn8W9FGQLI85fE,984
+deplodocker/stainer.py,sha256=wgK4HJpsZhMknnVnWTDrNXeueZHHb5XJCj3PN044xag,209
+deplodocker-0.2.0.dist-info/entry_points.txt,sha256=KV06O2G6ubVqUsjQdp9rGdzyO3yEAetEw0cgpsIFos4,52
+deplodocker-0.2.0.dist-info/LICENSE,sha256=vcK3q_DBpcGG-cr9_j-AuHW5YuE4AtKl0QsJOrO8yBc,1072
+deplodocker-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+deplodocker-0.2.0.dist-info/METADATA,sha256=OXdMU18i_5DF5J8nHe_cSEIoRZh1FN0dRi59O2pe0JI,3632
+deplodocker-0.2.0.dist-info/RECORD,,
