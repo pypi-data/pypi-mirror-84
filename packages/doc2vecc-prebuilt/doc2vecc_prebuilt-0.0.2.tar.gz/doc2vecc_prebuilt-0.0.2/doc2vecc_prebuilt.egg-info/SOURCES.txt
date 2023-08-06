@@ -1,0 +1,9 @@
+README.md
+setup.py
+doc2vecc/doc2vecc
+doc2vecc/doc2vecc.c
+doc2vecc_prebuilt.egg-info/PKG-INFO
+doc2vecc_prebuilt.egg-info/SOURCES.txt
+doc2vecc_prebuilt.egg-info/dependency_links.txt
+doc2vecc_prebuilt.egg-info/not-zip-safe
+doc2vecc_prebuilt.egg-info/top_level.txt
