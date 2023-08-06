@@ -1,0 +1,3 @@
+[console_scripts]
+qc = utils.encode.automatic_switch_python_version:main
+
