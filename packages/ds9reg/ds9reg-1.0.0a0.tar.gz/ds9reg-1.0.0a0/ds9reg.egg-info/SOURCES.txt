@@ -1,0 +1,8 @@
+README.md
+setup.py
+ds9reg/__init__.py
+ds9reg/ds9reg.py
+ds9reg.egg-info/PKG-INFO
+ds9reg.egg-info/SOURCES.txt
+ds9reg.egg-info/dependency_links.txt
+ds9reg.egg-info/top_level.txt
