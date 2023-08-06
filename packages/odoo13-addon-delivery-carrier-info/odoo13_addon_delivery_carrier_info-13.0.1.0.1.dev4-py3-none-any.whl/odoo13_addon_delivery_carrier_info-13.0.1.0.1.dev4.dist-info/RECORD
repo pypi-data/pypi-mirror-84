@@ -1,0 +1,16 @@
+odoo/addons/delivery_carrier_info/README.rst,sha256=pYe5hxbzaA8lCFA1AymeQ3rm4EYOFM-Ts_qY63t_DT8,2859
+odoo/addons/delivery_carrier_info/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/delivery_carrier_info/__manifest__.py,sha256=tNrbMIEbpOPQky8qTA8A9Gbccty4PZ8n6FFfmPM27FY,680
+odoo/addons/delivery_carrier_info/i18n/delivery_carrier_info.pot,sha256=KPoH7MiPwxLAWPRAw5vzitcC3LWEFtoKaAa9t6wYN54,1081
+odoo/addons/delivery_carrier_info/models/__init__.py,sha256=KUGrW-78qoxUKCKvYdl6CfDBiq6--k1lIXAULo_bItA,31
+odoo/addons/delivery_carrier_info/models/delivery_carrier.py,sha256=yGJkI-l9ZVk7REq5TeLjh0N0tSkZW_eaTuR6xFjjgEo,365
+odoo/addons/delivery_carrier_info/readme/CONTRIBUTORS.rst,sha256=7zzrn5K8mExox8p1U8EK_XS8zVGZifOPg8EJ3jccjnE,101
+odoo/addons/delivery_carrier_info/readme/DESCRIPTION.rst,sha256=ko8B8vP_fkWRjx2DHpTKKBA8TruXbQUjuiw8AI0sIOU,76
+odoo/addons/delivery_carrier_info/readme/USAGE.rst,sha256=h5ZqZsRnJjaDYS2ItEHID9YY0CzhcF_e5I9rqCKrjFs,67
+odoo/addons/delivery_carrier_info/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/delivery_carrier_info/static/description/index.html,sha256=q2R_L5otaNezRZ1_QKL_wi8jTN2J5EE-YeiUt4JswTQ,12244
+odoo/addons/delivery_carrier_info/views/delivery_view.xml,sha256=c0LiQkCiiN42dZ6vpIXbGza3A4h0fkF1tqkVIWqRPoA,1229
+odoo13_addon_delivery_carrier_info-13.0.1.0.1.dev4.dist-info/METADATA,sha256=fpTYXvFLKJ8yk_LvTQJHEoh9LLbXVapvD4yZY_PQTzE,3382
+odoo13_addon_delivery_carrier_info-13.0.1.0.1.dev4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+odoo13_addon_delivery_carrier_info-13.0.1.0.1.dev4.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo13_addon_delivery_carrier_info-13.0.1.0.1.dev4.dist-info/RECORD,,
