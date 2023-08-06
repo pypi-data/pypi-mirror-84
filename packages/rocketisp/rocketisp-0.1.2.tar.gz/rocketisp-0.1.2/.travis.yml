@@ -1,0 +1,19 @@
+language: python
+python:
+    - "3.7"
+
+before_install:
+    - "sudo apt-get update"
+    - "sudo apt-get install gfortran"
+    - "sudo pip install --upgrade pip"
+    - "pip install numpy"
+    - "pip install rocketcea"
+    - "pip install scipy"
+    - "pip install rocketprops"
+    - "pip install rocketisp"
+
+env: FC=gfortran
+
+    
+script:
+    - py.test
