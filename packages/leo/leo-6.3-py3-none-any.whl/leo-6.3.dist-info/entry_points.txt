@@ -1,0 +1,7 @@
+[console_scripts]
+leo-c = leo.core.runLeo:run_console
+leo-console = leo.core.runLeo:run_console
+
+[gui_scripts]
+leo = leo.core.runLeo:run
+
