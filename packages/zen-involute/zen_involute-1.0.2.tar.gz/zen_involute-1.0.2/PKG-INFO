@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: zen_involute
+Version: 1.0.2
+Summary: Involute gear profile builder for ZenCAD
+Home-page: https://gitlab.com/hnau_zen/involute
+Author: Mark Zorikhin
+Author-email: hnau256@gmail.com
+License: UNKNOWN
+Description: # Involute gear profile builder for ZenCAD
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
