@@ -1,0 +1,15 @@
+arger/__init__.py,sha256=hLgqr31Ymn54RvFpENt6ZPB1MdBpO8AYJWZeNGM4E0k,278
+arger/main.py,sha256=SZx9HT1coUO-FStD-frQngj5hQjoSXkkI8t2PjAKnL8,3181
+arger/parser/__init__.py,sha256=AgBRz6S6AlffUPyJCmwSkYUg0LT3uKt2b7eOW83SOlw,34
+arger/parser/actions.py,sha256=GF1NNlwqSWC8PUTy2T26b9eJjKqRV7n5XzifIRDF6HE,1583
+arger/parser/classes.py,sha256=yE88aBQ0SNtBrEAI8LbzuEmWKQ8AU5H59vxN67lmGWg,4032
+arger/parser/docstring.py,sha256=-eVJZbY_U-Qp1kC-n0DNrzGfAYUxkZKWAbZ0TKfYDW0,5284
+arger/parser/funcs.py,sha256=d_dzAjzJnjTUucMYAB0v2igizqMdYh365HPm6acDRxY,3201
+arger/parser/utils.py,sha256=2SigEv-7NlM9ce2gNf2sIax8zPIytuYOP0V_HqVM1pA,561
+arger/structs.py,sha256=SFgc88HVnHATA4bnT_zwCMcWyy4Bo4gVsVdKlWIt-VI,1502
+arger/types.py,sha256=mqzoj821QfS7Em1hQF9fZtVBrNyg014u8mHAApogs_Q,852
+arger/typing_utils.py,sha256=w9nrGYuftQ7PQlTb_RDKL8CaInNIXgSsTfZOszcVxps,2418
+arger-1.0.5.dist-info/LICENSE.md,sha256=GgwjXyrZvrELhHDEeftO4H2qzdkOWd-rwB9kPWH4mSQ,1089
+arger-1.0.5.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+arger-1.0.5.dist-info/METADATA,sha256=H56XDa1rzIXam07P4l6e2QE2vUjYS4NJkMNeuyszGYM,4933
+arger-1.0.5.dist-info/RECORD,,
