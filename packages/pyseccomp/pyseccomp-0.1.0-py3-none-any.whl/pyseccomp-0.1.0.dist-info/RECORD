@@ -1,0 +1,10 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_ffi.py,sha256=kzFPUXmciGya8-WH1yNWE_Nv4984lcOQdFS7qPw6RGM,426
+tests/test_filter_load.py,sha256=3PizUOVGPOoGdlMh9MHi1JI173KlSh-VyuPd1JIPk24,2258
+tests/test_filter_manipulate.py,sha256=Z844JEd7R9g9Kcat1yy5Bke6FDm9U3LmobypN_uKtK4,2762
+tests/test_misc.py,sha256=uSh1CgNXcapcOfhZ8T-UJcSieODftrT_XPNbWdS_xh8,1531
+pyseccomp-0.1.0.dist-info/LICENSE,sha256=mLuUeePeNZEn54E3hdM-wioJPlmwix4hbEvaLrjqmOI,1064
+pyseccomp-0.1.0.dist-info/METADATA,sha256=kkAhyxKqzKMOTY4WDuLqAUvJk7xHb30npEyekF87tqU,1400
+pyseccomp-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pyseccomp-0.1.0.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+pyseccomp-0.1.0.dist-info/RECORD,,
