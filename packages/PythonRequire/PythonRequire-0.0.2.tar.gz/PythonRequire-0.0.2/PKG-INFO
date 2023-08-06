@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: PythonRequire
+Version: 0.0.2
+Summary: A require() function in python.
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: # Python Include
+        
+        ```py
+        from require import python_require, runtime
+        
+        python_require('<myfile.py>', runtime=runtime())
+        
+        """
+        Now you can execute code as if the myfile.py
+        was above instead of the python require line.
+        """
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
