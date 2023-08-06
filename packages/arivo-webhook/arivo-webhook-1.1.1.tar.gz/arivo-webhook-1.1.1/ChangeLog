@@ -1,0 +1,33 @@
+CHANGES
+=======
+
+v1.1.1
+------
+
+* touch to trigger ci
+* removed unnecessary check [skip ci]
+* fixes in test setup, repo cleanup and identical layout to the other packages, added htmlcov artifacts
+
+v1.1.0
+------
+
+* use default secret from arivo.webhook\_secret, some cleanup
+* commited correct license file
+* cleanup repository [skip ci]
+
+v1.0.2
+------
+
+* .gitlab-ci yml fix
+
+v1.0.1
+------
+
+* better trigger for deploy stage, to only run on tags
+
+v1.0.0
+------
+
+* v1.0
+* use shared runners
+* initial commit, testing test-ci
