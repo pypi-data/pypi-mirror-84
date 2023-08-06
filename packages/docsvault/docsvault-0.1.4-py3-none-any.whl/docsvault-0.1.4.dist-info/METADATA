@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: docsvault
+Version: 0.1.4
+Summary: Web app used to securely version your documents on git
+Home-page: UNKNOWN
+Author: Sylvan Le Deunff
+Author-email: sledeunf@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/sylvan-le-deunff/docsvault/issues
+Project-URL: Source, https://github.com/sylvan-le-deunff/docsvault
+Keywords: docsvault,documents,store,vault
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+Requires-Dist: aiofiles (==0.6.0)
+Requires-Dist: certifi (==2020.6.20)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: gunicorn (==20.0.4)
+Requires-Dist: h11 (==0.9.0)
+Requires-Dist: httpcore (==0.11.1)
+Requires-Dist: httptools (==0.1.1)
+Requires-Dist: httpx (==0.15.4)
+Requires-Dist: idna (==2.10)
+Requires-Dist: multidict (==5.0.0)
+Requires-Dist: rfc3986[idna2008] (==1.4.0)
+Requires-Dist: sanic-cors (==0.10.0.post3)
+Requires-Dist: sanic-plugins-framework (==0.9.4.post1)
+Requires-Dist: sanic (==20.9.1)
+Requires-Dist: sniffio (==1.2.0)
+Requires-Dist: ujson (==4.0.1)
+Requires-Dist: uvicorn (==0.12.2)
+Requires-Dist: uvloop (==0.14.0)
+Requires-Dist: websockets (==8.1)
+
+# DocsVault
+
+> DocsVault is a python webapp that allow you to easily and reliably store importants documents in a ciphered vault.
+
+For more informations, take a look at [full documentation](https://docsvault.sylvan.ovh)!
+
+## Installation
+
+DocsVault is available [on pypi](https://pypi.org/project/docsvault/).
+You can install it using pip, or any pip-based tool like [pipenv](https://pipenv.pypa.io/en/latest/).
+
+```bash
+pip install docsvault
+```
+
+## Usage
+
+Launch application server
+```bash
+docsvault server
+```
+
+Open web UI to interract with docsvault service.
+```bash
+docsvault webui
+```
+
+*Note: if server is not started, `docsvault webui` will run the server daemon automatically*
+
+## Contribute
+
+### Requirements
+
+To contribute, you must have installed the following tools
+
+- vue.js (version 2)
+- python (version >= 3.6)
+- pipenv (optional)
+
+
+Then simply run 
+```bash
+make install
+```
+
+To automatically install python and npm dev. dependencies.
+
+### Develop
+
+You can start development server for backend by running
+Idem for backend
+```bash
+pipenv run serve
+```
+
+Idem for frontend
+```bash
+npm run serve
+```
+
+
