@@ -1,0 +1,9 @@
+numpy
+selenium
+opencv-python
+pyautogui
+keyboard
+pandas
+requests
+clipboard
+tk

@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+RPAlibrarySTP.py
+setup.py
+iautolibrary.egg-info/PKG-INFO
+iautolibrary.egg-info/SOURCES.txt
+iautolibrary.egg-info/dependency_links.txt
+iautolibrary.egg-info/requires.txt
+iautolibrary.egg-info/top_level.txt
