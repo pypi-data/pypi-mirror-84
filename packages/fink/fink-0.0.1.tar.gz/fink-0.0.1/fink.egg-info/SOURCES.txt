@@ -1,0 +1,7 @@
+setup.py
+fink/__init__.py
+fink.egg-info/PKG-INFO
+fink.egg-info/SOURCES.txt
+fink.egg-info/dependency_links.txt
+fink.egg-info/not-zip-safe
+fink.egg-info/top_level.txt
