@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "u-grpc-lib"
+version = "0.1.0"
+description = "Generate protobuf and grpc stub python files to a package."
+authors = ["duyixian <duyixian@meideng.net>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+grpcio = "^1.33.2"
+grpcio-tools = "^1.33.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
