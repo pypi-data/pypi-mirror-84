@@ -1,0 +1,9 @@
+memformer/__init__.py,sha256=g3lAogoPRiZVcVsfsui6Jf4lWE_kRzvBf9lUisL2Gf4,92
+memformer/autoregressive_wrapper.py,sha256=9pIn0Fx41dyJP9gGkdXxl3hrSLkR8e7wsIBzTsnbjP0,3495
+memformer/memformer.py,sha256=c9D5KGYN3ax724jkPHbzDUscm-9Tx3ZXPutGJC9Gw-U,10461
+memformer/mrbp.py,sha256=WdMKJA8Cqu0eoThAaZ3cXTEdn4j7ENRqD5DBq3RgxZU,1272
+memformer-0.2.0.dist-info/LICENSE,sha256=As9u198X-U-vph5noInuUfqsAG2zX_oXPHDmdjwlPPY,1066
+memformer-0.2.0.dist-info/METADATA,sha256=UUNpOvl6HpFv2SGw5M2p21BtAvJO9LJD0Lu2aD0oPwg,620
+memformer-0.2.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+memformer-0.2.0.dist-info/top_level.txt,sha256=co40eaR_wH4bn61pw5qSJd7QpAzI7xHfXK1qY98qM0U,10
+memformer-0.2.0.dist-info/RECORD,,
