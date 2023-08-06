@@ -1,0 +1,6 @@
+mmh3
+
+[dev]
+pytest
+black
+flake8
