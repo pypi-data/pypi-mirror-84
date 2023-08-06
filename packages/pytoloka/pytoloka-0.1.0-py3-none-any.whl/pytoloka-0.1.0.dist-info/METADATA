@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pytoloka
+Version: 0.1.0
+Summary: An async library for Yandex.Toloka
+Home-page: https://github.com/cad0gan/pytoloka
+Author: Philip Minakov
+Author-email: sir.cadogan@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Requires-Dist: aiohttp (==3.6.2)
+Requires-Dist: pytz (==2020.1)
+
+UNKNOWN
+
+
