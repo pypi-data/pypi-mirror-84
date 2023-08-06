@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: aa-pubsub
+Version: 0.1.4
+Summary: a publish&subscrib toolkit
+Home-page: https://git.d.com/hik-aa-robots/robots-intelligent-systems/pubsub
+Author: shuyuanhao
+Author-email: shuyuanhao@cetiti.com
+License: UNKNOWN
+Description: # 1.遗留问题
+        ## `redis.exceptions.ConnectionError: Connection closed by server.`
+        https://github.com/andymccurdy/redis-py/issues/1140
+        
+        使用`try... except redis.exceptions.ConnectionError:`的方法规避了此问题
+        
+            FYI
+            - 在本项目下，使用`py37`没有出现此问题
+            - 在本项目下，使用`python`没有出现此问题
+            - 在`FairMOT`下出现此问题，初步怀疑是`timeout`问题
+        
+        # 2.依赖
+        本工具依赖redis服务请先安装redis-server
+        ```
+        apt install redis-server
+        ```
+        为Python安装依赖
+        ```
+        pip3.7 install opencv-python numpy pyyaml redis
+        pip2.7 install opencv-python numpy pyyaml redis
+        ```
+        
+        - 补充说明
+        
+        `setup.py` 文件本身指明了相关依赖，但是由于公司网络原因，可能会出现无法正常下载安装的情况，建议在安装之前手动完成依赖包的安装。
+        
+        # 3.作为程序部署
+        step1. 在`~`路径下新建路径`robot\configs`，注意：请勿使用其他路径
+        
+        step2. 将项目目录下的配置文件`config\pubsub.yaml`拷贝到`~\robot\configs`路径下，注意：请勿修改文件名称
+        
+        step3. 按实际情况修改`~\robot\configs\pubsub.yaml`文件
+        ```
+        # config for mono image
+        type: "sub"
+        source: "0"
+        #host: "10.1.101.26"
+        host: "192.168.10.141"
+        #host: "127.0.0.1"
+        port: "6379"
+        db: 3
+        name: "robot_mono"
+        topic: "robot_mono"
+        
+        # config for track and following
+        track_host: "192.168.10.90"
+        track_port: "6379"
+        track_db: 3
+        track_name: "robot_track_pub"
+        track_topic: "robot_track"
+        ```
+        参数说明：
+        ```
+        type: 发布消息，请勿修改
+        source: camera device id, 通过 ls /dev/video* 配合 v4l2-ctl -d  /dev/video0 --all查看
+        host: 消息发布ip，一般在本机发布本机监听的情况下，不需改动
+        port: 消息发布端口
+        db: 不需改动
+        name: 消息发布服务的名称
+        topic: 消息发布话题的名称
+        
+        # publish human bbox
+        rack_host:  redis host for publish human bbox
+        track_port: redis port for publish human bbox
+        track_db: redis db for publish human bbox
+        track_name: redis namet for publish human bbox
+        track_topic: redis topic for publish human bbox
+        ```
+        
+        step4. 消息订阅应与发布一一对应
+        
+        ## 3.1 开机自启动[未测试]
+        在`/etc/rc.local`脚本中增加了开机自启动代码，代码如下
+        ```
+        export MONOPUB='/home/robot/shuyuanhao/hik-aa-robots/pubsub/'
+        cd $MONOPUB
+        nohup  ./publish.sh > pub.log 2>&1 &
+        cd ~
+        ```
+        第一段申明了MONOPUB的路径
+        
+        第二段进入到该路径
+        
+        第三段在后台启动脚本`publish.sh` 并输出日志到`pub.log`
+        
+        第三段回到`home`
+        
+        可使用`ps -ef | grep python`查看
+        
+        # 4. 作为模块使用
+        
+        分别在python2.7和python3.7版本下进行测试。
+        
+        ```
+        python setup.py sdist
+        python setup.py install
+        ```
+        
+Keywords: redis publisher&subscriber
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Description-Content-Type: text/markdown
