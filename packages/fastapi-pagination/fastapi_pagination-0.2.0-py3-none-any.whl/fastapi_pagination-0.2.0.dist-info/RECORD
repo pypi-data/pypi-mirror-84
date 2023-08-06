@@ -1,0 +1,15 @@
+fastapi_pagination/__init__.py,sha256=539_VzESHwBtVdfSyCkzQFRagUAqCMcKMHYRkTugpk8,106
+fastapi_pagination/ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_pagination/ext/databases.py,sha256=9pixL7Yibizqm0dVuxw1ZMwfs8dJvYC8UYTCw7OMvi8,566
+fastapi_pagination/ext/gino.py,sha256=TGaWRuXmC9zhLT0jqwmkX8tJp_Wv0EiKf3MYHANbn-s,555
+fastapi_pagination/ext/orm.py,sha256=hKOhMMMmx4c_PFSQOCsJMCs53T-P_7-H0rrPw_fBhRk,689
+fastapi_pagination/ext/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_pagination/ext/sqlalchemy.py,sha256=aU2FUJ7eioREYudahoAKugK73cGcnUP_K-gATVCog7g,683
+fastapi_pagination/page.py,sha256=pdvpt7Qpxuao5tMFF_zvDAsYreQYf4PfvbFUKqrhGmA,1908
+fastapi_pagination/paginator.py,sha256=ctENg1s02LESNa9PNwhU-_I1WnlMix8MKymSsKpYI10,473
+fastapi_pagination/params.py,sha256=8jEuMfeDnIr7aieQuImkROq-HJ24_PuaeApE8QDQvOA,866
+fastapi_pagination/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_pagination-0.2.0.dist-info/LICENSE,sha256=cgViEh42GHqvH181LnEQC72Bz-XI68gGdCZH5KiUVAA,1070
+fastapi_pagination-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+fastapi_pagination-0.2.0.dist-info/METADATA,sha256=d8Z0Vfw-NqR88tlQP6UxfJ6KBxJw6XfSpRIJX0TouO8,1996
+fastapi_pagination-0.2.0.dist-info/RECORD,,
