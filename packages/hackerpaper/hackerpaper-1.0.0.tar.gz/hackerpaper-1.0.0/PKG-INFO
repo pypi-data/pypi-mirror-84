@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: hackerpaper
+Version: 1.0.0
+Summary: Hacker News to Instapaper
+Home-page: http://packages.python.org/hackerpaper
+Author: Liam Scalzulli
+Author-email: liamscalzulli@gmail.com
+License: BSD
+Project-URL: Source Code, https://github.com/terror/hackerpaper
+Description: ## hackerpaper 
+        Hacker News Articles to your Instapaper.
+        
+        ### Usage
+        Simply install hackerpaper using pip
+        
+        ```bash
+        $ pip install hackerpaper
+        ```
+        
+        ### Arguments
+        `--account, -a`: required, email and password to your instapaper account.  
+        
+        `--id, -id`: optional, HackerNews article id to add.  
+        
+        `--type, -t`: required, type of HackerNews article, if id is blank, will scrape posts with given type,
+        see [here](https://github.com/terror/hackerpaper/blob/master/types.txt) for the full list of valid types.  
+        
+        `--interests, -i`: optional, subdomains of the HackerNews articles
+        
+        ### Example
+        
+        ```bash
+        $ hackerpaper -a <email> <pass> -t newstories -i github
+        ```
+        
+        The above example will add all HackerNews articles under the `newstories` type that have the subdomain `github`
+        to your Instapaper account.
+        
+Keywords: hackernews,instapaper,cli
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
