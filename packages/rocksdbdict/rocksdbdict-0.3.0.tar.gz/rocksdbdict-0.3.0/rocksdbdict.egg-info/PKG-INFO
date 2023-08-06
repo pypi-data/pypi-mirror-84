@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: rocksdbdict
+Version: 0.3.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Adam Marples
+Author-email: adammarples@gmail.com
+License: MIT
+Download-URL: https://github.com/adammarples/rocksdbdict/archive/0.3.0.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ==3.*,>=3.7.0
+Provides-Extra: dev
