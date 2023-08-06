@@ -1,0 +1,3 @@
+[console_scripts]
+robot_motor_2wd = robot_motor_2wd.main:run
+
