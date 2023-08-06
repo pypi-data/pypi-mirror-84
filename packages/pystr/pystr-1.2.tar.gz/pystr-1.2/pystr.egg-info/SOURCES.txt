@@ -1,0 +1,8 @@
+setup.py
+pystr/__init__.py
+pystr/pystr.py
+pystr.egg-info/PKG-INFO
+pystr.egg-info/SOURCES.txt
+pystr.egg-info/dependency_links.txt
+pystr.egg-info/requires.txt
+pystr.egg-info/top_level.txt
