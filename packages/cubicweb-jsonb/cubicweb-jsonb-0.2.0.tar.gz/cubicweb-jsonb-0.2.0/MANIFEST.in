@@ -1,0 +1,13 @@
+include cubicweb_jsonb/*.py
+include cubicweb_jsonb/*/*.py
+recursive-include cubicweb_jsonb/data *.gif *.png *.ico *.css *.js
+recursive-include cubicweb_jsonb/i18n *.po
+include test/*.py
+recursive-include test/data bootstrap_cubes *.py
+
+include README.rst
+
+include *.ini
+prune debian
+exclude cubicweb-jsonb.spec
+exclude .gitlab-ci.yml
