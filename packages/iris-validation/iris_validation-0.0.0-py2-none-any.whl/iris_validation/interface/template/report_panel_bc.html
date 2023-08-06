@@ -1,0 +1,36 @@
+<!-- Stylesheets -->
+<link href="css/compat.css" rel="stylesheet"/>
+<!-- Global variables for SVG JavaScript -->
+<script src="js/globals.js"></script>
+<!-- General interaction Javascript -->
+<script src="js/interaction.js"></script>
+<div style="height: 90%; position: relative; top: -20px;">
+  <div style="width: 70%; float: left;" id="chain-view">
+    <div>
+      <h4 style="padding-bottom: 10px; border-bottom: 2px solid grey;"><font size="6">Chain View</font>
+        <div style="float: right; margin-right: 20px;">
+          <label style="margin-right: 10px;"><font size="5">Previous</font></label>
+          <label class="mini-switch">
+            <input id="model-toggle" type="checkbox" checked="true" onclick="toggleModel()"></input>
+            <span class="mini-slider round"></span>
+          </label>
+          <label style="margin-left: 10px;"><font size="5">Latest</font></label>
+        </div>
+      </h4>
+INJECTION_POINT_1
+      <div align="center">
+INJECTION_POINT_2
+      </div>
+    </div>
+  </div>
+  <div style="width: 25%; float: right;" id="residue-view">
+    <div>
+      <h4 style="padding-bottom: 10px; border-bottom: 2px solid grey;"><font size="6">Residue View</font></h4>
+      <font size="4" id="residue-summary">Select a residue...</font>
+      <p></p>
+      <div id="residue-chart-div" align="center">
+INJECTION_POINT_3
+      </div>
+    </div>
+  </div>
+</div>
