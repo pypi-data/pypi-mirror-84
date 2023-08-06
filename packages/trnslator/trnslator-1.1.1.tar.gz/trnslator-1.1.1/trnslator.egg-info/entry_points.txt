@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        trnslator=trnslator.cli:cli
+    
