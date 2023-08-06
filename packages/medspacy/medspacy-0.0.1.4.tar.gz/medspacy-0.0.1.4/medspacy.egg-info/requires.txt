@@ -1,0 +1,3 @@
+spacy<3.0.0,>=2.3.0
+PyRuSH>=1.0.3.5
+jsonschema
