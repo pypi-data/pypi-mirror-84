@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pt-datasets
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: https://github.com/AFAgarap/pt-datasets
+Author: Abien Fred Agarap
+Author-email: abienfred.agarap@gmail.com
+License: AGPL-3.0 License
+Description: PyTorch dataset loader for MNIST, Fashion-MNIST, EMNIST-Balanced, CIFAR10, and SVHN datasets
+Platform: UNKNOWN
