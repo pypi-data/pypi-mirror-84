@@ -1,0 +1,31 @@
+IBoxLoader:
+  - !exclude
+    - cloudfront-ios.yml
+    - loadbalancing-ecs.yml
+  - !include
+    - iampolicy-update_stack.yml
+
+buildkite:
+  StackType: ecs
+  StackName: bkt
+  ScalingPolicyTrackings: SkipClass
+  Capacity:
+    Desired: 3
+    Max: 4
+    Min: 3
+  ContainerDefinitions:
+    - 1:
+        Cpu: 128
+        Envs:
+          - AWSDEFAULTREGION:
+              Name: AWS_DEFAULT_REGION
+              Value: Ref('AWS::Region')
+        Memory: 128
+        MemoryReservation: 64
+        MountPoints:
+          - DockerSock:
+              ContainerPath: /var/run/docker.sock
+  RepoName: get_subvalue('${1M}.${2M}.services.buildkite', ['BrandRegion', 'Brand'])
+  Volumes:
+    - DockerSock:
+        SourcePath: '/var/run/docker.sock'
