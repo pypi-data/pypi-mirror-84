@@ -1,0 +1,9 @@
+json_serde/__init__.py,sha256=hvioDH3phskOhhu4ECS1jP6hk5v4bw5fggC_zoRW2yg,477
+json_serde/_utils.py,sha256=e5JwronZRb-O0xWI0kawKDyWPwWumlKwL2MxMqMkek4,486
+json_serde/serde.py,sha256=mSdMbk0ayLvw6UdxixNetcNA62Me-Xh0gqmxlBbadwo,16157
+json_serde-0.0.10.dist-info/LICENSE-APACHE,sha256=46f3-fCToSwHZlyhwbr4KUrbI8wI0a0aREto9qUjlOY,10807
+json_serde-0.0.10.dist-info/LICENSE-MIT,sha256=yp7hV2B7ow9Ys47GTn2wqWps7YQq3CRNhQV5mXv5j30,1078
+json_serde-0.0.10.dist-info/METADATA,sha256=t2p-y5w9yznx0UJ-c4k3TqR7U281HdBiPzIfVCKC5LM,2045
+json_serde-0.0.10.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+json_serde-0.0.10.dist-info/top_level.txt,sha256=jjHvSxY2yLG0bf4VtcyguUW7VXCYMFzSeUFrlKmCcgE,11
+json_serde-0.0.10.dist-info/RECORD,,
