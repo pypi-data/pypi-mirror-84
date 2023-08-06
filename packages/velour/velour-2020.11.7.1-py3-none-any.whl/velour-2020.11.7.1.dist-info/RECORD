@@ -1,0 +1,9 @@
+velour/__init__.py,sha256=5yMtiQ4F-21CZvFwiaMcJTIk2GJbRIz-hs9JXxgSXvI,74
+velour/datasets.py,sha256=xUl0HdPi4dqY8mCb7ELQaOXX51TBSUYBJ0nyqZk3YKI,25004
+velour/geometry.py,sha256=BONeRlSHfMRKdtANsnE8c0g4NIOWuR6p5Ra2DNtSlvQ,6643
+velour/persistence.py,sha256=-TUhsrV5fDLlifurHqPa3ntm4-uDjhJFHzWOIJ7U1mQ,44799
+velour-2020.11.7.1.dist-info/LICENCE,sha256=78jR6PMVHQo_z5NV_pvwmgcH8CSUtEndANoqSfb6fcw,1079
+velour-2020.11.7.1.dist-info/METADATA,sha256=uQQvHBzg1-UpRXfAvL1S-kfK0hVW11uOutNdh82Id_I,2438
+velour-2020.11.7.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+velour-2020.11.7.1.dist-info/top_level.txt,sha256=JdGbQWeyzC_8irIt7yMQSWQXNq-3PNeU9EIjZpHrKTk,7
+velour-2020.11.7.1.dist-info/RECORD,,
