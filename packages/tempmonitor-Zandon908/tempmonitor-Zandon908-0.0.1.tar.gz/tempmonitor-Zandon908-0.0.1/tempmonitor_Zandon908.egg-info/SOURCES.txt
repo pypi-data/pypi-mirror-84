@@ -1,0 +1,6 @@
+README.md
+setup.py
+tempmonitor_Zandon908.egg-info/PKG-INFO
+tempmonitor_Zandon908.egg-info/SOURCES.txt
+tempmonitor_Zandon908.egg-info/dependency_links.txt
+tempmonitor_Zandon908.egg-info/top_level.txt
