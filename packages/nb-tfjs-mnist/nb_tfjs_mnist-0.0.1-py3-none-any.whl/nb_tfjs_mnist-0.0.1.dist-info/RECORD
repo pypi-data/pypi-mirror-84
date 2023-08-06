@@ -1,0 +1,12 @@
+tfjs_mnist/__init__.py,sha256=rD8OJGhwnAqBed9buAIjm-JxqKhVI0pD6TuvOPJerWU,615
+tfjs_mnist/static/index.html,sha256=euO7Nyo_z8LiM3stNiTi0jSZDs6VBArE5cwE3xzyPR4,11596
+tfjs_mnist/static/mnist.js,sha256=sHmsZxPHWycrJPrGjx-UNDgPyfmTJcHvskZlJ_NoxZU,4306217
+tfjs_mnist/static/mnist_images.png,sha256=SYt_Z4nvDdVgbXfX_H9FAvSvc9cb9apowJW6vhN6dJE,10689542
+tfjs_mnist/static/mnist_labels_uint8,sha256=VNu8LKsAUIxa3jaoB_SLyD0O4yhbvriuJTd6qhKyJQw,650000
+tfjs_mnist/static/tufte.css,sha256=U4fRR7Aw8IXiNnMeHIur3iVxNHhtUTR6n_MljTD3bNE,9352
+nb_tfjs_mnist-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nb_tfjs_mnist-0.0.1.dist-info/METADATA,sha256=o-5pUMPYHlU9r5_Wtl4kfh0_P-ALMdvTzA7M7RGUILM,598
+nb_tfjs_mnist-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+nb_tfjs_mnist-0.0.1.dist-info/entry_points.txt,sha256=XUUXhNF6BL8QibNYczD5oYvIc6s9usP1MZeT-Loy-ts,72
+nb_tfjs_mnist-0.0.1.dist-info/top_level.txt,sha256=Fs-pXgwPv4iyq1TVY3Eop5DP8yjIjof3FMkFlMjhqV4,11
+nb_tfjs_mnist-0.0.1.dist-info/RECORD,,
