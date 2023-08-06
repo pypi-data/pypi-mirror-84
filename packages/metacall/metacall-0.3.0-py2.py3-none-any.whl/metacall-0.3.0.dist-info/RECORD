@@ -1,0 +1,8 @@
+metacall/__init__.py,sha256=dGSbRKgxWpbSxWby9BIpSu7uZZkrVmOw1twFGD9frLY,6703
+test/__init__.py,sha256=1oLL20yLB1GL9IbFiZD8OReDqiCpFr-yetIR6x1cNkI,23
+test/test_simple.py,sha256=wF6gyX9ZGg91mtXXActxyDMY8rO7fFftWb9iYalgP2A,1991
+metacall-0.3.0.dist-info/LICENSE.txt,sha256=iNtH6y7eEeGXValAn0OWTfS4eOm9Nvq5_Io718TwVvA,11383
+metacall-0.3.0.dist-info/METADATA,sha256=ih2ZWHgk9UVrFLPSR3e9mrC-nCn0Rbu9HiJTSz-eKM4,2182
+metacall-0.3.0.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+metacall-0.3.0.dist-info/top_level.txt,sha256=GWiYOvU_QDeWUR2Y5d5eepT961LbhK4lP0V1IZnQZxA,14
+metacall-0.3.0.dist-info/RECORD,,
