@@ -1,0 +1,5 @@
+u_grpc_lib/demo_pb2.py,sha256=Fan2QiT1MF7ru0J9GagWVXfKjGcv08z7j4nZlZQYITc,4826
+u_grpc_lib/demo_pb2_grpc.py,sha256=jszNacbP9xYPypuVGpVHmibErdNW7d72WeXCm-BEXQY,2421
+u_grpc_lib-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+u_grpc_lib-0.1.0.dist-info/METADATA,sha256=vXcaDeJBgiZCwiVIS-Z4oZ_29JQMV5XDloMfMqCORjg,436
+u_grpc_lib-0.1.0.dist-info/RECORD,,
