@@ -1,0 +1,77 @@
+Ce documents donne des explications sur les modules développés pour ce programme:
+
+- little_owl.py
+    Fichier principal du programme, c'est lui qui doit être appelé depuis la ligne de commande.
+    La partie principale du proogramme s'occupe de la gestion des arguments et ce qu'il faut faire avec
+    Fonctions :
+        - single_proc : fonction appelée lorsque l'on souhaite executé ce programme de manière séquentielle
+        - multi_proc : fonction appelée pour utiliser la fonction multi-processing (défaut)
+        - scan_l3 :  fonction qui se charge de lancer les scans actifs pour un réseau L3
+        - show_result : retourne un string permettant d'afficher le résultat dans le stdout (defaut) ou dans un fichier
+
+Les modules ci-dessous se trouvent dans le répertoire 'lib/'
+
+- interfaces.py
+    Regroupement des fonctions liées aux interfaces réseaux.
+    Fonctions :
+        - get_ifaces : retourne la liste des interfaces disponibles sauf 'lo'
+        - get_iface_info : retourne des informations (MAC, IP4 et IP6) pour une interface
+        - import_mac_db : importe les données JSON de la base de données des contructeurs d'interfaces réseaux
+        - get_mac_vendor : retourne le contructeur selon une adresse MAC
+        - is_mac : validation d'une adresse mac
+        - is_up : regarde si une interface est up
+        - open_adm_ports : récupère les ports en écoute du PcAdmin
+
+      le fichier Json des constructeur d'interface se trouve : https://macaddress.io/database-download
+      ce fichier doit être stocké dans : ./data/macaddress.io-db.json
+
+- jsondata.py
+    Regroupement des fonctions pour l'exportation et l'importation des données du programme
+    Fonctions :
+        - export_json : exportation des données du programme dans un fichier
+        - import_json : importation des données d'un precedent scan
+        - import_pcadmin : importation du pc administrateur (objet)
+        - import_machine : importation des machines classiques (objet)
+        - import_nics : importation des interfaces nic (objet)
+        - import_adresse : importation des adresses (objet)
+        - import_rzo : importation des réseaux
+
+   Un descriptif du format des données JSON qui sont exportées et importable est disponible :
+   - dans le  fichier json_doc.txt
+   - au début de jsondata.py
+
+   Chaque objet possède sa propre méthode d'exportation JSON.
+
+- network.py
+    Regroupement des fonctions d'analyse des réseaux et utilisant pour la plus part scapy
+    Fonctions :
+        - ping_icmp : ping avec le protocol icmp
+        - ping_tcp : Tentative de connexion TCP vers un port
+        - ping_udp : Tentative de connexion UDP vers un port
+        - host_scan : Réalise un scan des ports TCP, UDP ouverts d'une cible
+        - find_neigh : Recherche les voisins sur un réseau
+        - find_dhcp : Recherche les information DHCP sur une interface
+        - member :  regarde si un objet est dans une liste
+        - check_mac_ip : requête ARP pour contrôle qu'une adresse mac possède bien une adresse IP
+        - p_scan : Scan passif d'une interface
+        - paquets_analyse : récupération des couples MAC - IP sur un set de paquets capturés
+        - get_public_ip : Récupère une adresse IP publique à partir d'une adresse IP locale
+        - get_loc: récupération des info géographique d'une adresse IP (site : ipinfo.com)
+        - trcroute : traceroute
+        - get_route : traceroute plus plusieurs directions pour définir la route par défaut
+        - reverse_dns : DNS inverse pour les adresse IP, utilisation de socket
+
+- tools.py
+    Regroupement des fonctions annexes, ou développées spécialement pour les objets
+    Fonctions :
+        - nm4_to_cidr : netmask IPv4 en notation CIDR
+        - nm6_to_cidr : netmask IPv6 en notation CIDR
+        - usename : retourne l'username actuel
+        - hostname : retourne le nom de la machine
+        - info : fonction d'impression des messages d'info
+        - debug : fonction d'impression des messages de debug
+        - error : fonction d'impression des messages d'erreur
+        - get_ip_interface : donne un objet ipaddress.IPv4Interface ou ipaddress.IPv6Interface
+        - get_ip_ip : donne un objet ipaddress.IPv4Address ou ipaddress.IPv6Address
+        - create_neigh : créer une nouvelle machine à partir d'une adresse MAC et d'une adresse IP dans un réseau
+        - update_path : met à jour le chemin PATH_TO_PROJET dans data/settings.py

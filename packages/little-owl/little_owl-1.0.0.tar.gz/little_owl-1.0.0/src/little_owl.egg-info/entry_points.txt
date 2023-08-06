@@ -1,0 +1,3 @@
+[console_scripts]
+little_owl = little_owl:main
+

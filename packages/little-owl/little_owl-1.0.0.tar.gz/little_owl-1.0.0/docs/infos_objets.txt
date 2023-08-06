@@ -1,0 +1,168 @@
+Ce documents donne des explications sur les objets développés pour ce programme:
+L'ensemble des objets se trouve dans le répertoire 'obj/'
+
+
+- Adresse.py
+    Class : Adresse - Représentation d'une adresse IP avec ses ports en écoute
+    Variables :
+        - adresse : Adresse IP
+        - etat : True si l'adresse est active (True dans la majeur partie des cas)
+        - type : Adresse IPv4 ou IPv6
+        - l_ports : liste des ports TCP et UDP ouvert
+    Méthodes :
+        - __init__ : création d'une nouvelle adresse
+        - __repr__ : représentation
+        - __str__ : affichage
+        - __eq__ : test d'égalité
+        - __hash__ : utilisation comme clé d'un dictionnaire
+        - adresse : getter et setter de la variable adresse
+        - etat : getter et setter de la variable etat
+        - l_port : getter et setter de la variable l_port
+        - add_port : ajoute un port ouvert dans la bonne liste
+        - ip : retourne l'adresse ip (ipaddress.IPvAddress
+        - network : retourne l'adresse réseau auquel l'objet Adresse appartient (ipaddress.IPvNetwork)
+        - with_prefixlen : donne le str IP/CIDR
+        - ls_tcp : retourne la liste des ports TCP ouverts
+        - ls_udp : retourne la liste des ports UDP ouverts
+        - to_json : prépare une extraction JSON
+
+- Nic.py
+    Class : Nic - Représentation des interfaces réseaux d'une machine
+    Variables :
+        - mac : Adresse MAC
+        - nom : Nom de l'interface
+        - adresses : liste des adresses valide pour cette interface
+        - marque : nom de constructeur
+        - etat: Vrai si l'interface est UP
+    Méthodes :
+    	- __init__ : création nouvel objet interface
+    	- __repr__ : représentation
+    	- __str__ : affichage
+    	- __eq__ : test d'égalité
+        - __hash__ : utilisation comme clé d'un dictionnaire
+    	- __contains__ : Regarde si un objet Adresse ou une adresse IP est utilisée par l'interface
+    	- mac : getter et setter de la variable mac
+    	- nom : getter et setter de la variable nom
+    	- marque : getter et setter de la variable marque
+    	- adresses : getter et setter de la variable adresses
+    	- etat : getter et setter de la variable etat
+    	- add_adresse : ajoute un nouvel objet Adresse à l'interface
+    	- ls_all_ip : liste toutes les adresses IP de l'interface ipaddress.IPAddress
+    	- ls_online_ip : liste toutes les adresses IP actives de l'interface ipaddress.IPAddress
+    	- ls_online_addr : liste tous les objets Adresses actifs de l'interface
+        - to_json : prépare une extraction JSON
+
+- Machine.py
+    Class : Machine - Représentation d'une machine sur le réseau
+    Variables :
+        - label : Nom de la machine
+        - nics : liste des interfaces réseaux (Nic) de la machine
+        - desc : description de la machine
+        - count : nombre de machine créées (Variable de classe)
+    Méthodes :
+    	- __init__ : création d'une nouvelle machine
+    	- __repr__ : représentation
+    	- __str__ : affichage
+    	- __eq__ : test d'égalité
+    	- __hash__ : utilisation comme clé d'un dictionnaire
+    	- label : getter et setter de la variable label
+    	- nics : getter et setter de la variable nics
+    	- desc : getter et setter de la variable desc
+    	- add_nic : Ajoute une nouvelle interface réseau
+    	- remove_nic : retire une interface existante
+    	- nic_from_ip : donne l'objet NIC utilisant une adresse IP
+    	- nic_from_mac : donne l'objet NIC utilisant une adresse MAC
+    	- addr_from_ip : donne l'objet Adresse de la machine utilisant une adresse IP
+    	- ls_all_ip : liste toutes les adresses IP de l'interface ipaddress.IPAddress
+    	- ls_online_ip : liste toutes les adresses IP actives de l'interface ipaddress.IPAddress
+    	- ls_all_mac : liste toutes les adresses MAC de la machine
+    	- ls_all_addr : liste tous les objets Adresses de la machine
+    	- ls_online_addr : liste tous les objets Adresses actifs de la machine
+    	- host_scan : Scan des ports ouvert de la machine
+        - to_json : prépare une extraction JSON
+
+- PcAdmin.py
+    Class : PcAdmin(Machine) - Classe héritant de Machine, représentant la machine a partir de laquelle le recherche est lancée
+    Variables :
+        - label, nics, desc (super)
+        - rzo : liste des réseaux associés à la machine d'administration
+    Méthodes :
+    	- __init__ : création d'une nouvelle machine d'administration
+    	- __str__ : affichage
+    	- rzo : getter des réseaux
+    	- create_rzo : créer les nouveaux réseaux a partir des informations d'une interface réseau Nic
+    	- add_rzo : ajoute un nouveau réseau L2 ou L3
+    	- add_nic : ajoute une nouvelle interface réseau NIC
+    	- set_gateway : définition des gateway pour les réseau L3
+    	- open_ports : liste tous les ports en écoute sur la machine
+    	- contains_rzo : donne un réseau du PcAdmin a partir d'une autre instance Reseau
+
+
+Un réseau L2 fait référence au niveau 2 du modèle OSI Layer 2 "data link" ou "liaison de données" (adresse MAC)
+Un réseau L3 fait référence au niveau 3 du modèle OSI Layer 3 "network" ou "réseau" (adresse IP)
+
+
+- Reseau.py
+    Class : Reseau - représentation d'un réseau, classe abstraite
+    Variables :
+        - nom : nom du réseau
+        - machines : listes des machines dans le réseaux
+    Méthodes :
+    	- __init__ : création d'un nouveau réseau
+    	- __repr__ : représentation
+    	- __str__ : affichage
+    	- __contains__ : Regarde si un objet Machine est dans le réseau
+    	- __len__ : nombre de machine dans le réseau
+    	- machines : getter et setter de la variable machines
+    	- nom : getter et setter de la variable nom
+    	- check_machine : contrôle d'une machine avant de l'ajouter au réseau
+    	- check_mac : regarde si une adresse mac n'est pas déjà utilisée
+    	- add_machine : ajoute une machine au réseau
+    	- machine_from_nic : donne un objet Machine du réseau à partir d'un objet Nic
+    	- remove : retire une machine du réseau
+        - to_json : prépare une extraction JSON
+
+- ReseauL2.py
+    Class : ReseauL2(Reseau) - Classe héritant de Reseau, représentant les réseaux en liasion au niveau 2 du modèle OSI
+    Variables :
+        - nom, machines (super)
+        - adm_nic : objet Nic, interface réseau du PcAdmin
+        - dhcp_info : informations DHCP capturées sur le réseau
+    Méthodes :
+    	- __init__ : création d'un nouveau réseauL2
+    	- __repr__ : représentation
+    	- __str__ : affichage
+    	- __hash__ : utilisation comme clé d'un dictionnaire
+    	- __eq__ : test d'égalité
+    	- adm_nic : getter et setter de la variable adm_nic
+    	- dhcp_info : getter et setter de la variable dhcp_info
+    	- str_dhcp_info : affiche les informations DHCP
+    	- find_dhcp : recherche les informations DHCP
+    	- sniff : lance une capture de paquet pour l'interface adm_nic
+        - to_json : prépare une extraction JSON
+
+- ReseauL3.py
+    Class : ReseauL3(Reseau) - Classe héritant de Reseau, représentant les réseaux en liasion au niveau 3 du modèle OSI
+    Variables :
+        - nom, machines (super)
+        - netaddr : adresse IP du réseau
+        - gateway : adresse IP de la gateway du réseau.
+        - pubip: adresse public pour le réseau
+        - geoloc : adresse géographique de l'adresse IP public
+        - route: Liste des points de passage obligés.
+    Méthodes :
+    	- __init__ : création d'un nouveau réseauL3
+    	- __repr__ : représentation
+    	- __str__ : affichage
+    	- __hash__ : utilisation comme clé d'un dictionnaire
+    	- __eq__ : test d'égalité
+    	- machines : getter et setter de la variable machines
+    	- netaddr : getter et setter de la variable netaddr
+    	- gateway : getter et setter de la variable gateway
+    	- pubip : getter et setter de la variable pubip
+    	- geoloc : getter et setter de la variable geoloc
+    	- route : getter et setter de la variable route
+    	- add_machine : ajoute une machine au réseau
+    	- ls_online_ip : liste les adresses IP en activité sur le réseau
+    	- internet_info : récupère les informations d'internet
+        - to_json : prépare une extraction JSON

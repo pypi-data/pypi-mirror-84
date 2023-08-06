@@ -1,0 +1,40 @@
+Explication des champs JSON
+2 key :
+  - machines
+  - reseaux
+
+machines : {key(int): machine_json(obj.Machine ou obj.PcAdmin en json)}
+machine_json:
+  desc: str, description
+  label: str, nom de la machine
+  nics: list(nics_json)
+  Si machine est PcAdmin:
+      rzo: list(int) liste des réseaux associé à la machine
+
+nics_json:
+  adresses: list(adresse_json)
+  etat: bool, True si l'interfaces est up
+  mac: str, adresse MAC
+  nom: str, nom de l'interface
+
+adresse_json:
+  adresse: str, IP/CIDR
+  etat: bool, True si l'adresse est utilisée
+  port: dict, {'TCP': list(int), 'UDP': list(int)} Port en éoute sur cette adresse
+
+reseaux: {key(int): reseau_json(ReseauL2 ou ReseauL3 en json)}
+reseau_json:
+  (L2)
+  adm_mac: str, adresse MAC
+  dhcp_info: dict, (bootp, client, dhcp, dns, domain, gw, netm)
+  machines: list, key des machines appartenant au réseau
+  nom: str, nom du réseau
+
+  (L3)
+  gateway: str, IP de la gateway
+  geoloc: str, résultat de la géolocalisation
+  machines: list, key des machines appartenant au réseau
+  netaddr: IP/CIDR du réseau
+  nom: str, nom du réseau
+  pubip: str, Adresse IP public
+  route: dict, {key(int) numéro du saut: value(str) IP}
