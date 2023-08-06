@@ -1,0 +1,3 @@
+[console_scripts]
+dmb-cli = cli.main:cli
+
