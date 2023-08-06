@@ -1,0 +1,3 @@
+tweepy
+pydantic
+python-dotenv

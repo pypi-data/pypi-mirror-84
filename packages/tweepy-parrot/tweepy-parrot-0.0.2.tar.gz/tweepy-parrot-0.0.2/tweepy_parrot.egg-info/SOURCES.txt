@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+tweepy_parrot/__init__.py
+tweepy_parrot/bot.py
+tweepy_parrot/data.py
+tweepy_parrot/listener.py
+tweepy_parrot/models.py
+tweepy_parrot/parrots.py
+tweepy_parrot/settings.py
+tweepy_parrot.egg-info/PKG-INFO
+tweepy_parrot.egg-info/SOURCES.txt
+tweepy_parrot.egg-info/dependency_links.txt
+tweepy_parrot.egg-info/requires.txt
+tweepy_parrot.egg-info/top_level.txt
