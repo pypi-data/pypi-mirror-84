@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: portlock
+Version: 0.0.3
+Summary: A package to lock ports
+Home-page: https://github.com/kapily/portlock
+Author: Kapil Yedidi
+Author-email: kapily.code@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# portlock
+
+A simple library you can use to ensure that only one copy of your script is running at once
+
+Works on *NIX systems, not sure about Windows.
+
+```
+from portlock import ensure_singleton
+
+def main():
+    ensure_singleton(6000)
+    # If you reach here, you can ensure that no other proccess
+    # is running on port 6000
+    ...
+```
+
+
