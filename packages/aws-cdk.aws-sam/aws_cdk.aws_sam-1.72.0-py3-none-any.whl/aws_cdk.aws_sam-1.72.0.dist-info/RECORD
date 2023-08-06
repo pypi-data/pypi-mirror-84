@@ -1,0 +1,8 @@
+aws_cdk/aws_sam/__init__.py,sha256=yEvC1QKghapEu114JMRcj4m4N9IUJmwJ2ibtOFpiwug,283189
+aws_cdk/aws_sam/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_sam/_jsii/__init__.py,sha256=0NnIG3ZQtTGbr0OiDeH7_72i4_xAm3IorzkQXv3fmwY,363
+aws_cdk/aws_sam/_jsii/aws-sam@1.72.0.jsii.tgz,sha256=0M9mCQoF1b_4I1DfSUgKg-i80pCnheWQIi-R63tHG9o,101397
+aws_cdk.aws_sam-1.72.0.dist-info/METADATA,sha256=IBX8xe9WKsv8uylivMWgfLYWWoO-uHBLH_ZjFSk0KTI,2450
+aws_cdk.aws_sam-1.72.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+aws_cdk.aws_sam-1.72.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_sam-1.72.0.dist-info/RECORD,,
