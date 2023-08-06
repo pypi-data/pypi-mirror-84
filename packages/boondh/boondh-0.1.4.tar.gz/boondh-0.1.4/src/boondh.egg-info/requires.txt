@@ -1,0 +1,7 @@
+numpy
+packaging
+tqdm>=4.27
+pandas
+
+[:python_version < "3.7"]
+dataclasses

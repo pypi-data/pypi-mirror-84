@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: boondh
+Version: 0.1.4
+Summary: A Swiss Knife
+Home-page: https://github.com/rohit-mehra/boondh
+Author: Rohit Mehra
+Author-email: iirohitmehra@gmail.com
+License: UNKNOWN
+Description: # boondh
+        A Personal Library
+        - Encapsulate boilerplate code
+        - Data processing code
+        - ML Frameworks (NLP tasks - SeqClassification, Entity Extractions etc.)
+        
+        # install
+        ```bash
+        git clone https://github.com/rohit-mehra/boondh.git
+        cd boondh
+        pip install .
+        ```
+        
+        # sample use
+        
+        > Parallelize any function
+        ```python
+        from boondh import mp_func
+        
+        def base_func(value, sq=True):
+            if sq: return value ** 2
+            return value
+        
+        data = [0, 1, 2, 3, 4]
+        results = mp_func(base_func, 'value', data, sq=True)
+        ```
+        
+        > Arrange files in your directory (usually the `Download` directory.. :smile:)
+        
+        - This will scan the directory and create `type folders` like `csv_`, `txt_` etc.
+        - Move respective filetypes into these folders.
+        
+        ```bash
+        python -m boondh.utils.arrange_files -D "$(pwd)"
+        ```
+        OR
+        ```bash
+        python -m boondh.utils.arrange_files -D /Users/<myusername>/Downloads/
+        ```
+Keywords: utility,data,multiprocessing,cli,tools
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
