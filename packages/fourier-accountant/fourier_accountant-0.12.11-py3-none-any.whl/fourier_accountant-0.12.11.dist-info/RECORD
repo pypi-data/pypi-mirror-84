@@ -1,0 +1,15 @@
+fourier_accountant/__init__.py,sha256=L4D1-Po0NcRXGAjKyQruKziRzsXPTMHf8ydDsvJiONs,592
+fourier_accountant/common.py,sha256=4cbrJSc2NOewkpCF5vF59qve_PE-fnxZ5GTfQRFxTMk,6132
+fourier_accountant/compute_delta.py,sha256=GLO_OHHrGb9n5FRt1hCCB3fYSzKe-PrW2fMzKn1SwRw,8218
+fourier_accountant/compute_delta_var.py,sha256=9HWgFSFklZRjhV4iClQaqf8X4va3Y-Q42Jd82QwscKE,4926
+fourier_accountant/compute_eps.py,sha256=Z0Kray8c9-GcbspoItcveaMVX49JBfE1LACGeN5QV5g,10485
+fourier_accountant/compute_eps_var.py,sha256=SUdkAXtuDXzLmUCmVkSGOk9FGnyDkoFWqOQs8FYBA0k,5761
+fourier_accountant/experimental/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fourier_accountant/experimental/binomial_mechanism.py,sha256=XUexsfVvlDhAn_LMgIDptP1RFUIMvV7S2h75kqxMZAg,2809
+fourier_accountant/experimental/exponential_mechanism.py,sha256=bA0c6DVlPYNuE8buU54956iwWyTyOv81khcX0pgTxNI,6717
+fourier_accountant/experimental/subsampled_gaussian_bounds.py,sha256=jLZgKSrbKq0h92Mf-sY28WtpdKAcWtG4N6zGMHG1rU8,7886
+fourier_accountant-0.12.11.dist-info/LICENSE,sha256=MO31J8ZrRNa3xgWSTa-j9ITxXnWlT0SssWlJrbgNsbk,1064
+fourier_accountant-0.12.11.dist-info/METADATA,sha256=Ary04GB7HVBEuUk7eP24NgpIPKiVwyNUeR3ncpvkkZI,3940
+fourier_accountant-0.12.11.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+fourier_accountant-0.12.11.dist-info/top_level.txt,sha256=Jf6ogjQvC2Yh7oAIzbP66r-DVliRj2FHJqRtQTfkVPk,19
+fourier_accountant-0.12.11.dist-info/RECORD,,
