@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: tfaip
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/Planet-AI-GmbH/tf2_aip_base
+Author: Planet AI GmbH
+Author-email: admin@planet-ai.de
+License: GPL-v3.0
+Download-URL: https://github.com/Planet-AI-GmbH/tf2_aip_base/archive/1.0.0.tar.gz
+Keywords: machine learning,tensorflow,framework
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: JPype1
+Requires-Dist: PyYAML
+Requires-Dist: calamari-ocr
+Requires-Dist: dataclasses-json
+Requires-Dist: imageio
+Requires-Dist: nibabel
+Requires-Dist: pandas
+Requires-Dist: pillow
+Requires-Dist: prettytable
+Requires-Dist: pytest
+Requires-Dist: python-Levenshtein
+Requires-Dist: scikit-image
+Requires-Dist: tensorflow-datasets (~=3.0.0)
+Requires-Dist: tensorflow-addons
+Requires-Dist: tensorflow (~=2.3.0)
+Requires-Dist: tqdm
+Requires-Dist: xlrd
+
+TODO:
+
+# Setup
+
+# Usage
+
+
