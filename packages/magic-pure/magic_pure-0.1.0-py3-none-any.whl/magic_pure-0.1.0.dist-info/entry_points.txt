@@ -1,0 +1,3 @@
+[console_scripts]
+magic-pure = magic.cli:entry_point
+
