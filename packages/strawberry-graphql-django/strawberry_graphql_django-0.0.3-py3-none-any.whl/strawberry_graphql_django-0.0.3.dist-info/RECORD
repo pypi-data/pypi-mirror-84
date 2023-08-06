@@ -1,0 +1,9 @@
+strawberry_django/__init__.py,sha256=IklMHMoB256WR075gJcTexMAa2nycmv3LU52siDpcco,79
+strawberry_django/permissions.py,sha256=3vKtX1pTNiE2KS1lDZ43b8a_8LENamY7DGKApLPdzbE,1264
+strawberry_django/resolvers.py,sha256=QQGbKvrSh2J0yukllpzQ0g1_KPClSNCjQnb9UhxQqKk,5589
+strawberry_django/types.py,sha256=WFBZb7RoMZsonxXLKIiXf5cwSsC6NsD8-Vho3LAPi7E,5699
+strawberry_django/utils.py,sha256=rvuGHgWkEdEYHtJJRusa8sdg1jp3syxbQWRXSv_gNeo,773
+strawberry_graphql_django-0.0.3.dist-info/LICENSE,sha256=AxTex_a1AyuR-JZGXLgldJgbIFR7TPrAZ3l0CY6zBR0,1071
+strawberry_graphql_django-0.0.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+strawberry_graphql_django-0.0.3.dist-info/METADATA,sha256=j8ZfYfzLgLjT0C_4CO5m34ofDmTNwY3RJqbpHorbeEY,3201
+strawberry_graphql_django-0.0.3.dist-info/RECORD,,
