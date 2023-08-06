@@ -1,0 +1,99 @@
+Metadata-Version: 1.1
+Name: py-scfg
+Version: 0.1.1
+Summary: Module to read scfg formatted configuration files.
+Home-page: https://hg.code.netlandish.com/~petersanchez/py-scfg
+Author: Peter Sanchez
+Author-email: pjs@petersanchez.com
+License: UNKNOWN
+Description: py-scfg
+        =======
+        
+        A Python module to parse `scfg <https://git.sr.ht/~emersion/scfg>`__
+        formatted configuration files.
+        
+        It's a simple port of the Go module
+        `go-scfg <https://git.sr.ht/~emersion/go-scfg>`__.
+        
+        **Note:** Not to be confused with
+        `pyscfg <https://pypi.org/project/pyscfg/>`__ which appears to parse
+        configurations into and out of YAML files.
+        
+        Usage
+        -----
+        
+        Very simple:
+        
+        ::
+        
+            import scfg
+        
+            conf = scfg.Config("~/your_config.conf")
+            conf.load()
+            train = conf.get("train")
+            train_models = train.get_all("model")
+            trail_models[0].get("lines-served")
+        
+        Contributing
+        ------------
+        
+        We accept patches submitted via ``hg email`` which is the ``patchbomb``
+        extension included with Mercurial.
+        
+        Please see our `contributing
+        document <https://man.code.netlandish.com/contributing.md>`__ for more
+        information.
+        
+        The mailing list where you submit your patches is
+        ``~petersanchez/public-inbox@lists.code.netlandish.com``. You can also
+        view the archives on the web here:
+        
+        https://lists.code.netlandish.com/~petersanchez/public-inbox
+        
+        To quickly setup your clone of ``py-scfg`` to submit to the mailing list
+        just edit your ``.hg/hgrc`` file and add the following:
+        
+        ::
+        
+            [email]
+            to = ~petersanchez/public-inbox@lists.code.netlandish.com
+        
+            [patchbomb]
+            flagtemplate = "py-scfg"
+        
+            [diff]
+            git = 1
+        
+        We have more information on the topic here:
+        
+        -  `Contributing <https://man.code.netlandish.com/contributing.md>`__
+        -  `Using email with
+           Mercurial <https://man.code.netlandish.com/hg/email.md>`__
+        -  `Mailing list
+           etiquette <https://man.code.netlandish.com/lists/etiquette.md>`__
+        
+        Copyright & License
+        -------------------
+        
+        All documentation, libraries, and sample code are Copyright Peter
+        Sanchez <pjs@petersanchez.com>. The library and sample code are made
+        available to you under the terms of the BSD license which is contained
+        in the included file, ``LICENSE``.
+        
+        Commercial Support
+        ------------------
+        
+        This software, and lots of other software like it, has been built in
+        support of many of Netlandish's own projects, and the projects of our
+        clients. We would love to help you on your next project so get in touch
+        by dropping us a note at hello@netlandish.com.
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
