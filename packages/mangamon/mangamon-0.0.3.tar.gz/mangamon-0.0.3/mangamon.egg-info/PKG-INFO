@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: mangamon
+Version: 0.0.3
+Summary: Manga Downloader
+Home-page: https://github.com/akhilmaskeri/mangamon
+Author: akhil maskeri
+Author-email: akhil.maskeri@gmail.com
+License: GPLv3
+Description: # Mangamon
+        Download Mangas from mangapanda.com into your terminal
+        
+        ### Options
+        
+        
+            -s,   --search        Search Manga
+        
+            -n,   --name          specify manga name
+            -i,   --info          get information
+            -lt,  --latest        get latest chapters
+            -ll,  --longlist      long list chapters
+            -d,   --download      download chapters
+            -c,   --chapter       chapter number
+        
+            --chapterstar         starting chapter number
+            --chapterend          ending chapter number
+        
+            --format              convert to specified format
+                                  available: PDF
+        
+            --help                Display help
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: License :: Public Domain
+Classifier: Environment :: Console
+Requires-Python: >=3
+Description-Content-Type: text/markdown
