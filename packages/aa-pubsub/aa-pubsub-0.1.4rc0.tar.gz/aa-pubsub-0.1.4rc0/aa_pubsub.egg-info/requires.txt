@@ -1,0 +1,3 @@
+opencv-python
+PyYAML>=5.1
+redis>=3.5.3
