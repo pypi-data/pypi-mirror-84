@@ -1,0 +1,11 @@
+README.md
+setup.py
+pipeserial/__init__.py
+pipeserial/pipeserial.py
+pipeserial/test_pipeserial.py
+pipeserial.egg-info/PKG-INFO
+pipeserial.egg-info/SOURCES.txt
+pipeserial.egg-info/dependency_links.txt
+pipeserial.egg-info/entry_points.txt
+pipeserial.egg-info/requires.txt
+pipeserial.egg-info/top_level.txt
