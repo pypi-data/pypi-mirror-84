@@ -1,0 +1,16 @@
+b8/.gitignore,sha256=Bcxq5Tz9YSnx1wEKqHTGzwpgGbGt_v8_T6sn8tBPQ8o,18
+b8/__init__.py,sha256=SWdjzdnJhmI49w4ImuJyGYP-5G8JzRQS-UrQYjBFn2w,73
+b8/app.py,sha256=fw_nZNUYe0kJWXdrSl7pTA49VVcEbuIGGpabjbmQ8cs,6239
+b8/buffers.py,sha256=uH774GjnAWtK2PRlH6bPQCyW1HhP-CwlvoFjrSxUnkA,5337
+b8/configs.py,sha256=1LGoADwz3idtR6gOI6lloWtvP0QgTRJucI9Xjf8RU3g,6643
+b8/files.py,sha256=gFRifDEEgrnzTm6QDB3yWKEVAPSJXoe0pll_SYd39D8,9966
+b8/logs.py,sha256=N34GYs7rlIm6-1lOn7NP6vqZx-blBoO7uN3Eo-f-zI0,1172
+b8/paths.py,sha256=U4fXMNM95nsGeL4xPbijQEOtXYUaggD-IAco5Fam3Qo,115
+b8/service.py,sha256=arjTtw9ycI-Q85A22bKrdXujN_V9ALtLmapLPBtIqLI,4560
+b8/terminals.py,sha256=S30fH4hUFqjqwXJi7tgNbZfnqryhPZf-HmVzrRKII7M,15408
+b8/ui.py,sha256=LchQqRCbXhKP930DUKQa54BelIOY4WtUKThmmwnlkhE,6507
+b8/vim.py,sha256=d8uuhsKD-9mvaSKwSuwq4XDNgmFeNYG7VT1fojcuvnA,22742
+b8-0.2.0.dist-info/entry_points.txt,sha256=9DP9EUyHfwQmve8axrGYRCFOOwq6q-QVb87vjmAnu2Y,34
+b8-0.2.0.dist-info/WHEEL,sha256=CqyTrkghQBNsEzLD3HbCSEIJ_fY58-XpoU29dUzwHSk,81
+b8-0.2.0.dist-info/METADATA,sha256=AhT_fHBm8CAnMzyfSzFKqhfIsu7CzskfBulWpLF6-Lw,6070
+b8-0.2.0.dist-info/RECORD,,
