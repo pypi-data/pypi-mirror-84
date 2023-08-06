@@ -1,0 +1,8 @@
+setup.py
+oauth_pyzure/__init__.py
+oauth_pyzure/oauth.py
+oauth_pyzure.egg-info/PKG-INFO
+oauth_pyzure.egg-info/SOURCES.txt
+oauth_pyzure.egg-info/dependency_links.txt
+oauth_pyzure.egg-info/requires.txt
+oauth_pyzure.egg-info/top_level.txt
