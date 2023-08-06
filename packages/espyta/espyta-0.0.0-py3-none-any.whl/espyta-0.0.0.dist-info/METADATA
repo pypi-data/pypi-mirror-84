@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: espyta
+Version: 0.0.0
+Summary: Webhook handler to flash ESPs through OTA.
+Home-page: https://github.com/supakeen/espyta
+License: MIT
+Keywords: esp,embedded
+Author: supakeen
+Author-email: cmdr@supakeen.com
+Requires-Python: >=3.6,<4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: toml (>=0.10.0,<0.11.0)
+Requires-Dist: tornado (>=6.0,<7.0)
+Project-URL: Repository, https://github.com/supakeen/espyta
+Description-Content-Type: text/markdown
+
+# espyta
+
+This software provides a webhook handler to automatically flash any ESP-based
+devices on your network when the repository for their firmware gets updated.
+
+## Requirements
+
+- Python 3.6 or up.
+- [PlatformIO Core (CLI)](https://docs.platformio.org/en/latest/core/) 5.0 or up.
+
+## Installation
+
+I recommend you use a virtual environment and use that to install `espyta`. You
+can then start the `espyta` HTTP server as follows:
+
+```
+# python3.8 -m venv venv
+# venv/bin/pip install espyta
+# venv/bin/espyta http
+```
+
+## Configuration
+
+## Documentation
+
+You can read more on our full [documentation website](https://espyta.readthedocs.io/en/latest/).
+

@@ -1,0 +1,10 @@
+espyta/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+espyta/__main__.py,sha256=VJrGB-k_uThSdC6L5Ev-ap9p-Qk6LW5ONDiWCEwVs2U,40
+espyta/command.py,sha256=IZyX3v-t2g9ZUPq0ok7lwQIQXcFWWAvFLLekFSY-Q68,1263
+espyta/configuration.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+espyta/http.py,sha256=z4YXj_AUrtN-wW3SZbSz4vOa7HUxE907ttqLTQWLesY,521
+espyta-0.0.0.dist-info/entry_points.txt,sha256=CjmmsGQtqtRBKiYJbytRsbyldkb6_A8vxg5KuTvZzXE,47
+espyta-0.0.0.dist-info/LICENSE,sha256=dFeygOYuDHNVeQ6mD86iFtjp3ySUFGAG_lCIFwhkIaM,1048
+espyta-0.0.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+espyta-0.0.0.dist-info/METADATA,sha256=GATJ0vVB6JCIOssMZ-2EvV6IWQeQ2rQhgomYcqqx4sw,1434
+espyta-0.0.0.dist-info/RECORD,,
