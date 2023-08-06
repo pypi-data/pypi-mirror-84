@@ -1,0 +1,13 @@
+ratealert/__init__.py,sha256=IOCahM5Ut2YPpIF_TYxzjJ458AtdssSw36watZEVwR0,2920
+ratealert/transferwiseclient.py,sha256=9LrgMKG3rGr40S9zniecV0u6eDCt0TPrMFWGRFzIZY8,1930
+ratealert/auth/__init__.py,sha256=UTpWFSjWYofxa7djxjTKY2luu3_Tg-JeHUi6t1j9Fzc,38
+ratealert/auth/linuxauth.py,sha256=52jn0l1B5yaDdcYxdsFAaG9tAtljn_NESGQlKYO5Now,857
+ratealert/auth/windowsauth.py,sha256=J5DrZL23yDoKf625hAHBAKr6O7-Liohug3wF9QB_-zU,959
+ratealert/notification/__init__.py,sha256=gqo1sL95YcyZdxxDUa8tNxNrZgCkp9G1W1hbLIEljVE,54
+ratealert/notification/linuxnotification.py,sha256=rQh2wb40IlSq0Qhyu-Vx_Er3zpniOGTpjyZ_axCXId4,508
+ratealert/notification/windowsnotification.py,sha256=35AP5KEX6eOjf8icEo2G53h31PjTXFs6k2izis0pULo,516
+exchange_rate_alert-0.3.dist-info/LICENSE,sha256=l1orsPD4Ymf-JJ-N4lEET1JCKd2tLsLwzS4hKIj9xXo,1102
+exchange_rate_alert-0.3.dist-info/METADATA,sha256=YEvyXV1FbUgp9icuM80ailOOJYBkKAcby7H2ZL9-UPk,1975
+exchange_rate_alert-0.3.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+exchange_rate_alert-0.3.dist-info/top_level.txt,sha256=FFnsO-jzfpW6H4onK4CWgI9uk4M0bwrlDgNmjZhqDXk,10
+exchange_rate_alert-0.3.dist-info/RECORD,,
