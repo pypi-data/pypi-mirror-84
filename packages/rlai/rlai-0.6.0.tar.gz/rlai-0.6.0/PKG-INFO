@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: rlai
+Version: 0.6.0
+Summary: Reinforcement Learning:  An Introduction
+Home-page: https://github.com/MatthewGerber/rl
+Author: Matthew Gerber
+Author-email: gerber.matthew@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ==3.8.5
+Provides-Extra: test
+Provides-Extra: dev
