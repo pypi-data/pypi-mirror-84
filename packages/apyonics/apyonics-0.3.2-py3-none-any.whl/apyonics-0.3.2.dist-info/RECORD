@@ -1,0 +1,9 @@
+apyonics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apyonics/client.py,sha256=dd_vFWJf5z16Gu-uJ5h1YBBuGHwljq51eg4ppdobnuA,55468
+apyonics/plots.py,sha256=n3XKlQ8V8JVAoM_iADYGeDSKATsOKvKn_ZRQTdPiKio,12737
+apyonics/substances_client.py,sha256=flaMJZR4yJetq77ShsYSGkbXR4EJ6ZrYVIX7e3JgNwU,6780
+apyonics-0.3.2.dist-info/LICENSE,sha256=OID11jKwgaeYNDj3dMhxDSp-hgBQGsSO8ihrNx-5mMk,1071
+apyonics-0.3.2.dist-info/METADATA,sha256=Z61kYNzhv68gxqLdHmlZifHFV13K-oSVwV8kJnGglaE,444
+apyonics-0.3.2.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+apyonics-0.3.2.dist-info/top_level.txt,sha256=vzw1YqWNWTYEeFZlmRXbpypApcmzN89qp1it4PVfS9c,9
+apyonics-0.3.2.dist-info/RECORD,,
