@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ComPora
+Version: 0.1.0
+Summary: A set of scripts to compile different kind of corpora easily and quickly.
+Home-page: https://github.com/Jason-Young-AI/ComPora.git
+Author: Jason-Young-AI
+Author-email: AI.Jason.Young@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+Requires-Dist: YoungToolkit
+
+
+# ComPora
+A set of scripts to **Com**pile different kind of cor**Pora** easily and quickly.
+
+

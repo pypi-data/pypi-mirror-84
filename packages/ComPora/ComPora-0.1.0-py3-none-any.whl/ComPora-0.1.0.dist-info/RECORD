@@ -1,0 +1,11 @@
+compora/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compora/nb_prefix.py,sha256=5OHw_ddOeVuRa3ND8UHejRKHw3ypWD7KHdFEQOL_iwQ,59545
+compora/special_process.py,sha256=2G43BujJv_quJjVEJq5STk-r_gcBAOoSj-JnNEDaOJk,522
+compora/standardize.py,sha256=WAZ8DgsN68HST6zfXR6aZg3fCMzHydXeTTOrYi4N3Ps,1222
+compora/tokenize.py,sha256=TeGrfhBmcyFF1bNLEzu-xxewkT9CTzjbeNfi1rub9jg,2956
+ComPora-0.1.0.dist-info/LICENSE,sha256=lvF4V_PrKKfZPa2TC8CZo8tlqaKvs3Bpv9G6XsWWQ4k,483
+ComPora-0.1.0.dist-info/METADATA,sha256=myWyFtf8e4sr_qMR1XG5PU5_yXmXscJ7jwv-dKUug8w,731
+ComPora-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+ComPora-0.1.0.dist-info/entry_points.txt,sha256=EZoRDv9wH0m3qCim5GlC8s7Fb4OU36Kb3valZNTs2iQ,60
+ComPora-0.1.0.dist-info/top_level.txt,sha256=WWMcG-qChcwJySbQ2Q2wVPsdgym2AYgM7klhK9q8Aa4,8
+ComPora-0.1.0.dist-info/RECORD,,

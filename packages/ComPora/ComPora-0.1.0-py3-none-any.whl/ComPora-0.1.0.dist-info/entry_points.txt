@@ -1,0 +1,3 @@
+[console_scripts]
+ycp-parallel = compora_cli.parallel:main
+
