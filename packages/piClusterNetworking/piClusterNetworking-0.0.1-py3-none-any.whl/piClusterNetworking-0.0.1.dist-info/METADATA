@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: piClusterNetworking
+Version: 0.0.1
+Summary: Raspberry pi cluster custom server/client library for distributed computing and code testing. This package can be imported to create a custom client/server for any program to send/receive/compute data across any number of clustered raspberry pis.
+Home-page: https://github.com/trevtravtrev/piCluster
+Author: Trevor White
+Author-email: trevor.white@wayne.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# piCluster
+Raspberry pi cluster custom server/client library for distributed computing and code testing. This package can be imported to create a custom client/server for any program to send/receive/compute data across any number of clustered raspberry pis.
+
+
