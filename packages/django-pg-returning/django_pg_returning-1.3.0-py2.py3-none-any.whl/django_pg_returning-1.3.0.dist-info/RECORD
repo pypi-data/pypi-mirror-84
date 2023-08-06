@@ -1,0 +1,10 @@
+django_pg_returning/__init__.py,sha256=BKgce4BjU53bMbVMWnO9CyapikgrMjc_9PnLQIEOgo8,72
+django_pg_returning/compatibility.py,sha256=HXUbvjBXGonmaLt7B_kXOcD27uab6hq5lfab3y1jrII,1271
+django_pg_returning/manager.py,sha256=YegyEiU_2QFcPtyp3I1Tqu-tZxfHgypdip8T_eiZWpk,11163
+django_pg_returning/models.py,sha256=6B5f24vpgfUiZmEEdvbK_MJS7y5XNIeAMubjr0Zobvw,5276
+django_pg_returning/queryset.py,sha256=I6RhWBgCyPJrzoITQpZ6aTOZT_Z22KOeBu1nXawYdGk,5506
+django_pg_returning-1.3.0.dist-info/LICENSE,sha256=rxlvU1P3rKnSuFsfKX5sYvauVwsLXl5HvU3a2B4iOHg,1538
+django_pg_returning-1.3.0.dist-info/METADATA,sha256=dHG_XpbbvGZffE80FZAR_y20NWysCBjd_imQ3GmT9X0,7463
+django_pg_returning-1.3.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+django_pg_returning-1.3.0.dist-info/top_level.txt,sha256=I2QX6WbghiuONwwiazpNg4iM4oeCoEajbQcCq6AkBPU,20
+django_pg_returning-1.3.0.dist-info/RECORD,,
