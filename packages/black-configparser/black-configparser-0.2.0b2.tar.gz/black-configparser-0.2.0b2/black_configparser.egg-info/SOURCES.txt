@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+black_configparser/__init__.py
+black_configparser/black_configparser.py
+black_configparser/py.typed
+black_configparser.egg-info/PKG-INFO
+black_configparser.egg-info/SOURCES.txt
+black_configparser.egg-info/dependency_links.txt
+black_configparser.egg-info/entry_points.txt
+black_configparser.egg-info/not-zip-safe
+black_configparser.egg-info/requires.txt
+black_configparser.egg-info/top_level.txt

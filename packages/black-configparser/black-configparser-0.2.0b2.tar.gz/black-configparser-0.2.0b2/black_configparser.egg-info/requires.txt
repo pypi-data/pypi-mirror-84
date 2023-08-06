@@ -1,0 +1,13 @@
+black>=18.6b2
+
+[lint]
+black>=18.6b2
+flake8>=3.8.0
+isort>=5.6.0
+mypy>=0.790
+pylint>=2.6.0
+
+[tests]
+coverage>=5.0
+pytest>=6.0
+pytest-sugar>=0.9
