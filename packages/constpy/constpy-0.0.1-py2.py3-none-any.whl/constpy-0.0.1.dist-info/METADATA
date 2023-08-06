@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: constpy
+Version: 0.0.1
+Summary: Define constants for your project
+Home-page: https://bitbucket.org/htv2013/constpy/
+Author: Hai Vu
+Author-email: haivu2004@gmail.com
+License: MIT license
+Keywords: constpy
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+
+=======
+constpy
+=======
+
+
+.. image:: https://img.shields.io/pypi/v/constpy.svg
+        :target: https://pypi.python.org/pypi/constpy
+
+.. image:: https://img.shields.io/travis/htv2012/constpy.svg
+        :target: https://travis-ci.com/htv2012/constpy
+
+.. image:: https://readthedocs.org/projects/constpy/badge/?version=latest
+        :target: https://constpy.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+
+Define constants for your project
+
+
+* Free software: MIT license
+* Documentation: https://constpy.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.0.1 (2020-11-07)
+------------------
+
+* First release on PyPI.
+
+
