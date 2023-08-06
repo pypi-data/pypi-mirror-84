@@ -1,0 +1,7 @@
+Pillow
+keras
+matplotlib
+numpy
+opencv-python<4,>3
+tensorflow
+websocket-client
