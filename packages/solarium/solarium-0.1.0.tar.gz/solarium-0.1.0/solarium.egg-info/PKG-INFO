@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: solarium
+Version: 0.1.0
+Summary: RaspberryPi based LED controller for artificial sun light
+Home-page: https://github.com/codingjoe/solarium
+Author: Johannes Maron
+Author-email: info@johanneshoppe.com
+License: MIT
+Description: solarium
+        ===============================================================================
+        
+        **RaspberryPi based LED controller for artificial sun light.**
+        
+        Setup
+        -----
+        
+        Install the package via pip::
+        
+            python3 -m pip install solarium
+        
+Keywords: led,raspberrypi
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
