@@ -1,0 +1,38 @@
+Metadata-Version: 1.2
+Name: exceptiongroup
+Version: 0.0.0a0
+Summary: A way to represent multiple things going wrong at the same time, in Python
+Home-page: https://github.com/python-trio/exceptiongroup
+Author: Nathaniel J. Smith
+Author-email: njs@pobox.com
+License: MIT -or- Apache License 2.0
+Description: exceptiongroup
+        ==============
+        
+        Welcome to `exceptiongroup <https://github.com/python-trio/exceptiongroup>`__!
+        
+        A way to represent multiple things going wrong at the same time, in
+        Python.
+        
+        This project is currently maintained by the `Trio project
+        <https://trio.readthedocs.io>`__, but the goal is for some version of
+        it to be merged into Python 3.8, so it can be used in both Trio and
+        asyncio. For more information, see:
+        https://github.com/python-trio/trio/issues/611
+        
+        License: Your choice of MIT or Apache License 2.0
+        
+Keywords: async,exceptions,error handling
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Framework :: Trio
+Classifier: Framework :: AsyncIO
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.5
