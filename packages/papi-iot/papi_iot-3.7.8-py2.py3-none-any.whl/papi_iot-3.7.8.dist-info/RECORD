@@ -1,0 +1,16 @@
+papi_iot/__init__.py,sha256=td-aoEPZ7rAJwaEmwdZYKkYQnFy124bdA-JUtZKvf3c,142
+papi_iot/cli.py,sha256=9RkCBzmmIG5ddpLV_Ex8z2qF9EQeFAVR3vMdg_NxKLs,439
+papi_iot/papi_camera_video.py,sha256=3weQ12V_CXLP5Rgc-1kCPSOK5PP_nqddqZUs6CzvGXk,5808
+papi_iot/papi_exceptions.py,sha256=jKDl-h-_vHHM14XLOHq5UD74YZOc5G5xWUzYcVeJNwg,1266
+papi_iot/papi_face_recognition.py,sha256=7MQtj_H0V4meA-gFJ2gDWPDQUziMD_cLxDjMA5VXgCo,11962
+papi_iot/papi_iot.py,sha256=e2wGB3zcRds-c4jUJgCXShsRjdbWPqATlteCtlBDXkY,381
+papi_iot/papi_storage_manager.py,sha256=4e56nPJMjVJNX9w-Wa0GGiEqKPrLUVCvejFaMLXzx8s,262
+papi_iot/papi_storage_offline.py,sha256=U2D50mcJPtSWcWMEoaqDPL3_dzm4_yJKiLm3Q4VDHIA,7090
+papi_iot/papi_storage_online.py,sha256=dt8IKpev1GyldCXWZ5MTodplbQqPZWP_ueejUklVwgo,8349
+papi_iot-3.7.8.dist-info/AUTHORS.rst,sha256=F0Hlhm05WWtGBXGJYhZUTSE0E_GbxuYrd47t1H3vvxg,197
+papi_iot-3.7.8.dist-info/LICENSE,sha256=W9Vd36czAM8fZ_ET3BRyl-J8dbhlF4TSVJeMTy6_AI4,1071
+papi_iot-3.7.8.dist-info/METADATA,sha256=3_1MscF6ZxBBSIEpKQ0h6fbwJ3yiTJ3dPIVlt2xbE3Q,3478
+papi_iot-3.7.8.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+papi_iot-3.7.8.dist-info/entry_points.txt,sha256=8B2cjerhNxa1ch2OGNcsv_qHzOeQcr8Lzv7NZs-R84U,48
+papi_iot-3.7.8.dist-info/top_level.txt,sha256=RjOfKX0WIzpOi6TpTMIIYFy5l6O8x567D_38Bds3AoQ,9
+papi_iot-3.7.8.dist-info/RECORD,,
