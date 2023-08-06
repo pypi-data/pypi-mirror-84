@@ -1,0 +1,31 @@
+CCML_DICTIONARY = {
+    "amazon": {
+        "phoneme": None,
+        "voice": None,
+        "language": "lang",
+        "part-of-speech": "w",
+        "domain": "amazon:domain",
+        "effect": "amazon:effect",
+        "emotion": "amazon:emotion",
+        "speak": None,
+        "audio": None,
+    },
+    "google": {
+        "mark": None,
+        "media": None,
+        "parallel": "par",
+        "sequential": "seq",
+        "speak": None,
+        "audio": None,
+    },
+    "twilio": {"part-of-speech": "w", "language": "lang", "phoneme": None,},
+    "common": {
+        "break": None,
+        "say-as": None,
+        "p": None,
+        "s": None,
+        "prosody": None,
+        "emphasis": None,
+        "sub": None,
+    },
+}
