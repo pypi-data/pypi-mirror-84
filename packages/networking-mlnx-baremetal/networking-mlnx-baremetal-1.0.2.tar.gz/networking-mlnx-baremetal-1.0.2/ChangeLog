@@ -1,0 +1,23 @@
+CHANGES
+=======
+
+1.0.2
+-----
+
+* Fix: long\_description is not correctly rendered in setuptools.setup
+
+1.0.0
+-----
+
+* Fix: set default index value to True when adding guid to Pkey
+* doc: install from source with requirements
+* Fix: abort bind\_port process if IB partition binding fails
+* doc: sdist doc
+* doc: config file options generator
+* clean: remove devstack plugin
+* clean: remove unused files
+* doc: update readme
+* doc: update physical\_networks option desc
+* Feat: add requests timeout option
+* Feat: add mellanox infiniband baremetal provision networking support
+* init: init project structure from "networking-baremetal@stable/train"
