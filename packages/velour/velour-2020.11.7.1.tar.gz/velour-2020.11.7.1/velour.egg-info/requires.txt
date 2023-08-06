@@ -1,0 +1,5 @@
+gudhi
+numpy
+sklearn
+scipy
+matplotlib
