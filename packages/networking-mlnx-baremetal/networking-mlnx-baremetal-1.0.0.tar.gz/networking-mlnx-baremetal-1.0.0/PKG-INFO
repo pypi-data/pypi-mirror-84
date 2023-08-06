@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: networking-mlnx-baremetal
+Version: 1.0.0
+Summary: 
+This project aims to provide a OpenStack Neutron ML2 mechanism driver for
+binding or unbinding partition key for mellanox infiniband port when
+provisioning baremetal node using OpenStack Ironic component.
+Home-page: https://github.com/IamFive/networking-mlnx-baremetal
+Author: Qianbiao.NG
+Author-email: iampurse@vip.qq.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/x-rst; charset=UTF-8

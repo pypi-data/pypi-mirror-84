@@ -1,0 +1,7 @@
+[neutron.ml2.mechanism_drivers]
+mlnx_ib_bm = networking_mlnx_baremetal.plugins.ml2.mech_ib_baremetal:InfiniBandBaremetalMechanismDriver
+
+[oslo.config.opts]
+mlnx.baremetal.driver = networking_mlnx_baremetal.plugins.ml2.config:list_opts
+mlnx.ironic.client = networking_mlnx_baremetal.ironic_client:list_opts
+
