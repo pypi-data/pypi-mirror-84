@@ -1,0 +1,14 @@
+paradocx/__init__.py,sha256=CMAM598lXqJFV-QBjj7HnLLa6fQdMWABH723K1GIsl0,1718
+paradocx/document.py,sha256=ehCubgn8GeIGBMoZobrFBRwISwRVGR86-YVXvjjCrzk,792
+paradocx/headerfooter.py,sha256=uPFsny_2oPmz0f3lRGQ0ioscrZcUr44N3_Dv2PyeM7M,649
+paradocx/image.py,sha256=CBuWxsvimJmJcDiKHf4qhMareqFBdlW6EDb5n72uKZM,1496
+paradocx/numbering.py,sha256=tFnItTMhfeEMJ4O3SuPvOwxn33x8k51iybIn6O3SiDU,541
+paradocx/package.py,sha256=kMa9zEzPMCGaNS_a5ug99K9_T3ulHNWTPoNx_nNdRxo,2598
+paradocx/settings.py,sha256=0Wo4ZgIDDv5ALfKjedIpXEAQ2DHjRU0jBCBhigh4YF4,368
+paradocx/styles.py,sha256=cd-5ODCtiS7-mxs5ACkWeKRrQDtumHM2Md6SWfzf1dk,3007
+paradocx/util.py,sha256=pr3epP_ZW7o7uCmy0iC_4LTKxFWg4uxlymbKjHEpFLQ,1670
+paradocx-1.3.0.dist-info/LICENSE,sha256=VfJ7porbMZqSxKwLvQuqDcWFGrHtsjavs5Zd-wCSNmQ,1047
+paradocx-1.3.0.dist-info/METADATA,sha256=EmXQTC-vm_kLWtb9Z0J5uBxWaKD5GzfS_86hGQ0fq0M,7503
+paradocx-1.3.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+paradocx-1.3.0.dist-info/top_level.txt,sha256=BCtIrsPSnnrEd1KIyQVdrfHQohnB2i2a_KUpyl--lgs,9
+paradocx-1.3.0.dist-info/RECORD,,
