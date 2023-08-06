@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: jokes-and-quotes
+Version: 1.0.3
+Summary: A Python package to get some awesome jokes and quotes.
+Home-page: https://github.com/pinakipb2/jokes-and-quotes
+Author: Pinaki Bhattacharjee
+Author-email: pinakipb2@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+# Jokes and Quotes
+
+A Python package to get some awesome jokes and quotes.
+
+## Usage
+
+Following query on terminal will provide you some awesome jokes and quotes.
+
+```
+jokes-and-quotes -gen
+```
+

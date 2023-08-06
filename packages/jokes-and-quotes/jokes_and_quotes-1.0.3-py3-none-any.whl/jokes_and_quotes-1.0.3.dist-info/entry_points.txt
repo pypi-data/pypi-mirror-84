@@ -1,0 +1,3 @@
+[console_scripts]
+jokes-and-quotes = jokes_and_quotes.cli:main
+
