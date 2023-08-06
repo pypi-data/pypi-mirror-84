@@ -1,0 +1,8 @@
+README
+README.md
+setup.py
+gmailnator/__init__.py
+gmailnator.py.egg-info/PKG-INFO
+gmailnator.py.egg-info/SOURCES.txt
+gmailnator.py.egg-info/dependency_links.txt
+gmailnator.py.egg-info/top_level.txt
