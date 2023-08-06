@@ -1,0 +1,7 @@
+README.md
+setup.py
+sicp.egg-info/PKG-INFO
+sicp.egg-info/SOURCES.txt
+sicp.egg-info/dependency_links.txt
+sicp.egg-info/entry_points.txt
+sicp.egg-info/top_level.txt
