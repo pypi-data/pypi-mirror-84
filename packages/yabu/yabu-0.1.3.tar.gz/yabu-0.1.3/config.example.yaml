@@ -1,0 +1,9 @@
+tasks:
+  coolest_server:
+    remote_base_path: "backup@coolest_server.net:/"
+    local_path: "/mnt/backup/coolest_server"
+#   identity_file: "/etc/keys/backup@coolest_server"
+    targets:
+      - "/services/super_service_data"
+      - "/etc/ssh/sshd_config"
+      - "/etc/passwd"
