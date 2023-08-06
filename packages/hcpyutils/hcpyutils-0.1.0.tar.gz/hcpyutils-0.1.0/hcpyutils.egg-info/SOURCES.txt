@@ -1,0 +1,9 @@
+setup.py
+hcpyutils/__init__.py
+hcpyutils/dataformat.py
+hcpyutils.egg-info/PKG-INFO
+hcpyutils.egg-info/SOURCES.txt
+hcpyutils.egg-info/dependency_links.txt
+hcpyutils.egg-info/requires.txt
+hcpyutils.egg-info/top_level.txt
+hcpyutils.egg-info/zip-safe
