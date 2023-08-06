@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: anomalies
+Version: 0.0.1a0
+Summary: Anomaly cancellation
+Home-page: https://github.com/restrepo/anomaly
+Author: restrepo
+Author-email: restrepo@udea.edu.co
+License: BSD
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# Hunahpu
+Similarity metrics
+
+
