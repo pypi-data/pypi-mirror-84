@@ -1,0 +1,8 @@
+api_layer/__init__.py,sha256=98nxeAd19W5phfo6lPgi_v6j65MF8xHOm58va-u15gA,208
+api_layer/api.py,sha256=x1LHtIjbL0YHH5pFeJBGNw8Hp8-pBt9TFbOqD7caxZo,6579
+api_layer/tencent_cloud.py,sha256=orwpbUM-cscH4ZVsBTGsxnazkXHBcw5YDt0mzaI6aCM,10273
+ApiLayer-0.0.2.dist-info/LICENSE,sha256=71w8ycYUhBVhiflijcGuihZNFSWW10cQW9I0NIDaF_Y,1067
+ApiLayer-0.0.2.dist-info/METADATA,sha256=9MKi1bFY8UUKTNC0jzEceRiV1sfrRE8WEPU1yXdfU8I,246
+ApiLayer-0.0.2.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+ApiLayer-0.0.2.dist-info/top_level.txt,sha256=3DnDNBY9LR8RDHJeAFt1UijAM8EAj19hVhZB6ERkGwA,10
+ApiLayer-0.0.2.dist-info/RECORD,,
