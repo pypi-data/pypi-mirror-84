@@ -1,0 +1,5 @@
+stopit
+kcu
+selenium
+selenium_firefox
+beautifulsoup4
