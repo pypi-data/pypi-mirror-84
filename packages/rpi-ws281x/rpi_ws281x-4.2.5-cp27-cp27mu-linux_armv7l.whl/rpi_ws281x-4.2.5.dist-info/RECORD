@@ -1,0 +1,8 @@
+_rpi_ws281x.so,sha256=aPDsW_G33kAoO66dpbxTO7i0h0obYUXNXgGp4yJW8AI,257196
+rpi_ws281x/__init__.py,sha256=tGnq31rvQTvkKN8tkmqIWNXsprQApJrC9P06yw_ySzo,170
+rpi_ws281x/rpi_ws281x.py,sha256=cWJMJGQIgZA9zw35kx8ZyNw2uM9kdAgdNGVXlZaDTdI,7134
+rpi_ws281x-4.2.5.dist-info/LICENSE,sha256=e79jN8Hu5xaVeeas05jzHqJ036OhaJq35lTKNYXVqKk,1290
+rpi_ws281x-4.2.5.dist-info/METADATA,sha256=_7_tboKvojEyO1WNGLZ0RKZxpw0zkVULDXJrFpzJWn4,6907
+rpi_ws281x-4.2.5.dist-info/WHEEL,sha256=K1JuwQaDD-Jlx4MUlSWpJ2l4mebKK67mKt_AD2gMh44,105
+rpi_ws281x-4.2.5.dist-info/top_level.txt,sha256=Ks3pYwbPK_uPm7iTJN-PaK8xN2HRX6EcS9Oflg1gRTE,23
+rpi_ws281x-4.2.5.dist-info/RECORD,,
