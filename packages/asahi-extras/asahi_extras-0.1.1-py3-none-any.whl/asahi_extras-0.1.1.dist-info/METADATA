@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: asahi-extras
+Version: 0.1.1
+Summary: Optional installer utility and companion package to 'asahi'
+Home-page: https://github.com/kalaspuff/asahi
+License: MIT
+Keywords: asahi,extras,optional installs,extras requires,extra packages,optional packages,lazy import
+Author: Carl Oscar Aaro
+Author-email: hello@carloscar.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Requires-Dist: asahi (>=0.1.0,<0.2.0)
+Project-URL: Repository, https://github.com/kalaspuff/asahi
+Description-Content-Type: text/markdown
+
+# `asahi`
+
+![Python package](https://github.com/kalaspuff/asahi/workflows/Python%20package/badge.svg)
+[![pypi](https://badge.fury.io/py/asahi.svg)](https://pypi.python.org/pypi/asahi/)
+[![Made with Python](https://img.shields.io/pypi/pyversions/asahi)](https://www.python.org/)
+[![Type hinted - mypy validated](https://img.shields.io/badge/typehinted-yes-teal)](https://github.com/kalaspuff/asahi)
+[![MIT License](https://img.shields.io/github/license/kalaspuff/asahi.svg)](https://github.com/kalaspuff/asahi/blob/master/LICENSE)
+[![Code coverage](https://codecov.io/gh/kalaspuff/asahi/branch/master/graph/badge.svg)](https://codecov.io/gh/kalaspuff/asahi/tree/master/asahi)
+
+*A small package to provide utility functions to libraries that has optional installs (so called "extras").*
+
+
+## Installation with `pip`
+Like you would install any other Python package, use `pip`, `poetry`, `pipenv` or your weapon of choice.
+```
+$ pip install asahi
+```
+
+
+## Usage and examples
+
+#### Use-case
+```
+import asahi
+
+```
+
