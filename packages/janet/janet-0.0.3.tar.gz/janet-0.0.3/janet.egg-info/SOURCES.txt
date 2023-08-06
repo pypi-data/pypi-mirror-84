@@ -1,0 +1,8 @@
+README.md
+setup.py
+janet/__init__.py
+janet/__main__.py
+janet.egg-info/PKG-INFO
+janet.egg-info/SOURCES.txt
+janet.egg-info/dependency_links.txt
+janet.egg-info/top_level.txt
