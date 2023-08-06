@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: bci-framework
+Version: 1.0.dev1
+Summary: High level Python module for handle OpenBCI EEG acquisition boards
+Home-page: UNKNOWN
+Author: Yeison Cardona
+Author-email: yencardonaal@unal.edu.co
+Maintainer: Yeison Cardona
+Maintainer-email: yencardonaal@unal.edu.co
+License: BSD 2-Clause "Simplified" License
+Download-URL: https://github.com/UN-GCPDS/bci_framework
+Description: # BCI-Framework
+        A distributed processing tool, stimuli delivery, psychophysiological experiments designer and real-time visualizations for OpenBCI.
+        
+        
+        ![GitHub top language](https://img.shields.io/github/languages/top/un-gcpds/bci-framework)
+        ![PyPI - License](https://img.shields.io/pypi/l/bci-framework)
+        ![PyPI](https://img.shields.io/pypi/v/bci-framework)
+        ![PyPI - Status](https://img.shields.io/pypi/status/bci-framework)
+        ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/bci-framework)
+        ![GitHub last commit](https://img.shields.io/github/last-commit/un-gcpds/bci-framework)
+        ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/UN-GCPDS/bci-framework)
+        [![Documentation Status](https://readthedocs.org/projects/bci-framework/badge/?version=latest)](https://bci-framework.readthedocs.io/en/latest/?badge=latest)
+        
+        
+        OpenBCI specializes in creating low-cost, high-quality biosensing hardware for brain computer interfacing. Our arduino compatible biosensing boards provide high resolution imaging and recording of EMG, ECG, and EEG signals. Our devices have been used by researchers, makers, and hobbyists in over 60+ countries as brain computer interfaces to power machines and map brain activity. OpenBCI headsets, boards, sensors and electrodes allow anyone interested in biosensing and neurofeedback to purchase high quality equipment at affordable prices.
+        
+        
+        
+        BCI-Framework provide a software for handle [OpeBCI](https://openbci.com/) boards, an environment for develop real time EEG/EMG/ECG data visualizations and a 
+        
+        
+        
+        
+        
+        
+        
+        
+        It provides a standard way to build and deploy applications and is a universal, reusable software environment that provides particular functionality as part of a larger software platform to facilitate development of software applications, products and solutions. Software frameworks may include support programs, compilers, code libraries, tool sets, and application programming interfaces (APIs) that bring together all the different components to enable development of a project or system. 
+        
+        
+        
+        ## Features
+        
+        ## Screenshots
+        
+        ![](images/Screenshot_20200817_204616.png)
+        ![](images/Peek_2020-08-17_20-58.gif)
+        ![](images/Peek_2020-08-17_20-54.gif)
+        
+        **Under hard development right now**
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Hardware :: Hardware Drivers
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

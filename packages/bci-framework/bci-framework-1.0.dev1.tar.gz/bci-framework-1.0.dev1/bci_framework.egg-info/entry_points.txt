@@ -1,0 +1,3 @@
+[console_scripts]
+bci_framework = bci_stream.__main__:main
+
