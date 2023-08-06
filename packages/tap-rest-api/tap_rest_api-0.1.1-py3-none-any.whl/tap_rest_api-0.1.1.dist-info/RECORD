@@ -1,0 +1,13 @@
+tap_rest_api/__init__.py,sha256=MQ-JopmRZ0VTHGP52ohw6NeoVAhxkvkdgFvDjW5Ub5A,5493
+tap_rest_api/default_spec.json,sha256=HESQqgDSA2lyqlQCn4PpX5D0n6LpDNRCHMazLPznIkg,5312
+tap_rest_api/helper.py,sha256=mDRupyAEfnnbq-qf4XkvXtpi2qHMmuw8ZGJW9Tr4teo,11029
+tap_rest_api/json2schema.py,sha256=6hb0ODLFqc7CPzxgMBNlo2kPz8UagvkeFocGkznFKI0,8216
+tap_rest_api/schema.py,sha256=kN9FgDsawjG0ky4OlHRcQAZoeP_jQT9oiNSm-rQU1YI,4062
+tap_rest_api/sync.py,sha256=0mfxvMw6CJXMGAMMCH__JiBjIyoORIdltxoNHP0ICd4,9644
+tap_rest_api-0.1.1.dist-info/AUTHORS.md,sha256=tKhbmJpDiF6FCyGK0jGbM7sYF7JOnEWhKjcP8pgYnvk,153
+tap_rest_api-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tap_rest_api-0.1.1.dist-info/METADATA,sha256=mzxiRke9W2zkYttCZROX1zkbjHxtAysc7hIu0L8jkz8,9876
+tap_rest_api-0.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+tap_rest_api-0.1.1.dist-info/entry_points.txt,sha256=jPOSGT8oPy6Ji6DuZXeY8Z3TVKVSDBeNCLA9K0M_fqs,62
+tap_rest_api-0.1.1.dist-info/top_level.txt,sha256=a0FIuzrqjjdoDLv_NgNpnwq_ggdH-b-_bmmGO1CycdU,13
+tap_rest_api-0.1.1.dist-info/RECORD,,
