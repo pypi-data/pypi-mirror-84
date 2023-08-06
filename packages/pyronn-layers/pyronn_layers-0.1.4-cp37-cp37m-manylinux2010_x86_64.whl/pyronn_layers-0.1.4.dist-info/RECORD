@@ -1,0 +1,11 @@
+_foo.cpython-37m-x86_64-linux-gnu.so,sha256=fmumJv7bTj6rkD9VS5_VEt80Z4BcP0tg-KsW1GmYRME,16024
+pyronn_layers/__init__.py,sha256=ceJq63WE1XbdMGsnL6YRhH7SMrBgNfUSffwtQF_xD4w,875
+pyronn_layers/python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyronn_layers/python/ops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyronn_layers/python/ops/_pyronn_layers_ops.so,sha256=0bDIdIU4LzxW8eEUkTEBr0Okpnwg0OIdJZoU9dilp1g,402712
+pyronn_layers/python/ops/pyronn_layers_ops.py,sha256=D1gX2ui11B6OIQkvNvEjVRx4-nxJyqRHmVTyxtcfXKM,1224
+pyronn_layers-0.1.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyronn_layers-0.1.4.dist-info/METADATA,sha256=hh6zfCuKHWam5c8qMeEkLmzUPhazpVCybPRikEgHUo4,897
+pyronn_layers-0.1.4.dist-info/WHEEL,sha256=rjs0dbLt66v8mjOfCbR-uj5Usgl2OLAlmRdCEyNo0L4,104
+pyronn_layers-0.1.4.dist-info/top_level.txt,sha256=V9e-GDRy1412qE-6XtBBCaVg7B8FhTI57Klshe0jlU0,19
+pyronn_layers-0.1.4.dist-info/RECORD,,
