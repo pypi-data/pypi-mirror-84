@@ -1,0 +1,1 @@
+https://github.com/ionpath/mibilib/archive/v1.3.0.tar.gz#egg=python-s3-1-3-0
