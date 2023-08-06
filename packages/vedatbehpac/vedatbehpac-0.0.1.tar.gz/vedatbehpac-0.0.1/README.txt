@@ -1,0 +1,1 @@
+This is my very simple Python package that takes two numbers and either add, divide, multiply or subtract them.

@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+src/__init__.py
+src/vedatbehpac.egg-info/PKG-INFO
+src/vedatbehpac.egg-info/SOURCES.txt
+src/vedatbehpac.egg-info/dependency_links.txt
+src/vedatbehpac.egg-info/top_level.txt
