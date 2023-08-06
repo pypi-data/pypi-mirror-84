@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: dmb-cli
+Version: 2.2.1
+Summary: CLI for DreamBox
+Home-page: http://github.com/didi/dreambox/cli
+Author: Kevin Liu
+Author-email: liukaikevin@didiglobal.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: lxml
+Requires-Dist: watchdog
+Requires-Dist: websockets
+Requires-Dist: jinja2
+Requires-Dist: qrcode
+Requires-Dist: Pillow
+Requires-Dist: importlib-resources
+Requires-Dist: netifaces
+Requires-Dist: PyYAML
+
+DreamBox CLI
+---
+
+是DreamBox跨端视图框架的专用编译器，职能是对原始模板数据进行校验、优化、转换，并自动填入版本兼容和校验信息，为下游SDK提供友好可解析的数据。
+
+### 流程设计
+
+![v2_design](assets/v2_design.png)
+
+
