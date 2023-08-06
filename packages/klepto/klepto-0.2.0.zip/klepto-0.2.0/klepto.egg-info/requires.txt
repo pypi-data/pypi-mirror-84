@@ -1,0 +1,7 @@
+dill>=0.3.3
+pox>=0.2.9
+
+[archives]
+h5py>=2.8.0
+sqlalchemy>=0.8.4
+pandas>=0.17.0
