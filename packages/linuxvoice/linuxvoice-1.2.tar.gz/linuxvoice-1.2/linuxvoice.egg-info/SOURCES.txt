@@ -1,0 +1,8 @@
+README.md
+setup.py
+linuxvoice/__init__.py
+linuxvoice/linuxvoice.py
+linuxvoice.egg-info/PKG-INFO
+linuxvoice.egg-info/SOURCES.txt
+linuxvoice.egg-info/dependency_links.txt
+linuxvoice.egg-info/top_level.txt
