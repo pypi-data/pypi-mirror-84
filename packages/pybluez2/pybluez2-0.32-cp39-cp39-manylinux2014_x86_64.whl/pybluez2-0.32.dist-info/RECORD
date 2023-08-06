@@ -1,0 +1,16 @@
+pybluez2.libs/libbluetooth-2dedfd93.so.3.18.15,sha256=dij_6DNaaQHetSzkUQipB7or0m5QU3Vi1jb2FFwH8WA,166544
+pybluez2-0.32.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pybluez2-0.32.dist-info/RECORD,,
+pybluez2-0.32.dist-info/METADATA,sha256=et9yuXxiDd5qiTSXgOXbvdHzkVFuf521448-PC4TWtQ,976
+pybluez2-0.32.dist-info/COPYING,sha256=zS59Y6EQWPGcWLBvuMdZFAznB4g2nc5ubp20DTR1Ah4,17989
+pybluez2-0.32.dist-info/top_level.txt,sha256=oF7qh3pffVVl2j4dTfeYjkccsrvWRlu7hKkdEViQtjQ,10
+pybluez2-0.32.dist-info/WHEEL,sha256=sPIohpZM7vu5nTTYsKtZn4G53Hmt-aygu-hjwmd96II,111
+pybluez2-0.32.dist-info/eager_resources.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+bluetooth/macos.py,sha256=y2VSAimEnUBch7QVjGwiwkznziDRBfz0w-B3_xDcOho,4330
+bluetooth/__init__.py,sha256=OTpfKLe8gn2otMRmobh49yLAVfk0dsfVCeFC32ZpBGs,10655
+bluetooth/widcomm.py,sha256=E33KAKBqUQn4szSuYngbLKTNfRwMF1dLX_x_E_Oz6SU,29585
+bluetooth/bluez.py,sha256=_00jG_5VyOgBDUK-cdYEtqAUuuQ_JO96Hb_uTKyf7LE,24524
+bluetooth/btcommon.py,sha256=RUMNg0E8fDcLxY5NQyyrmWtmNigBt-B2nG6FdHVPqSo,13415
+bluetooth/msbt.py,sha256=aSpCeGOgNG12aq4MqcO2qw46aQooM8QkIQi00fTnswc,9451
+bluetooth/_bluetooth.cpython-39-x86_64-linux-gnu.so,sha256=FGlJe0FKu7KSC0fS-EuNh8UKYqVoPkzvwwxYRAMYAqI,317072
+bluetooth/ble.py,sha256=VhfhVcKUIlFqhvPl96-LREf7Q9bwa8WiSkx-Eu-7b5s,23
