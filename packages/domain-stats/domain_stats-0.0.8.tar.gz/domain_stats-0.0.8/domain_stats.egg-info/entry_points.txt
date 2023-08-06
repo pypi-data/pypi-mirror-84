@@ -1,0 +1,4 @@
+[console_scripts]
+domain-stats = domain_stats.launch:main
+domain-stats-settings = domain_stats.settings:main
+
