@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: beautifulsoup4-helpers
+Version: 0.0.1
+Summary: Frequently used functions for html parsing with beautifulsoup4 https://pypi.org/project/beautifulsoup4/
+Home-page: https://github.com/eugen1j/beautifulsoup4-helpers
+Author: eugen1j
+Author-email: eugenij.bondar@gmail.com
+License: MIT
+Keywords: python3
+        beautifulsoup4_helpers
+        parser
+        html
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4
+
+# beautifulsoup4-helpers
+
+Frequently used functions for html parsing with [beautifulsoup4](https://pypi.org/project/beautifulsoup4/)
+
+[![PyPI version](https://badge.fury.io/py/beautifulsoup4_helpers.svg)](https://badge.fury.io/py/beautifulsoup4_helpers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/eugen1j/aioscrapy/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/eugen1j/beautifulsoup4-helpers.svg?branch=master)](https://travis-ci.org/eugen1j/beautifulsoup4-helpers)
+[![codecov](https://codecov.io/gh/eugen1j/beautifulsoup4-helpers/branch/master/graph/badge.svg?token=hRKoGsa5QI)](https://codecov.io/gh/eugen1j/beautifulsoup4-helpers)
+
+
+## Installing
+
+    pip install beautifulsoup4_helpers
+
+## Examples
+
+See more examples in [tests.py](https://github.com/eugen1j/beautifulsoup4-helpers/blob/master/tests.py)
+
+
