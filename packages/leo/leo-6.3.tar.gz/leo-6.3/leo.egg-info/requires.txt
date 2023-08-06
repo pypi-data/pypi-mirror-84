@@ -1,0 +1,15 @@
+PyQt5>=5.12
+PyQtWebEngine
+asttokens
+docutils
+flexx
+meta
+nbformat
+pylint
+pyflakes
+black
+pyshortcuts>=1.7
+sphinx
+
+[:platform_system == "Windows"]
+windows-curses
