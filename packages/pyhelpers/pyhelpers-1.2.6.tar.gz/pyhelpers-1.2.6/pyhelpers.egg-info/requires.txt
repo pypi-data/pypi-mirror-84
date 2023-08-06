@@ -1,0 +1,11 @@
+fake-useragent
+html5lib
+lxml
+numpy
+openpyxl
+pandas
+python-rapidjson
+python-Levenshtein
+xlrd
+xlwt
+XlsxWriter
