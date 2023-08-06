@@ -1,0 +1,7 @@
+setup.py
+src/Contra_demo/Contra_demo.py
+src/Contra_demo/__init__.py
+src/Contra_demo.egg-info/PKG-INFO
+src/Contra_demo.egg-info/SOURCES.txt
+src/Contra_demo.egg-info/dependency_links.txt
+src/Contra_demo.egg-info/top_level.txt
