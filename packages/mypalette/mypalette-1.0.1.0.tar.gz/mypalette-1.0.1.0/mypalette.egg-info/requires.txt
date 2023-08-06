@@ -1,0 +1,4 @@
+numpy>=1
+pandas==1.1.4
+webcolors==1.11.1
+matplotlib==3.3.2

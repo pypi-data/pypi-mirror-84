@@ -1,0 +1,11 @@
+README.md
+setup.py
+mypalette/__init__.py
+mypalette/load_palette.py
+mypalette/visualize_palette.py
+mypalette.egg-info/PKG-INFO
+mypalette.egg-info/SOURCES.txt
+mypalette.egg-info/dependency_links.txt
+mypalette.egg-info/not-zip-safe
+mypalette.egg-info/requires.txt
+mypalette.egg-info/top_level.txt
