@@ -1,0 +1,16 @@
+.coveragerc
+CHANGELOG
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+stroll.py
+tox.ini
+stroll.egg-info/PKG-INFO
+stroll.egg-info/SOURCES.txt
+stroll.egg-info/dependency_links.txt
+stroll.egg-info/requires.txt
+stroll.egg-info/top_level.txt

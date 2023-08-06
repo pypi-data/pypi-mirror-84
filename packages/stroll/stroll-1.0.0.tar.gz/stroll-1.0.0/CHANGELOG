@@ -1,0 +1,34 @@
+## v1.0.0 - 20/11/06
+
+* Better documentation
+
+## v0.11.0 - 20/10/10
+
+* Rename wolk to stroll
+
+## v0.10.0 - 20/10/10
+
+* Match suffixes and check if roots exist
+* Add documentation
+* wolk now yields Paths again
+
+## v0.9.3 - 20/10/07
+
+* Enable Python 3.9
+
+## v0.9.2 - 20/09/21
+
+* Remove old debugging code
+
+## v0.9.1 - 20/09/06
+
+* Add MANIFEST.in
+* Separate patterns for files and directories
+* Full test coverage of wolk.py
+* Use xlod
+* Fix .coveragerc
+* Use simplified tdir calls
+
+## v0.9.0 - 20/05/27
+
+* First release
