@@ -1,0 +1,13 @@
+README.md
+setup.py
+crypt4ghfs/__init__.py
+crypt4ghfs/__main__.py
+crypt4ghfs/c4gh_files.py
+crypt4ghfs/operations.py
+crypt4ghfs.egg-info/PKG-INFO
+crypt4ghfs.egg-info/SOURCES.txt
+crypt4ghfs.egg-info/dependency_links.txt
+crypt4ghfs.egg-info/entry_points.txt
+crypt4ghfs.egg-info/not-zip-safe
+crypt4ghfs.egg-info/requires.txt
+crypt4ghfs.egg-info/top_level.txt
