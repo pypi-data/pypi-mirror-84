@@ -1,0 +1,49 @@
+# Three60Cube
+
+A Package to project a 360 x 180 image onto a cube.
+
+## Installation
+
+```
+pip install three60cube
+```
+
+## Usage
+
+Creation of projection template:
+```
+from three30cube import Three60Cube
+
+# create instance
+transf = Three60Cube()
+
+# open image
+transf.open_image("/Users/casperkaandorp/Desktop/streetview/Abstede_1.JPG")
+
+# calculate a projection for one side
+transf.get_pane(pane=1, dim=512)
+
+# save transformation template
+transf.save_cache("/Users/casperkaandorp/Desktop/streetview/templ.pickle")
+```
+
+With the saved transformation template you can perform new projections without 
+calculating the transformation:
+
+```
+# create instance with transformation template
+transf = Three60Cube("/Users/casperkaandorp/Desktop/streetview/templ.pickle")
+
+# open image
+transf.open_image("/Users/casperkaandorp/Desktop/streetview/Abstede_2.JPG")
+
+# perform projection, write image to HDD
+transf.save_pane("/Users/casperkaandorp/proj_2.JPG", pane=2, dim=512)
+```
+
+Panes 0 through 3 are taken from the left to right side of the 360 image. Pane 4 is the top of the cube and pane 5 is the bottom part. The `dim` parameter refers to dimension of the output image; a `dim` of 500 will produce a 500 x 500px image.
+
+To do: testing and meaningful messages when filepaths are incorrect
+
+
+
