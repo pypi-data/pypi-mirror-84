@@ -1,0 +1,13 @@
+COPYING
+MANIFEST.in
+README
+setup.py
+free_torrents/__init__.py
+free_torrents/fedora.py
+free_torrents/qubes.py
+free_torrents.egg-info/PKG-INFO
+free_torrents.egg-info/SOURCES.txt
+free_torrents.egg-info/dependency_links.txt
+free_torrents.egg-info/entry_points.txt
+free_torrents.egg-info/requires.txt
+free_torrents.egg-info/top_level.txt
