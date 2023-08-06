@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "KingGhidorah"
+version = "0.1.2"
+description = ""
+authors = ["deepio"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+attrs = "^19.1"
+requests = {extras = ["socks"], version = "^2.23.0"}
+prettyprinter = "^0.18.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0"
+pluggy = "^0.13.0"
+yapf = "^0.28.0"
+pytest-rerunfailures = "^9.1"
+Sphinx = "^2.3"
+recommonmark = "^0.6.0"
+m2r = "^0.2.1"
+
+[tool.poetry.extras]
+docs = ["sphinx", ]
+[build-system]
+requires = ["poetry>=1.0.2"]
+build-backend = "poetry.masonry.api"
