@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: shopschedule
+Version: 0.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: hufuture
+Author-email: 1623025938@163.com
+License: UNKNOWN
+Description: 
+            JSP: http://people.brunel.ac.uk/~mastjjb/jeb/orlib/files/jobshop1.txt
+            FJSP: http://people.idsia.ch/~monaldo/fjsp.html
+            FSP: http://people.brunel.ac.uk/~mastjjb/jeb/orlib/files/flowshop1.txt
+            
+            Author: Yang Guangcan
+            E-mail: 2315466330@qq.com
+            
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown

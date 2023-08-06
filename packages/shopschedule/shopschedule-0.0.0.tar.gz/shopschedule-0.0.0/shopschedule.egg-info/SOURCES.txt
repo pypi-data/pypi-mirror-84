@@ -1,0 +1,9 @@
+setup.py
+shopschedule/__init__.py
+shopschedule/ga.py
+shopschedule/name.py
+shopschedule.egg-info/PKG-INFO
+shopschedule.egg-info/SOURCES.txt
+shopschedule.egg-info/dependency_links.txt
+shopschedule.egg-info/requires.txt
+shopschedule.egg-info/top_level.txt
