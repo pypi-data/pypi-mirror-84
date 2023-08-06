@@ -1,0 +1,3 @@
+[textx_generators]
+pfpsychopy = pfpsychopy:pyflies_generate_psychopy
+
