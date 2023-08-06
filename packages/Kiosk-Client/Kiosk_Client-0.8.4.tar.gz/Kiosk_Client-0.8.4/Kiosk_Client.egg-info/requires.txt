@@ -1,0 +1,12 @@
+google-cloud-storage
+Pillow
+python-decouple
+python-dateutil
+treq==20.9.0
+
+[tests]
+pytest<6
+pytest-twisted
+pytest-pep8
+pytest-cov
+pytest-mock
