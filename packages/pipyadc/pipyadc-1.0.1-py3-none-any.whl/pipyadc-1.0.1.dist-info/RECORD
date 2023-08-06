@@ -1,0 +1,10 @@
+pipyadc/ADS1256_default_config.py,sha256=2djH5vEkLZ6LJW-x1O9QePVHLMqp0CrBLJROOMNCLj0,9387
+pipyadc/ADS1256_definitions.py,sha256=S9pG3fiGzGLYySb9m4Xxd-svedujfnRGF2QH1moqLxU,3019
+pipyadc/__init__.py,sha256=syJj6SCnk2L42y1qIy_JT9sFcbKMrVkl_p3stcRNpyM,218
+pipyadc/_version.py,sha256=xh0tf4yNZsIVm8e-7aRdjcYsUcPKaFeYWUYpXgI62bs,498
+pipyadc/pipyadc.py,sha256=7ULvDQdHOBe2xi7m5sx6KKCeQq5n680bFmR4UQ23WfA,29082
+pipyadc-1.0.1.dist-info/LICENSE,sha256=m4cqigcLitMpxL04D7G_AAD1ZMdQI-yOHmgD8VNkuek,26461
+pipyadc-1.0.1.dist-info/METADATA,sha256=gAZatbYayaZiixTAzVm_7Rav8FoA9xSX1ocq2xluCKA,14552
+pipyadc-1.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pipyadc-1.0.1.dist-info/top_level.txt,sha256=4TXTlyDJoQpIwmeiQzghvZMc5uJ2ING8u0s-7XopugU,8
+pipyadc-1.0.1.dist-info/RECORD,,
