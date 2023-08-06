@@ -1,0 +1,13 @@
+sutime/__init__.py,sha256=_oncehYsQUJVvxa0fm0mi_G4MICM3aQb6NlB5KwbZWU,42
+sutime/jars/stanford-corenlp-sutime-python-1.4.0.jar,sha256=KFc2FCqGYKCSwIiwDY21pej0kj06f2MNgEMnvhroSOM,6580
+sutime/pom.xml,sha256=OhS-F_j7am6ZPOIH8scop6lgBvw41ox6lJBWd5zECHQ,8411
+sutime/sutime.py,sha256=NicCk6SxH9pgznhaNy1sPsWrzNM0DtNfsw94SEQd2cM,7636
+sutime/test/conftest.py,sha256=mwl8LcxQsrUNYj87ocrheLgGRp-3Es0ReJUPzmHCMYE,1168
+sutime/test/test_sutime.py,sha256=SokJ03HVmR35YS5Obu3UOv2ces5JC_qsTyGS9rfXEy8,2680
+sutime/test/test_sutime_jvm_flags.py,sha256=EftRQt_ePO-nHpIRBszWqTq55jbHTrSNRTso3rZ6_ec,478
+sutime/test/test_sutime_spanish.py,sha256=HknQQyBYPodzlMGpD0MdK4mSEgcsk0ezm5HIK9X6d7U,433
+sutime/test/test_sutime_time_ranges.py,sha256=Ge5IG9epzgHRVJARKLooMcrkKSt9PL7e7Go8d2rf0pU,1580
+sutime-1.0.1.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+sutime-1.0.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+sutime-1.0.1.dist-info/METADATA,sha256=ZFFvdNt_Pa7Ef3FkQj6j1V_HiHFi1ONUoUaGdcIcogk,7693
+sutime-1.0.1.dist-info/RECORD,,
