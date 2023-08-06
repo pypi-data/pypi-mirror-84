@@ -1,0 +1,3 @@
+[console_scripts]
+decrypt_utc_hex = ether_examples.decrypt_utc:run_decrypt_utc_file_hex_pwd
+
