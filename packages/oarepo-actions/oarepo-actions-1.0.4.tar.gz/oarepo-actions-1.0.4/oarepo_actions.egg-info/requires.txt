@@ -1,0 +1,17 @@
+deepmerge
+marshmallow
+flask
+
+[tests]
+deepmerge
+oarepo-mapping-includes
+oarepo-validate
+oarepo-invenio-model
+oarepo[tests]~=3.3.0
+
+[tests-es7]
+deepmerge
+oarepo-mapping-includes
+oarepo-validate
+oarepo-invenio-model
+oarepo[tests-es7]~=3.3.0
