@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: aioHelloWorld
+Version: 0.3a0.post0
+Summary: This is a asynchronous package for printing hello world
+Home-page: UNKNOWN
+Author: Exainz
+License: UNKNOWN
+Project-URL: Issue tracker, https://github.com/Exainz/aioHelloWorld/issues
+Description: ### Asynchronous module for printing your dream programme `Hello World` in Python.
+        
+        <br>
+        
+        ## Installing
+        ```
+        pip install aioHelloWorld
+        ```
+        
+        ## Example
+        ```
+        import aioHelloWorld
+        import asyncio
+        
+        
+        async def main():
+            await aioHelloWorld.say()
+        
+        if __name__ == "__main__":
+            asyncio.get_event_loop().run_until_complete(main())
+        ```
+        
+        ## Github
+        You can view the source code [here](https://github.com/Exainz/aioHelloWorld)
+        
+        ## Support
+        You can find me on [discord](https://discord.com/users/761976845200785408)
+        
+        ### Thank You :)
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

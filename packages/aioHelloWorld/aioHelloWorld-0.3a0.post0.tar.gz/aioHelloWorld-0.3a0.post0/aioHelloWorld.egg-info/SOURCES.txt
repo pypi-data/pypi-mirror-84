@@ -1,0 +1,8 @@
+README.md
+setup.py
+aioHelloWorld/__init__.py
+aioHelloWorld/main.py
+aioHelloWorld.egg-info/PKG-INFO
+aioHelloWorld.egg-info/SOURCES.txt
+aioHelloWorld.egg-info/dependency_links.txt
+aioHelloWorld.egg-info/top_level.txt
