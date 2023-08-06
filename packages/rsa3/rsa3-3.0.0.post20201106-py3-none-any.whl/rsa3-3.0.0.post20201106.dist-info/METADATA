@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: rsa3
+Version: 3.0.0.post20201106
+Summary: Python Representational Similarity Analysis (RSA)
+Home-page: https://github.com/rsagroup/pyrsa
+Author: pyrsa authors
+Author-email: 
+License: UNKNOWN
+Keywords: neuroscience
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: coverage
+Requires-Dist: h5py
+Requires-Dist: joblib
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scikit-image
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: tqdm
+
+# Representational Similarity Analysis 3.0
+
+[![Documentation Status](https://readthedocs.org/projects/rsa3/badge/?version=latest)](https://rsa3.readthedocs.io/en/latest/?badge=latest)
+[![PyPI version](https://badge.fury.io/py/rsa3.svg)](https://badge.fury.io/py/rsa3)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/626ca9ec9f75485a9f73783c02710b1f)](https://www.codacy.com/gh/rsagroup/pyrsa?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=rsagroup/pyrsa&amp;utm_campaign=Badge_Grade)
+[![CodeFactor](https://www.codefactor.io/repository/github/rsagroup/pyrsa/badge)](https://www.codefactor.io/repository/github/rsagroup/pyrsa)
+[![codecov](https://codecov.io/gh/rsagroup/pyrsa/branch/master/graph/badge.svg)](https://codecov.io/gh/rsagroup/pyrsa)
+
+
+Conceived during the RSA retreat 2019 in Blue Mountains,
+this version replaces the 2013 version of pyrsa previously at ilogue/pyrsa.
+
+[Documentation](https://rsa3.readthedocs.io/)
+
+
+#### Getting Started
+
+The easiest way to install pyrsa is with pip:
+
+```sh
+pip install rsa3
+```
+
+here is a simple code sample:
+
+```python
+import numpy, pyrsa
+data = pyrsa.data.Dataset(numpy.random.rand(10, 5))
+rdms = pyrsa.rdm.calc_rdm(data)
+pyrsa.vis.show_rdm(rdms)
+```
+
