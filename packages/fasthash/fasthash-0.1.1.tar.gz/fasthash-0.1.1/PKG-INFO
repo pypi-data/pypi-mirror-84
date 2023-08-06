@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: fasthash
+Version: 0.1.1
+Summary: Fast calculation hash 256/512/1
+Home-page: https://github.com/cluckbird/pip-hashsha
+Author: cluckbird
+Author-email: admin@muzmn.cn
+License: MIT Licence
+Description: Fast calculation hash 256/512/1
+Keywords: pip,pathtool,timetool,magetool,mage
+Platform: any
