@@ -1,0 +1,140 @@
+# luaproject
+
+Use python package to manage lua&kong plugin, so that the plugin can be published to pypi server. A temporary solution for PYTHONER using lua&kong.
+
+## Install
+
+```shell
+pip install luaproject
+```
+
+## Installed Command Utils
+
+- luaproject
+
+**command usage**
+
+```shell
+C:\Workspace>luaproject
+Usage: luaproject [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  init  Init lua project.
+
+```
+
+## Example
+
+**example files**
+
+```
+.
+./example
+./example/src
+./example/src/.rockspec
+./example/src/lua
+./example/src/lua/handler.lua
+./example/src/lua/schema.lua
+./example/__init__.py
+./LICENSE
+./manage_example.py
+./MANIFEST.in
+./README.md
+./requirements.txt
+./setup.py
+```
+
+**content of .rockspec**
+
+```
+package = "example"
+version = "0.1.0-1"
+source = {
+    url = "example-0.1.0-1.zip"
+}
+description = {
+    summary = "lua plugin example",
+}
+dependencies = {
+    "lua >= 5.1, < 5.4",
+}
+build = {
+    type = "builtin",
+    modules = {
+        ["kong.plugins.example.handler"] = "lua/handler.lua",
+        ["kong.plugins.example.schema"] = "lua/schema.lua",
+    }
+}
+```
+
+**content of example_manager.py**
+
+```python
+import os
+from luaproject import LuaProjectManager
+import example
+
+application_root = os.path.abspath(os.path.dirname(example.__file__))
+manager = LuaProjectManager(application_root).get_manager()
+
+if __name__ == "__main__":
+    manager()
+```
+
+**content of setup.py**
+
+```
+setup(
+    ...
+    entry_points={
+        "console_scripts": [
+            "manage-example = manage_example:manager",
+        ]
+    },
+)
+```
+
+**usage of manage-example**
+
+```shell
+Usage: manage-example [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  install  Create a lua package and then install it.
+  pack     Create a lua package.
+```
+
+## Releases
+
+### v0.3.3 2020/11/06
+
+- Remove luaproject.get_version in example/setup.py to fix install problem.
+
+### v0.3.2 2020/08/27
+
+- Add default .gitignore in lua project template.
+
+### v0.3.1 2020/08/27
+
+- Fix setup.py, add py_module parameter to fix luaproject not installed problem.
+- Fix template content replace problem.
+
+### v0.3.0 2020/08/26
+
+- Rename from kong-plugin-local-manager to luaproject.
+- manage-example.pack command add username parameter to create a rockspec file that can use in uploading to https://luarocks.org/.
+- Auto calc sdist version from .rockspec file.
+
+### v0.2.0 2020/07/31
+
+- Add kong-plugin-local-manager command tools.
+
+### v0.1.0 2020/07/30
+
+- First release.

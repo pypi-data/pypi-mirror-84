@@ -1,0 +1,3 @@
+[console_scripts]
+luaproject = luaproject.cli:main
+
