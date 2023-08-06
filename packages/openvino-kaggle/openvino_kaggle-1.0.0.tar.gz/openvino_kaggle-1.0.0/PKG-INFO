@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: openvino_kaggle
+Version: 1.0.0
+Summary: OpenVINO toolkit package for Kaggle Notebooks
+Home-page: UNKNOWN
+Author: Muhammad Ali
+Author-email: malirashid1994@gmail.com
+License: UNKNOWN
+Description: This package provides Intel's OpenVINO Toolkit installation and easy usage in the Kaggle Notebooks.The OpenVINO Toolkit allows edge AI application optimization and deployment on Kaggle using Kaggle Notebooks. It is also possible to choose to download all 5 or individual supported model dependencies directly in the notebook.
+        
+        Github Link: https://www.github.com/alihussainia/openvino-kaggle
+        
+        Linkedin Link: https://www.linkedin.com/in/alihussainia
+        
+Platform: UNKNOWN

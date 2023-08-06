@@ -1,0 +1,8 @@
+README.md
+setup.py
+openvino_kaggle/__init__.py
+openvino_kaggle.egg-info/PKG-INFO
+openvino_kaggle.egg-info/SOURCES.txt
+openvino_kaggle.egg-info/dependency_links.txt
+openvino_kaggle.egg-info/not-zip-safe
+openvino_kaggle.egg-info/top_level.txt
