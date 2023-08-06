@@ -1,0 +1,14 @@
+wallpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wallpy/__version__.py,sha256=6q8x6xD9-0EMjrcKl3pP9jwBgEKo-lNsT4WxYOlETh4,19
+wallpy/file_types.py,sha256=PNmePbo0of050escKbLSeyaNShebAWdgHqJpjMTLHaw,97
+wallpy/image_download.py,sha256=XlNt2qPu8A5QdrSMqI-3KZGga36tqheYqDiMaYhlccY,150
+wallpy/main.py,sha256=QouN5FIfT4KtDoI2x72DN8LYYO_-pCyO6oVyeHnA9Vg,1903
+wallpy/notification.py,sha256=weBfX-hHovDdKEt46YF-RntmkRoRAQQcIOvtrM8ZGns,517
+wallpy/url_query.py,sha256=iXNgcpvJbv9y-6zAsK77eyKtbMZV5bIbvUWp5lYUckU,1093
+wallpy/wallpaper.py,sha256=EoGPsT5XlP6EgFeCVdlNQYJhrTptZ7o2eM_ORxQRkp8,303
+wallpy-0.2.0.dist-info/LICENSE,sha256=emUFF5qykeSm9_QKiGo4AZLU-NG_dpHZOo7gy1B7yG0,1087
+wallpy-0.2.0.dist-info/METADATA,sha256=qP8RoXoKsxvEgiLoi_tSoo011IAktJZlKXuemLZc3S4,2361
+wallpy-0.2.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+wallpy-0.2.0.dist-info/entry_points.txt,sha256=LecNaJu_LCHet8N4kzmy7Kq_Pq9rX7E8ALe2kV54SCI,45
+wallpy-0.2.0.dist-info/top_level.txt,sha256=3bU8pux9Q2_ExwtdCVJ6F6_m0Yyckoo3mzPL1zVIKwk,7
+wallpy-0.2.0.dist-info/RECORD,,
