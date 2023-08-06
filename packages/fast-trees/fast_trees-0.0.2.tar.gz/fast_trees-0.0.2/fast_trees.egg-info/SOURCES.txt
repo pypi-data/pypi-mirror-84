@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+fast_trees/__init__.py
+fast_trees/_nbdev.py
+fast_trees/core.py
+fast_trees.egg-info/PKG-INFO
+fast_trees.egg-info/SOURCES.txt
+fast_trees.egg-info/dependency_links.txt
+fast_trees.egg-info/entry_points.txt
+fast_trees.egg-info/not-zip-safe
+fast_trees.egg-info/requires.txt
+fast_trees.egg-info/top_level.txt
