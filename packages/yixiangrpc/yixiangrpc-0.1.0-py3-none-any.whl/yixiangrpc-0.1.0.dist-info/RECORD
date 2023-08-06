@@ -1,0 +1,5 @@
+yixiangrpc/demo_pb2.py,sha256=_CTDT4WsbLevBUdFBf_dD4HQYtUBw4Fqyn8OVYGivDc,4826
+yixiangrpc/demo_pb2_grpc.py,sha256=okka9HxwIQ9guQ4EUgdlbzV6x1T8gngYNPybGcBXxp8,2407
+yixiangrpc-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+yixiangrpc-0.1.0.dist-info/METADATA,sha256=PBn75RrS8ICGthto25d5FtWJHb9TXLs0OpD--XTqr9Q,436
+yixiangrpc-0.1.0.dist-info/RECORD,,
