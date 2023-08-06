@@ -1,0 +1,6 @@
+stevedore
+django-waffle
+psutil
+django-crum
+Django
+newrelic
