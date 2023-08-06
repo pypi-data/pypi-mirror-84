@@ -1,0 +1,13 @@
+cmr/__init__.py,sha256=FyFFj2RxUuw9Ff4oSmrcvf1oJU4C17EQy54n0jo8aqw,40
+cmr/renderer.py,sha256=CtpIPYQ7AtCMIkUyWnmwAq4Nm_hOhznTuhXqqV9m4Do,9691
+cmr/tables.py,sha256=e3OWydSjbq6rOxdogjUp2PzOH012hWTICapLPPhIxXc,4455
+cmr/theme.py,sha256=7NceFGhyAZmsamULEFESS_DUE_mKJ99ws_040subICE,2379
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_renderer.py,sha256=W4TCJM2SpMRFSCA4KgKWaDxvEvpRqQ3h-wiupKq6GXs,6967
+tests/test_tables.py,sha256=zyovyQBmb6yYPC7Z_qQVPkrdQRWQcNpJUekM-Ae31SM,1012
+connect_markdown_renderer-1.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+connect_markdown_renderer-1.0.1.dist-info/METADATA,sha256=8nQegN_kGSp6mVIyuMsyeTfCYuNSerDH9zFcKapRS_o,2503
+connect_markdown_renderer-1.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+connect_markdown_renderer-1.0.1.dist-info/top_level.txt,sha256=sh5Jrhe6fwEMTnGdJoxmLBgpKWv-PmUBq7lzS7pAtQI,10
+connect_markdown_renderer-1.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+connect_markdown_renderer-1.0.1.dist-info/RECORD,,
