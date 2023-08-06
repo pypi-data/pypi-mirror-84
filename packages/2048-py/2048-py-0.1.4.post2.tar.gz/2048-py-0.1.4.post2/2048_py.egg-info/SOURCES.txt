@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+2048_pkg/__init__.py
+2048_py.egg-info/PKG-INFO
+2048_py.egg-info/SOURCES.txt
+2048_py.egg-info/dependency_links.txt
+2048_py.egg-info/requires.txt
+2048_py.egg-info/top_level.txt
