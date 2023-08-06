@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+theabbie/__init__.py
+theabbie/__main__.py
+theabbie.egg-info/PKG-INFO
+theabbie.egg-info/SOURCES.txt
+theabbie.egg-info/dependency_links.txt
+theabbie.egg-info/entry_points.txt
+theabbie.egg-info/requires.txt
+theabbie.egg-info/top_level.txt
