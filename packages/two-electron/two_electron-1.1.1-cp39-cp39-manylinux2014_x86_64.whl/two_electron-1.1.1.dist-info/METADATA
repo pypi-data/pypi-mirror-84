@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: two-electron
+Version: 1.1.1
+Summary: UNKNOWN
+Home-page: https://github.com/vahtras/two_electron
+Author: Olav Vahtras
+Author-email: olav.vahtras@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: blocked-matrix-utils
+Requires-Dist: fortran-binary
+
+UNKNOWN
+
+
