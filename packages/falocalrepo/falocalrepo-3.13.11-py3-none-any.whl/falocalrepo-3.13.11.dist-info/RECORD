@@ -1,0 +1,11 @@
+falocalrepo/__init__.py,sha256=OhLZPlA9-k25t-Kc6v-qH4_-s2CrTLWCfXfCyfIUF40,66
+falocalrepo/__main__.py,sha256=T2XZLTDm3tygbxIeT2rSGgOF1lfGrScKJbNbdUJUXdc,1190
+falocalrepo/__version__.py,sha256=c9gfrNuXD5-mivy36f-5XLwi_twRgegD4u1NnNsIgPY,24
+falocalrepo/commands.py,sha256=lHpNVLB4UR5Ro5qM4ddOMaxwuvvj9g7RFGVpAF7TcrA,8120
+falocalrepo/console.py,sha256=idKpqwaqmWNNX3OHxQx1J5Ij5YD4NeFh5kNMDCA4WbI,14309
+falocalrepo/download.py,sha256=1KqbMHstlEUk7qkYGsLnIoAZgluVKGwbxmLPHwLXSgM,9240
+falocalrepo-3.13.11.dist-info/entry_points.txt,sha256=s78mwg7rRm6t-Lz6-rDU_pTA-IxGG3Azj2RAs6RyC1c,57
+falocalrepo-3.13.11.dist-info/LICENSE,sha256=c2ntVF08uHnnUPiC857fMgIXYIsHHsm_OkGwqmYNV0o,13866
+falocalrepo-3.13.11.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+falocalrepo-3.13.11.dist-info/METADATA,sha256=yfRCMohKOoc-J2FdqnbtWPZgg4IgfZz00I04Q02tTRw,21592
+falocalrepo-3.13.11.dist-info/RECORD,,
