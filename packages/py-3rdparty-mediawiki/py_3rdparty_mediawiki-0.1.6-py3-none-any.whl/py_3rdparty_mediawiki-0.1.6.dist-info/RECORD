@@ -1,0 +1,13 @@
+wikibot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wikibot/crypt.py,sha256=inTxsgk0S1Szg7LWtL0eDSOhGlwZ_ywAXvHSdZIidPw,2885
+wikibot/mwTable.py,sha256=SoKEMegqye8e3dAb1IMDbgwcmVOZJqP7SY7-SxKPOHs,2571
+wikibot/smw.py,sha256=TSOnZe-WMp4_ciWZAbVbd6SUXgrE2W6NNsVfNCwFm_Q,10791
+wikibot/wikibot.py,sha256=TCJEQcshkkXXmOcGIo_M8bxjTruRNqiBiog3AQhOHm0,4139
+wikibot/wikiclient.py,sha256=IuY2WOWmeuJCtknluu8bPWKtK7Bf0Y0TZvzQay0Vlu8,1872
+wikibot/wikipush.py,sha256=0FQ5gdx2hXSb7MwXI6IkGvphX4qrikR3M5-nmv6OBXw,6664
+wikibot/wikiuser.py,sha256=X1f-FUHFKSf-t09A_opP-FpEY9qwWp_yMAVFoSUFKms,7659
+py_3rdparty_mediawiki-0.1.6.dist-info/LICENSE,sha256=avT2qjMUTorFWjDVeaNC5vpXDbTJ-NeDWtSSVS3l6Po,11383
+py_3rdparty_mediawiki-0.1.6.dist-info/METADATA,sha256=w9rV8ITthueKCKlvzAyo6QsHXfRIT35cS-AAbDtrTNA,1842
+py_3rdparty_mediawiki-0.1.6.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+py_3rdparty_mediawiki-0.1.6.dist-info/top_level.txt,sha256=Yhp7HogJ3THYP9GVIum4hVlfXFzYToKMR01SSYjMI7Q,8
+py_3rdparty_mediawiki-0.1.6.dist-info/RECORD,,
