@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fastnn
+Version: 0.0.1
+Summary: A python library and framework for fast neural network computations.
+Author: aychang95
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: jupyter (>=1.0.0,<2.0.0)
+Requires-Dist: onnxruntime (>=1.4.0,<2.0.0)
+Requires-Dist: onnxruntime-tools (>=1.4.2,<2.0.0)
+Requires-Dist: torch (>=1.4.0,<2.0.0)
+Requires-Dist: transformers (>=3.0.0,<4.0.0)
