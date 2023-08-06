@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: sphinxcontrib-requirements
+Version: 0.3.dev20201103
+Summary: Sphinx "requirements" extension
+Home-page: https://github.com/sphinx-contrib/requirements
+Author: James Booker
+Author-email: james.booker@gmail.com
+License: BSD
+Download-URL: http://pypi.python.org/pypi/sphinxcontrib-requirements
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Documentation
+Classifier: Topic :: Utilities
+Requires-Dist: Sphinx (>=3)
+
+
+This package contains the requirements Sphinx extension.
+
+Allows declaring requirement specs wherever in the documentation (for instance,
+in docstrings of UnitTest.test_* methods) and displaying them as a single
+list.
+
+
