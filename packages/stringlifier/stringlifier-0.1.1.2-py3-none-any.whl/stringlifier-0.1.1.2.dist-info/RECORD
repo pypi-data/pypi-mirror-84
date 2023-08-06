@@ -1,0 +1,14 @@
+stringlifier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stringlifier/api.py,sha256=bMzNmLsPHNyY2WYAm-RfJ7376qZ_5o4-w1VOx20EkFM,6798
+stringlifier/data/enhanced-c.bestType,sha256=mAqE7QTddkOkAHtHXIZ8Nf5QNCiph004Qcy9ZjA_dGc,2111205
+stringlifier/data/enhanced-c.conf,sha256=--iTYmb94lMRMAhjDienDFz0f6j100BYnRPwa3_Y8zU,71
+stringlifier/data/enhanced-c.encodings,sha256=iWbEpbwnl4XIrunnLhBJJyJM5257S7MXxoPYuaoZWr4,719
+stringlifier/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stringlifier/modules/stringc.py,sha256=SKKCUELpBp1iijZm0FT0r-NWKTYwllLhIT9dquhODY4,14075
+stringlifier/modules/stringc2.py,sha256=PVOPBat-XpOg9SuwkgWRboIIZMKD1kEtF7mr8udtqZQ,13331
+stringlifier/modules/training.py,sha256=PMXGAZh4hdhJ9OVuTfyLyHADY-ciQoPcfqYn4hilrbM,4974
+stringlifier-0.1.1.2.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+stringlifier-0.1.1.2.dist-info/METADATA,sha256=vydBpHgAxP5g0cKvxOgJ9x_YTkinS-BHPQKs4W_ErCY,4596
+stringlifier-0.1.1.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+stringlifier-0.1.1.2.dist-info/top_level.txt,sha256=yUBmza22rVS_2VwPf70hXmQbOmw8LUWEEvhQ9930gHg,13
+stringlifier-0.1.1.2.dist-info/RECORD,,
