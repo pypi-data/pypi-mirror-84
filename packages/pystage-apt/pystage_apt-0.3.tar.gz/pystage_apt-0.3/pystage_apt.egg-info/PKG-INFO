@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: pystage-apt
+Version: 0.3
+Summary: A python library for Thorlabs' APT single-channel controllers
+Home-page: https://github.com/kzhao1228/pystage_apt
+Author: Kaixiang Zhao
+Author-email: kz1619@ic.ac.uk
+License: MIT
+Description: pystage-apt is a library to communicate with various Thorlabs' APT single-channel controllers and control different types of Thorlabs' actuator motors. It contains a large collection of motor control messages obtained from Thorlabs APT Controllers Host-Controller Communications Protocol. This document describes the low-level communications protocol and commands used between the host PC and controller units within the APT family. Those messages are included in a series of python files and are stored in a folder named ctrl_msg. 
+Platform: Linux
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Hardware
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3
