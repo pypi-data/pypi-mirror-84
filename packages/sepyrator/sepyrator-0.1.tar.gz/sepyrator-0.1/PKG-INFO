@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: sepyrator
+Version: 0.1
+Summary: Simple module for print matrices of values
+Home-page: https://github.com/Leer0r/sepyrator
+Author: Leer0r
+Author-email: avedd72@gmail.com
+License: MIT
+Download-URL: https://github.com/Leer0r/sepyrator/archive/v_0_1.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
