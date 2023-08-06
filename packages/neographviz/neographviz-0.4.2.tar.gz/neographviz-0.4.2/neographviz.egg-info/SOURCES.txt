@@ -1,0 +1,23 @@
+.gitignore
+Dockerfile
+LICENSE
+README.md
+docker-compose.yml
+requirements.txt
+setup.py
+.github/workflows/codeql-analysis.yml
+.github/workflows/pythonpublish.yml
+neographviz/__init__.py
+neographviz/app.py
+neographviz/utils.py
+neographviz/vis.py
+neographviz.egg-info/PKG-INFO
+neographviz.egg-info/SOURCES.txt
+neographviz.egg-info/dependency_links.txt
+neographviz.egg-info/requires.txt
+neographviz.egg-info/top_level.txt
+neographviz/data/names.json
+neographviz/templates/index.html
+neographviz/templates/typeahead.html
+neographviz/templates/vis.html
+notebooks/Hello world.ipynb

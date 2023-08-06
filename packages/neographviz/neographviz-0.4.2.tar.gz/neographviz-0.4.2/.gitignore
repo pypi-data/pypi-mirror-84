@@ -1,0 +1,14 @@
+.pypirc
+build/
+dist/
+**/__pycache__/*
+**/figure/
+neographviz.egg-info/
+.vscode/
+**/interaction.html
+app.py
+*.zip
+env/
+utils.py
+**/.ipynb_checkpoints/
+notebooks/secrets.py
