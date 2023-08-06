@@ -1,0 +1,3 @@
+[console_scripts]
+crlite_status = crlite_status.status:main
+

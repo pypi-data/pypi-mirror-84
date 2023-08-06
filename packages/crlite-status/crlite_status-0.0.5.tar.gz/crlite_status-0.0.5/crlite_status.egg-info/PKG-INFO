@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: crlite-status
+Version: 0.0.5
+Summary: Query CRLite status
+Home-page: http://github.com/jcjones/crlite_status
+Author: J.C. Jones
+Author-email: jc@insufficient.coffee
+License: Mozilla Public License 2.0 (MPL 2.0)
+Description: Use this tool get information about recent CRLite runs
+Keywords: bloom filter cascade multi level mlbf crlite
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
