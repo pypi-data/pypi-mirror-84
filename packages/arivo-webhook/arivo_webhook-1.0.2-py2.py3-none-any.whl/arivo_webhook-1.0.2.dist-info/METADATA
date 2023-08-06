@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: arivo-webhook
+Version: 1.0.2
+Summary: Python package for receiving webhooks from ARIVO
+Home-page: https://gitlab.com/arivo-public/webhook.git
+Author: ARIVO
+Author-email: support@arivo.co
+License: MIT
+Keywords: arivo webhook api
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown; charset=UTF-8
+
+# ARIVO Webhooks
+
+
+
