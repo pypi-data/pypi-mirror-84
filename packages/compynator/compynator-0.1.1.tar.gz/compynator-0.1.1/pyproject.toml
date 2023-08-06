@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "compynator"
+version = "0.1.1"
+description = "A pure Python implementation of parser combinators with asymptotically best performance and support for context-sensitive or ambiguous grammars."
+license = "Apache-2.0"
+readme = "README.rst"
+authors = ["google", "Nam Nguyen namnguyen@google.com"]
+homepage = "https://github.com/TheTerminalTemplar/compynator"
+repository = "https://github.com/TheTerminalTemplar/compynator"
+keywords = ["parser", "functional", "parser combinator", "python"]
+documentation = "https://compynator.readthedocs.io"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
