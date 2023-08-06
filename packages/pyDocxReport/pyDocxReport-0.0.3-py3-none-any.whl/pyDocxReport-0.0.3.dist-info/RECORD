@@ -1,0 +1,11 @@
+pyDocxReport/__init__.py,sha256=8mo3Uc30iHmwBr4Z7MWv27a8sKf_gu-WAXwQJJS2eqA,99
+pyDocxReport/databridge.py,sha256=s5Po8IBmiXMuLqU3tIfYJV-mq4Ky5zXMkAdtfQHaG4c,4278
+pyDocxReport/docx_template.py,sha256=CC0c3JBoVzzwlkEWSYUCzY7YqNkcFvVBhzB4AmTB-ow,7276
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/test_databridge.py,sha256=CSZttMpiXsfD0e8K4BH0Kt8rL_ItepqqfoBviScnoBc,680
+pyDocxReport-0.0.3.dist-info/LICENSE,sha256=KDzeL3-Bw8ppttbdoDIQIwakQYj6V-DoNTwER4iqIQs,1083
+pyDocxReport-0.0.3.dist-info/METADATA,sha256=DEpcX6a1iPC4a1GmRynjX0P34WxoDZ-ZmyFfR5RJo9M,2164
+pyDocxReport-0.0.3.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+pyDocxReport-0.0.3.dist-info/top_level.txt,sha256=uNoYmLpHZJFDcOki68-JnsYkSfibLplUGRhvZ28eae8,19
+pyDocxReport-0.0.3.dist-info/RECORD,,
