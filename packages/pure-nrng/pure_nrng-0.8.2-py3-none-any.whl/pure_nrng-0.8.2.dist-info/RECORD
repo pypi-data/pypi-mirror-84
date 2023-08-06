@@ -1,0 +1,9 @@
+pure_nrng_package/__init__.py,sha256=hMfix4lk6ZwpDLvpr8UXqlPaTs09OKcmkXCU3EtJ4_c,798
+pure_nrng_package/pure_nrng_module.py,sha256=viY3OTDwg-_FtuS-U8lCUYqve_3o8w8GDshdUCv5xL8,10154
+rng_util_package/__init__.py,sha256=NxXOe30drmAvaMbpTInjMMpD9Oy4fsCNdoVcBxMiwG8,811
+rng_util_package/rng_util_module.py,sha256=ZgrdtaEOi0zbg6idJ3uthxCBh8TIn3_ubJBlC8DjWCY,6694
+pure_nrng-0.8.2.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+pure_nrng-0.8.2.dist-info/METADATA,sha256=Um_RDcp7ZFmny6jSZtXI_PATcaQx1LMKrZLkF7tmE14,1945
+pure_nrng-0.8.2.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+pure_nrng-0.8.2.dist-info/top_level.txt,sha256=J96OcFVxIiqrmuPEoVwXEOQmGLOpgp-wJE8V8BUxm-Q,35
+pure_nrng-0.8.2.dist-info/RECORD,,
