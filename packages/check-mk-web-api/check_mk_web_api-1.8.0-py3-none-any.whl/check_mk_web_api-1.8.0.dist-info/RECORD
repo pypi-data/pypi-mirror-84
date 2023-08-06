@@ -1,0 +1,8 @@
+check_mk_web_api/__init__.py,sha256=pxkwk7JmELDInKldt8GT7J13apigDbYIypfryeLlZFo,25642
+check_mk_web_api/exception.py,sha256=mjNtGI7yomu8Xknf6gyKQPfwovLJuOA7hn2aybdeS8w,643
+check_mk_web_api/test_WebApi.py,sha256=ABlIH02SDbZtN0-CqqLsx_Su5OiC5llhETIx4UuAGSA,14499
+check_mk_web_api-1.8.0.dist-info/LICENSE,sha256=gFwnvpb_r3_MDUuinsNPE_4gb5qjy268wP3yE_xRkd0,1060
+check_mk_web_api-1.8.0.dist-info/METADATA,sha256=OIWOCcxAMDOS5PEfcbkGHdoRNqIf01EmGs-gJlhvxEY,442
+check_mk_web_api-1.8.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+check_mk_web_api-1.8.0.dist-info/top_level.txt,sha256=ViopCLngFuIAXKhtnyR_3FOogHPN3pDwqdo20_uyyos,17
+check_mk_web_api-1.8.0.dist-info/RECORD,,
