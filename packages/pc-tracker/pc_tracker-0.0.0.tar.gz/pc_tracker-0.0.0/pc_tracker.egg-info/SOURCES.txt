@@ -1,0 +1,13 @@
+README.md
+setup.py
+pc_tracker/__init__.py
+pc_tracker/client.py
+pc_tracker/logsys.py
+pc_tracker.egg-info/PKG-INFO
+pc_tracker.egg-info/SOURCES.txt
+pc_tracker.egg-info/dependency_links.txt
+pc_tracker.egg-info/not-zip-safe
+pc_tracker.egg-info/requires.txt
+pc_tracker.egg-info/top_level.txt
+scripts/__init__.py
+scripts/manage.py
