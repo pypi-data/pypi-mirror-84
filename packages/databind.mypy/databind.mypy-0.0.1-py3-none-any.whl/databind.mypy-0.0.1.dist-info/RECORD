@@ -1,0 +1,9 @@
+databind/__init__.py,sha256=9T7FxraWd1HjbPnTNMD6kx2v1tOW1aIT1xZMMmPVO9Q,66
+databind/mypy/__init__.py,sha256=qKWnYtrUnNwQlLn86HdgR6GO1b6MqW1cYR3xdnYJRvM,174
+databind/mypy/_mypy_dataclasses.py,sha256=2ANro9q8KXJmX_Go9_ayo6r9nWIDGqEjPvHN5KDZYpk,13364
+databind/mypy/_plugin.py,sha256=JQop8oB7pmgydtZTPvEsgbT21mph6NnJtT1DX0AG20c,390
+databind.mypy-0.0.1.dist-info/METADATA,sha256=5fbZuxDMjb0vlcWuRcDmyrCTQ_rIVayQJN7usdr5nso,840
+databind.mypy-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+databind.mypy-0.0.1.dist-info/top_level.txt,sha256=WpXq4u4e1sM5ssD0YVRw6NDZ6a0dPTSSyVMVHOr5CZ4,9
+databind.mypy-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+databind.mypy-0.0.1.dist-info/RECORD,,
