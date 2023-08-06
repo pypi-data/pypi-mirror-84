@@ -1,0 +1,8 @@
+README.md
+setup.py
+mypythonpiptest/__init__.py
+mypythonpiptest.egg-info/PKG-INFO
+mypythonpiptest.egg-info/SOURCES.txt
+mypythonpiptest.egg-info/dependency_links.txt
+mypythonpiptest.egg-info/not-zip-safe
+mypythonpiptest.egg-info/top_level.txt
