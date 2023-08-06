@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: runs
+Version: 0.3.1
+Summary: Runs a block of text as a subrprocess
+Home-page: https://github.com/rec/runs
+Author: Tom Ritchford
+Author-email: tom@swirly.com
+License: MIT
+Keywords: testing,modules
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Dist: xmod
+
+runs: 🏃 Run multiple commands nearly 🏃
+----------------------------------------------
+
+EXAMPLE
+
+.. code-block:: python
+
+    import runs
+
+    runs("""
+        ls -cail
+        echo "data"
+        """)
+
+
