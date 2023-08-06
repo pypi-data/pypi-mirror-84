@@ -1,0 +1,9 @@
+Metadata-Version: 1.2
+Name: efficientunet-pytorch
+Version: 0.0.6
+Summary: A PyTorch 1.0 Implementation of Unet with EfficientNet as encoder
+Home-page: https://github.com/zhoudaxia233/EfficientUnet-PyTorch
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
