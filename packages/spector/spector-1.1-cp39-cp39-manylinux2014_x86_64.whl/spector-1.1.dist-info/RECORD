@@ -1,0 +1,9 @@
+spector/vector.cpython-39-x86_64-linux-gnu.so,sha256=cDip0mdzqsgSQhWaclXD80qfV-V7pNhvxdb085oHX40,3690160
+spector/matrix.py,sha256=PKwjshcVkIk2aIHOhlLF_tWfICemct-fKxbWdslLmi8,4467
+spector/__init__.py,sha256=etCBMooRbC0KMvGH-R0NODUX6YVI3GaPLkhD5gBOnNo,109
+spector/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spector-1.1.dist-info/RECORD,,
+spector-1.1.dist-info/METADATA,sha256=nQmR0DRbRIBMU7BniBK_y2CTgB0UDsLXWncHwoJvmag,4704
+spector-1.1.dist-info/top_level.txt,sha256=We-Cx-in-0_eOnpQqnrqwdKOhnOBw3Pz2fHi0MQHi0U,8
+spector-1.1.dist-info/WHEEL,sha256=sPIohpZM7vu5nTTYsKtZn4G53Hmt-aygu-hjwmd96II,111
+spector-1.1.dist-info/LICENSE.txt,sha256=ow9jUZ-8WjZzsixTV3dEqc042sT10-pJaHwEEZ2rd1Q,576
