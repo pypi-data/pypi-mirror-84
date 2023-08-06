@@ -1,0 +1,5 @@
+setup_nbt.py
+amulet_nbt.egg-info/PKG-INFO
+amulet_nbt.egg-info/SOURCES.txt
+amulet_nbt.egg-info/dependency_links.txt
+amulet_nbt.egg-info/top_level.txt
