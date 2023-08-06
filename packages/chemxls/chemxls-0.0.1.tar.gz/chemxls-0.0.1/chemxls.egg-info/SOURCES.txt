@@ -1,0 +1,7 @@
+README.md
+setup.py
+chemxls.egg-info/PKG-INFO
+chemxls.egg-info/SOURCES.txt
+chemxls.egg-info/dependency_links.txt
+chemxls.egg-info/requires.txt
+chemxls.egg-info/top_level.txt
