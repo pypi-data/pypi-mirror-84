@@ -1,0 +1,11 @@
+README.md
+setup.py
+dojo_pong/__init__.py
+dojo_pong/ball.py
+dojo_pong/main.py
+dojo_pong/paddle.py
+dojo_pong/scoreboard.py
+dojo_pong_pkg_ferromauro.egg-info/PKG-INFO
+dojo_pong_pkg_ferromauro.egg-info/SOURCES.txt
+dojo_pong_pkg_ferromauro.egg-info/dependency_links.txt
+dojo_pong_pkg_ferromauro.egg-info/top_level.txt
