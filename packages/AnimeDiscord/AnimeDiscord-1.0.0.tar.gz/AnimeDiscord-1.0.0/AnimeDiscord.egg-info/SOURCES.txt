@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+AnimeBot/__init__.py
+AnimeDiscord.egg-info/PKG-INFO
+AnimeDiscord.egg-info/SOURCES.txt
+AnimeDiscord.egg-info/dependency_links.txt
+AnimeDiscord.egg-info/requires.txt
+AnimeDiscord.egg-info/top_level.txt
