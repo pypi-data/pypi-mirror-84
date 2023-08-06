@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pytest-aiohttp-client
+Version: 0.0.1
+Summary: Pytest `client` fixture for the Aiohttp
+Home-page: https://github.com/sivakov512/pytest-aiohttp-client
+Author: Nikita Sivakov
+Author-email: sivakov512@gmail.com
+License: MIT
+Keywords: pytest,fixture,aiohttp,client,api
+Platform: UNKNOWN
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: Pytest
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pytest (>=6)
+Requires-Dist: aiohttp (>=3)
+
+# pytest-aiohttp-client
+
+
