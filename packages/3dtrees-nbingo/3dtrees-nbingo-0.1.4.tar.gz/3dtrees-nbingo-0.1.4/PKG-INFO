@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: 3dtrees-nbingo
+Version: 0.1.4
+Summary: A package for creating 3D phylogenetic trees with two axes of variation.
+Home-page: https://github.com/nbingo/3dtrees
+Author: Noam Ringach, Justus Kebschull
+Author-email: nomir@cs.stanford.edu
+License: UNKNOWN
+Description: # 3DPhyloTrees
+        3D Phylogenetic Trees
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
