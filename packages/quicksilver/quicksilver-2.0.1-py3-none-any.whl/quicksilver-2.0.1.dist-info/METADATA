@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: quicksilver
+Version: 2.0.1
+Summary: A small example package
+Home-page: https://github.com/pypa/quicksilver
+Author: Example Author
+Author-email: author@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Quicksilver
+
+![build](https://github.com/QuicksilverMachine/quicksilver/workflows/quicksilver/badge.svg)
+
+Simple package.
+
+
