@@ -1,0 +1,14 @@
+setup.py
+mangamon/__init__.py
+mangamon/command_line.py
+mangamon/constants.py
+mangamon/download.py
+mangamon/manga.py
+mangamon/post_processor.py
+mangamon/util.py
+mangamon.egg-info/PKG-INFO
+mangamon.egg-info/SOURCES.txt
+mangamon.egg-info/dependency_links.txt
+mangamon.egg-info/entry_points.txt
+mangamon.egg-info/requires.txt
+mangamon.egg-info/top_level.txt
