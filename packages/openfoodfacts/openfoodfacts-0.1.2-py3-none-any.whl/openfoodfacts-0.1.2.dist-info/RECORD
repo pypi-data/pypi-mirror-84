@@ -1,0 +1,12 @@
+openfoodfacts/__init__.py,sha256=-N1xwB2PtQ4vlOe7tr_PoM56DlF4djfA337StC8gEYo,2430
+openfoodfacts/autosuggest.py,sha256=iVRMayed3HeYazxaTnxvYLfFNW8VysuB15DNATyUeOU,270
+openfoodfacts/facets.py,sha256=4UOfkhfqOCly3IQsc7BFyOQEouj_NSr5QwM2GGkfo0E,360
+openfoodfacts/openbeautyfacts.py,sha256=NtEifigBuBq9FYxUt6bJL11luqAotpLCZy3LrMkmMXg,2135
+openfoodfacts/openpetfoodfacts.py,sha256=8juNCdLh-oVT6xEgbnj7dZ2WRI7hzv3DHw79Jjfpfwo,2130
+openfoodfacts/products.py,sha256=5lGXWSuFgine2EsKelYXFhuOM6KbprM5fdnTrU3Xryg,3362
+openfoodfacts/utils.py,sha256=6o3FzzwYCZW2k_R6tXITl5qEM1dfh3AhR5Rc-N0uW84,4467
+openfoodfacts-0.1.2.dist-info/LICENSE,sha256=-1gpZps828D72j3fnKNhcVC_fJbWZ81TvyOf-XI3awk,1182
+openfoodfacts-0.1.2.dist-info/METADATA,sha256=WcPl3rxW-EclE4OJBR2bIZbCx6sDJiFeuAWwh9pfomg,5146
+openfoodfacts-0.1.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+openfoodfacts-0.1.2.dist-info/top_level.txt,sha256=0qGHbxrzFAquFGFaJMzNIdtiaMFStAsOWp3acFz6Nco,14
+openfoodfacts-0.1.2.dist-info/RECORD,,
