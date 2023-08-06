@@ -1,0 +1,8 @@
+README.rst
+setup.py
+feishu_sdk/__init__.py
+feishu_sdk_py.egg-info/PKG-INFO
+feishu_sdk_py.egg-info/SOURCES.txt
+feishu_sdk_py.egg-info/dependency_links.txt
+feishu_sdk_py.egg-info/requires.txt
+feishu_sdk_py.egg-info/top_level.txt
