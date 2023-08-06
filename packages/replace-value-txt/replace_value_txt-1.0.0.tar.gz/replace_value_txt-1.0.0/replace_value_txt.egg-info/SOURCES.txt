@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+replace_value_txt/__init__.py
+replace_value_txt/replace_value_txt.py
+replace_value_txt.egg-info/PKG-INFO
+replace_value_txt.egg-info/SOURCES.txt
+replace_value_txt.egg-info/dependency_links.txt
+replace_value_txt.egg-info/top_level.txt
