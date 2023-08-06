@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: sedkit
+Version: 1.0.5
+Summary: Spectral energy distribution construction and analysis tools
+Home-page: https://github.com/hover2pi/sedkit
+Author: Joe Filippazzo
+Author-email: jfilippazzo@stsci.edu
+License: MIT
+Description: UNKNOWN
+Keywords: astrophysics
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
