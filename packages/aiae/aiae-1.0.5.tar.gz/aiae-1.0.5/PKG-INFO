@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: aiae
+Version: 1.0.5
+Summary: 
+Author: mjaquier
+Author-email: mjaquier@me.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: aihelper (>=0.2.10,<0.3.0)
+Requires-Dist: matplotlib (>=3.2.2,<4.0.0)
+Requires-Dist: oyaml (>=0.9,<0.10)
+Requires-Dist: pandas (>=1.0.4,<2.0.0)
+Requires-Dist: seaborn (>=0.11.0,<0.12.0)
+Requires-Dist: xlsxwriter (>=1.2.9,<2.0.0)
