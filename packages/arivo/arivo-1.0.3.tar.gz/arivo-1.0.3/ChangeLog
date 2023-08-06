@@ -1,0 +1,23 @@
+CHANGES
+=======
+
+v1.0.3
+------
+
+* fixes in test setup, repo cleanup and identical layout to the other packages, added htmlcov artifacts
+
+v1.0.2
+------
+
+* change api\_key to api\_token
+
+v1.0.1
+------
+
+* cleanup repository
+
+v1.0.0
+------
+
+* added webhook secret [skip ci]
+* initial commit

@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: arivo
+Version: 1.0.3
+Summary: Base python package for the ARIVO Python SDK
+Home-page: https://gitlab.com/arivo-public/arivo-python.git
+Author: ARIVO
+Author-email: support@arivo.co
+License: MIT
+Description: # ARIVO Python SDK
+        
+        
+Keywords: arivo webhook api
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown; charset=UTF-8
+Provides-Extra: all
+Provides-Extra: test
