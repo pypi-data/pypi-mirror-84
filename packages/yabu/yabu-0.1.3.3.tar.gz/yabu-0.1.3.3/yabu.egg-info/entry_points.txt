@@ -1,0 +1,3 @@
+[console_scripts]
+yabu = yabu.__main__:main
+
