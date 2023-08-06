@@ -1,0 +1,7 @@
+README.md
+setup.py
+example_pkg/__init__.py
+list_grouper_juanbeta.egg-info/PKG-INFO
+list_grouper_juanbeta.egg-info/SOURCES.txt
+list_grouper_juanbeta.egg-info/dependency_links.txt
+list_grouper_juanbeta.egg-info/top_level.txt
