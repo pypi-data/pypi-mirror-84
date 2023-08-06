@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: thepaster
+Version: 3.0.2
+Summary: Client interface for https://dpaste.de/ pastebin
+Home-page: https://github.com/adder46/dpaster
+Author: adder46
+Author-email: dedmauz69@gmail.com
