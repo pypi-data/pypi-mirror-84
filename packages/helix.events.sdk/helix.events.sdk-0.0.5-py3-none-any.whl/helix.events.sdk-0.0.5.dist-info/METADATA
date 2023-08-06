@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: helix.events.sdk
+Version: 0.0.5
+Summary: Event SDK for creating Events in the helix architecture
+Home-page: https://github.com/icanbwell/helix.events.sdk
+Author: Michael Vidal
+Author-email: michael.vidal@icanbwell.com
+License: Apache 2.0
+Platform: UNKNOWN
+Requires-Dist: cloudevents (==1.2.0)
+Requires-Dist: fhir.resources (==5.1.1)
+
+UNKNOWN
+
+
