@@ -1,0 +1,5 @@
+setuptools
+PyYAML
+arrow
+tabulate
+semver>=2.7
