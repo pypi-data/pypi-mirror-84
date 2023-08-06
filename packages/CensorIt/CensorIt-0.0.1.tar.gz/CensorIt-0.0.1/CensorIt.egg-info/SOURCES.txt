@@ -1,0 +1,5 @@
+setup.py
+CensorIt.egg-info/PKG-INFO
+CensorIt.egg-info/SOURCES.txt
+CensorIt.egg-info/dependency_links.txt
+CensorIt.egg-info/top_level.txt

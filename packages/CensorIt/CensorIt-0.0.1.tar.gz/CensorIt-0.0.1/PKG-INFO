@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: CensorIt
+Version: 0.0.1
+Summary: A Python Curse Word Censoring Package
+Home-page: https://github.com/jack-the-hack/CensorIt
+Author: Donnie Jack Baldyga
+Author-email: jackedak@gmail.com
+License: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
