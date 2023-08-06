@@ -1,0 +1,12 @@
+
+[dev]
+wheel
+mkdocs
+mike
+twine
+
+[test]
+flake8
+coverage
+coveralls
+pytest
