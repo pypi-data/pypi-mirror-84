@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: django-rest-magic
+Version: 0.1.6
+Summary: Increased functionality across permissions, serializers, viewsets, and more.
+Home-page: https://github.com/dstarner/drf-magic
+Author: Dan Starner
+License: BSD 3-Clause
+Description: # Django REST Framework Magic
+        
+        ![Python Testing](https://github.com/dstarner/drf-magic/workflows/Python%20Testing/badge.svg)
+        
+        Django REST Framework Magic (DRF Magic) is a Django application that builds off our all of my
+        personal best practices of boiler-plates of working with a RESTful Django application. It makes a
+        fair amount of subjective coding decisions, but I hope that others see the benefit and
+        ease-of-development that they provide.
+        
+        Read the Documentation: <https://drf-magic.readthedocs.io/en/latest/>
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
