@@ -1,0 +1,8 @@
+README.md
+setup.py
+jaypwdchkr/__init__.py
+jaypwdchkr/pwdchkr.py
+jaypwdchkr.egg-info/PKG-INFO
+jaypwdchkr.egg-info/SOURCES.txt
+jaypwdchkr.egg-info/dependency_links.txt
+jaypwdchkr.egg-info/top_level.txt
