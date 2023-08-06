@@ -1,0 +1,4 @@
+include LICENSE
+include README.md
+recursive-include mdeditor/static *
+recursive-include mdeditor/templates *

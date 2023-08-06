@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_mdeditor_widget.egg-info/PKG-INFO
+django_mdeditor_widget.egg-info/SOURCES.txt
+django_mdeditor_widget.egg-info/dependency_links.txt
+django_mdeditor_widget.egg-info/top_level.txt
+mdeditor/__init__.py
+mdeditor/widgets.py
+mdeditor/static/mdeditor/css/mdeditor.css
+mdeditor/static/mdeditor/js/emoji-picker.js
+mdeditor/static/mdeditor/js/emoji.js
+mdeditor/static/mdeditor/js/mdeditor.js
+mdeditor/templates/mdeditor/editor.html
+mdeditor/templates/mdeditor/toolbar.html
