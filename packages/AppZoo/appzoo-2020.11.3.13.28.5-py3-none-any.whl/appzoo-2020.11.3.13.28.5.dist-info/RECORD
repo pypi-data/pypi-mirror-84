@@ -1,0 +1,14 @@
+apps/__init__.py,sha256=WLeD8sQZ5WvNhjzhx30DkgBEucveJWVGg_JLCh2Wla8,259
+apps/demo.py,sha256=tbXGEiPrHQIyi31dnYEESyEBw_rOYfAIJr6vWNmR8f4,1488
+apps/display_data.py,sha256=HMvsVX3qwDItEBnOz_obu6HO3KEoksMIjyYJt0KRgKU,554
+appzoo/__init__.py,sha256=6CmwDk1OqshIQ640JCwySyBZECDQDAdCbxurC0LrLPs,259
+appzoo/apps.py,sha256=9MbKVxHSdHoRQ6Mh95oCZQ_63rdvxOymcFsED-KWp_8,321
+appzoo/ocr.py,sha256=AHbWAnVsYX36a6-Ln2fRTj4IPNBFOGGu6b5kekzkVFI,1601
+appzoo/utils.py,sha256=v4oDVxmQQiPDjWTS6U5R3iHCErk0oUhJAfkRo98YBSk,1744
+appzoo/data/__init__.py,sha256=DI1MlXxtT81nWSaNRsyi57NoTuOEVFwW9cdo3vWXbe0,258
+appzoo/data/simfang.ttf,sha256=UhxvdUa062T6SwzWBLvTYzOiClfjiMjirSrQe55ZOGQ,10576012
+appzoo-2020.11.3.13.28.5.dist-info/METADATA,sha256=LjRfEx6FmDUoxFPVKt36YbKxTzWadF_oE5O8_ceIzMc,672
+appzoo-2020.11.3.13.28.5.dist-info/RECORD,,
+appzoo-2020.11.3.13.28.5.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+appzoo-2020.11.3.13.28.5.dist-info/entry_points.txt,sha256=2IdGZK1NmftNtHm_zLTVOunMuFbJ_B1guQeEy-JeHTQ,47
+appzoo-2020.11.3.13.28.5.dist-info/top_level.txt,sha256=OWm55CgWA1nW9lqlRROcMs5ATru9SBm-sXW6dHp3tRc,12
