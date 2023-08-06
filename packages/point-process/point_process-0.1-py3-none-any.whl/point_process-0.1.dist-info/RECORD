@@ -1,0 +1,13 @@
+pp/__init__.py,sha256=Y1wOSNgqD69c3eqQw3A_FKqk4Zz0ENRGn4uAc-orxyc,234
+pp/regression.py,sha256=uyIGFAAjdCYbdFO1QfpV2GWftP9jLWHPo_UwIafw5hs,1034
+pp/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pp/core/maximizers.py,sha256=qWbvapaeMY6GaB_lwvxemqsk382wObV9em0p6lXU8zk,4599
+pp/core/model.py,sha256=0JVyVslz3kbhrragPJftzC2upOwdXsVH3RY0s1riA2I,4884
+pp/core/weights_producers.py,sha256=EJP8Q4zc-ly0oCGcIFcZ8Def97ovwBTsSLbsMTsuMeI,1130
+pp/core/distributions/__init__.py,sha256=Bnxi0v7iI45hbpb-GmMr94H_FwximHzUisWFXeVD5g8,404
+pp/core/distributions/inverse_gaussian.py,sha256=eIBajJqHB-UPnb3IyX4-ln5P_shHzcRUQqpvNvNmVIQ,7937
+point_process-0.1.dist-info/LICENSE,sha256=l6KYHEmAuAzSCe1-0pBjVoW7k4wiwbKSIVi0SLzn-z4,1071
+point_process-0.1.dist-info/METADATA,sha256=KF0Z00AcVIu6jDHGd1P1M4Xg8otP6tJxMi_BTRiAUWU,602
+point_process-0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+point_process-0.1.dist-info/top_level.txt,sha256=c2uYrdmayRynV6MCt8uTYcEn78yZhcHQ9K6BjA4H8x4,3
+point_process-0.1.dist-info/RECORD,,
