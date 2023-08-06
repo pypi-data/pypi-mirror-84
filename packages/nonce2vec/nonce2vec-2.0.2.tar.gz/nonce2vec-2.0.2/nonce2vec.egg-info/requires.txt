@@ -1,0 +1,4 @@
+pyyaml>=4.2b1
+gensim==3.4.0
+numpy==1.15.4
+scipy==1.2.0
