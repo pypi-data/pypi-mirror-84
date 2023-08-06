@@ -1,0 +1,9 @@
+tinydb
+yattag
+ebooklib
+requests
+webnovelbot
+bs4
+lxml
+requests
+appdirs
