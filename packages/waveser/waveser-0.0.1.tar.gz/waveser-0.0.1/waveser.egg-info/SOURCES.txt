@@ -1,0 +1,8 @@
+setup.py
+waveser.egg-info/PKG-INFO
+waveser.egg-info/SOURCES.txt
+waveser.egg-info/dependency_links.txt
+waveser.egg-info/requires.txt
+waveser.egg-info/top_level.txt
+waveuse/__init__.py
+waveuse/process.py
