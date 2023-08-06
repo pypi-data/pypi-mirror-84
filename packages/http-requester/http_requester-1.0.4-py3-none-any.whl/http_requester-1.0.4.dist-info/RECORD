@@ -1,0 +1,6 @@
+http_requester/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+http_requester/creds.py,sha256=3Cblxnj2RQOb4e8JSk2Lt4Pc2X8BvQv45QaImip-Nog,2207
+http_requester/requester.py,sha256=oOwX-ooLU9noEWku-gBH5HXnFi0jfCOuDugcyrTajXA,12386
+http_requester-1.0.4.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+http_requester-1.0.4.dist-info/METADATA,sha256=Q84hSvvSlq9B6429zitJc18eyMttRyw2lPvI4Q1CKUg,601
+http_requester-1.0.4.dist-info/RECORD,,
