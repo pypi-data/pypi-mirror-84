@@ -1,0 +1,11 @@
+README.txt
+setup.py
+mytrial/__init__.py
+mytrial/exceptions.py
+mytrial/substraction.py
+mytrial/summa.py
+popitka.egg-info/PKG-INFO
+popitka.egg-info/SOURCES.txt
+popitka.egg-info/dependency_links.txt
+popitka.egg-info/not-zip-safe
+popitka.egg-info/top_level.txt

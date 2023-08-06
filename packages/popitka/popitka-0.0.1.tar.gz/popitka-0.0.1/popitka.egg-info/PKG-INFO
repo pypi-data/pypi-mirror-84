@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: popitka
+Version: 0.0.1
+Summary: Popitka package for training
+Home-page: UNKNOWN
+Author: Georgii Vasiukov
+Author-email: vasyukov.georgiy.yu@gmail.com
+License: MIT
+Description: 'Just trial to try publish my own library'
+Keywords: Popitka package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
