@@ -1,0 +1,14 @@
+README.md
+setup.py
+sleep-inhibitor
+sleep-inhibitor.conf
+sleep-inhibitor.service
+sleep_inhibitor.py
+plugins/is-process-running
+plugins/jellyfin-server
+plugins/plex-media-server
+sleep_inhibitor.egg-info/PKG-INFO
+sleep_inhibitor.egg-info/SOURCES.txt
+sleep_inhibitor.egg-info/dependency_links.txt
+sleep_inhibitor.egg-info/requires.txt
+sleep_inhibitor.egg-info/top_level.txt
