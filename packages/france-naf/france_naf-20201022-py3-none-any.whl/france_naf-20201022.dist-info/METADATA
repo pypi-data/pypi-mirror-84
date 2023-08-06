@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: france-naf
+Version: 20201022
+Summary: Python accessors to French NAF/APE codes
+Home-page: https://github.com/pyrates/france-naf
+License: MIT
+Keywords: naf ape
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: xlrd (==1.2.0) ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest (==6.1.1) ; extra == 'test'
+
+# python-fr-naf
+
+Python accessors to NAF/APE codes.
+
+From https://www.insee.fr/fr/information/2406147
+
+## Installation
+
+    pip install france-naf
+
+
+## Usage
+
+    from naf import DB
+    # Get one NAF object
+    my_naf = DB["02.30Z"]
+    print(my_naf)
+    # "Récolte de produits forestiers non ligneux poussant à l'état sauvage"
+    "02.30Z" in DB
+    # True
+    print(my_naf.section)
+    # A
+    # Iter over NAF objects
+    for naf in DB:
+        do_something_with(naf)
+    # Iter over code, description
+    for code, description in DB.pairs():
+        pass
+    # Get the whole DB as a json string
+    str(DB)
+
+
