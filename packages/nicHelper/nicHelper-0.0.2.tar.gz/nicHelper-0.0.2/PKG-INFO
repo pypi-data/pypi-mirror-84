@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: nicHelper
+Version: 0.0.2
+Summary: some helper functions from nic's gist
+Home-page: https://github.com/nic/nicHelper/tree/master/
+Author: nic wanavit
+Author-email: nwanavit@hatari.cc
+License: Apache Software License 2.0
+Description: # Helpers
+        > various helpers from nic gist
+        
+        
+        ```
+        from nicHelper.wrappers import add_method
+        ```
+        
+        ## Install
+        
+        `pip install nicHelper`
+        
+        ## How to use
+        
+        ### add method to a class
+        
+        ```
+        class A:
+          pass
+        @add_method(A)
+        def printHello(self):
+          print('hello')
+        
+        A().printHello()
+        ```
+        
+            hello
+        
+        
+Keywords: nicHelper
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
