@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: ubidump
+Version: 1.0.0
+Summary: Commandline tool for viewing or extracting UBIFS images.
+Home-page: https://github.com/nlitsme/ubidump/
+Author: Willem Hengeveld
+Author-email: itsme@xs4all.nl
+License: MIT
+Keywords: ubifs commandline
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Topic :: System :: Filesystems
+Requires-Dist: crcmod (>=1.7)
+Requires-Dist: python-lzo (>=1.11)
+
+
+This tool can be used to view or extract the contents of UBIFS images.
+
+View the contents of the `/etc/passwd` file in the filesystem image `image.ubi`:
+
+    ubidump  -c /etc/passwd  image.ubi
+
+List the files in all the volumes in `image.ubi`:
+
+    ubidump  -l  image.ubi
+
+View the contents of b-tree database from the volumes in `image.ubi`:
+
+    ubidump  -d  image.ubi
+
+
