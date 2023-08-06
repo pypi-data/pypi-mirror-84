@@ -1,0 +1,9 @@
+.gitignore
+README.md
+augment.py
+requirements.txt
+setup.py
+simple_augment.egg-info/PKG-INFO
+simple_augment.egg-info/SOURCES.txt
+simple_augment.egg-info/dependency_links.txt
+simple_augment.egg-info/top_level.txt
