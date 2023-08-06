@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ec2_compare/__init__.py
+ec2_compare/ec2data.py
+ec2_compare.egg-info/PKG-INFO
+ec2_compare.egg-info/SOURCES.txt
+ec2_compare.egg-info/dependency_links.txt
+ec2_compare.egg-info/not-zip-safe
+ec2_compare.egg-info/requires.txt
+ec2_compare.egg-info/top_level.txt
