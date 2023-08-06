@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: tntorch
+Version: 1.0.1
+Summary: Tensor Network Learning with PyTorch
+Home-page: https://github.com/rballester/tntorch
+Author: Rafael Ballester-Ripoll
+Author-email: rafael.ballester@ie.edu
+License: LGPL
+Keywords: tntorch
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: torch
+
+tntorch is a PyTorch-powered modeling and learning library using tensor networks. Features include basic and fancy indexing of tensors, broadcasting, assignment, etc.; tensor decomposition and arithmetics; adaptive sampling (cross-approximation); global optimization of tensors; sensitivity analysis; and more.
+
+
