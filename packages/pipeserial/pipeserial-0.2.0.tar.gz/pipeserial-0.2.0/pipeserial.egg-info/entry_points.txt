@@ -1,0 +1,3 @@
+[console_scripts]
+pipeserial = pipeserial.pipeserial:main
+
