@@ -1,0 +1,6 @@
+[console_scripts]
+amis_search = tipset.amis_search:main
+json_parser = tipset.json_parser:main
+pkgone = tipset.pkgone:main
+tipsearch = tipset.tipsearch:main
+
