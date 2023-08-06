@@ -1,0 +1,14 @@
+README.md
+setup.py
+BFClust/__init__.py
+BFClust/augmentation.py
+BFClust/cluster_de_novo.py
+BFClust/consensus.py
+BFClust/gbk_parsing.py
+BFClust.egg-info/PKG-INFO
+BFClust.egg-info/SOURCES.txt
+BFClust.egg-info/dependency_links.txt
+BFClust.egg-info/requires.txt
+BFClust.egg-info/top_level.txt
+scripts/BFC.py
+scripts/BFCaugment.py
