@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: json2schema
+Version: 0.1
+Summary: JSON to JSONSchema
+Home-page: https://github.com/hanzhichao/json2schema
+Author: Han Zhichao
+Author-email: superhin@126.com
+License: MIT license
+Description: # json2schema
+        Easy use of JSON
+        
+        ## Features
+        
+        - json to jsonschema
+        
+        
+        ## Install
+        ```
+        $ pip install json2schema
+        ```
+        
+        ## Use
+        ### Simple Use
+        
+        ```python
+        
+        ```
+        output:
+        ```
+        
+        ```
+        
+Keywords: json2schema,jsonschema,json to jsonschema
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
