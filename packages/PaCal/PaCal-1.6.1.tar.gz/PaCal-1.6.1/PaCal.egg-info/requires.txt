@@ -1,0 +1,5 @@
+Cython
+Sympy>=1.0.0
+matplotlib>=2.0.0
+numpy>=1.13
+scipy>=1.1.0
