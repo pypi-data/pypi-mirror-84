@@ -1,0 +1,10 @@
+sbml2julia/__init__.py,sha256=QbWqD8fyogKE-RzfmTaUS28JwR342uokxkYZRLcOi4s,151
+sbml2julia/__main__.py,sha256=UoIVpSOYPE5L3T2QRlPJa6l5O_VfRbVGDmqk4zyGNvw,5538
+sbml2julia/_version.py,sha256=QTYqXqSTHFRkM9TEgpDFcHvwLbvqHDqvqfQ9EiXkcAM,23
+sbml2julia/core.py,sha256=hBE_e2PlT9brDb1NCICDfbbzqTkXMtUqJRTxDuO9Qf4,78338
+sbml2julia-0.1.0.dist-info/LICENSE,sha256=nhiqL4UQHO9FWJov5Bmj04gxAcr5SnZjBOxgoxQVSIc,1078
+sbml2julia-0.1.0.dist-info/METADATA,sha256=ggkkQ-PPAMTzkNAA_HrvbiSm426-QfVj2R7-DZCnTXo,4451
+sbml2julia-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+sbml2julia-0.1.0.dist-info/entry_points.txt,sha256=dk22Zk0b55cEEMYWIrg7Y3KKci0WJTw4lSXqkMNQ-is,57
+sbml2julia-0.1.0.dist-info/top_level.txt,sha256=z7D8B_brCFFJMz4cnvABQHjmPZo3yEvUg09dYApPMzE,11
+sbml2julia-0.1.0.dist-info/RECORD,,
