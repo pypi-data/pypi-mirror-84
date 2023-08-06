@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: ktgitclone
+Version: 0.0.1
+Summary: Basic pyGithub operations to clone a public repository and push it to users remote repository
+Home-page: https://github.com/kristej/pyGithub-git-operations.git
+Author: Krishna Teja
+Author-email: krishnatv104@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: pygithub,clone
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

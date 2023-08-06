@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+ktgitclone.egg-info/PKG-INFO
+ktgitclone.egg-info/SOURCES.txt
+ktgitclone.egg-info/dependency_links.txt
+ktgitclone.egg-info/requires.txt
+ktgitclone.egg-info/top_level.txt
