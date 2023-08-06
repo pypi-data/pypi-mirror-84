@@ -1,0 +1,13 @@
+.gitignore
+Readme.md
+setup.cfg
+setup.py
+.vim/coc-settings.json
+plover_retro_surround/__init__.py
+plover_retro_surround.egg-info/PKG-INFO
+plover_retro_surround.egg-info/SOURCES.txt
+plover_retro_surround.egg-info/dependency_links.txt
+plover_retro_surround.egg-info/entry_points.txt
+plover_retro_surround.egg-info/requires.txt
+plover_retro_surround.egg-info/top_level.txt
+plover_retro_surround.egg-info/zip-safe
