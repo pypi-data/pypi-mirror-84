@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+sgp40.py
+micropython_sgp40.egg-info/PKG-INFO
+micropython_sgp40.egg-info/SOURCES.txt
+micropython_sgp40.egg-info/dependency_links.txt
+micropython_sgp40.egg-info/top_level.txt
