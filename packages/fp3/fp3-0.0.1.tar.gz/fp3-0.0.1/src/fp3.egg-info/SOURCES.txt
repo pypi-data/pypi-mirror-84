@@ -1,0 +1,15 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/fp3/__init__.py
+src/fp3.egg-info/PKG-INFO
+src/fp3.egg-info/SOURCES.txt
+src/fp3.egg-info/dependency_links.txt
+src/fp3.egg-info/entry_points.txt
+src/fp3.egg-info/not-zip-safe
+src/fp3.egg-info/top_level.txt
+tests/test_package_is_installed.py

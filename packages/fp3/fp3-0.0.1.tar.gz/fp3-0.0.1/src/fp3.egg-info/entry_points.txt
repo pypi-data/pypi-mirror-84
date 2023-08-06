@@ -1,0 +1,3 @@
+[libtbx.precommit]
+fp3 = fp3
+
