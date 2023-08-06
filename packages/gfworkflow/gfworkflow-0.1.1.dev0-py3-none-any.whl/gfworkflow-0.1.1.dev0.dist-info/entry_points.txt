@@ -1,0 +1,4 @@
+[console_scripts]
+gfwf = gfworkflow.__main__:console_script_entry
+gfworkflow = gfworkflow.__main__:console_script_entry
+
