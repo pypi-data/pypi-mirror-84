@@ -1,0 +1,17 @@
+kydavra/ANOVASelector.py,sha256=59XJ7rsZv5FhlcHibvnXlKO5B__w56zYyA6oBpt5dPA,3423
+kydavra/ChiSquaredSelector.py,sha256=QZWjPp0tz2CJ_RLHD4MieAhr1klSnnZKJBBB258W2JA,5042
+kydavra/GeneticAlgorithmSelector.py,sha256=M8qwQgH6o1C_WADWXSoLcB10ypqPV_dNKPgwnT6s1dQ,5564
+kydavra/KendallCorrelationSelector.py,sha256=dIiWM0FpoNEziURg-2DPXXDsgMCsuCT1hqDXJcW_kgw,3439
+kydavra/LassoSelector.py,sha256=n1W2u9GxeBRDrgOwYPWh43bdBGZ_GQMcWG4n7AxdOXY,4589
+kydavra/PValueSelector.py,sha256=LlQjxMi9sJik1Cq3qf8xzzkJodwiqx2b5el-xtINuEc,4107
+kydavra/PearsonCorrelationSelector.py,sha256=iT_Kj8FjugP96E6XLM_UM-GB6ckVmXJvxkQn3vz1tYY,3438
+kydavra/PointBiserialSelector.py,sha256=MKaB1iH_gIaDkn3NT52YK9fTpkGbslF0yyXVvzwjT-I,3957
+kydavra/ShannonSelector.py,sha256=q53928S5nHY7GLjlYKYgltcC1GTbJYnwGqXqc9-hP4g,5037
+kydavra/SpearmanCorrelationSelector.py,sha256=fftX93uQPBEJtv4SQQEvALxn92ndSWinP8Qif82GweM,3411
+kydavra/__init__.py,sha256=kGDrZBCbqeXW0NJrwtTD03Z_GU4D5sE9wjSamovVSk4,556
+kydavra/errors.py,sha256=cCzs-LYM7c8HPV2itZptnJD7_x7v8IMy1OxtSN2S8C4,338
+kydavra-0.1.9.3.dist-info/LICENSE.txt,sha256=Z_R0qA8dBa_UBMGgM1fEedm0wV7CBqwIBaBEOu4iT5w,1077
+kydavra-0.1.9.3.dist-info/METADATA,sha256=Z22apcwa_vnBoqY7F7ZO-3zAZbo0-zpRgFuLZjpfdmE,3830
+kydavra-0.1.9.3.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+kydavra-0.1.9.3.dist-info/top_level.txt,sha256=qsgHFuHUkuRoWGaCO8CZ0_Rx035dVlToNJRwvdEL1s0,8
+kydavra-0.1.9.3.dist-info/RECORD,,
