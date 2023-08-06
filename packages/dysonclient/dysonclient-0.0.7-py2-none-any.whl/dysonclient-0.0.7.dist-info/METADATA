@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dysonclient
+Version: 0.0.7
+Summary: UNKNOWN
+Home-page: https://github.com/smore-inc/dyson-client
+Author: Smore
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Requires-Python: >2.7,<3
+Requires-Dist: grpcio
+Requires-Dist: grpcio-tools
+
+UNKNOWN
+
+

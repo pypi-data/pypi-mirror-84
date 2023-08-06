@@ -1,0 +1,9 @@
+dysonclient/__init__.py,sha256=5I1KFOc97aDvdz6Uvj1fM87EU0wiubOuUleZQiCuRyk,110
+dysonclient/dysonclient.py,sha256=dPS8ieWyQF4vXAfESjq8xvG4DxsaGK7L5UIQn-Pokb0,1553
+dysonclient/entities.py,sha256=hAkb7DvK2zJjyByo-EyvR2Ql3DBqQEmO8-XCs4VNY5I,2047
+dysonclient/log_pb2.py,sha256=FWkJYWrc4cjUKE-7rDRJVI8fG9m8lW7MpGkzoKhN75k,27185
+dysonclient/log_pb2_grpc.py,sha256=UUhOWuD2Oxp6SRJHofHIzHvZinNkiXlWVK-GN3xSZ14,2278
+dysonclient-0.0.7.dist-info/METADATA,sha256=T3x6jGIAGciMudxIsQ6mh28Pz4nR0eZJtFslRXM3YWo,310
+dysonclient-0.0.7.dist-info/WHEEL,sha256=DgcoKJDfsYFbFLUrngH-aDjJZvn8UqGD3gZyEvGv0dg,92
+dysonclient-0.0.7.dist-info/top_level.txt,sha256=9Cla2qQYx7nEMMV_iX4MsC3JQAwxCSyg3ljVgqZzDjc,12
+dysonclient-0.0.7.dist-info/RECORD,,
