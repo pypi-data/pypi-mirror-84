@@ -1,0 +1,11 @@
+README.md
+setup.py
+API_StevenThomi.egg-info/PKG-INFO
+API_StevenThomi.egg-info/SOURCES.txt
+API_StevenThomi.egg-info/dependency_links.txt
+API_StevenThomi.egg-info/top_level.txt
+API_pkg/Sensor.py
+API_pkg/Setup.py
+API_pkg/__init__.py
+API_pkg/application_console.py
+API_pkg/application_file.py
