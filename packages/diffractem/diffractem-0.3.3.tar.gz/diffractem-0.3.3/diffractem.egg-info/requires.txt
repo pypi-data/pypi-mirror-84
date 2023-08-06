@@ -1,0 +1,16 @@
+h5py
+numpy
+pandas
+tables
+hdf5plugin
+dask[complete]
+tifffile
+scipy
+astropy
+matplotlib
+numba
+pyqtgraph
+pyyaml
+scikit-learn
+scikit-image
+PyQt5
