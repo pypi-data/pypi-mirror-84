@@ -1,0 +1,9 @@
+pyzstd/__init__.py,sha256=LPdlzV7ygAduw5ihBsm7Ey83P4lbUd-COv3nOqILLOg,112
+pyzstd/__init__.pyi,sha256=WyTeldSmaa060n2xTvcjoxoiAH7aziVCLumWR9EGH9s,5681
+pyzstd/_zstd.cp35-win32.pyd,sha256=kRKAcrNBkhhciee8zYhnGbhaFF6fz4l7UZ54A1prclQ,425984
+pyzstd/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyzstd/pyzstd.py,sha256=JK6fLiPU5pn_s2MfS2YmNUHHjQRAjhNVlcWp2Igy0Xc,15591
+pyzstd-0.13.0.dist-info/METADATA,sha256=sQwydV300WYngmDp8GpCLRaGs6QLXQpW8BP_k7GSdEc,2494
+pyzstd-0.13.0.dist-info/WHEEL,sha256=-rTg6LWut4ntqX_CQuQ69jO8szxa_5x3QK4tByU6RZo,102
+pyzstd-0.13.0.dist-info/top_level.txt,sha256=9Sl3x1CXrPdyG5muunGLOQpJEbiwW6WW8Y46nZMgWsE,7
+pyzstd-0.13.0.dist-info/RECORD,,
