@@ -1,0 +1,9 @@
+zsv.ticker-1.0.0-py3.8-nspkg.pth,sha256=ZMq2qDgBJt-JzoOQeAlWl2K4adrPSjnKIKjQffRa6ss,525
+zsv/ticker/__init__.py,sha256=2-mkcwwzL_AaV4hPffxKfTDfLhoyy7ywkuduZ-gKA8g,1046
+zsv/ticker/ticker.py,sha256=PCwfbY7FPWebWlByghZha91XO08WZMYB1C--TVbJQvk,2584
+zsv.ticker-1.0.0.dist-info/LICENSE,sha256=tFUO7yemt9L0pKZof3ZgDchRpPCEIwEMqHRK9-vqdBw,1069
+zsv.ticker-1.0.0.dist-info/METADATA,sha256=w6IsEtWzD1I5HU2Sh29GDZwp31yiT632KiSBVToQ6QQ,2302
+zsv.ticker-1.0.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+zsv.ticker-1.0.0.dist-info/namespace_packages.txt,sha256=A_5k2Zh_c2LgANwnWRu8nPuRYF3NZr5LOL4qTvy6YkY,4
+zsv.ticker-1.0.0.dist-info/top_level.txt,sha256=A_5k2Zh_c2LgANwnWRu8nPuRYF3NZr5LOL4qTvy6YkY,4
+zsv.ticker-1.0.0.dist-info/RECORD,,

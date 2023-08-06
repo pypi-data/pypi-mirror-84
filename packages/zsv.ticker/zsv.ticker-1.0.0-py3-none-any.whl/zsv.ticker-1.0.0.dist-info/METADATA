@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: zsv.ticker
+Version: 1.0.0
+Summary: Enabling flexible and idiomatic regular execution of tasks.
+Home-page: https://gitlab.com/tdely/zsv.ticker
+Author: Tobias Dély
+Author-email: cleverhatcamouflage@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-timeout ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-timeout ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: tox ; extra == 'test'
+
+zsv.ticker
+~~~~~~~~~~
+
+``zsv.ticker`` enables flexible and idiomatic regular execution of
+tasks::
+
+    from zsv.ticker import Ticker
+
+    ticker = Ticker()
+    ticker.start(5)
+
+    while ticker.tick():
+        execute_task()
+
+``Ticker`` aims to be more idiomatic and easy to use than a time calculation and
+sleep call, and further enables the instantaneous termination of a waiting
+task::
+
+    import signal
+    from time import sleep
+    from zsv.ticker import Ticker
+
+    ticker = Ticker()
+    ticker.start(5)
+
+    def abort(signum, frame):
+        ticker.stop()
+
+    signal.signal(signal.SIGINT, abort)
+
+    while ticker.tick():
+        print("tick")
+        sleep(2)
+        print("tock")
+
+
+The above script wraps a `stop` call in a signal handler registered to SIGINT:
+hitting Ctrl+C after the script prints "tick" but before it prints "tock"
+will yield a final "tock" before it terminates.
+
+
