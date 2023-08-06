@@ -1,0 +1,14 @@
+ptype/Column.py,sha256=5voSD-qTo45_PuiqO8rtKqY3OF4Oh1aEIMKiMVnl6SI,4338
+ptype/Machine.py,sha256=8ipoDdmHG1TQeP9gCAeSuCZqHXyYtKkugZbBF1wxK1c,26236
+ptype/Machines.py,sha256=0AmOf4MF6bfoHinrJ0jQMVpmTjCcyK0S_kDiH59OtxA,1958
+ptype/Ptype.py,sha256=8d7PcGV9mTSNxImK7bYZP_PZCBFWdsH2fgi3FG7iLl4,4297
+ptype/Schema.py,sha256=8T-bwmlM0orF14g50YyRnftiElpT6Lq1RS9CyV-WgrE,3782
+ptype/Trainer.py,sha256=yv6zyHipwlcifnnevx3Whhh-CyPrkG_0oDyW_A8LxW0,14459
+ptype/__init__.py,sha256=904RRKd7gwYjHgIRFIDN0RLPRR3q_JCNqO8dy_zZYZg,62
+ptype/__version__.py,sha256=NB1gASiVefjt0iP14H2wp7jd_lvVS2x6SQDgnVn6rTE,48
+ptype/utils.py,sha256=ejoLca9ZFkXbJnMwsxY2PgSYW-kyrtdFPCcrAHy4TSE,17064
+ptype-0.2.12.dist-info/LICENSE,sha256=aqVmh8uko8biBUow1M-fioMfwuIQ8n3-W73axT-E1OQ,1075
+ptype-0.2.12.dist-info/METADATA,sha256=SO7bSLW3dhl44RkKTJzUtmwbGS5tU5MMTWHRMKBL4Z4,4721
+ptype-0.2.12.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+ptype-0.2.12.dist-info/top_level.txt,sha256=QJvAUMLIeur3qzFvZEZTapHH0z7kqI3Pou82cyqJznM,6
+ptype-0.2.12.dist-info/RECORD,,
