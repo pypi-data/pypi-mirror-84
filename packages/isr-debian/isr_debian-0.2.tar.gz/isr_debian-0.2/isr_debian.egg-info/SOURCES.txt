@@ -1,0 +1,11 @@
+setup.py
+bin/isr_make_debian
+isr_debian/__init__.py
+isr_debian/control_files.py
+isr_debian/io.py
+isr_debian.egg-info/PKG-INFO
+isr_debian.egg-info/SOURCES.txt
+isr_debian.egg-info/dependency_links.txt
+isr_debian.egg-info/requires.txt
+isr_debian.egg-info/top_level.txt
+isr_debian.egg-info/zip-safe

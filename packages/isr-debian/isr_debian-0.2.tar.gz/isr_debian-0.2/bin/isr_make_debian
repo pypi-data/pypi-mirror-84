@@ -1,0 +1,108 @@
+#!/usr/bin/env python
+
+import sys
+import os
+import logging
+import isr_debian
+from lightargs import BrightArgs,Set,CanEval
+
+
+def _configure():
+
+    # preparing log
+    log_handler = logging.StreamHandler(sys.stdout)
+    logging.basicConfig(
+        format="[isr create debian] %(message)s",
+        level=logging.DEBUG,
+        handlers=[log_handler]
+    )
+    
+    # if "install" is in the current folder, then it will be
+    # the proposed default folder. otherwise "/tmp/install"
+    current = os.getcwd()
+    install_folder = os.path.join(current,"install")
+    if not os.path.isdir(install_folder):
+        raise FileNotFoundError(str("failed to find an install folder"+
+                                    " in the current directory"))
+
+    # default folder for installing copying the files
+    build_folder = os.path.join(os.getcwd(),"debian")
+
+    # searching install folder for "<...>/debian/control" files
+    # control_files : {package_name:path to control file}
+    control_files = isr_debian.ControlFile.search_files(install_folder)
+    if not control_files:
+        raise FileNotFoundError("failed to find any debian/control file in {}".format(install_folder))
+
+    # creating config (dialog with user)
+    config = BrightArgs("creating a debian for isr code base")
+    setattr(config,"install_folder",install_folder)
+    setattr(config,"build_folder",build_folder)
+    config.add_option("debian_package",
+                      list(control_files.keys())[0],
+                      "available control files found: {}".format(", ".join(control_files.keys())),
+                      str,
+                      [Set(*list(control_files.keys()))])
+    config.add_option("debian_lib_folder",
+                      "usr/local/lib",
+                      "path where the generated debian will install *.so files",
+                      str)
+    config.add_option("debian_include_folder",
+                      "usr/local/include",
+                      "path where the generated debian will install include folders",
+                      str)
+    config.add_option("debian_bin_folder",
+                      "usr/local/bin",
+                      "path where the generated debian will install executables",
+                      str)
+    config.add_option("debian_python_folder",
+                      "usr/local/lib/python3.6/dist-packages",
+                      "path where the generated debian will install python package",
+                      str)
+    config.add_option("debian_config_folder",
+                      "opt/mpi-is/",
+                      "path were the generated debian will install configuration files",
+                      str)
+    config.add_option("install_python_folder",
+                      "lib/python3.6/site-packages",
+                      "relative path to python packages in the parsed install folder",
+                      str)
+    config.add_option("install_config_folder",
+                      "opt/mpi-is",
+                      "relative path to the configuration files in the install folder",
+                      str)
+    config.add_option("excluded_ament_packages",
+                      '["ament_","mpi_cmake_module","pybind11"]',
+                      'packages containing any of these strings will be excluded',
+                      str,
+                      [CanEval()])
+    change_all=False
+    finished  = config.dialog(change_all,sys.argv[1:])
+    if not finished:
+        return None
+
+    # adding path to selected control file path
+    setattr(config,"control_file_path",control_files[config.debian_package])
+
+    # so far, excluded ament packages is a string, converting it to a list
+    config.excluded_ament_packages = eval(config.excluded_ament_packages) 
+    
+    return config
+
+def _execute():
+    # configuration (via dialog with user)
+    config = _configure()
+    if config is None:
+        return
+    try:
+        os.makedirs(config.build_folder)
+    except FileExistsError:
+        pass
+    # generating the debian file
+    isr_debian.prepare_debian(config)
+
+if __name__ == "__main__":
+    try :
+        _execute()
+    except Exception as e:
+        print("\n{}\n".format(e))
