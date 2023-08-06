@@ -1,0 +1,9 @@
+pytest_aiohttp_client/__init__.py,sha256=V8kmHUy-0vIgbqFCodAYWq0y9JgwimRjDQvfhUH1Z4I,71
+pytest_aiohttp_client/plugin.py,sha256=O7gP3iPejrecssgxCxpAUIvEKBbGyAr-v9HDCJn1N4c,2122
+pytest_aiohttp_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_aiohttp_client-0.0.3.dist-info/LICENSE,sha256=5D88_QtiEBdYX-DveCqBsJgsWZ5orlT0EjgEHH2lZkM,1071
+pytest_aiohttp_client-0.0.3.dist-info/METADATA,sha256=Y4kAKmrAq4qx5DV23sxBB3h23Ziwoo3J6uiin3WN-iQ,3212
+pytest_aiohttp_client-0.0.3.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pytest_aiohttp_client-0.0.3.dist-info/entry_points.txt,sha256=Mki6NdkWOlbnLfYewoAAUbzJugS4_YDWZoaxKfXxSnY,65
+pytest_aiohttp_client-0.0.3.dist-info/top_level.txt,sha256=vZa3qsHE4n45e63j18-S7Q4QiTDKk5hEx2h98rKAzaU,22
+pytest_aiohttp_client-0.0.3.dist-info/RECORD,,
