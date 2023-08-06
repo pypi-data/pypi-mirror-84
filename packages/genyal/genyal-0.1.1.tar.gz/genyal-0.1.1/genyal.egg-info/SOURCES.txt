@@ -1,0 +1,12 @@
+README.md
+setup.py
+genyal/__init__.py
+genyal/core.py
+genyal/genotype.py
+genyal/population.py
+genyal.egg-info/PKG-INFO
+genyal.egg-info/SOURCES.txt
+genyal.egg-info/dependency_links.txt
+genyal.egg-info/top_level.txt
+test/__init__.py
+test/test_population.py
