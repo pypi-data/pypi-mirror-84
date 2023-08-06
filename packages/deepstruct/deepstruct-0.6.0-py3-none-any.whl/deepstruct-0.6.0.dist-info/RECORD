@@ -1,0 +1,17 @@
+README.md,sha256=_eF5uZdV6b85yHdrKNpl1NkFdjy3YD4x2hY6ra3jgu0,9937
+deepstruct/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepstruct/__version__.py,sha256=g3o_LvPnmygpY3QRpGaTLcp1Xx0h-ufHnnch9J5xOsM,77
+deepstruct/dataset.py,sha256=29DNosI-vB88JjOBsyD__-kyPRq17ObUw4DM9hXpmac,4548
+deepstruct/deprecated.py,sha256=ASOWx-cM613OhkO0GvnjylvQ9nvzPiTvfgHIIS9FsVk,10139
+deepstruct/graph.py,sha256=f5RUl0gjLNf0I8xtO9UpAXFla7NUJM_N51HHY34nzLw,7183
+deepstruct/learning.py,sha256=WrNkxmnq9d4dyniA4nJpN82o-8OP15SyvESFTfzi0XA,2000
+deepstruct/pruning.py,sha256=E7_4VCI8CD9GB1Ow_1tWqVRZRzkPDFzhnrUWB8zEMxw,19564
+deepstruct/recurrent.py,sha256=jIPtzD_qeX9UwZmZHt_swaNepFrpL4Q6YOBVF6swmik,9974
+deepstruct/scalable.py,sha256=TGJjZxxCC47f3lDScKNlVfKeH_Ajr25wpk4OLx3MYbY,5954
+deepstruct/sparse.py,sha256=KkGKgUQAU833_tL16dnGMZkA7Z3BQaREbFzWyeWlebA,22529
+deepstruct/util.py,sha256=IzIEAYWxBJPfPJ39Tihv1iQ8uXw4mIMJHaR4K6EcbOc,2985
+pyproject.toml,sha256=y0kQwtitdb7x0VFcoLJNDD8RZoeI2b46kR6Cjsbp59c,1659
+deepstruct-0.6.0.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+deepstruct-0.6.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+deepstruct-0.6.0.dist-info/METADATA,sha256=jnh5XreZVPAGG-PvCDSuYlpJFfQhVXyDOGOHUy02K6Q,10855
+deepstruct-0.6.0.dist-info/RECORD,,
