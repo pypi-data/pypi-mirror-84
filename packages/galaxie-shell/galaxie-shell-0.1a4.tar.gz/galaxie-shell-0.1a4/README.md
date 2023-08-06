@@ -1,0 +1,69 @@
+[![codecov](https://codecov.io/gl/Tuuux/galaxie-shell/branch/master/graph/badge.svg?token=MK6WWGAL5M)](https://codecov.io/gl/Tuuux/galaxie-shell)
+
+glxsh the Galaxie SHELL
+=======================
+
+**glxsh** is a Common Line Interface (**CLI**) based on **cmd2 ** .
+
+The project provide on a minimal Read Eval Print Loop (**REPL**) where the goal is to be autonomous inside that REPL.
+
+The Galaxie Shell use a  a **builtins plugin** and [GNU Core Utils](https://www.maizure.org/projects/decoded-gnu-coreutils/) command's set as specs.
+
+All ready implemented features
+------------------------------
+* History files respect the Freedesktop requirements
+* All unknown command's are send to the sub shell system
+* Capability to build a **one-file** static binary file
+* Can load a script file as argument
+* Can execute command from passing arguments
+* Interactive shell when call without arguments
+* Plugins Manager
+* Builtins Plugin (arch, cat, cd, mkdir, pwd, rmdir, uname, which, etc ...)
+
+Application
+------------
+* Use on front of a [Unikernel](https://fr.wikipedia.org/wiki/Unikernel)
+* Use on front of a minimal Alpine Linux or OpenWrt
+* Simplify CI CD
+* Project starter
+
+Installation
+------------
+
+**Pub Version**: ```pip install galaxie-shell```<BR>
+**Dev Version**: ```pip install -i https://test.pypi.org/simple/ galaxie-shell```
+
+
+Examples
+--------
+```
+******************************* GLXSHELL V0.1A1 *******************************
+
+
+GNU GENERAL PUBLIC LICENSE GPL-3.0
+LOADER #1 SMP DEBIAN 4.19.146-1 (2020-09-17)
+EXEC VENV PYTHON 3.7.3
+31.36GB RAM SYSTEM
+22.70GB FREE
+NO HOLOTAPE FOUND
+LOAD ROM(1): DEITRIX 303
+
+> 
+```
+
+Builtins Plugin implemented implemented command's
+-------------------------------------------------
+* arch
+* [cat](https://gitlab.com/Tuuux/galaxie-shell/-/blob/master/docs/docs/cmds/cat.md)
+* [cd](https://gitlab.com/Tuuux/galaxie-shell/-/blob/master/docs/docs/cmds/cd.md)
+* mkdir
+* [pwd](https://gitlab.com/Tuuux/galaxie-shell/-/blob/master/docs/docs/cmds/pwd.md)
+* rmdir
+* uname
+* which
+
+Roadmap
+-------
+* unittest and code covering to 100%
+* implement the core util's
+* plugins installation system based on pip
