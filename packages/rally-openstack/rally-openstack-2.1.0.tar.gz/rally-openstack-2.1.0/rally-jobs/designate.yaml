@@ -1,0 +1,72 @@
+---
+  version: 2
+  title: Task for gate-rally-dsvm-designate-rally-pdns4-ubuntu-xenial-nv job
+  description: >
+    This task contains various scenarios for testing designate plugins
+  subtasks:
+    -
+      title: DesignateBasic.create_and_list_zones tests
+      scenario:
+        DesignateBasic.create_and_list_zones: {}
+      runner:
+        constant:
+          times: 4
+          concurrency: 2
+      contexts:
+        users:
+          tenants: 2
+          users_per_tenant: 2
+    -
+      title: DesignateBasic.create_and_delete_zone tests
+      scenario:
+        DesignateBasic.create_and_delete_zone: {}
+      runner:
+        constant:
+          times: 4
+          concurrency: 2
+      contexts:
+        users:
+          tenants: 2
+          users_per_tenant: 2
+    -
+      title: DesignateBasic.create_and_list_recordsets tests
+      scenario:
+        DesignateBasic.create_and_list_recordsets: {}
+      runner:
+        constant:
+          times: 4
+          concurrency: 2
+      contexts:
+        users:
+          tenants: 2
+          users_per_tenant: 2
+        zones:
+          zones_per_tenant: 1
+    -
+      title: DesignateBasic.create_and_delete_recordsets tests
+      scenario:
+        DesignateBasic.create_and_delete_recordsets: {}
+      runner:
+        constant:
+          times: 4
+          concurrency: 2
+      contexts:
+        users:
+          tenants: 2
+          users_per_tenant: 2
+        zones:
+          zones_per_tenant: 1
+    -
+      title: DesignateBasic.list_zones tests
+      scenario:
+        DesignateBasic.list_zones: {}
+      runner:
+        constant:
+          times: 4
+          concurrency: 2
+      contexts:
+        users:
+          tenants: 2
+          users_per_tenant: 2
+        zones:
+          zones_per_tenant: 10
