@@ -1,0 +1,391 @@
+# %%
+from pydantic.types import DirectoryPath
+from sshtunnel import open_tunnel, SSHTunnelForwarder
+import pymysql
+import pandas as pd
+import requests
+from toolz.curried import curry
+from pathlib import Path
+from typing import Dict, Any, Iterable, List, Callable, Type, Union
+import sqlite3
+from sqlite3 import Connection as SQLite
+from pydantic import (
+    BaseSettings,
+    SecretStr,
+    PositiveInt,
+    FilePath,
+    Field,
+    DirectoryPath,
+)
+import logging
+
+__all__ = ["Cache", "Domo", "MySQL", "SQLite", "query", "query_df"]
+
+# %%
+# logging.basicConfig(
+#     level=logging.INFO,
+#     format="%(asctime)s %(message)s",
+#     datefmt="%Y-%m-%d %H:%M:%S",
+# )
+
+
+# %%
+class Cache(BaseSettings):
+    """Returns the paths  using the ATEK_CACHE environment variable for the module."""
+    cache: DirectoryPath
+
+    @property
+    def query(self) -> Path:
+        return self.cache / "query"
+
+    @property
+    def secrets(self) -> Path:
+        return self.cache / "secrets"
+
+    class Config:
+        env_prefix = "ATEK_"
+
+#  print(Cache())
+
+
+# %%
+class Domo(BaseSettings):
+    client_id: str
+    secret: SecretStr
+    dataset_id: str
+    _header: Dict
+    _url: str
+    _context: bool = False
+    _results: Iterable[Dict] = None
+
+    class Config:
+        underscore_attrs_are_private = True
+        env_prefix = "domo_"
+        env_file = Cache().query
+        secrets_dir = Cache().secrets
+
+    def connect(self) -> None:
+        # Authenticate
+        auth_url = (
+            "https://api.domo.com/oauth/token?"
+            "grant_type=client_credentials&scope=data"
+        )
+        auth = requests.auth.HTTPBasicAuth(
+            self.client_id,
+            self.secret.get_secret_value()
+        )
+        auth_response = requests.get(auth_url, auth=auth)
+        token = auth_response.json()["access_token"]
+        logging.info(f"OPENED: Domo Connection\n{self}")
+        logging.debug(self)
+
+        # Assemble post url
+        self._header = {"Authorization": f"bearer {token}"}
+        base_url = "https://api.domo.com/v1/datasets"
+        self._url = (
+            f"{base_url}/query/execute/{self.dataset_id}"
+            "?includeHeaders=true"
+        )
+
+    def close(self):
+        logging.info("CLOSED: Domo Connection")
+
+    def __enter__(self):
+        self._context = True
+        self.connect()
+        return self
+
+    def __exit__(self, *args):
+        self.close()
+        self._context = False
+
+    def execute(self, sql: str) -> None:
+        logging.info(f"EXECUTING: Domo Query\n{sql}")
+        if not self._context:
+            self.connect()
+        _query = {"sql": sql}
+        results = requests.post(
+            self._url,
+            headers=self._header,
+            json={"sql": sql}
+            ).json()
+        columns = results["columns"]
+        rows = results["rows"]
+        self._results = [
+            dict(zip(columns, row))
+            for row in rows
+        ]
+        logging.info(f"RETURNED: Domo Query")
+
+    def __iter__(self):
+        for row in self._results:
+            yield row
+
+    def query(self, sql: str) -> List[Dict]:
+        if self._context:
+            self.execute(sql)
+            return self._results
+        with self:
+            self.execute(sql)
+            return self._results
+
+    def query_df(self, sql: str) -> pd.DataFrame:
+        if self._context:
+            self.execute(sql)
+            return pd.DataFrame.from_records(self._results)
+        with self:
+            self.execute(sql)
+            return pd.DataFrame.from_records(self._results)
+
+    # def __str__(self):
+    #     return _pretty_class(self)
+
+#  print(Domo())
+#  sql = "select TrackingNumber, OrderDate from table limit 1"
+#  Domo().query(sql)
+#  Domo().query_df(sql)
+
+#  with Domo() as conn:
+#     conn.query(sql)
+#     conn.query_df(sql)
+
+
+# %%
+class MySQL(BaseSettings):
+    remote_host: str="localhost"
+    remote_port: PositiveInt=3306
+
+    jump_host: str
+    jump_port: PositiveInt=22
+    jump_username: str
+    jump_pkey: FilePath
+    jump_password: SecretStr
+
+    server_host: str
+    server_port: PositiveInt=22
+    server_username: str
+    server_pkey: str
+    server_password: SecretStr
+
+    db_host: str="localhost"
+    db_name: str
+    db_username: str
+    db_password: SecretStr
+
+    kwargs: Dict=Field(default_factory=dict)
+
+    _jump: SSHTunnelForwarder=None
+    _server: SSHTunnelForwarder=None
+    _connection: pymysql.connections.Connection=None
+    _context: bool=False
+
+    class Config:
+        underscore_attrs_are_private = True
+        env_prefix = "mysql_"
+        env_file = Cache().query
+        secrets_dir = Cache().secrets
+
+    def connect(self) -> pymysql.connections.Connection:
+        self._jump = open_tunnel(
+            ssh_address_or_host=(self.jump_host, self.jump_port),
+            remote_bind_address=(self.remote_host, self.remote_port),
+            ssh_pkey=str(self.jump_pkey),
+            ssh_username=self.jump_username,
+            ssh_password=self.jump_password.get_secret_value(),
+        )
+        self._jump.start()
+        logging.info(f"OPENED: {self.jump_host}:{self.jump_port}")
+
+        self._server = open_tunnel(
+            ssh_address_or_host=(self.server_host, self.server_port),
+            remote_bind_address=(self.remote_host, self.remote_port),
+            ssh_pkey=self.server_pkey,
+            ssh_username=self.server_username,
+            ssh_password=self.server_password.get_secret_value(),
+        )
+        self._server.start()
+        logging.info(f"OPENED: {self.server_host}:{self.server_port}")
+
+        self._connection = pymysql.connect(
+            host=self.db_host,
+            db=self.db_name,
+            user=self.db_username,
+            password=self.db_password.get_secret_value(),
+            port=self._server.local_bind_port,
+            **self.kwargs
+        )
+        logging.info(f"OPENED: {self.db_host}:{self.db_name}")
+
+    def close(self) -> None:
+        self._connection.close()
+        self._connection = None
+        logging.info(f"CLOSED: {self.db_host}:{self.db_name}")
+
+        self._server.stop()
+        self._server = None
+        logging.info(
+            f"CLOSED: {self.server_host}:{self.server_port}")
+
+        self._jump.stop()
+        self._jump = None
+        logging.info(f"CLOSED: {self.jump_host}:{self.jump_port}")
+
+    def cursor(self):
+        return self._connection.cursor()
+
+    def __enter__(self):
+        self._context = True
+        self.connect()
+        return self
+
+    def __exit__(self, *args):
+        self.close()
+        self._context = False
+
+    def query(self, sql: str) -> Iterable[Dict]:
+        if self._context:
+            logging.info(f"EXECUTING: {self.db_host}:{self.db_name} Query\n{sql}")
+            cur = self.cursor()
+            cur.execute(sql)
+            data = [
+                {col[0]: row[idx] for idx, col in enumerate(cur.description)}
+                for row in cur
+            ]
+            logging.info(f"RETURNED: {self.db_host}:{self.db_name} Query")
+            return data
+
+        with self:
+            logging.info(f"EXECUTING: {self.db_host}:{self.db_name} Query\n{sql}")
+            cur = self.cursor()
+            cur.execute(sql)
+            data = [
+                {col[0]: row[idx] for idx, col in enumerate(cur.description)}
+                for row in cur
+            ]
+            logging.info(f"RETURNED: {self.db_host}:{self.db_name} Query")
+            return data
+
+    def query_df(self, sql: str) -> pd.DataFrame:
+        if self._context:
+            logging.info(f"EXECUTING: {self.db_host}:{self.db_name} Query\n{sql}")
+            df = pd.read_sql(sql, self._connection)
+            logging.info(f"RETURNED: {self.db_host}:{self.db_name} Query")
+            return df
+
+        with self:
+            logging.info(f"EXECUTING: {self.db_host}:{self.db_name} Query\n{sql}")
+            df = pd.read_sql(sql, self._connection)
+            logging.info(f"RETURNED: {self.db_host}:{self.db_name} Query")
+            return df
+
+#  print(MySQL())
+#  sql = "select current_user, current_timestamp"
+#  MySQL().query(sql)
+#  MySQL().query_df(sql)
+#
+#  with MySQL() as conn:
+#      conn.query(sql)
+#      conn.query_df(sql)
+
+
+# %%
+class SQLite(BaseSettings):
+    path: FilePath
+    kwargs: Dict=Field(default_factory=dict)
+    _connection: sqlite3.Connection=None
+    _context: bool=False
+
+    class Config:
+        underscore_attrs_are_private = True
+        env_prefix = "sqlite_"
+        env_file = Cache().query
+        secrets_dir = Cache().secrets
+
+    def connect(self) -> None:
+        self._connection = sqlite3.connect(self.path, **self.kwargs)
+        self._connection.row_factory = lambda cursor, row: {
+            col[0]: row[idx]
+            for idx, col in enumerate(cursor.description)
+        }
+        logging.info(f"OPENED: {self.path}")
+
+    def close(self) -> None:
+        self._connection.close()
+        self._connection = None
+        logging.info(f"CLOSED: {self.path}")
+
+    def cursor(self):
+        return self._connection.cursor()
+
+    def __enter__(self):
+        self._context = True
+        self.connect()
+        return self
+
+    def __exit__(self, *args):
+        self.close()
+        self._context = False
+
+    def query(self, sql: str) -> Iterable[Dict]:
+        if self._context:
+            logging.info(f"EXECUTING: {self.path} Query\n{sql}")
+            cur = self.cursor()
+            cur.execute(sql)
+            data = [row for row in cur]
+            logging.info(f"RETURNED: {self.path} Query")
+            return data
+
+        with self:
+            logging.info(f"EXECUTING: {self.path} Query\n{sql}")
+            cur = self.cursor()
+            cur.execute(sql)
+            data = [row for row in cur]
+            logging.info(f"RETURNED: {self.path} Query")
+            return data
+
+    def query_df(self, sql: str) -> pd.DataFrame:
+        if self._context:
+            logging.info(f"EXECUTING: {self.path} Query\n{sql}")
+            df = pd.read_sql(sql, self._connection)
+            logging.info(f"RETURNED: {self.path} Query")
+            return df
+
+        with self:
+            logging.info(f"EXECUTING: {self.path} Query\n{sql}")
+            df = pd.read_sql(sql, self._connection)
+            logging.info(f"RETURNED: {self.path} Query")
+            return df
+
+#  print(SQLite())
+#  sql = "select sqlite_version() as version, date('now') as today"
+#  SQLite().query(sql)
+#  SQLite().query_df(sql)
+#
+#  with SQLite() as conn:
+#      conn.query(sql)
+#      conn.query_df(sql)
+
+def query(connection: Union[MySQL,SQLite,Domo], sql: str) -> List[Dict]:
+    return connection.query(sql)
+
+def query_df(connection: Union[MySQL,SQLite,Domo], sql: str) -> pd.DataFrame:
+    return connection.query_df(sql)
+
+# params = [
+#     ("select TrackingNumber, OrderDate from table limit 1", Domo),
+#     ("select current_user, current_timestamp", MySQL),
+#     ("select sqlite_version() as version, date('now') as today", SQLite),
+# ]
+
+# funcs = [query, query_df]
+
+# for param in params:
+#     sql, conn = param
+#     for func in funcs:
+#         print(func(conn(), sql))
+
+# for param in params:
+#     sql, con_obj = param
+#     with con_obj() as conn:
+#         for func in funcs:
+#             print(func(conn, sql))
