@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: mozart_framework
+Version: 1.0.9
+Summary: Pacote de Framework RPA da TQI
+Home-page: https://github.com/usuario/meu-pacote-python
+Author: Leander Ribeiro
+Author-email: leander.ribeiro@tqi.com.br
+License: MIT
+Description: ### Introduction
+        
+        Python language framework for Robot Process Automation.
+        
+        ### Supported Python Versions
+        
+        Python 3.4+
+        
+        ### Installation
+        
+        ```sh
+        $ pip install mozart_framework
+        ```
+Keywords: rpa
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown

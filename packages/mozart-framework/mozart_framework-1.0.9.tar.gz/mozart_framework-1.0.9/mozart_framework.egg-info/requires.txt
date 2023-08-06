@@ -1,0 +1,14 @@
+mysql
+psycopg2
+pyodbc
+openpyxl
+requests
+jsonpickle
+logging
+datetime
+tika
+pillow
+pywinauto
+selenium
+chromedriver_autoinstaller
+geckodriver_autoinstaller
