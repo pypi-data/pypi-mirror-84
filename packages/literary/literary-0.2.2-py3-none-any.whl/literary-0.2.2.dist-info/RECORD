@@ -1,0 +1,12 @@
+literary/__init__.py,sha256=5M02VfEpaRi558TX-Db9VVCZ6OwjHPyJesKf43Vm3bs,162
+literary/build.py,sha256=CdsC8e83uO1CuAAr735Kg6rkWrcwXyxkELqQTuk-K58,2705
+literary/exporter.py,sha256=HKPMvaqswSS02ZhjKmlUVf1-B61wr5xst5mswrKupsA,3185
+literary/importer.py,sha256=Pa4Qs2X1AjJISESESDMMuQDRJt1qRXFd1IfkCtmy3Xs,2912
+literary/notebook.py,sha256=TDiWx2xan5r6rmwAMLlYBpJJe3E2VhnuKhzbMPGLK-8,847
+literary/preprocessor.py,sha256=yYghJw1dDASKQvJ_JvEckPFVYGdxJ2tqt8gRI5AhUf0,593
+literary/transformers.py,sha256=sxG92zo4znasrXpPIZcaWQI9tLEG7mUt09hVquwObWA,2756
+literary/utils.py,sha256=oPaIq4ngDrQaAby44tJzjbwJ_Z_gJ1dhozMXxHufJXE,505
+literary-0.2.2.dist-info/entry_points.txt,sha256=S9dLcUYo2GDPkC_TrNW4cVOQ29i4UOrKhdf1ha_oiVI,53
+literary-0.2.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+literary-0.2.2.dist-info/METADATA,sha256=IdEhtuPZta39CcjQQEwo9yFP3AY-cHdrde2f4Wkxh0E,3091
+literary-0.2.2.dist-info/RECORD,,
