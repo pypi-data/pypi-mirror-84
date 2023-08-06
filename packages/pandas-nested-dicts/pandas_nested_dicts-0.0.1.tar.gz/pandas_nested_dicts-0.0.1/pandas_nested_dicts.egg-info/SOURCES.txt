@@ -1,0 +1,10 @@
+README.md
+setup.py
+pandas_nested_dicts/__init__.py
+pandas_nested_dicts/dict_conversion.py
+pandas_nested_dicts.egg-info/PKG-INFO
+pandas_nested_dicts.egg-info/SOURCES.txt
+pandas_nested_dicts.egg-info/dependency_links.txt
+pandas_nested_dicts.egg-info/top_level.txt
+tests/__init__.py
+tests/test_dict_conversion.py
