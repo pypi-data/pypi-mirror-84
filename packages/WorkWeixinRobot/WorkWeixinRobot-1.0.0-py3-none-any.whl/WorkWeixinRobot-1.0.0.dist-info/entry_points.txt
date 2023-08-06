@@ -1,0 +1,3 @@
+[console_scripts]
+wwx-robot = WorkWeixinRobot.work_weixin_robot:main
+
