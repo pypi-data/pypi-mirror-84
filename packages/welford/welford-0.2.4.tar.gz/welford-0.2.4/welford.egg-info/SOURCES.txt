@@ -1,0 +1,12 @@
+README.md
+README.rst
+setup.py
+welford/__init__.py
+welford/example.py
+welford/test_welford.py
+welford/welford.py
+welford.egg-info/PKG-INFO
+welford.egg-info/SOURCES.txt
+welford.egg-info/dependency_links.txt
+welford.egg-info/requires.txt
+welford.egg-info/top_level.txt
