@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: optionvisualizer
+Version: 0.2.4
+Summary: Visualize option prices and sensitivities
+Home-page: https://github.com/GBERESEARCH/optionvisualizer
+Author: GBERESEARCH
+Author-email: gberesearch@gmail.com
+License: MIT
+Description: ## optionvisualizer
+        
+        ### Visualize option prices and sensitivities. 
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
