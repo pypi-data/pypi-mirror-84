@@ -1,0 +1,13 @@
+License.txt
+MANIFEST.in
+README.md
+setup.py
+morsetor/__init__.py
+morsetor/morse.py
+morsetor/to_upload.txt
+morsetor/upload.py
+morsetor/vixtor.py
+morsetor.egg-info/PKG-INFO
+morsetor.egg-info/SOURCES.txt
+morsetor.egg-info/dependency_links.txt
+morsetor.egg-info/top_level.txt
