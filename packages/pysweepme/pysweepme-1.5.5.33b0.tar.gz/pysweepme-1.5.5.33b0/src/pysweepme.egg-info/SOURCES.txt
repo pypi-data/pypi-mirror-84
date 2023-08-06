@@ -1,0 +1,17 @@
+setup.cfg
+setup.py
+src/LICENSE.txt
+src/README.md
+src/pysweepme/DeviceManager.py
+src/pysweepme/EmptyDeviceClass.py
+src/pysweepme/ErrorMessage.py
+src/pysweepme/FolderManager.py
+src/pysweepme/Ports.py
+src/pysweepme/WinFolder.py
+src/pysweepme/__init__.py
+src/pysweepme.egg-info/PKG-INFO
+src/pysweepme.egg-info/SOURCES.txt
+src/pysweepme.egg-info/dependency_links.txt
+src/pysweepme.egg-info/not-zip-safe
+src/pysweepme.egg-info/requires.txt
+src/pysweepme.egg-info/top_level.txt
