@@ -1,0 +1,11 @@
+README.rst
+setup.py
+mimecast_api/__init__.py
+mimecast_api/api_object.py
+mimecast_api/errors.py
+mimecast_api/post_rest.py
+mimecast_api.egg-info/PKG-INFO
+mimecast_api.egg-info/SOURCES.txt
+mimecast_api.egg-info/dependency_links.txt
+mimecast_api.egg-info/requires.txt
+mimecast_api.egg-info/top_level.txt
