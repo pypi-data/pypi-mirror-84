@@ -1,0 +1,9 @@
+name: tw
+channels:
+  - defaults
+dependencies:
+  - python>=3.6
+  - pip>=19
+  - graphviz # for binder
+  - pip:
+      - -e .[doc]
