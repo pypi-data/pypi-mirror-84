@@ -1,0 +1,10 @@
+README.md
+setup.py
+flops_compute.egg-info/PKG-INFO
+flops_compute.egg-info/SOURCES.txt
+flops_compute.egg-info/dependency_links.txt
+flops_compute.egg-info/requires.txt
+flops_compute.egg-info/top_level.txt
+flops_compute.egg-info/zip-safe
+ptflops/__init__.py
+ptflops/flops_counter.py
