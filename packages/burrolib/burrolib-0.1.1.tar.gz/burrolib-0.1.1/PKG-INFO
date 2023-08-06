@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: burrolib
+Version: 0.1.1
+Summary: burro - a supply chain simulator
+Home-page: https://github.com/kosmitive/burro
+Author: xploras
+Author-email: dev@xploras.net
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
