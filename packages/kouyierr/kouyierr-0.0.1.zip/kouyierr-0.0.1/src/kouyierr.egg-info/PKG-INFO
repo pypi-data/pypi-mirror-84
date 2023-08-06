@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: kouyierr
+Version: 0.0.1
+Summary: Document Generator, aka Doc As Code
+Home-page: https://github.com/vmdude/kouyierr
+Author: vmdude
+Author-email: frederic@martin.lc
+License: MIT
+Description: file: README.md
+Keywords: aws
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: test
