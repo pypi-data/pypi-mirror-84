@@ -1,0 +1,5 @@
+emoji
+joblib
+pygtrie
+sklearn_crfsuite
+nltk
