@@ -1,0 +1,8 @@
+airflow_grpc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_grpc/grpc_hook.py,sha256=QE42ubtGM5e5-0QoBzrQS5CPUlxGu9eNCDNoQnPWqbo,2763
+airflow_grpc/grpc_operator.py,sha256=nbggKS_QJ-jxRAQ9jjFtPmN4WwkBJJHkiwy8Ay66TLo,3635
+airflow_grpc-0.0.4.dist-info/LICENSE,sha256=ysJz--Hivxck5ZRVbl_34VwypEF5PBqf_vvIYJvA0KM,1066
+airflow_grpc-0.0.4.dist-info/METADATA,sha256=e6qq92Wu8irB7ZURyUX6m4jG3CAG4jlcsJPIL5l1L_Y,1128
+airflow_grpc-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+airflow_grpc-0.0.4.dist-info/top_level.txt,sha256=tYqwfwn4jrCerC9TCJfL7qztWJruchyQAPsfbrM_7m0,13
+airflow_grpc-0.0.4.dist-info/RECORD,,
