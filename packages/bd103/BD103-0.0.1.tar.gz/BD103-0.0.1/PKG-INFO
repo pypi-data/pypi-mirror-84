@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: BD103
+Version: 0.0.1
+Summary: Personal Package by BD103
+Home-page: https://repl.it/@BD103/BD103-Python-Package
+Author: BD103
+Author-email: dont@stalk.me
+License: UNKNOWN
+Description: # BD103's Personal Coding Package
+        Hey. This is a package full of random functions that I (BD103) found handy.
+        
+        > UwU
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
