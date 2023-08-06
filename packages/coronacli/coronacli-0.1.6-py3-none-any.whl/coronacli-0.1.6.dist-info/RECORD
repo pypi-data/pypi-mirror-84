@@ -1,0 +1,15 @@
+coronacli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coronacli/arguments.py,sha256=oU1tWzrXikGUTrw1kUBuKYLK-ZZyixyeuKzWmRi6F-U,4008
+coronacli/cli.py,sha256=8QNDjWgQOazsi_GvSwZ7Smov2mDkvMlXF36M7hPU9NM,3940
+coronacli/config.py,sha256=sG4A2Ehtsp2OYZOG-QrMUQeFDFRsR3H2wX1LKkHK8MA,2492
+coronacli/db.py,sha256=iv6BY8Ba1PrnkXgBu0MQTBBBRgvrAn6w1ydMVOe5pVA,4470
+coronacli/display.py,sha256=Pdu5B6X3yhoFGkEn0_xm38rCrTePfWoSwCfQlJl3nlg,2990
+coronacli/scraper.py,sha256=2AjpNmSwuALxxdXAI1isHTF_9je1fU1UO9T_XKp1o-c,3383
+coronacli/transformer.py,sha256=P9VzIcKcFuDOM065OBDcIg6pAkX0MRp8Hs8432u7r24,6617
+coronacli/utils.py,sha256=oQ_sd9wdutgpuZeNwUxKqL42l_nvw09cOJoZd0ny5qw,6131
+coronacli-0.1.6.dist-info/LICENSE,sha256=E26YZ87Q2AoU4rezsQicWw-hije6d39Jy9hV6aGHxNk,1070
+coronacli-0.1.6.dist-info/METADATA,sha256=wXxEopePSbKIW5Y4--Q9G3RzVFTDZAYcCdyzM99sZho,643
+coronacli-0.1.6.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+coronacli-0.1.6.dist-info/entry_points.txt,sha256=gT8m2SzdcCdljGg-FWsQHMdWTLj_4dJ-HXj-DgOWyvw,50
+coronacli-0.1.6.dist-info/top_level.txt,sha256=t5kdS7-FHhOmkVDDcJ2-laVvf9QI9dfpgvT8Ha4XPao,10
+coronacli-0.1.6.dist-info/RECORD,,
