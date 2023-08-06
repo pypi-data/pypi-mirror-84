@@ -1,0 +1,10 @@
+setup.py
+zzhprobm/Binomialdistribution.py
+zzhprobm/Gaussiandistribution.py
+zzhprobm/Generaldistribution.py
+zzhprobm/__init__.py
+zzhprobm.egg-info/PKG-INFO
+zzhprobm.egg-info/SOURCES.txt
+zzhprobm.egg-info/dependency_links.txt
+zzhprobm.egg-info/requires.txt
+zzhprobm.egg-info/top_level.txt
