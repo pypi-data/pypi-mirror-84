@@ -1,0 +1,6 @@
+dtale
+fastapi
+uvicorn
+aiofiles
+typing_extensions
+psutil
