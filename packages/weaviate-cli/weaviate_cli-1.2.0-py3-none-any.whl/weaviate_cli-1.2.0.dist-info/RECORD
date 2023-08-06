@@ -1,0 +1,15 @@
+cli.py,sha256=MorNgsp08evt7anQLL02Cb5oLHhks3ACBYGVaNNvCck,3411
+weaviate-cli.py,sha256=j45mqtQ6sDReTr8SMx1EGnHKuPr5vgrDDFFZYE9sOo4,2896
+semi/prompt.py,sha256=E9DPKkQX4aeDSxaUKivDJXyk1aLey61v2J0rfSnQwf8,834
+semi/commands/data.py,sha256=smUWjwSGO1SmcJmXKZrFfqRax1Qcz9qMFBAYOm8ByE8,6293
+semi/commands/misc.py,sha256=0JRG23_eEc8Ign713sJ-al0ko0kyOIYrExSCgKey_2o,1010
+semi/commands/ping.py,sha256=a7pNnPCvV-t7VmmkspnBvtJtmVQs0qM7Es-7Cq4oDlQ,205
+semi/commands/schema.py,sha256=6nPMZXwGMi-CYIqtxNm0FrcSszQFb1dr1O4KOYzMRdc,1082
+semi/config/configuration.py,sha256=rr-Ua6dm1FIP5PSFXtKk-G9UE6gFCBOLtQEILXkiEnI,2336
+semi/config/manage.py,sha256=wnvK-ZNMkCF_jGOoEcaWsM3IZTfbBB17tYLAav4CY_g,1052
+weaviate_cli-1.2.0.dist-info/LICENSE,sha256=pkwQ5PdJ2XJFfrUOljVOU6b6lweGPmd4zK4a7OKdRZs,1508
+weaviate_cli-1.2.0.dist-info/METADATA,sha256=aznoA5-IXJOhoFnjWhb9W-fVmzi9mOX8oAFaGTiWnYg,953
+weaviate_cli-1.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+weaviate_cli-1.2.0.dist-info/entry_points.txt,sha256=tsi8WMkUpeBezLVu2dfAe19VIciVIvL3dnCq-TalXHo,59
+weaviate_cli-1.2.0.dist-info/top_level.txt,sha256=bRj00D1gR-ZnsCyJK8HU2EIYkeB2jvUpOBlU5UoNbV0,9
+weaviate_cli-1.2.0.dist-info/RECORD,,
