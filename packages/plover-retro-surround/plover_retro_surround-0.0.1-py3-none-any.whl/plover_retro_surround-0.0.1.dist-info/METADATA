@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: plover-retro-surround
+Version: 0.0.1
+Summary: Surround words you previously typed with arbitrary characters
+Home-page: https://github.com/elkowar/plover_retro_susurround
+Author: ElKowar
+Author-email: UNKNOWN
+License: MIT
+Keywords: plover_plugin plover
+Platform: UNKNOWN
+Requires-Dist: plover (>=4.0.0.dev6)
+
+./Readme.md
+
+
