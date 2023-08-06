@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+pfpsychopy/__init__.py
+pyflies_psychopy.egg-info/PKG-INFO
+pyflies_psychopy.egg-info/SOURCES.txt
+pyflies_psychopy.egg-info/dependency_links.txt
+pyflies_psychopy.egg-info/entry_points.txt
+pyflies_psychopy.egg-info/not-zip-safe
+pyflies_psychopy.egg-info/requires.txt
+pyflies_psychopy.egg-info/top_level.txt
