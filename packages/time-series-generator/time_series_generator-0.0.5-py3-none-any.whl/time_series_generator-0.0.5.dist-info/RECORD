@@ -1,0 +1,9 @@
+tests/helpers/__init__.py,sha256=A3l7I5F3wQAnQOLhb_Ieb1LFkFnQYHLLxY8GEGgezQs,63
+tests/helpers/json_reader.py,sha256=jC3eRppdaT_1ptR10VwbPtV0GEEtuhjqg37LxOnxD3c,356
+time_series_generator/__init__.py,sha256=1hcLq4Hixm1lHpnmn68lT8dRpdS4nZpekMav8rBJ6Hs,121
+time_series_generator/time_series_generator.py,sha256=GSQNICP39KCLSfGE4IuIiFi97rdEYrnSEXIQHn8ICKc,7562
+time_series_generator-0.0.5.dist-info/LICENSE,sha256=Q2ptU2E48gOsMzhYz_kqVovmJ5d1KzrblLyqD2_-fvY,1235
+time_series_generator-0.0.5.dist-info/METADATA,sha256=T-Gpr_rS0-Wtk1KwU_ICz_eU_KmcmT8I5i0seNk1VsM,3742
+time_series_generator-0.0.5.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+time_series_generator-0.0.5.dist-info/top_level.txt,sha256=dpbTs39CACWqBFOoKiO9JuZQ_fDYN132rgMDJWaHLYg,28
+time_series_generator-0.0.5.dist-info/RECORD,,
