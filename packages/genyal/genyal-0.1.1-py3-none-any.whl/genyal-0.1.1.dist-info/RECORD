@@ -1,0 +1,10 @@
+genyal/__init__.py,sha256=avTR_DAIC-dW2mSe_9oqaqJuW76ucgtPxAjiJ77uIyM,260
+genyal/core.py,sha256=bZTnGk8FO6-XPzCuukGhOpvb_dCnJUqQ5sYkCyBmTj0,502
+genyal/genotype.py,sha256=bnNKjW2O9vh1Z4phRa0wQN_nPXBJUytCIpRsUPiqme4,833
+genyal/population.py,sha256=A8ZwSXED07Y0fUfuXZjQDmVEjwM8YRjh3aZsr1eqhTg,2406
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_population.py,sha256=dHsOdU_Ar8BWdHFraO6H960CmDe-YlpvfycVNn1jD7Y,990
+genyal-0.1.1.dist-info/METADATA,sha256=EpVzzfVw_oPBcSeSW5Qn_FUdyZHMI87Xm1Pm7elOsEI,822
+genyal-0.1.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+genyal-0.1.1.dist-info/top_level.txt,sha256=VVeWX5xZnQizbDdBr0TRcaPmGmBQ0ZA-4iS2PoQwKWk,12
+genyal-0.1.1.dist-info/RECORD,,
