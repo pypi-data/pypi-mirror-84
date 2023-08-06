@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+frail/__init__.py
+frail/ast.py
+frail.egg-info/PKG-INFO
+frail.egg-info/SOURCES.txt
+frail.egg-info/dependency_links.txt
+frail.egg-info/top_level.txt
