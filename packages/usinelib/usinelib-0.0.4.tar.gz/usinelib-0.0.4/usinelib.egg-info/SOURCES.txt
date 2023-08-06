@@ -1,0 +1,7 @@
+README.md
+setup.py
+usinelib/__init__.py
+usinelib.egg-info/PKG-INFO
+usinelib.egg-info/SOURCES.txt
+usinelib.egg-info/dependency_links.txt
+usinelib.egg-info/top_level.txt
