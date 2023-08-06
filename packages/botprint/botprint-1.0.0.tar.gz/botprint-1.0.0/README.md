@@ -1,0 +1,18 @@
+# botprint
+
+A small Project to make a Module to print out stuff in a Discord-Channel with your Bot
+
+Usage:
+update environment Variables in TOKEN.env in for example .../Python/Python37/Lib/site-packages/Bot_Print
+PRINTER_TOKEN = your Discord-Bot Token
+DISCORD_GUILD = the Standard Guild you want to use (you can call it manualy in the functions if you want)
+DISCORD_CHANNEL = the Standard Cannel in your Guild you want to use ("")
+
+finaly just import Bot_Print.bprint as bprint and have fun
+
+Functions:
+tostring(Array): Converts Python-Array into String
+splitString(STRING): Splits String in Strings of length 2000 which is the Maximum String-Size in Discord
+bprint(Object, guild=GUILD, Channel=CHANNEL): converts some stuff and prints out x in given channel
+def shutdown(): closes bot-event-loop (should always be called at the end of the program)
+"""
