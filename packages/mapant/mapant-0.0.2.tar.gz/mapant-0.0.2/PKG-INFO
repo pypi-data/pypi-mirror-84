@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: mapant
+Version: 0.0.2
+Summary: Create custom maps for GARMIN GPS from mapant
+Home-page: https://github.com/trygveasp/mapant
+Author: Trygve Aspelien
+Author-email: trygve@aspelien.no
+License: UNKNOWN
+Description: Create custom maps for GARMIN GPS from mapant
+Keywords: custom maps,mapant,garmin,gps,utm
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
