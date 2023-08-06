@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: YoungToolkit
+Version: 0.1.0
+Summary: A Toolkit for a series of Young projects
+Home-page: https://github.com/Jason-Young-AI/YoungToolkit
+Author: Jason-Young-AI
+Author-email: AI.Jason.Young@gmail.com
+License: UNKNOWN
+Description: 
+        # YoungToolkit
+        A Toolkit for a series of Young projects.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+Provides-Extra: full
+Provides-Extra: nv-io
+Provides-Extra: nv-track
