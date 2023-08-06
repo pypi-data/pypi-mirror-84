@@ -1,0 +1,12 @@
+cymem/__init__.pxd,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cymem/cymem.pyx,sha256=xc_ctQ39_6KEUxx0jjTWbaeI9R8375zyo3Azofn82Rs,5592
+cymem/cymem.pxd,sha256=3a6VyWkQ-d6GelUOGNtdTAAg2ksWKjW9mUMu5UzR2zc,779
+cymem/cymem.cpython-39-x86_64-linux-gnu.so,sha256=6kX1mNW7pM3ZLjuNjqDR3ZTx1m49dikypUtFDcFQeuQ,73024
+cymem/__init__.py,sha256=SZPicygro0c1rh3QY-iN21ZormYrSBeim1R2DSeaOH4,21
+cymem/about.py,sha256=zo05ElV8jlG8Hz2LarrnRIkvKTvqRYBOwapFeoGbhFY,232
+cymem/tests/test_import.py,sha256=QP4VhFs618LeiJvBSEfZh3deETbWxuzir1mEfL-fOV0,263
+cymem-2.0.4.dist-info/top_level.txt,sha256=dCYwCFWTj_NE7Z9zFrrKqAcWuUCtg52zKRI4l_Wrr7Q,6
+cymem-2.0.4.dist-info/LICENSE,sha256=xl1KvHrI1v-Y6EmMug7LFv8yYHW7QDBPIAtLnwlyxMc,1106
+cymem-2.0.4.dist-info/WHEEL,sha256=BN03ArHOw3jEHjz8KkBwUcPvZpJYLJQ75xL-YN4z238,111
+cymem-2.0.4.dist-info/METADATA,sha256=eqrH9S0JynlA_pOmKCglbiQL0AEoyrbJuzrPYAHtQjs,8200
+cymem-2.0.4.dist-info/RECORD,,
