@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "pylicensemanager"
+version = "0.1.4"
+description = "PyLicenseManager is a Python client library for the License Manager for Woocommerce Rest API."
+authors = ["Michael Ramsey <mike@hackerdise.me>"]
+maintainers = ["Michael Ramsey <mike@hackerdise.me>"]
+license = "MIT"
+readme = "README.rst"
+homepage = "https://www.licensemanager.at/docs/rest-api/"
+repository = "https://gitlab.com/mikeramsey/pylicensemanager"
+documentation = ""
+keywords = [
+    "Python",
+    "WordPress",
+    "License Manager for Woocommerce",
+    "License",
+    "Woocommerce",
+    "API wrapper"
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "^2.24.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

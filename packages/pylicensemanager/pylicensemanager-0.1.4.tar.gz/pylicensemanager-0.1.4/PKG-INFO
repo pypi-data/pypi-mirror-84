@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pylicensemanager
+Version: 0.1.4
+Summary: PyLicenseManager is a Python client library for the License Manager for Woocommerce Rest API.
+Home-page: https://www.licensemanager.at/docs/rest-api/
+License: MIT
+Keywords: Python,WordPress,License Manager for Woocommerce,License,Woocommerce,API wrapper
+Author: Michael Ramsey
+Author-email: mike@hackerdise.me
+Maintainer: Michael Ramsey
+Maintainer-email: mike@hackerdise.me
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.24.0,<3.0.0)
+Project-URL: Repository, https://gitlab.com/mikeramsey/pylicensemanager
+Description-Content-Type: text/x-rst
+
+# Pylicensemanager
+
+PyLicenseManager is a Python client library for the License Manager for Woocommerce Rest API.
+
+## Installation
+
+Use the package manager [pip](https://pypi.org/) to install pylicensemanager.
+
+`
+pip install pylicensemanager
+`
+
+## Usage
+
+```
+import pylicensemanager
+```
+
+Review documentation for more information: https://www.licensemanager.at/docs/rest-api/
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
