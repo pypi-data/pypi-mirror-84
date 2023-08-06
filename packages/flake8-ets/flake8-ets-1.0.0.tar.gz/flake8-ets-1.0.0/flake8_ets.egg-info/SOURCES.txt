@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+flake8_ets/__init__.py
+flake8_ets/copyright_header.py
+flake8_ets/version.py
+flake8_ets.egg-info/PKG-INFO
+flake8_ets.egg-info/SOURCES.txt
+flake8_ets.egg-info/dependency_links.txt
+flake8_ets.egg-info/entry_points.txt
+flake8_ets.egg-info/requires.txt
+flake8_ets.egg-info/top_level.txt
+flake8_ets/tests/__init__.py
+flake8_ets/tests/test_copyright_header.py
