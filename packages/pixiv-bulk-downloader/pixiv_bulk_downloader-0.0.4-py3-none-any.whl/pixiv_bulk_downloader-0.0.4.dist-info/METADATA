@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: pixiv-bulk-downloader
+Version: 0.0.4
+Summary: Pixiv Bulk Downloader
+Home-page: https://github.com/eggplants/pixiv-bulk-downloader
+Author: eggplants
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+Requires-Dist: PixivPy
+
+# pixiv-bulk-downloader
+
+- Pixiv Bulk Downloader
+
+## Feature
+
+- Download
+  - works of following users
+    - SAVE: `$HOME/pbd/following`
+  - bookmarked works
+    - SAVE: `$HOME/pbd/bookmarks`
+
+## Try
+
+```bash
+# pip 3.x
+pip install pixiv-bulk-downloader
+# run
+pbd
+[+]ID is mail address, userid, account name.
+[+]ID:
+[+]Password:
+get_all_following_works? [yn]:
+get_all_bookmarked_works? [yn]:
+```
+
+
