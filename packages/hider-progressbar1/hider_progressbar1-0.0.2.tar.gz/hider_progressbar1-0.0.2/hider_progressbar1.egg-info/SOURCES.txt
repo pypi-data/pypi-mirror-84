@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+hider_progressbar/__init__.py
+hider_progressbar1.egg-info/PKG-INFO
+hider_progressbar1.egg-info/SOURCES.txt
+hider_progressbar1.egg-info/dependency_links.txt
+hider_progressbar1.egg-info/top_level.txt

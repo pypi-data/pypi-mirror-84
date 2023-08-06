@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: hider-progressbar1
+Version: 0.0.2
+Summary: To make a Progress Bar
+Home-page: https://github.com/dev-hider
+Author: Hider
+Author-email: ramyahmedfo2@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: progressbar
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
