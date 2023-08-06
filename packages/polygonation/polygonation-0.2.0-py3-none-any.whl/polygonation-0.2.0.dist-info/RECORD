@@ -1,0 +1,13 @@
+polygonation/__init__.py,sha256=hQ45TAclCU03MxcSs3gU6qtQQ_LD3QAglQK3lD8lziU,142
+polygonation/_core.py,sha256=xo3jIyZga969m7AzEYg8I4KxD2pnWeYPEO6kjhaSTt0,8432
+polygonation/_version.py,sha256=bYOz1oagEqMO1voqPBirMFibidL7BK_yXtuyNj5jdIc,497
+polygonation/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polygonation/tests/test_isconvex.py,sha256=SrO8kZSKiLnNtbJQ8VtX4QSAn2gOw5p2jSW7_LsrwWQ,771
+polygonation/tests/test_polygonate.py,sha256=sgZ7ul8TuIOC1AeobNfiOoisQH0Lj69Upd9322VDzBk,1304
+polygonation-0.2.0.dist-info/AUTHORS.rst,sha256=O7zO_0uGKtRqe7siWIKWQmu0e31a19d94F5-wXiZrcI,166
+polygonation-0.2.0.dist-info/LICENSE,sha256=BpWaD1HNPnRVIw0FAqIJGFhND9Oj24xDqzJSsmaSnyY,1518
+polygonation-0.2.0.dist-info/METADATA,sha256=5FTWJBp3LEsEAlOLkwN-edSppxpNJlTCH3uqJsQDafA,1076
+polygonation-0.2.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+polygonation-0.2.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+polygonation-0.2.0.dist-info/top_level.txt,sha256=DkP_SbcSaGUVh2JrJGFgtFrUBp_IRSRbUIqTMQTpo50,13
+polygonation-0.2.0.dist-info/RECORD,,
