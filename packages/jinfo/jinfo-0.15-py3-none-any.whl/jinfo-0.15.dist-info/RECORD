@@ -1,0 +1,11 @@
+jinfo/__init__.py,sha256=_gdIqElWh-xRsn9V1u6dGYN8wlqelpYVIoMMKK1o4HQ,815
+jinfo/alignment.py,sha256=Ov8sQkU_2qEf21AqXxYqn8bh-uvUkUFhLbjaZrKaHdw,1807
+jinfo/metabolite.py,sha256=XyBpDk1f6ca6RM3V26RJA-NL38IH-k6xmGt43mpKOmI,161
+jinfo/phylogenetics.py,sha256=zYOHkrEWQy-FELj6Q1PV_dvEfsOnOS8GVLzmvUmQnB0,347
+jinfo/sequence.py,sha256=FYJ7WqPtXvi97SoXg8MYlIMm1TSXiLmo4jkAW8zoM00,6680
+jinfo/tables.py,sha256=3cPKqmdIbKCRxT-hPXaEDwg3qr4UWKun7DU7crvQ9LU,1830
+jinfo-0.15.dist-info/LICENSE,sha256=Nq4izyhB3gOi_gMWOi0OJsHoK0ECXv5oyTOyzu2rl2E,1068
+jinfo-0.15.dist-info/METADATA,sha256=o7SEzmf9Z72ReGuJm_yFAYXy8_A-JQh4scZ3pxBz6xQ,207
+jinfo-0.15.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+jinfo-0.15.dist-info/top_level.txt,sha256=dKm9G1e2kxS_pbpHL3egzx3gxUAUz0gyNKfrdxCJxWg,6
+jinfo-0.15.dist-info/RECORD,,
