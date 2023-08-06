@@ -1,0 +1,17 @@
+odoo/addons/connector_importer_demo/README.rst,sha256=gxovsqzXzlwDSNZRI-ILgjxyLKO6o-U0hpOzD4yY0FY,2722
+odoo/addons/connector_importer_demo/__init__.py,sha256=2i_tQlW8aIhh1n10Ur_I2FbbXYGEbjBjx7tcc7_Chlc,34
+odoo/addons/connector_importer_demo/__manifest__.py,sha256=snpSJZhKEgO97YHLzFl2KV6JAdEnLP2WO2nLXHSJ_jQ,674
+odoo/addons/connector_importer_demo/hooks.py,sha256=1b7EIPFM6arqnUMWQLgHa-RSarTGiZp31J_8pQCt5Rs,682
+odoo/addons/connector_importer_demo/data/import_backend.xml,sha256=psydbjfSbOIMDtDihjYyXlUtRAsfXxRTRKyxiNbUT3s,332
+odoo/addons/connector_importer_demo/data/import_recordset.xml,sha256=JFH6g28NeMOC_QN30MhByyK56hGRyCQf3WEupt8w3Hk,542
+odoo/addons/connector_importer_demo/data/import_source.xml,sha256=vdf7V_Zs3XPkbYs3jS3QB7rI9qCO6kdxpjBey0XLFl0,667
+odoo/addons/connector_importer_demo/data/import_type.xml,sha256=wK-IA_hNw6u_Dq0s_dpIyjizK3wy3eoH3pONxFu8nFk,399
+odoo/addons/connector_importer_demo/example/res.partner.csv,sha256=naC8IVDVy9HmCu9SpNi9Y2nZi84RPFqGRKncHEH0esU,124064
+odoo/addons/connector_importer_demo/i18n/connector_importer_demo.pot,sha256=DSoZvi3Yi_MHcxFXi2AFQSEsCID4KGLbvwoBM_xL6ik,341
+odoo/addons/connector_importer_demo/readme/DESCRIPTION.rst,sha256=68s7P98K709A4CZXgFDmkSPV5AueWzCyYK25qi5cMh0,36
+odoo/addons/connector_importer_demo/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/connector_importer_demo/static/description/index.html,sha256=ZvNmcjTpgt3J4dAwhIlYaE1_YkBwX2NTsP7ULuPMVKE,11569
+odoo13_addon_connector_importer_demo-13.0.1.0.1.dist-info/METADATA,sha256=e-X40UB0fh6KjIk2uq3st_kxeOOOfQVtzvXSwqz_goo,3296
+odoo13_addon_connector_importer_demo-13.0.1.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+odoo13_addon_connector_importer_demo-13.0.1.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo13_addon_connector_importer_demo-13.0.1.0.1.dist-info/RECORD,,
