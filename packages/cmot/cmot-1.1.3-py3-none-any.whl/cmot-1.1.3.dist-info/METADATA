@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: cmot
+Version: 1.1.3
+Summary: A collection of miscellaneous goods at an unbeatable price
+Home-page: UNKNOWN
+Author: Eric Langlois
+Author-email: eric@langlois.xyz
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# CMOT
+A collection of miscellaneous goods at an unbeatable price.
+
+This project is a collection of relatively isolated utilities.
+They are designed to minimize inter-dependencies such that, if desired, it is
+easy to copy only the needed files (and license) instead of importing the whole
+project.
+
+## Install
+```sh
+pip install cmot
+```
+
+## Development
+### Editable Install
+```sh
+python setup.py develop [--user]
+```
+Re-run this command to refresh the version number (based on git tags).
+
+### Versioning
+Uses [Semantic Versioning](https://semver.org/).
+
+Versions are set exclusively via git tags:
+```sh
+git -a v0.1.2 -m ""
+```
+
+
