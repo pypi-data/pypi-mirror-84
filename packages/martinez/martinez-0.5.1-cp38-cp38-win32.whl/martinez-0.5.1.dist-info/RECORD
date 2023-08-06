@@ -1,0 +1,15 @@
+_martinez.cp38-win32.pyd,sha256=9AnG3o68ZOAnm6ChUGTUlobOY2hD_RNCYwLeDKKa7Lw,302080
+martinez/__init__.py,sha256=D4dBlDSqGLOu82x0ibf4dU6iZ-2gGnBSZIPSKk2leL4,96
+martinez/boolean.py,sha256=4iqm_Rqv4n51LXH-yTKlz-7K7BApm-BDuC8Bw1TSnR4,30033
+martinez/bounding_box.py,sha256=ttZxwpuzw3TWLbpwrhNo9CAhuLxHesrG-hvyLAEFSi8,1368
+martinez/contour.py,sha256=QFBrzvxtSCe9mQaz58ZPrZ_Z595_VmxZ1NoHBRZMo94,2272
+martinez/hints.py,sha256=y-q5VXRMSjXLZP-USO41AoeNfszq26usEGlM9gP_yTo,128
+martinez/point.py,sha256=KH89W1OE0VuIMiKZAWWyFeiuUPM1ACRGmYCnxwn9K2Y,902
+martinez/polygon.py,sha256=TBqBf1DtFhy3TPAVIGauX__N1NidsIOc4EjMDxmGdVM,1445
+martinez/segment.py,sha256=ae9YS8Bm18tPLhwzc2bEOeEGFZZeedRs8wJrLBvNiRs,1300
+martinez/utilities.py,sha256=xq695T-j4He5Cl-koV6ooQPPHTd9n9Fw4cjrDQtB21o,6093
+martinez-0.5.1.dist-info/LICENSE,sha256=1-Ox7Njxk_vfHVt7hoWbAXKg6uWwHCVAvfN0eO1NxQ0,1090
+martinez-0.5.1.dist-info/METADATA,sha256=UzClKZ2FWhy8JQdAZA6F_MbgAAHU1UA8gE5Pzf7fS5E,4793
+martinez-0.5.1.dist-info/WHEEL,sha256=bx0Vq62qOi-YRF86BWiyntJBxQpiwFnIQtYYsMU2Xg4,101
+martinez-0.5.1.dist-info/top_level.txt,sha256=B2ur_VM5fT7Dqf57av9AGXrQY3sFufFYnu0QPxyNRT0,19
+martinez-0.5.1.dist-info/RECORD,,
