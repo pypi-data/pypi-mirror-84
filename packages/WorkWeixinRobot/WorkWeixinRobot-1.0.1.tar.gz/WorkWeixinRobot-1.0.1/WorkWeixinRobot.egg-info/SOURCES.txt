@@ -1,0 +1,10 @@
+README.md
+setup.py
+WorkWeixinRobot/__init__.py
+WorkWeixinRobot/work_weixin_robot.py
+WorkWeixinRobot.egg-info/PKG-INFO
+WorkWeixinRobot.egg-info/SOURCES.txt
+WorkWeixinRobot.egg-info/dependency_links.txt
+WorkWeixinRobot.egg-info/entry_points.txt
+WorkWeixinRobot.egg-info/requires.txt
+WorkWeixinRobot.egg-info/top_level.txt
