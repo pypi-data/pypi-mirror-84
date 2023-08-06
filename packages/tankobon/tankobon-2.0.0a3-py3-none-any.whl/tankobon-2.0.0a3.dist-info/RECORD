@@ -1,0 +1,17 @@
+tankobon/__init__.py,sha256=OtDX-sXokvyU8TO0Q7EsCTHNmmjSQYiWJyJwAkrQEdA,257
+tankobon/__main__.py,sha256=ZcSPWJ9cp1qlVypXwYlwq4EcYdIjkHxuzzLr6WueW4s,37
+tankobon/__version__.py,sha256=tXyf55Nwf8WmpyxBqrK1zOjwabOAVluvnQzpzFFMCRE,41
+tankobon/base.py,sha256=u9RUOhgRpmmA2JZDpShV64nKi_fh8G34GZjfijmgxnk,9920
+tankobon/cli.py,sha256=Ql3WWlJzC8KeuWJmfL7MvmpM7OD2SGQy4T3md1ROt64,2643
+tankobon/exceptions.py,sha256=xHtBU0G_UQoo3wYBj5Wts29hz23MomrcRtzmnCOsGC4,107
+tankobon/gui.py,sha256=f2iIJVhYEe7YvvP8dzdkK2pbQDvUUnto2Mex8bc-7G0,80
+tankobon/schema.py,sha256=Ihpc3qubZ4wS52aZ4trBmjl6Lf1AhiLL8npGLoU-OJ8,1086
+tankobon/utils.py,sha256=DyGNFIK0TSKp2iZxRHacBXjc1moarCXhpWEbTbuqClk,1487
+tankobon/bootstraps/INDEX.zip,sha256=UETNCJWILZL6NT3YJPLwTgty3mOvCes3b7Mx0SThWzM,948490
+tankobon/bootstraps/__init__.py,sha256=UhnTYV8CagBx-9w5iJqTi4mtzCfuyCqgM7UwG6gXvi0,5194
+tankobon/bootstraps/komi_san_wa_komyushou_desu.py,sha256=-15rr7421j-LPzxHMwhoEniK61UjnZMbA5BaKT3ZJiI,2053
+tankobon-2.0.0a3.dist-info/entry_points.txt,sha256=vSyqM_9I8_LPxSMyXgOuYg2-0ddEter5Qalke_ZOyJk,45
+tankobon-2.0.0a3.dist-info/LICENSE,sha256=daCIkImYgtHrrznLq7qczZFShEtWFktZ5jNNfiZkaK4,1100
+tankobon-2.0.0a3.dist-info/WHEEL,sha256=CqyTrkghQBNsEzLD3HbCSEIJ_fY58-XpoU29dUzwHSk,81
+tankobon-2.0.0a3.dist-info/METADATA,sha256=0VYbXf45dNLnWiY5AC_ZiEotWoQDmKuuhYWLxEvY7pc,2215
+tankobon-2.0.0a3.dist-info/RECORD,,
