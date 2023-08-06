@@ -1,0 +1,11 @@
+seedweed/__init__.py,sha256=cD8O7-supoRrCkHOAyg4bgGl5wFU_Pu3rjhtpD0fk1c,274
+seedweed/conformance.py,sha256=qasS2AEBrWk4hoFUO60iChftLKdy8wSyqpBjmq-cCms,1690
+seedweed/reference.py,sha256=6RsAdT5japilU66xEkxvfK1zDa-CNyK0AVtrOr_Ffzs,2505
+seedweed/test-vectors.csv,sha256=zkm2sf_P35eKe14RV95RKyK8oBslh20SpyBiEmh2aso,360086
+seedweed/vectors.py,sha256=4oo9mnyn-uhivYgbvgBmloKu9cgQx5BZtOzGCTtEG4s,4610
+seedweed-1.0rc6.dist-info/entry_points.txt,sha256=49nyfdEv3e_zhhPPjXkag8Ht7AXnsZ2ZgAjyviE3tag,76
+seedweed-1.0rc6.dist-info/LICENSE-APACHE,sha256=TRD-XzqhdrBbIpokiGa61wuDTBc_ElKoFP9HSNihODc,10255
+seedweed-1.0rc6.dist-info/LICENSE-MIT,sha256=z1ayT4jjyQ_4oJ1Fd0xFUhxNcg7RTigojtxB5LsYBs0,1080
+seedweed-1.0rc6.dist-info/WHEEL,sha256=NLqmsx-ZFZ6gDavYgh2oH0ZSN-KRmpcdEXIZDnYy9Pg,99
+seedweed-1.0rc6.dist-info/METADATA,sha256=nh9MCI4TvFryRvWhFy5VTKQOGRqH8-vhDzHdZJr8jE4,4128
+seedweed-1.0rc6.dist-info/RECORD,,
