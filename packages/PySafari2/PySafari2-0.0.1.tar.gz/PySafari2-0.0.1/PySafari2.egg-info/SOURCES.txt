@@ -1,0 +1,8 @@
+README.md
+setup.py
+PySafari2/PySafari.py
+PySafari2/__init__.py
+PySafari2.egg-info/PKG-INFO
+PySafari2.egg-info/SOURCES.txt
+PySafari2.egg-info/dependency_links.txt
+PySafari2.egg-info/top_level.txt

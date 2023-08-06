@@ -1,0 +1,1 @@
+This is a small web browser that acts like Safari made in Python
