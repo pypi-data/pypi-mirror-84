@@ -1,0 +1,12 @@
+kg_traefik2/__init__.py,sha256=HIFEBevvvf-KrNDjNsTd7cIxlpVbMfpaHBTYa05vg4w,242
+kg_traefik2/builder.py,sha256=7jMZ0A1jwgkwkDvonMDXfdIjfRtRa2hs063F6XPxvvA,14734
+kg_traefik2/option.py,sha256=MzUOrFN8Mm2jLwky2hOyjDYwg8JLqL7u3Z9XcUeVF_k,5582
+kg_traefik2/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kg_traefik2/tests/test_builder.py,sha256=ZSH7POOJQuMADOKk_FzZiPAXfu1OB7MD-GVFFQVag8s,1425
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_builder.py,sha256=ZSH7POOJQuMADOKk_FzZiPAXfu1OB7MD-GVFFQVag8s,1425
+kg_traefik2-0.7.4.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+kg_traefik2-0.7.4.dist-info/METADATA,sha256=UY3RvOJ93qI8jHBBGjivfn7LJPAJGGkEUTMVaOECt_E,5686
+kg_traefik2-0.7.4.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+kg_traefik2-0.7.4.dist-info/top_level.txt,sha256=_ty1fgkChe8vlyDfpZ3oe_F1R-WoSckJEVYYb4Ogg7g,12
+kg_traefik2-0.7.4.dist-info/RECORD,,
