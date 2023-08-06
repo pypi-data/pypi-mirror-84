@@ -1,0 +1,3 @@
+[console_scripts]
+papi_iot = papi_iot.cli:main
+
