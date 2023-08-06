@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: PyGHub
+Version: 0.0.3
+Summary: A github module for Python 
+Home-page: https://github.com/FRostri/PyGHub
+Author: FRostri
+Author-email: frostri.sho755@gmail.com
+License: UNKNOWN
+Description: # PyGHub
+        
+        A simple and actualized module of Github for Python.
+        
+        Actualy in the pre-alpha version.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Version Control
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

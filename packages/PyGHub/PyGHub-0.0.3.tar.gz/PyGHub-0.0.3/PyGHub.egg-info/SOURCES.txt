@@ -1,0 +1,8 @@
+README.md
+setup.py
+PyGHub/__init__.py
+PyGHub/pyghub.py
+PyGHub.egg-info/PKG-INFO
+PyGHub.egg-info/SOURCES.txt
+PyGHub.egg-info/dependency_links.txt
+PyGHub.egg-info/top_level.txt
