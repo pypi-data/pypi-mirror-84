@@ -1,0 +1,3 @@
+[console_scripts]
+logview = pylogview.__main__:main
+
