@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: pyflies-psychopy
+Version: 0.1.1
+Summary: Generator for PsychoPy from pyFlies models
+Home-page: https://github.com/pyflies/pyflies-psychopy
+Author: Igor Dejanovic
+Author-email: igor.dejanovic@gmail.com
+License: MIT
+Description: # pyflies-psychopy
+        
+        Generator for [PsychoPy](https://www.psychopy.org/) experiments from
+        [pyFlies](https://github.com/pyflies/pyflies) models.
+        
+        When this project is installed you will have a textX registered generator that
+        can generate PsychoPy experiment from pyFlies models (`.pf` files). You can
+        verify that generator is available by:
+        
+        ```
+        textx list-generators
+        ```
+        
+        and you can generate PsychoPy experiment by:
+        
+        ```
+        textx generate <your pyflies model.pf> --target psychopy --overwrite
+        ```
+        
+        For the details see [running generators
+        section](https://pyflies.github.io/pyflies/latest/generators/) of pyFlies
+        documentation.
+        
+        
+        # Credits
+        
+        Initial project layout generated with `textx startproject`.
+        
+Keywords: experiments,pyflies,behavior,psychology,neuroscience,textX
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Interpreters
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
