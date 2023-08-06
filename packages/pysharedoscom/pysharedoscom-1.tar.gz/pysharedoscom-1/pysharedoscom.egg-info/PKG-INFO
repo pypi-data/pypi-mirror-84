@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: pysharedoscom
+Version: 1
+Summary: PyshareLibrary
+Home-page: UNKNOWN
+Author: Aldhiya Rozak
+Author-email: Aldhiya.rozak@gmail.com
+License: MIT
+Description: # BejjoLib
+        
+        ## Introduction
+        
+        Beta Version of BejjoLib Python, Stay with us.
+        
+        ## Code Samples
+        
+        bejjo.string(char=8,count=1,upper=True,lower=True,numeric=True)
+        - char : length of random string
+        - count : return a list if count>1
+        - upper : upper case is True as default
+        - lower : lower case is True as default
+        - numeric : numeric is True as default
+        
+        bejjo.char(count=1,upper=True,lower=True,numeric=True)
+        - count : return a list if count>1
+        - upper : upper case is True as default
+        - lower : lower case is True as default
+        - numeric : numeric is True as default
+        
+        ## Installation
+        
+        Windows pip
+        - pip install bejjoeqq
+        
+        Change Log
+        ==========
+        
+        v1(08/11/2020)
+        ----------------
+        - First Release
+Keywords: menu
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
