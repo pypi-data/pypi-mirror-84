@@ -1,0 +1,8 @@
+numpy
+matplotlib
+trimesh
+time
+warnings
+skimage
+random
+sympy
