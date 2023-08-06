@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: mutiplexing
+Version: 1.0.0
+Summary: 数据分析复用模块
+Home-page: UNKNOWN
+Author: Liu Wei
+Author-email: luckybang@163.com
+License: MIT Licence
+Description: 数据分析复用模块
+Keywords: pip,mutiplexing,mp
+Platform: any
