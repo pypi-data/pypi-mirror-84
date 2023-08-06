@@ -1,0 +1,11 @@
+deep_toggl/__init__.py,sha256=wk74hzmC47AFuFP9mlab0KcwDaNStHpJp6x7KWYQsH8,1517
+deep_toggl/__main__.py,sha256=ubt6XyZvcHwdjCQ90B_U4MeP-3YJduz5GWUC9yOgkrg,27
+deep_toggl/cli.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deep_toggl/config.py,sha256=ygY0wFFTjQVSFwVeNjyXx6skIYd2KUkg995dBUeU22Q,1469
+deep_toggl/evaluator.py,sha256=stUAnOgJ4xvffD0ta1D8cmUKr7E8yzuBPaLBsKnqmzM,1872
+deep_toggl/summarizer.py,sha256=i92xqkVC-xM0LSUzBADSwWBQhwiNX_8BitRP9dIelNU,1553
+deep_toggl-0.3.dist-info/METADATA,sha256=Gu10bgfLYvE0swlBfpyELcZ2yb1MOuYCEU64-mcNS8U,2285
+deep_toggl-0.3.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+deep_toggl-0.3.dist-info/entry_points.txt,sha256=IBGRN0d2yJRV-wnonju4g-Km1uYh9w9-APIDqXvidHs,48
+deep_toggl-0.3.dist-info/top_level.txt,sha256=mfFBKGjrGbOpmoKT40YaecnhBMhPrQPT70EwGIxKc2g,11
+deep_toggl-0.3.dist-info/RECORD,,
