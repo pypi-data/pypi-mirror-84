@@ -1,0 +1,3 @@
+[console_scripts]
+commit = commit.__main__:main
+
