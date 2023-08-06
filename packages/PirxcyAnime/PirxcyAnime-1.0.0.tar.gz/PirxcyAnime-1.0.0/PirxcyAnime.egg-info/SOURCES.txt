@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+AnimeBot/__init__.py
+PirxcyAnime.egg-info/PKG-INFO
+PirxcyAnime.egg-info/SOURCES.txt
+PirxcyAnime.egg-info/dependency_links.txt
+PirxcyAnime.egg-info/requires.txt
+PirxcyAnime.egg-info/top_level.txt
