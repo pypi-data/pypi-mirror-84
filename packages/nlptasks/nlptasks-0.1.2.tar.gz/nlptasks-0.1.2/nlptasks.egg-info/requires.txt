@@ -1,0 +1,12 @@
+SoMaJo==2.1.1
+nltk==3.5
+numpy==1.18.*
+pad-sequences==0.3.*
+pandas==1.1.*
+scipy==1.5.*
+setuptools>=40.0.0
+spacy-lookups-data==0.3.*
+spacy==2.3.*
+stanza==1.1.*
+tensorflow==2.3.*
+torch==1.6.*
