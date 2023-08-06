@@ -1,0 +1,15 @@
+pyinotifyd/__init__.py,sha256=eq9YDSdV9PV1M7hht4J8Zuizf90IHEvtcX4_vnOCZ3E,6332
+pyinotifyd/_install.py,sha256=3QNL_GwqrtXZrv8ZMPl-7JoAsBuYtOzTd7VW_9_h5lc,3670
+pyinotifyd/filemanager.py,sha256=AAYvsVMcf9a6KzFTqa_dz3q1-h6bfj13v2B6C8gTe6c,6881
+pyinotifyd/scheduler.py,sha256=5H4dLKKS8dGh2MW__MKQPqe4a9cQB9H7MHX0C4mWLLQ,4912
+pyinotifyd/watch.py,sha256=4hGeLwYtsfMRg5Ljamlucp-efTjTeZp81uLLFMPbMJI,3685
+pyinotifyd/docs/config.py.example,sha256=ywL-_fGE2kM_sDyFuXFGtkxMZBYBSm4VykdnCSFhKWs,1804
+pyinotifyd/misc/openrc/pyinotifyd.confd,sha256=ZGuANaV9y3T-Jx9LWnGyFyuhJ47X1tMNHsArFYlqlGo,247
+pyinotifyd/misc/openrc/pyinotifyd.initd,sha256=Q5XU4tPyeTZ3X6nbjh3mr7duIgJb2FwxZ3KQCwBWYnk,773
+pyinotifyd/misc/systemd/pyinotifyd.service,sha256=4S4B5dzk3a4ZAeg03hv17Ug7NBqig7u46WQaPsp09Zk,156
+pyinotifyd-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyinotifyd-0.0.1.dist-info/METADATA,sha256=V8RTa-metjfqbEri0A-tRdjx311H1WFSwVP9mscY5zI,10350
+pyinotifyd-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pyinotifyd-0.0.1.dist-info/entry_points.txt,sha256=w05ySwpi0obJz4LuxoO1GMZ5NoXGeW-HbxaKolaVml8,48
+pyinotifyd-0.0.1.dist-info/top_level.txt,sha256=PXL5inFsEa5kR9kwl19GZY8vbMluEJwrrSDKXJmGKgg,11
+pyinotifyd-0.0.1.dist-info/RECORD,,
