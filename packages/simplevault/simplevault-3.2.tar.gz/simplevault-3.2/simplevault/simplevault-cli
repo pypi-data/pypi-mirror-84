@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+from fire import Fire
+import sys
+print(sys.path)
+from simplevault.vault import Vault
+
+if __name__ == "__main__":
+    Fire(Vault)
