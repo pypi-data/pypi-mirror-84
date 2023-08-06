@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+bin/mcinspect
+memcacheinspector/__init__.py
+memcacheinspector3.egg-info/PKG-INFO
+memcacheinspector3.egg-info/SOURCES.txt
+memcacheinspector3.egg-info/dependency_links.txt
+memcacheinspector3.egg-info/requires.txt
+memcacheinspector3.egg-info/top_level.txt
