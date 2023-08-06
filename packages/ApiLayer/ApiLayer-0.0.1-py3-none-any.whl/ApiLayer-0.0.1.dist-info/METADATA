@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ApiLayer
+Version: 0.0.1
+Summary: Basic Api Layer
+Home-page: https://github.com/lipopo/api_layer
+Author: lipo
+Author-email: lipo8081@gmail.com
+License: UNKNOWN
+Requires-Dist: flask
+Requires-Dist: requests
+
+# ApiLayer
+
+
