@@ -1,0 +1,9 @@
+README.md
+setup.py
+account_opening_analysis/__init__.py
+account_opening_analysis/main.py
+account_opening_analysis/tests.py
+automatedIAReviewMicroservice.egg-info/PKG-INFO
+automatedIAReviewMicroservice.egg-info/SOURCES.txt
+automatedIAReviewMicroservice.egg-info/dependency_links.txt
+automatedIAReviewMicroservice.egg-info/top_level.txt
