@@ -1,0 +1,75 @@
+Metadata-Version: 1.1
+Name: periodical-requests-recorder
+Version: 0.2.0
+Summary: UNKNOWN
+Home-page: https://github.com/fx-kirin/periodical_requests_recorder
+Author: fx-kirin
+Author-email: fx.kirin@gmail.com
+License: MIT
+Description: 
+        periodical_requests_recorder
+        ============================
+        
+        
+        .. image:: https://img.shields.io/pypi/v/package_name.svg
+           :target: https://pypi.python.org/pypi/periodical_requests_recorder
+           :alt: Latest PyPI version
+        
+        
+        Usage
+        -----
+        
+        .. code-block::
+        
+           periodical_recorder example.yaml
+        
+        yaml data format example.
+        
+        .. code-block:: yaml
+        
+           - 
+             name: "some_data"
+             url: "https://example.com/somedata.csv"
+             record_dir: "~/hist_data/"
+             output_file_format: "{name}/{name}_%Y-%m-%d.csv"
+             cron_expr: "0 * * * * * *"
+           - 
+             name: "some_data_2"
+             url: "https://example.com/somedata2.csv"
+             record_dir: "~/hist_data/"
+             output_file_format: "{name}/{name}_%Y-%m-%d.csv"
+             cron_expr: "0 * * * * * *"
+        
+        Request result will be stored in the ``record_dir`` with your ``output_file_format``.
+        
+        ``cron_expr`` format is the same as `Crython <https://github.com/ahawker/crython>`_.
+        
+        Installation
+        ------------
+        
+        You can install this with pip.
+        
+        Requirements
+        ^^^^^^^^^^^^
+        
+        Compatibility
+        -------------
+        
+        Licence
+        -------
+        
+        Authors
+        -------
+        
+        periodical_requests_recorder was written by `fx-kirin <fx.kirin@gmail.com>`_.
+        =================================================================================
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
