@@ -1,0 +1,9 @@
+openapidocs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openapidocs/common.py,sha256=ny1iVWk-ixXHSEDKKXJFGVYu5878sB1bhr5l6Y6JoNI,3374
+openapidocs/v2.py,sha256=MTsf7ImJjv92lqoqG5VjOkYBORH-hRi-JjIGlPzN0Kc,9536
+openapidocs/v3.py,sha256=ZjFdZCCdy3FaOZ_lAF1j60pWSDAzTLYsmZIo_hpj0zA,9138
+essentials_openapi-0.0.9.dist-info/LICENSE,sha256=WeIuAGvKCtbACOtdvPd8J5QVcKfaqCHwZcqTilifBkA,1065
+essentials_openapi-0.0.9.dist-info/METADATA,sha256=Hutvuf-LWpbpAnD1DLLhUbYGBGsFFW2WL--FklvxBYU,2216
+essentials_openapi-0.0.9.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+essentials_openapi-0.0.9.dist-info/top_level.txt,sha256=NN2ntVZqJINIknurFr3HT577LaBmvNEC-sDnL6rt4WQ,12
+essentials_openapi-0.0.9.dist-info/RECORD,,
