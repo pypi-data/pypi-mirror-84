@@ -1,0 +1,6 @@
+pytest<6
+
+[dev]
+pytest-mock
+pytest-black
+pytest-cases
