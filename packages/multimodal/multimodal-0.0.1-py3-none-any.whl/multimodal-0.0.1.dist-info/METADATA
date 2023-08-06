@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: multimodal
+Version: 0.0.1
+Summary: A collection of multimodal datasets multimodal for research.
+Home-page: https://github.com/cdancette/multimodal
+Author: Corentin Dancette
+Author-email: corentin@cdancette.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: appdirs
+Requires-Dist: torch (>=1)
+Requires-Dist: pySmartDL
+
+# multimodal
+
+A collection of multimodal (vision and language) datasets and visual features for deep learning research.
+
+Currently it supports the following datasets: 
+- VQA v1
+- VQA v2
+- VQA-CP v1
+- VQA-CP v2
+
+And the following features: 
+- Bottom-Up Top-Down features (10-100)
+- Bottom-Up Top-Down features (36)
+
+

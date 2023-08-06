@@ -1,0 +1,9 @@
+multimodal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multimodal/datasets/__init__.py,sha256=qEwarw8rjhjF5d6hL5vmQfaO9G8Q0jyUi7bNpWN2THE,42
+multimodal/datasets/vqa.py,sha256=CADOHVklvqdYtDJ-BDbjlz_wowAnHOSF8c5lGBrJKeo,6161
+multimodal/features/__init__.py,sha256=7EzrFLSQu0UT9aOLfO3296P_gYJ_5SAQ5hISm8vmYEg,78
+multimodal/features/bottomup.py,sha256=mNKjCAoziqU_qkdMwk_bPSztSJypBKn5yFhrWAxpzZg,4884
+multimodal-0.0.1.dist-info/METADATA,sha256=7HovERg_bpfPdhw5G3xyruZnb8JdjC4h5aTU3g6X3GA,914
+multimodal-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+multimodal-0.0.1.dist-info/top_level.txt,sha256=PpdElZPY7LAMer5KkiKijOsI8ksoVoSbDUkTxwyiKlk,11
+multimodal-0.0.1.dist-info/RECORD,,
