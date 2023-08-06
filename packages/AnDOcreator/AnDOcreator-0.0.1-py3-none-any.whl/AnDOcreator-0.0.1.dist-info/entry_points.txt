@@ -1,0 +1,3 @@
+[console_scripts]
+AnDOcreator = AnDO_Creator:main
+
