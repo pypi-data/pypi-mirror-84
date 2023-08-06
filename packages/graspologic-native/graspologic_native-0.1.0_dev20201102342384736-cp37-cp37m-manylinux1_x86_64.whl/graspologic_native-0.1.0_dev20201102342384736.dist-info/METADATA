@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: graspologic_native
+Version: 0.1.0-dev20201102342384736
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Project-Url: Github, https://github.com/microsoft/graspologic-native
+Project-Url: Graspologic, https://github.com/microsoft/graspologic
+Summary: Python native companion module to the graspologic library
+Author: dwpryce@microsoft.com
+Author-Email: dwpryce@microsoft.com
+Maintainer: Dwayne Pryce
+Maintainer-Email: dwpryce@microsoft.com
+License: MIT
+Requires-Python: >=3.6,<=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# graspologic-native
+
+[graspologic](https://github.com/microsoft/graspologic) is a python package for graph statistics. 
+
+Some functionality can be best served if compiled into a python native module, both for performance purposes and to 
+share that functionality with web assembly.
+
+`graspologic-native` is a repository that holds Rust packages. The core packages will be published as crate libraries, 
+and a package using [pyo3](https://github.com/pyo3/pyo3) will expose the functionality of that library to Python.  
+
+## Requirements
+- Rust nightly 1.37+ (we are currently using 1.40)
+- Python 3.5+ (we are currently using 3.8)
+- 64 bit operating system
+
+## Published Versions
+We currently build for x86_64 platforms only, Windows, macOS, and Ubuntu, for python versions 3.6, 3.7, 3.8, and 3.9.
+
+## Contributing
+
+This project welcomes contributions and suggestions. Most contributions require you to
+agree to a Contributor License Agreement (CLA) declaring that you have the right to,
+and actually do, grant us the rights to use your contribution. For details, visit
+https://cla.microsoft.com.
+
+When you submit a pull request, a CLA-bot will automatically determine whether you need
+to provide a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the
+instructions provided by the bot. You will only need to do this once across all repositories using our CLA.
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)
+or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+# Privacy
+
+`graspologic-native` does not collect, store, or transmit any information of any kind back to Microsoft.
+
+For your convenience, here is the link to the general [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement/). 
+
