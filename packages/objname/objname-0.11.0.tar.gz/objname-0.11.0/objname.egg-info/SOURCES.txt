@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+objname/__init__.py
+objname/_module.py
+objname/bench_objname.py
+objname/py.typed
+objname/test_objname.py
+objname.egg-info/PKG-INFO
+objname.egg-info/SOURCES.txt
+objname.egg-info/dependency_links.txt
+objname.egg-info/not-zip-safe
+objname.egg-info/top_level.txt
