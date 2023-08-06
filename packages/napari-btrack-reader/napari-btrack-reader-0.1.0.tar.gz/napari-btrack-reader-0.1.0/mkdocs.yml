@@ -1,0 +1,10 @@
+site_name: napari-btrack-reader
+site_description: A plugin to load btrack files
+site_author: Alan R. Lowe
+
+theme: readthedocs
+
+repo_url: https://github.com/quantumjot/napari-btrack-reader
+
+pages:
+- Home: index.md
