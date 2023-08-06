@@ -1,0 +1,8 @@
+README.txt
+setup.py
+KevinSR/__init__.py
+KevinSR/kevin_SR.py
+KevinSR.egg-info/PKG-INFO
+KevinSR.egg-info/SOURCES.txt
+KevinSR.egg-info/dependency_links.txt
+KevinSR.egg-info/top_level.txt

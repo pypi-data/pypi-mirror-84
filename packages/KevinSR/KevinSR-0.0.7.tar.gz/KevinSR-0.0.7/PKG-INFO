@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: KevinSR
+Version: 0.0.7
+Summary: This is a test package for data preprocessing of medical imaging masks
+Home-page: https://pypi.org/project/KevinSR
+Author: Kevin Zhang
+Author-email: zhangkuanmayo@gmail.com
+License: UNKNOWN
+Description: 
+        
+        from KevinSR import mask_interpolation
+        
+        new_masks = mask_interpolation(masks, factor)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
