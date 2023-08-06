@@ -1,0 +1,4 @@
+[console_scripts]
+literary-build=literary.commands.build:run
+literary-test=literary.commands.test:run
+
