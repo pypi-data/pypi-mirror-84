@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: flask-was
+Version: 0.0.1
+Summary: The API extension of the flask is very comfortable and good
+Home-page: https://github.com/isclub/flask-was
+Author: Ceorleorn
+Author-email: snbck@qq.com
+Maintainer: IsClub
+Maintainer-email: support@isclub.club
+License: MIT
+Project-URL: Documentation, https://github.com/isclub/flask-was/blob/main/docs/
+Project-URL: Code, https://github.com/isclub/flask-was
+Project-URL: Issue tracker, https://github.com/isclub/flask-was/issues
+Description: # Flask-was
+        🎨 The API extension of the flask is very comfortable and good
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
