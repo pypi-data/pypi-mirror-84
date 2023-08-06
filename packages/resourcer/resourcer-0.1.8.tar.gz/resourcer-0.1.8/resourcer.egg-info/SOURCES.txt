@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+resourcer/__init__.py
+resourcer.egg-info/PKG-INFO
+resourcer.egg-info/SOURCES.txt
+resourcer.egg-info/dependency_links.txt
+resourcer.egg-info/requires.txt
+resourcer.egg-info/top_level.txt
