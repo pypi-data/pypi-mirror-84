@@ -1,0 +1,8 @@
+README.md
+setup.py
+SanicApiKey/__init__.py
+SanicApiKey.egg-info/PKG-INFO
+SanicApiKey.egg-info/SOURCES.txt
+SanicApiKey.egg-info/dependency_links.txt
+SanicApiKey.egg-info/requires.txt
+SanicApiKey.egg-info/top_level.txt
