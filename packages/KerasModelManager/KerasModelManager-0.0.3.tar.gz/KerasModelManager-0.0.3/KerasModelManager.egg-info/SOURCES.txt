@@ -1,0 +1,9 @@
+README.md
+setup.py
+KerasModelManager.egg-info/PKG-INFO
+KerasModelManager.egg-info/SOURCES.txt
+KerasModelManager.egg-info/dependency_links.txt
+KerasModelManager.egg-info/top_level.txt
+src/ModelManager.py
+src/__init__.py
+src/utils.py
