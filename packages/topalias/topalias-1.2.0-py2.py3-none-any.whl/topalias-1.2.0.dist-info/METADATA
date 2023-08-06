@@ -1,0 +1,124 @@
+Metadata-Version: 2.1
+Name: topalias
+Version: 1.2.0
+Summary: Linux bash aliases generator
+Home-page: https://github.com/CSRedRat/topalias
+Author: Sergey Chudakov
+Author-email: csredrat@gmail.com
+License: GNU General Public License v3
+Keywords: topalias top bash zsh alias aliases linux python shell cli console terminal utility tool history sysadmin devops
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: Click (>=7.0)
+
+# topalias
+
+[![Build Status](https://travis-ci.com/CSRedRat/topalias.svg?branch=master)](https://travis-ci.com/CSRedRat/topalias)
+[![Coverage](https://coveralls.io/repos/github/CSRedRat/topalias/badge.svg?branch=master)](https://coveralls.io/github/CSRedRat/topalias?branch=master)
+[![GitLab pipeline](https://gitlab.com/CSRedRat/topalias/badges/master/pipeline.svg)](https://gitlab.com/CSRedRat/topalias/-/pipelines)
+[![Python Version](https://img.shields.io/pypi/pyversions/topalias.svg)](https://pypi.org/project/topalias/)
+
+[topalias](https://github.com/CSRedRat/topalias) - Linux bash/zsh alias generator and statistics from command history, written on [Python](https://pypi.org/project/topalias/).
+
+
+## Features
+
+- Generate short alias for popular command from bash history
+- Fully typed with annotations and checked with mypy, [PEP561 compatible](https://www.python.org/dev/peps/pep-0561/)
+
+
+## Installation
+
+From [pypi.org repository](https://pypi.org/project/topalias/):
+```bash
+pip3 install -U --user topalias
+```
+
+From source:
+```bash
+git clone https://github.com/CSRedRat/topalias
+python3 topalias/setup.py install
+```
+
+## Example
+
+![generated bash aliases](images/bash_screenshot.png "Bash topalias output")
+
+Showcase how your project can be used:
+
+```bash
+topalias # check if you uses aliases in ~/.bash_aliases - analyze and print usage statistics, offers to find new simple aliases
+topalias -h # print help
+topalias history # analyze local bash history
+topalias h --acr=2 # set minimal length for generated acronym filter, so that exclude some short command and find long, hard, usable command
+```
+
+File path search order:
+- .bash_history in current . directory
+- .bash_history in home ~ directory
+- example development files in topalias/data
+
+Run as python module:
+```bash
+python3 -m topalias
+```
+
+Run as python script without install:
+```bash
+git clone https://github.com/CSRedRat/topalias
+python3 topalias/topalias/cli.py -h
+```
+
+## License
+
+[GPLv3](https://github.com/CSRedRat/topalias/blob/master/LICENSE)
+
+## Contributors вњЁ
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://metin2wiki.ru/"><img src="https://avatars1.githubusercontent.com/u/1287586?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sergey Chudakov</b></sub></a><br /><a href="https://github.com/CSRedRat/topalias/commits?author=CSRedRat" title="Code">рџ’»</a> <a href="#infra-CSRedRat" title="Infrastructure (Hosting, Build-Tools, etc)">рџљ‡</a> <a href="#ideas-CSRedRat" title="Ideas, Planning, & Feedback">рџ¤”</a> <a href="#maintenance-CSRedRat" title="Maintenance">рџљ§</a> <a href="#platform-CSRedRat" title="Packaging/porting to new platform">рџ“¦</a> <a href="#mentoring-CSRedRat" title="Mentoring">рџ§‘вЂЌрџЏ«</a> <a href="#example-CSRedRat" title="Examples">рџ’Ў</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+*GitLab repository mirror with CI/CD: [https://gitlab.com/CSRedRat/topalias](https://gitlab.com/CSRedRat/topalias)*
+
+
+# Version history
+
+We follow [Semantic Versions](https://semver.org/).
+
+
+## Version 1.1.7
+
+- Build and publish working package
+
+
+## Version 0.1.0
+
+- Initial release
+
+
