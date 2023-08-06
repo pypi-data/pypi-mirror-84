@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: viewflow-rest
+Version: 0.1.0
+Summary: 提供支持django rest framework的viewflow
+Home-page: https://github.com/ramwin/viewflow-rest
+Author: Xiang Wang
+Author-email: ramwin@qq.com
+License: MIT
+Keywords: viewflow django-rest-framework viewflow-rest
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+# viewflow-rest
+provide restful viewflow 
+
+# 依赖顺序
+
+1. Node, Edge
+
+
+6. Flow
+
+
