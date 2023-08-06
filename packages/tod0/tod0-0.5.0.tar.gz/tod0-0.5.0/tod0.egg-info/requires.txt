@@ -1,0 +1,4 @@
+prompt-toolkit
+pyyaml
+requests
+requests_oauthlib
