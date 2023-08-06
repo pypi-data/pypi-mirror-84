@@ -1,0 +1,10 @@
+[Unit]
+Description=An utility to automate backups
+After=network.targets
+
+[Service]
+ExecStart=/usr/bin/python3 -m yabu
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target
