@@ -1,0 +1,11 @@
+kemampo/__err_type.py,sha256=Vt0EfFz01W2cdwQ7be71Y7RmvgAkoPbMUm0OtdOxbjE,1116
+kemampo/__init__.py,sha256=m2W5Ce9D0GEc1_JiuRcAhobJozOLID8_BDXT30LuWh4,387
+kemampo/__kemampo.py,sha256=tVOBchyig2U57nreqkmmb7EpBVr2RiSZ3RRzS6RR97k,8898
+tests/__init__.py,sha256=0DP_RR6jIZZmoFmSPoQFhrI161W7UNSCT1-tr4JMUJU,727
+tests/test_crud.py,sha256=otNuTrllH75lIwg1RDGxm2g6hTtEyiwzfNddECBeel0,2594
+tests/test_kemampo.py,sha256=5D1J5PZhOf_7eC_LlpMGEJcXJnJwUixhBe2Dpj8vxW0,970
+kemampo-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+kemampo-0.0.1.dist-info/METADATA,sha256=M0FNgABclLcRiz_J_oHwUa9fbyTpSfqCcPHLpsW6E7o,6176
+kemampo-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+kemampo-0.0.1.dist-info/top_level.txt,sha256=xPKw_GhX6eIxsYGoPLHBjKMyoMtlg9DHIay2wTKz8ZI,14
+kemampo-0.0.1.dist-info/RECORD,,
