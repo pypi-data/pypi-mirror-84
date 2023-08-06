@@ -1,0 +1,7 @@
+[console_scripts]
+pyteller = pyteller.cli:main
+
+[mlblocks]
+pipelines = pyteller:MLBLOCKS_PIPELINES
+primitives = pyteller:MLBLOCKS_PRIMITIVES
+
