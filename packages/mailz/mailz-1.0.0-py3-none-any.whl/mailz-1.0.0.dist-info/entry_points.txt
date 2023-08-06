@@ -1,0 +1,3 @@
+[console_scripts]
+mailz=mailz.cli:cli
+

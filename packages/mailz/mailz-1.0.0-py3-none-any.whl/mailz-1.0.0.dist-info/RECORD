@@ -1,0 +1,17 @@
+mailz/__init__.py,sha256=hFMyt-0b-wrdm4iA50PLx-29jah67Hz3YgFFvIQc2JM,19
+mailz/builder.py,sha256=P3fXpRwv_YjpnkR84DtNO3EzKHg-w5zIhs7AJg2mNVk,2538
+mailz/cli/__init__.py,sha256=twBTqdu7iG9krPFAyNZVrQ2xEn2ViC86Gp2uYHExy2c,1717
+mailz/cli/new.py,sha256=fdUHdcPNBql7wjx9eKppbItBnsg8jEqVe-xShkk8STw,290
+mailz/cli/run.py,sha256=L9JB3dADm9Rgd-4KRDX6cDO3v_U3CI8w_slJxDtdlQE,763
+mailz/config.py,sha256=n4VWA930GZk7ynheYJ5f15Jyzhm1lhCBhl5wv371Uuc,1142
+mailz/exceptions.py,sha256=rAnf7JyEqd5m8ywPoUO2n3c68EhqE5WL_OLE8h_kzHg,136
+mailz/mail.py,sha256=5fNG4yeu_9GMe-Nuk2MffXbk_L4EF3ZeEiY9KEd3JkU,503
+mailz/paths.py,sha256=x0AH6M6ZzuGg_fnDI8nW4pUD9uzQ-63UUtWKdNNnyFQ,1450
+mailz/runner.py,sha256=dtvXTnVqpRCwtX0v9higrV3ty6z9CWVRJnE0PxIvIwg,939
+mailz/sender.py,sha256=OhucYUdJuj309E_VCeIDtOUI5xG9BMiTAfkgmScltVs,1173
+mailz/target.py,sha256=_sN8rcUVEfz3wUMXTuwCRJBk4s1ttS2F5urq98ELqp4,774
+mailz-1.0.0.dist-info/entry_points.txt,sha256=9z-YimCSIK_TGjWdwhlzAKB9NGvofq5dmP6IFKmymoY,39
+mailz-1.0.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+mailz-1.0.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+mailz-1.0.0.dist-info/METADATA,sha256=DFXh6AtVSNpUdwlXT_4CmoqCq63YPHilh5x5wPij-70,2895
+mailz-1.0.0.dist-info/RECORD,,
