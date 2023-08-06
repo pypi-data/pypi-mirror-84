@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: airflow-ecs-fargate-executor
+Version: 0.7
+Summary: Apache Airflow Executor for AWS ECS and AWS Fargate
+Home-page: https://github.com/aelzeiny/Airflow-AWS-ECS-Fargate-Executor
+Author: Ahmed Elzeiny
+Author-email: ahmed.elzeiny@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: Apache,Airflow,AWS,Executor,Fargate,ECS
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6.0
