@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rssarchive
+Version: 0.3
+Summary: Archive your RSS into SQLite:
+Home-page: https://github.com/suatatan/rssarchive
+Author: Suat ATAN
+Author-email: suatatan@gmail.com
+License: MIT
+Keywords: RSS,SQlite,News
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: newspaper3k
+Requires-Dist: feedparser
+
+rssarchive
+-----------
+
+rssarchive is a library for saving feeds of multiple RSS into SQLiteDB.
+
+
