@@ -1,0 +1,11 @@
+README.md
+setup.py
+drfrecur/__init__.py
+drfrecur/asgi.py
+drfrecur/settings.py
+drfrecur/urls.py
+drfrecur/wsgi.py
+drfrecur.egg-info/PKG-INFO
+drfrecur.egg-info/SOURCES.txt
+drfrecur.egg-info/dependency_links.txt
+drfrecur.egg-info/top_level.txt
