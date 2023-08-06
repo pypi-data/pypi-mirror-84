@@ -1,0 +1,7 @@
+setup.py
+winoc/__init__.py
+winoc.egg-info/PKG-INFO
+winoc.egg-info/SOURCES.txt
+winoc.egg-info/dependency_links.txt
+winoc.egg-info/requires.txt
+winoc.egg-info/top_level.txt

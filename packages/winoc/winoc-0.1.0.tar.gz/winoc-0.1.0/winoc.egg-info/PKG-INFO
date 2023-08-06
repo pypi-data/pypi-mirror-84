@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: winoc
+Version: 0.1.0
+Summary: Get windows CPU/RAM resource usage: https://github.com/cluckbird/pip-winoc
+Home-page: https://github.com/cluckbird/pip-winoc
+Author: cluckbird
+Author-email: admin@muzmn.cn
+License: MIT Licence
+Description: Get windows CPU/RAM resource usage: https://github.com/cluckbird/pip-winoc
+Keywords: pip,pathtool,timetool,magetool,mage
+Platform: any
