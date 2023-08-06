@@ -1,0 +1,10 @@
+Scrapy>=2.4.0
+
+[avro]
+fastavro>=1.0.0.post1
+
+[orc]
+pyorc>=0.3.0
+
+[parquet]
+fastparquet>=0.4.1

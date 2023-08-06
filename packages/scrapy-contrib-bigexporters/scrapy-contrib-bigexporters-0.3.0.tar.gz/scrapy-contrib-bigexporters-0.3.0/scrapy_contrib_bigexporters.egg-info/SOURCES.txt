@@ -1,0 +1,16 @@
+README.rst
+setup.py
+scrapy_contrib_bigexporters.egg-info/PKG-INFO
+scrapy_contrib_bigexporters.egg-info/SOURCES.txt
+scrapy_contrib_bigexporters.egg-info/dependency_links.txt
+scrapy_contrib_bigexporters.egg-info/requires.txt
+scrapy_contrib_bigexporters.egg-info/top_level.txt
+tests/__init__.py
+tests/testavro.py
+tests/testitem.py
+tests/testorc.py
+tests/testparquet.py
+zuinnote/__init__.py
+zuinnote/scrapy/__init__.py
+zuinnote/scrapy/contrib/__init__.py
+zuinnote/scrapy/contrib/bigexporters.py
