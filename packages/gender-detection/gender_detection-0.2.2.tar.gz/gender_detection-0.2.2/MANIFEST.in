@@ -1,0 +1,2 @@
+include gender_detection/README.md
+include gender_detection/models/*
