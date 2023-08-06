@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: django-rest-fast
+Version: 0.0.1
+Summary: Create api quickly and make the most of the standard django components.
+Home-page: https://github.com/qvp/django-rest-fast
+Author: Alexander Kuzmenko
+Author-email: mail@alex.md
+License: MIT
+Description: 
+        Create api quickly and make the most of the standard django components.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6

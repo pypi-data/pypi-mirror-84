@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+django_rest_fast.egg-info/PKG-INFO
+django_rest_fast.egg-info/SOURCES.txt
+django_rest_fast.egg-info/dependency_links.txt
+django_rest_fast.egg-info/top_level.txt
+rest_fast/__init__.py
+rest_fast/types.py
