@@ -1,0 +1,26 @@
+Metadata-Version: 1.0
+Name: KnightAttackOrcs
+Version: 2.0.0
+Summary: fantasy game
+Home-page: https://https://test.pypi.org/legacy/KnightAttackOrcs
+Author: Dominery
+Author-email: 18758205238@163.com
+License: LICENSE.txt
+Description: Attack of the Orcs
+        ==================
+        
+        Introduction
+        -------------
+        This is a command line fantasy war game!
+        
+        Documentation
+        --------------
+        Documentation can be found in ...
+        
+        Example Usage
+        --------------
+        
+        LICENSE
+        --------
+        See LICENSE.txt file
+Platform: UNKNOWN
