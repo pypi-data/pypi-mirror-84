@@ -1,0 +1,244 @@
+- name: Ensure tests home exists
+  file:
+    path: '{{ remote_tmp_dir }}/tests'
+    state: directory
+
+- include_tasks: mongod_teardown.yml
+
+- set_fact:
+    current_replicaset: '{{ mongodb_replicaset1 }}'
+
+- set_fact:
+    mongod_auth: true
+
+- name: Execute mongod script to restart with auth enabled
+  include_tasks: mongod_replicaset.yml
+
+- name: Create replicaset
+  community.mongodb.mongodb_replicaset:
+    login_host: localhost
+    login_port: 3001
+    login_database: admin
+    replica_set: '{{ mongodb_replicaset1 }}'
+    election_timeout_millis: 1000
+    members:
+    - localhost:3001
+    - localhost:3002
+    - localhost:3003
+  register: mongodb_replicaset
+
+- name: Add mongodb admin user
+  community.mongodb.mongodb_user:
+    login_host: localhost
+    login_port: 3001
+    replica_set: '{{ mongodb_replicaset1 }}'
+    database: admin
+    name: '{{ mongodb_admin_user }}'
+    password: '{{ mongodb_admin_password }}'
+    roles:
+      - root
+    state: present
+
+- name: Run the listDatabases cmd
+  community.mongodb.mongodb_shell:
+    login_user: '{{ mongodb_admin_user }}'
+    login_password: '{{ mongodb_admin_password }}'
+    login_port: 3001
+    eval: "db.adminCommand('listDatabases')"
+    debug: yes
+  register: listDatabases
+
+- assert:
+    that:
+      - "'databases' in listDatabases['transformed_output']"
+      - "'totalSize' in listDatabases['transformed_output']"
+
+- name: List collections
+  community.mongodb.mongodb_shell:
+    login_user: '{{ mongodb_admin_user }}'
+    login_password: '{{ mongodb_admin_password }}'
+    login_port: 3001
+    eval: "db.adminCommand('listCollections')"
+    debug: yes
+    stringify: yes
+  register: listCollections
+
+- assert:
+    that:
+      - "listCollections['transformed_output']['cursor']['firstBatch'] is iterable"
+
+- name: Get log types
+  community.mongodb.mongodb_shell:
+    login_user: '{{ mongodb_admin_user }}'
+    login_password: '{{ mongodb_admin_password }}'
+    login_port: 3001
+    eval: "db.adminCommand({ 'getLog' : '*' })"
+    debug: yes
+  register: getLog
+
+- assert:
+    that:
+      - "'global' in getLog['transformed_output']['names']"
+      - "'startupWarnings' in getLog['transformed_output']['names']"
+
+- name: Get log startupWarnings
+  community.mongodb.mongodb_shell:
+    login_user: '{{ mongodb_admin_user }}'
+    login_password: '{{ mongodb_admin_password }}'
+    login_port: 3001
+    eval: "db.adminCommand({ 'getLog' : 'startupWarnings' })"
+    debug: yes
+  register: getLogstartupWarnings
+
+- assert:
+    that:
+      - "'log' in getLogstartupWarnings['transformed_output']"
+      - "'initandlisten' in getLogstartupWarnings['transformed_output'] | string"
+      - "getLogstartupWarnings['transformed_output']['totalLinesWritten'] > 0"
+
+- name: Show roles
+  community.mongodb.mongodb_shell:
+    login_user: '{{ mongodb_admin_user }}'
+    login_password: '{{ mongodb_admin_password }}'
+    login_port: 3001
+    eval: "db.getRoles({showBuiltinRoles: true})"
+    debug: yes
+  register: showRoles
+
+- assert:
+    that:
+      - "showRoles['transformed_output'] is iterable"
+      - "'inheritedRoles' in showRoles['transformed_output'] | string"
+
+- name: Run an unsupported shell helper cmd
+  community.mongodb.mongodb_shell:
+    login_user: '{{ mongodb_admin_user }}'
+    login_password: '{{ mongodb_admin_password }}'
+    login_port: 3001
+    eval: "show dbs"
+    debug: yes
+  register: bad_cmd
+  ignore_errors: yes
+
+- assert:
+    that:
+      - "bad_cmd.failed"
+      - "'the eval parameter because they are not valid JavaScript' in bad_cmd.msg"
+
+- name: Copy a js file to the container
+  copy:
+    content: |
+      db = db.getSiblingDB('rhys');
+
+      let res = [
+        db.rhys.createIndex({ A: 1 }, { unique: true }),
+        db.rhys.createIndex({ B: 1 }),
+        db.rhys.createIndex({ C: 1 }),
+        db.rhys.insert({ A: 'hello world', B: 1, AA: 'test' }),
+        db.rhys.insert({ A: 'hello world 1', B: 1, BB: 'test' }),
+        db.rhys.insert({ A: 'hello world 2', B: 1, CC: 'test' }),
+        db.rhys.insert({ A: 'hello world 3', C: 1, DD: 'test' })
+       ];
+
+       printjson(res);
+
+       cursor = db.collection.find();
+       while ( cursor.hasNext() ) {
+         printjson( cursor.next() );
+       }
+    dest: /root/mongo.js
+
+- name: Run a file containing MongoDB commands
+  community.mongodb.mongodb_shell:
+    login_user: '{{ mongodb_admin_user }}'
+    login_password: '{{ mongodb_admin_password }}'
+    login_port: 3001
+    file: "/root/mongo.js"
+    quiet: no
+    debug: yes
+  register: run_file
+
+- assert:
+    that:
+      - "'/root/mongo.js' in run_file.file"
+
+- name: Check the rhys db has been created
+  community.mongodb.mongodb_shell:
+    login_user: '{{ mongodb_admin_user }}'
+    login_password: '{{ mongodb_admin_password }}'
+    login_port: 3001
+    eval: "db.adminCommand('listDatabases')"
+    debug: yes
+  register: rhysDB
+
+- assert:
+    that:
+      - "'rhys' in rhysDB | string"
+
+- name: Run a test with a dodgy mongo_cmd path
+  community.mongodb.mongodb_shell:
+    mongo_cmd: "badmongo"
+    login_user: '{{ mongodb_admin_user }}'
+    login_password: '{{ mongodb_admin_password }}'
+    login_port: 3001
+    eval: "db.getRoles({showBuiltinRoles: true})"
+    debug: yes
+  register: bad_mongo
+  ignore_errors: yes
+
+- assert:
+    that:
+      - "'No such file or directory' in bad_mongo.msg"
+      - "bad_mongo.rc == 2"
+
+- name: Test boolean flag (verbose)
+  community.mongodb.mongodb_shell:
+    login_user: '{{ mongodb_admin_user }}'
+    login_password: '{{ mongodb_admin_password }}'
+    login_port: 3001
+    eval: "db.adminCommand('listDatabases')"
+    debug: yes
+    additional_args:
+      verbose: True
+  register: rhysDB
+
+- assert:
+    that:
+      - "'rhys' in rhysDB | string"
+      - "'--verbose' in rhysDB | string"
+
+- name: Test string value flag (networkMessageCompressors)
+  community.mongodb.mongodb_shell:
+    login_user: '{{ mongodb_admin_user }}'
+    login_password: '{{ mongodb_admin_password }}'
+    login_port: 3001
+    eval: "db.adminCommand('listDatabases')"
+    debug: yes
+    additional_args:
+      networkMessageCompressors: "snappy"
+  register: rhysDB
+
+- assert:
+    that:
+      - "'rhys' in rhysDB | string"
+      - "'--networkMessageCompressors snappy' in rhysDB | string"
+
+- name: Test string and boolean value flag together
+  community.mongodb.mongodb_shell:
+    login_user: '{{ mongodb_admin_user }}'
+    login_password: '{{ mongodb_admin_password }}'
+    login_port: 3001
+    eval: "db.adminCommand('listDatabases')"
+    debug: yes
+    additional_args:
+      verbose: True
+      networkMessageCompressors: "snappy"
+  register: rhysDB
+
+- assert:
+    that:
+      - "'rhys' in rhysDB | string"
+      - "'--verbose' in rhysDB | string"
+      - "'--networkMessageCompressors snappy' in rhysDB | string"
+
+- include_tasks: mongod_teardown.yml
