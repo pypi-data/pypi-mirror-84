@@ -1,0 +1,8 @@
+README.md
+setup.py
+jts/GeoTools.py
+jts/__init__.py
+jts.egg-info/PKG-INFO
+jts.egg-info/SOURCES.txt
+jts.egg-info/dependency_links.txt
+jts.egg-info/top_level.txt
