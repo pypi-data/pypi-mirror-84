@@ -1,0 +1,17 @@
+mrcfile<=1.1.2,>=1.0.0
+Keras==2.3.1
+numpy<1.19.0,>=1.16.0
+h5py>=2.5.0
+Pillow>=6.0.0
+Cython
+imagecodecs==2020.5.30
+tifffile
+GooeyDev>=1.0.3.2
+wxPython==4.0.4
+scikit-image==0.15.0
+
+[cpu]
+tensorflow==1.15.4
+
+[gpu]
+tensorflow-gpu==1.15.4
