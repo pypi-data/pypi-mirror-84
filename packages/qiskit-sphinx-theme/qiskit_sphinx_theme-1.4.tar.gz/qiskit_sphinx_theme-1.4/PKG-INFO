@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: qiskit_sphinx_theme
+Version: 1.4
+Summary: qiskit_sphinx_theme
+Home-page: https://github.com/nonhermitian/qiskit_sphinx_theme
+Author: nonhermitian
+Author-email: nonhermitian@gmail.com
+License: MIT License
+Description: A Sphinx theme for Qiskit that is based on the
+        Pytorch Sphinx theme.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Documentation
