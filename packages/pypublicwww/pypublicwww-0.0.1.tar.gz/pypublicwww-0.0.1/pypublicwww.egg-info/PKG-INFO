@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pypublicwww
+Version: 0.0.1
+Summary: Python library and command-line utility for search in publicwww
+Home-page: https://github.com/einar-lanfranco/publicwww
+Author: Einar Lanfranco
+Author-email: einar.lanfranco@gmail.com
+License: UNKNOWN
+Description: # Example Package
+        
+        This is a simple example package. You can use
+        [Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+        to write your content.
+        
+Keywords: security,network
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
