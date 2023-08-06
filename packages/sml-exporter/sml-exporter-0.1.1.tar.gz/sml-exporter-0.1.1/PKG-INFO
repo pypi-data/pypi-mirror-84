@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sml-exporter
+Version: 0.1.1
+Summary: Smartmeter Message Language Prometheus Exporter
+License: MIT
+Author: Martin Weinelt
+Author-email: hexa@darmstadt.ccc.de
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: prometheus-client (>=0.8.0,<0.9.0)
+Requires-Dist: pysml (>=0.0.2,<0.0.3)
