@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: scaruffi
+Version: 0.0.1
+Summary: Get some data from scaruffi.com.
+Home-page: https://github.com/Dece/Scaruffi
+Author: dece
+Author-email: shgck@pistache.land
+License: MIT
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+
+Scaruffi
+========
+
+Get some data from scaruffi.com from Python. Work in progress (i.e. abandoned).
+
+Piero Scaruffi has written a lot about rock music, jazz, classical, whether it
+is reviews or history. It is a valuable ressource for a variety of reasons and
+this script aims to make data fetching easier for personal usage.
+
+
