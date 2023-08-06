@@ -1,0 +1,7 @@
+python-libsbml
+inspyred
+reframed
+cobra
+jmetalpy
+cobamp
+networkx
