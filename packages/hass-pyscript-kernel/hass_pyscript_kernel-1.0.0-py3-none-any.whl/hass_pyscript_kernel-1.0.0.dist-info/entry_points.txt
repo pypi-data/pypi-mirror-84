@@ -1,0 +1,3 @@
+[console_scripts]
+jupyter-pyscript = hass_pyscript_kernel:install_main
+
