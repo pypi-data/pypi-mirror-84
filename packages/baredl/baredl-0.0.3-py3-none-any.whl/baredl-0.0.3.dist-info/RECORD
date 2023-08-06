@@ -1,0 +1,16 @@
+baredl/__init__.py,sha256=9npnvPHSYI9t4uL1ZDwQ-U3EoZmOZqqeZc7blkr26a4,85
+baredl/config.py,sha256=GLeYuXjOphu39mkSMNJ3xiU4ydmLA5gp4saGpbWfLmA,355
+baredl/core.py,sha256=VYEhmUsSJV1wMzBbYYcKzMpWrs-xU4ucw_8-k9pGPP0,28875
+baredl/cuda.py,sha256=1IKaBWBmj_mcnDp6vnNMqxhjylaAiHMe27_ehlxoWQY,71
+baredl/data.py,sha256=Zeet3s5zMPbYf0B4rITpM5dLZbSI69PUS8lKT7D4Iqs,4807
+baredl/functions.py,sha256=KGsNb3iFTc260hgU9X-XSIXuZDmRasNV21CsI1WVK8Y,20122
+baredl/layers.py,sha256=YVHKcMujAS_5ZQ616vbz1Z-q7TBOHHDAmEXvlW_7tBE,8662
+baredl/metrics.py,sha256=gF-7q4fO_vxQV8Nd8d-lvbQrgl3HvkuIzz2xTEP6t10,642
+baredl/models.py,sha256=jVzrKdjOZprpgOFIsmYz5nDnGJzOsliV462n6JGYEzg,3200
+baredl/optimisers.py,sha256=CCMKtA5l8b7CdU9AVIDJZ52kycaIgtflF4RSDBWSiuk,1733
+baredl/transforms.py,sha256=UGtMqtanmOyGGTMDiWD8mbfOZJu4NtCcnelYbj4E4Xg,2066
+baredl/utils.py,sha256=q3Ps3LxNWIo8uoyHg1KjYfMW93UASLJ9hWemNuOOdOQ,15896
+baredl-0.0.3.dist-info/METADATA,sha256=hZbt0Gb-gzNs7DtuPx9O-X_yC7wSen3CCt68QnaPHp0,1173
+baredl-0.0.3.dist-info/RECORD,,
+baredl-0.0.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+baredl-0.0.3.dist-info/top_level.txt,sha256=uPbVDUQqWHdaKdGNTpT49NReokHxBD2gzEh7fOClYeI,7
