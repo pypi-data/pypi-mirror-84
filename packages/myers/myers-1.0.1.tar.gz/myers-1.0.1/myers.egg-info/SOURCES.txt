@@ -1,0 +1,14 @@
+.coveragerc
+LICENSE
+MANIFEST.in
+README.rst
+myers.py
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+tox.ini
+myers.egg-info/PKG-INFO
+myers.egg-info/SOURCES.txt
+myers.egg-info/dependency_links.txt
+myers.egg-info/top_level.txt
