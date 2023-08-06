@@ -1,0 +1,7 @@
+fnv>=0.2.0
+wasmer>=1.0.0a3
+wasmer_compiler_cranelift>=1.0.0a3
+
+[dev]
+bumpversion
+pytest>=6.1.2
