@@ -1,0 +1,10 @@
+compas_triangle/__init__.py,sha256=cDMnnBsdGOJXW3NJLsLBfSSRT-z7BBDCcBiPZZJs7zE,1637
+compas_triangle/delaunay.py,sha256=7h2ISaN0pYCME7nI_PDxALUXZ-xXfwHcdQ1eVA7Mohg,6268
+compas_triangle/rhino.py,sha256=QzjO4YVauRiKvtVm6Lv6A9sgP1bMF5xNGCPpPgPq1Qg,1273
+compas_triangle-1.0.1.dist-info/AUTHORS.md,sha256=c4VVACtvDEXH41YMLX3ujA5DbwwAGmtvvafJiWhL2DM,10
+compas_triangle-1.0.1.dist-info/LICENSE.Triangle,sha256=zYtHTbm-efcle5it5ZSrdfpvf9C-YbAee_8Q2W4hT7M,15600
+compas_triangle-1.0.1.dist-info/METADATA,sha256=ZyP2bSHP7a0eD7b9X0qSXUiuH_MpNucmOj8-rtfo4lU,2038
+compas_triangle-1.0.1.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+compas_triangle-1.0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+compas_triangle-1.0.1.dist-info/top_level.txt,sha256=nGBvXvN2Mfe3FkGhPatwRpJbQEXxrnVjIEun0b8l2-U,16
+compas_triangle-1.0.1.dist-info/RECORD,,
