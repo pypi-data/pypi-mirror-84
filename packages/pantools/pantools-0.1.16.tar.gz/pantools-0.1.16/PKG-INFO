@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pantools
+Version: 0.1.16
+Summary: A collection of generic Python tools by Peter Andersson
+License: MIT
+Author: Peter Andersson
+Author-email: fshsweden@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: imutil (>=0.2.5,<0.3.0)
+Requires-Dist: numpy (>=1.19.4,<2.0.0)
+Requires-Dist: opencv-python (>=4.4.0,<5.0.0)
