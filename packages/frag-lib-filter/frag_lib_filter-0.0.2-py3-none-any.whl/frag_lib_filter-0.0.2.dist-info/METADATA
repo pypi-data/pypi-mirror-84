@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: frag-lib-filter
+Version: 0.0.2
+Summary: Fragment library package
+Home-page: https://github.com/hemahecodes/fragment_library
+Author: Helena Martin
+Author-email: helena.martin@nostrumbiodiscovery.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+## Fragment Library Filtering
+
+
+## License
+
+[Apache License 2.0](https://https://choosealicense.com/licenses/apache-2.0/)
+
+
