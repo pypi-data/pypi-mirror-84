@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: portlock
+Version: 0.0.2
+Summary: A package to lock ports
+Home-page: https://github.com/kapily/portlock
+Author: Kapil Yedidi
+Author-email: kapily.code@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# portlock
+
+
