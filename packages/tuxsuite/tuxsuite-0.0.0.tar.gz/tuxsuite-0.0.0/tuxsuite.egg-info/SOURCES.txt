@@ -1,0 +1,5 @@
+setup.py
+tuxsuite.egg-info/PKG-INFO
+tuxsuite.egg-info/SOURCES.txt
+tuxsuite.egg-info/dependency_links.txt
+tuxsuite.egg-info/top_level.txt
