@@ -1,0 +1,240 @@
+<HTML>
+<HEAD>
+<TITLE>{{ loc.name }} [{{ loc.oid }}], {{ loc.subkind }}
+{% if loc.where %}
+    in {{ loc.where.name }}
+{% endif %}
+</TITLE>
+</HEAD>
+<BODY>
+<H3>{{ loc.name }} [{{ loc.oid }}], {{ loc.subkind }}
+{%- if loc.subkind != 'region' -%}
+, in
+    {% if loc.subkind == 'city' %}
+        province
+    {% endif %}
+    {%- if loc.where -%}
+        {{ loc.where.name }} [<a href="{{ loc.where.oid }}.html">{{ loc.where.oid }}</a>]
+    {%- endif -%}
+{%- endif -%}
+{%- if loc.safe_haven -%}
+    , safe haven
+{%- endif -%}
+{%- if loc.hidden -%}
+    , hidden
+{%- endif -%}
+{%- if loc.civ_level -%}
+    , {{ loc.civ_level }}
+{%- endif -%}
+</H3>
+{% if loc.anchor %}
+    <p><a href="{{ loc.anchor }}.html">Return to Map</a></p>
+{% endif %}
+{% if loc.barrier %}
+    <p>A magical barrier surrounds {{ loc.barrier.name }} [<a href="{{ loc.barrier.oid }}.html">{{ loc.barrier.oid }}</a>].</p>
+{% endif %}
+{% if loc.shroud %}
+    <p>A magical shroud surrounds {{ loc.shroud.name }} [<a href="{{ loc.shroud.oid }}.html">{{ loc.shroud.oid }}</a>].</p>
+{% endif %}
+{%- if loc.controlled_by -%}
+    Province controlled by {{ loc.controlled_by.name }} [<a href="{{ loc.controlled_by.oid }}.html">{{ loc.controlled_by.oid }}</a>], {{ loc.controlled_by.subkind }}, in {{ loc.controlled_by.loc_name }} [<a href="{{ loc.controlled_by.loc_oid }}.html">{{ loc.controlled_by.loc_oid }}</a>]
+{% endif %}
+{% if loc.controlled_by.ruled_by_dict %}
+    <br>Ruled by {{ loc.controlled_by.ruled_by_dict.name }} [<a href="{{ loc.controlled_by.ruled_by_dict.oid }}.html">{{ loc.controlled_by.ruled_by_dict.oid }}</a>]
+{% endif %}
+{% if loc.routes_out %}
+    <H4>Routes leaving {{ loc.routes_out.name }}:</H4>
+    {% if loc.routes_out.dest %}
+        <ul>
+        {% for entry in loc.routes_out.dest %}
+            <li>{{ entry.direction }}
+                {%- if entry.direction == 'Out' and loc.routes_out.subkind != 'city' -%}
+                    , {{ entry.subkind }}
+                {%- elif entry.is_port == True -%}
+                    , port city
+                {%- endif -%}
+                , to {{ entry.name }} [<a href="{{ entry.oid }}.html">{{ entry.oid }}</a>]
+                {%- if loc.routes_out.region_oid != entry.region_oid -%}
+                    , {{ entry.region_name }}
+                {%- endif -%}
+                {%- if entry.barrier -%}
+                    , impassable<br>&nbsp;&nbsp;&nbsp;A magical barrier prevents entry.
+                {%- elif entry.impassable == True-%}
+                    , impassable
+                {%- else -%}
+                    {%- if entry.distance == 1 -%}
+                        , {{ entry.distance }} day
+                    {%- else -%}
+                        , {{ entry.distance }} days
+                    {%- endif -%}
+                {%- endif -%}
+                {% if entry.name == 'Hades' and loc.routes_out.name != 'Hades' %}
+                    <br>&nbsp;&nbsp;&nbsp;"Notice to all mortals, from the Gatekeeper
+                    Spirit of Hades: 100 gold/head<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    is removed from any stack taking this road"
+                {% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+{% endif %}
+{% if loc.structure %}
+    <table>
+        {% if loc.structure.effort_given and loc.structure.effort_required %}
+            {% if loc.structure.effort_given < loc.structure.effort_required %}
+                <tr><td>Percent Complete:</td>
+                    <td>({{ loc.structure.completed }}%</td></tr>
+            {% endif %}
+        {% endif %}
+        {% if loc.structure.defense %}
+            <tr><td>Defense:</td><td>{{ loc.structure.defense }}</td></tr>
+        {% endif %}
+        {% if loc.structure.defense or loc.structure.effort_given or loc.structure.effort_required %}
+            <tr><td>Damage:</td><td>{{ loc.structure.damage }}%</td></tr>
+        {% endif %}
+        {% if loc.structure.depth %}
+            <tr><td>Level:</td><td>{{ loc.structure.depth }} // 3</td></tr>
+        {% endif %}
+        {% if loc.structure.level %}
+            <tr><td>Level:</td><td>{{ loc.structure.level }}</td></tr>
+        {% endif %}
+    </table>
+{% endif %}
+{% if loc.skills %}
+    <H4>Skills taught here:</H4>
+    <ul>
+    {% for entry in loc.skills %}
+        <li>
+            {{ entry.name }} [<a href="{{ entry.oid }}.html">{{ entry.oid }}</a>]
+        </li>
+    {% endfor %}
+    </ul>
+{% endif %}
+{% if loc.markets %}
+    <H4>Market Report:</H4>
+    <table border="1" cellpadding="5">
+    <tr><th>trade</th><th>who</th><th>price</th><th>qty</th><th>wt/ea</th><th>item</th><th>recip who</th><th>recip price</th><th>recip qty</th></tr>
+    {% for entry in loc.markets %}
+        <tr>
+            {% if entry.subkind == '1' %}
+            <td>buy</td>
+            {% else %}
+            <td>sell</td>
+            {% endif %}
+            <td><a href="{{ entry.who_oid }}.html">{{ entry.who_oid }}<a></td>
+            <td>{{ entry.who_price }}</td>
+            <td>{{ entry.who_qty }}</td>
+            <td>{{ entry.item_weight }}</td>
+            <td>{{ entry.item_name }} [<a href="{{ entry.item_oid }}.html">{{ entry.item_oid }}</a>]</td>
+            {% if entry.recip_list %}
+                <td>
+                {% for recip in entry.recip_list %}
+                    {{ recip.name }} [<a href="{{ recip.loc_oid }}.html">{{ recip.loc_oid }}</a>]<br>
+                {% endfor %}
+                </td>
+                <td>
+                {% for recip in entry.recip_list %}
+                    {{ recip.price }} <br>
+                {% endfor %}
+                </td>
+                <td>
+                {% for recip in entry.recip_list %}
+                    {{ recip.qty }} <br>
+                {% endfor %}
+                </td>
+            {% else %}
+                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+            {% endif %}
+        </tr>
+    {% endfor %}
+    </table>
+{% endif %}
+{% if loc.seen_here %}
+    {% if loc.seen_here.inner %}
+        <H4>Inner Locations:</H4>
+        <ul>
+        {% set ns = namespace(save_level=0) %}
+        {% for entry in loc.seen_here.inner %}
+            {% include "loc_list_common.html" %}
+        {% endfor %}
+        {% if ns.save_level > 0 %}
+            {% set to_level = ns.save_level %}
+            {% for i in range(0, to_level): %}
+                </ul>
+            {% endfor %}
+        {% endif %}
+        </ul>
+    {% endif %}
+    {% if loc.seen_here.seen %}
+        <H4>Seen Here:</H4>
+        <ul>
+        {% set ns = namespace(save_level=0) %}
+        {% for entry in loc.seen_here.seen %}
+            {% include "loc_list_common.html" %}
+        {% endfor %}
+        {% if ns.save_level > 0 %}
+            {% set to_level = ns.save_level %}
+            {% for i in range(0, to_level): %}
+                </ul>
+            {% endfor %}
+        {% endif %}
+        </ul>
+    {% endif %}
+    {% if loc.seen_here.ships %}
+        {% if loc.subkind == 'ocean' %}
+            <H4>Ships sighted:</H4>
+        {% else %}
+            <H4>Ships docked:</H4>
+        {% endif %}
+        <ul>
+        {% set ns = namespace(save_level=0) %}
+        {% for entry in loc.seen_here.ships %}
+            {% include "loc_list_common.html" %}
+        {% endfor %}
+        {% if ns.save_level > 0 %}
+            {% set to_level = ns.save_level %}
+            {% for i in range(0, to_level): %}
+                </ul>
+            {% endfor %}
+        {% endif %}
+        </ul>
+    {% endif %}
+    {% if loc.seen_here.storms %}
+        <H4>Storms Here:</H4>
+        <ul>
+        {% set ns = namespace(save_level=0) %}
+        {% for entry in loc.seen_here.storms %}
+            {% include "loc_list_common.html" %}
+        {% endfor %}
+        {% if ns.save_level > 0 %}
+            {% set to_level = ns.save_level %}
+            {% for i in range(0, to_level): %}
+                </ul>
+            {% endfor %}
+        {% endif %}
+        </ul>
+    {% endif %}
+{% endif %}
+{% if loc.hidden_access %}
+    <H4>Hidden location known by:</H4>
+    <ul>
+    {% for entry in loc.hidden_access %}
+        <li>
+            {{ entry.name }} [<a href="{{ entry.oid }}.html">{{ entry.oid }}</a>]
+        </li>
+    {% endfor %}
+    </ul>
+{% endif %}
+{% if loc.garrisons %}
+    <H4>Garrisons:</H4>
+    <ul>
+    {% for entry in loc.garrisons %}
+        {% include "character_list.html" %}
+    {% endfor %}
+    </ul>
+{% endif %}
+{% if loc.anchor %}
+    <p><a href="{{ loc.anchor }}.html">Return to Map</a></p>
+{% endif %}
+</BODY>
+</HTML>

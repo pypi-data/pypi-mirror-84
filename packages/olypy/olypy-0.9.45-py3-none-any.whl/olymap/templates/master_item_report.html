@@ -1,0 +1,124 @@
+<HTML>
+<HEAD>
+<script src="sorttable.js"></script><TITLE>Olympia Master Item Report</TITLE>
+</HEAD>
+<BODY>
+<H3>Olympia Master Item Report</H3>
+<h5>(Click on table headers to sort)</h5>
+<table border="1" style="border-collapse: collapse" class="sortable">
+<tr><th>Item</th><th>Type</th><th>Weight</th><th>Man Item</th><th>Prominent</th><th>Animal</th><th>Land Cap</th><th>Ride Cap</th><th>Flying Cap</th><th>Who Has</th><th>Notes</th></tr>
+{% for entry in itemz %}
+    <tr>
+        <td sorttable_customkey="{{ entry.oid }}">{{ entry.name }} [<a href="{{ entry.oid }}.html">{{ entry.oid }}</a>]</td>
+        <td>{{ entry.subkind }}</td>
+        {% if entry.weight %}
+            <td align="right">{{ entry.weight }}</td>
+        {% else %}
+            <td>&nbsp;</td>
+        {% endif %}
+        {% if entry.man_item %}
+            <td>{{ entry.man_item }}</td>
+        {% else %}
+            <td>&nbsp;</td>
+        {% endif %}
+        {% if entry.prominent %}
+            <td>{{ entry.prominent }}</td>
+        {% else %}
+            <td>&nbsp;</td>
+        {% endif %}
+        {% if entry.animal %}
+            <td>{{ entry.animal }}</td>
+        {% else %}
+            <td>&nbsp;</td>
+        {% endif %}
+        {% if entry.land_capacity %}
+            <td align="right">{{ entry.land_capacity }}</td>
+        {% else %}
+            <td>&nbsp;</td>
+        {% endif %}
+        {% if entry.ride_cap %}
+            <td align="right">{{ entry.ride_cap }}</td>
+        {% else %}
+            <td>&nbsp;</td>
+        {% endif %}
+        {% if entry.fly_capacity %}
+            <td align="right">{{ entry.fly_capacity }}</td>
+        {% else %}
+            <td>&nbsp;</td>
+        {% endif %}
+        {% if entry.who_has_name %}
+            <td>{{ entry.who_has_name }} [<a href="{{ entry.who_has_oid }}.html">{{ entry.who_has_oid }}</a>]</td>
+        {% else %}
+            <td>&nbsp&nbsp;</td>
+        {% endif %}
+        {% if entry.magic_info or entry.trade_good or entry.subkind == 'tradegood' %}
+            <td>
+                {% if entry.use_key == '2' %}
+                    Healing Potion
+                {% elif entry.use_key == '5' %}
+                    Projected Cast: {{ entry.magic_info.loc_kind }} {{ entry.magic_info.loc_name }}
+                    {% if entry.magic_info.loc_kind != 'unknown' %}
+                        [<a href="{{ entry.magic_info.loc_oid }}.html">{{ entry.magic_info.loc_oid }}</a>]
+                    {% else %}
+                        [{{ entry.magic_info.loc_oid }}]
+                    {% endif %}
+                {% elif entry.magic_info.magic_type == 'Scroll' %}
+                    Scroll: 
+		    {% if entry.magic_info.scroll_dict %}
+		        {{ entry.magic_info.scroll_dict.name }}
+                        [<a href="{{ entry.magic_info.scroll_dict.oid }}.html">{{ entry.magic_info.scroll_dict.oid }}</a>]
+		    {% else %}
+		        unknown
+                    {% endif %}
+                {% elif entry.magic_info.magic_type == 'Artifact' %}
+                    {% if entry.magic_info.artifact_dict.attack_bonus %}
+                        attack +{{ entry.magic_info.artifact_dict.attack_bonus }}
+                    {% endif %}
+                    {% if entry.magic_info.artifact_dict.defense_bonus %}
+                        defense +{{ entry.magic_info.artifact_dict.defense_bonus }}
+                    {% endif %}
+                    {% if entry.magic_info.artifact_dict.missile_bonus %}
+                        missile +{{ entry.magic_info.artifact_dict.missile_bonus }}
+                    {% endif %}
+                    {% if entry.magic_info.artifact_dict.aura_bonus %}
+                        aura +{{ entry.magic_info.artifact_dict.aura_bonus }}
+                    {% endif %}
+                {% elif entry.magic_info.magic_type == 'Dead Body' %}
+                    {% if entry.magic_info.db_oid %}
+                        {{ entry.magic_info.db_name }} [<a href="{{ entry.magic_info.db_oid }}.html">{{ entry.magic_info.db_oid }}</a>]
+                    {% else %}
+                        unknown dead guy
+                    {% endif %}
+                {% elif entry.magic_info.magic_type == 'Auraculum' %}
+                    Aura:
+                    {% if entry.magic_info.aura %}
+                        {{ entry.magic_info.aura }}
+                    {% else %}
+                        unknown
+                    {% endif %}
+                {% endif %}
+                {% if entry.subkind == 'tradegood' %}
+                    {% if entry.trade_good %}
+                        {% if entry.trade_good.sell %}
+                            {% for sell_item in entry.trade_good.sell %}
+                                sell: {{ sell_item.name }} [<a href="{{ sell_item.oid }}.html">{{ sell_item.oid }}</a>]<br>
+                            {% endfor %}
+                        {% endif %}
+                        {% if entry.trade_good.buy %}
+                            {% for buy_item in entry.trade_good.buy %}
+                                buy: {{ buy_item.name }} [<a href="{{ buy_item.oid }}.html">{{ buy_item.oid }}</a>]<br>
+                            {% endfor %}
+                        {% endif %}
+                    {% else %}
+                        inactive tradegood
+                    {% endif %}
+                {% endif %}
+            </td>
+        {% else %}
+            <td>&nbsp;</td>
+        {% endif %}
+        <td>{{ entry.notes|safe }}</td></tr>
+{% endfor %}
+</table>
+</BODY>
+</HTML>
