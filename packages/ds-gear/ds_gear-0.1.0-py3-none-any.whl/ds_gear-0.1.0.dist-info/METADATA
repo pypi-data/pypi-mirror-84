@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ds-gear
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Marouen Azzouz, Youssef Azzouz
+Author-email: azzouz.marouen@gmail.com, youssef.azzouz1512@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: numpy (==1.19.0rc2)
+Requires-Dist: pandas (==1.0.4)
+Requires-Dist: scikit-learn (==0.23.1)
+Requires-Dist: matplotlib
+Requires-Dist: pylint
+Requires-Dist: doxypypy
+Requires-Dist: pycodestyle
+Requires-Dist: nltk (==3.5)
+Requires-Dist: keras (==2.3.1)
+Requires-Dist: tensorflow (==2.2.0)
+
+UNKNOWN
+
+
