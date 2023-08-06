@@ -1,0 +1,10 @@
+shp2postgis/Data2Sql.py,sha256=7fwc93281xFD4ShwdYV1cp2u95gcvhFC5GlJ_axzbLM,5396
+shp2postgis/Shp2Postgis.py,sha256=ktjmOR4JkqkM5u45s2hZhDWgVxP45owYrWjSzogMnO4,1935
+shp2postgis/Util.py,sha256=epbnYyVbFki7frqCejQ0kq841qslh7LpSaEaUCeTAM0,1907
+shp2postgis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shp2postgis/__main__.py,sha256=Xfu7OAHQ9drUI4Km4DawOG8kWii5Sw7NwDuOrjY2hew,5176
+shp2postgis-0.2.5.dist-info/LICENSE.txt,sha256=4itPu_1FJMWefKQGEkTxJvvJA2b91vg674z1VDUVQc4,1098
+shp2postgis-0.2.5.dist-info/METADATA,sha256=sYnuadVptm3EqD8oH0aykJ-uzNB79NtAp05mzYottyM,2442
+shp2postgis-0.2.5.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+shp2postgis-0.2.5.dist-info/top_level.txt,sha256=TaBM4t9DYH7BRXFiY73rm8W2yBE-g8dqXM2rOjTNehc,12
+shp2postgis-0.2.5.dist-info/RECORD,,
