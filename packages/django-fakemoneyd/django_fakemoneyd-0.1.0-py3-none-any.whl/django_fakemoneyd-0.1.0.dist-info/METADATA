@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: django-fakemoneyd
+Version: 0.1.0
+Summary: A Django app to provide currencies and amount of the currencies.
+Home-page: https://www.example.com/
+Author: Perfect Delivery
+Author-email: ecmascript.guru@gmail.com
+License: BSD-3-Clause
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+
+==========
+FakeMoneyd
+==========
+
+FakeMoney is a Django app to provide light models for real world currencies and virtual currencies you want to make.
+
+
+Quick start
+-----------
+
+1. Add **"fakemoney"** to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'fakemoneyd',
+    ]
+
+2. Include the fakemoneyd URLconf in your project urls.py like this::
+
+    path('fakemoney/', include('fakemoneyd.urls')),
+
+3. Run ``python manage.py migrate`` to create the fakemoney models.
+
+4. Run ``python manage.py feed_currencies`` in order to feed all the existing real world currencies.
+
+5. Visit http://127.0.0.1:8000/fakemoney/ to participate in the poll.
+
