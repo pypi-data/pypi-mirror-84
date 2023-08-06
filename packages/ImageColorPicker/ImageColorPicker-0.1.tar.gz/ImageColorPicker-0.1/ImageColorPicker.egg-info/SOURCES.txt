@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+ImageColorPicker/ColorPicker.py
+ImageColorPicker/__init__.py
+ImageColorPicker.egg-info/PKG-INFO
+ImageColorPicker.egg-info/SOURCES.txt
+ImageColorPicker.egg-info/dependency_links.txt
+ImageColorPicker.egg-info/top_level.txt
