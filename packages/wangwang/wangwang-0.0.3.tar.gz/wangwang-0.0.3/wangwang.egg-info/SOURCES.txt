@@ -1,0 +1,8 @@
+README.md
+setup.py
+wang/__init__.py
+wang/wang_message.py
+wangwang.egg-info/PKG-INFO
+wangwang.egg-info/SOURCES.txt
+wangwang.egg-info/dependency_links.txt
+wangwang.egg-info/top_level.txt
