@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: pm4pyserialization
+Version: 0.0.1
+Summary: Process Mining for Python (PM4Py) - Support for advanced serializations
+Home-page: http://www.pm4py.org
+Author: Fraunhofer Institute for Applied Technology
+Author-email: pm4py@fit.fraunhofer.de
+License: GPL 3.0
+Project-URL: Documentation, http://www.pm4py.org
+Project-URL: Source, https://github.com/pm4py/pm4py-source
+Project-URL: Tracker, https://github.com/pm4py/pm4py-source/issues
+Description: # pm4py-seralization
+        Support for binary serialization of PM4Py objects
+        
+Platform: UNKNOWN
