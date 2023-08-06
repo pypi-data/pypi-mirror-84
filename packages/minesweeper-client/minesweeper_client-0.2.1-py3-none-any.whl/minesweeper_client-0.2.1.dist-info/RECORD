@@ -1,0 +1,9 @@
+minesweeper/__init__.py,sha256=hdOZ8njgyeGJr0gDbE9Lohil0p_GMZiJ9BeEeOShRCY,44
+minesweeper/base.py,sha256=tIyxQAlQCdxRG7K1KN-ykvGBuyJqK0mkpZW5_u8hh9A,857
+minesweeper/constants.py,sha256=RyBNFalJEjYmE6YbmoejQtEsRGI0VvorXF0zN69TDQc,131
+minesweeper/exceptions.py,sha256=c0snpREaFruVJEEfhg3rBH_hhXSccSgR71frsewxwUs,101
+minesweeper/game.py,sha256=drFZfD_dpRDTq4VoNTChdFlgr0RNtOye9rLbHt63o94,1095
+minesweeper_client-0.2.1.dist-info/METADATA,sha256=gQyfJl-RE3puKgzzEX9BWIldR67qXuIf1kHztOQcyBg,911
+minesweeper_client-0.2.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+minesweeper_client-0.2.1.dist-info/top_level.txt,sha256=tftCI5Lk6GwSsCb-OAVS7y3MvIy-Ybp7oH7CJOVXx0Q,12
+minesweeper_client-0.2.1.dist-info/RECORD,,
