@@ -1,0 +1,7 @@
+include apexdash/apexdash.min.js
+include apexdash/apexdash.min.js.map
+include apexdash/metadata.json
+include apexdash/package-info.json
+include README.md
+include LICENSE
+include package.json
