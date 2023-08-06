@@ -1,0 +1,3 @@
+[mlflow.deployments]
+torchserve=deploy.serve
+
