@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: gfaaccesslib
+Version: 1.1.0
+Summary: A library to access GFA devices
+Home-page: UNKNOWN
+Author: Otger Ballester
+Author-email: otger@ifae.es
+License: BSD
+Description: ## HISTORY
+        
+        ### 1.1.0
+        
+        - removed get\_calib\_debug\_signals from api_helpers.py 
+        - added bit_time commands
+        - stylistic changes and other improvements
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
