@@ -1,0 +1,17 @@
+mypy_boto3_neptune/__init__.py,sha256=Lg5tASrYiq-msWHwcwJU0xiyshY4wYJn9XPOaUQRBgk,4824
+mypy_boto3_neptune/__init__.pyi,sha256=Q094rtZfgDJBY-G4aH4PnTWbbdT3OfaeV50PSOO-ZUI,4823
+mypy_boto3_neptune/__main__.py,sha256=F3rQhAOKco64-6L8lNhUsNF12bCRWj2mw67s4sLYAa8,394
+mypy_boto3_neptune/client.py,sha256=Dlc_AjgXQc3fsNu2q4hxiLzX6v7zMclbDxdmad9LmfM,47345
+mypy_boto3_neptune/client.pyi,sha256=e3LPkw19X7N_zhjshUCyQ59M8ASxV7BCNunxgdfkr9w,47258
+mypy_boto3_neptune/paginator.py,sha256=-Ll-RlxYhDcNdkbh4zcr0TdfYjfPxF46JW3W4mYGkGM,16329
+mypy_boto3_neptune/paginator.pyi,sha256=kTqc1Yai6A-KILiy91wGQr08-779vyPNFjlPXnrrVq8,16313
+mypy_boto3_neptune/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_neptune/type_defs.py,sha256=OuYuGZzhE11n1sI0e3tgN5w_vFJJjwFKfixQEHziqVk,28698
+mypy_boto3_neptune/type_defs.pyi,sha256=tIb9HPIbPzuEPEp71c2Qazw0pwWs1idFpIqKpEoz4QQ,28697
+mypy_boto3_neptune/version.py,sha256=W8canwttViBVK7OZfxmvFUkwzC68JnE3oiKQJGhiX5E,57
+mypy_boto3_neptune/waiter.py,sha256=WBG83AruVVyI7Hu6lbwrnv64qRfwjMpTMMuomt3OtOg,2178
+mypy_boto3_neptune/waiter.pyi,sha256=VUsnMA7nDG5bMmP7eZ3EB-pu17c4uZfEx-8SXceRw_Q,2176
+mypy_boto3_neptune-1.16.10.0.dist-info/METADATA,sha256=V71uYAs8aOpB05jNb9-hubo3C7_JszGSFQTo7nHrhD0,12788
+mypy_boto3_neptune-1.16.10.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+mypy_boto3_neptune-1.16.10.0.dist-info/top_level.txt,sha256=_nWnYa5dnFcdko4NxAu4IjbYABz29P4ycMOE3zj1y1I,19
+mypy_boto3_neptune-1.16.10.0.dist-info/RECORD,,
