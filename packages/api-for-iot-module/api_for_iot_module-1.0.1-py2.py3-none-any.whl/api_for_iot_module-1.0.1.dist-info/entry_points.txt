@@ -1,0 +1,3 @@
+[console_scripts]
+api_for_iot_module = api_for_iot_module.cli:main
+

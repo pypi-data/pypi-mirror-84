@@ -1,0 +1,12 @@
+api_for_iot_module/__init__.py,sha256=nihyFV119zcUGnNb1cXnCwBoWo_M4OBx9MYD3KRAIE8,150
+api_for_iot_module/api_for_iot_module.py,sha256=OrIZayqhGGDlKtslCRc46eBtEslL8UAPD8F2iembivM,9145
+api_for_iot_module/cli.py,sha256=fnGhpBqY9oPoterzs_yGeTBTpFqzrcKG8fyyAcIZBpA,432
+tests/__init__.py,sha256=kWPmxad_d9icfdyLPXiLKgw8FNSxv1EMcVrJh7A8MiQ,48
+tests/test_api_for_iot_module.py,sha256=EGH1nBSgAPZ2rXFUJKbRlUcffnG5CHfZPQ6JnnW1iPk,929
+api_for_iot_module-1.0.1.dist-info/AUTHORS.rst,sha256=HiRrRsw5RDGNmDWrb3Cc78hhrWt3EcBsfCmJ_CeFB48,212
+api_for_iot_module-1.0.1.dist-info/LICENSE,sha256=pxXsiFfFTdPeNqf9RAKctPr07D0g6_0sXYTPe5Uwcno,1097
+api_for_iot_module-1.0.1.dist-info/METADATA,sha256=2XBEjS-ydBca86QBHWvIRqRzoTeS8TYigt8yJfWtsfA,2789
+api_for_iot_module-1.0.1.dist-info/WHEEL,sha256=gxPaqcqKPLUXaSAKwmfHO7_iAOlVvmp33DewnUluBB8,116
+api_for_iot_module-1.0.1.dist-info/entry_points.txt,sha256=07ESMNjZkPkew9SN65RbQe7o2ndoESTskn42UdvCXnA,68
+api_for_iot_module-1.0.1.dist-info/top_level.txt,sha256=lDs9WqaT2trbOhbGL9ATJS5za1BoDYdaVrKCYvJuoaA,25
+api_for_iot_module-1.0.1.dist-info/RECORD,,
