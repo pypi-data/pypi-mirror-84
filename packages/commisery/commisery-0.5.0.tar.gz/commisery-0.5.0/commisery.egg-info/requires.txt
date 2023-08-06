@@ -1,0 +1,6 @@
+regex
+stemming<2,>=1
+
+[github]
+PyGithub<2,>=1.53
+Click<8,>=7.1.2
