@@ -1,0 +1,11 @@
+README.md
+setup.py
+bin/secureshare-control
+bin/sshare
+secureshare/__init__.py
+secureshare/server.py
+secureshare.egg-info/PKG-INFO
+secureshare.egg-info/SOURCES.txt
+secureshare.egg-info/dependency_links.txt
+secureshare.egg-info/requires.txt
+secureshare.egg-info/top_level.txt
