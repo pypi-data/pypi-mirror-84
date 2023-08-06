@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: ec2-compare
+Version: 1.0.0a2
+Summary: Compare EC2 instances families without querying AWS API
+Home-page: https://github.com/weldpua2008/aws.ec2.compare
+Author: Valeriys Soloviov
+Author-email: weldpua2008@users.noreply.github.com
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Provides-Extra: devel
+Requires-Dist: pytest ; extra == 'devel'
+Requires-Dist: pytest-cov ; extra == 'devel'
+Requires-Dist: flake8 ; extra == 'devel'
+Requires-Dist: gitpython ; extra == 'devel'
+Requires-Dist: pylint ; extra == 'devel'
+Requires-Dist: mypy (==0.790) ; extra == 'devel'
+Provides-Extra: git
+Requires-Dist: gitpython ; extra == 'git'
+
+# ec2-compare
+[![PyPI - ec2-compare](https://img.shields.io/pypi/v/ec2-compare.svg?color=blue&label=ec2-compare)](https://pypi.org/project/ec2-compare)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ec2-compare.svg?color=blue)](https://pypi.org/project/ec2-compare)
+[![Coverage](https://img.shields.io/codecov/c/github/weldpua2008/ec2-compare)](https://codecov.io/gh/weldpua2008/ec2-compare)
+[![PyPI - Downloads](https://img.shields.io/pypi/dw/ec2-compare?color=blue)](https://pypistats.org/packages/ec2-compare)
+
+Compare EC2 instances families without querying AWS API
+
+## Versioning
+
+`ec2_compare` follows
+[PEP 440](https://www.python.org/dev/peps/pep-0440/).
+
+
+## How to build
+
+```bash
+python -m pip install -e ./[devel]
+# or pip install -e ./[devel]
+
+# Running tests
+scripts/tests.sh
+```
+
+## Update data Locally
+1. Downland the latest info
+````bash
+aws ec2 describe-instance-types | jq '.InstanceTypes' > aws_ec2.json
+````
+2. repack
+```bash
+python3 repack.py
+```
+
+## Thank you
+- https://github.com/actions/ for an awesome github actions
+- [mypy](https://github.com/python/mypy) for doing all dirty work for us
+
+
