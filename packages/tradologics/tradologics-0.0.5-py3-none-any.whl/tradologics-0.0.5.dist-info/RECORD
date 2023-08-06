@@ -1,0 +1,9 @@
+tradologics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tradologics/backtest.py,sha256=tpGwb99JlqHNnRhrnk4r5C4AoBlH22rQjRoT3EmQY5c,1284
+tradologics/helpers.py,sha256=tuL3NlGnH587fuvgQ1eGuKwjP7AUjGh-jsFA8JGyhTk,920
+tradologics/requests.py,sha256=3WhImB_bXbTwjQDWJaS0HdhCTmYJDwFdEgljBvOFn-8,2605
+tradologics-0.0.5.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tradologics-0.0.5.dist-info/METADATA,sha256=X21vdB8ADbhCtNFFrOl8Twvwfz-D34EAGUanO0mLI74,1818
+tradologics-0.0.5.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+tradologics-0.0.5.dist-info/top_level.txt,sha256=NkGJJm9hGrggZhHl6EO9BCZsXcevvdwWEDaYQRZIk-U,12
+tradologics-0.0.5.dist-info/RECORD,,
