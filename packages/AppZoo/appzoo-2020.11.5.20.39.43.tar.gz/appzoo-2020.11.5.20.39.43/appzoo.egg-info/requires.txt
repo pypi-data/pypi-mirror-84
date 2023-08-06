@@ -1,0 +1,4 @@
+streamlit
+fastapi[all]
+uvicorn
+fire
