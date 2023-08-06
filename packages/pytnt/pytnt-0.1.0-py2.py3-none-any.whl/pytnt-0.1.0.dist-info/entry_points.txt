@@ -1,0 +1,3 @@
+[console_scripts]
+find_TNMR_backup_files = pytnt.find_TNMR_backup_files:main
+
