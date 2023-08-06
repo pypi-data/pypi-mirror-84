@@ -1,0 +1,14 @@
+boto3
+click
+rich
+yamllint
+Jinja2
+
+[test]
+mock==3.0.5
+pytest==5.0.1
+pytest-runner==5.1
+pytest-pylint==0.14
+pytest-cov==2.7.1
+pylint==2.3.1
+twine
