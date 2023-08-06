@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: TN-code
+Version: 0.91
+Summary: Code gebruikt bij de opleiding TN van de Haagse Hogeschool
+Home-page: https://hhs-tn.github.io
+Author: Derek Land
+Author-email: d.d.land@hhs.nl
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Dutch
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: sympy
+
+UNKNOWN
+
+
