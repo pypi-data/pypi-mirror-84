@@ -1,0 +1,9 @@
+README.md
+setup.py
+sheetreader/SheetReader.py
+sheetreader/__init__.py
+sheetreader/google_sheets_api.py
+sheetreader.egg-info/PKG-INFO
+sheetreader.egg-info/SOURCES.txt
+sheetreader.egg-info/dependency_links.txt
+sheetreader.egg-info/top_level.txt
