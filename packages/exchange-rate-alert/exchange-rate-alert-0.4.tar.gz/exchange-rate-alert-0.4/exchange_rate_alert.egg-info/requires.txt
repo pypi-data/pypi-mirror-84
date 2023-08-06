@@ -1,0 +1,5 @@
+requests
+pypiwin32
+setuptools
+win10toast
+click
