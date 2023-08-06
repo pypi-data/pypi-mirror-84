@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: pyxbee
+Version: 0.8.0
+Summary: Communication module for Marta (Policumbent)
+Home-page: https://github.com/policumbent/pyxbee
+License: LGPL-3.0-or-later
+Author: Gabriele Bellaurdo
+Author-email: gabriele.belluardo@outlook.it
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: digi-xbee (>=1.2.0,<2.0.0)
+Requires-Dist: ordered-set (>=3.1.1,<5.0.0)
+Project-URL: Repository, https://github.com/policumbent/pyxbee
+Description-Content-Type: text/markdown
+
+# Pyxbee
+
+[![Version](https://img.shields.io/pypi/v/pyxbee)](https://pypi.python.org/pypi/pyxbee/)
+[![License](https://img.shields.io/github/license/policumbent/pyxbee)](https://github.com/policumbent/pyxbee/blob/master/LICENSE)
+[![Python Version](https://img.shields.io/pypi/pyversions/pyxbee)](https://www.python.org/downloads/)
+
+Modulo di comunicazione per [Marta](https://github.com/gabelluardo/marta)
+
+Fornisce classi di alto livello per interfacciarsi col modulo [digi-xbee](https://github.com/digidotcom/xbee-python) e le antenne xbee
+
+
+## Installazione
+
+    pip install pyxbee
+
+oppure clonando il repository (serve [poetry](https://python-poetry.org/)):
+
+    git clone https://github.com/gabelluardo/pyxbee
+    cd pyxbee/
+    poetry install
+
+## License
+
+LGPLv3
+
