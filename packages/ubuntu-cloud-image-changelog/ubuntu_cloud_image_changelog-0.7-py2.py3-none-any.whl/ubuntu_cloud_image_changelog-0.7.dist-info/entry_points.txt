@@ -1,0 +1,3 @@
+[console_scripts]
+ubuntu_cloud_image_changelog = ubuntu_cloud_image_changelog.cli:main
+
