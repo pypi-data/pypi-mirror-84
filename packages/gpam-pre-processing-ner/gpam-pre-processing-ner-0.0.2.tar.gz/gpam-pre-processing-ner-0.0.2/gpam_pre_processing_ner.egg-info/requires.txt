@@ -1,0 +1,8 @@
+nltk>=3.4.5
+numpy>=1.18.3
+requests>=2.23.0
+scikit-learn>=0.22.2.post1
+spacy>=2.2.4
+tensorflow==1.15.2
+tqdm>=4.45.0
+cached_property==1.5.2
