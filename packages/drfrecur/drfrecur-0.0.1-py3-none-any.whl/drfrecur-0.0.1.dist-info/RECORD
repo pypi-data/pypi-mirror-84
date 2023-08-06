@@ -1,0 +1,10 @@
+drfrecur/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drfrecur/asgi.py,sha256=OecG--wRCNqtC9DjGTaU8XeGLdQMgLL1fVb3PEB4fZA,393
+drfrecur/settings.py,sha256=8vntV4ZsWhM4-yzkrZMicVePQp6QqZqLiRUhRQ8rHkA,3094
+drfrecur/urls.py,sha256=xAFJcjJshlsUb0VRfPLo_L6o-83fGmt8BKGcXgQwdjo,750
+drfrecur/wsgi.py,sha256=E7-1S6px9XKAD8yw0F0P6RnUcBDzEQYuUsa5lzluirg,393
+drfrecur-0.0.1.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+drfrecur-0.0.1.dist-info/METADATA,sha256=IBzvCBRBBDSPU03ZkZr9c7dlL6d49oye-IyW_4Wt1FE,580
+drfrecur-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+drfrecur-0.0.1.dist-info/top_level.txt,sha256=h3F8QPvQNBRpbSLkDqEe2ukpWmrOzsnC0TQCh8NWyZ4,9
+drfrecur-0.0.1.dist-info/RECORD,,
