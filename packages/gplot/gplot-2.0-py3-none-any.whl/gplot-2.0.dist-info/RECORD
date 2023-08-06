@@ -1,0 +1,13 @@
+gapp/SessionState.py,sha256=CFya-IrOwf9jMfDkvxRQLL4_NVxqy_MWz_YYHLkPn54,3416
+gapp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gapp/app.py,sha256=LG1pVV3D3-8Ko9IPmCrSmt4j-lChr_mH7ZbMosRztLU,821
+gapp/location.py,sha256=Sbg9fBuF1y-B_bgutbWGL5H4kJWf1WvkjozBSwqtrI4,132
+gapp/plot.py,sha256=rtwykbLEjNE3Nw4PhIwpCd9XbpoCfnKaEoEGtH952Ps,664
+gapp/run.py,sha256=HAud8DvbG7Hu8vJQ8VpvhhQCt9sOr0YMgmYDOFQs-90,99
+gplot-2.0.data/scripts/gplot,sha256=4uqwiFeRZ2pt2kXxzTPgRRZiyKtV7v6JhDhHoIU7K5g,114
+gplot-2.0.data/scripts/gploter,sha256=4uqwiFeRZ2pt2kXxzTPgRRZiyKtV7v6JhDhHoIU7K5g,114
+gplot-2.0.dist-info/LICENCE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+gplot-2.0.dist-info/METADATA,sha256=2wlUQvgJ1PG39D4u5yWUglwN9H7Ny2ODO-_Jxxn27Dc,1241
+gplot-2.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+gplot-2.0.dist-info/top_level.txt,sha256=jIqm-R-p2l97wKNk83Qv7zPdRVShJSmVhBbFzjmTtRE,5
+gplot-2.0.dist-info/RECORD,,
