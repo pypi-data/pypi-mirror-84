@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "asahi"
+version = "0.0.2"
+description = "A small package to provide utility functions to libraries that has optional installs / extras"
+authors = ["Carl Oscar Aaro <hello@carloscar.com>"]
+homepage = "https://github.com/kalaspuff/asahi"
+repository = "https://github.com/kalaspuff/asahi"
+keywords = ["asahi", "extras", "optional installs", "extras requires", "extra packages", "optional packages", "lazy import"]
+readme = "README.md"
+license = "MIT"
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Intended Audience :: Developers",
+    "Typing :: Typed",
+    "License :: OSI Approved :: MIT License"
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.4"
+flake8-black = "^0.2.0"
+flake8-isort = "^4.0.0"
+isort = "^5.6.4"
+pytest = "^6.1.1"
+pytest-cov = "^2.10.0"
+black = { version = "*", allow-prereleases = true }
+mypy = "^0.790"
+codecov = "^2.1.10"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target_version = ["py36", "py37", "py38"]
+include = '\.pyi?$'
+exclude = '\.eggs/|asahi\.egg-info/|\.git/|\.mypy_cache/|\.venv/|\.pytest_cache/|\.vscode/|__pycache__/|build/|dist/|setup\.py'
+
+[tool.isort]
+profile = "black"
+line_length = 120
+known_first_party = "asahi"
+skip = ".mypy_cache,__pycache__,asahi.egg-info,.eggs,.vscode,dist"
