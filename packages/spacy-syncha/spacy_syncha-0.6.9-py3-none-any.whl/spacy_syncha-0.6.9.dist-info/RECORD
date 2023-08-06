@@ -1,0 +1,11 @@
+spacy_syncha/__init__.py,sha256=XJw-ocSTmK2q0e_XVrgkwE7QP4ELPiXbOLXh3R7QC_I,83
+spacy_syncha/syncha.py,sha256=R465p7rQGq2jFXTkgwkbQxtJdiT_6kDocO4PVGt74y8,6217
+spacy_syncha/syncha2ud,sha256=cnAcndg4SRZmnIYILrsM5lqnkNfc0Xy_ED60e9-zMmk,7378
+spacy_syncha/unidic2ipadic,sha256=DndYBo8Qfx-V3nRSyo1efqHzpWhiMAQu0eU6ZX0GoiQ,3912
+spacy_syncha-0.6.9.data/data/bin/syncha2ud,sha256=cnAcndg4SRZmnIYILrsM5lqnkNfc0Xy_ED60e9-zMmk,7378
+spacy_syncha-0.6.9.data/data/bin/unidic2ipadic,sha256=DndYBo8Qfx-V3nRSyo1efqHzpWhiMAQu0eU6ZX0GoiQ,3912
+spacy_syncha-0.6.9.dist-info/LICENSE.txt,sha256=CggQrBg6lOnsxk5fbwerDPop26rAOqIGJ2W8tXxXQKw,1071
+spacy_syncha-0.6.9.dist-info/METADATA,sha256=9-nd0ZC9Rx-FpYRBc3euNXhPoGMhCptitBaDKwV7zZ0,7478
+spacy_syncha-0.6.9.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+spacy_syncha-0.6.9.dist-info/top_level.txt,sha256=qLezzteq4S7DevkwYK5DoMxzUxPCybrws4dRjr9raRE,13
+spacy_syncha-0.6.9.dist-info/RECORD,,
