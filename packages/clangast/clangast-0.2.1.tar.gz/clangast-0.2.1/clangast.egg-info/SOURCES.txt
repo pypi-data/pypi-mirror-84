@@ -1,0 +1,16 @@
+setup.py
+clangast/__init__.py
+clangast.egg-info/PKG-INFO
+clangast.egg-info/SOURCES.txt
+clangast.egg-info/dependency_links.txt
+clangast.egg-info/requires.txt
+clangast.egg-info/top_level.txt
+clangast/algorithms/__debugging__.py
+clangast/algorithms/__init__.py
+clangast/algorithms/__parsing__.py
+clangast/algorithms/__utility__.py
+clangast/algorithms/parsing.py
+clangast/algorithms/utility.py
+clangast/data_structures/__init__.py
+clangast/data_structures/node.py
+clangast/data_structures/tree.py
