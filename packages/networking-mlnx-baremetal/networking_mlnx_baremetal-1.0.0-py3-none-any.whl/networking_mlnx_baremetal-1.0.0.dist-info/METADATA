@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: networking-mlnx-baremetal
+Version: 1.0.0
+Summary: 
+Requires-Dist: neutron-lib (>=1.18.0)
+Requires-Dist: oslo.config (>=5.2.0)
+Requires-Dist: oslo.i18n (>=3.15.3)
+Requires-Dist: oslo.log (>=3.36.0)
+Requires-Dist: oslo.utils (>=3.33.0)
+Requires-Dist: oslo.messaging (>=5.29.0)
+Requires-Dist: pbr (>=5.4.3)
+Requires-Dist: python-ironicclient (>=2.3.0)
+Requires-Dist: tooz (>=1.58.0)
+Requires-Dist: neutron (>=13.0.0.0b1)
+Requires-Dist: keystoneauth1 (>=3.4.0)
+Requires-Dist: requests (>=2.18.4)
+Requires-Dist: six (>=1.11.0)
+
+This project aims to provide a OpenStack Neutron ML2 mechanism driver for
+binding or unbinding partition key for mellanox infiniband port when
+provisioning baremetal node using OpenStack Ironic component.
+Home-page: https://github.com/IamFive/networking-mlnx-baremetal
+Author: Qianbiao.NG
+Author-email: iampurse@vip.qq.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/x-rst; charset=UTF-8
