@@ -1,0 +1,5 @@
+selenium
+pandas
+xhtml2pdf
+markdown
+webdriver_manager
