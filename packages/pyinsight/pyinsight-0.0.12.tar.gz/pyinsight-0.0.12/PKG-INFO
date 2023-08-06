@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyinsight
+Version: 0.0.12
+Summary: Insight Core Module Python Version
+Home-page: https://github.com/X-I-A/pyinsight
+Author: Soral
+Author-email: soral@x-i-a.com
+License: UNKNOWN
+Description: # Insight Core Module
+        Insight Core Module Python Version
+        ## Introduction
+        Insight is designed to be a highly distributed and cost effective data lake / data hub / data catalog commo solution
+        * Real-time dataflow by design
+        * 80% Analysis Cost Reduction
+        * 90% Storage Cost Reduction
+        Insight is one part of Xeed-Insight-Agent (X-I-A) data solution. Xeed module feeds the data to Insight and Agent module consume the dataflow.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
