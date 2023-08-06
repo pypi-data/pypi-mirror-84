@@ -1,0 +1,13 @@
+deepspace/__init__.py,sha256=s7v6vJKY6f_3uq-ToYwrgZgndzzT4GJWoo_1sunMR1o,66
+deepspace/__version__.py,sha256=fSCwf3i5PhuqrDO0372_sTL7cd2Hu3kEzrigDIgWNg0,109
+deepspace/sequence/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepspace/tabular/__init__.py,sha256=hndb2J7AgjVO38wIamYRi5lQk_ghRxLQ9PRWOW7iHqY,202
+deepspace/tabular/dense_skipco.py,sha256=Xn3G3VG_ecn4f_Qiz6wH3eVD2jfAxAdnxvb7Xf2njz8,2424
+deepspace/tabular/feed_forward.py,sha256=KVlHfoD-b8TRly1W2hTBmBChVm1e3xxzfPMjWy4o5FA,2043
+deepspace/tabular/one_layer.py,sha256=Rm6U3-4XjKkwnLI_AeErJ0121g631sn2TaRZ7kVOGlc,1382
+deepspace/tabular/supervised_reg_auto_encoder.py,sha256=dZi2GmfAkVbCRBKF7WpUjtiZxvwhdFQ_cA4L2nHmZi4,2085
+deepspace-0.0.1.dist-info/LICENSE,sha256=5dYYN4uezcYKiIoiTQljYbMvT_PpOiuZOHiOSTm4c2I,1324
+deepspace-0.0.1.dist-info/METADATA,sha256=uNNDKGAaOR2m1QmB0YKsLzlTH8s8U5tCZnSmhuZB4ko,1349
+deepspace-0.0.1.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+deepspace-0.0.1.dist-info/top_level.txt,sha256=GGgcTvxNLAZRV3fTJmZ5IFToF3pQeHK8MsizqfXSzGg,10
+deepspace-0.0.1.dist-info/RECORD,,
