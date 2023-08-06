@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: xps-crypto
+Version: 0.1.0
+Summary: 
+Author: rgilfanov
+Author-email: rgilfanov@fix.ru
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: SQLAlchemy-JSONField (>=0.9.0,<0.10.0)
+Requires-Dist: alembic (>=1.4.3,<2.0.0)
+Requires-Dist: fastapi (>=0.61.1,<0.62.0)
+Requires-Dist: gino (>=1.0.1,<2.0.0)
+Requires-Dist: gino-starlette (>=0.1.1,<0.2.0)
+Requires-Dist: gunicorn (>=20.0.4,<21.0.0)
+Requires-Dist: psycopg2-binary (>=2.8.6,<3.0.0)
+Requires-Dist: starlette-context (>=0.3.1,<0.4.0)
+Requires-Dist: telegram-log (>=1.0.12,<2.0.0)
+Requires-Dist: uvicorn (>=0.12.2,<0.13.0)
