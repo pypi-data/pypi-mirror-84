@@ -1,0 +1,12 @@
+mathematical/__init__.py,sha256=UyVXHFRh9qnj-rC_t5Tf2Yhi5D8i1lo72PFRoBdWNts,1161
+mathematical/data_frames.py,sha256=7BQCT2OcyR_z5yw6tTSIrj_rsup80jcvvImOiGinrvw,8761
+mathematical/linear_regression.py,sha256=PwSlSfodm0as1hGCR1SI5PRhpaFUQQCspSnA3cz_8-k,5156
+mathematical/outliers.py,sha256=sMWXvVNqx0t-vhavEVNBJwrnk-wIE5uS1oWlYd-u684,7529
+mathematical/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mathematical/stats.py,sha256=0aA2TbtbzETTnwgHP07XeWi1MQypRdw33A-DxuniCt4,15291
+mathematical/utils.py,sha256=v7LpNYSO6cKK4kpBcyXrdLRs7BwrKis0wux1AoMsZt0,17946
+mathematical-0.2.0.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+mathematical-0.2.0.dist-info/METADATA,sha256=yh8bVcspqAo5RrQ5zBOLSEtcU_0m6ntWcVfPGtA72Zc,6679
+mathematical-0.2.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+mathematical-0.2.0.dist-info/top_level.txt,sha256=qE8rdHmLoMPtnIr4auJjjH6-Pyv5vig6QQKQe-jFgY0,13
+mathematical-0.2.0.dist-info/RECORD,,
