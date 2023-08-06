@@ -1,0 +1,10 @@
+__title__ = 'Django Pathfinder Statcrunch'
+__description__ = 'A reusable Django application using the Krypted Gaming template.'
+__package_name__ = 'django-pathfinder-statcrunch'
+__github_url__ = 'https://github.com/porowns/django-pathfinder-statcrunch'
+__version__ = '0.0.1'
+__author__ = 'porowns'
+__author_email__ = 'porowns@gmail.com'
+__license__ = 'MIT License'
+__copyright__ = f"Copyright © 2017-2020 porowns. All rights reserved."
+default_app_config = "django_pathfinder_statcrunch.apps.DjangoPathfinderStatcrunchConfig"
