@@ -1,0 +1,14 @@
+udon2.libs/libboost_python38-0b732517.so.1.74.0,sha256=EXb_57M5U0kNru1WRbQ2kIJBGRuJxRWcB5oIRO8gLIY,464392
+udon2-0.1b0.dist-info/top_level.txt,sha256=t8x6Hpwnt94wgm9GiOuP7NarvZv_UGI6q2bIB4JwbPo,6
+udon2-0.1b0.dist-info/RECORD,,
+udon2-0.1b0.dist-info/METADATA,sha256=2HX4_zB0pdht-fEHJKqx64tMKVF1s4k35W_L_Kl0fP8,1594
+udon2-0.1b0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+udon2-0.1b0.dist-info/WHEEL,sha256=i5QRdqOPRMh4tE98MK_psUpVQUBEjIEea5O6oiN_rjc,109
+udon2/transform.cpython-38-i386-linux-gnu.so,sha256=rGG6YIWGar8ovIainw3Z35F9vpMKw-_Cp3mDVrsvTzI,181912
+udon2/kernels.cpython-38-i386-linux-gnu.so,sha256=e98Zsh07GSMtSFSDyOYTpvnTg_3O07xZ_SNkDQHEwkk,248416
+udon2/core.cpython-38-i386-linux-gnu.so,sha256=FI7JdChwHkRDAAxkEUUovWKKMHGuE2bezAA9zkd1yaM,2034684
+udon2/__init__.py,sha256=K0kNy26Vm6A-1V5lST3ily6yVsNLUbiqk6AZDFm2nJI,20
+udon2/visual/templates.py,sha256=ABo0MhMV-sItH3HeKlFznLzpWR-qbERd1MMWkEOd1Hc,1975
+udon2/visual/utils.py,sha256=8ppUuaeaYk-YMk5Ski09L1SKOm0vkZcR-3X_EKub3mg,1507
+udon2/visual/render.py,sha256=MsjtOLZ7YkDmYUm9KLKAzxMkRvN2TCNR_MnasS57f5U,8391
+udon2/visual/__init__.py,sha256=d7NPhFXOG0ZdM_raIe46ogPfgYzuqMDLWnDa6FsslwA,4779
