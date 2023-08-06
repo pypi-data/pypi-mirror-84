@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: AmongUsAPI
+Version: 0.0.1
+Summary: For interacting with Among Us
+Home-page: https://www.beyonce.com
+Author: hunterg
+Author-email: redissuslolol@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyscreenshot
+Requires-Dist: pyautogui
+Requires-Dist: pywin32
+Requires-Dist: more-properties
+Requires-Dist: imagehash
+
+
+# AmongUsAPI
+##### *For interacting with the Among Us*
+
+### Instillation
+    python -m pip install AmongUsAPI
+
+### Dependencies (auto-installed)
+* *pyscreenshot*
+* *pyautogui*
+* *pywin32*
+* *more-properties*
+* *imagehash*
+
+### Usage
+    import amongUsAPI
+    MenuClass.function
+
+### Example(s)
+    from amongUsAPI import MainMenu
+
+    if MainMenu.inMainMenu:
+        MainMenu.clickOnlineBtn()
+
+> Note that you must have among us in *full screen mode in order to use amongUsAPI*
+
+> As of right now, this is a requirement; however, in the future, it will likely only be a preferrence
+
+### Features
+***Coming Soon***
+
+#
+
+### Changelog
+#### 0.0.1
+Initial __Unstable__ Release
+
+
+
