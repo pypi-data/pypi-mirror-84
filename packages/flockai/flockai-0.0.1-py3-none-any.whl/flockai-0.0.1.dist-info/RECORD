@@ -1,0 +1,12 @@
+flockai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flockai/controllers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flockai/controllers/drone/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flockai/controllers/drone/drone.py,sha256=bYPMCGMm-V8CRzZzhybWWobKLtubuPki_9OcLv06Fws,1390
+flockai/controllers/drone/drone_utils.py,sha256=DFLGk_I6vS9np3KcYSRuBdl-OuWuWBo6TtDczehg5Ow,9707
+flockai/controllers/drone/singleton.py,sha256=9JODPdmP-LilzHcr3HJDbMtKPg7IMGHnBY0d0HimCgM,228
+flockai/controllers/drone/utility.py,sha256=KbD6vPRq4A0sCuqMK3Qq3vgQC2J0-8h7NUszjHSGaAg,2833
+flockai-0.0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+flockai-0.0.1.dist-info/METADATA,sha256=a66Jvu7JvBp9VI3V4TCsBHNCXIP6ZELo6MaGpinKOsk,602
+flockai-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+flockai-0.0.1.dist-info/top_level.txt,sha256=zT00Gj5utF9x4ZGqEcPiA9-UimSHLdmQ-ECFKTnBIo8,8
+flockai-0.0.1.dist-info/RECORD,,
