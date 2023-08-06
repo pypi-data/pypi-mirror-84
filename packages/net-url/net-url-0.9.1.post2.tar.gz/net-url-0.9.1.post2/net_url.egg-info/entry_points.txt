@@ -1,0 +1,3 @@
+[console_scripts]
+manage-net-url = manage_net_url:manager
+
