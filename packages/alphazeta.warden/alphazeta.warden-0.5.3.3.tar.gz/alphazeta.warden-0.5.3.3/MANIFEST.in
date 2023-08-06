@@ -1,0 +1,8 @@
+recursive-include warden/templates *
+recursive-include warden/static *
+recursive-include warden/static *
+include requirements.txt
+include warden/version.txt
+exclude *.pkl
+exclude txs*.json
+global-exclude *.pyc
