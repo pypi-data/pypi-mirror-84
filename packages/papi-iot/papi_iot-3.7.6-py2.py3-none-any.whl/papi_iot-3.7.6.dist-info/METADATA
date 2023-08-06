@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: papi-iot
+Version: 3.7.6
+Summary: An API for IOT application with emphasis on some module
+Home-page: https://github.com/Stelele/papi_iot
+Author: Gift Mugweni
+Author-email: giftmugweni@gmail.com
+License: MIT license
+Keywords: papi_iot
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+
+========
+PAPI IOT
+========
+
+
+.. image:: https://img.shields.io/pypi/v/papi_iot.svg
+        :target: https://pypi.python.org/pypi/papi_iot
+
+.. image:: https://img.shields.io/travis/Stelele/papi_iot.svg
+        :target: https://travis-ci.com/Stelele/papi_iot
+
+.. image:: https://readthedocs.org/projects/papi-iot/badge/?version=latest
+        :target: https://papi-iot.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+.. image:: https://pyup.io/repos/github/Stelele/papi_iot/shield.svg
+     :target: https://pyup.io/repos/github/Stelele/papi_iot/
+     :alt: Updates
+
+An API for home security system using raspberry Pi with Pi IR camera and facial recognition.
+
+* Github repo: PAPI IOT
+* Free software: MIT license
+* Documentation: https://papi-iot.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Build Status
+------------
+
+* TODO
+
+Quick Start
+-----------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+3.7.6 (2020-08-12)
+------------------
+
+First release on PyPI.
+
+
