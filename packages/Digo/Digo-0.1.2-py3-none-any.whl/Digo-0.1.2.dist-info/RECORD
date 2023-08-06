@@ -1,0 +1,14 @@
+Digo/AzureCloud.py,sha256=3CDpFHJgKN5vr_MU4JF7v8hGlgOIKeqPcbSaaamCANw,6760
+Digo/DigoCore.py,sha256=pb6ABFfpOCamiP9xxCn05qTp-EB9mQY5-O23A4bVN2I,8787
+Digo/Error.py,sha256=P6U_JkjrOoYi11__G7HkEJoClZJzp28ZZBhulQ0LRQ0,479
+Digo/ExceptionHandler.py,sha256=hUjQamtXwGxdLF3mZG3zKcTmcQrcBv0RtGHI-UiMZvU,500
+Digo/Network.py,sha256=HzMge7EXPesxOxaHTQDAY01ojheLQMhwMaqM_fPa31w,7039
+Digo/Project.py,sha256=5Sl1ThaM6S7gCe-LCnENTCZ6yY0bkPkbZjWgV-vMczI,803
+Digo/Singletone.py,sha256=OuZILULgksrGG6iF1eXZjDSwzuLXUYf81ipQEC43D3s,303
+Digo/SystemMetrics.py,sha256=GfoJ7yaKk-D-5XYJq5flrtRrt-cBv4T9GyHIQ4Ky_WA,490
+Digo/Utils.py,sha256=03wZF9hh05hPFQew_LcN4kxQiv9Dazh7YQNq-L1JKls,1891
+Digo/__init__.py,sha256=EitlZs5zd8vL3FBSBelfmpw9RqModR77YT4RPHH12NM,1399
+Digo-0.1.2.dist-info/METADATA,sha256=mkd_9VrVWPP0xEPSbPbYUbC06eDqkfjZr0_I-p0s5YU,707
+Digo-0.1.2.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+Digo-0.1.2.dist-info/top_level.txt,sha256=wpjh49Ph6gjnprULiftRLpLlo2FFOlFATICuO6qIrRw,5
+Digo-0.1.2.dist-info/RECORD,,
