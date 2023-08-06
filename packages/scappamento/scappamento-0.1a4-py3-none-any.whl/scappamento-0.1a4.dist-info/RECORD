@@ -1,0 +1,17 @@
+scappamento/__init__.py,sha256=99dml01S_5-LK75t60x98E7Lz7vPBtyD629vVfZrXzQ,114
+scappamento/__main__.py,sha256=drHCuU0rREL9z1aUBnuD0TsZY11fNc45G859YSh_xMU,976
+scappamento/fender.py,sha256=Z9Hj03PxDNy7ztWV0d_jFZuu35F-ti_dWweCags8uKw,2437
+scappamento/frenexport.py,sha256=fx0h5fs_m9ru4wBTjhXvBVakDGD5dH5sP6SINSSnU1E,2519
+scappamento/mepa.py,sha256=gEUpOPoz81STtz8Wo3UiK_KH1lNlCZqpgztpYr1rzKE,3701
+scappamento/mogar.py,sha256=rtfOubzseSpCkVuh5__dS8u9Zn4B3axa19GRsoZydFg,698
+scappamento/musicpool.py,sha256=Uy0vX7pAAY0ultyE6NAA-pUgWtqrg9Z3Gf0TXymhjnE,2072
+scappamento/proel.py,sha256=W16_b7vo2xVlGwjNPAuLWJXhWV3cEPnvM7h33XMR0v4,1496
+scappamento/suonostore.py,sha256=xqrqBDTUR3nGdMhyNMs8zvRPRzhZgD4i8v3o3aiSKc8,4294
+scappamento/supplier.py,sha256=z3IZhDfdIA_h7QWhOSK2X_jUIq-fKlFazOgEtk2Z-q8,2940
+scappamento/yamaha.py,sha256=vMBeboQq4nSc874fOqRhNjavBSQ6yBgsnoMKqfqGQUk,1837
+scappamento-0.1a4.dist-info/LICENSE,sha256=dX9O_J56Dx0Ko24JsB1OogUT4nXAC91W9caT23NCtpU,1090
+scappamento-0.1a4.dist-info/METADATA,sha256=m9zQn97WIfPAAIppArDOxm2w4SpBxB8aSEsNDZujJ_w,1135
+scappamento-0.1a4.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+scappamento-0.1a4.dist-info/entry_points.txt,sha256=idlIsiDQCGzKzgdeBfqbYnEJrii0832Pf62SCd90MZs,59
+scappamento-0.1a4.dist-info/top_level.txt,sha256=PxgNNpPQJnTS-wPjqbjnOWakYEHHyfvAcig8fdl4Uks,12
+scappamento-0.1a4.dist-info/RECORD,,
