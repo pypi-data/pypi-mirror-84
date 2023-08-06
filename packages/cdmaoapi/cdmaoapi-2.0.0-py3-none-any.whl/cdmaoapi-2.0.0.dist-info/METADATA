@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: cdmaoapi
+Version: 2.0.0
+Summary: 获取/提交编程猫官方数据
+Home-page: http://doc.viyrs.com/cdmaoapi.html
+Author: 冷鱼闲风
+Author-email: 2991883280@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# cdmaoapi库
+
+> 查看[帮助文档](http://doc.viyrs.com/cdmaoapi)
+
+## 功能
+集合大量编程猫社区接口，同时简化大量爬虫解析步骤，一键式获取资料！  
+不仅是获取，还可以与官方后台交互，如：回复评论，作品收藏，作品点赞等。
+
+## 新版说明
+- 经过二次送代增入了类，提高了执行效率。
+
+## 研发者
+- SS_LiMgXn
+- 冷鱼闲风
+
