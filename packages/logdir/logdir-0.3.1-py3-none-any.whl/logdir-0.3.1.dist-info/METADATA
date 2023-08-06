@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: logdir
+Version: 0.3.1
+Summary: A utility for managing logging directories.
+Home-page: http://github.com/btjanaka/logdir
+Author: Bryon Tjanaka
+Author-email: bryon@btjanaka.net
+License: MIT
+Keywords: log logging utilities
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: ruamel.yaml (>0.15)
+Requires-Dist: toml (>=0.10)
+Provides-Extra: dev
+Requires-Dist: pip (==20.2.4) ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: yapf ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: mkdocs (==1.1.2) ; extra == 'dev'
+Requires-Dist: mkdocs-material (==6.1.0) ; extra == 'dev'
+Requires-Dist: mkdocstrings (==0.13.6) ; extra == 'dev'
+Requires-Dist: pytest (==4.6.5) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.10.1) ; extra == 'dev'
+Requires-Dist: pytest-runner (==5.1) ; extra == 'dev'
+Requires-Dist: freezegun (==1.0.0) ; extra == 'dev'
+Requires-Dist: bump2version (==0.5.11) ; extra == 'dev'
+Requires-Dist: wheel (==0.33.6) ; extra == 'dev'
+Requires-Dist: twine (==1.14.0) ; extra == 'dev'
+
+# LogDir
+
+A utility for managing logging directories.
+
+|                    Source                    |                                          PyPI                                           |                                                                                             CI/CD                                                                                             |                        Docs                        |                                                                         Docs Status                                                                         |
+| :------------------------------------------: | :-------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| [GitHub](https://github.com/btjanaka/logdir) | [![PyPI version](https://badge.fury.io/py/logdir.svg)](https://badge.fury.io/py/logdir) | [![Test and Deploy](https://github.com/btjanaka/logdir/workflows/Test%20and%20Deploy/badge.svg?branch=master)](https://github.com/btjanaka/logdir/actions?query=workflow%3A"Test+and+Deploy") | [logdir.btjanaka.net](https://logdir.btjanaka.net) | [![Netlify Status](https://api.netlify.com/api/v1/badges/b3cdff86-dfcf-4b62-9a64-ab431bc5040f/deploy-status)](https://app.netlify.com/sites/logdir/deploys) |
+
+## Installation
+
+To install from PyPI, run:
+
+```bash
+pip install logdir
+```
+
+To install from source, clone this repo, cd into it, and run:
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+## Examples
+
+
