@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: contributor-network
+Version: 0.1.0
+Summary: Create an interactive contributor network graph from git/hg repository
+Home-page: https://github.com/pythoniccafe/contributor-network/
+Author: Álvaro Justen
+Author-email: alvarojusten@gmail.com
+License: UNKNOWN
+Keywords: free-software open-source contributor graph network
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: lxml
+Requires-Dist: tqdm
+
+# Contributor Network Graph
+
+Create a graph visualization from a code repository.
+
+![Graph for contributor-network repository](data/contributor-network-graph.png)
+
+
+## Installing
+
+```
+pip install contributor-network
+```
+
+## Running
+
+Given a file called `dependencies.csv`, like:
+
+```csv
+name,repository_type,repository_url,depended_by
+contributor-network,git,https://github.com/PythonicCafe/contributor-network,
+lxml,git,https://github.com/lxml/lxml,contributor-network
+tqdm,git,https://github.com/tqdm/tqdm,contributor-network
+```
+
+Execute:
+
+```shell
+python -m contributor_network.cli \
+	--temp-dir=/tmp/repositories/ \
+	dependencies.csv \
+	network/
+```
+
+
