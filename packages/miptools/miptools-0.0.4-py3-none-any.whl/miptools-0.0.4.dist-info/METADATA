@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: miptools
+Version: 0.0.4
+Summary: miptools is a preprocessing utility that allows users to preprocess medical images at ease
+Home-page: https://github.com/chinokenochkan/miptools
+Author: Chi Nok Enoch Kan
+Author-email: chinokenoch.kan@marquette.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: pydicom
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+
+UNKNOWN
+
+
