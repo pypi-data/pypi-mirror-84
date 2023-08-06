@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: spheres
+Version: 0.3.0.2
+Summary: toolbox for higher spin and symmetrization
+Home-page: https://github.com/heyredhat/spheres
+Author: Matthew Weiss
+Author-email: heyredhat@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# spheres
+toolbox for higher spin and symmetrization
+
+[![Documentation Status](https://readthedocs.org/projects/spheres/badge/?version=latest)](https://spheres.readthedocs.io/en/latest/?badge=latest)
+
+[![PyPI version](https://badge.fury.io/py/spheres.svg)](https://badge.fury.io/py/spheres)
+
+[![Travis CI](https://travis-ci.com/heyredhat/spheres.svg?branch=main)](https://travis-ci.com/github/heyredhat/spheres)
+
+[![codecov](https://codecov.io/gh/heyredhat/spheres/branch/main/graph/badge.svg?token=980CL7KIFL)](https://codecov.io/gh/heyredhat/spheres)
+
+[![Updates](https://pyup.io/repos/github/heyredhat/spheres/shield.svg)](https://pyup.io/repos/github/heyredhat/spheres/)
+
+[![Python 3](https://pyup.io/repos/github/heyredhat/spheres/python-3-shield.svg)](https://pyup.io/repos/github/heyredhat/spheres/)
+
+
