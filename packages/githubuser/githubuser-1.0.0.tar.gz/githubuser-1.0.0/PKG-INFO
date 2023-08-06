@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: githubuser
+Version: 1.0.0
+Summary: Find Github user basic details
+Home-page: https://github.com/pranavvp10/githubuser
+Author: Pranav V P
+Author-email: <pranavvp07@gmail.com>
+License: UNKNOWN
+Description: A simple python package that allows users to view a Github user's basic details
+Keywords: python,Github,githubuser
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
