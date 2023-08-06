@@ -1,0 +1,12 @@
+rivr_jinja/__init__.py,sha256=khkZthcSZV_FvOFrFFLMcGpoFgB-oiVyn9bLb76xzVA,134
+rivr_jinja/middleware.py,sha256=2vMc9IMPPptJC0HdoTOJWaIfoNCy2G_nEHSt5ni2lQM,571
+rivr_jinja/response.py,sha256=AZt21Iov1mOFWTSwoGdtq1jnyveAzFvCFSaL3xqFBRU,1536
+rivr_jinja/view.py,sha256=SoKm_gE2kTb6ugTG1EPlXev_QxlfY3Zl78Ju67zT2oQ,1394
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_middleware.py,sha256=TXJ_JB8Dse69lLXJOliQ09dIJtNDlIUwYmIpmP6f-cI,503
+tests/test_response.py,sha256=BUTlAdjPcA9mSW1HwnAVHpHvyC6y5CIznvS1Fe4vRrs,773
+rivr_jinja-0.4.0.dist-info/LICENSE,sha256=oUrG7RvNIVcEO8LdVFM99JAxrcC70XdBTAMv2rjzZ-M,1483
+rivr_jinja-0.4.0.dist-info/METADATA,sha256=04g2Iy7dOuyZ6hLN_6zFzuyKZJLsf6o4mrV9-EuIKAE,612
+rivr_jinja-0.4.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+rivr_jinja-0.4.0.dist-info/top_level.txt,sha256=iEKHwp_-i5dCYmuNB7Iq1PYMjh2kYn6oA32LDtXi6IU,17
+rivr_jinja-0.4.0.dist-info/RECORD,,
