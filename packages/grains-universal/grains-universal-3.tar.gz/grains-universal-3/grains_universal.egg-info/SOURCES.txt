@@ -1,0 +1,12 @@
+README.rst
+setup.py
+grains_universal.egg-info/PKG-INFO
+grains_universal.egg-info/SOURCES.txt
+grains_universal.egg-info/dependency_links.txt
+grains_universal.egg-info/requires.txt
+grains_universal.egg-info/top_level.txt
+universal/conf.py
+universal/version.py
+universal/grains/universal/init.py
+universal/grains/universal/path.py
+universal/grains/universal/requirement_versions.py
