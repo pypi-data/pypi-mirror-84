@@ -1,0 +1,13 @@
+bing_translation_for_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bing_translation_for_python/core.py,sha256=IB2HLDrV4n07ZkGKxFyy_RNpHe7xPlxSx2o38jjBPpw,4793
+bing_translation_for_python/setting.py,sha256=vk6OFT1Y8BxUW9Eahpqsg1DNowqtUS1GrgdjsdwnsI0,3812
+bing_translation_for_python/public/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bing_translation_for_python/public/errors.py,sha256=JcpnqaVUk0B6OiaCajbgUCiEXSu8q5nXSVkWCZadPrI,198
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/core_test.py,sha256=8AFiwJMQxon1jzK4Zwwxc7-k4BMpvpbbe773M9cOM4E,4210
+test/error_test.py,sha256=w-En2h4ab6Y912YGiNKJZfDB9J6xB-XnlDyj5liumx4,1802
+bing_translation_for_python-1.2.dist-info/LICENSE,sha256=6n0EnHcF3BOvwgLdGOGCfzSE-CEv0_p7gvxKDDY0Msk,7816
+bing_translation_for_python-1.2.dist-info/METADATA,sha256=cA9YldEC3n3yt1BT_GPHHcGtWqLFOSe8O-nX5mGXvTQ,428
+bing_translation_for_python-1.2.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+bing_translation_for_python-1.2.dist-info/top_level.txt,sha256=lWmzEDpg6Vo4NiysowsRDr22TH6nRc4rm7XODKa38sg,33
+bing_translation_for_python-1.2.dist-info/RECORD,,
