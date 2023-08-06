@@ -1,0 +1,8 @@
+dbr_example_yy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbr_example_yy/package_main.py,sha256=RwUwRI6qir4ZGO_M23wU0-ArwusgHsKcc3EUNjqNdxg,117
+dbr_example_yy/folder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbr_example_yy/folder/some_file.py,sha256=RkK_KnAQvl36aGZFR9uKdTINf2nzqvovJIIjKT4RLwI,744
+dbr_example_yy-0.0.6.dist-info/METADATA,sha256=XA07MkgTFA8XMkTA-KMM-2Caiywug5-3M0p8t5cdVGc,401
+dbr_example_yy-0.0.6.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+dbr_example_yy-0.0.6.dist-info/top_level.txt,sha256=xZyA_pvlhVCPO7td1R-5CzH2CDWLessXqO-1QrFv1sg,15
+dbr_example_yy-0.0.6.dist-info/RECORD,,
