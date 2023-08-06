@@ -1,0 +1,13 @@
+vmtconnect/__about__.py,sha256=Ts0qFJmux6yS5t1Lg2WuH2IPd8oCmMJ7GKYpFZvR5ww,794
+vmtconnect/__init__.py,sha256=8DKejG5lpghwm-r_kSFmD-uYhLTyHEd-8PS58rekgAM,72525
+vmtconnect/command_line.py,sha256=MLtVUuL-SLSTrPibsM8ymvZP4OR0y_PrvOMkhrnO3EM,2057
+vmtconnect/security.py,sha256=sf7a1NvVnQBnu0feQmMuKg6XSclnx_KGSEzn_2Upzgk,6104
+vmtconnect/util.py,sha256=Y-mu1ipCTzcLR_P0IGapBuiZ7g8YmH59fJTjZwC12nk,7118
+vmtconnect/versions.py,sha256=-qlYXy2O42f63fg07SbS0Zu2Uvif6e4r39rWoadtFAc,1852
+vmtconnect/vmtconnect.py,sha256=MIXKSlR1USPcc_ejdnCSffrKpuXrIkrfIkbX6lEVMek,70997
+vmtconnect-3.5.0.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+vmtconnect-3.5.0.dist-info/METADATA,sha256=gBWYsDJNnzyA0RQkLQy2xubnEYQfU6LZKeZ1VlVbP7o,1454
+vmtconnect-3.5.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+vmtconnect-3.5.0.dist-info/entry_points.txt,sha256=5t5ikGZbIHVqArXhxSOK8wfezqkRVV5KZdfEtUv8OtE,59
+vmtconnect-3.5.0.dist-info/top_level.txt,sha256=aF1WSBVsqyTt0_aG8tMRlJl7wk6o-oRWM-cJspuR7JI,11
+vmtconnect-3.5.0.dist-info/RECORD,,
