@@ -1,0 +1,9 @@
+README.md
+setup.py
+simple_udp_proxy/__init__.py
+simple_udp_proxy/simple_udp_proxy.py
+simple_udp_proxy.egg-info/PKG-INFO
+simple_udp_proxy.egg-info/SOURCES.txt
+simple_udp_proxy.egg-info/dependency_links.txt
+simple_udp_proxy.egg-info/top_level.txt
+test/test.py
