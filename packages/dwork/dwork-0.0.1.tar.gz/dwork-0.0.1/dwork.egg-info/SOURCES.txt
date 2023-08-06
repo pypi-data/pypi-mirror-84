@@ -1,0 +1,8 @@
+setup.py
+dwork.egg-info/PKG-INFO
+dwork.egg-info/SOURCES.txt
+dwork.egg-info/dependency_links.txt
+dwork.egg-info/entry_points.txt
+dwork.egg-info/not-zip-safe
+dwork.egg-info/requires.txt
+dwork.egg-info/top_level.txt
