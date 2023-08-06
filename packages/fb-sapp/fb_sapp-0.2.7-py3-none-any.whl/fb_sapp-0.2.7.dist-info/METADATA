@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: fb-sapp
+Version: 0.2.7
+Summary: Static Analysis Post-Processor for processing taint analysis results.
+Home-page: https://pyre-check.org/
+Author: Facebook
+Maintainer-email: pyre@fb.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: click-log
+Requires-Dist: flask
+Requires-Dist: flask-graphql
+Requires-Dist: graphene
+Requires-Dist: graphene-sqlalchemy
+Requires-Dist: ipython
+Requires-Dist: munch
+Requires-Dist: pygments
+Requires-Dist: SQLAlchemy
+Requires-Dist: ujson
+Requires-Dist: xxhash
+Requires-Dist: prompt-toolkit
+Requires-Dist: typing-extensions
+Requires-Dist: pyre-extensions
+
+# SAPP (Static Analysis Post Processor)
+
+See the pyre website for documentation (https://pyre-check.org/docs/static-analysis-post-processor.html).
+
+
