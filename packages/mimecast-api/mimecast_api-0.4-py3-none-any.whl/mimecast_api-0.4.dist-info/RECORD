@@ -1,0 +1,9 @@
+mimecast_api/__init__.py,sha256=Wmq2fZDhuSTVc4rSrQ48v0ZOneE0SWdM5xbHy3W5X5U,87
+mimecast_api/api_object.py,sha256=aOTQh-aOaqz_oK3g4xE4X-rnHg9DsdxB66lITJS-xrM,6383
+mimecast_api/errors.py,sha256=FXK-JAx6tMvLYFCcgKQ1VoGVNWqtp98XCBkjYTc4xsM,82
+mimecast_api/post_rest.py,sha256=OVV2Z0_p94tECpZEioSLaxuJYWWlsMbOrOwof0U3Luc,3037
+mimecast_api-0.4.dist-info/LICENSE,sha256=SWQ4X3Y7rPmWtd5OC3aeLJhUhyH9yR-1uoPusNVfWW0,1268
+mimecast_api-0.4.dist-info/METADATA,sha256=cr5xhZYz9gxzeFVgniXuTT__pTuIILbAudsttJwZ6GY,1123
+mimecast_api-0.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+mimecast_api-0.4.dist-info/top_level.txt,sha256=rWdLYQLlDePLAvf8uIxVo5KvGw2ZMRV5Ny3tmqBX3dE,13
+mimecast_api-0.4.dist-info/RECORD,,
