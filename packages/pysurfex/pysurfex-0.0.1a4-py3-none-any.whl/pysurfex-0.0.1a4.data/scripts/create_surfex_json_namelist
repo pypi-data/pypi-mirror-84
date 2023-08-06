@@ -1,0 +1,10 @@
+#!python
+
+import surfex
+import sys
+
+
+if __name__ == "__main__":
+
+    kwargs = surfex.parse_args_create_surfex_json_namelist(sys.argv[1:])
+    surfex.create_surfex_json_namelist(**kwargs)
