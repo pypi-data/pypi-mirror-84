@@ -1,0 +1,138 @@
+Metadata-Version: 1.0
+Name: coperator
+Version: 1.1.8
+Summary: Custom operators for python
+Home-page: https://gitlab.com/jecjimenezgi/coperator.git
+Author: Jean Carlo Jimenez Giraldo
+Author-email: mandalarotation@gmail.com
+License: UNKNOWN
+Description: COPERATOR
+        ==============
+        
+        Usage COPERATOR
+        -------------------------------
+        
+        Usage factory_operator
+        ------------------------
+        .. code:: python
+        
+            from coperator.myoperator import factory_operator
+        
+        
+            class Example:
+                """Example."""
+        
+                def __init__(self, x: int) -> None:
+                    """__init__.
+        
+                    :param x:
+                    :type x: int
+                    :rtype: None
+                    """
+                    self._x: int = self.set_x(x)
+        
+                def set_x(self, x: int) -> int:
+                    """set_x.
+        
+                    :param x:
+                    :type x: int
+                    :rtype: int
+                    """
+                    return x
+        
+                def get_x(self) -> int:
+                    """get_x.
+        
+                    :rtype: int
+                    """
+                    return self._x
+        
+                def __str__(self) -> str:
+                    """__str__.
+        
+                    :rtype: str
+                    """
+                    return str(self.get_x())
+        
+        
+            @factory_operator(Example, Example, Example)
+            def op(A: Example, B: Example) -> Example:
+                """op.
+        
+                :param A:
+                :type A: Example
+                :param B:
+                :type B: Example
+                :rtype: Example
+                """
+                return Example(A.get_x() + B.get_x())
+        
+        
+            E1: Example = Example(1)
+            E2: Example = Example(2)
+            E3: Example = Example(3)
+        
+            print(E1 * op * E2 * op * E3)
+        
+        .. code-block::
+        
+           6
+        
+        Usage monad
+        ------------------------
+        
+        .. code:: python
+        
+           from coperator.monad import monad
+        
+            def neg(i):
+                return -i
+        
+            print(monad("1")(int)(neg)(str)(None))
+            print(monad("x")(int)(neg)(str)(None))
+        
+            def func1(i):
+                return monad(i)(int)(neg)(str)(None)
+        
+            print(list(map(func1,["1",2,"z"])))
+        
+        
+        .. code-block::
+        
+           '-1'
+           None
+           ['-1','-2',None]
+        
+        
+        Links and references
+        ------------------------
+        - Source code: https://gitlab.com/jecjimenezgi/coperator
+        
+        LICENSE
+        ------------
+        
+        MIT License
+        
+        Copyright (c) 2020 Jean Carlo Jimenez Giraldo
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+        
+        
+Platform: UNKNOWN
