@@ -1,0 +1,12 @@
+duetwebapi/__init__.py,sha256=b8CWfWYPyg-WKTRnwYQwIHFNTzSiu0XZT7HTnLJzDmw,65
+duetwebapi/dwa_factory.py,sha256=GFGkl4bs0ugyt3ZUxGPmg4VZ7gFOGelkJU2lgfz1J9w,1787
+duetwebapi/api/__init__.py,sha256=NoPZ0kZ5WmpvaOLZozr31paCZ-Cm2cTfxP8JvoBv0-8,122
+duetwebapi/api/base.py,sha256=bi8rj4BS_G9qIM6HK4VxD-tIFO39-gvmIehDMkv9hvI,1709
+duetwebapi/api/dsf_api.py,sha256=QGgtR_mP8aH7CEGBhRq7-GmF7bqOk3nzxCmOkGx6oSk,3113
+duetwebapi/api/dwc_api.py,sha256=3Bf-4Mt4jj8Bg4GxxdgCgnEn1p2WSSw5Tce2pOnxs4Q,3134
+duetwebapi/api/wrapper.py,sha256=tmtxSIAz6CHekDG2XrXKPVCzFwpr0gd7UxWEI9P-ELw,1063
+duetwebapi-1.1.1b0.dist-info/LICENSE,sha256=MQ0yRqs9riSeyoqaLWXK2tJxiPEw6drLaMZ7fO5tk6Q,1082
+duetwebapi-1.1.1b0.dist-info/METADATA,sha256=Mtc39aZuR8uHMkkVHuuchcwxgmVPiUAtKixXRxhlSvw,2396
+duetwebapi-1.1.1b0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+duetwebapi-1.1.1b0.dist-info/top_level.txt,sha256=ZSo8OpBwtZemFIafW9z06xXyS3MgaRs0opZym9YMGgc,11
+duetwebapi-1.1.1b0.dist-info/RECORD,,
