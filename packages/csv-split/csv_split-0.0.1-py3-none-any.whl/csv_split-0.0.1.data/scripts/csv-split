@@ -1,0 +1,4 @@
+#!python
+
+import csv_split
+csv_split.main()
