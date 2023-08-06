@@ -1,0 +1,15 @@
+ipyfastscape/__init__.py,sha256=VgWladg3kEb1D01ErKEC0FLdpmjV7gUOWllfY0cVVSM,317
+ipyfastscape/common.py,sha256=NHEoSi0Nw9W5M3Cr7sNBhCdsHzCfNb1mT6-PCs59CS4,18516
+ipyfastscape/topoviz3d.py,sha256=r1E_PvCPQbSglBHZMKYujK250e5r5BPSQIKYcIpgLUg,5417
+ipyfastscape/xr_accessor.py,sha256=bLMO9ulktoUUacB9B_hcsM9O89gFFOsWeE8uXmwlD0c,6332
+ipyfastscape/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipyfastscape/tests/conftest.py,sha256=e_4xYdozlmWQH2VUj2FQ57kv-a0iv64HFBySvQktuqg,974
+ipyfastscape/tests/test_common.py,sha256=F27U15-OANfm1c74lehyTW-gdb4kGyp4G2BrWrxpRww,5714
+ipyfastscape/tests/test_topoviz3d.py,sha256=PAbS37S00j18O-JnVibOffRaIAZfpdasUX_LM2xo0w4,2070
+ipyfastscape/tests/test_xr_accessor.py,sha256=n4qE4EWj7r08ASTCPOPYx5vG35IRdeZZCeMGRNJm2To,5360
+ipyfastscape/tests/utils.py,sha256=0uZ5THgH9V8GA6Mkkt-FAGsFXtt8HmJdhs3TBJqmm4c,149
+ipyfastscape-0.1.0.dist-info/LICENSE,sha256=hCGYu8G4L8cLgYxObSQ5E4Fi6Je7OT_UUtfFyhcutac,1521
+ipyfastscape-0.1.0.dist-info/METADATA,sha256=2WOXmpPjfozTstOsBnqVw9ZpuRd1Vc2CLJfHaScDkc0,2084
+ipyfastscape-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+ipyfastscape-0.1.0.dist-info/top_level.txt,sha256=6K9BMqsgBLPqiaM6j3JRUizewSFkYaU7rn0X0G4D9tI,13
+ipyfastscape-0.1.0.dist-info/RECORD,,
