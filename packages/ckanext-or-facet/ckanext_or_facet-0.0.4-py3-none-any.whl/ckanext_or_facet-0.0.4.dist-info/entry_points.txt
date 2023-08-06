@@ -1,0 +1,7 @@
+
+        [ckan.plugins]
+        or_facet=ckanext.or_facet.plugin:OrFacetPlugin
+
+        [babel.extractors]
+        ckan = ckan.lib.extract:extract_ckan
+    

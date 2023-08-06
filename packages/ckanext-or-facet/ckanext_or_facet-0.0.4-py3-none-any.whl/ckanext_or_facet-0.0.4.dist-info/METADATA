@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: ckanext-or-facet
+Version: 0.0.4
+Summary: Combine search facets using OR operator
+Home-page: https://github.com/DataShades/ckanext-or_facet
+Author: Sergey Motornyuk
+Author-email: sergey.motornyuk@linkdigital.com.au
+License: AGPL
+Keywords: CKAN extension facet
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: ckantoolkit
+Requires-Dist: six
+
+
+.. image:: https://travis-ci.org/DataShades/ckanext-or_facet.svg?branch=master
+    :target: https://travis-ci.org/DataShades/ckanext-or_facet
+
+.. image:: https://codecov.io/gh/DataShades/ckanext-or_facet/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/DataShades/ckanext-or_facet
+
+================
+ckanext-or_facet
+================
+
+.. Put a description of your extension here:
+   What does it do? What features does it have?
+   Consider including some screenshots or embedding a video!
+
+------------
+Installation
+------------
+
+To install ckanext-or-facet:
+
+1. Activate your CKAN virtual environment, for example::
+
+     . /usr/lib/ckan/default/bin/activate
+
+2. Install the ckanext-or_facet Python package into your virtual environment::
+
+     pip install ckanext-or-facet
+
+3. Add ``or_facet`` to the ``ckan.plugins`` setting in your CKAN
+   config file (by default the config file is located at
+   ``/etc/ckan/default/production.ini``).
+
+4. Restart CKAN. For example if you've deployed CKAN with Apache on Ubuntu::
+
+     sudo service apache2 reload
+
+
+---------------
+Config Settings
+---------------
+
+Document any optional config settings here. For example::
+
+    # List of facets that are using OR when applied.
+    # (optional, default: empty list).
+    or_facet.facets = tags res_format
+
+
+------------------------
+Development Installation
+------------------------
+
+To install ckanext-or_facet for development, activate your CKAN virtualenv and
+do::
+
+    git clone https://github.com/DataShades/ckanext-or_facet.git
+    cd ckanext-or_facet
+    python setup.py develop
+
+
+-----------------
+Running the Tests
+-----------------
+
+To run the tests, do::
+
+  pytest --ckan-ini test.ini
+
+
