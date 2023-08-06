@@ -1,0 +1,13 @@
+topalias/__init__.py,sha256=tusaau1WvND38rsXSOYT1NWl3O-o5hJj9t18z89xsWI,149
+topalias/__main__.py,sha256=HQC1DIW4RaX39DtWptyAakStK59QxGAvGNmCsD3qjt0,466
+topalias/aliascore.py,sha256=q8mL5LIAV9itK7QfQ_VRcnR7wt0emHdJzho8KwzXf4c,4352
+topalias/cli.py,sha256=B9LzkBGAG2U4l4oRksZyxMH8YsFN7ujIbrGbUFx-xMA,1701
+topalias/data/.bash_aliases,sha256=0C2K3GAQg5BK02foCfJCrweVUgx3q2pvj9zZ8Svo8Hs,1367
+topalias/data/.bash_history,sha256=B-s7gv7xwjWOW6ZsQR2ndmIY0RGrUxwmlV8BT946Rgk,13580
+topalias/data/.zsh_history,sha256=2aOdeeD2L5pIVNUmohUObBgWEJL_0hfNmrGkovYDMXw,4001
+topalias/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+topalias/setuppath.py,sha256=ryHHYsHpIlP2eyuO5Udr9vTl28vDugPhzB7elpuCtFc,51
+topalias-1.2.6.dist-info/LICENSE,sha256=4tAVDIdLrliaOjAsVj_yxyT6VEdbnRzeYkWaU1CQOuw,1605
+topalias-1.2.6.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+topalias-1.2.6.dist-info/METADATA,sha256=W2yBr_8ZMHeUV55jNYC2aMwuf4cWSkM3Uhut7RMt8pI,4833
+topalias-1.2.6.dist-info/RECORD,,
