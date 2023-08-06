@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: python-safeway
+Version: 0.0.1
+Summary: a safeway.com python API
+Home-page: https://github.com/3point14thon/python-safeway
+Author: 3point14thon
+Author-email: chris.alan.bowers@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# python-safeway
+Python API intended to interact with safeway.com
+
+
