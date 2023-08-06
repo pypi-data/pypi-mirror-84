@@ -1,0 +1,3 @@
+Homie4>=0.3.2
+pyyaml
+pycomfoconnect>=0.4
