@@ -1,0 +1,8 @@
+opentelemetry-api==0.15b0
+opentelemetry-sdk==0.15b0
+grpcio~=1.27
+
+[test]
+opentelemetry-test==0.15b0
+opentelemetry-sdk==0.15b0
+protobuf==3.12.2
