@@ -1,0 +1,12 @@
+dh_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dh_utils/tei.py,sha256=bys-Lw2tbNKGXwX2aZYTTiurYdMC3ya_y9x4lPC_ODs,3620
+dh_utils/unicode.py,sha256=mEQShDUATegR-ZdOQHRfQbiQ8Bu0au_aDoGhkAvCJuM,565
+dh_utils/tei/__init__.py,sha256=62cfNSORHNMZmrYDJafxnREcf9uRQiZ2taJCephs0o4,38
+dh_utils/tei/crit_app.py,sha256=vY0e0zPhgWIBf_Mr6Y8f7jztRJxLqt34bM6fXAN-KiI,3643
+dh_utils/tei/refsdecl_generator.py,sha256=5qq8KmqUl5ne5iRo0zhcOvIRG5XZL9IBwKDEGZqc1uU,5781
+dh_utils/tei/tag_script.py,sha256=I8vGe79SWt9cJ_61tL_0cHdLNzOUQm0ELTvZY_k5VH4,3807
+dh_utils-0.1.13.dist-info/LICENSE,sha256=IIx1gN6AJtk7EuXZNUleMG6XezCha8uQrivlrWVcRT4,1073
+dh_utils-0.1.13.dist-info/METADATA,sha256=JgVFt9crBjW_iUtw-UkuOXd_sFrWernRsmsONSDFnog,3738
+dh_utils-0.1.13.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+dh_utils-0.1.13.dist-info/top_level.txt,sha256=OFzV_Sg6oKm9F0Dy8EWGFwdW12DXJ8B221PEKhs2luU,9
+dh_utils-0.1.13.dist-info/RECORD,,
