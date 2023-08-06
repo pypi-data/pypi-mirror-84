@@ -1,0 +1,10 @@
+Camunda/Deployment.py,sha256=lgz6rH7xdXAb6t2uFoFD_MH2pGmRDy3n3d80DnxPD3U,1517
+Camunda/ExternalTask.py,sha256=euaaCXTUQOXtuXeKpwzxuX_aSu3JlUwuSBYFsPZp2NQ,4270
+Camunda/ProcessDefinition.py,sha256=hzcv5KooJt9pDjRgU3RoyEAraR7Kl9XYdKPent-z9t8,1576
+Camunda/ProcessInstance.py,sha256=TjdPzsLrKRb5rqg9UP9KKaG_2vwlmZNaLmzvHyXrLlg,1956
+Camunda/__init__.py,sha256=9YW6s96UpDBMPS0B5BuJVYRUm8hVT1Vyr-wumJdLr-Q,168
+robotframework_camunda-0.3.5.dist-info/LICENSE,sha256=-pBXSEFgRrqA_16rZuFdZeAvh0wwMWTIgUXg8dHOLxQ,10779
+robotframework_camunda-0.3.5.dist-info/METADATA,sha256=G-I_zRo_bMs9aZUHKxi1pl4uQQQnTKiAV3ECOGfllDk,3844
+robotframework_camunda-0.3.5.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+robotframework_camunda-0.3.5.dist-info/top_level.txt,sha256=pb1yJqW1uvkwd55MdWcAPVoWLS-c53gldkdA0q1jwko,8
+robotframework_camunda-0.3.5.dist-info/RECORD,,
