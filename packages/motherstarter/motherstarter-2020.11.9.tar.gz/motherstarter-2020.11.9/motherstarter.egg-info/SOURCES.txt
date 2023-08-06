@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+motherstarter/__init__.py
+motherstarter/motherstarter.py
+motherstarter.egg-info/PKG-INFO
+motherstarter.egg-info/SOURCES.txt
+motherstarter.egg-info/dependency_links.txt
+motherstarter.egg-info/entry_points.txt
+motherstarter.egg-info/requires.txt
+motherstarter.egg-info/top_level.txt
+tests/__init__.py
+tests/e2e/__init__.py
+tests/e2e/test_click_inputs.py
+tests/e2e/test_click_outputs.py
