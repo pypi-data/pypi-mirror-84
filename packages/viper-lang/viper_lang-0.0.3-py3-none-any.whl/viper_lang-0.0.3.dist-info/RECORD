@@ -1,0 +1,14 @@
+viper/__init__.py,sha256=_Q6gjUbvplE3vlx5LqXeQS5V-KSvPqQqhgTZstKae5g,2096
+viper/builtins.py,sha256=mv9CvC0dzIXHEy5Soo3YZlbOU6Q9bXHubsNMYkpVc30,3573
+viper/common.py,sha256=XzkM_arX7vdmgYtvByNoKtEU2L7ahw7KGUH2-nh4h4U,3026
+viper/errors.py,sha256=o24Lw8evwbkVQzOCXYyKynEyjQpwR8srZsc0qdGkz9g,645
+viper/functions.py,sha256=_USWPNoNyfnWQFweEB3KFGmOFWRsCbhfYPg4wtxzFvI,3064
+viper/keywords.py,sha256=XyGJ5wL-LZr5jGNbdDvfwgnPTIuFyuH8-_TQ395nhJA,1098
+viper/objects.py,sha256=B8CgTY9ucjdd0yXrI36-henUTIClO4byPCFow6hZd24,1434
+viper/parser.py,sha256=VG6eg0Pw4e8AvtGAewmvbQN8UXiDjhT_00h4vn_o0Hk,18660
+viper/exts/discord.py,sha256=B9_ZSLdXd68cd8Iwchd9LDnmMCXq10DSwU9tJqWbuKE,6486
+viper_lang-0.0.3.dist-info/LICENSE,sha256=MLn1cfgohsiX7SR2P-IBjJphhT8FQq1wTgBxA8KoI98,1069
+viper_lang-0.0.3.dist-info/METADATA,sha256=Tl9rzfQ8rIyyNDBIfk0KaN-W7bxIZjoq-9pmeIM_W58,7366
+viper_lang-0.0.3.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+viper_lang-0.0.3.dist-info/top_level.txt,sha256=ok2j7SXfShNUqhgZAt_wn8LjJDCuqkxE8jY8CILbWcg,6
+viper_lang-0.0.3.dist-info/RECORD,,
