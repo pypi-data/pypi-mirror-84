@@ -1,0 +1,3 @@
+[console_scripts]
+bhej=bhej.main:app
+
