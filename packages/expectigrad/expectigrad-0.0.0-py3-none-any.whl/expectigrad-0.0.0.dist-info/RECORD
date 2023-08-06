@@ -1,0 +1,10 @@
+expectigrad/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+expectigrad/pytorch.py,sha256=d20EhdWVdec7_BbMT41y82lKh1AFH7cm8nlhP4kaI_0,4249
+expectigrad/tensorflow1.py,sha256=aO-Z9jH_FzQYjInyTWyfJzNYfOqDRenB9dPY3HDCtek,5481
+expectigrad/tensorflow2.py,sha256=Xlh5XCsCgg5mK3awFLfh6VyFC7HErgQow-w6L_Sflb0,4660
+expectigrad/testing.py,sha256=dnaPmZwuVhvvUbwnrMH9_ri_FeyeyrlZaON4cWB4mvQ,4450
+expectigrad-0.0.0.dist-info/LICENSE,sha256=8_Z1U5wmY6yGOhkkarpyMWARRVTogszaYfysPjnCexE,1068
+expectigrad-0.0.0.dist-info/METADATA,sha256=Myz7zY36hq0Xzbvxu01i-XoaymUKNaCI5nvK308EVPE,7426
+expectigrad-0.0.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+expectigrad-0.0.0.dist-info/top_level.txt,sha256=tbuidDetgNZReqlXjBXzfM7P-yeGufrC8ZWhZ9Tm_CA,12
+expectigrad-0.0.0.dist-info/RECORD,,
