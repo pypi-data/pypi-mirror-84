@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+BOOTNONcalc/__init__.py
+BOOTNONcalc.egg-info/PKG-INFO
+BOOTNONcalc.egg-info/SOURCES.txt
+BOOTNONcalc.egg-info/dependency_links.txt
+BOOTNONcalc.egg-info/top_level.txt
