@@ -1,0 +1,7 @@
+README.rst
+setup.py
+flopi/__init__.py
+flopi.egg-info/PKG-INFO
+flopi.egg-info/SOURCES.txt
+flopi.egg-info/dependency_links.txt
+flopi.egg-info/top_level.txt
