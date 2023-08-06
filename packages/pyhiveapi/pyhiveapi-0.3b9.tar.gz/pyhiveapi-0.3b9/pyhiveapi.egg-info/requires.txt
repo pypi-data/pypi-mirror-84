@@ -1,0 +1,6 @@
+boto3>=1.16.10
+requests
+aiohttp
+
+[dev]
+tox
