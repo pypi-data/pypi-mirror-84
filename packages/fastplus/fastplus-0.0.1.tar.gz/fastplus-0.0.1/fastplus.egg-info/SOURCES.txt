@@ -1,0 +1,12 @@
+README.md
+setup.py
+fastplus/__init__.py
+fastplus/cli.py
+fastplus.egg-info/PKG-INFO
+fastplus.egg-info/SOURCES.txt
+fastplus.egg-info/dependency_links.txt
+fastplus.egg-info/entry_points.txt
+fastplus.egg-info/requires.txt
+fastplus.egg-info/top_level.txt
+fastplus/commands/__init__.py
+fastplus/commands/generate.py
