@@ -1,0 +1,444 @@
+# Copyright (c) Contributors to the aswf-docker Project. All rights reserved.
+# SPDX-License-Identifier: Apache-2.0
+
+# This file contains all the CI Docker package and image versions
+
+versions:
+  "1":
+    major_version: "1"
+    ci_common_version: "1"
+    package_versions:
+      DTS_VERSION: "6"
+      CUDA_VERSION: "10.2"
+      CCACHE_VERSION: "4.0"
+      NINJA_VERSION: "1.10.1"
+      SONAR_VERSION: "4.5.0.2216"
+  "1-clang6":
+    parent_versions: ["1"]
+    major_version: "1"
+    ci_common_version: "1"
+    package_versions:
+      CLANG_MAJOR_VERSION: "6"
+      CLANG_VERSION: "6.0.1"
+  "1-clang7":
+    parent_versions: ["1"]
+    major_version: "1"
+    tags: ["latest"]
+    ci_common_version: "1"
+    use_major_version_as_tag: true
+    package_versions:
+      CLANG_MAJOR_VERSION: "7"
+      CLANG_VERSION: "7.1.0"
+  "1-clang8":
+    parent_versions: ["1"]
+    major_version: "1"
+    ci_common_version: "1"
+    package_versions:
+      CLANG_MAJOR_VERSION: "8"
+      CLANG_VERSION: "8.0.1"
+  "1-clang9":
+    parent_versions: ["1"]
+    major_version: "1"
+    ci_common_version: "1"
+    package_versions:
+      CLANG_MAJOR_VERSION: "9"
+      CLANG_VERSION: "9.0.1"
+  "1-clang10":
+    parent_versions: ["1"]
+    major_version: "1"
+    ci_common_version: "1"
+    package_versions:
+      CLANG_MAJOR_VERSION: "10"
+      CLANG_VERSION: "10.0.1"
+  "2":
+    major_version: "2"
+    tags: ["preview"]
+    ci_common_version: "2"
+    package_versions:
+      DTS_VERSION: "9"
+      CUDA_VERSION: "11.1"
+      CCACHE_VERSION: "4.0"
+      NINJA_VERSION: "1.10.1"
+      SONAR_VERSION: "4.5.0.2216"
+  "2-clang10":
+    parent_versions: ["2"]
+    major_version: "2"
+    tags: ["preview"]
+    ci_common_version: "2"
+    use_major_version_as_tag: true
+    package_versions:
+      CLANG_MAJOR_VERSION: "10"
+      CLANG_VERSION: "10.0.1"
+  "2-clang11":
+    parent_versions: ["2"]
+    major_version: "2"
+    ci_common_version: "2"
+    package_versions:
+      CLANG_MAJOR_VERSION: "11"
+      CLANG_VERSION: "11.0.0"
+  "2018":
+    parent_versions: ["1", "1-clang7"]
+    major_version: "2018"
+    ci_common_version: "1"
+    package_versions:
+      ALEMBIC_VERSION: "1.7.11"
+      BLOSC_VERSION: "1.5.0"
+      BOOST_VERSION: "1.61.0"
+      CMAKE_VERSION: "3.9.4"
+      CPPUNIT_VERSION: "1.14.0"
+      GLEW_VERSION: "2.1.0"
+      GLFW_VERSION: "3.1.2"
+      HDF5_VERSION: "1.8.21"
+      LOG4CPLUS_VERSION: "1.1.2"
+      NUMPY_VERSION: "1.14"
+      OCIO_CONFIGS_VERSION: "1.0_r2"
+      OCIO_VERSION: "1.0.9"
+      OIIO_VERSION: "2.0.8"
+      OPENEXR_VERSION: "2.2.1"
+      OPENSUBDIV_VERSION: "3_3_3"
+      OPENVDB_VERSION: "5.2.0"
+      OSL_VERSION: "1.10.9"
+      PARTIO_VERSION: "1.10.1"
+      PTEX_VERSION: "2.1.28"
+      PYSIDE_VERSION: "2.0.0"
+      PYTHON_VERSION: "2.7.15"
+      PYTHON_VERSION_MAJOR_MINOR: "2.7"
+      QT_VERSION: "5.6.1"
+      TBB_VERSION: "2017_U6"
+      USD_VERSION: "19.11"
+      VFXPLATFORM_VERSION: "2018"
+  "2018-clang7":
+    parent_versions: ["1", "1-clang7", "2018"]
+    major_version: "2018"
+    ci_common_version: "1"
+  "2019":
+    parent_versions: ["1", "1-clang7"]
+    major_version: "2019"
+    tags: ["latest"]
+    ci_common_version: "1"
+    package_versions:
+      ALEMBIC_VERSION: "1.7.11"
+      BLOSC_VERSION: "1.5.0"
+      BOOST_VERSION: "1.66.0"
+      CMAKE_VERSION: "3.12.4"
+      CPPUNIT_VERSION: "1.14.0"
+      GLEW_VERSION: "2.1.0"
+      GLFW_VERSION: "3.1.2"
+      HDF5_VERSION: "1.8.21"
+      LOG4CPLUS_VERSION: "1.1.2"
+      NUMPY_VERSION: "1.14"
+      OCIO_CONFIGS_VERSION: "1.0_r2"
+      OCIO_VERSION: "1.1.0"
+      OIIO_VERSION: "2.0.8"
+      OPENEXR_VERSION: "2.3.0"
+      OPENSUBDIV_VERSION: "3_3_3"
+      OPENVDB_VERSION: "6.2.1"
+      OSL_VERSION: "1.10.9"
+      OTIO_VERSION: "0.12.1"
+      PARTIO_VERSION: "1.10.1"
+      PTEX_VERSION: "2.1.33"
+      PYSIDE_VERSION: "5.12.6"
+      PYTHON_VERSION: "2.7.15"
+      PYTHON_VERSION_MAJOR_MINOR: "2.7"
+      QT_VERSION: "5.12.6"
+      TBB_VERSION: "2018"
+      USD_VERSION: "19.11"
+      VFXPLATFORM_VERSION: "2019"
+  "2019-clang6":
+    parent_versions: ["1", "1-clang6", "2019"]
+    major_version: "2019"
+    ci_common_version: "1"
+  "2019-clang7":
+    parent_versions: ["1", "1-clang7", "2019"]
+    major_version: "2019"
+    tags: ["latest"]
+    ci_common_version: "1"
+    use_major_version_as_tag: true
+  "2019-clang8":
+    parent_versions: ["1", "1-clang8", "2019"]
+    major_version: "2019"
+    ci_common_version: "1"
+  "2019-clang9":
+    parent_versions: ["1", "1-clang9", "2019"]
+    major_version: "2019"
+    ci_common_version: "1"
+  "2019-clang10":
+    parent_versions: ["1", "1-clang10", "2019"]
+    major_version: "2019"
+    ci_common_version: "1"
+  "2020":
+    parent_versions: ["1", "1-clang7"]
+    major_version: "2020"
+    ci_common_version: "1"
+    package_versions:
+      ALEMBIC_VERSION: "1.7.12"
+      BLOSC_VERSION: "1.5.0"
+      BOOST_VERSION: "1.70.0"
+      CMAKE_VERSION: "3.18.4"
+      CPPUNIT_VERSION: "1.15.1"
+      GLEW_VERSION: "2.1.0"
+      GLFW_VERSION: "3.1.2"
+      HDF5_VERSION: "1.8.21"
+      LOG4CPLUS_VERSION: "1.1.2"
+      NUMPY_VERSION: "1.16"
+      OCIO_CONFIGS_VERSION: "1.0_r2"
+      OCIO_VERSION: "1.1.1"
+      OIIO_VERSION: "2.1.13.0"
+      OPENEXR_VERSION: "2.4.0"
+      OPENSUBDIV_VERSION: "3_4_3"
+      OPENVDB_VERSION: "7.1.0"
+      OSL_VERSION: "1.10.10"
+      OTIO_VERSION: "0.12.1"
+      PARTIO_VERSION: "1.10.1"
+      PTEX_VERSION: "2.3.2"
+      PYSIDE_VERSION: "5.12.6"
+      PYTHON_VERSION: "3.7.3"
+      PYTHON_VERSION_MAJOR_MINOR: "3.7"
+      QT_VERSION: "5.12.6"
+      TBB_VERSION: "2019_U6"
+      USD_VERSION: "20.11"
+      VFXPLATFORM_VERSION: "2020"
+  "2020-clang7":
+    parent_versions: ["1", "1-clang7", "2020"]
+    major_version: "2020"
+    ci_common_version: "1"
+    use_major_version_as_tag: true
+  "2021":
+    parent_versions: ["2", "2-clang10"]
+    major_version: "2021"
+    tags: ["preview"]
+    ci_common_version: "2"
+    package_versions:
+      ALEMBIC_VERSION: "1.7.12"
+      BLOSC_VERSION: "1.20.1"
+      BOOST_VERSION: "1.70.0"
+      CMAKE_VERSION: "3.18.4"
+      CPPUNIT_VERSION: "1.15.1"
+      GLEW_VERSION: "2.1.0"
+      GLFW_VERSION: "3.1.2"
+      HDF5_VERSION: "1.8.21"
+      LOG4CPLUS_VERSION: "1.1.2"
+      NUMPY_VERSION: "1.16"
+      OCIO_CONFIGS_VERSION: "1.0_r2"
+      OCIO_VERSION: "1.1.1"
+      OIIO_VERSION: "2.1.13.0"
+      OPENEXR_VERSION: "2.4.0"
+      OPENSUBDIV_VERSION: "3_4_3"
+      OPENVDB_VERSION: "7.1.0"
+      OSL_VERSION: "1.10.10"
+      OTIO_VERSION: "0.12.1"
+      PARTIO_VERSION: "1.13.0"
+      PTEX_VERSION: "2.3.2"
+      PYSIDE_VERSION: "5.12.6"
+      PYTHON_VERSION: "3.7.3"
+      PYTHON_VERSION_MAJOR_MINOR: "3.7"
+      QT_VERSION: "5.12.8"
+      TBB_VERSION: "2019_U6"
+      USD_VERSION: "20.11"
+      VFXPLATFORM_VERSION: "2021"
+  "2021-clang10":
+    parent_versions: ["2", "2-clang10", "2021"]
+    major_version: "2021"
+    tags: ["preview"]
+    ci_common_version: "2"
+    use_major_version_as_tag: true
+  "2021-clang11":
+    parent_versions: ["2", "2-clang11", "2021"]
+    major_version: "2021"
+    tags: ["preview"]
+    ci_common_version: "2"
+
+ci-packages:
+  clang:
+    - "1-clang6.2"
+    - "1-clang7.2"
+    - "1-clang8.2"
+    - "1-clang9.2"
+    - "1-clang10.2"
+    - "2-clang10.2"
+    - "2-clang11.2"
+  ninja:
+    - "1.3"
+    - "2.1"
+  cmake:
+    - "2018.0"
+    - "2019.0"
+    - "2020.0"
+    - "2021.0"
+  python:
+    - "2018.2"
+    - "2019.2"
+    - "2020.2"
+    - "2021.1"
+  boost:
+    - "2018.2"
+    - "2019.2"
+    - "2020.2"
+    - "2021.1"
+  tbb:
+    - "2018.2"
+    - "2019.2"
+    - "2020.2"
+    - "2021.1"
+  cppunit:
+    - "2018.2"
+    - "2019.2"
+    - "2020.2"
+    - "2021.1"
+  glew:
+    - "2018.2"
+    - "2019.2"
+    - "2020.2"
+    - "2021.2"
+  glfw:
+    - "2018.2"
+    - "2019.2"
+    - "2020.2"
+    - "2021.2"
+  log4cplus:
+    - "2018.2"
+    - "2019.2"
+    - "2020.2"
+    - "2021.1"
+  qt:
+    - "2018.2"
+    - "2019.2"
+    - "2020.2"
+    - "2021.1"
+  pyside:
+    - "2018.2"
+    - "2019.2"
+    - "2020.2"
+    - "2021.1"
+  blosc:
+    - "2018.2"
+    - "2019.2"
+    - "2020.2"
+    - "2021.1"
+  openexr:
+    - "2018.2"
+    - "2019.2"
+    - "2020.2"
+    - "2021.1"
+  alembic:
+    - "2018.2"
+    - "2019.2"
+    - "2020.2"
+    - "2021.1"
+  ocio:
+    - "2018.2"
+    - "2019.2"
+    - "2020.2"
+    - "2021.2"
+  oiio:
+    - "2018.2"
+    - "2019.2"
+    - "2020.2"
+    - "2021.2"
+  opensubdiv:
+    - "2018.2"
+    - "2019.2"
+    - "2020.2"
+    - "2021.2"
+  ptex:
+    - "2018.2"
+    - "2019.2"
+    - "2020.2"
+    - "2021.1"
+  openvdb:
+    - "2019.2"
+    - "2020.2"
+    - "2021.1"
+  usd:
+    - "2019.3"
+    - "2020.2"
+    - "2021.2"
+  partio:
+    - "2018.1"
+    - "2019.1"
+    - "2020.1"
+    - "2021.1"
+  osl:
+    - "2018.1"
+    - "2019.1"
+    - "2020.1"
+    - "2021.2"
+  otio:
+    - "2019.1"
+    - "2020.1"
+    - "2021.1"
+
+ci-images:
+  common:
+    - "1-clang6.7"
+    - "1-clang7.7"
+    - "1-clang8.7"
+    - "1-clang9.7"
+    - "1-clang10.7"
+    - "2-clang10.2"
+    - "2-clang11.2"
+  base:
+    - "2018.7"
+    - "2019.7"
+    - "2020.7"
+    - "2021.3"
+  baseqt:
+    - "2018.0"
+    - "2019.0"
+    - "2020.0"
+    - "2021.0"
+  openexr:
+    - "2018.7"
+    - "2019.7"
+    - "2020.7"
+    - "2021.3"
+  openvdb:
+    - "2018-clang7.7"
+    - "2019-clang6.7"
+    - "2019-clang7.7"
+    - "2019-clang8.7"
+    - "2019-clang9.7"
+    - "2020-clang7.7"
+    - "2021-clang10.3"
+  ocio:
+    - "2018.8"
+    - "2019.8"
+    - "2020.7"
+    - "2021.3"
+  opencue:
+    - "2018.7"
+    - "2019.7"
+    - "2020.7"
+    - "2021.3"
+  usd:
+    - "2019.8"
+    - "2020.7"
+    - "2021.3"
+  osl:
+    - "2018-clang7.3"
+    - "2019-clang6.3"
+    - "2019-clang7.3"
+    - "2019-clang8.3"
+    - "2019-clang9.3"
+    - "2019-clang10.3"
+    - "2020-clang7.3"
+    - "2021-clang10.3"
+    - "2021-clang11.3"
+  otio:
+    - "2019.2"
+    - "2020.2"
+    - "2021.2"
+  vfxall:
+    - "2019-clang6.11"
+    - "2019-clang7.11"
+    - "2019-clang8.11"
+    - "2019-clang9.11"
+    - "2020-clang7.9"
+    - "2021-clang10.4"
+
+package_data:
+  python:
+    docker_args:
+      - PYTHON_VERSION_MAJOR_MINOR
+    docker_commands: |
+      ENV PYTHONPATH=/usr/local/lib/python${PYTHON_VERSION_MAJOR_MINOR}/site-packages:/usr/local/lib64/python${PYTHON_VERSION_MAJOR_MINOR}/site-packages:/usr/local/lib/python:${PYTHONPATH}
