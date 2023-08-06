@@ -1,0 +1,11 @@
+mem_edit/VERSION.py,sha256=3I1qMVpmXEYK8wDip4bVsT2T8yr9f8inCa46Gj2AJB0,125
+mem_edit/__init__.py,sha256=iNZid32bL6BlX_4l3Kjh1kdUO_B4IYqpQwYmUPZSg8c,628
+mem_edit/abstract.py,sha256=HmMsKiPScU10-jl5qaihXkUPe_XouUrn1BkvvNyIIoU,13449
+mem_edit/linux.py,sha256=WSgW8oIpgGU_8OIZCsdiF4mpHidAnMU2AXyHX9Tj_rk,3888
+mem_edit/utils.py,sha256=k-Gy7_u4xZVpr4vBHQEOtyCqiP7EVBtALhe407vyHpw,2751
+mem_edit/windows.py,sha256=gVF4O4hLN1N_FNJAGGJTwNLG_jwyBqeMPyJ-QKomgAI,9709
+mem_edit-0.5.dist-info/LICENSE.md,sha256=MqCnOBu8uXsEOzRZWh9EBVfVz-kE9NkXcLCrtGXo2yU,34354
+mem_edit-0.5.dist-info/METADATA,sha256=e_gQKpbak3_43_WNXSAX9wsdHjd3pz-aK9mUbJ9SY3k,3860
+mem_edit-0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mem_edit-0.5.dist-info/top_level.txt,sha256=DrFj8US4R_rsMi8U8ALw9cPHGtNTeW4aBUQzjiHWlh4,9
+mem_edit-0.5.dist-info/RECORD,,
