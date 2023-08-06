@@ -1,0 +1,8 @@
+mydbs/__init__.py,sha256=QsAkhc8inNj5TyxWoa4i8q8FWNS_Hd57zqLDNBY7Mts,6696
+mydbs/dbmysql.py,sha256=23qGbswh4BtMB9RL3c0zOpSfqVLIGpkmre_X4oqWEf8,3779
+mydbs/dbsqlite.py,sha256=Ch7d1HcsMCJ90RupCeLEI0N2J_vRUQk0N1WhVt4XEao,1862
+mydbs-0.1.4.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+mydbs-0.1.4.dist-info/METADATA,sha256=rbuhW4zSk31sELixS029iYgyOKfFHW1D-8FjBpkA2Yg,229
+mydbs-0.1.4.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+mydbs-0.1.4.dist-info/top_level.txt,sha256=kT82RBX-Dal8gOfWQIGakUDx5m_XNZskdLij1mNQEtk,6
+mydbs-0.1.4.dist-info/RECORD,,
