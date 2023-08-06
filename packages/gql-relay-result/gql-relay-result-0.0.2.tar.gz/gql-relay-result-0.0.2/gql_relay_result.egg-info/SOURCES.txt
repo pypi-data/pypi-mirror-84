@@ -1,0 +1,9 @@
+README.md
+setup.py
+gql_relay_result/__init__.py
+gql_relay_result/relay_result.py
+gql_relay_result.egg-info/PKG-INFO
+gql_relay_result.egg-info/SOURCES.txt
+gql_relay_result.egg-info/dependency_links.txt
+gql_relay_result.egg-info/requires.txt
+gql_relay_result.egg-info/top_level.txt
