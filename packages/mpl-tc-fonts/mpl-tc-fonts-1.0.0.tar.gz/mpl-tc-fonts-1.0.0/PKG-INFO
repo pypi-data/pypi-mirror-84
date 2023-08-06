@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: mpl-tc-fonts
+Version: 1.0.0
+Summary: 🇹🇼 A package to solve the problem of "Tofu" in your matplotlib plots whenever you're trying to use Traditional Chinese characters in labels or texts.
+Home-page: https://github.com/Hsins/mpl-tc-fonts
+Author: Hsins
+Author-email: hsinspeng@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/Hsins/mpl-tc-fonts/issues
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Say Thanks!, http://saythanks.io/to/example
+Project-URL: Source, https://github.com/Hsins/mpl-tc-fonts
+Description: <div align="right">
+        
+          [![](https://flat.badgen.net/github/license/Hsins/mpl-tc-fonts)](./LICENSE)
+        
+        </div>
+        
+        <div align="center">
+        
+        <img src="https://i.imgur.com/21O7uhj.png" alt="mpl-tc-fonts" height="150px">
+        
+        # mpl-tc-fonts
+        
+        🇹🇼 _A package to solve the problem of ["Tofu"](https://en.wikipedia.org/wiki/Specials_(Unicode_block)) in your `matplotlib` plots whenever you're trying to use Traditional Chinese characters in labels or texts._
+        
+        </div>
+        
+        ## Installation
+        
+        The easiest way to install `mpl-tc-fonts` is using `pip`:
+        
+        ```bash
+        # for latest commit
+        $ pip install git+https://github.com/Hsins/mpl-tc-fonts.git
+        
+        # for lastest release
+        ```
+        
+        The package installer `pip` will install this package from the [pypi(Python Package Index)](https://pypi.org/) to your python environment. Please see the FAQ for more information and troubleshooting.
+        
+        ## Usage
+        
+        ## Supported Fonts
+        
+        - **Noto Sans/Serif CJK TC**
+          - `Noto Sans CJK TC`
+          - `Noto Serif CJK TC`
+        - **cwTeX Fonts**
+          - `cwTeX Q Ming`
+          - `cwTeX Q Kai`
+          - `cwTeX Q Yuan`
+          - `cwTeX Q Fangsong`
+          - `cwTeX Q Hei`
+        
+        ## License
+        
+        Licensed under the GPL-3.0 License, Copyright © 2020-present Hsins.
+Keywords: sample,setuptools,development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
