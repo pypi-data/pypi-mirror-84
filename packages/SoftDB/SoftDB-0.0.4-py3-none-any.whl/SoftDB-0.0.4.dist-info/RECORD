@@ -1,0 +1,12 @@
+SoftDB/__init__.py,sha256=iJm7jXfTtpEvs8lBI3gdu_MFoOFuxov7YTMxZH8wCVw,410
+SoftDB/test.py,sha256=pcQnVB_JUD3lGWONYRwiAcYfkWH6ZUsMWg422t9M2e0,428
+SoftDB/parts/hash_tool/__init__.py,sha256=GVu8zlV-Q8wSotF1PN0QGrfuNawHUQWU9dJGKGj6AX0,358
+SoftDB/parts/hash_tool/test.py,sha256=Nk9SA8LU87QiP4sdL27AnEMyW49v4Bw6vvaml_KR0e4,362
+SoftDB/parts/python_layer/__init__.py,sha256=qfu2uv5OqMBjQXPMVGif90DOeEdgfHbpmOsqhO1QkZ4,5836
+SoftDB/parts/python_layer/test.py,sha256=4WDtb7m2JlULCsKh7AiTe28yBs0VqUOfO_qPhtzp_oM,1051
+SoftDB/parts/sql_layer/__init__.py,sha256=sDcGSYB6OV-NJTolKMh50jS9JELXy2JCfPAlWaI4jdE,1357
+SoftDB/parts/sql_layer/test.py,sha256=HotQpQVzKkyhRSbiEv5qqMZcy7XVGBpcbGpe4WdoZCk,1479
+SoftDB-0.0.4.dist-info/METADATA,sha256=P0sz82rjonMPBbC82iBcS8SpKyJHas8q3jcZglYfAXs,731
+SoftDB-0.0.4.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+SoftDB-0.0.4.dist-info/top_level.txt,sha256=4hg6-mcbGqAL6-BqVt3BrrIyzqArathf0XH-hfMTKpk,7
+SoftDB-0.0.4.dist-info/RECORD,,
