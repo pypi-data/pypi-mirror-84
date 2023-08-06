@@ -1,0 +1,10 @@
+setup.py
+distributions_semihdesticioglu/Binomialdistribution.py
+distributions_semihdesticioglu/Gaussiandistribution.py
+distributions_semihdesticioglu/Generaldistribution.py
+distributions_semihdesticioglu/__init__.py
+distributions_semihdesticioglu.egg-info/PKG-INFO
+distributions_semihdesticioglu.egg-info/SOURCES.txt
+distributions_semihdesticioglu.egg-info/dependency_links.txt
+distributions_semihdesticioglu.egg-info/not-zip-safe
+distributions_semihdesticioglu.egg-info/top_level.txt
