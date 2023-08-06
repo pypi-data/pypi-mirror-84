@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: comm
+Version: 0.0.1
+Summary: Dummy package that is use in IPython, IPykernel Xeus and other kernel to get the current comm context. 
+Home-page: https://pypi.org/project/comm/
+Author: Matthias Bussonnier
+Author-email: bussonniermatthias@gmail.com
