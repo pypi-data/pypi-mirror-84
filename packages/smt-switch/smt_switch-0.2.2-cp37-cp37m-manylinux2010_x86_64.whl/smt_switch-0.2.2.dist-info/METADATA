@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: smt-switch
+Version: 0.2.2
+Summary: UNKNOWN
+Home-page: http://github.com/makaimann/smt-switch
+Author: Makai Mann
+Author-email: UNKNOWN
+License: BSD
+Platform: UNKNOWN
+
+python bindings for the C++ solver-agnostic SMT solving library, smt-switch
+
+
