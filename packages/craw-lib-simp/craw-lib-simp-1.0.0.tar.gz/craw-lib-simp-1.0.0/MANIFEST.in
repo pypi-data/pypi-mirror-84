@@ -1,0 +1,7 @@
+include LICENSE
+include README.rst
+include README.md
+include AUTHORS
+
+recursive-include *.py
+9+PZbb9RjmzsaWi

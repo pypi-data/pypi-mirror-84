@@ -1,0 +1,6 @@
+common
+inputer
+libmongo
+libmysql
+liboss
+mredis
