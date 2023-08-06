@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nb_tfjs_mnist.egg-info/PKG-INFO
+nb_tfjs_mnist.egg-info/SOURCES.txt
+nb_tfjs_mnist.egg-info/dependency_links.txt
+nb_tfjs_mnist.egg-info/entry_points.txt
+nb_tfjs_mnist.egg-info/requires.txt
+nb_tfjs_mnist.egg-info/top_level.txt
+tfjs_mnist/__init__.py

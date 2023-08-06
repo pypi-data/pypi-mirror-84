@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: nb-tfjs-mnist
+Version: 0.0.1
+Summary: Jupyter notebook server proxy extension for tfjs (MNIST)
+Home-page: https://github.com/innovationOUtside/serverproxy_tfjs_demos
+Author: Tony Hirst
+Author-email: tony.hirst@open.ac.uk
+License: UNKNOWN
+Description: # serverproxy_tfjs_demos
+        Serverproxy version of https://github.com/tensorflow/tfjs/
+        
+        
+        [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/innovationOUtside/serverproxy_tfjs_demos/master)
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
