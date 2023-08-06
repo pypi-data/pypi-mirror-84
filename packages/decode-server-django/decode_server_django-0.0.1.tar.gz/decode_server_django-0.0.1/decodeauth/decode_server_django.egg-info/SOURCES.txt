@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+info.txt
+setup.py
+decodeauth/__init__.py
+decodeauth/middleware.py
+decodeauth/decode_server_django.egg-info/PKG-INFO
+decodeauth/decode_server_django.egg-info/SOURCES.txt
+decodeauth/decode_server_django.egg-info/dependency_links.txt
+decodeauth/decode_server_django.egg-info/requires.txt
+decodeauth/decode_server_django.egg-info/top_level.txt
