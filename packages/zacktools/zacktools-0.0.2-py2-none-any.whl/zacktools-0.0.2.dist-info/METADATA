@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: zacktools
+Version: 0.0.2
+Summary: Zack's ommon tools
+Home-page: https://github.com/ZackAnalysis/zacktools
+Author: Zack Dai
+Author-email: zdai@brocku.ca
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: bs4
+Requires-Dist: lxml
+Requires-Dist: pyap (~=0.3.1)
+Requires-Dist: requests
+
+UNKNOWN
+
+
