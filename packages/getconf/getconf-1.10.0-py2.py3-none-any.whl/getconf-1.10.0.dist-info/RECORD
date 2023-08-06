@@ -1,0 +1,8 @@
+getconf/__init__.py,sha256=GF0BtGHRtOhKHaC8z24CbOqSSTKAGAYB9qzRc8xRtd4,301
+getconf/base.py,sha256=_iKOX8gxB6TDrgvTi5_rCOWaKbYGP4TCbEo8CDa5VLA,11840
+getconf/finders.py,sha256=TOl5HVntlSy5VwQ41d62l_pR1bQFtCt6uXTkRoHYEAk,5270
+getconf-1.10.0.dist-info/LICENSE,sha256=aDIcif0o83hODzG7q1BMCnKRQKj5hKfQM1TPKbYiSTo,1280
+getconf-1.10.0.dist-info/METADATA,sha256=jSg5NmlnVRctxgq7o2i_yo9Hysfhhh9K2NpIyF9We8w,7475
+getconf-1.10.0.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+getconf-1.10.0.dist-info/top_level.txt,sha256=MIwymZ-b21NCJGGjHP4jN0Wp3luUm_WDK9Ovoe2tFmk,8
+getconf-1.10.0.dist-info/RECORD,,
