@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: spikit
+Version: 0.1.5
+Summary: Command line interface for Spikit Cloud Services.
+Author: PETERSON AI INC.
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: boto3 (>=1.16.10,<2.0.0)
+Requires-Dist: keyring (>=21.4.0,<22.0.0)
+Requires-Dist: warrant (>=0.6.1,<0.7.0)
