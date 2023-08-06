@@ -1,0 +1,13 @@
+CSharpССF-runner.py
+README.rst
+__init__.py
+__main__.py
+lexer.py
+main.py
+setup.py
+static_analyzer.py
+CSharpCCF.egg-info/PKG-INFO
+CSharpCCF.egg-info/SOURCES.txt
+CSharpCCF.egg-info/dependency_links.txt
+CSharpCCF.egg-info/entry_points.txt
+CSharpCCF.egg-info/top_level.txt
