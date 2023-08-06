@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyinsight_archiver_gcs/__init__.py
+pyinsight_archiver_gcs/gcs_archiver.py
+pyinsight_archiver_gcs.egg-info/PKG-INFO
+pyinsight_archiver_gcs.egg-info/SOURCES.txt
+pyinsight_archiver_gcs.egg-info/dependency_links.txt
+pyinsight_archiver_gcs.egg-info/requires.txt
+pyinsight_archiver_gcs.egg-info/top_level.txt
