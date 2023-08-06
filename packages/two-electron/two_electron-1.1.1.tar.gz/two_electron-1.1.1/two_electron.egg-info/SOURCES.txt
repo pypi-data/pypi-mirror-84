@@ -1,0 +1,12 @@
+README.md
+setup.py
+two/__init__.py
+two/core.py
+two/sirfck.f
+two/twoso.py
+two/vb.py
+two_electron.egg-info/PKG-INFO
+two_electron.egg-info/SOURCES.txt
+two_electron.egg-info/dependency_links.txt
+two_electron.egg-info/requires.txt
+two_electron.egg-info/top_level.txt
