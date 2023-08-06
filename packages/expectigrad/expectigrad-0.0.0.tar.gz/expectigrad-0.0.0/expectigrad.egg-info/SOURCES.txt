@@ -1,0 +1,11 @@
+README.md
+setup.py
+expectigrad/__init__.py
+expectigrad/pytorch.py
+expectigrad/tensorflow1.py
+expectigrad/tensorflow2.py
+expectigrad/testing.py
+expectigrad.egg-info/PKG-INFO
+expectigrad.egg-info/SOURCES.txt
+expectigrad.egg-info/dependency_links.txt
+expectigrad.egg-info/top_level.txt
