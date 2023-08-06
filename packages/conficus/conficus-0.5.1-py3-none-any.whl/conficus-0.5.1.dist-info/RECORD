@@ -1,0 +1,11 @@
+conficus/__init__.py,sha256=mvCCTWh5WQoz-Fm6U0VG4PDdltCBjG7paOAUD4-YOlQ,1853
+conficus/coerce.py,sha256=o5g3B78Qn6SlVB7rckPAjnFsZlNW2RlBcLQq4TM8LpE,6806
+conficus/format.py,sha256=XqQyJd0j4MxMQSbnQ9RXXHNeMmnr8GukWhOJ3xCQVus,1346
+conficus/inherit.py,sha256=KCKcPcgm6DhSr5HKs1zrwhNFv1pkQa1vS6DhBRRnEyk,1341
+conficus/parse.py,sha256=q_IuaHwLj3W3fvuIEjRBM2x7IanFNrbS8uUFrmsk1z8,3566
+conficus/readonly.py,sha256=mI5GnQLAz2C0WYgXZYEdyyX27Tz8DrmZO7H_IlNCUJU,960
+conficus/structs.py,sha256=wPryIpYTjKkb2UV3eABJDeP-R6iZtxP6TuiLumOwzgs,6675
+conficus/toml.py,sha256=-C6dF1D24LHEu7wh6Khi29lhahxSq3Jd3rejSbdnsSQ,1303
+conficus-0.5.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+conficus-0.5.1.dist-info/METADATA,sha256=rANA_FDq9lpPBd_MRD1FVa4v7k76Q9Gd16NmzaxGS5g,2186
+conficus-0.5.1.dist-info/RECORD,,
