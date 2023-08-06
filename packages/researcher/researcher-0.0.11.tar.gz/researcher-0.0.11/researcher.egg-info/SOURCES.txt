@@ -1,0 +1,13 @@
+README.md
+setup.py
+researcher/__init__.py
+researcher/dashboard.py
+researcher/experiment.py
+researcher/fileutils.py
+researcher/globals.py
+researcher/results.py
+researcher/run.py
+researcher.egg-info/PKG-INFO
+researcher.egg-info/SOURCES.txt
+researcher.egg-info/dependency_links.txt
+researcher.egg-info/top_level.txt
