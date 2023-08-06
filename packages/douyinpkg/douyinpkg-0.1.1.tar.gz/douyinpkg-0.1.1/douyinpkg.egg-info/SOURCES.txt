@@ -1,0 +1,9 @@
+README.md
+setup.py
+douyinpkg.egg-info/PKG-INFO
+douyinpkg.egg-info/SOURCES.txt
+douyinpkg.egg-info/dependency_links.txt
+douyinpkg.egg-info/top_level.txt
+douyinpkg/config/__init__.py
+douyinpkg/config/fans_settings.py
+douyinpkg/spider/__init__.py
