@@ -1,0 +1,86 @@
+IBoxLoader: !include [
+  autoscaling.yml,
+  loadbalancing-ecs.yml,
+  alarms.yml,
+  cloudfront-ios.yml,
+  ecs-task.yml,
+]
+
+ecs:
+  Parameter:
+    - DeploymentConfigurationMaximumPercent:
+        Description: 'DeploymentConfiguration MaximumPercent - empty for default based on env/role'
+    - DeploymentConfigurationMinimumHealthyPercent:
+        Description: 'DeploymentConfiguration MinimumHealthyPercent - empty for default based on env/role'
+    - LoadBalancerApplicationStack:
+        Description: 'LoadBalancer Application Stack to use - empty for default based on env/role'
+  Output:
+    - DeploymentConfigurationMaximumPercent:
+        Value: get_endvalue('DeploymentConfigurationMaximumPercent')
+    - DeploymentConfigurationMinimumHealthyPercent:
+        Value: get_endvalue('DeploymentConfigurationMinimumHealthyPercent')
+  AllowedIp**: {}
+  LaunchType: EC2
+  AlarmCPUBase: &cpu
+    Dimensions:
+      - Cluster:
+          Name: ClusterName
+          Value: get_expvalue('Cluster', 'ClusterStack')
+      - Service:
+          Name: ServiceName
+          Value: GetAtt('Service', 'Name')
+    Namespace: 'AWS/ECS'
+  Alarm:
+    - CPUHigh:
+        <<: *cpu
+    - CPULow:
+        <<: *cpu
+  DeploymentConfiguration:
+    MaximumPercent: 200
+    MinimumHealthyPercent: 100
+  HealthCheckGracePeriodSeconds: 0
+  ScalingPolicyUpScalingAdjustment1: SkipClass
+  ListenerRules:
+    - 1:
+        HostHeader: '*${EnvRole}.*'
+  LoadBalancerApplicationStack: alb-a
+  ScalingPolicyTrackings:
+    - APPCpu:
+        Enabled: True
+    - APPCustom:
+        TargetTrackingScalingPolicyConfiguration:
+          CustomizedMetricSpecification:
+            Dimensions:
+              - Cluster:
+                  Name: ClusterName
+                  Value: get_expvalue('Cluster', 'ClusterStack')
+              - Service:
+                  Name: ServiceName
+                  Value: GetAtt('Service', 'Name')
+  ScheduledAction:
+    - Down:
+        MaxSize: k
+        MinSize: k
+        Recurrence: 'cron(00 22 * * ? *)'
+    - Up:
+        MaxSize: k
+        MinSize: k
+        Recurrence: 'cron(00 06 * * ? *)'
+  SchedulingStrategy: REPLICA
+  Service: True
+
+dev: &cfg_dev
+  Alarm:
+    - TargetExternal5XX:
+        EvaluationPeriods: 0
+    - TargetInternal5XX:
+        EvaluationPeriods: 0
+  ScheduledAction:
+    - Down:
+        MaxSize: k
+        MinSize: k
+    - Up:
+        MaxSize: CapacityMax
+        MinSize: CapacityMin
+
+stg: *cfg_dev 
