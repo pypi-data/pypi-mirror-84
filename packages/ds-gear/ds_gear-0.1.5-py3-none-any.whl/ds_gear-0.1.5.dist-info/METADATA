@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: ds-gear
+Version: 0.1.5
+Summary: Data science gear: Python API for advanced machine learning algorithms built on top of sklearn, tensorflow and keras
+Home-page: https://github.com/AI-Companion/ds-gear
+Author: Marouen Azzouz, Youssef Azzouz
+Author-email: azzouz.marouen@gmail.com, youssef.azzouz1512@gmail.com
+License: UNKNOWN
+Keywords: machine learning named entity recognition sentiment analysis deep learning topic detection
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (==1.19.0rc2)
+Requires-Dist: pandas (==1.0.4)
+Requires-Dist: scikit-learn (==0.23.1)
+Requires-Dist: matplotlib
+Requires-Dist: pylint
+Requires-Dist: doxypypy
+Requires-Dist: pycodestyle
+Requires-Dist: nltk (==3.5)
+Requires-Dist: keras (==2.3.1)
+Requires-Dist: tensorflow (==2.2.0)
+
+Data science gear (ds-gear) is a Python API for advanced machine learning algorithms built on top of sklearn, tensorflow and keras and is distributed under the Mit license.
+### Installation
+## Depenencies
+- Python (> 3.6)
+- Numpy (> 1.19)
+- Pandas (> 1.0.4)
+- sklearn (>0.23)
+- Matplotlib
+- Pylint
+- Doxypypy
+- Nltk (==3.5)
+- keras (v 2.3.1)
+- tensorflow (v 2.2.0)
+## User installation
+pip install ds-gear
+
+### Source code
+You can check the latest sources with the command:
+git clone https://github.com/AI-Companion/ds-gear.git
+
+
