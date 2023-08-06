@@ -1,0 +1,4 @@
+[console_scripts]
+a2dissite = ensite.ensite:a2dissite
+a2ensite = ensite.ensite:a2ensite
+
