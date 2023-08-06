@@ -1,0 +1,10 @@
+codeinclude/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codeinclude/languages.py,sha256=UT2zy0GOeXRfrq_anhLCgkW9F4NApBJA1gRUPt60u2s,852
+codeinclude/plugin.py,sha256=TGMZzZAJx-dNXgUgI0DrxssYToO2kjYuR8t3QN_Jmws,6019
+codeinclude/resolver.py,sha256=9cBcwQBJT9_KozYyBoDCaHwa04COEsNqLzf1fNnI2KE,3220
+mkdocs_codeinclude_plugin-0.2.0.dist-info/LICENSE,sha256=ouk8SnayJFSL7X7Tpk68u0ot3XUYdD_7sH7ygF-ayjw,1075
+mkdocs_codeinclude_plugin-0.2.0.dist-info/METADATA,sha256=_Szdm_T3WyJPbQxVtx5k_rJVElpxweMge6dqLlpu44M,4643
+mkdocs_codeinclude_plugin-0.2.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+mkdocs_codeinclude_plugin-0.2.0.dist-info/entry_points.txt,sha256=XRsl4UIjnPpkza37FgOI_0U5Q29Tl-e1BIB0rPLF52E,69
+mkdocs_codeinclude_plugin-0.2.0.dist-info/top_level.txt,sha256=Q363ktODHB-CA-o62b7zE8OkXDT8kflcWJ11uUPrYGU,12
+mkdocs_codeinclude_plugin-0.2.0.dist-info/RECORD,,
