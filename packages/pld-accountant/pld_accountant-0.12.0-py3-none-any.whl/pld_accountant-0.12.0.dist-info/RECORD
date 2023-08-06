@@ -1,0 +1,17 @@
+pld_accountant/__init__.py,sha256=L4D1-Po0NcRXGAjKyQruKziRzsXPTMHf8ydDsvJiONs,592
+pld_accountant/compute_delta.py,sha256=1w5izxgzYURkgyG9jUCpmtl8_RVRFJJ_QrNl0m3PM5A,4501
+pld_accountant/compute_delta_var.py,sha256=VGFXbXiv04EIldlI3GoskZ6Y7olr6a-Lv2sVvXN0qmk,5199
+pld_accountant/compute_eps.py,sha256=2c-m4n8qVyNHbfKt-pnOAfwi5pSGCJYusu1anz_PFvM,7546
+pld_accountant/compute_eps_var.py,sha256=PTllTGU2ZYyRCGj3vkX5x_MzOG327DeUBLICbZMOv_U,8249
+pld_accountant/test_eps_delta.py,sha256=i3izkII_2XmtwGbIRmAS-_uF1zSrmqGM7Ht0ano6fj4,1151
+pld_accountant/fourier_accountant/__init__.py,sha256=L4D1-Po0NcRXGAjKyQruKziRzsXPTMHf8ydDsvJiONs,592
+pld_accountant/fourier_accountant/common.py,sha256=iw0ZipvSAxEwwtISoXTmbWYHH0qJ8eQbuiSC180pWeU,5189
+pld_accountant/fourier_accountant/compute_delta.py,sha256=eJB5g0T1KUcu7ochQyw8IGkv_ICtXFsbMwUUFhePOoc,6230
+pld_accountant/fourier_accountant/compute_delta_var.py,sha256=joC0vp5wyVQ7WAoHnoKid1czRfK0z0wAkzAsBEi18ug,5889
+pld_accountant/fourier_accountant/compute_eps.py,sha256=6pH5Bd4zrOSQOExzJad7FO2MXZZlFqTX_8Xgsw6RyIg,8565
+pld_accountant/fourier_accountant/compute_eps_var.py,sha256=1O4gIcpaEbLb8_FcC0UzDTOKpPpdUSdlnUunQvWRGh8,8704
+pld_accountant-0.12.0.dist-info/LICENSE,sha256=LM1kSzuv1SfFdRCYokMnleT55Zx7AQU0SeMmGVBuHOY,1063
+pld_accountant-0.12.0.dist-info/METADATA,sha256=7ikUigzmKU8q-UcHaUnRSvjuDB3aZOS8VDqLqjBghB0,1086
+pld_accountant-0.12.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pld_accountant-0.12.0.dist-info/top_level.txt,sha256=kpiJQgaVusahIn0WeM0rbNXFR6a_nF8iinHLfQTjUlE,15
+pld_accountant-0.12.0.dist-info/RECORD,,
