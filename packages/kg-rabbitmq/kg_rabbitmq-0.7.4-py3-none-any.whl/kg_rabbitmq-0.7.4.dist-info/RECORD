@@ -1,0 +1,11 @@
+kg_rabbitmq/__init__.py,sha256=9CDknDbfYoCRlqmkbhIiK8cwZhZjGNaCGf0m6TvPnFc,332
+kg_rabbitmq/builder.py,sha256=RCFieuGo_vGVtu2cu-cozd2lOIpzzIPNuXtIEwmGnSw,23846
+kg_rabbitmq/configfile.py,sha256=lM7i3cUOZPc2PBnLHOXaOxEZ-erB3JbjM3Kl3bz2hF4,3297
+kg_rabbitmq/option.py,sha256=jZGWn2uD1EjzGZOLBiMoWL2xUAawOwHlDWFHJT9yLPI,5337
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_builder.py,sha256=GNYzsZjbMqvHdoqYcxg7Hmda5LRuKQ8lhfXjZdaSMZw,1601
+kg_rabbitmq-0.7.4.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+kg_rabbitmq-0.7.4.dist-info/METADATA,sha256=Y5EvpWJ-wSJxtRKE5U0ASkLhf5T6Sh5C2FQe6iAcetA,10043
+kg_rabbitmq-0.7.4.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+kg_rabbitmq-0.7.4.dist-info/top_level.txt,sha256=I2OdjUfcRM4_j2kZJsirK4KW_Ch0oeBaZVODdyVDN_o,18
+kg_rabbitmq-0.7.4.dist-info/RECORD,,
