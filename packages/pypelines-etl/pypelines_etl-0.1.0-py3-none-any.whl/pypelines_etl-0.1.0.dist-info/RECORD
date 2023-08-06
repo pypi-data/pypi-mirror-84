@@ -1,0 +1,10 @@
+pypelines/__init__.py,sha256=gyyf06pU844_Wh12oFt8MxnAWpWhZ9CfvH4UfcYxt7k,239
+pypelines/errors.py,sha256=YoXNfHxG5SmSuL-P2pDh-9CLhA4MJhWwa4Va06QtNDM,49
+pypelines/extract.py,sha256=NeNqdHsNoiJHj5-zl4PFUM1pJ5vQZMAzxkFXfvZQPyg,650
+pypelines/load.py,sha256=gzSKjXuWVJS9voJ9aDnlh9qq82_6Gs3dACj_7t3CFoE,960
+pypelines/pipeline.py,sha256=m85qa31snCPgwcwYzQCO1QAED9tGfEBeB5gPsO0CP5A,630
+pypelines/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypelines/transform.py,sha256=ifH65u9PNCpyIe2-GCcXPUMkHpEtjx7-gLzafTc2USk,425
+pypelines_etl-0.1.0.dist-info/WHEEL,sha256=G_NFpzHmv_dUXgCUSAWL0-bLL-eMzYU6DzDeGXbRXUk,83
+pypelines_etl-0.1.0.dist-info/METADATA,sha256=XN-jLnvkZgVQLQhl-UoU9S7Y5Bpis_3u3f-ayFKeDXo,3050
+pypelines_etl-0.1.0.dist-info/RECORD,,
