@@ -1,0 +1,8 @@
+README.md
+setup.py
+jgpackage.egg-info/PKG-INFO
+jgpackage.egg-info/SOURCES.txt
+jgpackage.egg-info/dependency_links.txt
+jgpackage.egg-info/top_level.txt
+samplePackage/__init__.py
+samplePackage/python_code.py

@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: jgpackage
+Version: 0.0.2
+Summary: A beautiful sample package.
+Home-page: UNKNOWN
+Author: Juliana Guamá
+Author-email: e@mail.com
+Maintainer: juguama
+Maintainer-email: e@mail.com
+License: MIT
+Description: # jgpackage
+        
+        Este Ã© um pacote mÃ­nimo que serve como tutorial para:
+        * deploy de pacotes no PyPi
+        * uso de pipelines CI\CD para Python Packages
+        
+        ## Como usar:
+        ```shell script
+        pip install jgpackage
+        ```
+        And to use the package:
+        
+        ```python
+        >>> import samplePackage as sp
+        >>> sp.format_text("Yolo")
+        'my input: Yolo'
+        ```
+        
+        ## Read the \_\_doc__
+        > One of Guido's key insights is that code is read much more often than it is written.
+        > [PEP8](https://www.python.org/dev/peps/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds)
+        
+        EntÃ£o, seguem algumas dicas para ler a documentaÃ§Ã£o do pacote.
+        
+        1. Help
+        ```python
+        >>> import samplePackage as sp
+        >>> help(sp) #help no mÃ³dulo
+        >>> help(sp.format_text) #help na funÃ§Ã£o
+        ```
+        2. \_\_doc__
+        ```python
+        >>> print(sp.__doc__) #doc do modulo
+        >>> print(sp.format_text.__doc__) #doc da funÃ§Ã£o
+        ```
+Keywords: bh,pyladies,tutorial
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
