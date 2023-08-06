@@ -1,0 +1,16 @@
+logfury>=0.1.2
+requests>=2.9.1
+tqdm>=4.5.0
+
+[:python_version <= "3.5"]
+arrow<1.0.0,>=0.8.0
+
+[:python_version > "3.5"]
+arrow>=0.8.0
+
+[doc]
+sphinx
+sphinx-autobuild
+sphinx_rtd_theme
+sphinxcontrib-plantuml
+sadisplay
