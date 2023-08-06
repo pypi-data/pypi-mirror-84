@@ -1,0 +1,10 @@
+README.md
+setup.py
+aspars/__init__.py
+aspars/__main__.py
+aspars/aspars.py
+aspars.egg-info/PKG-INFO
+aspars.egg-info/SOURCES.txt
+aspars.egg-info/dependency_links.txt
+aspars.egg-info/requires.txt
+aspars.egg-info/top_level.txt
