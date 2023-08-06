@@ -1,0 +1,3 @@
+aiohttp<4
+async_timeout<4
+click

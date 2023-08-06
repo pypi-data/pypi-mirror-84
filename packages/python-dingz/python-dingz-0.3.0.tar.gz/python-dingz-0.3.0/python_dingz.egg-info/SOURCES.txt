@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+dingz/__init__.py
+dingz/cli.py
+dingz/constants.py
+dingz/dingz.py
+dingz/discovery.py
+dingz/exceptions.py
+python_dingz.egg-info/PKG-INFO
+python_dingz.egg-info/SOURCES.txt
+python_dingz.egg-info/dependency_links.txt
+python_dingz.egg-info/entry_points.txt
+python_dingz.egg-info/requires.txt
+python_dingz.egg-info/top_level.txt
+python_dingz.egg-info/zip-safe
