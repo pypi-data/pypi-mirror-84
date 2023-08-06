@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: psycopgbinary
+Version: 0.0.1
+Summary: Reference for psycopg2-binary, but with name usable in import
+Home-page: UNKNOWN
+Author: Miloš Korenčiak
+Author-email: milos.korenciak@gmail.com
+Maintainer: Miloš Korenčiak
+Maintainer-email: milos.korenciak@gmail.com
+License: BSD License
+Keywords: Postgress,wrapper,DB,psycopg2
+Platform: posix
+Platform: win32
+Platform: win64
+Classifier: Development Status :: 3 - Alpha 
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Database :: Database Engines/Servers
+Requires-Dist: psycopg2-binary
+
+UNKNOWN
+
+
