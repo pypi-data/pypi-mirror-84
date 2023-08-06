@@ -1,0 +1,9 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+aff/__init__.py
+aff.egg-info/PKG-INFO
+aff.egg-info/SOURCES.txt
+aff.egg-info/dependency_links.txt
+aff.egg-info/top_level.txt

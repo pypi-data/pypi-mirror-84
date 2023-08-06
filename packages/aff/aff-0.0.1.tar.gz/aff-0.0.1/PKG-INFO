@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: aff
+Version: 0.0.1
+Summary: Anti Fragile Forecasting
+Home-page: https://https://github.com/dishkakrauch/aff
+Author: Dmitriy Kravchuk
+Author-email: jogerwarlock@yandex.ru
+License: UNKNOWN
+Description: # aff
+        Anti Fragile Forecasting
+        
+        It's a opensource solution for many forecasting common issues.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
