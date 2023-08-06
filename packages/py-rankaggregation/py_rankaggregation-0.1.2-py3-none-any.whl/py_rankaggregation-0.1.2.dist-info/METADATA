@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: py-rankaggregation
+Version: 0.1.2
+Summary: Python library for aggregating ranked lists.
+Home-page: UNKNOWN
+Author: Biscuit and Chai
+Author-email: adel@biscuitandchai.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: ipython
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+py_rankaggregation
+==================
+
+This project seeks to build a Python software package to aggregate a collection of 
+ranked lists using various aggregation approaches.
+The goal of rank aggregation is to come up with a single ranked list of objects 
+in the original lists such that the final ranking reflects some aggregate measure 
+of the items' ranks in the individual lists of the original collection.
+This package covers a variety of aggregation methods and works with different 
+representations of ranked lists. 
+It is built to serve as a one-stop-shop for ranked list aggregation in Python.
+
+The package is free, open-source, and BSD-licensed.
+
+Important links
+===============
+
+* Project Homepage: https://biscuitandchai.com/py_rankaggregation
+* Code repository: https://github.com/Biscuit-and-Chai/py_rankaggregation
+* Issue Tracker: https://github.com/Biscuit-and-Chai/py_rankaggregation/issues
+
+Dependencies
+============
+
+The required dependencies to build the packages are:
+
+* numpy (provides advanced array and list operations)
+* scipy (provides advanced statistical analysis tools)
+* pandas (provides data structures to store and manage tables)
+* scikit-learn (provides implementations for common machine learning algorithms)
+* six (provides functions to write compatible code across Python 2 and 3)
+
+Platforms
+=========
+
+py_rankaggregation has been tested on Linux, OS X and Windows.
+
+
