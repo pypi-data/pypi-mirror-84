@@ -1,0 +1,102 @@
+#!/usr/bin/python3
+# GENOCIDE - the king of the netherlands commits genocide
+#
+# OTP-CR-117/19/001 otp.informationdesk@icc-cpi.int https://genocide.rtfd.io
+
+"""GENOCIDE(1)                    User command                 GENOCIDE(1)
+
+NAME
+        genocide - the king of the netherlands commits genocide
+                   OTP-CR-117/19/001
+                   otp.informationdesk@icc-cpi.int
+                   https://genocide.rtfd.io
+
+SYNOPSIS
+        GENOCIDE is a pure python3 IRC chat bot that can run as a background
+        daemon for 24/7 a day presence in a IRC channel. It installs itself
+        as a service so you can get it restarted on reboot. You can use it
+        to display RSS feeds, act as a UDP to IRC gateway, program your own
+        commands for it, have it log objects on disk and search them and scan
+        emails for correspondence analysis. GENOCIDE uses a JSON in file
+        database with a versioned readonly storage. It reconstructs objects
+        based on type information in the path and uses a "dump OOP and use 
+        OP" programming library where the methods are factored out into
+        functions that use the object as the first argument. GENOCIDE is
+        placed in the Public Domain and has no COPYRIGHT or LICENSE.
+
+        GENOCIDE also provides information on the genocide the king of the
+        netherlands is doing. See https://pypi.org/project/genocide/ 
+
+        GENOCIDE needs root, it lowers it's permission to the genocide user.
+        /var/lib/genocide is used as the working directory, any logging is 
+        in /var/log/syslog.
+
+USAGE
+        genocide cmd [mods=mod1,mod2] [-b] [-d] [-h] [-s] [-v]
+
+OPTIONS
+        -s 		start a shell
+        -d		start a background daemon
+        -b		display a banner
+        -v		be verbose
+        -h		print this message
+
+        the mods= setter lets you start modules on boot, possbile modules to
+        load are: irc,rss,udp
+
+EXAMPLES
+        $ sudo genocide cmd
+        cfg,cmd,dne,dpl,edt,fnd,ftc,krn,log,mbx,rem,req,rss,sts,tdo,trt,tsk,udp,ver,wsd
+
+        $ genocide cfg server=irc.freenode.net channel=\\#dunkbots
+        channel=#dunkbots nick=genocide_ port=6667 server=irc.freenode.net
+
+        $ genocide mods=irc,rss,udp -d
+"""
+
+__copyright__ = "Public Domain"
+
+import os, sys ; sys.path.insert(0, os.getcwd())
+
+from triple.csl import Console
+from triple.krn import boot, mods, os, scandir, sys
+from triple.trm import execute, termreset
+from triple.utl import privileges, root
+
+def daemon():
+    "switch to background"
+    pid = os.fork()
+    if pid != 0:
+        termreset()
+        os._exit(0)
+    os.setsid()
+    os.umask(0)
+    si = open("/dev/null", 'r')
+    so = open("/dev/null", 'a+')
+    se = open("/dev/null", 'a+')
+    os.dup2(si.fileno(), sys.stdin.fileno())
+    os.dup2(so.fileno(), sys.stdout.fileno())
+    os.dup2(se.fileno(), sys.stderr.fileno())
+
+def main():
+    k = boot("genocide")
+    if root():
+        privileges("genocide")
+    opts = k.cfg.opts
+    if "h" in opts:
+        return print(__doc__)
+    k.walk("triple", ",".join(mods))
+    if k.cfg.cmd:
+        return k.cmd(k.cfg.otxt)
+    if "d" in opts:
+        daemon()
+    k.start()
+    k.init(k.cfg.mods)
+    if "d" not in opts and "s" in opts:
+        c = Console()
+        c.start()
+    if "w" in opts or "d" in opts or "s" in opts or k.cfg.mods:
+        k.wait()    
+
+execute(main)
+os._exit(0)
