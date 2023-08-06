@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+magic/__init__.py
+magic/cli.py
+magic_pure.egg-info/PKG-INFO
+magic_pure.egg-info/SOURCES.txt
+magic_pure.egg-info/dependency_links.txt
+magic_pure.egg-info/entry_points.txt
+magic_pure.egg-info/requires.txt
+magic_pure.egg-info/top_level.txt

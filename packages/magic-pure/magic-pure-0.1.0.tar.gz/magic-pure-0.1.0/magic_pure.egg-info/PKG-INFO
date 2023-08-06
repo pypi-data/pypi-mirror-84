@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: magic-pure
+Version: 0.1.0
+Summary: A pure Python drop-in replacement for magic
+Home-page: UNKNOWN
+Author: Martin Thoma
+Author-email: info@martin-thoma.de
+Maintainer: Martin Thoma
+Maintainer-email: info@martin-thoma.de
+License: MIT license
+Description: # magic-pure
+        
+        `magic-pure` is a pure Python implementation. For the moment, it helps me to execute code which uses [`python-magic`](https://pypi.org/project/python-magic/) on Windows.
+        
+        Maybe, at some point, it can be used as a drop-in replacement.
+        
+        
+        ## Installation
+        
+        ```
+        $ pip install magic-pure
+        ```
+        
+        ## Usage
+        
+        ```python
+        >>> import magic
+        >>> magic.from_file("testdata/test.pdf")
+        'PDF document, version 1.2'
+        ```
+        
+Keywords: utility
+Platform: Linux
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
