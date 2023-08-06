@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+wcpan.watchdog.egg-info/PKG-INFO
+wcpan.watchdog.egg-info/SOURCES.txt
+wcpan.watchdog.egg-info/dependency_links.txt
+wcpan.watchdog.egg-info/top_level.txt
+wcpan/watchdog/__init__.py
+wcpan/watchdog/__main__.py
+wcpan/watchdog/filters.py
+wcpan/watchdog/main.py
+wcpan/watchdog/walker.py
+wcpan/watchdog/watcher.py
