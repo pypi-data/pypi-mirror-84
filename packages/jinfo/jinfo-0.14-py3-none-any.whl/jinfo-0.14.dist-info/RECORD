@@ -1,0 +1,12 @@
+jinfo/__init__.py,sha256=j88yAm9y4v46ExtBMb-9X0u3YeFgR4MFq-huW9Y6IVU,498
+jinfo/alignment.py,sha256=cF74ltEqwSss5t0C3AjkI6e57hS0OwZsYPsGH8DkrOk,1671
+jinfo/metabolite.py,sha256=9aAEZgzWRyB7uFUviuKXRK-M7uHd1moj5sxyoXB2fb8,157
+jinfo/phylogenetics.py,sha256=zYOHkrEWQy-FELj6Q1PV_dvEfsOnOS8GVLzmvUmQnB0,347
+jinfo/sequence.py,sha256=hYeH1KUYN9mCR_W2lTKR2fj_2Gc-negP3ucqjcG4dJc,6294
+jinfo/tables.py,sha256=8fWIhlfxGMADIyu14Vwxoe-M_orGzZuGEyCsNG2xtfY,1802
+jinfo/utils.py,sha256=YCZHJ-NRRm_ZBiNibClVAXxEreZZKC4NXWBrUkoJKog,7204
+jinfo-0.14.dist-info/LICENSE,sha256=Nq4izyhB3gOi_gMWOi0OJsHoK0ECXv5oyTOyzu2rl2E,1068
+jinfo-0.14.dist-info/METADATA,sha256=DA5m-cKgqxN3BMQCLvSo3nKnc7tBQmzSxDy0q3FPXoE,207
+jinfo-0.14.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+jinfo-0.14.dist-info/top_level.txt,sha256=dKm9G1e2kxS_pbpHL3egzx3gxUAUz0gyNKfrdxCJxWg,6
+jinfo-0.14.dist-info/RECORD,,
