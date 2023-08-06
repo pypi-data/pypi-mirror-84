@@ -1,0 +1,11 @@
+ipdata/__init__.py,sha256=iUIeuwHVK3dtQACRM6MZHp6zl2ez_XsgBpWREv_WgW8,41
+ipdata/cli.py,sha256=8IBOpd2AxKWuNGRQzMNI4KLW8dWQNJ_w5Jk1DVRflyM,7074
+ipdata/ipdata.py,sha256=HjS_FRSrbvz13Vw32A6fR0fOe0eY33MwgezNFr9etrM,3798
+ipdata/test_cli.py,sha256=iK-Pc_Hc4o-PAxhOLcF6A4Wz93GNGrlNGSjkbGEaHPw,561
+ipdata/test_ipdata.py,sha256=_CHGenViosX6H9TIev_pzwawpUyGpXSqYKIrVF48JhE,1101
+ipdata-3.3.1.dist-info/LICENSE.txt,sha256=1dKqw5xWWkeee0p-8o1ssoHo5r-tDdRLiFN9-fHQhus,1054
+ipdata-3.3.1.dist-info/METADATA,sha256=rjqrZN4mToQAMUbqHIwg6Z2k6rS45IgXwKl4tHheCt4,8509
+ipdata-3.3.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+ipdata-3.3.1.dist-info/entry_points.txt,sha256=HUUUQOMueeOQvxeaUCo93EpIqq65Gyv4rN9jsSZylTM,44
+ipdata-3.3.1.dist-info/top_level.txt,sha256=-ISDy2FJGomfZ_9XdCECRlGaGI1ZaGs8d7Eyee6MKro,7
+ipdata-3.3.1.dist-info/RECORD,,
