@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: particle-simtools
+Version: 0.0.2
+Summary: A collection of functions to help with simulating and running particle simulations.
+Home-page: https://github.com/sciencectn/simtools
+Author: Chris Taylor
+Author-email: sciencectn@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
