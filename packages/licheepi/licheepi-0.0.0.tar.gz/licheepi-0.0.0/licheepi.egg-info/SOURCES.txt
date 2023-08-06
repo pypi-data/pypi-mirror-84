@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+licheepi/__init__.py
+licheepi.egg-info/PKG-INFO
+licheepi.egg-info/SOURCES.txt
+licheepi.egg-info/dependency_links.txt
+licheepi.egg-info/top_level.txt
