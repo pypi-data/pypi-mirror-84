@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+DSAlgos/LinkedList.py
+DSAlgos/Queue.py
+DSAlgos/Search.py
+DSAlgos/Sorting.py
+DSAlgos/Stack.py
+DSAlgos/__init__.py
+DSAlgos.egg-info/PKG-INFO
+DSAlgos.egg-info/SOURCES.txt
+DSAlgos.egg-info/dependency_links.txt
+DSAlgos.egg-info/requires.txt
+DSAlgos.egg-info/top_level.txt
