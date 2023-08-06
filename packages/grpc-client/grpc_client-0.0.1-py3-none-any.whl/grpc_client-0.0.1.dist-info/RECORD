@@ -1,0 +1,8 @@
+grpc_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grpc_client/base_client.py,sha256=sHX5HekaVJTGLaFJnk_--g-eORAZOSHc3TwxOm50IuE,2456
+grpc_client/base_hook.py,sha256=es5oBtFXQQVv9lVc5cRs7b5X9UwkblVSeRIxgPsg4Xw,1861
+grpc_client-0.0.1.dist-info/LICENSE,sha256=ysJz--Hivxck5ZRVbl_34VwypEF5PBqf_vvIYJvA0KM,1066
+grpc_client-0.0.1.dist-info/METADATA,sha256=2hzY8R4GWvVEL4LvghmjkOvK_91Ft3zxxA3KKXU_s8c,877
+grpc_client-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+grpc_client-0.0.1.dist-info/top_level.txt,sha256=mHO2cnST2fvXkg0aR4rBFP73A3Dy2K8m9-6IU8x95Rw,12
+grpc_client-0.0.1.dist-info/RECORD,,
