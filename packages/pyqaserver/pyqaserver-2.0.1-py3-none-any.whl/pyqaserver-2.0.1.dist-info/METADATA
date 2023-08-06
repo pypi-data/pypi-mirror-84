@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pyqaserver
+Version: 2.0.1
+Summary: A Bottle-based web interface between Pylinac and Orthanc.
+Home-page: https://github.com/brjdenis/pyqaserver
+Author: Denis Brojan
+Author-email: brjdenis2000@gmail.com
+License: MIT
+Keywords: medical physics quality assurance linear accelerators
+                pylinac bottle orthanc
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Requires-Dist: scipy (>=1.0)
+Requires-Dist: numpy (>=1.14)
+Requires-Dist: matplotlib (>=3.3.1)
+Requires-Dist: jinja2
+Requires-Dist: pylinac (==2.3.2)
+Requires-Dist: httplib2 (==0.18.1)
+Requires-Dist: bokeh (==2.2.1)
+Requires-Dist: waitress (==1.4.4)
+Requires-Dist: passlib
+Requires-Dist: pandas
+Requires-Dist: requests
+
+A Bottle-based web interface between Pylinac and Orthanc.
+
+
