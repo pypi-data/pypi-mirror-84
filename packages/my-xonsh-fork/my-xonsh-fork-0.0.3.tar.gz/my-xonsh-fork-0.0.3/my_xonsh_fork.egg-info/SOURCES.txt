@@ -1,0 +1,7 @@
+README.md
+my-xonsh-fork
+setup.py
+my_xonsh_fork.egg-info/PKG-INFO
+my_xonsh_fork.egg-info/SOURCES.txt
+my_xonsh_fork.egg-info/dependency_links.txt
+my_xonsh_fork.egg-info/top_level.txt
