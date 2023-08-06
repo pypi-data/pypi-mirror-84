@@ -1,0 +1,8 @@
+README.md
+setup.py
+Play_mp3/__init__.py
+play_mp3.egg-info/PKG-INFO
+play_mp3.egg-info/SOURCES.txt
+play_mp3.egg-info/dependency_links.txt
+play_mp3.egg-info/requires.txt
+play_mp3.egg-info/top_level.txt
