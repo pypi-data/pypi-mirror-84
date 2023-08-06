@@ -1,0 +1,6 @@
+README.md
+setup.py
+list_grouper.egg-info/PKG-INFO
+list_grouper.egg-info/SOURCES.txt
+list_grouper.egg-info/dependency_links.txt
+list_grouper.egg-info/top_level.txt
