@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: fuzzy-pratish
+Version: 0.3
+Summary: A python package to handle fuzzy operations
+Home-page: https://github.com/PratishTiwari/DL_modules
+Author: Pratish Tiwari
+Author-email: pratishtiwari1@gmail.com
+License: MIT
+Description: description
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
