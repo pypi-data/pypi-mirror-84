@@ -1,0 +1,151 @@
+Metadata-Version: 2.1
+Name: alfeneve
+Version: 0.5.0
+Summary: API Client for Alfen Eve EV charging units.
+Home-page: https://gitlab.com/LordGaav/alfen-eve
+Author: Nick Douma
+Author-email: n.douma@nekoconeko.nl
+License: MIT
+Keywords: alfeneve
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Requires-Dist: pbr (>=1.9)
+Requires-Dist: setuptools (>=17.1)
+Requires-Dist: requests
+Requires-Dist: tabulate
+Requires-Dist: iso8601
+Requires-Dist: tzlocal
+Provides-Extra: cli
+Requires-Dist: omniconf[yaml] ; extra == 'cli'
+
+Alfen Eve API client
+====================
+
+API Client for Alfen Eve EV charging units.
+
+Installation
+------------
+
+As a CLI tool:
+
+.. code-block:: shell
+
+   $ pip install alfeneve[cli]
+
+
+As a library:
+
+.. code-block:: shell
+
+   $ pip install alfeneve
+
+
+Configuration
+-------------
+
+The CLI tool uses `omniconf <https://pypi.org/project/omniconf/>`_ . This allows you to provide any CLI
+argument using a file or through the environment (or a combination).
+
+
+Directly as arguments:
+
+.. code-block:: shell
+
+   $ alfen-eve --alfen-ipaddress 192.168.1.23 --alfen-username admin --alfen-password foo
+
+
+Using a YAML file (make sure to install ``PyYAML``, or use ``omniconf[yaml]``):
+
+.. code-block:: shell
+
+   $ cat settings.yaml
+   alfen:
+     ipaddress: 192.168.1.23
+     username: admin
+     password: foo
+
+    $ alfen-eve --yaml-filename settings.yaml
+
+Using environment variables:
+
+.. code-block:: shell
+
+    $ ALFEN_IPADDRESS=192.168.1.23 ALFEN_USERNAME=admin ALFEN_PASSWORD=foo alfen-eve
+
+Examples
+--------
+
+Use as a CLI tool:
+
+.. code-block:: shell
+
+   $ alfen-eve --mode categories
+   category
+   ----------
+   generic
+   generic2
+   accelero
+   temp
+   states
+   meter1
+   meter4
+   leds
+   ocpp
+   display
+   comm
+   MbusTCP
+
+   $ alfen-eve --mode properties --properties-category meter4
+   name                                   value  id       cat
+   -----------------------------  -------------  -------  ------
+   OD_sensOptionalEnergyMeter4      5            5217_0   meter4
+   OD_sensEnergyMeterType4          1            5218_0   meter4
+   meter4_voltageL1N              225.1          5221_3   meter4
+   meter4_voltageL2N              225.7          5221_4   meter4
+   meter4_voltageL3N              228.6          5221_5   meter4
+   ...
+
+Use as a library:
+
+.. code-block:: python
+
+   from alfeneve.alfen import Alfen
+   from pprint import pprint
+
+   eve = Alfen("http://192.168.1.23", ("admin", "foo"))
+
+   cats = eve.categories()
+   pprint(cats)
+   # ['generic',
+   #  'generic2',
+   #  'accelero',
+   #  'temp',
+   #  'states',
+   #  'meter1',
+   #  'meter4',
+   #  'leds',
+   #  'ocpp',
+   #  'display',
+   #  'comm',
+   #  'MbusTCP']
+
+   pprint(a.properties(category=cat[0]))
+   # [<AlfenProperty(name=OD_manufacturerDeviceName, value=NG910, id=1008_0, cat=generic)>,
+   #  <AlfenProperty(name=OD_manufacturerHardwareVersion, value=G0, id=1009_0, cat=generic)>,
+   #  <AlfenProperty(name=OD_manufacturerSoftwareVersion, value=4.8.0-3168, id=100A_0, cat=generic)>,
+   #  ... ]
+
+
+License
+-------
+MIT
+
+
+
