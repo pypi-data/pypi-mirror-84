@@ -1,0 +1,4 @@
+# Changes / Updates:
+
+./1.2.7-
+ - All updates prior to 1.2 are viewable on our original package!
