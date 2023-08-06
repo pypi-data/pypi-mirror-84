@@ -1,0 +1,16 @@
+aiochsa/__init__.py,sha256=W1BJ5yBa_q2iv1SzkgcJJxva4QwNrNjjuQdLrAA47is,297
+aiochsa/client.py,sha256=FKYdsJuo_JrU6RJ-mKxOG-9NLLo6DZ11CHWgiO_w-kQ,5131
+aiochsa/compiler.py,sha256=FGZrbLpWiY598ZsAGqmSadA5bhNK_ka-xHRZOEPnP44,4653
+aiochsa/dialect.py,sha256=Vw6OjK-l902ysPZN3wZjoopPsiHmy_MOudKbSgfz-Gs,3321
+aiochsa/error_codes.py,sha256=_ZdFrrHIjkyKCWyEQe5_CIVjtLUQzfZI2HwCrnn4Y2M,15056
+aiochsa/exc.py,sha256=2ooZzj8fcH-l_nWwZQiQPo1oHQgdFf7AOyfUjV_LJ7E,2360
+aiochsa/parser.py,sha256=-9TyMytyR3rqlIpxItexYbJkAzj-sgB2uR0HVWHl6-c,2463
+aiochsa/pool.py,sha256=aqrh9DV83lbH2jNFyplhhCzBy-WYRvtMKWVSOl7WRKY,2726
+aiochsa/record.py,sha256=2r3_FJ3jMFo58p6FuK9fkx-lCP-g0mfArekLCc4-yEY,1227
+aiochsa/sql.py,sha256=wAvEMI5GOCGHyWqlEY8V2sfFh5egS3d10Fclw8zhQBQ,2086
+aiochsa/type.lark,sha256=VLZ4tig_uXKWoAFrwE_9BuTYiznPjwzOqaPGlIWaM6s,612
+aiochsa/types.py,sha256=unB3iS16S3vD4BbLxVSlIHTsmM-cXmO_HqO7hrUBo04,11214
+aiochsa-0.11.0.dist-info/METADATA,sha256=TC7uUof58Hvzb-suAfG4pnl0qIIzJS0BaNzsKP0n2ug,2106
+aiochsa-0.11.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+aiochsa-0.11.0.dist-info/top_level.txt,sha256=8kJaag3rmVeYei_5Ifq9eNU9ECJZQuhl2M0Ohg4qXfI,8
+aiochsa-0.11.0.dist-info/RECORD,,
