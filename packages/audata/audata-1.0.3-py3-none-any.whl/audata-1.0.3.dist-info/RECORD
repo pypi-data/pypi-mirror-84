@@ -1,0 +1,17 @@
+audata/__init__.py,sha256=6fOEZQt0Ub3hkEXdrfaieLf9RI_JKD_QHpqJZPOLPNQ,568
+audata/_utils.py,sha256=C9ARur2zcGWEhc3foqY6xp-ZuKvNSZPg0U92wE7_jZc,7481
+audata/dataset.py,sha256=H13d9MVk2Yx6XddtAGPI0FTDP98GHSVewjrgOXIO6eQ,9359
+audata/element.py,sha256=DLAiNz-B0dY91W7gS3BerWkAe_OhUmEfNF4PgM4V9A0,3376
+audata/file.py,sha256=jpcKM4QYRALp82mUVWllIlMYgCxQq5mimJjf0lXay8M,8070
+audata/group.py,sha256=DdtoqU2SNUC2Ytt36yHkL3cB4_ZR9RqM7g_XM3HL0B0,4259
+audata/_test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+audata/_test/gendata.py,sha256=aZimBWsgD-MDJmEcd7EZZGrkVFNxSZ21UyHfm8UxEWw,2942
+audata/_test/readwrite.py,sha256=g0R-N5f6sPyFWa6AGXgmqrfLCb311DRXwQ6jK0HYyLw,1691
+audata/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+audata/bin/csv2audata.py,sha256=11t_FLqeHUuMWY0IyrXhfCXarBnK1O3_RZB370GYkqY,4468
+audata-1.0.3.dist-info/LICENSE,sha256=Pc3bZG7rHo0X9i2EOeQm5UcmHOuknOtCcfbDKA7ICPU,7440
+audata-1.0.3.dist-info/METADATA,sha256=xja9x-Sa1leMhBImip4ZqVNcXNFZUEv354kJeDkmPzw,953
+audata-1.0.3.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+audata-1.0.3.dist-info/entry_points.txt,sha256=UNtF2SPzUDSL6HsJN7eRIuSbi4RmaWYzhuQQo2jpY4c,59
+audata-1.0.3.dist-info/top_level.txt,sha256=ml1_1c6TSfrpjxniJ0oTsZGaCSPSPmUJIDaFi_jHHvQ,7
+audata-1.0.3.dist-info/RECORD,,

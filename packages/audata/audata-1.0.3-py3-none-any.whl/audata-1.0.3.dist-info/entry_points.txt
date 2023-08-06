@@ -1,0 +1,3 @@
+[console_scripts]
+csv2audata = audata.bin.csv2audata:main
+
