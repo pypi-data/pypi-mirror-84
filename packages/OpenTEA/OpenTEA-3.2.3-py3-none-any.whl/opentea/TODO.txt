@@ -1,0 +1,28 @@
+TODO:
+
+
+Opentea:
+
+FORMS :
+
+Tester deux multiples dans la meme tab
+attribut process sur les Tabs AE
+
+Verification fonctionnement, load / save AE
+
+Widget simple ARRAY (Ux Uy Uz) AD
+L
+Capacité Require AD
+
+Widgets desc et docu, capasité a lire et afficher des images
+
+Capacité existif AE_AD
+
+Methode de reorganistation des multiples AE
+
+Entries, ajouter la validation schema AE
+
+Widget canvas programmable AD
+
+Widget 3D AD
+
