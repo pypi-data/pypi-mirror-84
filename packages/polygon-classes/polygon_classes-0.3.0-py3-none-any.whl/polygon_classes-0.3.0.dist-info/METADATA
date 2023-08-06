@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: polygon-classes
+Version: 0.3.0
+Summary: Pydantic schemas for parsing and working with Polygon.io jsons
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pendulum (>=2.1.2,<3.0.0)
+Requires-Dist: pydantic (>=1.6.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# polygon-classes
+
+Polygon pydantic schemas for parsing and working with Polygon.io jsons
+
+## Configuration
+
+### Polygon.io
+* `SUBSCRIPTION_TYPES` - Polygon.io subscriptions (support Q and AM), if empty the app will not run
+* `AM_SYMBOLS` - tickers to subscribe to, all tickers "*"
+* `POLYGON_API_KEY`
+
+### AWS
+* `AWS_ACCESS_KEY_ID`
+* `AWS_SECRET_ACCESS_KEY`
+* `AWS_REGION`
+* `AWS_1MIN_QUEUE_URL` - where the AM subscriptions will be sent
+* `AWS_QUOTES_QUEUE_URL` - where the Q subscriptions will be sent
+
+### Other
+* `SENTRY_DSN`
+
