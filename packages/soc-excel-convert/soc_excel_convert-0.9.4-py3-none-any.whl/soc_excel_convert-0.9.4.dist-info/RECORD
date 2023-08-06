@@ -1,0 +1,15 @@
+soc_excel_convert/__init__.py,sha256=JUZXna98GGKqIaGzy667oH6Fxea9i3j-qiIDSs2sK8c,21
+soc_excel_convert/__main__.py,sha256=m79SY6_u26apVhMsVIcyvRJDr5WtD42FokmikjTjC5M,669
+soc_excel_convert/_internal/__init__.py,sha256=NkkDZlePanOakSdMF-RAkMNlGhbL25jDAUL1gjjqkSg,1062
+soc_excel_convert/_internal/result_code.py,sha256=5inx3T0xIeAVgIo-2pV-bcXeF2iOQ3xVfHAkcpsGCd4,192
+soc_excel_convert/_internal/soc_excel_convert.py,sha256=cTXCZpk0q1HGj20V98c4XJ_5scgNaW11rsOYSE7bEEE,10458
+soc_excel_convert/_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+soc_excel_convert/_utils/excel_utils.py,sha256=ofZvmz0f11uxmyTrFoH4pjzPgtwl7fHlLo3kLUH3V34,3855
+soc_excel_convert/_utils/file_utils.py,sha256=HOmmikZ1TKG1kwD96NhJOzdAdGsvoHtvBPXRmPpKSrU,6882
+soc_excel_convert/_utils/str_utils.py,sha256=_s_kwYYBXdPIrOt3vBjfvzxWFgQ4qH9fKj8r8dYw0VE,524
+soc_excel_convert-0.9.4.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+soc_excel_convert-0.9.4.dist-info/METADATA,sha256=nN-tEfQBzzAaqmH6JWyPI0yr1B1V5KgrBhV2HaWL6V0,2636
+soc_excel_convert-0.9.4.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+soc_excel_convert-0.9.4.dist-info/entry_points.txt,sha256=e-r-b0qY0xaFxGf6LhXm1KG-OXkdh8AKqTgirn76mAQ,72
+soc_excel_convert-0.9.4.dist-info/top_level.txt,sha256=sjbbVICVu6EmReWBV6ljbKgGTLBLn8j_8vp7dotqAyI,18
+soc_excel_convert-0.9.4.dist-info/RECORD,,
