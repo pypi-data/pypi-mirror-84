@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: kouyierr
+Version: 0.0.5
+Summary: Document Generator, aka Doc As Code
+Home-page: https://github.com/vmdude/kouyierr
+Author: vmdude
+Author-email: frederic@martin.lc
+License: MIT
+Keywords: aws
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: boto3
+Requires-Dist: click
+Requires-Dist: rich
+Requires-Dist: yamllint
+Requires-Dist: Jinja2
+Provides-Extra: test
+Requires-Dist: mock (==3.0.5) ; extra == 'test'
+Requires-Dist: pytest (==5.0.1) ; extra == 'test'
+Requires-Dist: pytest-runner (==5.1) ; extra == 'test'
+Requires-Dist: pytest-pylint (==0.14) ; extra == 'test'
+Requires-Dist: pytest-cov (==2.7.1) ; extra == 'test'
+Requires-Dist: pylint (==2.3.1) ; extra == 'test'
+Requires-Dist: twine ; extra == 'test'
+Requires-Dist: zest.releaser ; extra == 'test'
+
+# kouyierr
+
+![Kouyierr](logo.jpg)
+
+
+## How to build
+
+```bash
+# create a virtual env
+virtualenv venv
+
+# activate virtual env 
+source venv/bin/activate 
+
+# run test and package
+pip3 install .[test] --user --upgrade
+python3 setup.py test
+
+# install snapshot build
+pip3 install . --user --upgrade
+```
+
+
+## Releases
+
+After a commit or merge on master [circleci](https://circleci.com/vmdude/kouyierr) deploys kouyierr automatically on [pypi](https://pypi.org/project/kouyierr/)
+
+To install the release version
+
+```bash
+pip3 install kouyierr --upgrade --user
+```
+
+
