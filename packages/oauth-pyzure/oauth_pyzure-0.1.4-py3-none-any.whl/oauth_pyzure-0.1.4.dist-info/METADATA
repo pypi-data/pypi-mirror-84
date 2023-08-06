@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: oauth-pyzure
+Version: 0.1.4
+Summary: OAuth Pyzure: OAuth for Python with Azure
+Home-page: https://github.com/agu3rra/oauth-pyzure
+Author: Andre Guerra
+Author-email: agu3rra@gmail.com
+License: MIT
+Keywords: api oauth authorization azure client credentials flow
+Platform: UNKNOWN
+Requires-Dist: requests (==2.24.0)
+Requires-Dist: cryptography (==3.2)
+Requires-Dist: pyjwt (==1.7.1)
+
+Simple OAuth client_credential flow with Azure for Python.
+
+
