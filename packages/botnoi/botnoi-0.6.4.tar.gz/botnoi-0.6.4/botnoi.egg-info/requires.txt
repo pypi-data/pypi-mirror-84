@@ -1,0 +1,11 @@
+pandas
+pillow
+pythainlp
+gensim
+pymongo[srv,tls]
+SpeechRecognition
+wave
+audioread
+line-bot-sdk
+gspread==3.6.0
+scikit-learn
