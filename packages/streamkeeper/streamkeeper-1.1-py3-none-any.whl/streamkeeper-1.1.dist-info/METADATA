@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: streamkeeper
+Version: 1.1
+Summary: Keep those livestreams to watch whenever you want
+Author: Shane Dowling
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: google-api-python-client (>=1.12.5,<2.0.0)
+Requires-Dist: python-daemon (>=2.2.4,<3.0.0)
+Requires-Dist: python-pushover (>=0.4,<0.5)
+Requires-Dist: streamlink (>=1.7.0,<2.0.0)
+Requires-Dist: youtube-python (>=1.0.13,<2.0.0)
