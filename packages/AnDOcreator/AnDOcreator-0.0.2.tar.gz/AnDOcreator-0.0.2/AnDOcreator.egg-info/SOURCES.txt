@@ -1,0 +1,7 @@
+setup.py
+AnDOcreator.egg-info/PKG-INFO
+AnDOcreator.egg-info/SOURCES.txt
+AnDOcreator.egg-info/dependency_links.txt
+AnDOcreator.egg-info/entry_points.txt
+AnDOcreator.egg-info/requires.txt
+AnDOcreator.egg-info/top_level.txt
