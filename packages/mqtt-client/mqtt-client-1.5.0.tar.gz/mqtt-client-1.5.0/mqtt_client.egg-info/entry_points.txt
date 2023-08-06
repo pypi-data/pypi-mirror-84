@@ -1,0 +1,3 @@
+[console_scripts]
+mqtt-client = mqtt_client.__main__:main
+
