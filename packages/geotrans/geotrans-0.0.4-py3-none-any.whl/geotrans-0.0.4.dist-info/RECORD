@@ -1,0 +1,13 @@
+geotrans/__init__.py,sha256=-hF8N79lvLOM_rjJbr_cv6Bxk8q5imcfOwFxB2vl8EA,145
+geotrans/cli.py,sha256=Ux5ks6EdOmjwUsVdNrzd-sKZKILcx8_OIdflehkKsXs,6545
+geotrans/modify.py,sha256=1HqUawaucjoNsTArEuRnFb6VdK_K-6d2UK_xvfSIihI,833
+geotrans/transform.py,sha256=H6BqGB9QyTo49aUquc1i-Re5RGPkumNxXJsTnC7cwxQ,6609
+tests/__init__.py,sha256=9O2hB8pPXyCONTIGBOGjF9QIWChDYuFDDCrVBmEB2lQ,1198
+tests/test_cli.py,sha256=KRnMGA5EMCj7RXGLhsJv0WJ0WYthcVVVYVNux8OGgc4,5031
+tests/test_transform.py,sha256=FOpBdpQNOn1AODGOLcuXwfwz5EoJR7fXNdOpdWW8wX8,4914
+geotrans-0.0.4.dist-info/LICENSE.md,sha256=qgz6jzuuqEjyGX2dEu0c4MTK-mfGHvq5HXhoBz9neWc,1062
+geotrans-0.0.4.dist-info/METADATA,sha256=zoZW3FjzMD9hJYHfNVKS5p0mlabxXOzETAYF0fG6lxE,10183
+geotrans-0.0.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+geotrans-0.0.4.dist-info/entry_points.txt,sha256=a8wTv2QEeDGJmLRxTLu7vd4AHYnjffZH9BWUkkz7jQ4,66
+geotrans-0.0.4.dist-info/top_level.txt,sha256=MQsR6ckM3-W_B_OZwrmHUTgamWZVF1kYk1wFLP01nAE,15
+geotrans-0.0.4.dist-info/RECORD,,
