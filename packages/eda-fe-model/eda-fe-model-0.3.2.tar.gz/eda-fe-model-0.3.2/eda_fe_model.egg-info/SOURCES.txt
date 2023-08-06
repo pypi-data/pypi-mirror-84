@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+eda_fe_model/__init__.py
+eda_fe_model/package.py
+eda_fe_model.egg-info/PKG-INFO
+eda_fe_model.egg-info/SOURCES.txt
+eda_fe_model.egg-info/dependency_links.txt
+eda_fe_model.egg-info/requires.txt
+eda_fe_model.egg-info/top_level.txt
