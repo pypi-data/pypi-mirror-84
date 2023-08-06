@@ -1,0 +1,1 @@
+from colorifix import paint, random, sample, Color, Background, Style
