@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: aiopioneer
+Version: 0.0.1
+Summary: Pioneer AVR API (async)
+Home-page: https://github.com/crowbarz/aiopioneer.git
+Author: Crowbar Z
+Author-email: crowbarz@outlook.com
+License: UNKNOWN
+Description: # aiopioneer
+        
+Platform: UNKNOWN
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
