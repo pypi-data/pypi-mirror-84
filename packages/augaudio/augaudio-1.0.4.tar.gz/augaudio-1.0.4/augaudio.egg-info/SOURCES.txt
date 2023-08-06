@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+augaudio/__init__.py
+augaudio/cli.py
+augaudio.egg-info/PKG-INFO
+augaudio.egg-info/SOURCES.txt
+augaudio.egg-info/dependency_links.txt
+augaudio.egg-info/entry_points.txt
+augaudio.egg-info/requires.txt
+augaudio.egg-info/top_level.txt

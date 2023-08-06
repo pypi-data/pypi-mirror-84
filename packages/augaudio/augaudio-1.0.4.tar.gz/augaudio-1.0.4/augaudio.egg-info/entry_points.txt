@@ -1,0 +1,3 @@
+[console_scripts]
+augaudio = augaudio.cli:main
+
