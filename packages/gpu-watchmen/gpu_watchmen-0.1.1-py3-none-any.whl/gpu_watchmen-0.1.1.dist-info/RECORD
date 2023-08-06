@@ -1,0 +1,10 @@
+watchmen/__init__.py,sha256=MF64bwUCd4sm3dvcxZnkb4ujHtxT_KeuXdD0nVieEt4,27
+watchmen/client.py,sha256=0RMKUGGw2ems-FeuyHsy73MLYq8GLOAETl-H10ZYeoE,3312
+watchmen/listener.py,sha256=NiV6heznTX5fnAUazMkJEeItJeH2rBHCLQALXN1bk10,1797
+watchmen/reminder.py,sha256=ciM-PpanJmXHUtjscTOTesljk8yGqF9U1y2EtboTSjs,2315
+watchmen/server.py,sha256=sCPLRM9F8oaUDh2BNzp8SXzLvXEUfic0ZMv8cqmDxR8,9636
+gpu_watchmen-0.1.1.dist-info/LICENSE,sha256=_-EaZ4zjDw6_sZwWtDM1iu9ixEseZmJdIWY1sCq3hQM,1062
+gpu_watchmen-0.1.1.dist-info/METADATA,sha256=aDe4eCac3hTTLPiH8wyIxtor9GOVL6mvHJ8S-sqXhOg,2913
+gpu_watchmen-0.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+gpu_watchmen-0.1.1.dist-info/top_level.txt,sha256=7PYsbub-5loKaPe9zYZYBVAyahyUioqLTUSMM-xICdo,9
+gpu_watchmen-0.1.1.dist-info/RECORD,,
