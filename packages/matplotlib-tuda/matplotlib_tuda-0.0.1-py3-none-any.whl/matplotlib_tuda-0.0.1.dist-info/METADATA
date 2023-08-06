@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: matplotlib-tuda
+Version: 0.0.1
+Summary: Small package to add the corporate colors of the TU Darmstadt to Matplotlib.
+Home-page: https://github.com/fdamken/matplotlib-tuda
+Author: Fabian Damken
+Author-email: fabian.damken@frisp.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Matplotlib TUDa
+
+This is a small packages that adds the corporate colors of the TU Darmstadt (see [Corporate Design](https://www.tu-darmstadt.de/media/medien_stabsstelle_km/services/medien_cd/das_bild_der_tu_darmstadt.pdf), pages 18, 19) to Matplotlib.
+
+
