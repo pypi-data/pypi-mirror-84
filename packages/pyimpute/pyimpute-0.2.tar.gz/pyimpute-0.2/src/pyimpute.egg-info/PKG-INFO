@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: pyimpute
+Version: 0.2
+Summary: Utilities for applying scikit-learn to spatial datasets
+Home-page: https://github.com/perrygeo/pyimpute
+Author: Matthew Perry
+Author-email: perrygeo@gmail.com
+License: BSD
+Description: See documentation at https://github.com/perrygeo/pyimpute
+Keywords: gis geospatial geographic raster vector zonal statistics machinelearning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: GIS
