@@ -1,0 +1,16 @@
+nbstripout>=0.2.0
+python-hglib
+twine
+
+[nbextensions]
+jupyter_contrib_nbextensions
+
+[test]
+notebook
+pytest>=2.8.1
+pytest-cov>=2.2.0
+pytest-flake8
+coverage
+mercurial
+twine
+docutils
