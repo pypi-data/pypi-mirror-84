@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: papermill-mlflow-handler
+Version: 1.0.0
+Summary: MLFlow handler for papermill.
+Home-page: UNKNOWN
+License: ['MIT']
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: papermill
+Requires-Dist: mlflow
+Requires-Dist: google-cloud-storage
+
+MLFlow handler for papermill.
+
+
