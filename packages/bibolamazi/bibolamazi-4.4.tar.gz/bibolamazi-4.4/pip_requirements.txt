@@ -1,0 +1,32 @@
+
+# 
+# pybtex >= 0.23 for new pybtex.utils.OrderedCaseInsensitiveDict implementation
+# with __delitem__
+#
+pybtex >= 0.23
+
+#
+# arxiv2bib.
+#
+arxiv2bib >= 1.0.2
+
+#
+# My own pylatexenc.
+#
+pylatexenc >= 2.0
+
+#
+# `future` for both python2 & python3 support
+#
+future
+
+#
+# `appdirs` to find where to store config files and caches
+#
+appdirs
+
+#
+# `PyGithub` and `requests`
+#
+PyGithub
+requests[security]
