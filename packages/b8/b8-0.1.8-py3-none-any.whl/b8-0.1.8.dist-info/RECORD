@@ -1,0 +1,15 @@
+b8/__init__.py,sha256=h61p4kDYv60-bZeVoVfjXYzLBMMk2K_8o-poow1jTq8,73
+b8/app.py,sha256=CwDApZ5A7_vobQdSTEXI7xOhZ3LlGgsrxQxFQ5Z4Uaw,4606
+b8/buffers.py,sha256=h6dHsM6dvWZslE3RXNFeKWu3UBtpK78WpfZ6uccUHsU,5481
+b8/configs.py,sha256=s2SRmPM2771Qk5deBhVM_Xo8nrHx78ji40_tD1VLKhc,5688
+b8/files.py,sha256=gFRifDEEgrnzTm6QDB3yWKEVAPSJXoe0pll_SYd39D8,9966
+b8/logs.py,sha256=N34GYs7rlIm6-1lOn7NP6vqZx-blBoO7uN3Eo-f-zI0,1172
+b8/paths.py,sha256=U4fXMNM95nsGeL4xPbijQEOtXYUaggD-IAco5Fam3Qo,115
+b8/terminals.py,sha256=GLtZKazFLyuoRzjy04nrKOyS0Txx_dx_HGYB4YD21uo,14530
+b8/ui.py,sha256=LchQqRCbXhKP930DUKQa54BelIOY4WtUKThmmwnlkhE,6507
+b8/vim.py,sha256=vTM82clyeRqSV3kc4ZWJZmordXqSkm_dyfv0KkzYSJY,22496
+b8-0.1.8.dist-info/entry_points.txt,sha256=9DP9EUyHfwQmve8axrGYRCFOOwq6q-QVb87vjmAnu2Y,34
+b8-0.1.8.dist-info/LICENSE,sha256=xbnyzlkG2Li8zaKK_3nBjo-Blc5P5LgmrO8P8cC4xOg,1088
+b8-0.1.8.dist-info/WHEEL,sha256=CqyTrkghQBNsEzLD3HbCSEIJ_fY58-XpoU29dUzwHSk,81
+b8-0.1.8.dist-info/METADATA,sha256=lQAajTqKKfCrxlPKCKGgMbrTkYbHpuOC6tAac0OJJRE,4967
+b8-0.1.8.dist-info/RECORD,,
