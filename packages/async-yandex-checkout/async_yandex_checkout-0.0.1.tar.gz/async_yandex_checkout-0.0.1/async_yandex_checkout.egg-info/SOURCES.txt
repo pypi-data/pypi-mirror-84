@@ -1,0 +1,8 @@
+README.md
+setup.py
+test.py
+async_yandex_checkout.egg-info/PKG-INFO
+async_yandex_checkout.egg-info/SOURCES.txt
+async_yandex_checkout.egg-info/dependency_links.txt
+async_yandex_checkout.egg-info/requires.txt
+async_yandex_checkout.egg-info/top_level.txt
