@@ -1,0 +1,9 @@
+x_robots_tag_middleware/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+x_robots_tag_middleware/apps.py,sha256=Pmf0uAQE2Jlj-mx7sQiHjiQe3dfU-Z7WiC1rhzSccz4,189
+x_robots_tag_middleware/middleware.py,sha256=Q-M3IAk8fVwCtL7CKNNVM29cmQnP3VdAGHlgrFD2Lfg,614
+x_robots_tag_middleware/tests.py,sha256=UMmPH8bQRze_qLPe7fwQ_7FpGKg8-lalFy5nR2_wEfI,1075
+django_x_robots_tag_middleware-1.3.3.dist-info/LICENSE,sha256=uhcQNQTEYU6OXHm5n7GxjElw9EYwZxiX_NvCb_GhUps,1069
+django_x_robots_tag_middleware-1.3.3.dist-info/METADATA,sha256=stngTqfU6m3cijVRojOokcaXZ40Wd2j4Rt6j-JWYzOE,2354
+django_x_robots_tag_middleware-1.3.3.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+django_x_robots_tag_middleware-1.3.3.dist-info/top_level.txt,sha256=CcNWACKfZ__mPWkzqOTvTOjAdzrPN1nOGHr34v0FTVo,24
+django_x_robots_tag_middleware-1.3.3.dist-info/RECORD,,
