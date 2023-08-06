@@ -1,0 +1,19 @@
+CHANGES
+=======
+
+v1.0.2
+------
+
+* .gitlab-ci yml fix
+
+v1.0.1
+------
+
+* better trigger for deploy stage, to only run on tags
+
+v1.0.0
+------
+
+* v1.0
+* use shared runners
+* initial commit, testing test-ci
