@@ -1,0 +1,3 @@
+[console_scripts]
+treedensity = localmaxfilter.interfaces.local_max_filter_cli:main
+
