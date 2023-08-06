@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: coronacli
+Version: 0.1.6
+Summary: COVID-19 stats in your terminal
+Home-page: https://github.com/adaros92/coronacli
+Author: Adams Rosales (https://github.com/arlovesdata)
+Author-email: adams.rosales.92@gmail.com
+License: MIT
+Description: # coronacli
+        Pulls latest coronavirus stats into your terminal
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
