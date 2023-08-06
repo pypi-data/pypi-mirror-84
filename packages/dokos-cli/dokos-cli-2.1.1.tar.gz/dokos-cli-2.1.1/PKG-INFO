@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: dokos-cli
+Version: 2.1.1
+Summary: Command line tools for Dodock/Dokos
+Home-page: https://dokos.io
+Author: Dokos SAS
+Author-email: hello@dokos.io
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
