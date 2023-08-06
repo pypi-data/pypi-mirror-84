@@ -1,0 +1,8 @@
+README.md
+setup.py
+AmongUsAPI.egg-info/PKG-INFO
+AmongUsAPI.egg-info/SOURCES.txt
+AmongUsAPI.egg-info/dependency_links.txt
+AmongUsAPI.egg-info/requires.txt
+AmongUsAPI.egg-info/top_level.txt
+amongUsAPI/__init__.py

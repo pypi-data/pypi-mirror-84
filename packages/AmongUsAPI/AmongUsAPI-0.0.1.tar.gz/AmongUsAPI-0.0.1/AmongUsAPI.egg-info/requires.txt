@@ -1,0 +1,5 @@
+pyscreenshot
+pyautogui
+pywin32
+more-properties
+imagehash
