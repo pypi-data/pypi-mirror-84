@@ -1,0 +1,10 @@
+README.md
+setup.py
+alibabacloud_nlp_automl20190701/__init__.py
+alibabacloud_nlp_automl20190701/client.py
+alibabacloud_nlp_automl20190701/models.py
+alibabacloud_nlp_automl20190701.egg-info/PKG-INFO
+alibabacloud_nlp_automl20190701.egg-info/SOURCES.txt
+alibabacloud_nlp_automl20190701.egg-info/dependency_links.txt
+alibabacloud_nlp_automl20190701.egg-info/requires.txt
+alibabacloud_nlp_automl20190701.egg-info/top_level.txt
