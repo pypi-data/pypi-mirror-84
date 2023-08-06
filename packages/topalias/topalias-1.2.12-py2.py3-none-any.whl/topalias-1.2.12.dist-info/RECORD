@@ -1,0 +1,11 @@
+topalias/__init__.py,sha256=FFPLdn_mpsbgHjBvv-tV5jpD8lTd_MZ7vnDJaEqEFq8,401
+topalias/__main__.py,sha256=3tO-lS_42JIGXpMqVu-PXAaBPgyxPXCMc5302z7qev8,318
+topalias/aliascore.py,sha256=rYd-irANBiMFARwYxsxlDtGt3Qlkd_Y-OiTN_SqvppU,5077
+topalias/cli.py,sha256=LXmFbW0Kr2_-33jxn1Qv9urAyYI-okudLbxEX0u6Zzs,1840
+topalias/setuppath.py,sha256=ryHHYsHpIlP2eyuO5Udr9vTl28vDugPhzB7elpuCtFc,51
+topalias-1.2.12.dist-info/LICENSE,sha256=I-RRaMvb_VHjEDkllbj46lS_dpNqZktwfpm5PEtElfA,1638
+topalias-1.2.12.dist-info/METADATA,sha256=d3akHPouL90N8JuCxu-dw6J3zVla15bsn5bQgW4Gjcs,5387
+topalias-1.2.12.dist-info/WHEEL,sha256=gxPaqcqKPLUXaSAKwmfHO7_iAOlVvmp33DewnUluBB8,116
+topalias-1.2.12.dist-info/entry_points.txt,sha256=1CE-2vpZk7k0337IbzqDyDHFmDyv6vikAcVNK-3nBlQ,47
+topalias-1.2.12.dist-info/top_level.txt,sha256=D3So7pkVyv5361m7DzifW8h4dQ3zQMCP8GBOSDFAROE,9
+topalias-1.2.12.dist-info/RECORD,,
