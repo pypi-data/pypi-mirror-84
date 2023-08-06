@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: OrglabExt
+Version: 1.1.2
+Summary: Orglab Extension
+Home-page: https://www.originlab.com
+Author: OriginLab
+Author-email: folger@originlab.com.cn
+License: BSD
+Keywords: Origin,Originlab
+Platform: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+## OrglabExt
+
+This package is a low-level API for interacting with the OrgLab COM interface. This package does not launch an instance of Origin and provides a faster, yet more limited, API than the [OriginExt package](https://pypi.org/project/OriginExt/). This package is largely undocumented and support is limited.
+
+Currently the [originpro package](https://pypi.org/project/originpro/) is not compatible with this package.
+
+### Installation
+This package is Windows only and requires that the [Orglab COM library](https://www.originlab.com/index.aspx?go=Products/Orglab) be installed locally.
+
+To install the package, run:
+```
+pip install OrglabExt
+```
+
+### Documentation
+Limited documentation is available in the [OriginLab External Python Documentation](https://www.originlab.com/doc/ExternalPython).
+
+### Support
+Limited support is available on the [Origin Forum for Python](https://my.originlab.com/forum/forum.asp?FORUM_ID=29).
+
