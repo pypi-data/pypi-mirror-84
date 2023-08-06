@@ -1,0 +1,95 @@
+
+====================================
+
+-----------  CHANGE LOG  -----------
+
+====================================
+------  Latest Release: 0.0.13  -----
+====================================
+
+
+0.0.13   (11/2/2020)
+----------------------
+- readme updates
+- added print_count param to .explore's vcount_ex function
+- added head_val and max_col param to .explore's dframe_ex function. Default max columns printed is now 50
+
+
+0.0.12   (10/29/2020)
+----------------------
+- changed error in .explore's missing_ex() function's code
+- updated .explore corr_ex() function to include min_count arg
+- changed .explore.corr_ex() arg hm_only to map_only() with True or False keywords
+
+
+0.0.11   (10/29/2020)
+----------------------
+- changed "install_required" values in setup.py
+
+
+0.0.10   (10/29/2020)
+----------------------
+- fixed an error in corr_ex() function's code
+
+
+0.0.9   (10/29/2020)
+----------------------
+- readme improvements
+- added function missing_ex() to .explore
+- added function corr_ex() to .explore
+- .explore added seaborn dependency
+- description change
+
+
+0.0.8   (10/29/2020)
+----------------------
+- readme improved
+- changed description
+
+
+0.0.7   (10/29/2020)
+----------------------
+- updated name to larkinlab from clarklib
+- added 2 subpackages: explore, machinelearning
+- changed explore.frame_ex to explore.dframe_ex
+- deleted clarklib (v0.0.0 - v0.0.6) from pypi, v0.0.7 and onward will be known as larkinlab
+
+
+0.0.6   (10/29/2020)
+----------------------
+- Changed README to larkinlab format, with subpackages.
+- In The Future section
+- commented out long_description in setup.py
+- changed check_df() to frame_ex()
+- changed vcount_examine() to vcount_ex()
+- changed scat_examine() to scat_ex()
+
+
+0.0.5   (10/28/2020)
+----------------------
+- Changed the ghangelog to be in descending chronological order
+- Changed description in setup.py
+- updated the readme to contain details on using the functions and contact info
+
+
+0.0.4   (10/28/2020)
+----------------------
+- Changed check_df() function to only display up to 60 column names.
+- Changed check_df() to print "Rows:", "Columns:", and "Total Data Points:" instead of just print(df.shape, df.size)
+
+
+0.0.3   (10/28/2020)
+----------------------
+- Added the 'import' section to code in clarklib init file. Works now!
+
+
+0.0.2   (10/27/2020)
+----------------------
+- Moved init file into folder
+
+
+0.0.1   (10/27/2020)
+----------------------
+- First release
+- Added 3 functions: check_df(), vcount_examine(), scat_examine()
+
