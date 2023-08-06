@@ -1,0 +1,8 @@
+README.rst
+setup.py
+hwaddress/__init__.py
+hwaddress/core.py
+hwaddress.egg-info/PKG-INFO
+hwaddress.egg-info/SOURCES.txt
+hwaddress.egg-info/dependency_links.txt
+hwaddress.egg-info/top_level.txt
