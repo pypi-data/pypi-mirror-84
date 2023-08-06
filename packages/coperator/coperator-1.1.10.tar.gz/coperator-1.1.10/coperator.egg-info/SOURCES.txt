@@ -1,0 +1,11 @@
+README.rst
+setup.py
+coperator/__init__.py
+coperator/monad.py
+coperator/myoperator.py
+coperator/py.typed
+coperator.egg-info/PKG-INFO
+coperator.egg-info/SOURCES.txt
+coperator.egg-info/dependency_links.txt
+coperator.egg-info/requires.txt
+coperator.egg-info/top_level.txt
