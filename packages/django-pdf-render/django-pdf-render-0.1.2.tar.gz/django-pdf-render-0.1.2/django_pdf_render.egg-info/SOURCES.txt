@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+django_pdf_render.egg-info/PKG-INFO
+django_pdf_render.egg-info/SOURCES.txt
+django_pdf_render.egg-info/dependency_links.txt
+django_pdf_render.egg-info/top_level.txt
+pdfrender/__init__.py
+pdfrender/exceptions.py
+pdfrender/render.py
