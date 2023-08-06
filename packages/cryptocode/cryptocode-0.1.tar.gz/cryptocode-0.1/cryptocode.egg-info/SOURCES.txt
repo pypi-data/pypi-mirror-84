@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+cryptocode/__init__.py
+cryptocode/myfunctions.py
+cryptocode.egg-info/PKG-INFO
+cryptocode.egg-info/SOURCES.txt
+cryptocode.egg-info/dependency_links.txt
+cryptocode.egg-info/requires.txt
+cryptocode.egg-info/top_level.txt
