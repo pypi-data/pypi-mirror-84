@@ -1,0 +1,9 @@
+performer_pytorch/__init__.py,sha256=jurjvmwtpSXw1Znq9e5Ngp6mt8Ja8QmnhkF4mH2kiRQ,176
+performer_pytorch/autoregressive_wrapper.py,sha256=wpCOaSLxeA_xPIlrj2SXkpwmd64TuDWy2fIFikJaIas,3499
+performer_pytorch/performer_pytorch.py,sha256=G5XyhPf6iwBb5NIrqk0-f0ef5I4GHXMLLx_3kByYWZo,14630
+performer_pytorch/reversible.py,sha256=iUY7D1RJ46NNPzWjec_ljwbmiPhDhq5J5ub0nQYTFeo,5326
+performer_pytorch-0.7.5.dist-info/LICENSE,sha256=As9u198X-U-vph5noInuUfqsAG2zX_oXPHDmdjwlPPY,1066
+performer_pytorch-0.7.5.dist-info/METADATA,sha256=w6_r5Tfbkw1CRTlxIKi5c4OUe9jM1rKRq5OYmU98f5c,741
+performer_pytorch-0.7.5.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+performer_pytorch-0.7.5.dist-info/top_level.txt,sha256=UDKV18mxHfKST1UueBHqnpkHQtacr9Ev-BCeDHP_qYY,18
+performer_pytorch-0.7.5.dist-info/RECORD,,
