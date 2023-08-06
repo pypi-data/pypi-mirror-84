@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/mpl_tc_fonts/__init__.py
+src/mpl_tc_fonts/tool.py
+src/mpl_tc_fonts.egg-info/PKG-INFO
+src/mpl_tc_fonts.egg-info/SOURCES.txt
+src/mpl_tc_fonts.egg-info/dependency_links.txt
+src/mpl_tc_fonts.egg-info/requires.txt
+src/mpl_tc_fonts.egg-info/top_level.txt
