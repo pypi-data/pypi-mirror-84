@@ -1,0 +1,6 @@
+[console_scripts]
+pyqtdesigner = pyqt5_tools.entrypoints:pyqtdesigner
+pyqtqmlscene = pyqt5_tools.entrypoints:pyqtqmlscene
+pyqtqmltestrunner = pyqt5_tools.entrypoints:pyqtqmltestrunner
+pyqttoolsinstalluic = pyqt5_tools.entrypoints:pyqttoolsinstalluic
+
