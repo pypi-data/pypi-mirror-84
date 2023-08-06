@@ -1,0 +1,15 @@
+setup.py
+robot_core/__init__.py
+robot_core/config/__init__.py
+robot_core/config/robot_config.py
+robot_core/executor/__init__.py
+robot_core/executor/executor.py
+robot_core/executor/executor_factory.py
+robot_core/main/__init__.py
+robot_core/main/main.py
+robot_core_local.egg-info/PKG-INFO
+robot_core_local.egg-info/SOURCES.txt
+robot_core_local.egg-info/dependency_links.txt
+robot_core_local.egg-info/entry_points.txt
+robot_core_local.egg-info/requires.txt
+robot_core_local.egg-info/top_level.txt
