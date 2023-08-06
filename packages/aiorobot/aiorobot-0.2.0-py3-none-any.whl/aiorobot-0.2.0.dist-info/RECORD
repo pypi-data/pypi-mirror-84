@@ -1,0 +1,8 @@
+aiorobot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiorobot/driver.py,sha256=TDSXduygA5f9ja7eIUgho63ivXLmFKMzLkvQgoMGKog,9778
+aiorobot/protocol.py,sha256=GSPqW2-rvxhUwl1rPKnV0SLqCyyzG3OAoYw8xDdhqA0,3966
+aiorobot/robot.py,sha256=oXNOiBZQa0NRqxcx5yzGxJ6gs4rOrUrspSKz01DDGdk,7292
+aiorobot-0.2.0.dist-info/METADATA,sha256=f08HEV3UoVfWdoxQ6mAYO--unip0wyDwgqN3ZUTimEw,658
+aiorobot-0.2.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+aiorobot-0.2.0.dist-info/top_level.txt,sha256=HjP7Jxbg2oBY536Hk1-VZyAc2XlUBvn2-TfTCjN46Gg,9
+aiorobot-0.2.0.dist-info/RECORD,,
