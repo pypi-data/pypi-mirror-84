@@ -1,0 +1,9 @@
+containerlog/__init__.py,sha256=BWf3MzjkHrxVbIEb2cgMVqy1waIa7859xMq4XhgYjjU,12777
+containerlog/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+containerlog/proxy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+containerlog/proxy/std.py,sha256=bJKn-wbHV7kVSB73SHQY2NAN98NHQT_S5H2ffFRAoTs,8986
+containerlog-0.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+containerlog-0.3.0.dist-info/METADATA,sha256=3Mkr-2fa3TzQMLfsdHrod1OARJQ4NfJ7-ZNgRnQ7zUk,4225
+containerlog-0.3.0.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+containerlog-0.3.0.dist-info/top_level.txt,sha256=WHkUKkn6i-X6ORPprBA2XGIRrTeJETyMwxYFgF9lvm8,13
+containerlog-0.3.0.dist-info/RECORD,,
