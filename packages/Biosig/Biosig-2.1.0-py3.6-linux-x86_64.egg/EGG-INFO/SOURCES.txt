@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+Makefile.in
+README
+README.md
+biosigmodule.c
+biosigmodule.h
+demo2.py
+example.py
+setup.py
+setup.py.in
+Biosig.egg-info/PKG-INFO
+Biosig.egg-info/SOURCES.txt
+Biosig.egg-info/dependency_links.txt
+Biosig.egg-info/requires.txt
+Biosig.egg-info/top_level.txt
