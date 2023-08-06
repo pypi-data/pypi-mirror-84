@@ -1,0 +1,15 @@
+affirm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+affirm/model_interpretation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+affirm/model_interpretation/shparkley/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+affirm/model_interpretation/shparkley/estimator_interface.py,sha256=XL_Ty8PFmGpw_3571Ojncks7IgSnuNcLntWW93hlG-w,3109
+affirm/model_interpretation/shparkley/spark_shapley.py,sha256=U6Lyusn1xs1NXhhyKiT9Zl9zD_U_Gt1cgJrSrqm0zWw,4939
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/model_interpretation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/model_interpretation/shparkley/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/model_interpretation/shparkley/test_estimator_interface.py,sha256=Jo9btw6mBvysDJ2guL37KsDY8YGKpTtIHTNBl-TaD24,1855
+tests/model_interpretation/shparkley/test_spark_shapley.py,sha256=hnJK4wg_RWvSJT0hg6b7jFasKpeaZiInMI3xs9RwyKM,6654
+shparkley-1.0.0.dist-info/LICENSE,sha256=blsKuqmWAi2P1LLhziZIEkNFc54QhZ_3k3GeeLBPPec,1514
+shparkley-1.0.0.dist-info/METADATA,sha256=Is2P9myrlBPw8RVCHq8LN_oOglUG0aabQKB2gPY_uOw,3227
+shparkley-1.0.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+shparkley-1.0.0.dist-info/top_level.txt,sha256=kQYQ8KLpwek_pDDh6oF8Di5pSGu_0u50Yi-xm5TYMlQ,13
+shparkley-1.0.0.dist-info/RECORD,,
