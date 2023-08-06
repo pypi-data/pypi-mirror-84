@@ -1,0 +1,47 @@
+"""SSH Config JSON
+Overview:
+  Dump JSON for your ssh config include IdentityFiles and restore those.
+
+Usage:
+  main.py [-h|--help] [-v|--version]
+  main.py dump <file> [-c|--config=<config>] [-i|--identityFile]
+  main.py restore <file> [-c|--config=<config>] [-i|--identityFile]
+
+Options:
+  dump                       : dump SSH Config file to JSON
+  restore                    : Restore SSH Config file from JSON
+  <file>                     : Dumped json file
+  -h, --help                 : Help
+  -v, --version              : Show version
+  -c --config=<config>       : Specific SSH Config file path [default: ~/.ssh/config]
+  -i --identityFile          : Include IdentityFiles
+"""
+
+from docopt import docopt
+from __init__ import __version__
+from config import SSHConfig
+
+
+def main():
+    args = docopt(__doc__, version=f"SSH Config JSON: {__version__}")
+    if args["dump"]:
+        dump(args["<file>"], config=args["--config"][0], identity_file=args["--identityFile"])
+    elif args["restore"]:
+        restore(args["<file>"], config=args["--config"][0], identity_file=args["--identityFile"])
+
+
+def dump(filepath, config, identity_file=False):
+    ssh_config = SSHConfig(config)
+    ssh_config.parse(save_key=identity_file)
+    ssh_config.dump_file(filepath)
+
+
+def restore(filepath, config, identity_file=False):
+    print(filepath, config, identity_file)
+    ssh_config = SSHConfig(config)
+    ssh_config.load_file(filepath=filepath)
+    ssh_config.restore(restore_key=identity_file)
+
+
+if __name__ == "__main__":
+    main()
