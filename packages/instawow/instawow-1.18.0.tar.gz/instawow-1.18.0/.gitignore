@@ -1,0 +1,9 @@
+__pycache__
+
+/.cargo
+/.coverage
+/.py*
+/*.egg-info
+/build
+/dist
+/instawow/_version.py
