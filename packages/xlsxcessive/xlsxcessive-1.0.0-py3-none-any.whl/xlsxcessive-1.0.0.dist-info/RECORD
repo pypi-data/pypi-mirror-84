@@ -1,0 +1,14 @@
+xlsxcessive/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xlsxcessive/cache.py,sha256=WhMBtYgmF1qhWR_LqjgqaHm-2-FBLZ63rn4a2bGldak,333
+xlsxcessive/errors.py,sha256=L2Zdk8uJx7gchDKPhBew_594kamUADz8QxVym5oEIl8,43
+xlsxcessive/markup.py,sha256=zhEgAqt0R5jolFEbyH0tEA_EZi49ZQ2ftgGBqDPshSU,1123
+xlsxcessive/parts.py,sha256=CtafTALlyUNRF9dAIDrHa--j0F2PKEoY0X0GF_zZJFs,820
+xlsxcessive/style.py,sha256=yGaY8z_DDFeHX7ZjsmBYr1J8aWNfcL0nZDlRO1zzXH8,7773
+xlsxcessive/workbook.py,sha256=IqeJRakL0QGQwR90tipNqOju2hLGNKN2WDncX6A1cBI,818
+xlsxcessive/worksheet.py,sha256=Q10tEtefXfnFSJSDlq34LL9mKsaswmzouQnzjn7Wd8c,15660
+xlsxcessive/xlsx.py,sha256=uS76gQe8tYTVHAN-y1cXI2lQkV1oPW4xrzJriraL-3E,832
+xlsxcessive-1.0.0.dist-info/LICENSE,sha256=2z8CRrH5J48VhFuZ_sR4uLUG63ZIeZNyL4xuJUKF-vg,1050
+xlsxcessive-1.0.0.dist-info/METADATA,sha256=maxAxwy1xuopoP33Mf6RjQ0y1XUM7hU718vOGEhqgn0,5723
+xlsxcessive-1.0.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+xlsxcessive-1.0.0.dist-info/top_level.txt,sha256=MoGNcYP7YznOybj_PBlim_N5VrQlrPKN2Vh42KE6okQ,12
+xlsxcessive-1.0.0.dist-info/RECORD,,
