@@ -1,0 +1,13 @@
+README.md
+setup.py
+selenide.egg-info/PKG-INFO
+selenide.egg-info/SOURCES.txt
+selenide.egg-info/dependency_links.txt
+selenide.egg-info/top_level.txt
+src/__init__.py
+src/browser.py
+src/configuration.py
+src/element.py
+src/handler.py
+src/helper.py
+src/page.py
