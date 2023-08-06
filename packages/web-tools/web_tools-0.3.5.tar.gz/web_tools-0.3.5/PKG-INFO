@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: web-tools
+Version: 0.3.5
+Summary: 
+Author: rgilfanov
+Author-email: rgilfanov@fix.ru
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: SQLAlchemy-JSONField (>=0.9.0,<0.10.0)
+Requires-Dist: fastapi (>=0.61.1,<0.62.0)
+Requires-Dist: gino (>=1.0.1,<2.0.0)
