@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: phantom-types
+Version: 0.4.1
+Summary: Phantom types for Python
+Home-page: https://github.com/antonagestam/phantom-types/
+Author: Anton Agestam
+Author-email: git@antonagestam.se
+License: MIT License
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8
+Provides-Extra: iso3166
+Requires-Dist: iso3166 (>=1.0.1) ; extra == 'iso3166'
+Provides-Extra: lint
+Requires-Dist: black ; extra == 'lint'
+Requires-Dist: flake8 ; extra == 'lint'
+Requires-Dist: isort ; extra == 'lint'
+Provides-Extra: phonenumbers
+Requires-Dist: phonenumbers (>=8.12.11) ; extra == 'phonenumbers'
+Provides-Extra: test
+Requires-Dist: mypy ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-mypy-plugins ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+
+# phantom-types
+
+[![](https://github.com/antonagestam/phantom-types/workflows/CI/badge.svg)](https://github.com/antonagestam/phantom-types/actions?query=workflow%3ACI)
+
+
+Phantom types for Python.
+
+_This project is in early development and major changes to core APIs should be expected.
+Semantic versioning will be followed after version 1.0, but before that breaking changes
+will happen between minor versions._
+
+[Complete documentation is available on Read the Docs.](https://phantom-types.readthedocs.io/en/stable/)
+
+## Installation
+
+```bash
+$  python3 -m pip install phantom-types
+```
+
+
