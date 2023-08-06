@@ -1,0 +1,6 @@
+
+[ComClient]
+comtypes
+
+[SoapClient]
+zeep
