@@ -1,0 +1,4 @@
+agro_kit
+gps
+light_sensor
+moisture_sensor
