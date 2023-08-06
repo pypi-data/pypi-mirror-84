@@ -1,0 +1,9 @@
+{
+  "test_unit.py::TestBase": true,
+  "test_unit.py::TestFileSequence": true,
+  "test_unit.py::TestFindSequenceOnDisk": true,
+  "test_unit.py::TestFindSequencesOnDisk": true,
+  "test_unit.py::TestFrameSet": true,
+  "test_unit.py::TestPaddingFunctions": true,
+  "test_unit.py::TestUtils": true
+}
