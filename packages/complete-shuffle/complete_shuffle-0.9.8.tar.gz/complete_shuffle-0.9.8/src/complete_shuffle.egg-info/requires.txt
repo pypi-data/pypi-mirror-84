@@ -1,0 +1,2 @@
+pure-nrng>=0.8.0
+pure-prng>=0.9.0
