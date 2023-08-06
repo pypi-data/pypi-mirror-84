@@ -1,0 +1,57 @@
+name: 'thegmu-nextcloud-git-sync'
+internal_use_only:
+  ubuntu_version_cmd: >
+     lsb_release  -a 2>/dev/null | grep Release | sed -r "s/[^:]+:\s+//"
+
+  umount_ubuntu_version_fails:
+   - '20'
+  mount_cmd: Null
+  umount_cmd_note: 'umount.davfs seg faults on Ubuntu 20, work around.'
+  umount_cmd_ubuntu20: 'umount.davfs.thegmu.sh %s'
+davfs:
+  mount:
+    source_url: 'https://www.yourdomain.com/oc/remote.php/dav/files/youraccount/'
+    target_dir: '/media/davfs/yournextcloudaccount'
+    max_active_seconds: 30
+nextcloud:
+  account:
+    linux: 'www-data'
+    nextcloud: 'yournextcloudaccount'
+  directory:
+    exclude:
+      - 'Transfer'
+    include: null
+    root_note: 'Files here have checksum compared to GIT. '
+    root: '/path/to/nextcloud/data/yournextcloudaccount/files'
+git:
+  account:
+    linux_note: 'Null signifies use the current account'  
+    linux: null
+  config:
+     upstream_test_key: 'remote.origin.url'
+     upstream_test_cmd: 'sudo su - %s -c "cd %s && git config --local --get %s 2>/dev/null || true"'
+  directory:
+    exclude: 
+      - '.git'
+      - '__pycache__'
+      - 'Transfer'
+    include: null
+    root: '/home/yourlinuxaccount/path/to/git/repo'
+  pull_cmd: 'sudo su - %s -c "cd %s && git pull"'
+report:
+  file_note: 'Files are relative to the current directory.'
+  file:
+    process: 'path/to/your/log/dir/thegmu_nextcloud_git_sync.processed.csv'
+    error: 'path/to/your/log/dir/thegmu_nextncloud_git_sync.errors.csv'
+  error:
+    columns:
+    - 'File'
+    - 'Time'
+    - 'Cause'
+    column:
+      timestamp: 'Time'
+run:
+  production_host: 'nextcloudhost'
+  lockpath: '/tmp/thegmu_nextcloud_git_sync.py.lock'
+
+    

@@ -1,0 +1,17 @@
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/system_test.py,sha256=7VaahS_bgZB3q1zvukYAtXAVd9ALLVpX33byfH3uGxE,14052
+thegmu_nextcloud_tools/__init__.py,sha256=RAYT--vzpl7TWfw7RNTTD464LA1NNnjV9gyn01uYOQA,131
+thegmu_nextcloud_tools/git_sync_data.py,sha256=NilNtj__GNaNQs63fVT6zASA38XpaL2q2cpQG-K3y10,9860
+thegmu_nextcloud_tools/script.py,sha256=snWUkCUHTDSKugAmUeeTUjyq4jgh5mdpBlgbaBJFOqM,11529
+thegmu_nextcloud_tools/thegmu_davfs.py,sha256=OXEz1dnrXL-KaEwFlwyrHZHOd7FAQQsyAShhgOF6wjc,4283
+thegmu_nextcloud_tools/thegmu_log.py,sha256=CcllJhYnaApcorfU8y7-vPBeIO2parFzrXONNhOQjA0,11777
+thegmu_nextcloud_tools/thegmu_nextcloud_git_sync.py,sha256=-w0QeV-ZWMiREbI4dG8n4tJJ0lI28i1BSXdIufsK4-c,28392
+thegmu_nextcloud_tools/data/thegmu_nextcloud_git_sync.template.yaml,sha256=oiC-zICtf8zvJvObDf9snMVAYGnD_0dLGnnluztq6-8,1647
+thegmu_nextcloud_tools-0.2.0.data/scripts/thegmu_nextcloud_git_sync.py,sha256=TOZYoKYCZ6YQOCq3lqdvrVe17QUvhYKqnGsZmThMMFg,28378
+thegmu_nextcloud_tools-0.2.0.data/scripts/thegmu_nextcloud_git_sync.sh,sha256=W240aKiEAcAhtq3poObsdW_biY5jTMzoxHApLhNljM8,765
+thegmu_nextcloud_tools-0.2.0.data/scripts/umount.davfs.thegmu.sh,sha256=Yf5ZssREywDhNl0EXnPIXvctcfGIlE9Vtd2PaD7HYDY,1344
+thegmu_nextcloud_tools-0.2.0.dist-info/LICENSE.txt,sha256=N-n32e9iJWn5AvnT9zf9voLUUkRZ2wfDt75POTKV-KM,1081
+thegmu_nextcloud_tools-0.2.0.dist-info/METADATA,sha256=1UzMVdFsn6AKmeNPGkgGFwjfh641tvlzlBS_NdrdSv0,1553
+thegmu_nextcloud_tools-0.2.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+thegmu_nextcloud_tools-0.2.0.dist-info/top_level.txt,sha256=Tok2_FR4FgHY_0qLN6sWJdlMUJDUc_oM5wTMdeLPelo,28
+thegmu_nextcloud_tools-0.2.0.dist-info/RECORD,,
