@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: TOPSIS-Umang-101983043
+Version: 0.2
+Summary: A simple python program to implement Multi Decision Criteria using TOPSIS
+Home-page: https://github.com/umangSharmacs/TOPSIS-Umang-101983043
+Author: Umang Sharma
+Author-email: umangsharma.cs@gmail.com
+License: MIT
+Download-URL: https://github.com/umangSharmacs/TOPSIS-Umang-101983043/archive/v_02.tar.gz
+Description: UNKNOWN
+Keywords: SIMPLE,CONCISE,TOPSIS,MULTI DECISION CRITERIA,DATASCIENCE
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
