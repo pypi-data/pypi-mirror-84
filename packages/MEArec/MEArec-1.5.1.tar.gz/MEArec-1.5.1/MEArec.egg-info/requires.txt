@@ -1,0 +1,10 @@
+numpy
+click
+pyyaml
+matplotlib
+h5py==2.10.0
+neo
+elephant
+MEAutility
+joblib
+lazy_ops
