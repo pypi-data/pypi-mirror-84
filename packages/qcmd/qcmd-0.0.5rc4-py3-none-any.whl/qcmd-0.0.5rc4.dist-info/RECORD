@@ -1,0 +1,8 @@
+qcmd/core.py,sha256=qYZ4Eppf27l-6XgkKyakA7ckZ4UH8JjeQUmD4wWr3Pg,4762
+qcmd/exceptions.py,sha256=OmKNq4i6NkZWDScP1VsQWAAtjMohaDAtZo3Wjz6KNpk,248
+qcmd/processors/executor.py,sha256=vP-mrFKstGAt5Y9GNi_BhNfiGZ0jUuXFn75YsFs9hjI,2939
+qcmd-0.0.5rc4.dist-info/LICENSE,sha256=nbfbcenhp0rI1ByMlEXdDDJ0d05wlX3iY0RGGrRnCVo,1068
+qcmd-0.0.5rc4.dist-info/METADATA,sha256=Lsy4QHCjaQQn--4iH3Q0icVtO27HsYrDDlf3U_CUKA0,2069
+qcmd-0.0.5rc4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+qcmd-0.0.5rc4.dist-info/top_level.txt,sha256=F5fYFhxAZb-XnMTA7bWu8PwgfYgke4CSMYtSckWQSrw,5
+qcmd-0.0.5rc4.dist-info/RECORD,,
