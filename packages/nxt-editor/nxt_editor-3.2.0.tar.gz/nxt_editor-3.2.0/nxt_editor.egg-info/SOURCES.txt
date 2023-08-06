@@ -1,0 +1,7 @@
+README.md
+setup.py
+nxt_editor/__init__.py
+nxt_editor.egg-info/PKG-INFO
+nxt_editor.egg-info/SOURCES.txt
+nxt_editor.egg-info/dependency_links.txt
+nxt_editor.egg-info/top_level.txt
