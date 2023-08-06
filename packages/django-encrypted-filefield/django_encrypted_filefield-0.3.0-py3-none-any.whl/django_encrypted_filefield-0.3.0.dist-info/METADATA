@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: django-encrypted-filefield
+Version: 0.3.0
+Summary: Encrypt uploaded files, store them wherever you like and stream them back unencrypted
+Home-page: https://github.com/danielquinn/django-encrypted-filefield
+License: GPL-3.0-or-later
+Author: Daniel Quinn
+Author-email: code@danielquinn.org
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Dist: cryptography (>=1.7.1)
+Requires-Dist: django (>=2.2)
+Requires-Dist: python-magic (>=0.4.12,<0.5.0)
+Requires-Dist: requests (>=2.12.4)
+Project-URL: Repository, https://github.com/danielquinn/django-encrypted-filefield
