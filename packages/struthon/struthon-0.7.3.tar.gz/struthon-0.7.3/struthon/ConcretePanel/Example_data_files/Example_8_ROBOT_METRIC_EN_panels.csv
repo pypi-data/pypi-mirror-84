@@ -1,0 +1,2 @@
+Panel;Thickness (cm);Material;Meshing type;Reinforcement type;Structure object;Mesh freeze
+3;220;C30;Delaunay;RC floor_pilecap;Panel;Yes

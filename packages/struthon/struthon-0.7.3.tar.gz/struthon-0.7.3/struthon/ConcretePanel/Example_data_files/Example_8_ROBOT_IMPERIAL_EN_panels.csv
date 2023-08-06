@@ -1,0 +1,8 @@
+Panel;Material;Meshing type;Reinforcement type;Structure object;Mesh freeze;Thickness (in)
+1;CONCR;Coons;RC floor;Panel;No;36.00
+9;CONCR;Coons;RC wall;Panel;No;24.00
+13;CONCR;Coons;RC wall;Panel;No;24.00
+14;CONCR;Coons;RC wall;Panel;No;24.00
+15;CONCR;Coons;RC wall;Panel;No;24.00
+17;CONCR;Coons;RC floor;Panel;No;8.00
+19;CONCR;Coons;RC floor;Panel;No;18.00
