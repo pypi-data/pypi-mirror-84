@@ -1,0 +1,10 @@
+gisinfo_c/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gisinfo_c/geo_info.cp36-win_amd64.pyd,sha256=dI5rijhh2bJSSpADU6VJ0vsoPc0jMgVhtfJ9LbUwnis,142336
+gisinfo_c/tool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gisinfo_c/tool/geoinfo_tool.cp36-win_amd64.pyd,sha256=KV34_W5w8mCsPbKvCAD6iYVaoUvqjh4BY24TJuI-sEQ,96768
+gisinfo_c/tool/raster_tool.cp36-win_amd64.pyd,sha256=dR2nOf-FcsGdGGWV62gJ5fZ1AsbyHGCLSPMB8rm5X_o,199168
+gisinfo_c/tool/vector_tool.cp36-win_amd64.pyd,sha256=4qxCxCpcvHfiEo55UfNkJw-s_U4B28IJuP4usDIhjYU,160256
+gisinfo_c-0.0.5.dist-info/METADATA,sha256=na7VYU4Kr5jzBB-OBnNcHNdVfAcavOIDfsnL0EDflw8,215
+gisinfo_c-0.0.5.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+gisinfo_c-0.0.5.dist-info/top_level.txt,sha256=5wy0d0CAEQHej7BFIRttvmzkGelyIE8wXqdr6XS4Xls,10
+gisinfo_c-0.0.5.dist-info/RECORD,,
