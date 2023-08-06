@@ -1,0 +1,11 @@
+_graphillion.cpython-38-darwin.so,sha256=tDO92hf5ift-DvgWQkWhisuTTaCgf9CslFqdKVLEFVQ,584424
+graphillion/__init__.py,sha256=WrBTFiHnXMLPvfEn-q3PQE3n9Rrs06xUSxtWOO8SPrs,1526
+graphillion/graphset.py,sha256=7QZotiPi0RowNBW6KYIqe7cXRf8HPTOuEmUcweo1jWg,64332
+graphillion/release.py,sha256=VribBfxzr52ScRPaNklHpqP_qXEXq5HIL0Otxo6lOcA,1377
+graphillion/setset.py,sha256=dcWFrX3wL3Yy3oHy1l62zq4_umgu_GOAZuM4OufPgN4,8429
+graphillion/tutorial.py,sha256=g3U8J164piee9Z77AzVT-diIBmsSSc44jr1o40ajyMY,3088
+Graphillion-1.4.dist-info/LICENSE.txt,sha256=cmkKcMIAVxaoX7sDIhqwnnkd2zusG4WSudebPupmi7k,1425
+Graphillion-1.4.dist-info/METADATA,sha256=kpXt5_ptDZrUISSOkN_3Q1pU8rGh_7ZlczC6_sBaqvg,1541
+Graphillion-1.4.dist-info/WHEEL,sha256=NqgkTkAaRJaCuArPZklUp2tBwn6obHN9aMIfdfLfNkU,110
+Graphillion-1.4.dist-info/top_level.txt,sha256=OXAV5ZXVMxFn08oJuZerhb1nJ3LbiAyOHVMJAMHmL1Q,25
+Graphillion-1.4.dist-info/RECORD,,
